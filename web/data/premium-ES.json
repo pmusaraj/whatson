@@ -1,0 +1,554 @@
+{
+  "country": "ES",
+  "countryName": "Spain",
+  "generatedAt": "2026-05-02T20:06:21.107957Z",
+  "windowHours": 3,
+  "premiumSportsOnly": true,
+  "sourceGuides": [
+    "data/normalized/guide-premium-ES-orangetv.orange.es.xml",
+    "data/normalized/guide-premium-ES-programacion-tv.elpais.com.xml"
+  ],
+  "channelCount": 21,
+  "channels": [
+    {
+      "id": "DeportesporMovistarPlusPlus.es",
+      "name": "Movistar Deportes",
+      "logoUrl": null,
+      "provider": "El País guide",
+      "providerKey": "premium-elpais",
+      "sources": [
+        "data/normalized/guide-premium-ES-programacion-tv.elpais.com.xml"
+      ],
+      "currentProgram": {
+        "title": "Mutua Madrid Open (T2026): Final Femenina",
+        "description": "sin descripción",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-02T22:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Mutua Madrid Open (T2026): Final Femenina",
+          "description": "sin descripción",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-02T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaTV.es",
+      "name": "LALIGA Inside",
+      "logoUrl": "https://i.imgur.com/ilay5Jr.png",
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "LaLiga - T2018, E31: FC Barcelona - Atlético de Madrid 2018/19",
+        "description": "Los mejores clubes y profesionales de renombre mundial. Equipos como Barcelona, Real Madrid y Atlético de Madrid se enfrentan por el título.",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-02T22:08:41Z"
+      },
+      "programs": [
+        {
+          "title": "LaLiga - T2018, E31: FC Barcelona - Atlético de Madrid 2018/19",
+          "description": "Los mejores clubes y profesionales de renombre mundial. Equipos como Barcelona, Real Madrid y Atlético de Madrid se enfrentan por el título.",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-02T22:08:41Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaHypermotion.es",
+      "name": "LALIGATV HYPERMOTION",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "LaLiga Hypermotion - T38, E03: SD Eibar-Málaga CF",
+        "description": "SD Eibar se enfrenta a Málaga en LaLiga Hypermotion. SD Eibar juega de local en el Municipal de Ipurua. Ronda 38.",
+        "startAt": "2026-05-02T19:00:00Z",
+        "endAt": "2026-05-02T21:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "LaLiga Hypermotion - T38, E03: SD Eibar-Málaga CF",
+          "description": "SD Eibar se enfrenta a Málaga en LaLiga Hypermotion. SD Eibar juega de local en el Municipal de Ipurua. Ronda 38.",
+          "startAt": "2026-05-02T19:00:00Z",
+          "endAt": "2026-05-02T21:00:00Z"
+        },
+        {
+          "title": "Post LaLiga HyperMotion",
+          "description": "Tras la disputa de los encuentros, es tiempo para el análisis. Los entrenadores de los equipos de LaLiga HyperMotion desmenuzan las claves que, según ellos, han propiciado el resultado del partido que acaban de jugar.",
+          "startAt": "2026-05-02T21:00:00Z",
+          "endAt": "2026-05-02T21:30:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E08: Cultural Leonesa-Cádiz CF",
+          "description": "Cultural Leonesa enfrenta a Cádiz en LaLiga Hypermotion. Ronda 38.",
+          "startAt": "2026-05-02T21:30:00Z",
+          "endAt": "2026-05-02T23:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaHypermotion2.es",
+      "name": "LALIGATV HYPERMOTION 2",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "LALIGA TV HYPERMOTION M2",
+        "description": "LALIGA TV HYPERMOTION M2",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "LALIGA TV HYPERMOTION M2",
+          "description": "LALIGA TV HYPERMOTION M2",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaHypermotion3.es",
+      "name": "LALIGATV HYPERMOTION 3",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "LALIGA TV HYPERMOTION M3",
+        "description": "LALIGA TV HYPERMOTION M3",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "LALIGA TV HYPERMOTION M3",
+          "description": "LALIGA TV HYPERMOTION M3",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaTVporMovistarPlusPlus.es",
+      "name": "M LALIGA",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "El fútbol según Raúl",
+        "description": "Una mirada a las mejores historias del fútbol español.",
+        "startAt": "2026-05-02T19:00:00Z",
+        "endAt": "2026-05-02T20:15:00Z"
+      },
+      "programs": [
+        {
+          "title": "El fútbol según Raúl",
+          "description": "Una mirada a las mejores historias del fútbol español.",
+          "startAt": "2026-05-02T19:00:00Z",
+          "endAt": "2026-05-02T20:15:00Z"
+        },
+        {
+          "title": "Los Misterios de Zidane",
+          "description": "Cuatro años han pasado desde la llegada de Zidane al banquillo del Real Madrid y este reportaje analiza su figura: su personalidad, liderazgo y su filosofía como entrenador. Desde sus orígenes en Marsella hasta convertirse en leyenda del fútbol.",
+          "startAt": "2026-05-02T20:15:00Z",
+          "endAt": "2026-05-02T21:00:00Z"
+        },
+        {
+          "title": "DeportePlus+",
+          "description": "El programa Deporte Plus+ se emite en directo todos los sábados de esta nueva temporada con la última hora de la información deportiva.",
+          "startAt": "2026-05-02T21:00:00Z",
+          "endAt": "2026-05-02T22:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLiga1porMovistarPlusPlus.es",
+      "name": "M LALIGA 2",
+      "logoUrl": "https://i.imgur.com/h6P9U8O.png",
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "Próximo partido - RCD Espanyol-Real Madrid",
+        "description": "Próximo partido",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Próximo partido - RCD Espanyol-Real Madrid",
+          "description": "Próximo partido",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaTV2porMovistarPlusPlus.es",
+      "name": "M LALIGA 3",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M LALIGATV 3",
+        "description": "M LALIGATV 3",
+        "startAt": "2026-05-02T16:15:00Z",
+        "endAt": "2026-05-02T20:15:00Z"
+      },
+      "programs": [
+        {
+          "title": "M LALIGATV 3",
+          "description": "M LALIGATV 3",
+          "startAt": "2026-05-02T16:15:00Z",
+          "endAt": "2026-05-02T20:15:00Z"
+        },
+        {
+          "title": "M LALIGATV 3",
+          "description": "M LALIGATV 3",
+          "startAt": "2026-05-02T20:15:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LaLigaTV3porMovistarPlusPlus.es",
+      "name": "M LALIGA 4",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M LALIGATV 4",
+        "description": "M LALIGATV 4",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M LALIGATV 4",
+          "description": "M LALIGATV 4",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeonesporMovistarPlusPlus.es",
+      "name": "M Liga de Campeones",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "UEFA Conference League - T10, E02: Rayo Vallecano-RC Strasbourg Alsace",
+        "description": "Rayo Vallecano se enfrenta a Strasbourg en UEFA Conference League. Rayo Vallecano juega de local en el Estadio de Vallecas. Semifinales.",
+        "startAt": "2026-05-02T19:25:00Z",
+        "endAt": "2026-05-02T21:25:00Z"
+      },
+      "programs": [
+        {
+          "title": "UEFA Conference League - T10, E02: Rayo Vallecano-RC Strasbourg Alsace",
+          "description": "Rayo Vallecano se enfrenta a Strasbourg en UEFA Conference League. Rayo Vallecano juega de local en el Estadio de Vallecas. Semifinales.",
+          "startAt": "2026-05-02T19:25:00Z",
+          "endAt": "2026-05-02T21:25:00Z"
+        },
+        {
+          "title": "Europa League - T12, E02: Nottingham Forest FC-Aston Villa",
+          "description": "Nottingham Forest se enfrenta a Aston Villa en la UEFA Europa League. Nottingham Forest juega de local en el City Ground, Nottingham. Semifinales.",
+          "startAt": "2026-05-02T21:25:00Z",
+          "endAt": "2026-05-02T23:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones9porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 10",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 10",
+        "description": "M Liga de Campeones 10",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 10",
+          "description": "M Liga de Campeones 10",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones10porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 11",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 11",
+        "description": "M Liga de Campeones 11",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 11",
+          "description": "M Liga de Campeones 11",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones11porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 12",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 12",
+        "description": "M Liga de Campeones 12",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 12",
+          "description": "M Liga de Campeones 12",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones12porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 13",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 13",
+        "description": "M Liga de Campeones 13",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 13",
+          "description": "M Liga de Campeones 13",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones2porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 3",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "Próximo partido - Multieuropa + Conference League",
+        "description": "Próximo partido",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Próximo partido - Multieuropa + Conference League",
+          "description": "Próximo partido",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones3porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 4",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "Próximo partido - Friburgo-SC Braga",
+        "description": "Próximo partido",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Próximo partido - Friburgo-SC Braga",
+          "description": "Próximo partido",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones4porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 5",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
+        "description": "Próximo partido",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
+          "description": "Próximo partido",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones5porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 6",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 6",
+        "description": "M Liga de Campeones 6",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 6",
+          "description": "M Liga de Campeones 6",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones6porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 7",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 7",
+        "description": "M Liga de Campeones 7",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 7",
+          "description": "M Liga de Campeones 7",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones7porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 8",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 8",
+        "description": "M Liga de Campeones 8",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 8",
+          "description": "M Liga de Campeones 8",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "LigadeCampeones8porMovistarPlusPlus.es",
+      "name": "M Liga de Campeones 9",
+      "logoUrl": null,
+      "provider": "Orange Spain guide",
+      "providerKey": "premium-orange-es",
+      "sources": [
+        "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
+      ],
+      "currentProgram": {
+        "title": "M Liga de Campeones 9",
+        "description": "M Liga de Campeones 9",
+        "startAt": "2026-05-02T20:00:00Z",
+        "endAt": "2026-05-03T00:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "M Liga de Campeones 9",
+          "description": "M Liga de Campeones 9",
+          "startAt": "2026-05-02T20:00:00Z",
+          "endAt": "2026-05-03T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

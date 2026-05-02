@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build browser-friendly JSON from XMLTV guide snapshots and FAST sports feeds."""
+"""Build browser-friendly JSON from XMLTV guide snapshots and premium sports feeds."""
 
 from __future__ import annotations
 
@@ -24,15 +24,16 @@ COUNTRY_NAMES = {
 
 IPTV_CHANNELS_API = "https://iptv-org.github.io/api/channels.json"
 
-SPORTS_TERMS = re.compile(
-    r"\b(sport|sports|football|soccer|fifa|liga|laliga|champions|nba|nfl|nhl|mlb|tsn|"
-    r"sportsnet|eurosport|tennis|golf|fight|boxing|mma|ufc|racing|motor|f1|formula|"
-    r"skate|surf|ski|cycling|bike|poker|darts|cricket|rugby|wrestling)\b",
+PREMIUM_SPORTS_TERMS = re.compile(
+    r"(canal\+|canal plus|bein|dazn|rmc sport|eurosport|multisports|infosport|"
+    r"movistar|laliga|liga de campeones|champions|vamos|deportes|golf|"
+    r"tsn|sportsnet|rds|tva sports|cbs sports)",
     re.I,
 )
 
-SPORTS_ID_TERMS = re.compile(
-    r"(Sport|Sports|Eurosport|TSN|Sportsnet|LaLiga|NBA|NFL|NHL|MLB|UFC|FIFA|Golf|Tennis|Fight|Racing)",
+PREMIUM_SPORTS_ID_TERMS = re.compile(
+    r"(CanalPlus|beIN|DAZN|RMCSport|Eurosport|MultiSports|InfosportPlus|"
+    r"Movistar|LaLiga|LigadeCampeones|Vamos|Deportes|Golf|TSN|Sportsnet|RDS|TVASports|CBSSports)",
     re.I,
 )
 
@@ -61,13 +62,19 @@ GUIDES = {
     ],
 }
 
-FAST_SPORTS_GUIDES = {
-    country: [
-        RemoteGuide(f"https://i.mjh.nz/PlutoTV/{country.lower()}.xml", "Pluto TV", "plutotv"),
-        RemoteGuide(f"https://i.mjh.nz/SamsungTVPlus/{country.lower()}.xml", "Samsung TV Plus", "samsungtvplus"),
-        RemoteGuide(f"https://i.mjh.nz/Plex/{country.lower()}.xml", "Plex", "plex"),
-    ]
-    for country in COUNTRY_NAMES
+PREMIUM_SPORTS_GUIDES = {
+    "FR": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-FR-canalplus.com.xml", "Canal+ guide", "premium-canalplus"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-FR-tv.sfr.fr.xml", "SFR guide", "premium-sfr"),
+    ],
+    "ES": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-ES-orangetv.orange.es.xml", "Orange Spain guide", "premium-orange-es"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-ES-programacion-tv.elpais.com.xml", "El País guide", "premium-elpais"),
+    ],
+    "CA": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvpassport.com.xml", "TV Passport guide", "premium-tvpassport"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvhebdo.com.xml", "TV Hebdo guide", "premium-tvhebdo"),
+    ],
 }
 
 
@@ -81,7 +88,7 @@ def fetch_json(url: str):
         return json.load(response)
 
 
-def sports_channel_ids_by_country() -> dict[str, set[str]]:
+def premium_sports_channel_ids_by_country() -> dict[str, set[str]]:
     result = {country: set() for country in COUNTRY_NAMES}
     loaded_local = False
 
@@ -91,7 +98,9 @@ def sports_channel_ids_by_country() -> dict[str, set[str]]:
             continue
         loaded_local = True
         for channel in json.loads(path.read_text(encoding="utf-8")):
-            if "sports" in (channel.get("categories") or []):
+            if "sports" in (channel.get("categories") or []) and is_premium_sports_channel(
+                channel.get("id", ""), channel.get("name", ""), set()
+            ):
                 result[country].add(channel.get("id"))
 
     if loaded_local:
@@ -136,8 +145,8 @@ def channel_display_name(channel: ET.Element) -> str:
     return names[0] if names else channel.attrib["id"]
 
 
-def is_sports_channel(channel_id: str, name: str, sports_ids: set[str]) -> bool:
-    return channel_id in sports_ids or bool(SPORTS_TERMS.search(name)) or bool(SPORTS_ID_TERMS.search(channel_id))
+def is_premium_sports_channel(channel_id: str, name: str, premium_sports_ids: set[str]) -> bool:
+    return channel_id in premium_sports_ids or bool(PREMIUM_SPORTS_TERMS.search(name)) or bool(PREMIUM_SPORTS_ID_TERMS.search(channel_id))
 
 
 def program_window(programs: list[dict], now: datetime, hours: int = 3) -> list[dict]:
@@ -173,16 +182,16 @@ def ingest_xmltv_root(
     provider_key: str,
     channels: dict,
     programs_by_channel: dict,
-    sports_ids: set[str],
-    sports_only: bool,
+    premium_sports_ids: set[str],
+    premium_sports_only: bool,
 ) -> None:
     included_ids = set()
 
     for channel in root.findall("channel"):
         raw_id = channel.attrib["id"]
-        channel_id = f"{provider_key}:{raw_id}"
+        channel_id = raw_id if premium_sports_only else f"{provider_key}:{raw_id}"
         name = channel_display_name(channel)
-        if sports_only and not is_sports_channel(raw_id, name, sports_ids):
+        if premium_sports_only and not is_premium_sports_channel(raw_id, name, premium_sports_ids):
             continue
 
         icon = channel.find("icon")
@@ -205,7 +214,7 @@ def ingest_xmltv_root(
         raw_channel_id = programme.attrib["channel"]
         if raw_channel_id not in included_ids:
             continue
-        channel_id = f"{provider_key}:{raw_channel_id}"
+        channel_id = raw_channel_id if premium_sports_only else f"{provider_key}:{raw_channel_id}"
         program = {
             "title": text(programme, "title") or "Untitled",
             "description": text(programme, "desc"),
@@ -220,8 +229,8 @@ def ingest_local_guide(
     channels: dict,
     programs_by_channel: dict,
     root_dir: Path,
-    sports_ids: set[str],
-    sports_only: bool,
+    premium_sports_ids: set[str],
+    premium_sports_only: bool,
 ) -> str | None:
     if not guide.path.exists():
         return None
@@ -229,7 +238,16 @@ def ingest_local_guide(
         source = str(guide.path.relative_to(root_dir))
     except ValueError:
         source = str(guide.path)
-    ingest_xmltv_root(ET.parse(guide.path).getroot(), source, guide.provider, guide.provider_key, channels, programs_by_channel, sports_ids, sports_only)
+    ingest_xmltv_root(
+        ET.parse(guide.path).getroot(),
+        source,
+        guide.provider,
+        guide.provider_key,
+        channels,
+        programs_by_channel,
+        premium_sports_ids,
+        premium_sports_only,
+    )
     return source
 
 
@@ -237,15 +255,15 @@ def ingest_remote_guide(
     guide: RemoteGuide,
     channels: dict,
     programs_by_channel: dict,
-    sports_ids: set[str],
-    sports_only: bool,
+    premium_sports_ids: set[str],
+    premium_sports_only: bool,
 ) -> str | None:
     try:
         root = ET.fromstring(fetch_bytes(guide.url))
     except Exception as error:
         print(f"warning: failed to load {guide.url}: {error}", file=sys.stderr)
         return None
-    ingest_xmltv_root(root, guide.url, guide.provider, guide.provider_key, channels, programs_by_channel, sports_ids, sports_only)
+    ingest_xmltv_root(root, guide.url, guide.provider, guide.provider_key, channels, programs_by_channel, premium_sports_ids, premium_sports_only)
     return guide.url
 
 
@@ -254,20 +272,20 @@ def build_country_payload(
     guides: list[LocalGuide | RemoteGuide],
     root_dir: Path,
     now: datetime,
-    sports_only: bool = False,
-    sports_ids: set[str] | None = None,
+    premium_sports_only: bool = False,
+    premium_sports_ids: set[str] | None = None,
 ) -> dict:
     channels = {}
     programs_by_channel = {}
     source_guides = []
-    sports_ids = sports_ids or set()
+    premium_sports_ids = premium_sports_ids or set()
 
     for guide in guides:
         source = None
         if isinstance(guide, LocalGuide):
-            source = ingest_local_guide(guide, channels, programs_by_channel, root_dir, sports_ids, sports_only)
+            source = ingest_local_guide(guide, channels, programs_by_channel, root_dir, premium_sports_ids, premium_sports_only)
         else:
-            source = ingest_remote_guide(guide, channels, programs_by_channel, sports_ids, sports_only)
+            source = ingest_remote_guide(guide, channels, programs_by_channel, premium_sports_ids, premium_sports_only)
         if source:
             source_guides.append(source)
 
@@ -298,7 +316,7 @@ def build_country_payload(
         "countryName": COUNTRY_NAMES.get(country_code, country_code),
         "generatedAt": isoformat(now),
         "windowHours": 3,
-        "sportsOnly": sports_only,
+        "premiumSportsOnly": premium_sports_only,
         "sourceGuides": source_guides,
         "channelCount": len(rows),
         "channels": rows,
@@ -312,34 +330,33 @@ def write_json(path: Path, data) -> None:
 def main() -> int:
     now = datetime.now(timezone.utc)
     WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    sports_ids = sports_channel_ids_by_country()
+    premium_sports_ids = premium_sports_channel_ids_by_country()
 
     index = []
     for country_code, guides in GUIDES.items():
-        payload = build_country_payload(country_code, guides, ROOT, now, sports_ids=sports_ids[country_code])
+        payload = build_country_payload(country_code, guides, ROOT, now, premium_sports_ids=premium_sports_ids[country_code])
         out = WEB_DATA_DIR / f"{country_code}.json"
         write_json(out, payload)
 
-        sports_guides = [*guides, *FAST_SPORTS_GUIDES[country_code]]
-        sports_payload = build_country_payload(
+        premium_payload = build_country_payload(
             country_code,
-            sports_guides,
+            PREMIUM_SPORTS_GUIDES[country_code],
             ROOT,
             now,
-            sports_only=True,
-            sports_ids=sports_ids[country_code],
+            premium_sports_only=True,
+            premium_sports_ids=premium_sports_ids[country_code],
         )
-        sports_out = WEB_DATA_DIR / f"sports-{country_code}.json"
-        write_json(sports_out, sports_payload)
+        premium_out = WEB_DATA_DIR / f"premium-{country_code}.json"
+        write_json(premium_out, premium_payload)
 
         index.append(
             {
                 "code": country_code,
                 "name": COUNTRY_NAMES.get(country_code, country_code),
                 "channelCount": payload["channelCount"],
-                "sportsChannelCount": sports_payload["channelCount"],
+                "premiumChannelCount": premium_payload["channelCount"],
                 "dataUrl": f"data/{country_code}.json",
-                "sportsDataUrl": f"data/sports-{country_code}.json",
+                "premiumDataUrl": f"data/premium-{country_code}.json",
             }
         )
 

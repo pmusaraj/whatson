@@ -5,7 +5,7 @@ const state = {
   countryDataByCode: new Map(),
   selectedChannelKeys: loadSelection(),
   search: "",
-  mode: localStorage.getItem("whatsontv.channelMode") === "sports" ? "sports" : "all",
+  mode: localStorage.getItem("whatsontv.channelMode") === "premium" ? "premium" : "all",
 };
 
 const els = {
@@ -122,7 +122,7 @@ async function loadGuideData() {
 async function loadCountryPayloads() {
   state.countryDataByCode.clear();
   const countryPayloads = await Promise.all(
-    state.countries.map((country) => loadJson(state.mode === "sports" ? country.sportsDataUrl : country.dataUrl))
+    state.countries.map((country) => loadJson(state.mode === "premium" ? country.premiumDataUrl : country.dataUrl))
   );
   for (const payload of countryPayloads) {
     state.countryDataByCode.set(payload.country, payload);
@@ -252,13 +252,13 @@ function renderGuide() {
 
 function render() {
   const totalChannels = state.countries.reduce(
-    (sum, country) => sum + (state.mode === "sports" ? country.sportsChannelCount || 0 : country.channelCount || 0),
+    (sum, country) => sum + (state.mode === "premium" ? country.premiumChannelCount || 0 : country.channelCount || 0),
     0
   );
-  els.status.textContent = `${state.countries.length} countries · ${totalChannels} ${state.mode === "sports" ? "sports " : ""}channels loaded`;
+  els.status.textContent = `${state.countries.length} countries · ${totalChannels} ${state.mode === "premium" ? "premium " : ""}channels loaded`;
   els.showAll.classList.toggle("active", state.mode === "all");
-  els.showSports.classList.toggle("active", state.mode === "sports");
-  els.channelSearch.placeholder = state.mode === "sports" ? "Search sports channels" : "Search all channels";
+  els.showSports.classList.toggle("active", state.mode === "premium");
+  els.channelSearch.placeholder = state.mode === "premium" ? "Search premium channels" : "Search all channels";
   renderChannelList();
   renderGuide();
 }
@@ -275,7 +275,7 @@ async function setMode(mode) {
 }
 
 els.showAll.addEventListener("click", () => setMode("all"));
-els.showSports.addEventListener("click", () => setMode("sports"));
+els.showSports.addEventListener("click", () => setMode("premium"));
 
 els.channelSearch.addEventListener("input", (event) => {
   state.search = event.target.value;

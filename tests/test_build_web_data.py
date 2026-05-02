@@ -53,23 +53,24 @@ class BuildWebDataTest(unittest.TestCase):
         self.assertEqual(payload["channels"][0]["programs"][0]["title"], "News")
         self.assertEqual(payload["channels"][0]["programs"][1]["title"], "Movie")
 
-    def test_is_sports_channel_uses_keywords_and_sports_ids(self):
-        self.assertTrue(build_web_data.is_sports_channel("TSN1.ca", "Movie Channel", set()))
-        self.assertTrue(build_web_data.is_sports_channel("Any.id", "Tennis Channel", set()))
-        self.assertTrue(build_web_data.is_sports_channel("CanalPlusSport.fr", "Canal+ Sport", {"CanalPlusSport.fr"}))
-        self.assertFalse(build_web_data.is_sports_channel("News.id", "World News", set()))
+    def test_is_premium_sports_channel_uses_keywords_and_ids(self):
+        self.assertTrue(build_web_data.is_premium_sports_channel("TSN1.ca", "Movie Channel", set()))
+        self.assertTrue(build_web_data.is_premium_sports_channel("CanalPlusSport.fr", "Canal+ Sport", {"CanalPlusSport.fr"}))
+        self.assertTrue(build_web_data.is_premium_sports_channel("Any.id", "DAZN 1", set()))
+        self.assertFalse(build_web_data.is_premium_sports_channel("Tennis.id", "Tennis Channel", set()))
+        self.assertFalse(build_web_data.is_premium_sports_channel("News.id", "World News", set()))
 
-    def test_build_country_payload_can_filter_sports_channels(self):
+    def test_build_country_payload_can_filter_premium_sports_channels(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             guide = root / "guide.xml"
             guide.write_text(
                 """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <tv>
-  <channel id=\"Sport.fr\"><display-name>Tennis Channel</display-name></channel>
-  <channel id=\"News.fr\"><display-name>World News</display-name></channel>
-  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="Sport.fr"><title>Live tennis</title></programme>
-  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="News.fr"><title>Headlines</title></programme>
+  <channel id="Sport.fr"><display-name>Canal+ Sport</display-name></channel>
+  <channel id="News.fr"><display-name>World News</display-name></channel>
+  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="Sport.fr"><title>Live match</title></programme>
+
 </tv>
 """,
                 encoding="utf-8",
@@ -80,10 +81,10 @@ class BuildWebDataTest(unittest.TestCase):
                 [build_web_data.LocalGuide(guide, "Validated grabber", "validated")],
                 root,
                 datetime(2026, 5, 2, 12, 15, tzinfo=timezone.utc),
-                sports_only=True,
+                premium_sports_only=True,
             )
 
-        self.assertEqual([channel["name"] for channel in payload["channels"]], ["Tennis Channel"])
+        self.assertEqual([channel["name"] for channel in payload["channels"]], ["Canal+ Sport"])
 
 
 if __name__ == "__main__":
