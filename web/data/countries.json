@@ -1,23 +1,29 @@
 {
-  "generatedAt": "2026-05-02T19:28:01.790451Z",
+  "generatedAt": "2026-05-02T19:53:12.259574Z",
   "countries": [
     {
       "code": "FR",
       "name": "France",
       "channelCount": 12,
-      "dataUrl": "data/FR.json"
+      "sportsChannelCount": 25,
+      "dataUrl": "data/FR.json",
+      "sportsDataUrl": "data/sports-FR.json"
     },
     {
       "code": "ES",
       "name": "Spain",
       "channelCount": 18,
-      "dataUrl": "data/ES.json"
+      "sportsChannelCount": 32,
+      "dataUrl": "data/ES.json",
+      "sportsDataUrl": "data/sports-ES.json"
     },
     {
       "code": "CA",
       "name": "Canada",
       "channelCount": 20,
-      "dataUrl": "data/CA.json"
+      "sportsChannelCount": 44,
+      "dataUrl": "data/CA.json",
+      "sportsDataUrl": "data/sports-CA.json"
     }
   ]
 }

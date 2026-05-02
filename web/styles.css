@@ -121,6 +121,32 @@ h2 {
   font-weight: 900;
 }
 
+.mode-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgb(255 255 255 / 54%);
+  padding: 0.35rem;
+}
+
+.mode-button {
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  padding: 0.65rem 0.7rem;
+  color: var(--muted);
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background: var(--accent);
+  color: white;
+}
+
 .search {
   width: 100%;
   margin-bottom: 1rem;
@@ -198,6 +224,13 @@ h2 {
 
 .channel-name {
   font-weight: 800;
+}
+
+.channel-meta {
+  margin-top: 0.1rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 850;
 }
 
 .channel-now {

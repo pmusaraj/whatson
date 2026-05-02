@@ -1,17 +1,20 @@
 {
   "country": "FR",
   "countryName": "France",
-  "generatedAt": "2026-05-02T19:28:01.790451Z",
+  "generatedAt": "2026-05-02T19:53:12.259574Z",
   "windowHours": 3,
+  "sportsOnly": false,
   "sourceGuides": [
     "data/normalized/guide-FR-tv.sfr.fr.xml"
   ],
   "channelCount": 12,
   "channels": [
     {
-      "id": "13emeRue.fr",
+      "id": "validated:13emeRue.fr",
       "name": "13ème rue",
       "logoUrl": "https://i.imgur.com/k0DCMTL.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -43,25 +46,21 @@
       ]
     },
     {
-      "id": "AB1.fr",
+      "id": "validated:AB1.fr",
       "name": "AB1",
       "logoUrl": "https://i.imgur.com/9C7UsOe.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "Stargate SG-1",
-        "description": "Anise, la nouvelle porte-parole des Tok'ra, arrive par la Porte des étoiles et apporte avec elle de mystérieux bracelets découverts dans les ruines d'une lointaine planète. Elle pense qu'ils constituent une arme efficace contre les Goa'ulds et demande à des humains de les tester. O'Neill, Carter et Jackson se portent volontaires. Bientôt, leur force et leur vélocité sont décuplées, mais ils ignorent qu'un virus court désormais dans leur sang. Leur organisme ne peut supporter très longtemps un tel surrégime. Envoyés en mission, les membres de SG-1 s'évanouissent les uns après les autres, victimes d'une dépense énergétique trop importante...",
-        "startAt": "2026-05-02T18:55:00Z",
-        "endAt": "2026-05-02T19:43:00Z"
+        "description": "La prêtresse Shan'auc demande l'aide urgente de l'équipe SG-1. Teal'c l'accueille avec beaucoup de chaleur et il semble évident à tous que les deux jeunes gens sont encore amoureux. Shan'auc leur confie qu'elle a découvert un moyen de communiquer avec le symbiote qu'elle porte en elle. En retour, ce démon, qui vit sous forme d'un reptile, s'est approprié une partie de sa mémoire. La larve goa'uld prétend qu'elle veut renier le passé démoniaque de ses ancêtres et aider la Tok'ra et les Terriens à battre les Goa'ulds. Teal'c se montre méfiant, mais finit par croire au discours de Shan'auc. Il décide d'entrer en méditation pour dialoguer avec la larve qu'il porte en lui et vérifier ses intentions...",
+        "startAt": "2026-05-02T19:43:00Z",
+        "endAt": "2026-05-02T20:31:00Z"
       },
       "programs": [
-        {
-          "title": "Stargate SG-1",
-          "description": "Anise, la nouvelle porte-parole des Tok'ra, arrive par la Porte des étoiles et apporte avec elle de mystérieux bracelets découverts dans les ruines d'une lointaine planète. Elle pense qu'ils constituent une arme efficace contre les Goa'ulds et demande à des humains de les tester. O'Neill, Carter et Jackson se portent volontaires. Bientôt, leur force et leur vélocité sont décuplées, mais ils ignorent qu'un virus court désormais dans leur sang. Leur organisme ne peut supporter très longtemps un tel surrégime. Envoyés en mission, les membres de SG-1 s'évanouissent les uns après les autres, victimes d'une dépense énergétique trop importante...",
-          "startAt": "2026-05-02T18:55:00Z",
-          "endAt": "2026-05-02T19:43:00Z"
-        },
         {
           "title": "Stargate SG-1",
           "description": "La prêtresse Shan'auc demande l'aide urgente de l'équipe SG-1. Teal'c l'accueille avec beaucoup de chaleur et il semble évident à tous que les deux jeunes gens sont encore amoureux. Shan'auc leur confie qu'elle a découvert un moyen de communiquer avec le symbiote qu'elle porte en elle. En retour, ce démon, qui vit sous forme d'un reptile, s'est approprié une partie de sa mémoire. La larve goa'uld prétend qu'elle veut renier le passé démoniaque de ses ancêtres et aider la Tok'ra et les Terriens à battre les Goa'ulds. Teal'c se montre méfiant, mais finit par croire au discours de Shan'auc. Il décide d'entrer en méditation pour dialoguer avec la larve qu'il porte en lui et vérifier ses intentions...",
@@ -85,13 +84,21 @@
           "description": "Sam et Dean Winchester s'intéressent à une bien étrange affaire. En effet, deux morts étranges survenues dans une sympathique auberge du Connecticut attirent leur attention. Une fois sur place, ils découvrent que la propriétaire des lieux est une mère célibataire qui mène une existence sans histoires. Sam et Dean remarquent tout de suite que la petite fille de cette femme affirme jouer régulièrement avec un ami imaginaire. Les deux frères comprennent qu'un sort a été jeté sur l'établissement. Ils soupçonnent l'ami imaginaire de l'enfant d'être un démon...",
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:40:00Z"
+        },
+        {
+          "title": "Supernatural",
+          "description": "Sam et Dean enquêtent sur une série de vols ayant un point commun troublant : dans tous les cas, un employé, jusque-là irréprochable, braque une banque avant de se suicider. Quand l'autopsie dévoile que les braqueurs étaient morts plusieurs jours avant les hold-up, les deux frères comprennent qu'ils ont affaire à une créature capable de changer d'apparence...",
+          "startAt": "2026-05-02T22:40:00Z",
+          "endAt": "2026-05-02T23:25:00Z"
         }
       ]
     },
     {
-      "id": "Action.fr",
+      "id": "validated:Action.fr",
       "name": "Action",
       "logoUrl": "https://i.imgur.com/Zv9VsVq.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -113,29 +120,37 @@
           "description": "Dans un établissement pénitentiaire, David Aames raconte son histoire au docteur McCabe, qui surveille attentivement la santé du détenu. Homme comblé, David était autrefois à la tête d'une importante maison d'édition, à New York. Cette vie sans embûches semblait n'être perturbée que par la surveillance, fort pesante, du Conseil d'administration, \"les 7 Nains\". David fréquentait une ravissante blonde, Julie Gianni, pour laquelle il n'avait toutefois jamais éprouvé un quelconque sentiment amoureux. Lors de la soirée d'anniversaire du séduisant éditeur, son meilleur ami, Brian, était venu au bras de Sofia, une adorable créature dont David s'était aussitôt épris...",
           "startAt": "2026-05-02T20:17:00Z",
           "endAt": "2026-05-02T22:29:00Z"
+        },
+        {
+          "title": "Ciné ou canap ?",
+          "description": "Emission hebdomadaire consacrée à toute l'actualité du cinéma et des séries !",
+          "startAt": "2026-05-02T22:29:00Z",
+          "endAt": "2026-05-02T22:38:00Z"
+        },
+        {
+          "title": "La vie amoureuse de l'homme invisible",
+          "description": "Le docteur Orloff est un savant fou qui multiplie les expériences étranges et tente de créer un être vivant. Un jour, il parvient à donner la vie à une créature extraordianire. Le savant décide d'étudier le comportement sexuel du monstre. Orloff est agréablement surpris en réalisant que sa créature rencontre un succès indéniable auprès de la gente féminine. Il retrouve bientôt le monstrueux personnage entouré de nombreuses jeunes femmes...",
+          "startAt": "2026-05-02T22:38:00Z",
+          "endAt": "2026-05-02T23:55:00Z"
         }
       ]
     },
     {
-      "id": "Animaux.fr",
+      "id": "validated:Animaux.fr",
       "name": "Animaux",
       "logoUrl": "https://i.imgur.com/FM9FVAG.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "Sauvetage animal",
-        "description": "Éric découvre que plusieurs bénévoles manquent à l'appel. Avec Isabelle, ils lancent une campagne pour recruter de nouveaux membres dans l'équipe.",
-        "startAt": "2026-05-02T19:21:00Z",
-        "endAt": "2026-05-02T19:44:00Z"
+        "description": "L'équipe revient sur ses sauvetages les plus marquants de la saison, retraçant ses victoires face aux peurs lors d'interventions extrêmes.",
+        "startAt": "2026-05-02T19:44:00Z",
+        "endAt": "2026-05-02T20:06:00Z"
       },
       "programs": [
-        {
-          "title": "Sauvetage animal",
-          "description": "Éric découvre que plusieurs bénévoles manquent à l'appel. Avec Isabelle, ils lancent une campagne pour recruter de nouveaux membres dans l'équipe.",
-          "startAt": "2026-05-02T19:21:00Z",
-          "endAt": "2026-05-02T19:44:00Z"
-        },
         {
           "title": "Sauvetage animal",
           "description": "L'équipe revient sur ses sauvetages les plus marquants de la saison, retraçant ses victoires face aux peurs lors d'interventions extrêmes.",
@@ -159,13 +174,21 @@
           "description": "Scipio, le lion qui a accueilli Jorge, forme une coalition pour reconquérir son royaume. Pendant la bataille, Jorge revient sur ses 3000 nuits parmi les lions.",
           "startAt": "2026-05-02T21:44:00Z",
           "endAt": "2026-05-02T22:34:00Z"
+        },
+        {
+          "title": "Animaux stars",
+          "description": null,
+          "startAt": "2026-05-02T22:34:00Z",
+          "endAt": "2026-05-02T23:04:00Z"
         }
       ]
     },
     {
-      "id": "Automotolachaine.fr",
+      "id": "validated:Automotolachaine.fr",
       "name": "Auto Moto",
       "logoUrl": "https://i.imgur.com/ebf2uc7.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -197,25 +220,21 @@
       ]
     },
     {
-      "id": "CanalJ.fr",
+      "id": "validated:CanalJ.fr",
       "name": "Canal J",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Canal_J_2019_Logo.png/960px-Canal_J_2019_Logo.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "Pokémon Advanced",
-        "description": "Alors qu'ils se dirigent vers la Vallée du Fenouil, où Sacha espère prendre sa revanche sur Brandon, les héros rencontrent un Pijako, un Pokémon pouvant imiter ce qu'il entend.",
-        "startAt": "2026-05-02T19:15:00Z",
-        "endAt": "2026-05-02T19:40:00Z"
+        "description": "Sur la route de la Vallée du Fenouil, le Capumain de Sacha prend la poudre d'escampette et tombe sur un Dimoret belliqueux. Capumain est prêt à se battre.",
+        "startAt": "2026-05-02T19:40:00Z",
+        "endAt": "2026-05-02T20:05:00Z"
       },
       "programs": [
-        {
-          "title": "Pokémon Advanced",
-          "description": "Alors qu'ils se dirigent vers la Vallée du Fenouil, où Sacha espère prendre sa revanche sur Brandon, les héros rencontrent un Pijako, un Pokémon pouvant imiter ce qu'il entend.",
-          "startAt": "2026-05-02T19:15:00Z",
-          "endAt": "2026-05-02T19:40:00Z"
-        },
         {
           "title": "Pokémon Advanced",
           "description": "Sur la route de la Vallée du Fenouil, le Capumain de Sacha prend la poudre d'escampette et tombe sur un Dimoret belliqueux. Capumain est prêt à se battre.",
@@ -231,25 +250,21 @@
       ]
     },
     {
-      "id": "ChassePeche.fr",
+      "id": "validated:ChassePeche.fr",
       "name": "Chasse et Pêche",
       "logoUrl": "https://i.imgur.com/ZIS2ZQ1.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "Québec à vol d'oiseau",
-        "description": "L'équipe se rend en Gaspésie pour rencontrer les bécasses pour la chasse et le saumon pour la pêche. Le groupe Monde Sauvage, qui gère plusieurs destinations dans cette région, assure l'encadrement de ces activités.",
-        "startAt": "2026-05-02T19:17:00Z",
-        "endAt": "2026-05-02T19:40:00Z"
+        "description": "Après plusieurs années à chasser l'orignal dans Charlevoix, QVO livre sa dernière aventure à la Pourvoirie Bataram. Le grand cervidé anime ce rendez-vous nature dans un décor des plus fabuleux.",
+        "startAt": "2026-05-02T19:40:00Z",
+        "endAt": "2026-05-02T20:04:00Z"
       },
       "programs": [
-        {
-          "title": "Québec à vol d'oiseau",
-          "description": "L'équipe se rend en Gaspésie pour rencontrer les bécasses pour la chasse et le saumon pour la pêche. Le groupe Monde Sauvage, qui gère plusieurs destinations dans cette région, assure l'encadrement de ces activités.",
-          "startAt": "2026-05-02T19:17:00Z",
-          "endAt": "2026-05-02T19:40:00Z"
-        },
         {
           "title": "Québec à vol d'oiseau",
           "description": "Après plusieurs années à chasser l'orignal dans Charlevoix, QVO livre sa dernière aventure à la Pourvoirie Bataram. Le grand cervidé anime ce rendez-vous nature dans un décor des plus fabuleux.",
@@ -289,9 +304,11 @@
       ]
     },
     {
-      "id": "France2.fr",
+      "id": "validated:France2.fr",
       "name": "France 2",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/France_2_2018.svg/960px-France_2_2018.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -317,9 +334,11 @@
       ]
     },
     {
-      "id": "France5.fr",
+      "id": "validated:France5.fr",
       "name": "France 5",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/France_5_2018.svg/960px-France_5_2018.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -353,13 +372,21 @@
           "description": "Les territoires ultramarins abritent une faune et une flore d'une richesse exceptionnelle. A eux seuls, ils concentrent près de 80 % de la biodiversité française.",
           "startAt": "2026-05-02T22:15:00Z",
           "endAt": "2026-05-02T22:40:00Z"
+        },
+        {
+          "title": "Les docs de La Grande Librairie",
+          "description": "Chercheur d'or, marin, vagabond, militant socialiste, reporter : en 40 ans, Jack London a vécu mille vies et transformé chaque expérience en matière littéraire. Son oeuvre foisonnante reflète la complexité d'un homme profondément paradoxal : socialiste convaincu et individualiste forcené, assoiffé de gloire mais fuyant la société, débordant d'énergie et traversé par des abîmes de désespoir. C'est précisément cette tension permanente qui confère à son oeuvre une portée existentielle rare. Sa philosophie tient en une formule : brûler plutôt que durer.",
+          "startAt": "2026-05-02T22:40:00Z",
+          "endAt": "2026-05-03T00:10:00Z"
         }
       ]
     },
     {
-      "id": "Mangas.fr",
+      "id": "validated:Mangas.fr",
       "name": "Mangas",
       "logoUrl": "https://i.imgur.com/wmmEOza.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
@@ -405,29 +432,31 @@
           "description": "De retour de zone interdite, les Nettoyeurs aimeraient bien souffler. Mais les Vandales rodent.",
           "startAt": "2026-05-02T22:18:00Z",
           "endAt": "2026-05-02T22:43:00Z"
+        },
+        {
+          "title": "Gachiakuta",
+          "description": "Le grand affrontement entre les Nettoyeurs et les Vandales peut commencer !",
+          "startAt": "2026-05-02T22:43:00Z",
+          "endAt": "2026-05-02T23:08:00Z"
         }
       ]
     },
     {
-      "id": "SerieClub.fr",
+      "id": "validated:SerieClub.fr",
       "name": "SERIE CLUB",
       "logoUrl": "https://i.imgur.com/V8wRRg5.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "Irrational",
-        "description": "Wes Banning est parvenu à s'échapper pendant un transfert. Marissa prévient aussitôt Mercer. Celui-ci craint que le criminel ne prenne le siège du FBI comme cible et, plus précisément, son ex-épouse. Tout en sécurisant l'immeuble, la police fédérale se lance dans une chasse à l'homme, ignorant que Banning a pris Mercer, Phoebe et Rizwan en otages. Jace fait une découverte qui remet en question bien des certitudes...",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:45:00Z"
+        "description": "Après un décès qui la touche de près, Marisa est plus déterminée que jamais à arrêter le poseur de bombe. La découverte d'un micro caché chez elle lui fait prendre conscience que quelqu'un au FBI a suivi toutes ses avancées sur l'enquête. Avec l'aide de Mercer, elle remonte la piste du criminel...",
+        "startAt": "2026-05-02T19:45:00Z",
+        "endAt": "2026-05-02T20:30:00Z"
       },
       "programs": [
-        {
-          "title": "Irrational",
-          "description": "Wes Banning est parvenu à s'échapper pendant un transfert. Marissa prévient aussitôt Mercer. Celui-ci craint que le criminel ne prenne le siège du FBI comme cible et, plus précisément, son ex-épouse. Tout en sécurisant l'immeuble, la police fédérale se lance dans une chasse à l'homme, ignorant que Banning a pris Mercer, Phoebe et Rizwan en otages. Jace fait une découverte qui remet en question bien des certitudes...",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:45:00Z"
-        },
         {
           "title": "Irrational",
           "description": "Après un décès qui la touche de près, Marisa est plus déterminée que jamais à arrêter le poseur de bombe. La découverte d'un micro caché chez elle lui fait prendre conscience que quelqu'un au FBI a suivi toutes ses avancées sur l'enquête. Avec l'aide de Mercer, elle remonte la piste du criminel...",
@@ -455,25 +484,21 @@
       ]
     },
     {
-      "id": "ToutelHistoire.fr",
+      "id": "validated:ToutelHistoire.fr",
       "name": "Toute l'histoire",
       "logoUrl": "https://i.imgur.com/xRfyQYn.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
         "title": "A la recherche des sous-marins perdus",
-        "description": "Les chasseurs de trésors enquêtent sur la disparition du trésor nazi, pillé pendant la Seconde Guerre mondiale et estimé à plusieurs milliards.",
-        "startAt": "2026-05-02T18:40:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "description": "Des trésors pillés par les nazis pourraient reposer au fond des Caraïbes. Le chasseur Darrell Miklos et son équipe partent à leur recherche, guidés par des documents top secrets.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:22:00Z"
       },
       "programs": [
-        {
-          "title": "A la recherche des sous-marins perdus",
-          "description": "Les chasseurs de trésors enquêtent sur la disparition du trésor nazi, pillé pendant la Seconde Guerre mondiale et estimé à plusieurs milliards.",
-          "startAt": "2026-05-02T18:40:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "A la recherche des sous-marins perdus",
           "description": "Des trésors pillés par les nazis pourraient reposer au fond des Caraïbes. Le chasseur Darrell Miklos et son équipe partent à leur recherche, guidés par des documents top secrets.",
@@ -491,6 +516,12 @@
           "description": "Robert Badinter est entré au Panthéon le 9 octobre 2025, lors de la date anniversaire de la promulgation de la loi d'abolition de la peine de mort de 1981. Mais l'abolition ne fut pas le seul combat de Robert Badinter. Il s'engagea également pour l'amélioration des conditions de vie des détenus, l'égalité des homosexuels devant la loi, la prééminence de l'Etat de droit ou encore pour honorer la mémoire des victimes de la Seconde guerre mondiale.",
           "startAt": "2026-05-02T21:56:00Z",
           "endAt": "2026-05-02T22:52:00Z"
+        },
+        {
+          "title": "François Mitterrand, que reste-t-il de nos amours ?",
+          "description": "Tout à la fois icône adulée et fantôme encombrant de la gauche, François Mitterrand, vingt ans après sa mort, continue de hanter la scène politique, illusion de socialisme perdu et regret voilé d'une génération politique disparue. Pour mieux cerner les contours flous de cet héritage, William Karel revisite avec précision les deux septennats en clair-obscur du premier président socialiste, qui avait promis, citant Rimbaud, de \"changer la vie\". Avec les témoignages de Roland Dumas, Laurent Fabius, Ségolène Royal, Jacques Attali, Georges-Marc Benamou ou encore Laure Adler, ce film, riche en images d'archives, retrace les hauts et les bas du long règne d'un homme habité par le pouvoir et rongé par la maladie.",
+          "startAt": "2026-05-02T22:52:00Z",
+          "endAt": "2026-05-03T00:26:00Z"
         }
       ]
     }

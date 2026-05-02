@@ -5,10 +5,13 @@ const state = {
   countryDataByCode: new Map(),
   selectedChannelKeys: loadSelection(),
   search: "",
+  mode: localStorage.getItem("whatsontv.channelMode") === "sports" ? "sports" : "all",
 };
 
 const els = {
   status: document.querySelector("#status"),
+  showAll: document.querySelector("#show-all"),
+  showSports: document.querySelector("#show-sports"),
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   guide: document.querySelector("#guide"),
@@ -43,6 +46,14 @@ function channelKey(countryCode, channelId) {
   return `${countryCode}:${channelId}`;
 }
 
+function parseChannelKey(key) {
+  const separator = key.indexOf(":");
+  if (separator === -1) {
+    return [null, null];
+  }
+  return [key.slice(0, separator), key.slice(separator + 1)];
+}
+
 function selectedSet() {
   return new Set(state.selectedChannelKeys);
 }
@@ -50,7 +61,7 @@ function selectedSet() {
 function selectedChannels() {
   return state.selectedChannelKeys
     .map((key) => {
-      const [countryCode, channelId] = key.split(":");
+      const [countryCode, channelId] = parseChannelKey(key);
       const countryData = state.countryDataByCode.get(countryCode);
       const channel = countryData?.channels.find((item) => item.id === channelId);
       if (!countryData || !channel) {
@@ -105,12 +116,19 @@ async function loadJson(url) {
 async function loadGuideData() {
   const data = await loadJson("data/countries.json");
   state.countries = data.countries;
-  const countryPayloads = await Promise.all(state.countries.map((country) => loadJson(country.dataUrl)));
+  await loadCountryPayloads();
+}
+
+async function loadCountryPayloads() {
+  state.countryDataByCode.clear();
+  const countryPayloads = await Promise.all(
+    state.countries.map((country) => loadJson(state.mode === "sports" ? country.sportsDataUrl : country.dataUrl))
+  );
   for (const payload of countryPayloads) {
     state.countryDataByCode.set(payload.country, payload);
   }
   state.selectedChannelKeys = state.selectedChannelKeys.filter((key) => {
-    const [countryCode, channelId] = key.split(":");
+    const [countryCode, channelId] = parseChannelKey(key);
     return state.countryDataByCode.get(countryCode)?.channels.some((channel) => channel.id === channelId);
   });
   saveSelection();
@@ -124,7 +142,7 @@ function channelMatchesSearch(countryData, channel, query) {
   if (!query) {
     return true;
   }
-  return countryMatchesSearch(countryData, query) || channel.name.toLowerCase().includes(query);
+  return countryMatchesSearch(countryData, query) || channel.name.toLowerCase().includes(query) || channel.provider.toLowerCase().includes(query);
 }
 
 function renderChannelList() {
@@ -150,6 +168,7 @@ function renderChannelList() {
               <input type="checkbox" value="${escapeHtml(key)}" ${checked ? "checked" : ""} ${disabled ? "disabled" : ""} />
               <div>
                 <div class="channel-name">${escapeHtml(channel.name)}</div>
+                <div class="channel-meta">${escapeHtml(channel.provider)}</div>
                 <div class="channel-now">${escapeHtml(current?.title || "No current program")}</div>
               </div>
               ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
@@ -211,7 +230,7 @@ function renderGuide() {
             ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
             <div>
               <div>${escapeHtml(channel.name)}</div>
-              <span>${escapeHtml(channel.countryName)}</span>
+              <span>${escapeHtml(channel.countryName)} · ${escapeHtml(channel.provider)}</span>
             </div>
           </div>
         </th>
@@ -232,11 +251,31 @@ function renderGuide() {
 }
 
 function render() {
-  const totalChannels = state.countries.reduce((sum, country) => sum + (country.channelCount || 0), 0);
-  els.status.textContent = `${state.countries.length} countries · ${totalChannels} channels loaded`;
+  const totalChannels = state.countries.reduce(
+    (sum, country) => sum + (state.mode === "sports" ? country.sportsChannelCount || 0 : country.channelCount || 0),
+    0
+  );
+  els.status.textContent = `${state.countries.length} countries · ${totalChannels} ${state.mode === "sports" ? "sports " : ""}channels loaded`;
+  els.showAll.classList.toggle("active", state.mode === "all");
+  els.showSports.classList.toggle("active", state.mode === "sports");
+  els.channelSearch.placeholder = state.mode === "sports" ? "Search sports channels" : "Search all channels";
   renderChannelList();
   renderGuide();
 }
+
+async function setMode(mode) {
+  if (state.mode === mode) {
+    return;
+  }
+  state.mode = mode;
+  localStorage.setItem("whatsontv.channelMode", mode);
+  els.status.textContent = "Loading guide data…";
+  await loadCountryPayloads();
+  render();
+}
+
+els.showAll.addEventListener("click", () => setMode("all"));
+els.showSports.addEventListener("click", () => setMode("sports"));
 
 els.channelSearch.addEventListener("input", (event) => {
   state.search = event.target.value;

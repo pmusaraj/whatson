@@ -1,8 +1,9 @@
 {
   "country": "CA",
   "countryName": "Canada",
-  "generatedAt": "2026-05-02T19:28:01.790451Z",
+  "generatedAt": "2026-05-02T19:53:12.259574Z",
   "windowHours": 3,
+  "sportsOnly": false,
   "sourceGuides": [
     "data/normalized/guide-CA-tvpassport.com.xml",
     "data/normalized/guide-CA-tvhebdo.com.xml"
@@ -10,9 +11,11 @@
   "channelCount": 20,
   "channels": [
     {
-      "id": "addikTV.ca",
+      "id": "validated:addikTV.ca",
       "name": "Addik TV",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Addik_TV.svg/960px-Addik_TV.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -44,25 +47,21 @@
       ]
     },
     {
-      "id": "AdultSwim.ca",
+      "id": "validated:AdultSwim.ca",
       "name": "Adult Swim SD",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
       "currentProgram": {
         "title": "Henri pis sa gang",
         "description": null,
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Henri pis sa gang",
-          "description": null,
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Henri pis sa gang",
           "description": null,
@@ -80,29 +79,31 @@
           "description": null,
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "Family Guy",
+          "description": null,
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "AMItele.ca",
+      "id": "validated:AMItele.ca",
       "name": "AMI-Télé",
       "logoUrl": null,
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
       "currentProgram": {
-        "title": "Ça me regarde",
+        "title": "Les critiques atypiques",
         "description": null,
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Ça me regarde",
-          "description": null,
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Les critiques atypiques",
           "description": null,
@@ -136,9 +137,11 @@
       ]
     },
     {
-      "id": "IciARTV.ca",
+      "id": "validated:IciARTV.ca",
       "name": "ARTV",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/ICI_ARTV.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml",
         "data/normalized/guide-CA-tvhebdo.com.xml"
@@ -177,9 +180,11 @@
       ]
     },
     {
-      "id": "ATNARYMusik.ca",
+      "id": "validated:ATNARYMusik.ca",
       "name": "ARY Musik",
       "logoUrl": "https://i.imgur.com/lqtbVpF.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -205,25 +210,21 @@
       ]
     },
     {
-      "id": "ATNARYZauq.ca",
+      "id": "validated:ATNARYZauq.ca",
       "name": "ARY Zauq",
       "logoUrl": "https://i.imgur.com/5awTqUx.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
       "currentProgram": {
-        "title": "Mari Time Chef",
-        "description": "Teaching the best ways to cook seafood.",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "Daal Sabzi",
+        "description": "Traditional Pakistani dishes by Arif Daud.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Mari Time Chef",
-          "description": "Teaching the best ways to cook seafood.",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Daal Sabzi",
           "description": "Traditional Pakistani dishes by Arif Daud.",
@@ -245,9 +246,11 @@
       ]
     },
     {
-      "id": "AssembleenationaleduQuebec.ca",
+      "id": "validated:AssembleenationaleduQuebec.ca",
       "name": "Assemblee nationale du Quebec",
       "logoUrl": "https://i.imgur.com/KFhhkEB.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -273,9 +276,11 @@
       ]
     },
     {
-      "id": "BNNBloomberg.ca",
+      "id": "validated:BNNBloomberg.ca",
       "name": "BNN Bloomberg",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/BNN_Bloomberg.svg/960px-BNN_Bloomberg.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
@@ -315,29 +320,31 @@
           "description": null,
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "CP24 Hot Property",
+          "description": null,
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CanalD.ca",
+      "id": "validated:CanalD.ca",
       "name": "Canal D",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
       "currentProgram": {
-        "title": "Paterno",
-        "description": "Joe Paterno est un joueur de football américain universitaire devenu entraîneur des Penn State Nittany Lions; il a été congédié en 2011 à la suite d'un scandale sexuel.",
-        "startAt": "2026-05-02T17:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "J'ai frôlé la mort",
+        "description": "Le 10 juin 2015, le chasseur Daniel Blanchard frôle la mort après avoir été attaqué par une maman ourse.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Paterno",
-          "description": "Joe Paterno est un joueur de football américain universitaire devenu entraîneur des Penn State Nittany Lions; il a été congédié en 2011 à la suite d'un scandale sexuel.",
-          "startAt": "2026-05-02T17:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "J'ai frôlé la mort",
           "description": "Le 10 juin 2015, le chasseur Daniel Blanchard frôle la mort après avoir été attaqué par une maman ourse.",
@@ -373,13 +380,21 @@
           "description": "Les acheteurs se dirigent vers San Diego dans l'espoir de trouver un trésor au sud de la frontière; Rene et Casey se lèvent pour défendre leur terrain contre Darrell et Brandon.",
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "La guerre des enchères",
+          "description": "À Westminster, Jarrod et Brandi cherchent à frapper rapidement et facilement.",
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CanalM.ca",
+      "id": "validated:CanalM.ca",
       "name": "Canal M",
       "logoUrl": "https://i.imgur.com/sWcRt5O.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -405,9 +420,11 @@
       ]
     },
     {
-      "id": "CanalVie.ca",
+      "id": "validated:CanalVie.ca",
       "name": "Canal Vie",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -439,9 +456,11 @@
       ]
     },
     {
-      "id": "Casa.ca",
+      "id": "validated:Casa.ca",
       "name": "CASA",
       "logoUrl": "https://i.imgur.com/JFYOl5D.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -479,9 +498,11 @@
       ]
     },
     {
-      "id": "CBATDT.ca",
+      "id": "validated:CBATDT.ca",
       "name": "CBC (CBAT) Fredericton, NB HD",
       "logoUrl": "https://i.imgur.com/xflShTG.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml"
       ],
@@ -515,13 +536,21 @@
           "description": "A roundup of the top stories of the week from across Atlantic Canada.",
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "Marketplace",
+          "description": "Driving into traffic jams plaguing cities across Canada to crown the country's worst commute, as we reveal the true cost of congestion and the solutions that aren't moving anywhere thanks to a lack of political will.",
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CBUTDT.ca",
+      "id": "validated:CBUTDT.ca",
       "name": "CBUT-2",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/CBUT_Logo_%28cleaned_up_ver%29.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
@@ -555,13 +584,21 @@
           "description": null,
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "Marketplace",
+          "description": null,
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CBMTDT.ca",
+      "id": "validated:CBMTDT.ca",
       "name": "CBVU-TV",
       "logoUrl": "https://i.imgur.com/OiiM6Mz.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
@@ -595,13 +632,21 @@
           "description": null,
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "Marketplace",
+          "description": null,
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CITYDT.ca",
+      "id": "validated:CITYDT.ca",
       "name": "CITY",
       "logoUrl": "https://i.imgur.com/OxK7WVD.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
@@ -633,9 +678,11 @@
       ]
     },
     {
-      "id": "CJNTDT.ca",
+      "id": "validated:CJNTDT.ca",
       "name": "CJNT (Metro 14)",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Citytv_logo.svg/960px-Citytv_logo.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
@@ -667,9 +714,11 @@
       ]
     },
     {
-      "id": "AnimalPlanet.ca",
+      "id": "validated:AnimalPlanet.ca",
       "name": "CTV Wild Canada HD",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvpassport.com.xml",
         "data/normalized/guide-CA-tvhebdo.com.xml"
@@ -708,25 +757,21 @@
       ]
     },
     {
-      "id": "GameTV.ca",
+      "id": "validated:GameTV.ca",
       "name": "GAME TV",
       "logoUrl": "https://i.imgur.com/9ddVzCC.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],
       "currentProgram": {
-        "title": "Match Game",
+        "title": "Chain Reaction",
         "description": null,
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Match Game",
-          "description": null,
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Chain Reaction",
           "description": null,
@@ -756,13 +801,21 @@
           "description": null,
           "startAt": "2026-05-02T22:00:00Z",
           "endAt": "2026-05-02T22:30:00Z"
+        },
+        {
+          "title": "Family Feud Canada",
+          "description": null,
+          "startAt": "2026-05-02T22:30:00Z",
+          "endAt": "2026-05-02T23:00:00Z"
         }
       ]
     },
     {
-      "id": "CTVLifeChannel.ca",
+      "id": "validated:CTVLifeChannel.ca",
       "name": "CTV LIFE SD",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/CTV_Life_Channel_2019.svg/500px-CTV_Life_Channel_2019.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-CA-tvhebdo.com.xml"
       ],

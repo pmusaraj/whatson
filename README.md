@@ -96,7 +96,18 @@ Then open:
 http://localhost:8000
 ```
 
-The prototype shows all France, Spain, and Canada channels grouped by country. Users can select up to three channels, and the guide renders those selected channels as table columns with current and next-3-hours programming. Selections are saved in browser `localStorage`.
+The prototype shows all France, Spain, and Canada channels grouped by country. Users can switch between all channels and a sports-only view, select up to three channels, and the guide renders those selected channels as table columns with current and next-3-hours programming. Selections are saved in browser `localStorage`.
+
+The sports-only view combines:
+
+- sports channels found in the validated XMLTV snapshots
+- FAST sports channels from `i.mjh.nz` Pluto TV, Samsung TV Plus, and Plex XMLTV feeds
+
+Current sports-channel counts:
+
+- France: 25
+- Spain: 32
+- Canada: 44
 
 ## Tests
 

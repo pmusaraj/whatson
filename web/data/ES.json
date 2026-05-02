@@ -1,8 +1,9 @@
 {
   "country": "ES",
   "countryName": "Spain",
-  "generatedAt": "2026-05-02T19:28:01.790451Z",
+  "generatedAt": "2026-05-02T19:53:12.259574Z",
   "windowHours": 3,
+  "sportsOnly": false,
   "sourceGuides": [
     "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
     "data/normalized/guide-ES-orangetv.orange.es.xml"
@@ -10,25 +11,21 @@
   "channelCount": 18,
   "channels": [
     {
-      "id": "AMCBreak.es",
+      "id": "validated:AMCBreak.es",
       "name": "AMC BREAK",
       "logoUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d3/AMC_Break_Print.svg/revision/latest/scale-to-width-down/512",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Empeños a lo bestia - T1, E03: Dinero peligroso",
-        "description": "Una clienta enfadada amenaza a Les y pone en alerta máxima a toda la tienda. En medio del caos, Ashley y Seth hacen una apuesta amistosa sobre si se venderá una barra de striptease.",
-        "startAt": "2026-05-02T19:15:54Z",
-        "endAt": "2026-05-02T19:44:46Z"
+        "title": "Empeños a lo bestia - T1, E04: Alcohol y armas",
+        "description": "Los Gold discrepan sobre la necesidad de que todos lleven armas en la tienda después de que un cliente amenazase a Les. Además, las habilidades de negociación de Ashley quedan en entredicho.",
+        "startAt": "2026-05-02T19:44:46Z",
+        "endAt": "2026-05-02T20:12:17Z"
       },
       "programs": [
-        {
-          "title": "Empeños a lo bestia - T1, E03: Dinero peligroso",
-          "description": "Una clienta enfadada amenaza a Les y pone en alerta máxima a toda la tienda. En medio del caos, Ashley y Seth hacen una apuesta amistosa sobre si se venderá una barra de striptease.",
-          "startAt": "2026-05-02T19:15:54Z",
-          "endAt": "2026-05-02T19:44:46Z"
-        },
         {
           "title": "Empeños a lo bestia - T1, E04: Alcohol y armas",
           "description": "Los Gold discrepan sobre la necesidad de que todos lleven armas en la tienda después de que un cliente amenazase a Les. Además, las habilidades de negociación de Ashley quedan en entredicho.",
@@ -56,25 +53,21 @@
       ]
     },
     {
-      "id": "AMCCrime.es",
+      "id": "validated:AMCCrime.es",
       "name": "AMC CRIME",
       "logoUrl": "https://i.imgur.com/g8zMKwk.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Crímenes en Los Ángeles - T1, E06: Crímenes en Los Ángeles",
-        "description": "Tras el violento asesinato de un cámara de Hollywood en su propia casa, los detectives siguen la pista de una enmarañada red de mentiras que les conduce a otro cadáver y a un asesino dispuesto a todo.",
-        "startAt": "2026-05-02T18:50:47Z",
-        "endAt": "2026-05-02T19:39:58Z"
+        "title": "Crímenes en Los Ángeles - T1, E07: Muerte de un policía",
+        "description": "Cuando un agente de policía de Manhattan Beach es abatido a tiros durante un control de tráfico, los detectives confían en el testimonio de un niño traumatizado que ha presenciado lo ocurrido.",
+        "startAt": "2026-05-02T19:39:58Z",
+        "endAt": "2026-05-02T20:29:02Z"
       },
       "programs": [
-        {
-          "title": "Crímenes en Los Ángeles - T1, E06: Crímenes en Los Ángeles",
-          "description": "Tras el violento asesinato de un cámara de Hollywood en su propia casa, los detectives siguen la pista de una enmarañada red de mentiras que les conduce a otro cadáver y a un asesino dispuesto a todo.",
-          "startAt": "2026-05-02T18:50:47Z",
-          "endAt": "2026-05-02T19:39:58Z"
-        },
         {
           "title": "Crímenes en Los Ángeles - T1, E07: Muerte de un policía",
           "description": "Cuando un agente de policía de Manhattan Beach es abatido a tiros durante un control de tráfico, los detectives confían en el testimonio de un niño traumatizado que ha presenciado lo ocurrido.",
@@ -102,32 +95,22 @@
       ]
     },
     {
-      "id": "Antena3.es",
+      "id": "validated:Antena3.es",
       "name": "Antena 3",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_Antena_3_2025_%28Naranja%29.svg",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Noticias fin de semana 2 Antena 3",
-        "description": "Presentan Matías Prats y Mónica Carrillo. Informativo que se emite sábado y domingo y que nos trae la actualidad del fin de semana con las noticias más destacadas de ámbito nacional e internacional.",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:45:00Z"
+        "title": "Deportes fin de semana 2 Antena 3",
+        "description": "Presenta Óscar Castellanos. Cada fin de semana los servicios informativos de Antena 3 nos acercan la actualidad del mundo del deporte.",
+        "startAt": "2026-05-02T19:45:00Z",
+        "endAt": "2026-05-02T19:55:00Z"
       },
       "programs": [
-        {
-          "title": "Noticias fin de semana 2 Antena 3",
-          "description": "Presentan Matías Prats y Mónica Carrillo. Informativo que se emite sábado y domingo y que nos trae la actualidad del fin de semana con las noticias más destacadas de ámbito nacional e internacional.",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:45:00Z"
-        },
-        {
-          "title": "Antena 3 Noticias 2 (Fin de semana) - T2026, E122: 2 de Marzo de 2024 Noche",
-          "description": "Edición vespertina del fin de semana de Antena 3 que sigue la estructura de los informativos diarios de la cadena. Matías Prats y Mónica Carrillo se encargan de presentar las diversas ediciones del fin de semana.",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:45:00Z"
-        },
         {
           "title": "Deportes fin de semana 2 Antena 3",
           "description": "Presenta Óscar Castellanos. Cada fin de semana los servicios informativos de Antena 3 nos acercan la actualidad del mundo del deporte.",
@@ -167,9 +150,11 @@
       ]
     },
     {
-      "id": "Atreseries.es",
+      "id": "validated:Atreseries.es",
       "name": "Atreseries",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
@@ -201,9 +186,11 @@
       ]
     },
     {
-      "id": "BeMad.es",
+      "id": "validated:BeMad.es",
       "name": "Be Mad TV",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/BeMad_2022_Logo.svg",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
@@ -229,9 +216,11 @@
       ]
     },
     {
-      "id": "BetisTV.es",
+      "id": "validated:BetisTV.es",
       "name": "Betis TV",
       "logoUrl": "https://i.imgur.com/OI7kQzs.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
@@ -257,25 +246,21 @@
       ]
     },
     {
-      "id": "Boing.es",
+      "id": "validated:Boing.es",
       "name": "Boing",
       "logoUrl": "https://i.imgur.com/nUYuCAP.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Doraemon - T9, E07: La Maquina De La Inseguridad",
-        "description": "Nobita es un niño que vive con Doraemon, un gato cósmico procedente del siglo XXII, que tiene la misión de proteger a Nobita.",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "Teen Titans Go! La película",
+        "description": "Los Teen Titans se enteran de que todos los grandes superhéroes han tenido sus propias películas. Todos, excepto ellos. En ese momento, su líder Robin decide tomar cartas en el asunto y pasar a la gran pantalla.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:55:00Z"
       },
       "programs": [
-        {
-          "title": "Doraemon - T9, E07: La Maquina De La Inseguridad",
-          "description": "Nobita es un niño que vive con Doraemon, un gato cósmico procedente del siglo XXII, que tiene la misión de proteger a Nobita.",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Teen Titans Go! La película",
           "description": "Los Teen Titans se enteran de que todos los grandes superhéroes han tenido sus propias películas. Todos, excepto ellos. En ese momento, su líder Robin decide tomar cartas en el asunto y pasar a la gran pantalla.",
@@ -303,32 +288,22 @@
       ]
     },
     {
-      "id": "24Horas.es",
+      "id": "validated:24Horas.es",
       "name": "Canal 24 h",
       "logoUrl": "https://i.ibb.co/21sXZ3GT/24h.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
         "data/normalized/guide-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Deportes 2",
-        "description": "Resumen diario con las noticias más relevantes del deporte, tanto a nivel nacional como internacional.",
-        "startAt": "2026-05-02T19:25:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "Informe semanal",
+        "description": "Espacio informativo que ofrece nuevos reportajes cada semana para profundizar y analizar los temas de la actualidad nacional e internacional. Es el programa más veterano de la televisión en España, en emisión desde 1973, superado solo por el Telediario de TVE.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Deportes 2",
-          "description": "Resumen diario con las noticias más relevantes del deporte, tanto a nivel nacional como internacional.",
-          "startAt": "2026-05-02T19:25:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
-        {
-          "title": "Deportes 2 (RTVE)",
-          "description": "Actualidad deportiva diaria nacional e internacional.",
-          "startAt": "2026-05-02T19:25:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Informe semanal",
           "description": "Espacio informativo que ofrece nuevos reportajes cada semana para profundizar y analizar los temas de la actualidad nacional e internacional. Es el programa más veterano de la televisión en España, en emisión desde 1973, superado solo por el Telediario de TVE.",
@@ -386,9 +361,11 @@
       ]
     },
     {
-      "id": "CanalSurAndalucia.es",
+      "id": "validated:CanalSurAndalucia.es",
       "name": "Canal Sur Andalucía",
       "logoUrl": "https://i.imgur.com/lznnA4v.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -414,9 +391,11 @@
       ]
     },
     {
-      "id": "ETB1.es",
+      "id": "validated:ETB1.es",
       "name": "ETB 1",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/ETB1_2022_logo.svg/960px-ETB1_2022_logo.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -448,25 +427,21 @@
       ]
     },
     {
-      "id": "GaliciaTVEuropa.es",
+      "id": "validated:GaliciaTVEuropa.es",
       "name": "Galicia TV",
       "logoUrl": "https://i.imgur.com/dvkzH8n.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
       "currentProgram": {
-        "title": "Telexornal Serán FDS",
-        "description": "Informativo que se emite los sábados y los domingos. Incluye todas las noticias gallegas así como las nacionales e internacionales más destacadas del día.",
-        "startAt": "2026-05-02T18:58:00Z",
-        "endAt": "2026-05-02T19:48:00Z"
+        "title": "O tempo",
+        "description": "Información meteorológica y pronóstico del tiempo.",
+        "startAt": "2026-05-02T19:48:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Telexornal Serán FDS",
-          "description": "Informativo que se emite los sábados y los domingos. Incluye todas las noticias gallegas así como las nacionales e internacionales más destacadas del día.",
-          "startAt": "2026-05-02T18:58:00Z",
-          "endAt": "2026-05-02T19:48:00Z"
-        },
         {
           "title": "O tempo",
           "description": "Información meteorológica y pronóstico del tiempo.",
@@ -482,25 +457,21 @@
       ]
     },
     {
-      "id": "La1.es",
+      "id": "validated:La1.es",
       "name": "La 1",
       "logoUrl": "https://i.ibb.co/MxJNPHsn/La-1.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
       "currentProgram": {
-        "title": "Deportes 2",
-        "description": "Resumen diario con las noticias más relevantes del deporte, tanto a nivel nacional como internacional.",
-        "startAt": "2026-05-02T19:25:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "Informe semanal",
+        "description": "Espacio informativo que ofrece nuevos reportajes cada semana para profundizar y analizar los temas de la actualidad nacional e internacional. Es el programa más veterano de la televisión en España, en emisión desde 1973, superado solo por el Telediario de TVE.",
+        "startAt": "2026-05-02T19:30:00Z",
+        "endAt": "2026-05-02T20:05:00Z"
       },
       "programs": [
-        {
-          "title": "Deportes 2",
-          "description": "Resumen diario con las noticias más relevantes del deporte, tanto a nivel nacional como internacional.",
-          "startAt": "2026-05-02T19:25:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
         {
           "title": "Informe semanal",
           "description": "Espacio informativo que ofrece nuevos reportajes cada semana para profundizar y analizar los temas de la actualidad nacional e internacional. Es el programa más veterano de la televisión en España, en emisión desde 1973, superado solo por el Telediario de TVE.",
@@ -516,9 +487,11 @@
       ]
     },
     {
-      "id": "La2.es",
+      "id": "validated:La2.es",
       "name": "La 2",
       "logoUrl": "https://i.ibb.co/rfsr9PSh/La-2.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -544,31 +517,21 @@
       ]
     },
     {
-      "id": "Telecinco.es",
+      "id": "validated:Telecinco.es",
       "name": "Telecinco",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Telecinco_2024_Logo.svg",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
       "currentProgram": {
-        "title": "Informativos Telecinco fin de semana",
-        "description": "Edición fin de semana de los servicios informativos de Telecinco que nos ofrecen cada día toda la actualidad de ámbito nacional e internacional y las últimas noticias de deportes, cultura, sociedad y economía.",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T19:30:00Z"
+        "title": "El Tiempo Telecinco Fin de Semana 2",
+        "description": "Segunda edición del fin de semana de la información meteorológica y del pronóstico del tiempo.",
+        "startAt": "2026-05-02T19:40:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Informativos Telecinco fin de semana",
-          "description": "Edición fin de semana de los servicios informativos de Telecinco que nos ofrecen cada día toda la actualidad de ámbito nacional e internacional y las últimas noticias de deportes, cultura, sociedad y economía.",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T19:30:00Z"
-        },
-        {
-          "title": "Eldesmarque Telecinco 2",
-          "description": "Información sobre el mundo del deporte y sus protagonistas en Telecinco. Presentan Manu Carreño y Matías Prats Chacón.",
-          "startAt": "2026-05-02T19:30:00Z",
-          "endAt": "2026-05-02T19:40:00Z"
-        },
         {
           "title": "El Tiempo Telecinco Fin de Semana 2",
           "description": "Segunda edición del fin de semana de la información meteorológica y del pronóstico del tiempo.",
@@ -584,9 +547,11 @@
       ]
     },
     {
-      "id": "Teledeporte.es",
+      "id": "validated:Teledeporte.es",
       "name": "Teledeporte",
       "logoUrl": "https://i.ibb.co/0jxLdjnY/TDP.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -612,9 +577,11 @@
       ]
     },
     {
-      "id": "TelevisionCanaria.es",
+      "id": "validated:TelevisionCanaria.es",
       "name": "TelevisiónCanaria",
       "logoUrl": "https://rtvc.es/archivos/2020/03/logo-mobilretina.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -640,9 +607,11 @@
       ]
     },
     {
-      "id": "TV3.es",
+      "id": "validated:TV3.es",
       "name": "TV3",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/TV3.svg/960px-TV3.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
@@ -668,9 +637,11 @@
       ]
     },
     {
-      "id": "TV3CAT.es",
+      "id": "validated:TV3CAT.es",
       "name": "TV3CAT",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/TV3CAT.svg/960px-TV3CAT.svg.png",
+      "provider": "Validated grabber",
+      "providerKey": "validated",
       "sources": [
         "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
       ],
