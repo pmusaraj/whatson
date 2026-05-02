@@ -11,7 +11,7 @@
       <div>
         <p class="eyebrow">Prototype</p>
         <h1>What's On TV</h1>
-        <p class="lede">Pick a country, choose channels you like, then see what is on now and next.</p>
+        <p class="lede">Pick up to three channels, then compare what is on now and next in a simple grid.</p>
       </div>
       <div class="status" id="status">Loading guide data…</div>
     </header>
@@ -23,13 +23,10 @@
             <p class="eyebrow">Step 1</p>
             <h2 id="picker-title">Choose channels</h2>
           </div>
-          <label class="country-select">
-            Country
-            <select id="country-select"></select>
-          </label>
+          <div class="selection-limit">Max 3</div>
         </div>
 
-        <input id="channel-search" class="search" type="search" placeholder="Search channels" autocomplete="off" />
+        <input id="channel-search" class="search" type="search" placeholder="Search all channels" autocomplete="off" />
         <div id="channel-list" class="channel-list"></div>
       </section>
 

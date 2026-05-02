@@ -1,14 +1,14 @@
+const MAX_SELECTIONS = 3;
+
 const state = {
   countries: [],
-  countryCode: null,
-  countryData: null,
-  selectedByCountry: loadSelection(),
+  countryDataByCode: new Map(),
+  selectedChannelKeys: loadSelection(),
   search: "",
 };
 
 const els = {
   status: document.querySelector("#status"),
-  countrySelect: document.querySelector("#country-select"),
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   guide: document.querySelector("#guide"),
@@ -18,24 +18,47 @@ const els = {
 
 function loadSelection() {
   try {
-    return JSON.parse(localStorage.getItem("whatsontv.selectedChannels") || "{}");
+    const saved = JSON.parse(localStorage.getItem("whatsontv.selectedChannels") || "[]");
+    if (Array.isArray(saved)) {
+      return saved.slice(0, MAX_SELECTIONS);
+    }
+    if (saved && typeof saved === "object") {
+      return Object.entries(saved)
+        .flatMap(([countryCode, channelIds]) =>
+          Array.isArray(channelIds) ? channelIds.map((channelId) => channelKey(countryCode, channelId)) : []
+        )
+        .slice(0, MAX_SELECTIONS);
+    }
+    return [];
   } catch {
-    return {};
+    return [];
   }
 }
 
 function saveSelection() {
-  localStorage.setItem("whatsontv.selectedChannels", JSON.stringify(state.selectedByCountry));
+  localStorage.setItem("whatsontv.selectedChannels", JSON.stringify(state.selectedChannelKeys));
+}
+
+function channelKey(countryCode, channelId) {
+  return `${countryCode}:${channelId}`;
 }
 
 function selectedSet() {
-  const ids = state.selectedByCountry[state.countryCode] || [];
-  return new Set(ids);
+  return new Set(state.selectedChannelKeys);
 }
 
-function setSelectedSet(ids) {
-  state.selectedByCountry[state.countryCode] = Array.from(ids);
-  saveSelection();
+function selectedChannels() {
+  return state.selectedChannelKeys
+    .map((key) => {
+      const [countryCode, channelId] = key.split(":");
+      const countryData = state.countryDataByCode.get(countryCode);
+      const channel = countryData?.channels.find((item) => item.id === channelId);
+      if (!countryData || !channel) {
+        return null;
+      }
+      return { ...channel, countryCode, countryName: countryData.countryName, key };
+    })
+    .filter(Boolean);
 }
 
 function formatTime(value) {
@@ -71,120 +94,149 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-async function loadCountries() {
-  const response = await fetch("data/countries.json");
+async function loadJson(url) {
+  const response = await fetch(url);
   if (!response.ok) {
-    throw new Error("Could not load countries.json");
+    throw new Error(`Could not load ${url}`);
   }
-  const data = await response.json();
+  return response.json();
+}
+
+async function loadGuideData() {
+  const data = await loadJson("data/countries.json");
   state.countries = data.countries;
-  state.countryCode = state.countries[0]?.code;
-}
-
-async function loadCountry(code) {
-  const country = state.countries.find((item) => item.code === code);
-  const response = await fetch(country.dataUrl);
-  if (!response.ok) {
-    throw new Error(`Could not load ${country.dataUrl}`);
+  const countryPayloads = await Promise.all(state.countries.map((country) => loadJson(country.dataUrl)));
+  for (const payload of countryPayloads) {
+    state.countryDataByCode.set(payload.country, payload);
   }
-  state.countryCode = code;
-  state.countryData = await response.json();
-  state.search = "";
-  els.channelSearch.value = "";
+  state.selectedChannelKeys = state.selectedChannelKeys.filter((key) => {
+    const [countryCode, channelId] = key.split(":");
+    return state.countryDataByCode.get(countryCode)?.channels.some((channel) => channel.id === channelId);
+  });
+  saveSelection();
 }
 
-function renderCountrySelect() {
-  els.countrySelect.innerHTML = state.countries
-    .map((country) => `<option value="${country.code}">${country.name} (${country.channelCount})</option>`)
-    .join("");
-  els.countrySelect.value = state.countryCode;
+function countryMatchesSearch(countryData, query) {
+  return countryData.countryName.toLowerCase().includes(query) || countryData.country.toLowerCase().includes(query);
+}
+
+function channelMatchesSearch(countryData, channel, query) {
+  if (!query) {
+    return true;
+  }
+  return countryMatchesSearch(countryData, query) || channel.name.toLowerCase().includes(query);
 }
 
 function renderChannelList() {
   const selected = selectedSet();
   const query = state.search.trim().toLowerCase();
-  const channels = state.countryData.channels.filter((channel) => channel.name.toLowerCase().includes(query));
 
-  els.channelList.innerHTML = channels
-    .map((channel) => {
-      const current = channel.currentProgram || channel.programs[0];
-      return `
-        <label class="channel-choice">
-          <input type="checkbox" value="${escapeHtml(channel.id)}" ${selected.has(channel.id) ? "checked" : ""} />
-          <div>
-            <div class="channel-name">${escapeHtml(channel.name)}</div>
-            <div class="channel-now">${escapeHtml(current?.title || "No current program")}</div>
-          </div>
-          ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
-        </label>
-      `;
-    })
-    .join("");
-}
+  els.channelList.innerHTML = state.countries
+    .map((country) => {
+      const countryData = state.countryDataByCode.get(country.code);
+      const channels = countryData.channels.filter((channel) => channelMatchesSearch(countryData, channel, query));
+      if (!channels.length) {
+        return "";
+      }
 
-function renderGuide() {
-  const selected = selectedSet();
-  const selectedChannels = state.countryData.channels.filter((channel) => selected.has(channel.id));
-
-  els.selectedSummary.textContent = selectedChannels.length
-    ? `${selectedChannels.length} selected · showing current and next ${state.countryData.windowHours} hours`
-    : "No channels selected yet.";
-
-  if (!selectedChannels.length) {
-    els.guide.innerHTML = `<div class="empty-state">Pick a few channels on the left to build your personal guide.</div>`;
-    return;
-  }
-
-  els.guide.innerHTML = selectedChannels
-    .map((channel) => {
-      const programs = channel.programs
-        .map((program) => {
-          const current = isCurrent(program);
-          const progress = current ? `<div class="progress"><span style="width: ${progressPercent(program)}%"></span></div>` : "";
+      const choices = channels
+        .map((channel) => {
+          const key = channelKey(countryData.country, channel.id);
+          const checked = selected.has(key);
+          const disabled = !checked && state.selectedChannelKeys.length >= MAX_SELECTIONS;
+          const current = channel.currentProgram || channel.programs[0];
           return `
-            <article class="program ${current ? "current" : ""}">
-              <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
+            <label class="channel-choice ${disabled ? "disabled" : ""}">
+              <input type="checkbox" value="${escapeHtml(key)}" ${checked ? "checked" : ""} ${disabled ? "disabled" : ""} />
               <div>
-                <div class="program-title">${escapeHtml(program.title)}</div>
-                ${program.description ? `<p class="program-description">${escapeHtml(program.description)}</p>` : ""}
-                ${progress}
+                <div class="channel-name">${escapeHtml(channel.name)}</div>
+                <div class="channel-now">${escapeHtml(current?.title || "No current program")}</div>
               </div>
-            </article>
+              ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
+            </label>
           `;
         })
         .join("");
 
       return `
-        <section class="channel-card">
-          <header class="channel-card-header">
-            ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
-            <div>
-              <h3>${escapeHtml(channel.name)}</h3>
-              <div class="status">${channel.currentProgram ? "On now" : "Upcoming"}</div>
-            </div>
-          </header>
-          <div class="program-list">${programs}</div>
+        <section class="country-group">
+          <h3>${escapeHtml(countryData.countryName)} <span>${channels.length}</span></h3>
+          <div class="country-channels">${choices}</div>
         </section>
       `;
     })
     .join("");
 }
 
-function render() {
-  if (!state.countryData) {
+function programCell(program) {
+  if (!program) {
+    return `<div class="empty-program">No program in this slot</div>`;
+  }
+  const current = isCurrent(program);
+  const progress = current ? `<div class="progress"><span style="width: ${progressPercent(program)}%"></span></div>` : "";
+  return `
+    <article class="program ${current ? "current" : ""}">
+      <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
+      <div class="program-title">${escapeHtml(program.title)}</div>
+      ${program.description ? `<p class="program-description">${escapeHtml(program.description)}</p>` : ""}
+      ${progress}
+    </article>
+  `;
+}
+
+function renderGuide() {
+  const channels = selectedChannels();
+
+  els.selectedSummary.textContent = channels.length
+    ? `${channels.length}/${MAX_SELECTIONS} selected · current and next 3 hours`
+    : `No channels selected yet. Choose up to ${MAX_SELECTIONS}.`;
+
+  if (!channels.length) {
+    els.guide.innerHTML = `<div class="empty-state">Pick up to three channels on the left to build your guide table.</div>`;
     return;
   }
-  els.status.textContent = `${state.countryData.countryName} · generated ${new Date(state.countryData.generatedAt).toLocaleString()}`;
-  renderCountrySelect();
+
+  const maxRows = Math.max(...channels.map((channel) => channel.programs.length));
+  const rows = Array.from({ length: maxRows }, (_, index) => {
+    const label = index === 0 ? "Now" : `Next ${index}`;
+    const cells = channels.map((channel) => `<td>${programCell(channel.programs[index])}</td>`).join("");
+    return `<tr><th scope="row">${label}</th>${cells}</tr>`;
+  }).join("");
+
+  const headers = channels
+    .map(
+      (channel) => `
+        <th scope="col">
+          <div class="guide-channel-heading">
+            ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
+            <div>
+              <div>${escapeHtml(channel.name)}</div>
+              <span>${escapeHtml(channel.countryName)}</span>
+            </div>
+          </div>
+        </th>
+      `
+    )
+    .join("");
+
+  els.guide.innerHTML = `
+    <div class="guide-table-wrap">
+      <table class="guide-table">
+        <thead>
+          <tr><th scope="col">Slot</th>${headers}</tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+function render() {
+  const totalChannels = state.countries.reduce((sum, country) => sum + (country.channelCount || 0), 0);
+  els.status.textContent = `${state.countries.length} countries · ${totalChannels} channels loaded`;
   renderChannelList();
   renderGuide();
 }
-
-els.countrySelect.addEventListener("change", async (event) => {
-  els.status.textContent = "Loading guide data…";
-  await loadCountry(event.target.value);
-  render();
-});
 
 els.channelSearch.addEventListener("input", (event) => {
   state.search = event.target.value;
@@ -195,25 +247,35 @@ els.channelList.addEventListener("change", (event) => {
   if (event.target.type !== "checkbox") {
     return;
   }
+
+  const key = event.target.value;
   const selected = selectedSet();
-  if (event.target.checked) {
-    selected.add(event.target.value);
-  } else {
-    selected.delete(event.target.value);
+
+  if (event.target.checked && state.selectedChannelKeys.length >= MAX_SELECTIONS) {
+    event.target.checked = false;
+    return;
   }
-  setSelectedSet(selected);
-  renderGuide();
+
+  if (event.target.checked) {
+    selected.add(key);
+  } else {
+    selected.delete(key);
+  }
+
+  state.selectedChannelKeys = Array.from(selected).slice(0, MAX_SELECTIONS);
+  saveSelection();
+  render();
 });
 
 els.clearSelection.addEventListener("click", () => {
-  setSelectedSet(new Set());
+  state.selectedChannelKeys = [];
+  saveSelection();
   render();
 });
 
 async function start() {
   try {
-    await loadCountries();
-    await loadCountry(state.countryCode);
+    await loadGuideData();
     render();
   } catch (error) {
     els.status.textContent = error.message;

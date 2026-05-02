@@ -96,7 +96,7 @@ Then open:
 http://localhost:8000
 ```
 
-The prototype lets users pick France, Spain, or Canada, select favorite channels, and view the current program plus the next 3 hours. Selections are saved in browser `localStorage`.
+The prototype shows all France, Spain, and Canada channels grouped by country. Users can select up to three channels, and the guide renders those selected channels as table columns with current and next-3-hours programming. Selections are saved in browser `localStorage`.
 
 ## Tests
 
