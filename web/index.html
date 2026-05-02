@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What's On TV</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Prototype</p>
+        <h1>What's On TV</h1>
+        <p class="lede">Pick a country, choose channels you like, then see what is on now and next.</p>
+      </div>
+      <div class="status" id="status">Loading guide data…</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel picker-panel" aria-labelledby="picker-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Step 1</p>
+            <h2 id="picker-title">Choose channels</h2>
+          </div>
+          <label class="country-select">
+            Country
+            <select id="country-select"></select>
+          </label>
+        </div>
+
+        <input id="channel-search" class="search" type="search" placeholder="Search channels" autocomplete="off" />
+        <div id="channel-list" class="channel-list"></div>
+      </section>
+
+      <section class="panel guide-panel" aria-labelledby="guide-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Step 2</p>
+            <h2 id="guide-title">Your guide</h2>
+          </div>
+          <button id="clear-selection" class="secondary-button" type="button">Clear</button>
+        </div>
+        <div id="selected-summary" class="selected-summary"></div>
+        <div id="guide" class="guide"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

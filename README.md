@@ -75,6 +75,29 @@ Latest validation result:
 - Spain: 18 channels with programs, 18 with current program
 - Canada: 20 channels with programs, 11 with current program
 
+## Run the web prototype
+
+Build browser-friendly JSON from the validated XMLTV snapshots:
+
+```bash
+python3 scripts/build_web_data.py
+```
+
+Serve the static app:
+
+```bash
+cd web
+python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+The prototype lets users pick France, Spain, or Canada, select favorite channels, and view the current program plus the next 3 hours. Selections are saved in browser `localStorage`.
+
 ## Tests
 
 ```bash
