@@ -1,4 +1,4 @@
-const MAX_SELECTIONS = 3;
+const MAX_SELECTIONS = 5;
 
 const state = {
   countries: [],
@@ -211,7 +211,7 @@ function renderGuide() {
     : `No channels selected yet. Choose up to ${MAX_SELECTIONS}.`;
 
   if (!channels.length) {
-    els.guide.innerHTML = `<div class="empty-state">Pick up to three channels on the left to build your guide table.</div>`;
+    els.guide.innerHTML = `<div class="empty-state">Pick up to ${MAX_SELECTIONS} channels on the left to build your guide table.</div>`;
     return;
   }
 
