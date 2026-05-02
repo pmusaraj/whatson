@@ -1,0 +1,437 @@
+{
+  "country": "ES",
+  "sourceGuides": [
+    "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
+    "data/normalized/guide-ES-orangetv.orange.es.xml"
+  ],
+  "generatedAt": "2026-05-02T18:52:42.464204Z",
+  "channelCount": 22,
+  "channelsWithPrograms": 18,
+  "channelsWithCurrentProgram": 18,
+  "channels": [
+    {
+      "id": "AMCBreak.es",
+      "name": "AMC BREAK",
+      "logoUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d3/AMC_Break_Print.svg/revision/latest/scale-to-width-down/512",
+      "currentProgram": {
+        "title": "Empeños a lo bestia - T1, E02: Piloto",
+        "description": "Conocemos a la familia Gold. Como propietarios de la mayor casa de empeños de Detroit, han comprado y vendido cosas inimaginables. Cada día supone un nuevo peligro en esta conflictiva ciudad.",
+        "startAt": "2026-05-02T18:47:32Z",
+        "endAt": "2026-05-02T19:15:54Z"
+      },
+      "programCount": 62,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Mountain Men - T13, E03: Pólvora y plomo",
+        "description": "Tom caza ciervos junto a Sean y Hank. Jake y Anika completan una exitosa cacería con un agotador trabajo de carga. Aron y Jen talan los árboles muertos que amenazan con destruir su cabaña.",
+        "startAt": "2026-05-01T21:24:45Z",
+        "endAt": "2026-05-01T22:37:24Z"
+      }
+    },
+    {
+      "id": "AMCCrime.es",
+      "name": "AMC CRIME",
+      "logoUrl": "https://i.imgur.com/g8zMKwk.png",
+      "currentProgram": {
+        "title": "Crímenes en Los Ángeles - T1, E06: Crímenes en Los Ángeles",
+        "description": "Tras el violento asesinato de un cámara de Hollywood en su propia casa, los detectives siguen la pista de una enmarañada red de mentiras que les conduce a otro cadáver y a un asesino dispuesto a todo.",
+        "startAt": "2026-05-02T18:50:47Z",
+        "endAt": "2026-05-02T19:39:58Z"
+      },
+      "programCount": 35,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Crímenes sin censura - T1, E10: El vecino de al lado",
+        "description": "Un antiguo soldado dispara por la noche a sus vecinos de al lado. Los detectives investigan por qué acabó estallando y cuál fue el detonante.",
+        "startAt": "2026-05-01T21:55:32Z",
+        "endAt": "2026-05-01T22:46:22Z"
+      }
+    },
+    {
+      "id": "Antena3.es",
+      "name": "Antena 3",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_Antena_3_2025_%28Naranja%29.svg",
+      "currentProgram": {
+        "title": "Absolución fatal",
+        "description": "Una mujer es declarada inocente del asesinato de su marido, pero la sociedad la sigue creyendo culpable, también su hija adolescente. Aunque trata de recomponer su vida, todos van en su contra.",
+        "startAt": "2026-05-02T17:45:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 50,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Tu cara me suena: Grandes éxitos",
+        "description": "Espacio que recopila los mejores momentos del concurso de carácter musical \"Tu cara me suena\".",
+        "startAt": "2026-05-01T22:50:00Z",
+        "endAt": "2026-05-02T00:15:00Z"
+      }
+    },
+    {
+      "id": "Atreseries.es",
+      "name": "Atreseries",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png",
+      "currentProgram": {
+        "title": "Crimen en el paraíso - T11, E01: Episodio 1",
+        "description": "Cuando un secuestro aparentemente sencillo acaba en asesinato, los detectives de la paradisíaca isla de Saint Marie deben averiguar qué fue lo que truncó los planes de ese caso y cómo alguien acabó muerto.",
+        "startAt": "2026-05-02T18:00:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 26,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Crimen en el paraíso - T10, E06: Episode 6",
+        "description": "El equipo tiene mucho trabajo por delante en esta dramática segunda parte. Neville debe resolver un misterio del pasado que desvela la verdad sobre quién asesinó al concertista y por qué. Sin embargo, la ayuda está a la vuelta de la esquina.",
+        "startAt": "2026-05-01T21:06:00Z",
+        "endAt": "2026-05-01T22:09:00Z"
+      }
+    },
+    {
+      "id": "BeMad.es",
+      "name": "Be Mad TV",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/BeMad_2022_Logo.svg",
+      "currentProgram": {
+        "title": "La leyenda del Zorro",
+        "description": "Secuela de la exitosa 'La máscara del Zorro'. Tras pasar los últimos diez años luchando contra la injusticia y la crueldad, Alejandro de la Vega se enfrenta ahora a su mayor desafío: su amada esposa, Elena, ha pedido el divorcio y ha encontrado consuelo en los brazos del Conde Armandd, un apuesto aristócrata francés. Pero Alejandro sabe algo que ella no sabe: Armand es el cerebro de una conspiración terrorista que planea destruir los Estados Unidos. Así con el futuro de su matrimonio y de su país en juego, el Zorro deberá intentar salvarlos a ambos antes de que sea demasiado tarde.",
+        "startAt": "2026-05-02T18:19:00Z",
+        "endAt": "2026-05-02T20:34:00Z"
+      },
+      "programCount": 19,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Capitán Phillips",
+        "description": "El capitán Richard Phillips intenta escapar de piratas armados somalíes mientras que la Marina de los Estados Unidos trata de rescatarlo.",
+        "startAt": "2026-05-01T20:09:56Z",
+        "endAt": "2026-05-01T22:45:49Z"
+      }
+    },
+    {
+      "id": "BetisTV.es",
+      "name": "Betis TV",
+      "logoUrl": "https://i.imgur.com/OI7kQzs.png",
+      "currentProgram": {
+        "title": "Los Partidos de Betis TV",
+        "description": "Los mejores partidos del primer equipo del Real Betis, Betis Deportivo, Cantera, Real Betis Féminas, Real Betis Futsal",
+        "startAt": "2026-05-02T18:00:00Z",
+        "endAt": "2026-05-02T20:00:00Z"
+      },
+      "programCount": 18,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Actualidad Betis",
+        "description": "Informativo sobre la actualidad del club y sus equipos.",
+        "startAt": "2026-05-01T21:30:00Z",
+        "endAt": "2026-05-01T22:00:00Z"
+      }
+    },
+    {
+      "id": "Boing.es",
+      "name": "Boing",
+      "logoUrl": "https://i.imgur.com/nUYuCAP.png",
+      "currentProgram": {
+        "title": "Doraemon - T9, E05: La Hoja Cambiadora",
+        "description": "Nobita es un niño que vive con Doraemon, un gato cósmico procedente del siglo XXII, que tiene la misión de proteger a Nobita.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 92,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Un Show Más - T3, E14: Se Positivo",
+        "description": "Papaleta está frustrado porque Benson le arruina la diversión al gritarles a Mordecai y a Rigby y le pide a Benson que deje de gritarles o lo echará.",
+        "startAt": "2026-05-01T21:54:01Z",
+        "endAt": "2026-05-01T22:06:14Z"
+      }
+    },
+    {
+      "id": "24Horas.es",
+      "name": "Canal 24 h",
+      "logoUrl": "https://i.ibb.co/21sXZ3GT/24h.png",
+      "currentProgram": {
+        "title": "Noticias 24H - T2026, E487: 2 de Mayo de 2026",
+        "description": "Información continua 24 horas nacional e internacional, 366 dias al año.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T18:58:00Z"
+      },
+      "programCount": 64,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml",
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": {
+        "title": "Noticias 24h",
+        "description": "Información contínua 24 horas nacional e internacional.",
+        "startAt": "2026-05-01T22:00:00Z",
+        "endAt": "2026-05-01T22:30:00Z"
+      }
+    },
+    {
+      "id": "CanalSurAndalucia.es",
+      "name": "Canal Sur Andalucía",
+      "logoUrl": "https://i.imgur.com/lznnA4v.png",
+      "currentProgram": {
+        "title": "Canal Sur Noticias",
+        "description": "Informativo general con especial atención a las noticias de Andalucía. Incluye Deportes y El Tiempo, presentado por Mariló Montero.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T19:25:00Z"
+      },
+      "programCount": 21,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Los repobladores",
+        "description": "Programa que recoge la experiencia de personas que, tras vivir en la ciudad, deciden comenzar una nueva vida en pequeños municipios andaluces.",
+        "startAt": "2026-05-02T01:00:00Z",
+        "endAt": "2026-05-02T01:48:00Z"
+      }
+    },
+    {
+      "id": "ETB1.es",
+      "name": "ETB 1",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/ETB1_2022_logo.svg/960px-ETB1_2022_logo.svg.png",
+      "currentProgram": {
+        "title": "Eguraldia",
+        "description": "Pronóstico del tiempo.",
+        "startAt": "2026-05-02T18:50:00Z",
+        "endAt": "2026-05-02T19:05:00Z"
+      },
+      "programCount": 29,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Wazemank 3.0",
+        "description": "El equipo capitaneado por Anjel Alkain repasa en tono ácido y jocoso la actualidad social y televisiva de Euskadi.",
+        "startAt": "2026-05-01T22:01:52Z",
+        "endAt": "2026-05-01T22:46:49Z"
+      }
+    },
+    {
+      "id": "GaliciaTVEuropa.es",
+      "name": "Galicia TV",
+      "logoUrl": "https://i.imgur.com/dvkzH8n.png",
+      "currentProgram": {
+        "title": "Mira ti",
+        "description": "Programa 'Zapping' que recopila los momentos más divertidos de la semana en los programas de TVG.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T18:58:00Z"
+      },
+      "programCount": 20,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Heicho cantar, queridiña",
+        "description": "Programa musical presentado por Lucía Pérez y Sergio Zearreta. El programa de dos horas de duración ofrece a los espectadores un espectáculo de música y canto además de humor. Tanto los presentadores como artistas invitados haran en cada edición interpretaciones de diferentes estilos de la música de Galicia.",
+        "startAt": "2026-05-01T22:03:19Z",
+        "endAt": "2026-05-02T05:00:00Z"
+      }
+    },
+    {
+      "id": "La1.es",
+      "name": "La 1",
+      "logoUrl": "https://i.ibb.co/MxJNPHsn/La-1.png",
+      "currentProgram": {
+        "title": "¡Vente a Alemania, Pepe!",
+        "description": "Angelino vuelve a su pueblo después de estar trabajando en Alemania y convence a Pepe, el sacristán, para que también emigre en busca de un futuro mejor. Pero en el país germano la vida comienza para Pepe a las cinco de la mañana limpiando cristales y acaba a las doce de la noche pegando carteles. El trabajo es duro y poco gratificante pero en las cartas que Pepe envía a su pueblo cuenta una realidad totalmente distinta.",
+        "startAt": "2026-05-02T17:20:00Z",
+        "endAt": "2026-05-02T18:55:00Z"
+      },
+      "programCount": 20,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Acantilado",
+        "description": "Gabriel es un prometedor fiscal cuya vida se tambalea cuando recibe una llamada de la policía. Ha habido un suicidio colectivo de una secta en las islas Canarias y su hermana pequeña, Cordelia, era una de las adeptas. Su cadáver no ha aparecido. Gabriel lleva años sin ver a su hermana: algo sucedió entre ellos y sus vidas tomaron rumbos opuestos. Inmediatamente viaja a la isla para conocer los sucesos de primera mano y ayudar en la investigación. Allí conoce a Helena, amiga de Cordelia, de fuerte personalidad y emociones a flor de piel. Ella y Gabriel conectan inmediatamente, unidos por el deseo de encontrar viva a Cordelia. Muy pronto Gabriel descubre que su hermana se acercó a \"La Comunidad\" seducida por la líder de la secta, una mujer de gran magnetismo y oscuro origen. Cordelia encontró en aquel grupo un refugio donde sobreponerse de las heridas del pasado, pero también acabó convirtiéndose en testigo y cómplice de extraños sucesos, preludio de un trágico desenlace. A medida que Gabriel se sumerge en los misterios de la secta, las certezas que tenía sobre su vida empiezan a resquebrajarse. Pronto comprende que encontrar viva a su hermana puede ser la única manera de salvarse a sí mismo.",
+        "startAt": "2026-05-01T23:40:00Z",
+        "endAt": "2026-05-02T01:15:00Z"
+      }
+    },
+    {
+      "id": "La2.es",
+      "name": "La 2",
+      "logoUrl": "https://i.ibb.co/rfsr9PSh/La-2.png",
+      "currentProgram": {
+        "title": "Diario de un nómada",
+        "description": "El viajero y escritor Miguel Silvestre recorre en moto España, Italia y los Balcanes siguiendo las huellas de Alejandro Magno y Marco Ulpio Trajano, hasta el sur de Turquía, donde el emperador hispano falleció.",
+        "startAt": "2026-05-02T18:40:00Z",
+        "endAt": "2026-05-02T19:10:00Z"
+      },
+      "programCount": 33,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Historia de nuestro cine: Coloquios",
+        "description": "Coloquio semanal, presentado por Elena S. Sánchez, sobre las películas del cine español visionadas a lo largo de la semana en Historia de nuestro cine.",
+        "startAt": "2026-05-01T22:25:00Z",
+        "endAt": "2026-05-01T22:50:00Z"
+      }
+    },
+    {
+      "id": "TV3.es",
+      "name": "TV3",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/TV3.svg/960px-TV3.svg.png",
+      "currentProgram": {
+        "title": "Al cotxe",
+        "description": "Programa en el que los invitados conversan con Eloi Vila durante un trayecto que realizan en coche.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 16,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Notícies 3CatInfo",
+        "description": "Noticias 24 horas.",
+        "startAt": "2026-05-01T23:30:00Z",
+        "endAt": "2026-05-02T02:00:00Z"
+      }
+    },
+    {
+      "id": "TV3CAT.es",
+      "name": "TV3CAT",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/TV3CAT.svg/960px-TV3CAT.svg.png",
+      "currentProgram": {
+        "title": "Al cotxe",
+        "description": "Programa en el que los invitados conversan con Eloi Vila durante un trayecto que realizan en coche.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 16,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Notícies 3CatInfo",
+        "description": "Noticias 24 horas.",
+        "startAt": "2026-05-01T23:30:00Z",
+        "endAt": "2026-05-02T02:00:00Z"
+      }
+    },
+    {
+      "id": "Telecinco.es",
+      "name": "Telecinco",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Telecinco_2024_Logo.svg",
+      "currentProgram": {
+        "title": "¡Fiesta!",
+        "description": "Magacín presentado por Emma García en el que los fines de semana se convierten en una 'Fiesta' con encuentros y momentos inolvidables.",
+        "startAt": "2026-05-02T14:00:00Z",
+        "endAt": "2026-05-02T19:00:00Z"
+      },
+      "programCount": 22,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Gran Madrid Show",
+        "description": "Espacio para disfrutar de las mejores experiencias de casino en vivo.",
+        "startAt": "2026-05-02T00:00:00Z",
+        "endAt": "2026-05-02T00:25:00Z"
+      }
+    },
+    {
+      "id": "Teledeporte.es",
+      "name": "Teledeporte",
+      "logoUrl": "https://i.ibb.co/0jxLdjnY/TDP.png",
+      "currentProgram": {
+        "title": "Reportajes Teledeporte",
+        "description": "Reportajes deportivos.",
+        "startAt": "2026-05-02T18:15:00Z",
+        "endAt": "2026-05-02T18:55:00Z"
+      },
+      "programCount": 15,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Liga Asobal",
+        "description": "Nueva edición de la Liga Asobal de balonmano, la máxima categoría del balonmano español.",
+        "startAt": "2026-05-01T22:30:00Z",
+        "endAt": "2026-05-01T23:55:00Z"
+      }
+    },
+    {
+      "id": "TelevisionCanaria.es",
+      "name": "TelevisiónCanaria",
+      "logoUrl": "https://rtvc.es/archivos/2020/03/logo-mobilretina.png",
+      "currentProgram": {
+        "title": "Islas Felices",
+        "description": "Serie documental que descubren paisajes únicos y señas de identidad de Canarias, Cabo Verde, Madeira y Azores.",
+        "startAt": "2026-05-02T18:30:00Z",
+        "endAt": "2026-05-02T19:01:00Z"
+      },
+      "programCount": 41,
+      "sources": [
+        "data/normalized/guide-ES-programacion-tv.elpais.com.xml"
+      ],
+      "sampleProgram": {
+        "title": "Primera Federación",
+        "description": "Emisión del partido de primera División RFEF.",
+        "startAt": "2026-05-01T23:20:00Z",
+        "endAt": "2026-05-02T00:05:00Z"
+      }
+    },
+    {
+      "id": "APunt.es",
+      "name": "A punt HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/960px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png",
+      "currentProgram": null,
+      "programCount": 0,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": null
+    },
+    {
+      "id": "AXN.es",
+      "name": "AXN",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
+      "currentProgram": null,
+      "programCount": 0,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": null
+    },
+    {
+      "id": "AXNMovies.es",
+      "name": "AXNMovies",
+      "logoUrl": "https://static.wikia.nocookie.net/logopedia/images/d/d2/AXN_Movies_logo.svg/revision/latest/scale-to-width-down/512",
+      "currentProgram": null,
+      "programCount": 0,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": null
+    },
+    {
+      "id": "BomCine.es",
+      "name": "Bom Cine",
+      "logoUrl": "https://bomcine.com/img/ico/logo-bom-negro.svg",
+      "currentProgram": null,
+      "programCount": 0,
+      "sources": [
+        "data/normalized/guide-ES-orangetv.orange.es.xml"
+      ],
+      "sampleProgram": null
+    }
+  ]
+}

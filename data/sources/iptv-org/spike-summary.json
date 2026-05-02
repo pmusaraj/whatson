@@ -1,0 +1,180 @@
+{
+  "provider": "iptv_org",
+  "countries": {
+    "FR": {
+      "name": "France",
+      "active_channels": 543,
+      "channels_with_guides": 297,
+      "guide_mappings": 1912,
+      "top_sites": [
+        [
+          "tv.sfr.fr",
+          205
+        ],
+        [
+          "chaines-tv.orange.fr",
+          172
+        ],
+        [
+          "tv-programme.telecablesat.fr",
+          150
+        ],
+        [
+          "canalplus.com",
+          131
+        ],
+        [
+          "programme-tv.net",
+          126
+        ],
+        [
+          "tvcesoir.fr",
+          106
+        ],
+        [
+          "tv.blue.ch",
+          103
+        ],
+        [
+          "i.mjh.nz",
+          101
+        ],
+        [
+          "pickx.be",
+          92
+        ],
+        [
+          "guidetnt.com",
+          65
+        ]
+      ],
+      "candidate_sites": [
+        "tv.sfr.fr",
+        "chaines-tv.orange.fr",
+        "programme-tv.net",
+        "canalplus.com"
+      ],
+      "custom_channel_files": [
+        "data/sources/iptv-org/custom-FR-tv.sfr.fr.channels.xml",
+        "data/sources/iptv-org/custom-FR-chaines-tv.orange.fr.channels.xml",
+        "data/sources/iptv-org/custom-FR-programme-tv.net.channels.xml"
+      ]
+    },
+    "ES": {
+      "name": "Spain",
+      "active_channels": 645,
+      "channels_with_guides": 167,
+      "guide_mappings": 385,
+      "top_sites": [
+        [
+          "orangetv.orange.es",
+          117
+        ],
+        [
+          "programacion-tv.elpais.com",
+          63
+        ],
+        [
+          "gatotv.com",
+          49
+        ],
+        [
+          "plex.tv",
+          29
+        ],
+        [
+          "watch.whaletvplus.com",
+          28
+        ],
+        [
+          "i.mjh.nz",
+          26
+        ],
+        [
+          "tv.sfr.fr",
+          13
+        ],
+        [
+          "chaines-tv.orange.fr",
+          8
+        ],
+        [
+          "mi.tv",
+          7
+        ],
+        [
+          "tv.blue.ch",
+          6
+        ]
+      ],
+      "candidate_sites": [
+        "orangetv.orange.es",
+        "programacion-tv.elpais.com",
+        "gatotv.com"
+      ],
+      "custom_channel_files": [
+        "data/sources/iptv-org/custom-ES-orangetv.orange.es.channels.xml",
+        "data/sources/iptv-org/custom-ES-programacion-tv.elpais.com.channels.xml",
+        "data/sources/iptv-org/custom-ES-gatotv.com.channels.xml"
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "active_channels": 1001,
+      "channels_with_guides": 318,
+      "guide_mappings": 907,
+      "top_sites": [
+        [
+          "i.mjh.nz",
+          211
+        ],
+        [
+          "tvhebdo.com",
+          144
+        ],
+        [
+          "tvpassport.com",
+          124
+        ],
+        [
+          "ontvtonight.com",
+          115
+        ],
+        [
+          "tvtv.us",
+          104
+        ],
+        [
+          "plex.tv",
+          47
+        ],
+        [
+          "xumo.tv",
+          13
+        ],
+        [
+          "distro.tv",
+          11
+        ],
+        [
+          "watch.sportsnet.ca",
+          8
+        ],
+        [
+          "epg.iptvx.one",
+          7
+        ]
+      ],
+      "candidate_sites": [
+        "i.mjh.nz",
+        "tvhebdo.com",
+        "tvpassport.com",
+        "ontvtonight.com"
+      ],
+      "custom_channel_files": [
+        "data/sources/iptv-org/custom-CA-tvhebdo.com.channels.xml",
+        "data/sources/iptv-org/custom-CA-tvpassport.com.channels.xml"
+      ]
+    }
+  }
+}
