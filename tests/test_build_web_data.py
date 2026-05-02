@@ -32,7 +32,7 @@ class BuildWebDataTest(unittest.TestCase):
                 """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <tv>
   <channel id=\"A.fr\"><display-name>Alpha</display-name><icon src=\"https://example.com/a.png\" /></channel>
-  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Midday news</desc></programme>
+  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Midday news</desc><category>Sports</category><category>Hockey</category><icon src="https://example.com/news.jpg" /></programme>
   <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Duplicate from another source</desc></programme>
   <programme start="20260502130000 +0000" stop="20260502140000 +0000" channel="A.fr"><title>Movie</title></programme>
 </tv>
@@ -51,6 +51,9 @@ class BuildWebDataTest(unittest.TestCase):
         self.assertEqual(payload["channels"][0]["name"], "Alpha")
         self.assertEqual(payload["channels"][0]["provider"], "Validated grabber")
         self.assertEqual(payload["channels"][0]["programs"][0]["title"], "News")
+        self.assertEqual(payload["channels"][0]["programs"][0]["categories"], ["Sports", "Hockey"])
+        self.assertEqual(payload["channels"][0]["programs"][0]["sportType"], "Hockey")
+        self.assertEqual(payload["channels"][0]["programs"][0]["imageUrl"], "https://example.com/news.jpg")
         self.assertEqual(payload["channels"][0]["programs"][1]["title"], "Movie")
 
     def test_is_premium_sports_channel_uses_keywords_and_ids(self):

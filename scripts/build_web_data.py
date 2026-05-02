@@ -140,6 +140,67 @@ def text(element: ET.Element, selector: str):
     return value or None
 
 
+def texts(element: ET.Element, selector: str) -> list[str]:
+    values = []
+    for child in element.findall(selector):
+        if child.text and child.text.strip():
+            values.append(child.text.strip())
+    return values
+
+
+def first_image_url(programme: ET.Element) -> str | None:
+    for selector in ("image", "icon"):
+        child = programme.find(selector)
+        if child is not None:
+            src = child.attrib.get("src") or child.text
+            if src and src.strip():
+                return src.strip()
+    return None
+
+
+def infer_sport_type(title: str, description: str | None, categories: list[str]) -> str | None:
+    haystack = " ".join([title, description or "", *categories]).lower()
+    sport_terms = [
+        ("Football", r"football|fútbol|soccer|premier league|laliga|liga de campeones|champions league|ligue 1"),
+        ("Formula 1", r"formule 1|formula 1|\bf1\b|grand prix|auto racing|automobilisme"),
+        ("Hockey", r"hockey|\bnhl\b"),
+        ("Tennis", r"tennis|open de madrid|madrid open|roland-garros|wimbledon|atp|wta"),
+        ("Baseball", r"baseball|\bmlb\b"),
+        ("Basketball", r"basket-ball|basketball|\bnba\b"),
+        ("Golf", r"\bgolf\b"),
+        ("Rugby", r"rugby"),
+        ("Combat sports", r"boxe|boxing|arts martiaux|sports de combat|mma|ufc"),
+        ("Motorsport", r"motocyclisme|motorsport|nascar|indycar"),
+        ("Curling", r"curling"),
+        ("Watersports", r"sports nautiques|watersports"),
+    ]
+    for label, pattern in sport_terms:
+        if re.search(pattern, haystack, re.I):
+            return label
+    if any(category.lower() in {"sports", "deportes", "magazine sportif", "programme sportif"} for category in categories):
+        return "Sports"
+    return None
+
+
+def infer_competition(title: str, description: str | None, categories: list[str]) -> str | None:
+    haystack = " ".join([title, description or "", *categories]).lower()
+    competition_terms = [
+        ("Champions League", r"champions league|liga de campeones"),
+        ("LaLiga Hypermotion", r"laliga hypermotion"),
+        ("LaLiga", r"laliga ea sports|\blaliga\b"),
+        ("Premier League", r"premier league"),
+        ("Formula 1", r"formule 1|formula 1|\bf1\b"),
+        ("NHL", r"\bnhl\b"),
+        ("MLB", r"\bmlb\b"),
+        ("NBA", r"\bnba\b"),
+        ("Madrid Open", r"mutua madrid open|madrid open"),
+    ]
+    for label, pattern in competition_terms:
+        if re.search(pattern, haystack, re.I):
+            return label
+    return None
+
+
 def channel_display_name(channel: ET.Element) -> str:
     names = [child.text.strip() for child in channel.findall("display-name") if child.text and child.text.strip()]
     return names[0] if names else channel.attrib["id"]
@@ -215,9 +276,17 @@ def ingest_xmltv_root(
         if raw_channel_id not in included_ids:
             continue
         channel_id = raw_channel_id if premium_sports_only else f"{provider_key}:{raw_channel_id}"
+        title = text(programme, "title") or "Untitled"
+        description = text(programme, "desc")
+        categories = texts(programme, "category")
         program = {
-            "title": text(programme, "title") or "Untitled",
-            "description": text(programme, "desc"),
+            "title": title,
+            "subtitle": text(programme, "sub-title"),
+            "description": description,
+            "categories": categories,
+            "sportType": infer_sport_type(title, description, categories),
+            "competition": infer_competition(title, description, categories),
+            "imageUrl": first_image_url(programme),
             "startAt": isoformat(parse_xmltv_time(programme.attrib["start"])),
             "endAt": isoformat(parse_xmltv_time(programme.attrib["stop"])),
         }

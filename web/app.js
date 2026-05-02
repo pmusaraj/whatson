@@ -162,17 +162,10 @@ function renderChannelList() {
           const key = channelKey(countryData.country, channel.id);
           const checked = selected.has(key);
           const disabled = !checked && state.selectedChannelKeys.length >= MAX_SELECTIONS;
-          const current = channel.currentProgram || channel.programs[0];
           return `
-            <label class="channel-choice ${disabled ? "disabled" : ""}">
-              <input type="checkbox" value="${escapeHtml(key)}" ${checked ? "checked" : ""} ${disabled ? "disabled" : ""} />
-              <div>
-                <div class="channel-name">${escapeHtml(channel.name)}</div>
-                <div class="channel-meta">${escapeHtml(channel.provider)}</div>
-                <div class="channel-now">${escapeHtml(current?.title || "No current program")}</div>
-              </div>
-              ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
-            </label>
+            <button class="channel-choice ${checked ? "selected" : ""}" type="button" data-channel-key="${escapeHtml(key)}" aria-pressed="${checked}" ${disabled ? "disabled" : ""}>
+              <span class="channel-name">${escapeHtml(channel.name)}</span>
+            </button>
           `;
         })
         .join("");
@@ -193,14 +186,22 @@ function programCell(program) {
   }
   const current = isCurrent(program);
   const progress = current ? `<div class="progress"><span style="width: ${progressPercent(program)}%"></span></div>` : "";
+  const tags = programTags(program);
   return `
     <article class="program ${current ? "current" : ""}">
       <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
       <div class="program-title">${escapeHtml(program.title)}</div>
-      ${program.description ? `<p class="program-description">${escapeHtml(program.description)}</p>` : ""}
+      ${program.subtitle ? `<div class="program-subtitle">${escapeHtml(program.subtitle)}</div>` : ""}
+      ${tags.length ? `<div class="program-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      ${program.description ? `<details class="program-description"><summary>Description</summary><p>${escapeHtml(program.description)}</p></details>` : ""}
       ${progress}
     </article>
   `;
+}
+
+function programTags(program) {
+  const tags = [program.sportType, program.competition, ...(program.categories || [])].filter(Boolean);
+  return [...new Set(tags)].slice(0, 4);
 }
 
 function renderGuide() {
@@ -282,23 +283,24 @@ els.channelSearch.addEventListener("input", (event) => {
   renderChannelList();
 });
 
-els.channelList.addEventListener("change", (event) => {
-  if (event.target.type !== "checkbox") {
+els.channelList.addEventListener("click", (event) => {
+  const choice = event.target.closest(".channel-choice");
+  if (!choice || choice.disabled) {
     return;
   }
 
-  const key = event.target.value;
+  const key = choice.dataset.channelKey;
   const selected = selectedSet();
+  const isSelected = selected.has(key);
 
-  if (event.target.checked && state.selectedChannelKeys.length >= MAX_SELECTIONS) {
-    event.target.checked = false;
+  if (!isSelected && state.selectedChannelKeys.length >= MAX_SELECTIONS) {
     return;
   }
 
-  if (event.target.checked) {
-    selected.add(key);
-  } else {
+  if (isSelected) {
     selected.delete(key);
+  } else {
+    selected.add(key);
   }
 
   state.selectedChannelKeys = Array.from(selected).slice(0, MAX_SELECTIONS);

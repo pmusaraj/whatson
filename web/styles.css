@@ -199,47 +199,32 @@ h2 {
 }
 
 .channel-choice {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 0.6rem;
-  align-items: center;
+  display: block;
+  width: 100%;
   padding: 0.65rem;
   border: 1px solid var(--border);
   border-radius: 16px;
   background: rgb(255 255 255 / 66%);
+  color: var(--text);
   cursor: pointer;
+  text-align: left;
 }
 
-.channel-choice:has(input:checked) {
+.channel-choice.selected {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
 
-.channel-choice.disabled {
+.channel-choice:disabled {
   opacity: 0.52;
   cursor: not-allowed;
 }
 
-.channel-choice input {
-  width: 1.1rem;
-  height: 1.1rem;
-  accent-color: var(--accent);
-}
-
 .channel-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: 800;
-}
-
-.channel-meta {
-  margin-top: 0.1rem;
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 850;
-}
-
-.channel-now {
-  color: var(--muted);
-  font-size: 0.86rem;
 }
 
 .logo {
@@ -365,15 +350,47 @@ h2 {
   font-weight: 950;
 }
 
+.program-subtitle {
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.program-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.program-tags span {
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--border));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-soft) 72%, white);
+  padding: 0.22rem 0.5rem;
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+
 .program-description {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
+  margin-top: 0.4rem;
   margin-bottom: 0;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+.program-description summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.program-description p {
+  margin: 0.5rem 0 0;
 }
 
 .empty-program {

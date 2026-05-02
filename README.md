@@ -96,7 +96,7 @@ Then open:
 http://localhost:8000
 ```
 
-The prototype shows all France, Spain, and Canada channels grouped by country. Users can switch between all channels and a premium channel view, select up to five channels, and the guide renders those selected channels as table columns with current and next-3-hours programming. Selections are saved in browser `localStorage`.
+The prototype shows all France, Spain, and Canada channels grouped by country. Users can switch between all channels and a premium channel view, select up to five channels, and the guide renders those selected channels as table columns with current and next-3-hours programming. Sidebar rows show only channel names; selected programme cells show genre/type tags when the source provides enough metadata, with descriptions collapsed by default. Selections are saved in browser `localStorage`.
 
 The premium channel view focuses on pay-TV / premium guide sources:
 
