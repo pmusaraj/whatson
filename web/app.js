@@ -1,4 +1,7 @@
 const MAX_SELECTIONS = 5;
+const VISIBLE_HOURS = 3;
+const PIXELS_PER_MINUTE = 2;
+const SLOT_MINUTES = 30;
 
 const state = {
   countries: [],
@@ -6,6 +9,7 @@ const state = {
   selectedChannelKeys: loadSelection(),
   search: "",
   mode: localStorage.getItem("whatsontv.channelMode") === "premium" ? "premium" : "all",
+  now: new Date(),
 };
 
 const els = {
@@ -15,7 +19,6 @@ const els = {
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   guide: document.querySelector("#guide"),
-  selectedSummary: document.querySelector("#selected-summary"),
   clearSelection: document.querySelector("#clear-selection"),
 };
 
@@ -79,22 +82,34 @@ function formatTime(value) {
   }).format(new Date(value));
 }
 
-function isCurrent(program) {
-  const now = Date.now();
-  return new Date(program.startAt).getTime() <= now && now < new Date(program.endAt).getTime();
+function formatCurrentTime(value) {
+  return new Intl.DateTimeFormat(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(value);
 }
 
-function progressPercent(program) {
-  const now = Date.now();
-  const start = new Date(program.startAt).getTime();
-  const end = new Date(program.endAt).getTime();
-  if (now <= start) {
-    return 0;
-  }
-  if (now >= end) {
-    return 100;
-  }
-  return Math.round(((now - start) / (end - start)) * 100);
+function minutesBetween(start, end) {
+  return (end.getTime() - start.getTime()) / 60000;
+}
+
+function roundDownToSlot(date) {
+  const rounded = new Date(date);
+  rounded.setSeconds(0, 0);
+  rounded.setMinutes(Math.floor(rounded.getMinutes() / SLOT_MINUTES) * SLOT_MINUTES);
+  return rounded;
+}
+
+function timelineBounds() {
+  const start = roundDownToSlot(state.now);
+  const end = new Date(start.getTime() + VISIBLE_HOURS * 60 * 60000);
+  return { start, end };
+}
+
+function isCurrent(program) {
+  const now = state.now.getTime();
+  return new Date(program.startAt).getTime() <= now && now < new Date(program.endAt).getTime();
 }
 
 function escapeHtml(value) {
@@ -180,73 +195,105 @@ function renderChannelList() {
     .join("");
 }
 
-function programCell(program) {
-  if (!program) {
-    return `<div class="empty-program">No program in this slot</div>`;
-  }
-  const current = isCurrent(program);
-  const progress = current ? `<div class="progress"><span style="width: ${progressPercent(program)}%"></span></div>` : "";
-  const tags = programTags(program);
-  return `
-    <article class="program ${current ? "current" : ""}">
-      <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
-      <div class="program-title">${escapeHtml(program.title)}</div>
-      ${program.subtitle ? `<div class="program-subtitle">${escapeHtml(program.subtitle)}</div>` : ""}
-      ${tags.length ? `<div class="program-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
-      ${program.description ? `<details class="program-description"><summary>Description</summary><p>${escapeHtml(program.description)}</p></details>` : ""}
-      ${progress}
-    </article>
-  `;
-}
-
 function programTags(program) {
   const tags = [program.sportType, program.competition, ...(program.categories || [])].filter(Boolean);
   return [...new Set(tags)].slice(0, 4);
 }
 
+function overlappingPrograms(channel, start, end) {
+  return channel.programs.filter((program) => {
+    const programStart = new Date(program.startAt);
+    const programEnd = new Date(program.endAt);
+    return programEnd > start && programStart < end;
+  });
+}
+
+function programmeBlock(program, start, end) {
+  const programStart = new Date(program.startAt);
+  const programEnd = new Date(program.endAt);
+  const clippedStart = programStart < start ? start : programStart;
+  const clippedEnd = programEnd > end ? end : programEnd;
+  const top = Math.max(0, minutesBetween(start, clippedStart) * PIXELS_PER_MINUTE);
+  const height = Math.max(34, minutesBetween(clippedStart, clippedEnd) * PIXELS_PER_MINUTE - 4);
+  const current = isCurrent(program);
+  const tags = programTags(program);
+
+  return `
+    <article class="program-block ${current ? "current" : ""}" style="top: ${top}px; height: ${height}px">
+      <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
+      <div class="program-title">${escapeHtml(program.title)}</div>
+      ${program.subtitle ? `<div class="program-subtitle">${escapeHtml(program.subtitle)}</div>` : ""}
+      ${tags.length ? `<div class="program-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      ${program.description ? `<details class="program-description"><summary>Description</summary><p>${escapeHtml(program.description)}</p></details>` : ""}
+    </article>
+  `;
+}
+
+function timelineLabels(start, totalMinutes) {
+  const labels = [];
+  for (let offset = 0; offset <= totalMinutes; offset += SLOT_MINUTES) {
+    labels.push(`
+      <div class="time-label" style="top: ${offset * PIXELS_PER_MINUTE}px">
+        ${formatTime(new Date(start.getTime() + offset * 60000))}
+      </div>
+    `);
+  }
+  return labels.join("");
+}
+
 function renderGuide() {
   const channels = selectedChannels();
 
-  els.selectedSummary.textContent = channels.length
-    ? `${channels.length}/${MAX_SELECTIONS} selected · current and next 3 hours`
-    : `No channels selected yet. Choose up to ${MAX_SELECTIONS}.`;
-
   if (!channels.length) {
-    els.guide.innerHTML = `<div class="empty-state">Pick up to ${MAX_SELECTIONS} channels on the left to build your guide table.</div>`;
+    els.guide.innerHTML = `<div class="empty-state">Pick up to ${MAX_SELECTIONS} channels on the left to build your guide.</div>`;
     return;
   }
 
-  const maxRows = Math.max(...channels.map((channel) => channel.programs.length));
-  const rows = Array.from({ length: maxRows }, (_, index) => {
-    const label = index === 0 ? "Now" : `Next ${index}`;
-    const cells = channels.map((channel) => `<td>${programCell(channel.programs[index])}</td>`).join("");
-    return `<tr><th scope="row">${label}</th>${cells}</tr>`;
-  }).join("");
+  const { start, end } = timelineBounds();
+  const totalMinutes = VISIBLE_HOURS * 60;
+  const totalHeight = totalMinutes * PIXELS_PER_MINUTE;
+  const currentOffset = Math.max(0, Math.min(totalMinutes, minutesBetween(start, state.now))) * PIXELS_PER_MINUTE;
 
   const headers = channels
     .map(
       (channel) => `
-        <th scope="col">
-          <div class="guide-channel-heading">
-            ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
-            <div>
-              <div>${escapeHtml(channel.name)}</div>
-              <span>${escapeHtml(channel.countryName)} · ${escapeHtml(channel.provider)}</span>
-            </div>
+        <div class="guide-channel-heading">
+          ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
+          <div>
+            <div>${escapeHtml(channel.name)}</div>
+            <span>${escapeHtml(channel.countryName)} · ${escapeHtml(channel.provider)}</span>
           </div>
-        </th>
+        </div>
       `
     )
     .join("");
 
+  const columns = channels
+    .map((channel) => {
+      const programs = overlappingPrograms(channel, start, end);
+      return `
+        <div class="schedule-column" style="height: ${totalHeight}px">
+          ${programs.length ? programs.map((program) => programmeBlock(program, start, end)).join("") : `<div class="empty-program">No program in this window</div>`}
+        </div>
+      `;
+    })
+    .join("");
+
   els.guide.innerHTML = `
-    <div class="guide-table-wrap">
-      <table class="guide-table">
-        <thead>
-          <tr><th scope="col">Slot</th>${headers}</tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
+    <div class="guide-meta">Showing ${formatTime(start)} – ${formatTime(end)} · current time ${formatCurrentTime(state.now)}</div>
+    <div class="schedule-wrap" style="--guide-columns: ${channels.length}; --guide-height: ${totalHeight}px">
+      <div class="schedule-header">
+        <div class="time-header"></div>
+        ${headers}
+      </div>
+      <div class="schedule-body" style="height: ${totalHeight}px">
+        <div class="time-axis">${timelineLabels(start, totalMinutes)}</div>
+        <div class="time-grid" aria-hidden="true">
+          ${Array.from({ length: totalMinutes / SLOT_MINUTES + 1 }, (_, index) => `<span style="top: ${index * SLOT_MINUTES * PIXELS_PER_MINUTE}px"></span>`).join("")}
+        </div>
+        <div class="current-time-line" style="top: ${currentOffset}px"><span>${formatTime(state.now)}</span></div>
+        <div class="schedule-columns">${columns}</div>
+      </div>
     </div>
   `;
 }
@@ -318,6 +365,10 @@ async function start() {
   try {
     await loadGuideData();
     render();
+    window.setInterval(() => {
+      state.now = new Date();
+      renderGuide();
+    }, 60000);
   } catch (error) {
     els.status.textContent = error.message;
     els.guide.innerHTML = `<div class="empty-state">Could not load guide data. Run <code>python3 scripts/build_web_data.py</code>, then serve the web directory.</div>`;

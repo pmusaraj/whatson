@@ -11,18 +11,19 @@ spec.loader.exec_module(build_web_data)
 
 
 class BuildWebDataTest(unittest.TestCase):
-    def test_program_window_includes_current_and_next_three_hours(self):
+    def test_program_window_includes_current_and_future_schedule(self):
         now = datetime(2026, 5, 2, 12, 30, tzinfo=timezone.utc)
         programs = [
             {"title": "Before", "startAt": "2026-05-02T10:00:00Z", "endAt": "2026-05-02T11:00:00Z"},
             {"title": "Current", "startAt": "2026-05-02T12:00:00Z", "endAt": "2026-05-02T13:00:00Z"},
             {"title": "Next", "startAt": "2026-05-02T13:00:00Z", "endAt": "2026-05-02T14:00:00Z"},
             {"title": "Later", "startAt": "2026-05-02T15:45:00Z", "endAt": "2026-05-02T16:00:00Z"},
+            {"title": "Tomorrow", "startAt": "2026-05-03T01:00:00Z", "endAt": "2026-05-03T02:00:00Z"},
         ]
 
-        window = build_web_data.program_window(programs, now, hours=3)
+        window = build_web_data.program_window(programs, now)
 
-        self.assertEqual([program["title"] for program in window], ["Current", "Next"])
+        self.assertEqual([program["title"] for program in window], ["Current", "Next", "Later"])
 
     def test_build_country_payload_contains_channel_schedules(self):
         with tempfile.TemporaryDirectory() as tmp:

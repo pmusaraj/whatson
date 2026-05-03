@@ -9,20 +9,16 @@
   <body>
     <header class="app-header">
       <div>
-        <p class="eyebrow">Prototype</p>
         <h1>What's On TV</h1>
-        <p class="lede">Pick up to five channels, then compare what is on now and next in a simple grid.</p>
+        <p class="lede">Pick up to five channels and compare what is on now.</p>
       </div>
       <div class="status" id="status">Loading guide data…</div>
     </header>
 
     <main class="layout">
       <section class="panel picker-panel" aria-labelledby="picker-title">
-        <div class="panel-heading">
-          <div>
-            <p class="eyebrow">Step 1</p>
-            <h2 id="picker-title">Choose channels</h2>
-          </div>
+        <div class="panel-heading compact-heading">
+          <h2 id="picker-title">Channels</h2>
           <div class="selection-limit">Max 5</div>
         </div>
 
@@ -35,15 +31,10 @@
         <div id="channel-list" class="channel-list"></div>
       </section>
 
-      <section class="panel guide-panel" aria-labelledby="guide-title">
-        <div class="panel-heading">
-          <div>
-            <p class="eyebrow">Step 2</p>
-            <h2 id="guide-title">Your guide</h2>
-          </div>
+      <section class="panel guide-panel" aria-label="TV guide">
+        <div class="guide-actions">
           <button id="clear-selection" class="secondary-button" type="button">Clear</button>
         </div>
-        <div id="selected-summary" class="selected-summary"></div>
         <div id="guide" class="guide"></div>
       </section>
     </main>

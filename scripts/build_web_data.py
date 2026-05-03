@@ -210,7 +210,7 @@ def is_premium_sports_channel(channel_id: str, name: str, premium_sports_ids: se
     return channel_id in premium_sports_ids or bool(PREMIUM_SPORTS_TERMS.search(name)) or bool(PREMIUM_SPORTS_ID_TERMS.search(channel_id))
 
 
-def program_window(programs: list[dict], now: datetime, hours: int = 3) -> list[dict]:
+def program_window(programs: list[dict], now: datetime, hours: int = 12) -> list[dict]:
     window_end = now + timedelta(hours=hours)
     upcoming = []
     for program in programs:
@@ -360,7 +360,7 @@ def build_country_payload(
 
     rows = []
     for channel_id, channel in channels.items():
-        programs = program_window(programs_by_channel.get(channel_id, []), now, hours=3)
+        programs = program_window(programs_by_channel.get(channel_id, []), now)
         if not programs:
             continue
         rows.append(
@@ -384,7 +384,7 @@ def build_country_payload(
         "country": country_code,
         "countryName": COUNTRY_NAMES.get(country_code, country_code),
         "generatedAt": isoformat(now),
-        "windowHours": 3,
+        "windowHours": 12,
         "premiumSportsOnly": premium_sports_only,
         "sourceGuides": source_guides,
         "channelCount": len(rows),

@@ -1,8 +1,8 @@
 {
   "country": "CA",
   "countryName": "Canada",
-  "generatedAt": "2026-05-02T21:04:15.107847Z",
-  "windowHours": 3,
+  "generatedAt": "2026-05-03T02:51:48.362156Z",
+  "windowHours": 12,
   "premiumSportsOnly": true,
   "sourceGuides": [
     "data/normalized/guide-premium-CA-tvpassport.com.xml",
@@ -19,18 +19,30 @@
       "sources": [
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Tennis de la WTA",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": "Tennis",
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T23:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
+        {
+          "title": "Le Top LNH",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T05:30:00Z"
+        },
+        {
+          "title": "Le hockey des séries LNH Uber Eats",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
         {
           "title": "Tennis de la WTA",
           "subtitle": null,
@@ -39,19 +51,41 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
         },
         {
-          "title": "Dans le ring en direct",
+          "title": "50 ans de sports",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T10:30:00Z"
+        },
+        {
+          "title": "Tennis de la WTA",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:30:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "Le hockey des séries LNH Uber Eats",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -65,62 +99,51 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Formule 1",
-        "subtitle": null,
-        "description": "En provenance de l'autodrome international de Miami, à Miami Gardens, en Floride.",
-        "categories": [
-          "Sports",
-          "Auto Racing"
-        ],
-        "sportType": "Formula 1",
-        "competition": "Formula 1",
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p691060_b_v12_bp.jpg",
-        "startAt": "2026-05-02T19:30:00Z",
-        "endAt": "2026-05-02T21:30:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Formule 1",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": "En provenance de l'autodrome international de Miami, à Miami Gardens, en Floride.",
-          "categories": [
-            "Sports",
-            "Auto Racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p691060_b_v12_bp.jpg",
-          "startAt": "2026-05-02T19:30:00Z",
-          "endAt": "2026-05-02T21:30:00Z"
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
         },
         {
-          "title": "Dans une classe à part",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": "L'éternel débat dans le sport: qui est le",
-          "categories": [
-            "Sports",
-            "Miscellaneous"
-          ],
-          "sportType": "Sports",
+          "description": null,
+          "categories": [],
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p29044719_b_v8_ab.jpg",
-          "startAt": "2026-05-02T21:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
         },
         {
-          "title": "Le sport en toute liberté",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": "Un regard sur le monde des performances extrêmes : saut extrême, snowboard et plus.",
-          "categories": [
-            "Sports",
-            "Extreme"
-          ],
-          "sportType": "Sports",
+          "description": null,
+          "categories": [],
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p8860247_b_v12_am.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
         },
         {
           "title": "Sports 30",
@@ -133,33 +156,88 @@
           "sportType": "Football",
           "competition": "Formula 1",
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T22:45:00Z"
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
         },
         {
-          "title": "Soccer: Super Ligue du Nord",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": "En provenance du Centre Sportif Bois-de-Boulogne, à Laval, au Québec, au Canada.",
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
           "categories": [
             "Sports",
-            "Soccer"
+            "Miscellaneous"
           ],
           "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p29887829_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:45:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
         },
         {
-          "title": "Le Soccer de la Super Ligue du Nord",
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
+          "categories": [
+            "Sports",
+            "Miscellaneous"
+          ],
+          "sportType": "Football",
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
+          "categories": [
+            "Sports",
+            "Miscellaneous"
+          ],
+          "sportType": "Football",
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Bête de pêche",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Regular"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p32715249_st_v8_aa.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T14:30:00Z"
+        },
+        {
+          "title": "Chicks and machines: autour du monde",
+          "subtitle": null,
+          "description": "À la rencontre de femmes d'exception qui font changer et évoluer les choses dans le domaine des sports motorisés et dans certains métiers traditionnellement masculins.",
+          "categories": [
+            "Sports",
+            "Automotive"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p24313445_b_v12_aa.jpg",
+          "startAt": "2026-05-03T14:30:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
+        },
+        {
+          "title": "Chicks and Machines : autour du monde",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Football",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:45:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T14:30:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -173,59 +251,292 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Golf PGA",
-        "subtitle": null,
-        "description": "En provenance du Trump National Doral, à Miami.",
-        "categories": [
-          "Sports",
-          "Golf"
-        ],
-        "sportType": "Golf",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_az.jpg",
-        "startAt": "2026-05-02T19:30:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Golf PGA",
-          "subtitle": null,
-          "description": "En provenance du Trump National Doral, à Miami.",
-          "categories": [
-            "Sports",
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_az.jpg",
-          "startAt": "2026-05-02T19:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Accès golf",
-          "subtitle": null,
-          "description": "Les plus beaux parcours de golf du Québec.",
-          "categories": [
-            "Sports",
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9023613_b_v8_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "Accès Golf",
+          "title": "Sports 30",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Golf",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T06:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:30:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T07:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:30:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T08:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:30:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T09:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:30:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T10:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T10:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T10:30:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:30:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T11:30:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:30:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Le 5 à 7 en rappel",
+          "subtitle": null,
+          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "categories": [
+            "Sports",
+            "Documentary"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T13:30:00Z"
+        },
+        {
+          "title": "Le 5 à 7 En rappel",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T13:30:00Z"
         },
         {
           "title": "Championnat mondial masculin des M18 de l'IIHF 2026",
@@ -238,8 +549,8 @@
           "sportType": "Hockey",
           "competition": null,
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p32779548_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T13:30:00Z",
+          "endAt": "2026-05-03T16:00:00Z"
         },
         {
           "title": "Championnat mondial masculin des M18 de l'IIHF",
@@ -249,8 +560,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T13:30:00Z",
+          "endAt": "2026-05-03T16:00:00Z"
         }
       ]
     },
@@ -264,59 +575,73 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Panorama",
-        "subtitle": null,
-        "description": "Les moments spectaculaires et dramatiques dans le monde du sport.",
-        "categories": [
-          "Sports",
-          "Documentary"
-        ],
-        "sportType": "Sports",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p10424298_b_v8_ac.jpg",
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Panorama",
-          "subtitle": null,
-          "description": "Les moments spectaculaires et dramatiques dans le monde du sport.",
-          "categories": [
-            "Sports",
-            "Documentary"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p10424298_b_v8_ac.jpg",
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Le 5 à 7 en rappel",
-          "subtitle": null,
-          "description": "Compte-rendu des meilleurs moments de la semaine.",
-          "categories": [
-            "Sports",
-            "Documentary"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "Le 5 à 7 En rappel",
+          "title": "Sports 30",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sports 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
         },
         {
           "title": "Sports 30",
@@ -329,8 +654,8 @@
           "sportType": "Football",
           "competition": "Formula 1",
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T22:45:00Z"
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
         },
         {
           "title": "Sports 30",
@@ -343,83 +668,50 @@
           "sportType": "Football",
           "competition": "Formula 1",
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:45:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
         },
         {
-          "title": "Le 5 à 7 en rappel",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
           "categories": [
             "Sports",
-            "Documentary"
+            "Miscellaneous"
           ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
+          "sportType": "Football",
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
         },
         {
-          "title": "Le 5 à 7 En rappel",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
-        },
-        {
-          "title": "Le 5 à 7 en rappel",
-          "subtitle": null,
-          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
           "categories": [
             "Sports",
-            "Documentary"
+            "Miscellaneous"
           ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "sportType": "Football",
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
         },
         {
-          "title": "Le 5 à 7 En rappel",
+          "title": "Sports 30",
           "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
-        },
-        {
-          "title": "Le 5 à 7 en rappel",
-          "subtitle": null,
-          "description": "Compte-rendu des meilleurs moments de la semaine.",
+          "description": "Les plus récents dénouements dans le monde du sport. On analyse en profondeur les résultats des dernières 24 heures dans toutes les disciplines. Hockey, football, baseball, Formule 1, rien n'échappe à nos animateurs.",
           "categories": [
             "Sports",
-            "Documentary"
+            "Miscellaneous"
           ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p14505153_b_v12_ac.jpg",
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T00:30:00Z"
-        },
-        {
-          "title": "Le 5 à 7 En rappel",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T00:30:00Z"
+          "sportType": "Football",
+          "competition": "Formula 1",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492770_b_v12_aa.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -433,115 +725,18 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Plays of the Month - Countdown",
-        "subtitle": null,
-        "description": "Highlighting the past month's best in daily sports moments.",
-        "categories": [
-          "Sports",
-          "Anthology"
-        ],
-        "sportType": "Sports",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p19004801_b_v12_aa.jpg",
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T21:30:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Plays of the Month - Countdown",
-          "subtitle": null,
-          "description": "Highlighting the past month's best in daily sports moments.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p19004801_b_v12_aa.jpg",
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T21:30:00Z"
-        },
-        {
-          "title": "Plays of the Month",
+          "title": "Blue Jays in 30",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T21:30:00Z"
-        },
-        {
-          "title": "MLB Plays of the Week",
-          "subtitle": null,
-          "description": "A look at the top plays and moments from the past week in baseball.",
-          "categories": [
-            "Sports",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p22019951_b_v12_aa.jpg",
-          "startAt": "2026-05-02T21:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "NHL's Best Goals of the Season",
-          "subtitle": null,
-          "description": "Highlights of the league's top scoring plays.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": "NHL",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p18099521_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "NHL's Best Saves of the Season",
-          "subtitle": null,
-          "description": "Recap of the top saves of the NHL season.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": "NHL",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p18099525_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
-        },
-        {
-          "title": "Blue Jays in 30",
-          "subtitle": null,
-          "description": "From May 2, 2026.",
-          "categories": [
-            "Sports",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
-        },
-        {
-          "title": "NHL in 30",
-          "subtitle": null,
-          "description": "Game 6, from May 1, 2026.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": "NHL",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
         },
         {
           "title": "NHL 30",
@@ -551,33 +746,144 @@
           "sportType": "Hockey",
           "competition": "NHL",
           "imageUrl": null,
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
         },
         {
-          "title": "NHL Hockey",
-          "subtitle": null,
-          "description": "The East second round commences as the Flyers face the Hurricanes at Lenovo Center for Game 1. Taylor Hall leads the Hurricanes with seven points, while Rasmus Ristolainen leads the Flyers with five points in the Stanley Cup Playoffs.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": "NHL",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p191278_b_v12_aa.jpg",
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T03:00:00Z"
-        },
-        {
-          "title": "Stanley Cup Playoffs",
+          "title": "Sportsnet Central",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T03:00:00Z"
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T05:30:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -591,74 +897,106 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "TNA iMPACT!",
-        "subtitle": null,
-        "description": "Matches and storylines feature superstars battling for supremacy and championship gold within the ring.",
-        "categories": [
-          "Sports",
-          "Wrestling"
-        ],
-        "sportType": "Sports",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p498116_b_v12_af.jpg",
-        "startAt": "2026-05-02T20:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "TNA iMPACT!",
-          "subtitle": null,
-          "description": "Matches and storylines feature superstars battling for supremacy and championship gold within the ring.",
-          "categories": [
-            "Sports",
-            "Wrestling"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p498116_b_v12_af.jpg",
-          "startAt": "2026-05-02T20:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "MLB Baseball",
-          "subtitle": null,
-          "description": "The Toronto Blue Jays face the Minnesota Twins for an evening game at Target Field. This matchup is part of a four-game weekend series between the two teams. Minnesota currently leads the series 2-1. Dylan Cease is the projected starter for Toronto.",
-          "categories": [
-            "Sports",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p191273_b_v12_ae.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
-        },
-        {
-          "title": "Baseball",
+          "title": "NHL 30",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Baseball",
-          "competition": null,
+          "sportType": "Hockey",
+          "competition": "NHL",
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T05:30:00Z"
         },
         {
-          "title": "To Be Announced",
+          "title": "Plays of the Month",
           "subtitle": null,
-          "description": "Programming to be announced.",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Stanley Cup Playoffs Rewind",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Basketball de la NBA - Éliminatoires",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "Sportsnet Central",
+          "subtitle": null,
+          "description": "Canada's premier destination for sports and analysis.",
           "categories": [
-            "TBA",
-            "Specials",
-            "Miscellaneous"
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11080201_b_v12_ag.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Stanley Cup Playoffs Rewind",
+          "subtitle": null,
+          "description": "Game 1 from May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p13939261_b_v12_ac.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Facts of Fishing",
+          "subtitle": null,
+          "description": "Dave and Simon continue their quest for a 30lb bag of smallmouth on Lake Erie.",
+          "categories": [
+            "Regular"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p514472_b_v12_dp.jpg",
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T03:00:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p383528_b_v8_aa.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T13:30:00Z"
+        },
+        {
+          "title": "Stanley Cup Playoffs Rewind",
+          "subtitle": null,
+          "description": "Game 1 from May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p13939261_b_v12_ac.jpg",
+          "startAt": "2026-05-03T13:30:00Z",
+          "endAt": "2026-05-03T15:30:00Z"
         }
       ]
     },
@@ -672,98 +1010,164 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Plays of the Month - Countdown",
-        "subtitle": null,
-        "description": "Highlighting the past month's best in daily sports moments.",
-        "categories": [
-          "Sports",
-          "Anthology"
-        ],
-        "sportType": "Sports",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p19004801_b_v12_aa.jpg",
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T21:30:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Plays of the Month - Countdown",
-          "subtitle": null,
-          "description": "Highlighting the past month's best in daily sports moments.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p19004801_b_v12_aa.jpg",
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T21:30:00Z"
-        },
-        {
-          "title": "Plays of the Month",
+          "title": "Blue Jays in 30",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T21:30:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
         },
         {
-          "title": "MLB Plays of the Week",
-          "subtitle": null,
-          "description": "A look at the top plays and moments from the past week in baseball.",
-          "categories": [
-            "Sports",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p22019951_b_v12_aa.jpg",
-          "startAt": "2026-05-02T21:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Misplays of the Month",
-          "subtitle": null,
-          "description": "A look at the month's top bloopers.",
-          "categories": [
-            "Sports",
-            "Miscellaneous"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p10800225_b_v12_ac.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "Plays of the Month - Highlights",
-          "subtitle": null,
-          "description": "Highlighting the past month's best in daily sports moments.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p19004507_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
-        },
-        {
-          "title": "Plays of the Month",
+          "title": "Blue Jays in 30",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T05:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T06:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:30:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T07:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:30:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T08:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:30:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T09:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:30:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "NHL in 30",
+          "subtitle": null,
+          "description": "Game 1. From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T10:30:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T10:30:00Z"
         },
         {
           "title": "Blue Jays in 30",
@@ -776,33 +1180,164 @@
           "sportType": "Baseball",
           "competition": null,
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
+          "startAt": "2026-05-03T10:30:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
         },
         {
-          "title": "NBA Basketball",
+          "title": "NHL in 30",
           "subtitle": null,
-          "description": "The Philadelphia 76ers face the Boston Celtics in Game 7 at TD Garden. With the series tied 3-3, the 76ers look to advance as Tyrese Maxey scored 30 points to spark a surge and build a double-digit lead in a dominant 106-93 Game 6 victory.",
+          "description": "Game 1. From May 2, 2026.",
           "categories": [
             "Sports",
-            "Basketball"
+            "Hockey"
           ],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p191276_b_v12_ak.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
         },
         {
-          "title": "Basketball de la NBA - Éliminatoires",
+          "title": "NHL 30",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
+          "sportType": "Hockey",
+          "competition": "NHL",
           "imageUrl": null,
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": "From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Baseball"
+          ],
+          "sportType": "Baseball",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
+          "startAt": "2026-05-03T11:30:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "NHL in 30",
+          "subtitle": null,
+          "description": "Game 1. From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": "From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Baseball"
+          ],
+          "sportType": "Baseball",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "NHL in 30",
+          "subtitle": null,
+          "description": "Game 1. From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T13:30:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T13:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": "From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Baseball"
+          ],
+          "sportType": "Baseball",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
+          "startAt": "2026-05-03T13:30:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "NHL in 30",
+          "subtitle": null,
+          "description": "Game 1. From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11368193_b_v8_ab.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T14:30:00Z"
+        },
+        {
+          "title": "NHL 30",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T14:30:00Z"
+        },
+        {
+          "title": "Blue Jays in 30",
+          "subtitle": null,
+          "description": "From May 2, 2026.",
+          "categories": [
+            "Sports",
+            "Baseball"
+          ],
+          "sportType": "Baseball",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p9143182_b_v12_aa.jpg",
+          "startAt": "2026-05-03T14:30:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -816,98 +1351,151 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Rugby Super League",
-        "subtitle": null,
-        "description": "From Stade Gilbert Brutus in Perpignan, Pyrénées-Orientales, France.",
-        "categories": [
-          "Sports",
-          "Rugby"
-        ],
-        "sportType": "Rugby",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p8037667_b_v12_ae.jpg",
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T23:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Rugby Super League",
-          "subtitle": null,
-          "description": "From Stade Gilbert Brutus in Perpignan, Pyrénées-Orientales, France.",
-          "categories": [
-            "Sports",
-            "Rugby"
-          ],
-          "sportType": "Rugby",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p8037667_b_v12_ae.jpg",
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
-        },
-        {
-          "title": "Rugby:Super League Rugby",
+          "title": "FA Cup Classics",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Rugby",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T05:30:00Z"
         },
         {
           "title": "FA Cup Classics",
           "subtitle": null,
-          "description": "From Feb. 16, 2008.",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Eredivisie",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportsnet World Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportsnet World Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "Sportsnet World Highlights",
+          "subtitle": null,
+          "description": "A look at the best stories from around the world of sports.",
+          "categories": [
+            "Sports",
+            "Anthology"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p17613291_b_v12_ab.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "FA Women's Super League",
+          "subtitle": null,
+          "description": "From Joie Stadium in Manchester, England, United Kingdom.",
           "categories": [
             "Sports",
             "Soccer"
           ],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p677691_b_v8_ab.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p7969776_b_v12_at.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
         },
         {
-          "title": "FA Cup Classics",
+          "title": "Barclays FA Women's Super League",
           "subtitle": null,
-          "description": "From March 8, 2008.",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Eredivisie Soccer",
+          "subtitle": null,
+          "description": "From Fortuna Sittard Stadion in Sittard, Limburg, Netherlands.",
           "categories": [
             "Sports",
             "Soccer"
           ],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p677691_b_v8_ab.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p3605388_b_v11_cy.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:30:00Z"
         },
         {
-          "title": "Rugby Super League",
-          "subtitle": null,
-          "description": "Comprehensive coverage of all the action from the matches played as part of the Rugby Super League.",
-          "categories": [
-            "Sports",
-            "Rugby"
-          ],
-          "sportType": "Rugby",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p8037667_b_v12_ae.jpg",
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
-        },
-        {
-          "title": "Rugby:Super League Rugby",
+          "title": "Eredivisie",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Rugby",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:30:00Z"
+        },
+        {
+          "title": "Eredivisie Soccer",
+          "subtitle": null,
+          "description": "From AFAS Stadium in Alkmaar, North Holland, Netherlands.",
+          "categories": [
+            "Sports",
+            "Soccer"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p3605388_b_v11_cy.jpg",
+          "startAt": "2026-05-03T14:30:00Z",
+          "endAt": "2026-05-03T16:30:00Z"
+        },
+        {
+          "title": "Eredivisie",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:30:00Z",
+          "endAt": "2026-05-03T16:30:00Z"
         }
       ]
     },
@@ -921,73 +1509,209 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "The Pitch",
-        "subtitle": null,
-        "description": "When Diana Matheson retires from the game she helped define, she takes on her biggest challenge yet: building Canada's first women's professional soccer league and confronting the system that has sidelined women for decades.",
-        "categories": [
-          "Specials",
-          "Documentary"
-        ],
-        "sportType": "Football",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p31278944_b_v12_aa.jpg",
-        "startAt": "2026-05-02T21:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "The Pitch",
-          "subtitle": null,
-          "description": "When Diana Matheson retires from the game she helped define, she takes on her biggest challenge yet: building Canada's first women's professional soccer league and confronting the system that has sidelined women for decades.",
-          "categories": [
-            "Specials",
-            "Documentary"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p31278944_b_v12_aa.jpg",
-          "startAt": "2026-05-02T21:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "The Pitch",
-          "subtitle": null,
-          "description": "After her retirement, Diana Matheson co-founded the first professional women's soccer league in Canada. This documentary follows two years of fighting against institutional skepticism: an inspiring story of resilience to change the rules of the game.",
-          "categories": [
-            "Specials",
-            "Documentary"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p31278944_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
-        },
-        {
-          "title": "Northern Super League Soccer",
-          "subtitle": null,
-          "description": "From Centre Sportif Bois-de-Boulogne in Laval, Quebec, Canada.",
-          "categories": [
-            "Sports",
-            "Soccer"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p29887829_b_v12_ab.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
-        },
-        {
-          "title": "Le Soccer de la Super Ligue du Nord",
+          "title": "SC",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Football",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
+        },
+        {
+          "title": "SC",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -1001,34 +1725,54 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "NWSL Soccer",
-        "subtitle": null,
-        "description": "Orlando Pride clash with Washington Spirit in an NWSL regular-season soccer match at Inter&Co Stadium. Orlando holds a 3-1-1 edge over the past five meetings following a thrilling 3-2 victory against Washington during their clash in October 2025.",
-        "categories": [
-          "Sports",
-          "Soccer"
-        ],
-        "sportType": "Football",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11962008_b_v8_ac.jpg",
-        "startAt": "2026-05-02T20:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "NWSL Soccer",
+          "title": "Football Australien - AFL",
           "subtitle": null,
-          "description": "Orlando Pride clash with Washington Spirit in an NWSL regular-season soccer match at Inter&Co Stadium. Orlando holds a 3-1-1 edge over the past five meetings following a thrilling 3-2 victory against Washington during their clash in October 2025.",
-          "categories": [
-            "Sports",
-            "Soccer"
-          ],
+          "description": null,
+          "categories": [],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11962008_b_v8_ac.jpg",
-          "startAt": "2026-05-02T20:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "SC",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T08:30:00Z"
+        },
+        {
+          "title": "2026 IIHF U-18 World Championship",
+          "subtitle": null,
+          "description": "Gold Medal Game.",
+          "categories": [
+            "Sports",
+            "Hockey"
+          ],
+          "sportType": "Hockey",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p32779548_b_v12_ab.jpg",
+          "startAt": "2026-05-03T08:30:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
+        },
+        {
+          "title": "Championnat mondial masculin des M18 de l'IIHF",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:30:00Z",
+          "endAt": "2026-05-03T11:30:00Z"
         },
         {
           "title": "SC",
@@ -1041,61 +1785,33 @@
           "sportType": "Sports",
           "competition": null,
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11413944_b_v8_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T11:30:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
         },
         {
-          "title": "SC",
+          "title": "2026 IIHF U-18 World Championship",
           "subtitle": null,
-          "description": "Top plays from the 2025-26 NFL season.",
+          "description": "Gold Medal Game.",
           "categories": [
             "Sports",
-            "Anthology"
+            "Hockey"
           ],
-          "sportType": "Sports",
+          "sportType": "Hockey",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11413944_b_v8_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p32779548_b_v12_ab.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         },
         {
-          "title": "SC",
-          "subtitle": null,
-          "description": "Top NFL football games from this season.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11413944_b_v8_aa.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
-        },
-        {
-          "title": "NLL Lacrosse",
-          "subtitle": null,
-          "description": "Semifinal, Game 1.",
-          "categories": [
-            "Sports",
-            "Lacrosse"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p191279_b_v12_ab.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
-        },
-        {
-          "title": "LNL - Éliminatoires",
+          "title": "Championnat mondial masculin des M18 de l'IIHF",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T02:00:00Z"
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -1109,98 +1825,209 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "PGA Tour Golf",
-        "subtitle": null,
-        "description": "The third round of the PGA Tour signature event gets underway at Trump National Doral in Miami. Golfers face the grueling 7,600-yard Blue Monster layout as they jockey for position to earn a massive slice of the eight-figure financial reward.",
-        "categories": [
-          "Sports",
-          "Golf"
-        ],
-        "sportType": "Golf",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_ac.jpg",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "PGA Tour Golf",
-          "subtitle": null,
-          "description": "The third round of the PGA Tour signature event gets underway at Trump National Doral in Miami. Golfers face the grueling 7,600-yard Blue Monster layout as they jockey for position to earn a massive slice of the eight-figure financial reward.",
-          "categories": [
-            "Sports",
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_ac.jpg",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Park the Bus",
-          "subtitle": null,
-          "description": "TSN Soccer's Kevin Kilbane and Steven Caldwell discuss the world of soccer as Canada prepares to host the FIFA Men's World Cup in 2026.",
-          "categories": [
-            "Sports",
-            "Talk Show"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p30946302_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "Park The Bus",
+          "title": "SC",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
         },
         {
           "title": "SC",
           "subtitle": null,
-          "description": "The best and worst from the world of sports.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Sports",
+          "description": null,
+          "categories": [],
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11413944_b_v8_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
         },
         {
-          "title": "PWHL Hockey",
-          "subtitle": null,
-          "description": "Walter Cup Playoffs, Semifinal Game 2.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p25550418_b_v12_aa.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:30:00Z"
-        },
-        {
-          "title": "Le hockey de la LPHF - Éliminatoires",
+          "title": "Sportscentre",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Hockey",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:30:00Z"
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -1214,82 +2041,209 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "PGA Tour Golf",
-        "subtitle": null,
-        "description": "The third round of the PGA Tour signature event gets underway at Trump National Doral in Miami. Golfers face the grueling 7,600-yard Blue Monster layout as they jockey for position to earn a massive slice of the eight-figure financial reward.",
-        "categories": [
-          "Sports",
-          "Golf"
-        ],
-        "sportType": "Golf",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_ac.jpg",
-        "startAt": "2026-05-02T19:00:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "PGA Tour Golf",
+          "title": "SC",
           "subtitle": null,
-          "description": "The third round of the PGA Tour signature event gets underway at Trump National Doral in Miami. Golfers face the grueling 7,600-yard Blue Monster layout as they jockey for position to earn a massive slice of the eight-figure financial reward.",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
+        },
+        {
+          "title": "SC",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
           "categories": [
             "Sports",
-            "Golf"
+            "News"
           ],
-          "sportType": "Golf",
+          "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p845788_b_v12_ac.jpg",
-          "startAt": "2026-05-02T19:00:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
         },
         {
-          "title": "To Be Announced",
+          "title": "Sportscentre",
           "subtitle": null,
-          "description": "Programming to be announced.",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
           "categories": [
-            "TBA",
-            "Specials",
-            "Miscellaneous"
+            "Sports",
+            "News"
           ],
-          "sportType": null,
+          "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p514472_b_v12_dp.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-03T00:30:00Z"
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
         },
         {
-          "title": "SC",
+          "title": "Sportscentre",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
         },
         {
-          "title": "SC",
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
         },
         {
-          "title": "Le Soccer de la Super Ligue du Nord",
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Football",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:00:00Z"
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:00:00Z"
         }
       ]
     },
@@ -1303,98 +2257,184 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Formula 1 Racing",
-        "subtitle": null,
-        "description": "From Miami International Autodrome in Miami Gardens, Fla.",
-        "categories": [
-          "Sports",
-          "Auto Racing"
-        ],
-        "sportType": "Formula 1",
-        "competition": "Formula 1",
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p691060_b_v12_bs.jpg",
-        "startAt": "2026-05-02T19:55:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Formula 1 Racing",
-          "subtitle": null,
-          "description": "From Miami International Autodrome in Miami Gardens, Fla.",
-          "categories": [
-            "Sports",
-            "Auto Racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p691060_b_v12_bs.jpg",
-          "startAt": "2026-05-02T19:55:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Park the Bus",
-          "subtitle": null,
-          "description": "TSN Soccer's Kevin Kilbane and Steven Caldwell discuss the world of soccer as Canada prepares to host the FIFA Men's World Cup in 2026.",
-          "categories": [
-            "Sports",
-            "Talk Show"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p30946302_b_v12_aa.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
-        },
-        {
-          "title": "Park The Bus",
+          "title": "SC",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T22:30:00Z"
+          "startAt": "2026-05-03T04:00:00Z",
+          "endAt": "2026-05-03T04:30:00Z"
         },
         {
           "title": "SC",
           "subtitle": null,
-          "description": "The best and worst from the world of sports.",
-          "categories": [
-            "Sports",
-            "Anthology"
-          ],
-          "sportType": "Sports",
+          "description": null,
+          "categories": [],
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11413944_b_v8_aa.jpg",
-          "startAt": "2026-05-02T22:30:00Z",
-          "endAt": "2026-05-02T23:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T04:30:00Z",
+          "endAt": "2026-05-03T05:00:00Z"
         },
         {
-          "title": "PWHL Hockey",
-          "subtitle": null,
-          "description": "Walter Cup Playoffs, Semifinal Game 2.",
-          "categories": [
-            "Sports",
-            "Hockey"
-          ],
-          "sportType": "Hockey",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p25550418_b_v12_aa.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:30:00Z"
-        },
-        {
-          "title": "Le hockey de la LPHF - Éliminatoires",
+          "title": "Sportscentre",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": "Hockey",
+          "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T01:30:00Z"
+          "startAt": "2026-05-03T05:00:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T07:00:00Z",
+          "endAt": "2026-05-03T08:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T08:00:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T11:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T11:00:00Z",
+          "endAt": "2026-05-03T12:00:00Z"
+        },
+        {
+          "title": "SportsCentre",
+          "subtitle": null,
+          "description": "TSN's flagship show providing news, highlights, analysis and interviews from the world of sports.",
+          "categories": [
+            "Sports",
+            "News"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p492912_b_v8_ae.jpg",
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "Sportscentre",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:00:00Z",
+          "endAt": "2026-05-03T13:00:00Z"
+        },
+        {
+          "title": "FIA Formula E World Championship Racing",
+          "subtitle": null,
+          "description": "The grid battles high-grip concrete of the 15-turn Tempelhof circuit. Drivers must manage high tire wear over 1.45 miles of racing. Following a podium finish in 2025, Mitch Evans looks for a victory to propel Jaguar up the 2026 championship table.",
+          "categories": [
+            "Sports",
+            "Auto Racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_ae.jpg",
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T15:30:00Z"
+        },
+        {
+          "title": "2026 Formula E Racing",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T13:00:00Z",
+          "endAt": "2026-05-03T15:30:00Z"
         }
       ]
     },
@@ -1408,34 +2448,18 @@
         "data/normalized/guide-premium-CA-tvpassport.com.xml",
         "data/normalized/guide-premium-CA-tvhebdo.com.xml"
       ],
-      "currentProgram": {
-        "title": "Formule E",
-        "subtitle": null,
-        "description": "Couverture des plus grandes courses de la saison du championnat FIA de Formule E.",
-        "categories": [
-          "Sports",
-          "Auto Racing"
-        ],
-        "sportType": "Formula 1",
-        "competition": null,
-        "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_af.jpg",
-        "startAt": "2026-05-02T20:30:00Z",
-        "endAt": "2026-05-02T22:00:00Z"
-      },
+      "currentProgram": null,
       "programs": [
         {
-          "title": "Formule E",
+          "title": "L'académie du Guide de l'auto",
           "subtitle": null,
-          "description": "Couverture des plus grandes courses de la saison du championnat FIA de Formule E.",
-          "categories": [
-            "Sports",
-            "Auto Racing"
-          ],
-          "sportType": "Formula 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_af.jpg",
-          "startAt": "2026-05-02T20:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-03T05:30:00Z",
+          "endAt": "2026-05-03T06:00:00Z"
         },
         {
           "title": "Formule E - Qualifications",
@@ -1445,22 +2469,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T20:30:00Z",
-          "endAt": "2026-05-02T22:00:00Z"
-        },
-        {
-          "title": "Formule E",
-          "subtitle": null,
-          "description": "From Tempelhof Airport Street Circuit in Berlin-Tempelhof Apt, Berlin, Germany.",
-          "categories": [
-            "Sports",
-            "Auto Racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_af.jpg",
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
+          "startAt": "2026-05-03T06:00:00Z",
+          "endAt": "2026-05-03T07:30:00Z"
         },
         {
           "title": "Formule E - Courses",
@@ -1470,33 +2480,30 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T22:00:00Z",
-          "endAt": "2026-05-02T23:30:00Z"
+          "startAt": "2026-05-03T07:30:00Z",
+          "endAt": "2026-05-03T09:00:00Z"
         },
         {
-          "title": "Avant-match LNH",
+          "title": "Jeux de la semaine MLB",
           "subtitle": null,
-          "description": "Présentation des points à surveiller avant la présentation du match de hockey.",
-          "categories": [
-            "Sports",
-            "Talk Show"
-          ],
-          "sportType": "Hockey",
-          "competition": null,
-          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p15897291_b_v7_ac.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "description": null,
+          "categories": [],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-05-03T09:00:00Z",
+          "endAt": "2026-05-03T09:30:00Z"
         },
         {
-          "title": "L'avant-match de la LNH",
+          "title": "Le Top LNH",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T00:00:00Z"
+          "startAt": "2026-05-03T09:30:00Z",
+          "endAt": "2026-05-03T10:00:00Z"
         },
         {
           "title": "Hockey LNH",
@@ -1509,8 +2516,8 @@
           "sportType": "Hockey",
           "competition": null,
           "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p191278_b_v8_aq.jpg",
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T02:30:00Z"
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
         },
         {
           "title": "Le hockey des séries LNH Uber Eats",
@@ -1520,8 +2527,58 @@
           "sportType": "Hockey",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T02:30:00Z"
+          "startAt": "2026-05-03T10:00:00Z",
+          "endAt": "2026-05-03T12:30:00Z"
+        },
+        {
+          "title": "Formule E",
+          "subtitle": null,
+          "description": "Couverture des plus grandes courses de la saison du championnat FIA de Formule E.",
+          "categories": [
+            "Sports",
+            "Auto Racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_af.jpg",
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Formule E - Qualifications",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T12:30:00Z",
+          "endAt": "2026-05-03T14:00:00Z"
+        },
+        {
+          "title": "Formule E",
+          "subtitle": null,
+          "description": "Couverture des plus grandes courses de la saison du championnat FIA de Formule E.",
+          "categories": [
+            "Sports",
+            "Auto Racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": "https://cdn.tvpassport.com/image/show/960x540/v2/p11055708_b_v8_af.jpg",
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:30:00Z"
+        },
+        {
+          "title": "Formule E - Courses",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T14:00:00Z",
+          "endAt": "2026-05-03T15:30:00Z"
         }
       ]
     }
