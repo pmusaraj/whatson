@@ -11,19 +11,24 @@ spec.loader.exec_module(build_web_data)
 
 
 class BuildWebDataTest(unittest.TestCase):
-    def test_program_window_includes_current_and_future_schedule(self):
+    def test_program_window_collects_24_hours_starting_4_hours_before_now(self):
         now = datetime(2026, 5, 2, 12, 30, tzinfo=timezone.utc)
         programs = [
-            {"title": "Before", "startAt": "2026-05-02T10:00:00Z", "endAt": "2026-05-02T11:00:00Z"},
+            {"title": "Too old", "startAt": "2026-05-02T07:00:00Z", "endAt": "2026-05-02T08:30:00Z"},
+            {"title": "Long-running before window", "startAt": "2026-05-02T07:00:00Z", "endAt": "2026-05-02T09:00:00Z"},
+            {"title": "Before now", "startAt": "2026-05-02T10:00:00Z", "endAt": "2026-05-02T11:00:00Z"},
             {"title": "Current", "startAt": "2026-05-02T12:00:00Z", "endAt": "2026-05-02T13:00:00Z"},
             {"title": "Next", "startAt": "2026-05-02T13:00:00Z", "endAt": "2026-05-02T14:00:00Z"},
-            {"title": "Later", "startAt": "2026-05-02T15:45:00Z", "endAt": "2026-05-02T16:00:00Z"},
             {"title": "Tomorrow", "startAt": "2026-05-03T01:00:00Z", "endAt": "2026-05-03T02:00:00Z"},
+            {"title": "Outside", "startAt": "2026-05-03T08:30:00Z", "endAt": "2026-05-03T09:00:00Z"},
         ]
 
         window = build_web_data.program_window(programs, now)
 
-        self.assertEqual([program["title"] for program in window], ["Current", "Next", "Later"])
+        self.assertEqual(
+            [program["title"] for program in window],
+            ["Long-running before window", "Before now", "Current", "Next", "Tomorrow"],
+        )
 
     def test_build_country_payload_contains_channel_schedules(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -35,6 +40,8 @@ class BuildWebDataTest(unittest.TestCase):
   <channel id=\"A.fr\"><display-name>Alpha</display-name><icon src=\"https://example.com/a.png\" /></channel>
   <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Midday news</desc><category>Sports</category><category>Hockey</category><icon src="https://example.com/news.jpg" /></programme>
   <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Duplicate from another source</desc></programme>
+  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>Alternate same-slot source</title></programme>
+  <programme start="20260502121500 +0000" stop="20260502124500 +0000" channel="A.fr"><title>Overlapping duplicate source</title></programme>
   <programme start="20260502130000 +0000" stop="20260502140000 +0000" channel="A.fr"><title>Movie</title></programme>
 </tv>
 """,
@@ -49,19 +56,23 @@ class BuildWebDataTest(unittest.TestCase):
             )
 
         self.assertEqual(payload["country"], "FR")
+        self.assertEqual(payload["windowHours"], 24)
+        self.assertEqual(payload["windowStartOffsetHours"], 4)
         self.assertEqual(payload["channels"][0]["name"], "Alpha")
         self.assertEqual(payload["channels"][0]["provider"], "Validated grabber")
         self.assertEqual(payload["channels"][0]["programs"][0]["title"], "News")
         self.assertEqual(payload["channels"][0]["programs"][0]["categories"], ["Sports", "Hockey"])
         self.assertEqual(payload["channels"][0]["programs"][0]["sportType"], "Hockey")
         self.assertEqual(payload["channels"][0]["programs"][0]["imageUrl"], "https://example.com/news.jpg")
+        self.assertEqual(len(payload["channels"][0]["programs"]), 2)
         self.assertEqual(payload["channels"][0]["programs"][1]["title"], "Movie")
 
     def test_is_premium_sports_channel_uses_keywords_and_ids(self):
         self.assertTrue(build_web_data.is_premium_sports_channel("TSN1.ca", "Movie Channel", set()))
         self.assertTrue(build_web_data.is_premium_sports_channel("CanalPlusSport.fr", "Canal+ Sport", {"CanalPlusSport.fr"}))
         self.assertTrue(build_web_data.is_premium_sports_channel("Any.id", "DAZN 1", set()))
-        self.assertFalse(build_web_data.is_premium_sports_channel("Tennis.id", "Tennis Channel", set()))
+        self.assertTrue(build_web_data.is_premium_sports_channel("SkySportsMainEvent.uk", "Movies", set()))
+        self.assertTrue(build_web_data.is_premium_sports_channel("Tennis.id", "Tennis Channel", set()))
         self.assertFalse(build_web_data.is_premium_sports_channel("News.id", "World News", set()))
 
     def test_build_country_payload_can_filter_premium_sports_channels(self):

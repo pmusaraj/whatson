@@ -1,0 +1,403 @@
+{
+  "country": "DE",
+  "countryName": "Germany",
+  "generatedAt": "2026-05-04T01:48:50.536221Z",
+  "windowHours": 24,
+  "windowStartOffsetHours": 4,
+  "premiumSportsOnly": true,
+  "sourceGuides": [
+    "data/normalized/guide-premium-DE-sky.de.xml",
+    "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+  ],
+  "channelCount": 12,
+  "channels": [
+    {
+      "id": "SportdigitalFUSSBALL.de",
+      "name": "SPORTDIGITAL FUSSBALL",
+      "logoUrl": "https://i.imgur.com/NDbWxqF.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "FC Hibernian - Celtic Glasgow, Scottish Premiership (35. Spieltag)",
+        "subtitle": "Hibernian Edinburgh - Celtic Glasgow",
+        "description": "Aus dem Easter Road in Edinburgh, Schottland.",
+        "categories": [
+          "Fußball"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3608998_i_h9_ac_2025-10-07T21_04_52.jpg",
+        "startAt": "2026-05-03T23:45:00Z",
+        "endAt": "2026-05-04T01:50:00Z"
+      },
+      "programs": [
+        {
+          "title": "LIVE CA River Plate - CA Tucuman, Liga Profesional Apertura (9. Spieltag)",
+          "subtitle": "River Plate - Club Atletico Tucuman",
+          "description": "Aus dem Estadio Monumental Antonio Vespucio Liberti in Buenos Aires, Argentinien.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9208940_i_h9_ad_2025-12-02T17_35_02.jpg",
+          "startAt": "2026-05-03T21:25:00Z",
+          "endAt": "2026-05-03T23:45:00Z"
+        },
+        {
+          "title": "FC Hibernian - Celtic Glasgow, Scottish Premiership (35. Spieltag)",
+          "subtitle": "Hibernian Edinburgh - Celtic Glasgow",
+          "description": "Aus dem Easter Road in Edinburgh, Schottland.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3608998_i_h9_ac_2025-10-07T21_04_52.jpg",
+          "startAt": "2026-05-03T23:45:00Z",
+          "endAt": "2026-05-04T01:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": "Eurosport1.fr",
+      "name": "Eurosport 1",
+      "logoUrl": "https://i.imgur.com/olQJgm7.png",
+      "provider": "MagentaTV Germany sports guide",
+      "providerKey": "premium-magenta-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "IFSC Sportklettern Weltcup",
+          "subtitle": "Keqiao : Bouldern : Finale : Männer",
+          "description": "Keqiao ----- Bouldern ----- Finale.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        },
+        {
+          "title": "UCI ProSeries Männer",
+          "subtitle": "Türkei-Rundfahrt : 8. Etappe",
+          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
+          "startAt": "2026-05-03T23:00:00Z",
+          "endAt": "2026-05-03T23:30:00Z"
+        },
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g100_h9_ab.jpg",
+          "startAt": "2026-05-03T23:30:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "Eurosport2.fr",
+      "name": "Eurosport 2",
+      "logoUrl": "https://i.imgur.com/f56dHgR.png",
+      "provider": "MagentaTV Germany sports guide",
+      "providerKey": "premium-magenta-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "UCI Mountainbike Weltcup",
+          "subtitle": "Yongpyong : Männer Elite",
+          "description": "UCI Weltcup ----- Yongpyong ----- Männer-Elite.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623971_i_h9_ab_2024-04-12T09_13_36.jpg",
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "Formel E",
+          "subtitle": "ePrix Berlin: 2. Rennen",
+          "description": "Vom Tempelhof Airport Street Circuit in Berlin, Deutschland.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11055708_i_h9_ae_2025-05-02T15_53_41.jpg",
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        },
+        {
+          "title": "FIA WEC",
+          "subtitle": "6 Hours of Imola - Race",
+          "description": "Vom Autodromo Enzo e Dino Ferrari in Imola, Emilia-Romagna, Italien.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11631169_i_h9_af_2025-02-19T19_04_49.jpg",
+          "startAt": "2026-05-03T23:00:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "DAZN1.uk",
+      "name": "DAZN 1 HD",
+      "logoUrl": "https://i.imgur.com/2Z2EmZF.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "FC Bayern World Squad: Class of '25 - Folge 3",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sportmagazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:15:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "DAZN2.uk",
+      "name": "DAZN 2 HD",
+      "logoUrl": "https://i.imgur.com/OGj3qf5.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Best of DAZN: Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:45:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySport1.de",
+      "name": "Sky Sport 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Live NBA: Orlando Magic @ Detroit Pistons, Playoffs, Runde 1, Spiel 7",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Basketball"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-05-03T19:15:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportF1.de",
+      "name": "Sky Sport F1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_Sport_F1_-_Logo_2020.svg/960px-Sky_Sport_F1_-_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "F1: Rennen - GP Miami",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/16136992_s.jpg",
+          "startAt": "2026-05-03T20:30:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportGolf.de",
+      "name": "Sky Sport Golf HD",
+      "logoUrl": "https://i.imgur.com/nhhbHvs.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Golf Ladies ET: MCB Ladies Classic, 3. Tag in Poste de Flacq (Mauritius)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17610314_s.jpg",
+          "startAt": "2026-05-03T19:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportNews.de",
+      "name": "Sky Sport News HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/c/cc/Sky_Sport_News_2020.svg/960px-Sky_Sport_News_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "PL: Highlights Sonntag, 35. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17666481_s.jpg",
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportPremierLeague.de",
+      "name": "Sky Sport Premier League HD",
+      "logoUrl": "https://i.imgur.com/ChWdcRC.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "PL: 90in30: MUN - LIV, 35. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17666484_s.jpg",
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportTennis.de",
+      "name": "Sky Sport Tennis HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sky_Sport_Tennis.svg/960px-Sky_Sport_Tennis.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "ATP 1000: A. Zverev (GER) - J. Sinner (ITA), Mutua Madrid Open in Madrid (ESP), Finale",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": "Madrid Open",
+          "imageUrl": "http://sky.de/static/img/program_guide/17657839_s.jpg",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportTopEvent.de",
+      "name": "Sky Sport Top Event HD",
+      "logoUrl": "https://i.imgur.com/kQ6cVNx.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Live F1: Analysen & Interviews - GP Miami",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/16136993_s.jpg",
+          "startAt": "2026-05-03T21:45:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    }
+  ]
+}

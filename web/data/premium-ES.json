@@ -1,8 +1,9 @@
 {
   "country": "ES",
   "countryName": "Spain",
-  "generatedAt": "2026-05-03T02:51:48.362156Z",
-  "windowHours": 12,
+  "generatedAt": "2026-05-04T01:48:50.536221Z",
+  "windowHours": 24,
+  "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
   "sourceGuides": [
     "data/normalized/guide-premium-ES-orangetv.orange.es.xml",
@@ -20,112 +21,34 @@
         "data/normalized/guide-premium-ES-programacion-tv.elpais.com.xml"
       ],
       "currentProgram": {
-        "title": "Professional Fighters League (T2026): Velada Completa. Sioux Falls",
+        "title": "Mutua Madrid Open (T2026): Andreeva - Kostyuk",
         "subtitle": null,
         "description": "sin descripción",
         "categories": [
           "Otros/Otros"
         ],
-        "sportType": null,
-        "competition": null,
+        "sportType": "Tennis",
+        "competition": "Madrid Open",
         "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-        "startAt": "2026-05-02T23:00:00Z",
-        "endAt": "2026-05-03T04:30:00Z"
+        "startAt": "2026-05-04T01:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
-          "title": "Professional Fighters League (T2026): Velada Completa. Sioux Falls",
+          "title": "NHL (T25/26): Tampa Bay Lightning - Montreal Canadiens",
           "subtitle": null,
           "description": "sin descripción",
           "categories": [
             "Otros/Otros"
           ],
-          "sportType": null,
-          "competition": null,
+          "sportType": "Hockey",
+          "competition": "NHL",
           "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-02T23:00:00Z",
-          "endAt": "2026-05-03T04:30:00Z"
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
         },
         {
-          "title": "World of free sports (T2026): Episodio 16",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-03T04:30:00Z",
-          "endAt": "2026-05-03T05:00:00Z"
-        },
-        {
-          "title": "Eurofighters (T25/26): Episodio 30",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/",
-          "startAt": "2026-05-03T05:00:00Z",
-          "endAt": "2026-05-03T06:00:00Z"
-        },
-        {
-          "title": "OXER Hípica (T2026): Highlights Liga RFHE. Valencia",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-03T06:00:00Z",
-          "endAt": "2026-05-03T07:00:00Z"
-        },
-        {
-          "title": "Copa del Rey de Rugby (T25/26): Final Copa del Rey. Silicius Alcobendas Rugby - Complutense Cisneros",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": "Rugby",
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-03T07:00:00Z",
-          "endAt": "2026-05-03T08:45:00Z"
-        },
-        {
-          "title": "Eurofighters (T25/26): Episodio 30",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/",
-          "startAt": "2026-05-03T08:45:00Z",
-          "endAt": "2026-05-03T09:45:00Z"
-        },
-        {
-          "title": "Las Carreras (T2026): Hipódromo de La Zarzuela. 03/05/2026",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-03T09:45:00Z",
-          "endAt": "2026-05-03T12:45:00Z"
-        },
-        {
-          "title": "Mutua Madrid Open (T2026): Final Femenina",
+          "title": "Mutua Madrid Open (T2026): Andreeva - Kostyuk",
           "subtitle": null,
           "description": "sin descripción",
           "categories": [
@@ -134,8 +57,216 @@
           "sportType": "Tennis",
           "competition": "Madrid Open",
           "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-03T12:45:00Z",
-          "endAt": "2026-05-03T15:15:00Z"
+          "startAt": "2026-05-04T01:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
+        },
+        {
+          "title": "Eurofighters (T25/26): Episodio 30",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T05:00:00Z"
+        },
+        {
+          "title": "Informe Plus+. Faustino Reyes. El precio de la Plata",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T05:00:00Z",
+          "endAt": "2026-05-04T06:00:00Z"
+        },
+        {
+          "title": "Carreras de Caballos- Turf (T2026): 03/05/2026/ Hipódromo de la Zarzuela",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T06:00:00Z",
+          "endAt": "2026-05-04T07:10:00Z"
+        },
+        {
+          "title": "Primera FEB (T25/26): Movistar Estudiantes - Palmer B. Mallorca",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T07:10:00Z",
+          "endAt": "2026-05-04T09:10:00Z"
+        },
+        {
+          "title": "Eurofighters (T25/26): Episodio 30",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T09:10:00Z",
+          "endAt": "2026-05-04T10:10:00Z"
+        },
+        {
+          "title": "Investec Champions Cup (T25/26): Leinster - Toulon",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T10:10:00Z",
+          "endAt": "2026-05-04T11:55:00Z"
+        },
+        {
+          "title": "Informe Plus+. El mejor equipo de Zupo",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T11:55:00Z",
+          "endAt": "2026-05-04T12:30:00Z"
+        },
+        {
+          "title": "NHL (T25/26): Tampa Bay Lightning - Montreal Canadiens",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": "Hockey",
+          "competition": "NHL",
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T12:30:00Z",
+          "endAt": "2026-05-04T15:05:00Z"
+        },
+        {
+          "title": "VKS (T2026): Episodio 260",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T15:05:00Z",
+          "endAt": "2026-05-04T15:30:00Z"
+        },
+        {
+          "title": "MLB Plays of the Week (T2026): Episodio 4",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T15:30:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "XII Edición del Descenso del Sella en Stand Up Paddle (SUP)",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T16:17:00Z"
+        },
+        {
+          "title": "Eurofighters (T25/26): Episodio 30",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T16:17:00Z",
+          "endAt": "2026-05-04T17:15:00Z"
+        },
+        {
+          "title": "Super Rugby Pacific (T2026): Hurricanes - Crusaders",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T17:15:00Z",
+          "endAt": "2026-05-04T19:00:00Z"
+        },
+        {
+          "title": "World of free sports (T2026): Episodio 17",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/",
+          "startAt": "2026-05-04T19:00:00Z",
+          "endAt": "2026-05-04T19:30:00Z"
+        },
+        {
+          "title": "Racing on the Edge (T2026): Episodio 1",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T19:30:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "Mutua Madrid Open (T2026): Sinner - Zverev",
+          "subtitle": null,
+          "description": "sin descripción",
+          "categories": [
+            "Otros/Otros"
+          ],
+          "sportType": "Tennis",
+          "competition": "Madrid Open",
+          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-04T22:15:00Z"
         }
       ]
     },
@@ -149,7 +280,7 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "El Clásico - T2021, E01: ElClásico 2021/22: El Camp Nou",
+        "title": "El Clásico - T2017, E01: ElClásico 2017/18: Un Barça invencible",
         "subtitle": "El Clásico",
         "description": "El Clásico.",
         "categories": [
@@ -159,26 +290,68 @@
         "sportType": "Football",
         "competition": null,
         "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024548.jpg",
-        "startAt": "2026-05-03T02:22:46Z",
-        "endAt": "2026-05-03T03:26:11Z"
+        "startAt": "2026-05-04T01:41:53Z",
+        "endAt": "2026-05-04T02:39:13Z"
       },
       "programs": [
         {
-          "title": "El Clásico - T2021, E01: ElClásico 2021/22: El Camp Nou",
-          "subtitle": "El Clásico",
-          "description": "El Clásico.",
+          "title": "Atlético de Madrid - Real Madrid 2018/19",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Deportes",
+            "Otros"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:09:26Z"
+        },
+        {
+          "title": "LALIGA VS - T2, E01: Episodio 1",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024548.jpg",
-          "startAt": "2026-05-03T02:22:46Z",
-          "endAt": "2026-05-03T03:26:11Z"
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-03T22:09:26Z",
+          "endAt": "2026-05-03T22:42:47Z"
         },
         {
-          "title": "LaLiga Arquitectos - T2026, E05: Ibai Gòmez",
+          "title": "LALIGA VS - T2025, E02: Episodio 2",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-03T22:42:47Z",
+          "endAt": "2026-05-03T23:16:37Z"
+        },
+        {
+          "title": "LALIGA VS - T2025, E03: Episodio 3",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-03T23:16:37Z",
+          "endAt": "2026-05-03T23:45:16Z"
+        },
+        {
+          "title": "LaLiga Arquitectos - T2026, E02: Monchi",
           "subtitle": "LaLiga Arquitectos",
           "description": null,
           "categories": [
@@ -188,53 +361,11 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5188876.jpg",
-          "startAt": "2026-05-03T03:26:11Z",
-          "endAt": "2026-05-03T04:58:26Z"
+          "startAt": "2026-05-03T23:45:16Z",
+          "endAt": "2026-05-04T00:20:32Z"
         },
         {
-          "title": "LALIGA VS - T2025, E06: Episodio 6",
-          "subtitle": "LALIGA VS",
-          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
-          "startAt": "2026-05-03T04:58:26Z",
-          "endAt": "2026-05-03T05:25:22Z"
-        },
-        {
-          "title": "LALIGA VS - T2025, E07: Episodio 7",
-          "subtitle": "LALIGA VS",
-          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
-          "startAt": "2026-05-03T05:25:22Z",
-          "endAt": "2026-05-03T05:58:31Z"
-        },
-        {
-          "title": "LALIGA VS - T2025, E08: Episodio 8",
-          "subtitle": "LALIGA VS",
-          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
-          "startAt": "2026-05-03T05:58:31Z",
-          "endAt": "2026-05-03T06:28:18Z"
-        },
-        {
-          "title": "All goals by - T2026, E06: Todos los goles de Van Nistelrooy en LaLiga",
+          "title": "All goals by - T2024, E13: Todos los goles de Dodi Lukébakio (2024/2025)",
           "subtitle": "All goals by",
           "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
           "categories": [
@@ -244,25 +375,25 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
-          "startAt": "2026-05-03T06:28:18Z",
-          "endAt": "2026-05-03T06:53:15Z"
+          "startAt": "2026-05-04T00:20:32Z",
+          "endAt": "2026-05-04T00:33:00Z"
         },
         {
-          "title": "Lo mejor de LaLiga - T2026, E08: Lo mejor de Iniesta en LALIGA",
-          "subtitle": "Lo mejor de LaLiga",
-          "description": "Se presentan los momentos más destacados de LaLiga.",
+          "title": "All goals by - T2024, E07: Todos los goles de Ante Budimir (2024/2025)",
+          "subtitle": "All goals by",
+          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024544.jpg",
-          "startAt": "2026-05-03T06:53:15Z",
-          "endAt": "2026-05-03T07:02:24Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
+          "startAt": "2026-05-04T00:33:00Z",
+          "endAt": "2026-05-04T00:52:57Z"
         },
         {
-          "title": "Derbies - T2025, E01: Derbies Sevilla FC - Real Betis",
+          "title": "Derbies - T2025, E02: Derbies Atletico Madrid - Barcelona",
           "subtitle": "Derbies",
           "description": null,
           "categories": [
@@ -272,36 +403,78 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5177304.jpg",
-          "startAt": "2026-05-03T07:02:24Z",
-          "endAt": "2026-05-03T07:46:01Z"
+          "startAt": "2026-05-04T00:52:57Z",
+          "endAt": "2026-05-04T01:41:53Z"
         },
         {
-          "title": "LaLiga - T2015, E18: Sevilla FC - Real Betis 2015/16",
-          "subtitle": "LaLiga",
-          "description": "Los mejores clubes y profesionales de renombre mundial. Equipos como Barcelona, Real Madrid y Atlético de Madrid se enfrentan por el título.",
+          "title": "El Clásico - T2017, E01: ElClásico 2017/18: Un Barça invencible",
+          "subtitle": "El Clásico",
+          "description": "El Clásico.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024548.jpg",
+          "startAt": "2026-05-04T01:41:53Z",
+          "endAt": "2026-05-04T02:39:13Z"
+        },
+        {
+          "title": "LaLiga Legends - T1, E06: LALIGA Legends Navas",
+          "subtitle": "LaLiga Legends",
+          "description": "Descubre cómo estas personalidades del deporte se han convertido en leyendas de LaLiga.",
+          "categories": [
+            "Documental",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024537.jpg",
+          "startAt": "2026-05-04T02:39:13Z",
+          "endAt": "2026-05-04T03:12:03Z"
+        },
+        {
+          "title": "Laliga Top Goals - T2024, E01: Los mejores goles de 2024",
+          "subtitle": "Laliga Top Goals",
+          "description": "Llega a la pantalla una recopilación de los goles marcados en los partidos de la Liga española.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997828.jpg",
-          "startAt": "2026-05-03T07:46:01Z",
-          "endAt": "2026-05-03T09:59:59Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024542.jpg",
+          "startAt": "2026-05-04T03:12:03Z",
+          "endAt": "2026-05-04T04:15:21Z"
         },
         {
-          "title": "LaLiga Somos Equipo - T2, E05: Episodio 5",
-          "subtitle": "LaLiga Somos Equipo",
-          "description": "Serie documental sobre los equipos de LALIGA.",
+          "title": "All goals by - T2026, E02: Todos los goles de Silva en LALIGA",
+          "subtitle": "All goals by",
+          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024540.jpg",
-          "startAt": "2026-05-03T09:59:59Z",
-          "endAt": "2026-05-03T10:14:56Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
+          "startAt": "2026-05-04T04:15:21Z",
+          "endAt": "2026-05-04T04:35:48Z"
+        },
+        {
+          "title": "Lo mejor de LaLiga - T2026, E01: Las mejores duplas de LALIGA",
+          "subtitle": "Lo mejor de LaLiga",
+          "description": "Se presentan los momentos más destacados de LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024544.jpg",
+          "startAt": "2026-05-04T04:35:48Z",
+          "endAt": "2026-05-04T04:48:21Z"
         },
         {
           "title": "LALIGA Beyond Stats 2025/26 Programa31",
@@ -314,67 +487,165 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
-          "startAt": "2026-05-03T10:14:56Z",
-          "endAt": "2026-05-03T10:32:05Z"
+          "startAt": "2026-05-04T04:48:21Z",
+          "endAt": "2026-05-04T05:05:30Z"
         },
         {
-          "title": "All goals by - T2024, E01: Todos los goles de Kylian Mbappé (2024/2025)",
-          "subtitle": "All goals by",
-          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
+          "title": "LaLiga Somos Equipo - T2, E05: Episodio 5",
+          "subtitle": "LaLiga Somos Equipo",
+          "description": "Serie documental sobre los equipos de LALIGA.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
-          "startAt": "2026-05-03T10:32:05Z",
-          "endAt": "2026-05-03T11:00:03Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024540.jpg",
+          "startAt": "2026-05-04T05:05:30Z",
+          "endAt": "2026-05-04T05:22:30Z"
         },
         {
-          "title": "All goals by - T2024, E02: Todos los goles de Raphinha (2024/2025)",
-          "subtitle": "All goals by",
-          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
+          "title": "LaLiga Somos Equipo - T2, E06: Episodio 6",
+          "subtitle": "LaLiga Somos Equipo",
+          "description": "Serie documental sobre los equipos de LALIGA.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
-          "startAt": "2026-05-03T11:00:03Z",
-          "endAt": "2026-05-03T11:12:46Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024540.jpg",
+          "startAt": "2026-05-04T05:22:30Z",
+          "endAt": "2026-05-04T05:38:25Z"
         },
         {
-          "title": "All goals by - T2024, E03: Todos los goles de Borja Iglesias (2024/2025)",
-          "subtitle": "All goals by",
-          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
-          "startAt": "2026-05-03T11:12:46Z",
-          "endAt": "2026-05-03T11:24:55Z"
-        },
-        {
-          "title": "eSports LALIGA FC Pro | Cup - T2026, E08: LALIGA FC Pro SuperCup",
-          "subtitle": "eSports LALIGA FC Pro | Cup",
-          "description": "Una mirada a la edición de la LALIGA FC Pro Cup.",
+          "title": "LaLiga FC Pro",
+          "subtitle": null,
+          "description": "Una mirada a la edición de La Liga FC Pro.",
           "categories": [
             "Deportes",
             "eSports"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024531.jpg",
-          "startAt": "2026-05-03T11:24:55Z",
-          "endAt": "2026-05-03T14:25:17Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4018746.jpg",
+          "startAt": "2026-05-04T05:38:25Z",
+          "endAt": "2026-05-04T07:44:32Z"
         },
         {
-          "title": "El Clásico - T2019, E01: ElCásico 2019/20: Bajo control",
+          "title": "LaLiga",
+          "subtitle": null,
+          "description": "Los mejores clubes y profesionales de renombre mundial. Equipos como Barcelona, Real Madrid y Atlético de Madrid se enfrentan por el título.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994597.jpg",
+          "startAt": "2026-05-04T07:44:32Z",
+          "endAt": "2026-05-04T09:59:59Z"
+        },
+        {
+          "title": "LALIGA VS - T2, E01: Episodio 1",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-04T09:59:59Z",
+          "endAt": "2026-05-04T10:29:26Z"
+        },
+        {
+          "title": "LALIGA VS - T2025, E02: Episodio 2",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-04T10:29:26Z",
+          "endAt": "2026-05-04T11:17:37Z"
+        },
+        {
+          "title": "LALIGA VS - T2025, E03: Episodio 3",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-04T11:17:37Z",
+          "endAt": "2026-05-04T11:49:10Z"
+        },
+        {
+          "title": "LaLiga Arquitectos - T2026, E02: Monchi",
+          "subtitle": "LaLiga Arquitectos",
+          "description": null,
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5188876.jpg",
+          "startAt": "2026-05-04T11:49:10Z",
+          "endAt": "2026-05-04T12:22:23Z"
+        },
+        {
+          "title": "All goals by - T2024, E13: Todos los goles de Dodi Lukébakio (2024/2025)",
+          "subtitle": "All goals by",
+          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
+          "startAt": "2026-05-04T12:22:23Z",
+          "endAt": "2026-05-04T12:34:52Z"
+        },
+        {
+          "title": "All goals by - T2024, E07: Todos los goles de Ante Budimir (2024/2025)",
+          "subtitle": "All goals by",
+          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
+          "startAt": "2026-05-04T12:34:52Z",
+          "endAt": "2026-05-04T12:52:43Z"
+        },
+        {
+          "title": "Derbies - T2025, E02: Derbies Atletico Madrid - Barcelona",
+          "subtitle": "Derbies",
+          "description": null,
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5177304.jpg",
+          "startAt": "2026-05-04T12:52:43Z",
+          "endAt": "2026-05-04T13:41:40Z"
+        },
+        {
+          "title": "El Clásico - T2015, E01: ElClásico 2015/16: El Barça",
           "subtitle": "El Clásico",
           "description": "El Clásico.",
           "categories": [
@@ -384,8 +655,148 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024548.jpg",
-          "startAt": "2026-05-03T14:25:17Z",
-          "endAt": "2026-05-03T15:27:13Z"
+          "startAt": "2026-05-04T13:41:40Z",
+          "endAt": "2026-05-04T14:39:02Z"
+        },
+        {
+          "title": "LaLiga Legends - T1, E06: LALIGA Legends Navas",
+          "subtitle": "LaLiga Legends",
+          "description": "Descubre cómo estas personalidades del deporte se han convertido en leyendas de LaLiga.",
+          "categories": [
+            "Documental",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024537.jpg",
+          "startAt": "2026-05-04T14:39:02Z",
+          "endAt": "2026-05-04T15:09:47Z"
+        },
+        {
+          "title": "Laliga Top Goals - T2024, E01: Los mejores goles de 2024",
+          "subtitle": "Laliga Top Goals",
+          "description": "Llega a la pantalla una recopilación de los goles marcados en los partidos de la Liga española.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024542.jpg",
+          "startAt": "2026-05-04T15:09:47Z",
+          "endAt": "2026-05-04T16:13:06Z"
+        },
+        {
+          "title": "All goals by - T2026, E02: Todos los goles de Silva en LALIGA",
+          "subtitle": "All goals by",
+          "description": "Cápsulas con las anotaciones más destacadas de los jugadores que han participado en LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024535.jpg",
+          "startAt": "2026-05-04T16:13:06Z",
+          "endAt": "2026-05-04T16:31:30Z"
+        },
+        {
+          "title": "Lo mejor de LaLiga - T2026, E01: Las mejores duplas de LALIGA",
+          "subtitle": "Lo mejor de LaLiga",
+          "description": "Se presentan los momentos más destacados de LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024544.jpg",
+          "startAt": "2026-05-04T16:31:30Z",
+          "endAt": "2026-05-04T16:44:02Z"
+        },
+        {
+          "title": "LALIGA Beyond Stats 2025/26 Programa31",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Deportes",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T16:44:02Z",
+          "endAt": "2026-05-04T16:59:06Z"
+        },
+        {
+          "title": "LaLiga FC Futures Mundial Sub12 - T2026, E04: I MUNDIAL DE CLUBES SUB-12 LALIGA FC FUTURES - ...",
+          "subtitle": "LaLiga FC Futures Mundial Sub12",
+          "description": "Este torneo reúne a 20 clubes de élite de cinco continentes que lucharán por alzarse con el triunfo.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5128041.jpg",
+          "startAt": "2026-05-04T16:59:06Z",
+          "endAt": "2026-05-04T17:19:16Z"
+        },
+        {
+          "title": "LaLiga Somos Equipo - T2, E05: Episodio 5",
+          "subtitle": "LaLiga Somos Equipo",
+          "description": "Serie documental sobre los equipos de LALIGA.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024540.jpg",
+          "startAt": "2026-05-04T17:19:16Z",
+          "endAt": "2026-05-04T17:34:12Z"
+        },
+        {
+          "title": "LaLiga Somos Equipo - T2, E06: Episodio 6",
+          "subtitle": "LaLiga Somos Equipo",
+          "description": "Serie documental sobre los equipos de LALIGA.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024540.jpg",
+          "startAt": "2026-05-04T17:34:12Z",
+          "endAt": "2026-05-04T17:50:07Z"
+        },
+        {
+          "title": "LaLiga FC Pro",
+          "subtitle": null,
+          "description": "Una mirada a la edición de La Liga FC Pro.",
+          "categories": [
+            "Deportes",
+            "eSports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4018746.jpg",
+          "startAt": "2026-05-04T17:50:07Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "LaLiga - T2015, E12: Real Madrid - FC Barcelona 2015/16",
+          "subtitle": "LaLiga",
+          "description": "Los mejores clubes y profesionales de renombre mundial. Equipos como Barcelona, Real Madrid y Atlético de Madrid se enfrentan por el título.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997828.jpg",
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-04T22:24:54Z"
         }
       ]
     },
@@ -409,108 +820,10 @@
         "sportType": "Football",
         "competition": "LaLiga",
         "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
-        "startAt": "2026-05-02T23:30:00Z",
-        "endAt": "2026-05-03T04:30:00Z"
+        "startAt": "2026-05-03T23:30:00Z",
+        "endAt": "2026-05-04T04:30:00Z"
       },
       "programs": [
-        {
-          "title": "LaLiga TV Hypermotion",
-          "subtitle": null,
-          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
-          "categories": [
-            "Programa",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
-          "startAt": "2026-05-02T23:30:00Z",
-          "endAt": "2026-05-03T04:30:00Z"
-        },
-        {
-          "title": "LaLiga TV Hypermotion",
-          "subtitle": null,
-          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
-          "categories": [
-            "Programa",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
-          "startAt": "2026-05-03T04:30:00Z",
-          "endAt": "2026-05-03T05:00:00Z"
-        },
-        {
-          "title": "LaLiga Hypermotion - T38, E01: CD Castellón-Córdoba CF",
-          "subtitle": "LaLiga Hypermotion",
-          "description": "Castellón se enfrenta a Córdoba en LaLiga Hypermotion. Castellón juega de local en el Estadio Skyfi Castalia. Ronda 38.",
-          "categories": [
-            "Fútbol",
-            "LaLiga Hypermotion"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga Hypermotion",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220153.jpg",
-          "startAt": "2026-05-03T05:00:00Z",
-          "endAt": "2026-05-03T07:00:00Z"
-        },
-        {
-          "title": "LaLiga Hypermotion - T38, E08: Cultural Leonesa-Cádiz CF",
-          "subtitle": "LaLiga Hypermotion",
-          "description": "Cultural Leonesa enfrenta a Cádiz en LaLiga Hypermotion. Ronda 38.",
-          "categories": [
-            "Fútbol",
-            "LaLiga Hypermotion"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga Hypermotion",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220168.jpg",
-          "startAt": "2026-05-03T07:00:00Z",
-          "endAt": "2026-05-03T09:00:00Z"
-        },
-        {
-          "title": "LaLiga Hypermotion - T38, E03: SD Eibar-Málaga CF",
-          "subtitle": "LaLiga Hypermotion",
-          "description": "SD Eibar se enfrenta a Málaga en LaLiga Hypermotion. SD Eibar juega de local en el Municipal de Ipurua. Ronda 38.",
-          "categories": [
-            "Fútbol",
-            "LaLiga Hypermotion"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga Hypermotion",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220157.jpg",
-          "startAt": "2026-05-03T09:00:00Z",
-          "endAt": "2026-05-03T11:00:00Z"
-        },
-        {
-          "title": "Especiales LaLiga",
-          "subtitle": null,
-          "description": "Reportajes sobre la actualidad de LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4075276.jpg",
-          "startAt": "2026-05-03T11:00:00Z",
-          "endAt": "2026-05-03T11:30:00Z"
-        },
-        {
-          "title": "Previa LaLiga HyperMotion",
-          "subtitle": null,
-          "description": "Toda la información previa a los partidos que se van a disputar en la siguiente jornada de competición. Noticias, estadísticas, análisis y los datos necesarios para disfrutar más de los encuentros.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga Hypermotion",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4050758.jpg",
-          "startAt": "2026-05-03T11:30:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
-        },
         {
           "title": "LaLiga Hypermotion - T38, E11: Real Racing Club-SD Huesca",
           "subtitle": "LaLiga Hypermotion",
@@ -522,22 +835,50 @@
           "sportType": "Football",
           "competition": "LaLiga Hypermotion",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220174.jpg",
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T14:00:00Z"
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T23:30:00Z"
         },
         {
-          "title": "Post LaLiga HyperMotion",
+          "title": "LaLiga TV Hypermotion",
           "subtitle": null,
-          "description": "Tras la disputa de los encuentros, es tiempo para el análisis. Los entrenadores de los equipos de LaLiga HyperMotion desmenuzan las claves que, según ellos, han propiciado el resultado del partido que acaban de jugar.",
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
           "categories": [
-            "Fútbol",
+            "Programa",
             "Otros"
           ],
           "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
+          "startAt": "2026-05-03T23:30:00Z",
+          "endAt": "2026-05-04T04:30:00Z"
+        },
+        {
+          "title": "LaLiga TV Hypermotion",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
+          "startAt": "2026-05-04T04:30:00Z",
+          "endAt": "2026-05-04T05:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E04: UD Las Palmas-Real Valladolid",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Las Palmas se enfrenta a Real Valladolid en LaLiga Hypermotion. Las Palmas juega de local en el Estadio de Gran Canaria. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
           "competition": "LaLiga Hypermotion",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4607277.jpg",
-          "startAt": "2026-05-03T14:00:00Z",
-          "endAt": "2026-05-03T14:15:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220160.jpg",
+          "startAt": "2026-05-04T05:00:00Z",
+          "endAt": "2026-05-04T07:00:00Z"
         },
         {
           "title": "LaLiga Hypermotion - T38, E09: Sporting de Gijón-AD Ceuta FC",
@@ -550,8 +891,134 @@
           "sportType": "Football",
           "competition": "LaLiga Hypermotion",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220170.jpg",
-          "startAt": "2026-05-03T14:15:00Z",
-          "endAt": "2026-05-03T16:30:00Z"
+          "startAt": "2026-05-04T07:00:00Z",
+          "endAt": "2026-05-04T09:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E07: Real Sociedad B-Burgos CF",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Real Sociedad B se enfrenta a Burgos CF en LaLiga Hypermotion. Real Sociedad B juega de local en el Reale Arena. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220166.jpg",
+          "startAt": "2026-05-04T09:00:00Z",
+          "endAt": "2026-05-04T11:00:00Z"
+        },
+        {
+          "title": "Especiales LaLiga",
+          "subtitle": null,
+          "description": "Reportajes sobre la actualidad de LaLiga.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4075276.jpg",
+          "startAt": "2026-05-04T11:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E09: Sporting de Gijón-AD Ceuta FC",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Sporting de Gijón enfrenta a Ceuta en LaLiga Hypermotion. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220170.jpg",
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T14:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E02: RCD La Coruña-CD Leganés",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Deportivo La Coruña se enfrenta a Leganés en LaLiga Hypermotion. Deportivo La Coruña juega de local en el Estadio de Riazor. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220154.jpg",
+          "startAt": "2026-05-04T14:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E11: Real Racing Club-SD Huesca",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Real Racing Club enfrenta a Huesca en LaLiga Hypermotion. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220174.jpg",
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T18:00:00Z"
+        },
+        {
+          "title": "Inside - El gran derbi",
+          "subtitle": null,
+          "description": "Un recorrido por la organización de El Gran Derbi de Sevilla y el impacto de la piratería audiovisual.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4879786.jpg",
+          "startAt": "2026-05-04T18:00:00Z",
+          "endAt": "2026-05-04T18:30:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E05: UD Almería-CD Mirandés",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Almería enfrenta a Mirandés en LaLiga Hypermotion. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220161.jpg",
+          "startAt": "2026-05-04T18:30:00Z",
+          "endAt": "2026-05-04T20:30:00Z"
+        },
+        {
+          "title": "LALIGA VS",
+          "subtitle": null,
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4018771.jpg",
+          "startAt": "2026-05-04T20:30:00Z",
+          "endAt": "2026-05-04T21:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E04: UD Las Palmas-Real Valladolid",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Las Palmas se enfrenta a Real Valladolid en LaLiga Hypermotion. Las Palmas juega de local en el Estadio de Gran Canaria. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220160.jpg",
+          "startAt": "2026-05-04T21:00:00Z",
+          "endAt": "2026-05-04T23:00:00Z"
         }
       ]
     },
@@ -575,8 +1042,8 @@
         "sportType": "Football",
         "competition": "LaLiga",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -590,8 +1057,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M2",
@@ -604,8 +1071,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M2",
@@ -618,22 +1085,50 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M2",
           "subtitle": null,
-          "description": "Información del canal",
+          "description": "LALIGA TV HYPERMOTION M2",
           "categories": [
             "Programa",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "LaLiga",
-          "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/LLS1.jpg",
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "LALIGA TV HYPERMOTION M2",
+          "subtitle": null,
+          "description": "LALIGA TV HYPERMOTION M2",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/LLS1.jpg",
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "LALIGA TV HYPERMOTION M2",
+          "subtitle": null,
+          "description": "LALIGA TV HYPERMOTION M2",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/attachments_new/LLS1.jpg",
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -657,8 +1152,8 @@
         "sportType": "Football",
         "competition": "LaLiga",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -672,8 +1167,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M3",
@@ -686,8 +1181,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M3",
@@ -700,8 +1195,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "LALIGA TV HYPERMOTION M3",
@@ -714,8 +1209,36 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "LALIGA TV HYPERMOTION M3",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "LALIGA TV HYPERMOTION M3",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -729,108 +1252,38 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "LaLiga EA Sports - T32, E03: RCD Espanyol-Levante UD",
-        "subtitle": "LaLiga EA Sports",
-        "description": "RCD Espanyol se enfrenta a Levante en LaLiga EA Sports. RCD Espanyol juega de local en el RCDE Stadium. Ronda 32.",
+        "title": "Universo Valdano - T4, E02: Universo Valdano (T4): Benzema",
+        "subtitle": "Universo Valdano",
+        "description": "Una mirada futbolística con los ojos de Jorge Valdano. El argentino es una de las voces más autorizadas y respetadas del mundo del balompié. En este espacio, conversa con personajes que ya son historia de este deporte.",
         "categories": [
-          "Fútbol",
-          "LaLiga EA Sports"
+          "Deportes",
+          "Programa Deportivo"
         ],
-        "sportType": "Football",
-        "competition": "LaLiga",
-        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5192552.jpg",
-        "startAt": "2026-05-03T01:36:00Z",
-        "endAt": "2026-05-03T03:28:00Z"
+        "sportType": "Sports",
+        "competition": null,
+        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+        "startAt": "2026-05-04T01:00:00Z",
+        "endAt": "2026-05-04T01:51:00Z"
       },
       "programs": [
         {
-          "title": "LaLiga EA Sports - T32, E03: RCD Espanyol-Levante UD",
-          "subtitle": "LaLiga EA Sports",
-          "description": "RCD Espanyol se enfrenta a Levante en LaLiga EA Sports. RCD Espanyol juega de local en el RCDE Stadium. Ronda 32.",
-          "categories": [
-            "Fútbol",
-            "LaLiga EA Sports"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5192552.jpg",
-          "startAt": "2026-05-03T01:36:00Z",
-          "endAt": "2026-05-03T03:28:00Z"
-        },
-        {
-          "title": "El fútbol según Raúl",
-          "subtitle": null,
-          "description": "Una mirada a las mejores historias del fútbol español.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4386870.jpg",
-          "startAt": "2026-05-03T03:28:00Z",
-          "endAt": "2026-05-03T04:42:00Z"
-        },
-        {
-          "title": "Momentazos de LaLiga",
-          "subtitle": null,
-          "description": "Una mirada a los Momentazos de LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4637238.jpg",
-          "startAt": "2026-05-03T04:42:00Z",
-          "endAt": "2026-05-03T05:40:00Z"
-        },
-        {
-          "title": "Informe Robinson - T1, E08: El hombre de la Séptima",
-          "subtitle": "Informe Robinson",
-          "description": "El club que había mantenido una relación más fiel con la Copa de Europa llevaba 32 años sin ganarla. En 1998, se iba a romper la maldición. El encargado de marcar un gol histórico y hacerse un hueco en corazón de sus aficionados fue Pedja Mijatovic.",
+          "title": "DeportePlus+ con Juanma Castaño - T2026, E28: Episodio 28",
+          "subtitle": "DeportePlus+ con Juanma Castaño",
+          "description": "Un lugar donde cabe todo el deporte que se juega en el planeta. La emoción y la pasión al completo de la mano de Juanma Castaño.",
           "categories": [
             "Deportes",
             "Programa Deportivo"
           ],
           "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4981810.jpg",
-          "startAt": "2026-05-03T05:40:00Z",
-          "endAt": "2026-05-03T06:00:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025461.jpg",
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T22:10:00Z"
         },
         {
-          "title": "DeportePlus+",
-          "subtitle": null,
-          "description": "El programa Deporte Plus+ se emite en directo todos los sábados de esta nueva temporada con la última hora de la información deportiva.",
-          "categories": [
-            "Deportes",
-            "Programa Deportivo"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4360987.jpg",
-          "startAt": "2026-05-03T06:00:00Z",
-          "endAt": "2026-05-03T07:10:00Z"
-        },
-        {
-          "title": "Atlético 1974. A un minuto de la gloria",
-          "subtitle": null,
-          "description": "Recordamos la final de la Copa de Europa de 1974, cuando el Atlético de Madrid se quedó a un minuto de ser Campeón de Europa. El alemán Schwarzenbeck disparó desde fuera del área en el último minuto de la prórroga y empató el encuentro.",
-          "categories": [
-            "Cine",
-            "Documentales"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4976819.jpg",
-          "startAt": "2026-05-03T07:10:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
-        },
-        {
-          "title": "Universo Valdano - T8, E02: Universo Valdano (T8): Fede Valverde",
+          "title": "Universo Valdano - T9, E05: Filipe Luís",
           "subtitle": "Universo Valdano",
-          "description": "Fede Valverde, centrocampista del Real Madrid, se sienta junto a Jorge Valdano para hablar de su nominación al Balón de Oro, de la dura derrota contra el Barça, de su papel en la selección de Uruguy... Temas interesantes del Universo Valdano.",
+          "description": "Jorge Valdano visitó a Filipe Luis en Brasil días antes de su repentino despido como entrenador del Flamengo. El exfutbolista del Deportivo de la Coruña, Atlético de Madrid, Chelsea y Flamengo analiza su primera experiencia en los banquillos.",
           "categories": [
             "Deportes",
             "Programa Deportivo"
@@ -838,13 +1291,69 @@
           "sportType": "Sports",
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T09:00:00Z"
+          "startAt": "2026-05-03T22:10:00Z",
+          "endAt": "2026-05-03T23:10:00Z"
         },
         {
-          "title": "Soy Leyenda - T1, E04: Roberto Carlos",
+          "title": "LaLiga EA Sports - T34, E07: Valencia CF-Atlético de Madrid",
+          "subtitle": "LaLiga EA Sports",
+          "description": "Valencia se enfrenta a Atlético de Madrid en LaLiga EA Sports. Valencia juega de local en el Estadio Mestalla. Ronda 34.",
+          "categories": [
+            "Fútbol",
+            "LaLiga EA Sports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217556.jpg",
+          "startAt": "2026-05-03T23:10:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
+        },
+        {
+          "title": "Universo Valdano - T4, E02: Universo Valdano (T4): Benzema",
+          "subtitle": "Universo Valdano",
+          "description": "Una mirada futbolística con los ojos de Jorge Valdano. El argentino es una de las voces más autorizadas y respetadas del mundo del balompié. En este espacio, conversa con personajes que ya son historia de este deporte.",
+          "categories": [
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+          "startAt": "2026-05-04T01:00:00Z",
+          "endAt": "2026-05-04T01:51:00Z"
+        },
+        {
+          "title": "LaLiga EA Sports - T34, E01: Deportivo Alavés-Athletic de Bilbao",
+          "subtitle": "LaLiga EA Sports",
+          "description": "Alavés se enfrenta a Athletic Bilbao en LaLiga EA Sports. Alavés juega de local en el Estadio Mendizorroza. Ronda 34.",
+          "categories": [
+            "Fútbol",
+            "LaLiga EA Sports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217544.jpg",
+          "startAt": "2026-05-04T01:51:00Z",
+          "endAt": "2026-05-04T03:40:00Z"
+        },
+        {
+          "title": "Los Otros",
+          "subtitle": null,
+          "description": "Espacio que ofrece historias y testimonios relacionadas con la el mundo del deporte.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4386867.jpg",
+          "startAt": "2026-05-04T03:40:00Z",
+          "endAt": "2026-05-04T04:55:00Z"
+        },
+        {
+          "title": "Soy Leyenda - T1, E03: Michael Laudrup",
           "subtitle": "Soy Leyenda",
-          "description": "Roberto Carlos no sólo es uno de los madridistas más laureados, su figura también es clave en la evolución del juego en la posición de lateral. El brasileño repasa la carrera del que para muchos es el mejor jugador de la historia en su demarcación.",
+          "description": "El genio danés fue pieza fundamental del Dream Team, el equipo que cambió la historia del FC Barcelona. Los éxitos en España, su traspaso al Real Madrid y la fantástica campaña como entrenador del Getafe CF.",
           "categories": [
             "Documental",
             "Otros"
@@ -852,8 +1361,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4975471.jpg",
-          "startAt": "2026-05-03T09:00:00Z",
-          "endAt": "2026-05-03T09:55:00Z"
+          "startAt": "2026-05-04T04:55:00Z",
+          "endAt": "2026-05-04T05:50:00Z"
         },
         {
           "title": "42 Legados - T2026, E03: Aitite: Athletic",
@@ -866,50 +1375,120 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5050853.jpg",
-          "startAt": "2026-05-03T09:55:00Z",
-          "endAt": "2026-05-03T10:05:00Z"
+          "startAt": "2026-05-04T05:50:00Z",
+          "endAt": "2026-05-04T06:00:00Z"
         },
         {
-          "title": "DeportePlus+",
-          "subtitle": null,
-          "description": "El programa Deporte Plus+ se emite en directo todos los sábados de esta nueva temporada con la última hora de la información deportiva.",
+          "title": "DeportePlus+ con Juanma Castaño - T2026, E28: Episodio 28",
+          "subtitle": "DeportePlus+ con Juanma Castaño",
+          "description": "Un lugar donde cabe todo el deporte que se juega en el planeta. La emoción y la pasión al completo de la mano de Juanma Castaño.",
           "categories": [
             "Deportes",
             "Programa Deportivo"
           ],
           "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4360987.jpg",
-          "startAt": "2026-05-03T10:05:00Z",
-          "endAt": "2026-05-03T11:20:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025461.jpg",
+          "startAt": "2026-05-04T06:00:00Z",
+          "endAt": "2026-05-04T07:10:00Z"
         },
         {
-          "title": "42 Legados",
-          "subtitle": null,
-          "description": "42 legados",
+          "title": "LaLiga EA Sports - T34, E06: Girona FC-RCD Mallorca",
+          "subtitle": "LaLiga EA Sports",
+          "description": "Girona se enfrenta a Mallorca en LaLiga EA Sports. Girona juega de local en el Estadi Municipal de Montilivi. Ronda 34.",
+          "categories": [
+            "Fútbol",
+            "LaLiga EA Sports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217554.jpg",
+          "startAt": "2026-05-04T07:10:00Z",
+          "endAt": "2026-05-04T09:00:00Z"
+        },
+        {
+          "title": "Universo Valdano - T4, E04: Germán, el Mono Burgos",
+          "subtitle": "Universo Valdano",
+          "description": "Una mirada futbolística con los ojos de Jorge Valdano. El argentino es una de las voces más autorizadas y respetadas del mundo del balompié. En este espacio, conversa con personajes que ya son historia de este deporte.",
+          "categories": [
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+          "startAt": "2026-05-04T09:00:00Z",
+          "endAt": "2026-05-04T10:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E03: SD Eibar-Málaga CF",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "SD Eibar se enfrenta a Málaga en LaLiga Hypermotion. SD Eibar juega de local en el Municipal de Ipurua. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220157.jpg",
+          "startAt": "2026-05-04T10:00:00Z",
+          "endAt": "2026-05-04T11:55:00Z"
+        },
+        {
+          "title": "42 Legados - T2026, E01: La Llamada: Betis",
+          "subtitle": "42 Legados",
+          "description": "42 Legados",
           "categories": [
             "Programa",
             "Otros"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5041539.jpg",
-          "startAt": "2026-05-03T11:20:00Z",
-          "endAt": "2026-05-03T11:30:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5050853.jpg",
+          "startAt": "2026-05-04T11:55:00Z",
+          "endAt": "2026-05-04T12:10:00Z"
         },
         {
-          "title": "La Casa del Fútbol Previa",
-          "subtitle": null,
-          "description": "Previa de la 1.° División de la Liga Española.",
+          "title": "LaLiga EA Sports - T34, E07: Valencia CF-Atlético de Madrid",
+          "subtitle": "LaLiga EA Sports",
+          "description": "Valencia se enfrenta a Atlético de Madrid en LaLiga EA Sports. Valencia juega de local en el Estadio Mestalla. Ronda 34.",
           "categories": [
             "Fútbol",
-            "Otros"
+            "LaLiga EA Sports"
           ],
           "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217556.jpg",
+          "startAt": "2026-05-04T12:10:00Z",
+          "endAt": "2026-05-04T14:00:00Z"
+        },
+        {
+          "title": "DeportePlus+ con Juanma Castaño - T2026, E28: Episodio 28",
+          "subtitle": "DeportePlus+ con Juanma Castaño",
+          "description": "Un lugar donde cabe todo el deporte que se juega en el planeta. La emoción y la pasión al completo de la mano de Juanma Castaño.",
+          "categories": [
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4360407.jpg",
-          "startAt": "2026-05-03T11:30:00Z",
-          "endAt": "2026-05-03T11:54:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025461.jpg",
+          "startAt": "2026-05-04T14:00:00Z",
+          "endAt": "2026-05-04T15:10:00Z"
+        },
+        {
+          "title": "LaLiga EA Sports - T34, E01: Deportivo Alavés-Athletic de Bilbao",
+          "subtitle": "LaLiga EA Sports",
+          "description": "Alavés se enfrenta a Athletic Bilbao en LaLiga EA Sports. Alavés juega de local en el Estadio Mendizorroza. Ronda 34.",
+          "categories": [
+            "Fútbol",
+            "LaLiga EA Sports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217544.jpg",
+          "startAt": "2026-05-04T15:10:00Z",
+          "endAt": "2026-05-04T17:00:00Z"
         },
         {
           "title": "LaLiga EA Sports - T34, E03: RC Celta-Elche CF",
@@ -922,50 +1501,50 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5217547.jpg",
-          "startAt": "2026-05-03T11:54:00Z",
-          "endAt": "2026-05-03T14:00:00Z"
+          "startAt": "2026-05-04T17:00:00Z",
+          "endAt": "2026-05-04T18:50:00Z"
         },
         {
-          "title": "La Casa del Fútbol Post",
+          "title": "Universo Valdano - T3, E07: Universo Valdano (T3): Vicente del Bosque",
+          "subtitle": "Universo Valdano",
+          "description": "Jorge Valdano se sienta con Vicente del Bosque para hablar de fútbol, de sus inicios como jugador del salmantino y de su experiencia dirigiendo a la mejor generación que ha dado el deporte español y que llevó a España a ganar el mundial de Sudáfrica.",
+          "categories": [
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+          "startAt": "2026-05-04T18:50:00Z",
+          "endAt": "2026-05-04T19:45:00Z"
+        },
+        {
+          "title": "El fútbol según Raúl",
           "subtitle": null,
-          "description": "Postpartido Liga.",
+          "description": "Una mirada a las mejores historias del fútbol español.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4360411.jpg",
-          "startAt": "2026-05-03T14:00:00Z",
-          "endAt": "2026-05-03T14:30:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4386870.jpg",
+          "startAt": "2026-05-04T19:45:00Z",
+          "endAt": "2026-05-04T21:05:00Z"
         },
         {
-          "title": "42 Legados - T2026, E02: Nuestro Norte: Racing",
-          "subtitle": "42 Legados",
-          "description": "42 Legados",
-          "categories": [
-            "Programa",
-            "Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5050853.jpg",
-          "startAt": "2026-05-03T14:30:00Z",
-          "endAt": "2026-05-03T14:40:00Z"
-        },
-        {
-          "title": "Informe Plus+",
-          "subtitle": null,
-          "description": null,
+          "title": "DeportePlus+ con Juanma Castaño - T2026, E28: Episodio 28",
+          "subtitle": "DeportePlus+ con Juanma Castaño",
+          "description": "Un lugar donde cabe todo el deporte que se juega en el planeta. La emoción y la pasión al completo de la mano de Juanma Castaño.",
           "categories": [
             "Deportes",
             "Programa Deportivo"
           ],
           "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4360414.jpg",
-          "startAt": "2026-05-03T14:40:00Z",
-          "endAt": "2026-05-03T15:40:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025461.jpg",
+          "startAt": "2026-05-04T21:05:00Z",
+          "endAt": "2026-05-04T22:15:00Z"
         }
       ]
     },
@@ -979,75 +1558,117 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Próximo partido - RCD Espanyol-Real Madrid",
+        "title": "M LALIGATV 2",
         "subtitle": null,
-        "description": "Próximo partido",
+        "description": "Información del canal",
         "categories": [
           "Programa",
           "Otros"
         ],
-        "sportType": null,
+        "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
-          "title": "Próximo partido - RCD Espanyol-Real Madrid",
+          "title": "M LALIGATV 2",
           "subtitle": null,
-          "description": "Próximo partido",
+          "description": "Información del canal",
           "categories": [
             "Programa",
             "Otros"
           ],
-          "sportType": null,
+          "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
-          "title": "Próximo partido - RCD Espanyol-Real Madrid",
+          "title": "M LALIGATV 2",
           "subtitle": null,
-          "description": "Próximo partido",
+          "description": "Información del canal",
           "categories": [
             "Programa",
             "Otros"
           ],
-          "sportType": null,
+          "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
-          "title": "Próximo partido - RCD Espanyol-Real Madrid",
+          "title": "M LALIGATV 2",
           "subtitle": null,
-          "description": "Próximo partido",
+          "description": "Información del canal",
           "categories": [
             "Programa",
             "Otros"
           ],
-          "sportType": null,
+          "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
-          "title": "Próximo partido - RCD Espanyol-Real Madrid",
+          "title": "M LALIGATV 2",
           "subtitle": null,
-          "description": "Próximo partido",
+          "description": "Información del canal",
           "categories": [
             "Programa",
             "Otros"
           ],
-          "sportType": null,
+          "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 2",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 2",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 2",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1071,8 +1692,8 @@
         "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1086,8 +1707,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M LALIGATV 3",
@@ -1100,8 +1721,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M LALIGATV 3",
@@ -1114,8 +1735,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "M LALIGATV 3",
@@ -1128,8 +1749,36 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 3",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 3",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1153,8 +1802,8 @@
         "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1168,8 +1817,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M LALIGATV 4",
@@ -1182,8 +1831,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M LALIGATV 4",
@@ -1196,8 +1845,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "M LALIGATV 4",
@@ -1210,8 +1859,50 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 4",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 4",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M LALIGATV 4",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1235,23 +1926,37 @@
         "sportType": "Football",
         "competition": null,
         "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4320713.jpg",
-        "startAt": "2026-05-03T02:30:00Z",
-        "endAt": "2026-05-03T04:30:00Z"
+        "startAt": "2026-05-04T01:00:00Z",
+        "endAt": "2026-05-04T03:00:00Z"
       },
       "programs": [
         {
-          "title": "Liga brasileña",
-          "subtitle": null,
-          "description": "Toda la acción de la Primera División de Brasil, una de las ligas de fútbol más prestigiosas y competitivas del mundo.",
+          "title": "Premier League - T35, E07: Mánchester United-Liverpool",
+          "subtitle": "Premier League",
+          "description": "Manchester United se enfrenta a Liverpool en Premier League. Manchester United juega de local en el Old Trafford. Ronda 35.",
           "categories": [
             "Fútbol",
-            "Otros"
+            "Premier League"
           ],
           "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220355.jpg",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "Universo Valdano - T9, E04: Carlo Ancelotti",
+          "subtitle": "Universo Valdano",
+          "description": "Repasamos con Ancelotti la agitada actualidad del equipo blanco en los últimos meses: la abrupta salida de Xabi Alonso, su relación con Vinicius en los últimos meses, tanto en el Real Madrid como ahora en la selección brasileña, y su opinión de Arbeloa,",
+          "categories": [
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Sports",
           "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4320713.jpg",
-          "startAt": "2026-05-03T02:30:00Z",
-          "endAt": "2026-05-03T04:30:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
         },
         {
           "title": "Liga Saudí",
@@ -1264,36 +1969,120 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4861821.jpg",
-          "startAt": "2026-05-03T04:30:00Z",
-          "endAt": "2026-05-03T06:30:00Z"
+          "startAt": "2026-05-03T23:00:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
         },
         {
-          "title": "Noche de Champions",
+          "title": "Liga brasileña",
           "subtitle": null,
-          "description": "Resúmenes de los partidos de la UEFA Champions League, los goles de la jornada y todo tipo de informaciones relacionadas con esta competición.",
+          "description": "Toda la acción de la Primera División de Brasil, una de las ligas de fútbol más prestigiosas y competitivas del mundo.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4320713.jpg",
+          "startAt": "2026-05-04T01:00:00Z",
+          "endAt": "2026-05-04T03:00:00Z"
+        },
+        {
+          "title": "Especiales UEFA Champions League",
+          "subtitle": null,
+          "description": "La actualidad de la UEFA Champions League.",
           "categories": [
             "Fútbol",
             "Otros"
           ],
           "sportType": "Football",
           "competition": "Champions League",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4020143.jpg",
-          "startAt": "2026-05-03T13:20:00Z",
-          "endAt": "2026-05-03T14:25:00Z"
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4110122.jpg",
+          "startAt": "2026-05-04T03:00:00Z",
+          "endAt": "2026-05-04T03:30:00Z"
         },
         {
-          "title": "Premier League - T35, E07: Mánchester United-Liverpool",
-          "subtitle": "Premier League",
-          "description": "Manchester United se enfrenta a Liverpool en Premier League. Manchester United juega de local en el Old Trafford. Ronda 35.",
+          "title": "Universo Valdano - T9, E06: Ronald Araujo",
+          "subtitle": "Universo Valdano",
+          "description": "Ronald Araujo es el invitado en esta nueva entrega de Universo Valdano. El uruguayo vuelve a sonreír tras su decisión de parar en noviembre y cuidar su salud mental durante unos meses. Charlamos con él del proceso y también de su carrera deportiva.",
           "categories": [
-            "Fútbol",
-            "Premier League"
+            "Deportes",
+            "Programa Deportivo"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025426.jpg",
+          "startAt": "2026-05-04T03:30:00Z",
+          "endAt": "2026-05-04T04:30:00Z"
+        },
+        {
+          "title": "Movistar Liga de Campeones",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
           ],
           "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220355.jpg",
-          "startAt": "2026-05-03T14:25:00Z",
-          "endAt": "2026-05-03T16:30:00Z"
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T04:30:00Z",
+          "endAt": "2026-05-04T06:00:00Z"
+        },
+        {
+          "title": "Movistar Liga de Campeones",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T06:00:00Z",
+          "endAt": "2026-05-04T10:00:00Z"
+        },
+        {
+          "title": "Movistar Liga de Campeones",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T10:00:00Z",
+          "endAt": "2026-05-04T14:00:00Z"
+        },
+        {
+          "title": "Movistar Liga de Campeones",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T14:00:00Z",
+          "endAt": "2026-05-04T18:00:00Z"
+        },
+        {
+          "title": "Movistar Liga de Campeones",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
+          "startAt": "2026-05-04T18:00:00Z",
+          "endAt": "2026-05-04T22:00:00Z"
         }
       ]
     },
@@ -1317,8 +2106,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1332,8 +2121,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 10",
@@ -1346,8 +2135,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 10",
@@ -1360,8 +2149,50 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 10",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 10",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 10",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1385,8 +2216,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1400,8 +2231,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 11",
@@ -1414,8 +2245,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 11",
@@ -1428,8 +2259,64 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 11",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 11",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 11",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 11",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1453,8 +2340,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1468,8 +2355,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 12",
@@ -1482,8 +2369,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 12",
@@ -1496,8 +2383,50 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 12",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 12",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 12",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1521,8 +2450,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1536,8 +2465,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 13",
@@ -1550,8 +2479,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 13",
@@ -1564,8 +2493,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "M Liga de Campeones 13",
@@ -1578,8 +2507,50 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 13",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 13",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 13",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1603,8 +2574,8 @@
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1618,8 +2589,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "Próximo partido - Multieuropa + Conference League",
@@ -1632,8 +2603,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "Próximo partido - Multieuropa + Conference League",
@@ -1646,8 +2617,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "Próximo partido - Multieuropa + Conference League",
@@ -1660,8 +2631,50 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Multieuropa + Conference League",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Multieuropa + Conference League",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Multieuropa + Conference League",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1685,8 +2698,8 @@
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1700,8 +2713,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "Próximo partido - Friburgo-SC Braga",
@@ -1714,8 +2727,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "Próximo partido - Friburgo-SC Braga",
@@ -1728,8 +2741,64 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Friburgo-SC Braga",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Friburgo-SC Braga",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Friburgo-SC Braga",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Friburgo-SC Braga",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1753,8 +2822,8 @@
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1768,8 +2837,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
@@ -1782,8 +2851,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
@@ -1796,8 +2865,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
@@ -1810,8 +2879,50 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "Próximo partido - Crystal Palace-Shaktar Donetsk",
+          "subtitle": null,
+          "description": "Próximo partido",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1835,8 +2946,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1850,8 +2961,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 6",
@@ -1864,8 +2975,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 6",
@@ -1878,8 +2989,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "M Liga de Campeones 6",
@@ -1892,8 +3003,50 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 6",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 6",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 6",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1917,8 +3070,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -1932,8 +3085,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 7",
@@ -1946,8 +3099,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 7",
@@ -1960,8 +3113,64 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 7",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 7",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 7",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 7",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -1985,8 +3194,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -2000,8 +3209,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 8",
@@ -2014,8 +3223,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 8",
@@ -2028,8 +3237,64 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 8",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T08:00:00Z",
+          "endAt": "2026-05-04T12:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 8",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 8",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 8",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     },
@@ -2053,8 +3318,8 @@
         "sportType": "Football",
         "competition": "Champions League",
         "imageUrl": null,
-        "startAt": "2026-05-03T00:00:00Z",
-        "endAt": "2026-05-03T04:00:00Z"
+        "startAt": "2026-05-04T00:00:00Z",
+        "endAt": "2026-05-04T04:00:00Z"
       },
       "programs": [
         {
@@ -2068,8 +3333,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T00:00:00Z",
-          "endAt": "2026-05-03T04:00:00Z"
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
         },
         {
           "title": "M Liga de Campeones 9",
@@ -2082,8 +3347,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T04:00:00Z",
-          "endAt": "2026-05-03T08:00:00Z"
+          "startAt": "2026-05-04T00:00:00Z",
+          "endAt": "2026-05-04T04:00:00Z"
         },
         {
           "title": "M Liga de Campeones 9",
@@ -2096,8 +3361,8 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T08:00:00Z",
-          "endAt": "2026-05-03T12:00:00Z"
+          "startAt": "2026-05-04T04:00:00Z",
+          "endAt": "2026-05-04T08:00:00Z"
         },
         {
           "title": "M Liga de Campeones 9",
@@ -2110,8 +3375,36 @@
           "sportType": "Football",
           "competition": "Champions League",
           "imageUrl": null,
-          "startAt": "2026-05-03T12:00:00Z",
-          "endAt": "2026-05-03T16:00:00Z"
+          "startAt": "2026-05-04T12:00:00Z",
+          "endAt": "2026-05-04T16:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 9",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T16:00:00Z",
+          "endAt": "2026-05-04T20:00:00Z"
+        },
+        {
+          "title": "M Liga de Campeones 9",
+          "subtitle": null,
+          "description": "Información del canal",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-05-04T20:00:00Z",
+          "endAt": "2026-05-05T00:00:00Z"
         }
       ]
     }

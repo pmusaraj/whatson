@@ -1,0 +1,645 @@
+{
+  "country": "UK",
+  "countryName": "United Kingdom",
+  "generatedAt": "2026-05-04T01:48:50.536221Z",
+  "windowHours": 24,
+  "windowStartOffsetHours": 4,
+  "premiumSportsOnly": false,
+  "sourceGuides": [
+    "data/normalized/guide-UK-mytelly.co.uk.xml",
+    "data/normalized/guide-UK-sky.com.xml"
+  ],
+  "channelCount": 18,
+  "channels": [
+    {
+      "id": "mytelly-uk:BBCOne.uk",
+      "name": "BBC One Northern Ireland",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Match of the Day",
+          "subtitle": "03/05/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:35:00Z"
+        },
+        {
+          "title": "The Women's Football Show",
+          "subtitle": "03/05/2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:35:00Z",
+          "endAt": "2026-05-03T23:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:BBCTwo.uk",
+      "name": "BBC Two Northern Ireland",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Hell for Leather: The Story of Gaelic Football",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "Sunday Politics Northern Ireland",
+          "subtitle": "03/05/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        },
+        {
+          "title": "1917 (2019)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:30:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:Channel4.uk",
+      "name": "Channel 4",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1621.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Gogglebox",
+          "subtitle": "- Season 27, Episode 13",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:05:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "Free Guy (2021)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:Channel5.uk",
+      "name": "Channel 5",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1800.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "When Parties Go Horribly Wrong",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:E4.uk",
+      "name": "E4",
+      "logoUrl": "https://i.imgur.com/22MfjF4.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Predator (2018)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:05:00Z"
+        },
+        {
+          "title": "Gogglebox",
+          "subtitle": "- Season 19, Episode 10",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:05:00Z",
+          "endAt": "2026-05-03T22:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:ITV1.uk",
+      "name": "ITV1 Granada",
+      "logoUrl": "https://i.imgur.com/xwPekCF.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Dark Knight (2008)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:25:00Z",
+          "endAt": "2026-05-03T21:55:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:SkyNews.uk",
+      "name": "Sky News",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1404.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Wrap with Anna Botting",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "The Wrap with Anna Botting",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        },
+        {
+          "title": "The Wrap with Anna Botting",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:30:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:SkySportsFootball.uk",
+      "name": "Sky Sports Football",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3838.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Millwall v Oxford Utd 02.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:45:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "EFL League One Goals",
+          "subtitle": "Rd46 03.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        },
+        {
+          "title": "EFL League Two Goals",
+          "subtitle": "Rd46 03.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:30:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:SkySportsMainEvent.uk",
+      "name": "Sky Sports Main Event",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1301.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Live Formula 1",
+          "subtitle": "Miami F1 Grand Prix 2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-05-03T19:55:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "Live Formula 1",
+          "subtitle": "Chequered Flag: Miami 2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mytelly-uk:74/udave",
+      "name": "U&Dave",
+      "logoUrl": null,
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Mock the Week",
+          "subtitle": "- Season 16, Episode 8",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:35:00Z",
+          "endAt": "2026-05-03T22:20:00Z"
+        },
+        {
+          "title": "Mock the Week",
+          "subtitle": "- Season 16, Episode 9",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:20:00Z",
+          "endAt": "2026-05-03T22:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:BBCOne.uk",
+      "name": "BBC One CI HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Match of the Day",
+          "subtitle": null,
+          "description": "Kelly Cates presents highlights of three Premier League matches. Manchester United host Liverpool, Aston Villa are at home against Tottenham Hotspur and Crystal Palace travel to Bournemouth. [S] [HD]",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://images.metadata.sky.com/pd-image/cf78a268-847a-445b-ac3a-d322b672a51a/16-9/640",
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:35:00Z"
+        },
+        {
+          "title": "The Women's Football Show",
+          "subtitle": null,
+          "description": "The big names and the big games from the Women's Super League, with highlights and analysis of all the action. [S] [HD]",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/7d823115-a0d0-4200-8a2b-20d1072d98be/16-9/640",
+          "startAt": "2026-05-03T22:35:00Z",
+          "endAt": "2026-05-03T23:25:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:BBCTwo.uk",
+      "name": "BBC Two HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "1917",
+          "subtitle": null,
+          "description": "During the First World War, two soldiers must cross no-man's-land to deliver a message. Contains some strong language, some violence and some upsetting scenes. [2019] [S,AD] [HD]",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/2421bf62-8ed7-4f65-81f3-e13e57aa7d2e/16-9/640",
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T22:50:00Z"
+        },
+        {
+          "title": "Here We Are",
+          "subtitle": null,
+          "description": "A father runs away with his autistic son on a journey of escape and self-discovery. Deals with adult themes. [2020] [S] [HD]",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/8e20e6bf-b410-4b83-80b1-2bf28e71c15a/16-9/640",
+          "startAt": "2026-05-03T22:50:00Z",
+          "endAt": "2026-05-04T00:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:Channel4.uk",
+      "name": "Channel 4 HD",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1621.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Gogglebox",
+          "subtitle": null,
+          "description": "The Goggleboxers settle down for I'm a Celebrity... South Africa, Virgin Island, Who Wants to Be a Millionaire?, The Neighbourhood, Made in Chelsea and How to Clean-Up for Cash. (S27 Ep13)",
+          "categories": [],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/cc3aa14e-0be0-416a-86c2-732960c5cdd0/16-9/640",
+          "startAt": "2026-05-03T21:05:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "F1 Miami GP Highlights",
+          "subtitle": null,
+          "description": "The drivers push their cars to the ragged edge of grip and control, battling each other and the Miami heat. Can anyone beat dominant Mercedes or will Antonelli make it three in a row?",
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://images.metadata.sky.com/pd-image/d3ae9324-af80-4fef-97d6-8a1fae61376f/16-9/640",
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T23:25:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:E4.ie",
+      "name": "E4",
+      "logoUrl": "https://i.imgur.com/22MfjF4.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Predator",
+          "subtitle": null,
+          "description": "(2018) Unrestrained reboot of the franchise defined by a ruthless extraterrestrial killer whose name says it all... and it's had a DNA upgrade. All the better to kill you with, my dear.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/59b57d06-fc72-4141-92d0-a4645a92736b/16-9/640",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:05:00Z"
+        },
+        {
+          "title": "Gogglebox",
+          "subtitle": null,
+          "description": "On the box this time, Britain's Got Talent, The Thief, His Wife and the Canoe, Romeo and Duet, Freeze the Fear with Wim Hof, Roar, and Stacey Dooley Sleeps Over. (S19 Ep10) [SL]",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/8cb6d8b1-6a59-4c0f-b2f8-6e8b9fa1f46d/16-9/640",
+          "startAt": "2026-05-03T22:05:00Z",
+          "endAt": "2026-05-03T23:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:ITV1.uk",
+      "name": "ITV1 HD",
+      "logoUrl": "https://i.imgur.com/xwPekCF.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Dark Knight",
+          "subtitle": null,
+          "description": "Oscar-winning action crime drama film sequel starring Christian Bale and Heath Ledger, 2008. The Joker wreaks havoc on Gotham City to force Batman to reveal his true identity.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/e3c7f4a5-c322-461a-8c99-79733253a4b5/16-9/640",
+          "startAt": "2026-05-03T21:25:00Z",
+          "endAt": "2026-05-04T00:10:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:SkyNews.ie",
+      "name": "Sky News HD",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1404.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Wrap With Gillian Joseph",
+          "subtitle": null,
+          "description": "Debate, analysis and insight on the biggest news stories of the day from the UK and around the world.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/0c72c36c-9ae2-4026-8ae5-a56526aa2f84/16-9/640",
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        },
+        {
+          "title": "The Wrap With Gillian Joseph",
+          "subtitle": null,
+          "description": "Debate, analysis and insight on the biggest news stories of the day from the UK and around the world.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/3c9acccc-c747-47cf-b58e-54574db8c4ea/16-9/640",
+          "startAt": "2026-05-03T22:00:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        },
+        {
+          "title": "The Wrap With Gillian Joseph",
+          "subtitle": null,
+          "description": "Debate, analysis and insight on the biggest news stories of the day from the UK and around the world.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/74aa276f-9fc7-4e6c-b110-ea997412e1d8/16-9/640",
+          "startAt": "2026-05-03T22:30:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:TNTSports1.uk",
+      "name": "TNT Sports 1",
+      "logoUrl": "https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/tnt-sports-1-uk.png?raw=true",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Live MLB: Guardians @ Atheltics",
+          "subtitle": null,
+          "description": "Action from Major League Baseball as Cleveland Guardians take on the Athletics in the final game of this series at Sutter Health Park.",
+          "categories": [],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": "https://images.metadata.sky.com/pd-image/dd633938-ef52-4107-bde4-f134cb0e4a62/16-9/640",
+          "startAt": "2026-05-03T20:30:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "sky-uk:Dave.ie",
+      "name": "U&Dave HD",
+      "logoUrl": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb2306.png",
+      "provider": "Sky UK guide",
+      "providerKey": "sky-uk",
+      "sources": [
+        "data/normalized/guide-UK-sky.com.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Mock the Week",
+          "subtitle": null,
+          "description": "Joining Dara O Briain and Hugh Dennis for the usual mixture of panel show, improv games and stand-up are James Acaster, Tom Allen, Ed Byrne, Rhys James and Ellie Taylor. S16 Ep8",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/a8e7a151-aa20-49c0-a56d-5725df1102d6/16-9/640",
+          "startAt": "2026-05-03T21:35:00Z",
+          "endAt": "2026-05-03T22:20:00Z"
+        },
+        {
+          "title": "Mock the Week",
+          "subtitle": null,
+          "description": "Dara O Briain and Hugh Dennis are joined by James Acaster, Ed Byrne, Gary Delaney, Ivo Graham and Zoe Lyons to take a satirical look at the week's goings-on. S16 Ep9",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://images.metadata.sky.com/pd-image/ee8852f7-bab4-486a-be66-0286c9cd6b1a/16-9/640",
+          "startAt": "2026-05-03T22:20:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        }
+      ]
+    }
+  ]
+}

@@ -20,20 +20,37 @@ COUNTRY_NAMES = {
     "FR": "France",
     "ES": "Spain",
     "CA": "Canada",
+    "US": "United States",
+    "UK": "United Kingdom",
+    "IT": "Italy",
+    "DE": "Germany",
+    "TR": "Turkiye",
+    "PT": "Portugal",
+    "MX": "Mexico",
+    "BR": "Brazil",
 }
 
 IPTV_CHANNELS_API = "https://iptv-org.github.io/api/channels.json"
+PROGRAM_WINDOW_START_OFFSET_HOURS = 4
+PROGRAM_WINDOW_HOURS = 24
 
 PREMIUM_SPORTS_TERMS = re.compile(
     r"(canal\+|canal plus|bein|dazn|rmc sport|eurosport|multisports|infosport|"
     r"movistar|laliga|liga de campeones|champions|vamos|deportes|golf|"
-    r"tsn|sportsnet|rds|tva sports|cbs sports)",
+    r"tsn|sportsnet|rds|tva sports|cbs sports|espn|fox sports|fs1|fs2|"
+    r"nbc sports|nfl network|mlb network|nba tv|tennis channel|sky sports|"
+    r"tnt sports|premier sports|sky sport|rai sport|sportitalia|sport tv|"
+    r"sporttv|s sport|trt spor|sportdigital|benfica tv|sporting tv|tudn|"
+    r"claro sports|sporTV|premiere clubes|combate|band sports)",
     re.I,
 )
 
 PREMIUM_SPORTS_ID_TERMS = re.compile(
     r"(CanalPlus|beIN|DAZN|RMCSport|Eurosport|MultiSports|InfosportPlus|"
-    r"Movistar|LaLiga|LigadeCampeones|Vamos|Deportes|Golf|TSN|Sportsnet|RDS|TVASports|CBSSports)",
+    r"Movistar|LaLiga|LigadeCampeones|Vamos|Deportes|Golf|TSN|Sportsnet|RDS|TVASports|CBSSports|"
+    r"ESPN|FoxSports|NBCSports|NFLNetwork|MLBNetwork|NBATV|TennisChannel|SkySports|TNTSports|"
+    r"PremierSports|SkySport|RaiSport|Sportitalia|SportTV|SSport|TRTSpor|Sportdigital|BenficaTV|SportingTV|"
+    r"TUDN|ClaroSports|SporTV|PremiereClubes|Combate|BandSports)",
     re.I,
 )
 
@@ -60,6 +77,37 @@ GUIDES = {
         LocalGuide(NORMALIZED_DIR / "guide-CA-tvpassport.com.xml", "Validated grabber", "validated"),
         LocalGuide(NORMALIZED_DIR / "guide-CA-tvhebdo.com.xml", "Validated grabber", "validated"),
     ],
+    "US": [
+        LocalGuide(NORMALIZED_DIR / "guide-US-tvtv.us.xml", "TVTV US guide", "tvtv-us"),
+        LocalGuide(NORMALIZED_DIR / "guide-US-tvguide.com.xml", "TV Guide US guide", "tvguide-us"),
+    ],
+    "UK": [
+        LocalGuide(NORMALIZED_DIR / "guide-UK-mytelly.co.uk.xml", "MyTelly UK guide", "mytelly-uk"),
+        LocalGuide(NORMALIZED_DIR / "guide-UK-sky.com.xml", "Sky UK guide", "sky-uk"),
+    ],
+    "IT": [
+        LocalGuide(NORMALIZED_DIR / "guide-IT-guidatv.sky.it.xml", "Sky Italia guide", "sky-it"),
+        LocalGuide(NORMALIZED_DIR / "guide-IT-superguidatv.it.xml", "Super Guida TV guide", "superguidatv-it"),
+    ],
+    "DE": [
+        LocalGuide(NORMALIZED_DIR / "guide-DE-web.magentatv.de.xml", "MagentaTV Germany guide", "magenta-de"),
+        LocalGuide(NORMALIZED_DIR / "guide-DE-sky.de.xml", "Sky Germany guide", "sky-de"),
+    ],
+    "TR": [
+        LocalGuide(NORMALIZED_DIR / "guide-TR-tvplus.com.tr.xml", "TV+ Turkiye guide", "tvplus-tr"),
+        LocalGuide(NORMALIZED_DIR / "guide-TR-digiturk.com.tr.xml", "Digiturk guide", "digiturk-tr"),
+    ],
+    "PT": [
+        LocalGuide(NORMALIZED_DIR / "guide-PT-meo.pt.xml", "MEO Portugal guide", "meo-pt"),
+        LocalGuide(NORMALIZED_DIR / "guide-PT-nostv.pt.xml", "NOS Portugal guide", "nos-pt"),
+        LocalGuide(NORMALIZED_DIR / "guide-PT-vodafone.pt.xml", "Vodafone Portugal guide", "vodafone-pt"),
+    ],
+    "MX": [
+        LocalGuide(NORMALIZED_DIR / "guide-MX-gatotv.com.xml", "GatoTV Mexico guide", "gatotv-mx"),
+    ],
+    "BR": [
+        LocalGuide(NORMALIZED_DIR / "guide-BR-mi.tv_br.xml", "Mi.tv Brazil guide", "mitv-br"),
+    ],
 }
 
 PREMIUM_SPORTS_GUIDES = {
@@ -74,6 +122,38 @@ PREMIUM_SPORTS_GUIDES = {
     "CA": [
         LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvpassport.com.xml", "TV Passport guide", "premium-tvpassport"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvhebdo.com.xml", "TV Hebdo guide", "premium-tvhebdo"),
+    ],
+    "US": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvtv.us.xml", "TVTV US sports guide", "premium-tvtv-us"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvguide.com.xml", "TV Guide US sports guide", "premium-tvguide-us"),
+    ],
+    "UK": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-UK-virgintvgo.virginmedia.com.xml", "Virgin TV Go UK sports guide", "premium-virgin-uk"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-UK-sky.com.xml", "Sky UK sports guide", "premium-sky-uk"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-UK-mytelly.co.uk.xml", "MyTelly UK sports guide", "premium-mytelly-uk"),
+    ],
+    "IT": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-IT-guidatv.sky.it.xml", "Sky Italia sports guide", "premium-sky-it"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-IT-superguidatv.it.xml", "Super Guida TV sports guide", "premium-superguidatv-it"),
+    ],
+    "DE": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-DE-sky.de.xml", "Sky Germany sports guide", "premium-sky-de"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-DE-web.magentatv.de.xml", "MagentaTV Germany sports guide", "premium-magenta-de"),
+    ],
+    "TR": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-TR-digiturk.com.tr.xml", "Digiturk sports guide", "premium-digiturk-tr"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-TR-tvplus.com.tr.xml", "TV+ Turkiye sports guide", "premium-tvplus-tr"),
+    ],
+    "PT": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-PT-meo.pt.xml", "MEO Portugal sports guide", "premium-meo-pt"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-PT-nostv.pt.xml", "NOS Portugal sports guide", "premium-nos-pt"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-PT-vodafone.pt.xml", "Vodafone Portugal sports guide", "premium-vodafone-pt"),
+    ],
+    "MX": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-MX-gatotv.com.xml", "GatoTV Mexico sports guide", "premium-gatotv-mx"),
+    ],
+    "BR": [
+        LocalGuide(NORMALIZED_DIR / "guide-premium-BR-mi.tv_br.xml", "Mi.tv Brazil sports guide", "premium-mitv-br"),
     ],
 }
 
@@ -210,30 +290,58 @@ def is_premium_sports_channel(channel_id: str, name: str, premium_sports_ids: se
     return channel_id in premium_sports_ids or bool(PREMIUM_SPORTS_TERMS.search(name)) or bool(PREMIUM_SPORTS_ID_TERMS.search(channel_id))
 
 
-def program_window(programs: list[dict], now: datetime, hours: int = 12) -> list[dict]:
-    window_end = now + timedelta(hours=hours)
-    upcoming = []
+def program_window(
+    programs: list[dict],
+    now: datetime,
+    hours: int = PROGRAM_WINDOW_HOURS,
+    start_offset_hours: int = PROGRAM_WINDOW_START_OFFSET_HOURS,
+) -> list[dict]:
+    window_start = now - timedelta(hours=start_offset_hours)
+    window_end = window_start + timedelta(hours=hours)
+    window = []
     for program in programs:
         start_at = parse_iso_time(program["startAt"])
         end_at = parse_iso_time(program["endAt"])
-        if end_at <= now:
+        if end_at <= window_start:
             continue
         if start_at >= window_end:
             continue
-        upcoming.append(program)
-    return sorted(upcoming, key=lambda program: program["startAt"])
+        window.append(program)
+    return sorted(window, key=lambda program: program["startAt"])
+
+
+def metadata_score(program: dict) -> int:
+    return sum(
+        1
+        for key in ("subtitle", "description", "imageUrl", "sportType", "competition")
+        if program.get(key)
+    ) + len(program.get("categories") or [])
 
 
 def add_program(programs_by_channel: dict, channel_id: str, program: dict) -> None:
     programs = programs_by_channel.setdefault(channel_id, [])
-    duplicate = any(
-        existing["title"] == program["title"]
-        and existing["startAt"] == program["startAt"]
-        and existing["endAt"] == program["endAt"]
-        for existing in programs
-    )
-    if not duplicate:
-        programs.append(program)
+    for index, existing in enumerate(programs):
+        same_slot = existing["startAt"] == program["startAt"] and existing["endAt"] == program["endAt"]
+        overlapping_duplicate = program_overlap_ratio(existing, program) >= 0.5
+        if same_slot or overlapping_duplicate:
+            if metadata_score(program) > metadata_score(existing):
+                programs[index] = program
+            return
+    programs.append(program)
+
+
+def program_overlap_ratio(a: dict, b: dict) -> float:
+    start_a = parse_iso_time(a["startAt"])
+    end_a = parse_iso_time(a["endAt"])
+    start_b = parse_iso_time(b["startAt"])
+    end_b = parse_iso_time(b["endAt"])
+    overlap = min(end_a, end_b) - max(start_a, start_b)
+    if overlap.total_seconds() <= 0:
+        return 0
+    shorter_duration = min(end_a - start_a, end_b - start_b).total_seconds()
+    if shorter_duration <= 0:
+        return 0
+    return overlap.total_seconds() / shorter_duration
 
 
 def ingest_xmltv_root(
@@ -384,7 +492,8 @@ def build_country_payload(
         "country": country_code,
         "countryName": COUNTRY_NAMES.get(country_code, country_code),
         "generatedAt": isoformat(now),
-        "windowHours": 12,
+        "windowHours": PROGRAM_WINDOW_HOURS,
+        "windowStartOffsetHours": PROGRAM_WINDOW_START_OFFSET_HOURS,
         "premiumSportsOnly": premium_sports_only,
         "sourceGuides": source_guides,
         "channelCount": len(rows),

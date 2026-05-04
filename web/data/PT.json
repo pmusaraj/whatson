@@ -1,0 +1,732 @@
+{
+  "country": "PT",
+  "countryName": "Portugal",
+  "generatedAt": "2026-05-04T01:48:50.536221Z",
+  "windowHours": 24,
+  "windowStartOffsetHours": 4,
+  "premiumSportsOnly": false,
+  "sourceGuides": [
+    "data/normalized/guide-PT-meo.pt.xml",
+    "data/normalized/guide-PT-nostv.pt.xml",
+    "data/normalized/guide-PT-vodafone.pt.xml"
+  ],
+  "channelCount": 21,
+  "channels": [
+    {
+      "id": "meo-pt:BenficaTV.pt",
+      "name": "BTV",
+      "logoUrl": "https://i.imgur.com/l6LACto.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Basquetebol Fem.: Quinta Dos Lombos x Benfica - Camp. Nac.",
+          "subtitle": null,
+          "description": "Transmissão do Jogo de Basquetebol Feminino.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=SLBHD&progTitle=Basquetebol%20Fem.%3A%20Quinta%20Dos%20Lombos%20x%20Benfica%20-%20Camp.%20Nac.&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T21:25:00Z",
+          "endAt": "2026-05-03T23:20:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:CNNPortugal.pt",
+      "name": "CNN Portugal",
+      "logoUrl": "https://i.imgur.com/bc6tYVZ.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "O Princípio Da Incerteza",
+          "subtitle": null,
+          "description": "Um programa de resumo semanal dos principais temas da atualidade, de natureza política, social e económica. Conduzido por Carlos Andrade.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=CNNPT&progTitle=O%20Princ%C3%ADpio%20Da%20Incerteza&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T21:05:00Z",
+          "endAt": "2026-05-03T21:54:00Z"
+        },
+        {
+          "title": "CNN Meia Noite",
+          "subtitle": null,
+          "description": "Fecha-se um ciclo noticioso e abre-se outro. Recordamos os temas que marcaram as últimas hora e ganhamos balanço para um novo dia, espreitando as capas dos jornais e os destaques da imprensa nacional e internacional.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=CNNPT&progTitle=CNN%20Meia%20Noite&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T21:54:00Z",
+          "endAt": "2026-05-04T00:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:DAZN1.uk",
+      "name": "DAZN 1",
+      "logoUrl": "https://i.imgur.com/2Z2EmZF.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "M'Gladbach x Dortmund - Bundesliga",
+          "subtitle": null,
+          "description": "Assista ao jogo da Bundesliga M'Gladbach x Dortmund.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=DAZN1&progTitle=M'Gladbach%20x%20Dortmund%20-%20Bundesliga&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:15:00Z",
+          "endAt": "2026-05-03T22:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:Eurosport1.fr",
+      "name": "Eurosport 1",
+      "logoUrl": "https://i.imgur.com/olQJgm7.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Escalada : World Series - Keqiao",
+          "subtitle": null,
+          "description": "Boulder Masculino Final",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=EURHD&progTitle=Escalada%20%3A%20World%20Series%20-%20Keqiao&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:RTPNoticias.pt",
+      "name": "RTP Notícias",
+      "logoUrl": "https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpnoticias_2026.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Trio D´Ataque T13 - Ep. 15",
+          "subtitle": null,
+          "description": "O 'clássico de domingo à noite' começou em 2004 e é uma marca do canal de notícias da RTP. Futebol em debate com moderação de Hugo Gilberto. Os comentadores residentes são: Miguel Guedes, João Gobern, Nuno Gonçalves.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=RTPN&progTitle=Trio%20D%C2%B4Ataque%20T13%20-%20Ep.%2015&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:30:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:RTP1.pt",
+      "name": "RTP1",
+      "logoUrl": "https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp1_2026.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Voice Kids - Os Apurados - Ep. 2",
+          "subtitle": null,
+          "description": "Diversidade de estilos, surpresas únicas e sonhos concretizados no The Voice Kids com os mentores Nena, Miguel Cristovinho, Diogo Piçarra e Cuca Roseta. Reveja os melhores momentos dos concorrentes já apurados.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=RTP1&progTitle=The%20Voice%20Kids%20-%20Os%20Apurados%20-%20Ep.%202&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:RTP2.pt",
+      "name": "RTP2",
+      "logoUrl": "https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp2_2026.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "As Donzelas de Rochefort",
+          "subtitle": null,
+          "description": "Delphine e Solange são duas irmãs gémeas que vivem em Rochefort onde dão aulas de dança e música a crianças e sonham em ir para Paris. Criadas pela mãe, Yvonne, que gere um café na Praça Colbert, nunca chegaram a conhecer o pai. Maxence é um marinheiro pintor que pintou o seu ideal feminino e o procurou por todo o lado. Simon é dono de uma loja de música.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=RTP2&progTitle=As%20Donzelas%20de%20Rochefort&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:SIC.pt",
+      "name": "SIC",
+      "logoUrl": "https://i.imgur.com/SPMqiDG.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Casados À Primeira Vista T6 - Ep. 6",
+          "subtitle": null,
+          "description": "Pessoas solteiras, que já tentaram tudo por tudo para encontrar o verdadeiro amor, mas sem sucesso, põem agora nas mãos deste formato o sonho de encontrar o amor das suas vidas. Cada um dos candidatos casará com um estranho. Não se conhecem, mas têm muito em comum.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=SIC&progTitle=Casados%20%C3%80%20Primeira%20Vista%20T6%20-%20Ep.%206&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:05:00Z",
+          "endAt": "2026-05-03T22:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:SICNoticias.pt",
+      "name": "SIC Notícias",
+      "logoUrl": "https://i.imgur.com/Gi6Q26M.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Toda A Verdade: O Recreio De Putin",
+          "subtitle": null,
+          "description": "Grandes reportagens sobre temas da atualidade.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=SICN&progTitle=Toda%20A%20Verdade%3A%20O%20Recreio%20De%20Putin&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:SportTV1.pt",
+      "name": "Sport TV1",
+      "logoUrl": "https://i.imgur.com/YWic36u.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Al Ahli x Al Okhdood - Liga Arábia Saudita",
+          "subtitle": null,
+          "description": "Transmissão do encontro a contar para a Liga Arábia Saudita.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=SPT1HD&progTitle=Al%20Ahli%20x%20Al%20Okhdood%20-%20Liga%20Ar%C3%A1bia%20Saudita&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T18:50:00Z",
+          "endAt": "2026-05-03T22:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:SportTV2.pt",
+      "name": "Sport TV2",
+      "logoUrl": "https://i.imgur.com/0jSR6yG.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "River Plate x Tucumán - Campeonato da Argentina (Direto)",
+          "subtitle": null,
+          "description": "Transmissão do encontro a contar para o Campeonato da Argentina.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=SPT2HD&progTitle=River%20Plate%20x%20Tucum%C3%A1n%20-%20Campeonato%20da%20Argentina%20(Direto)&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T20:25:00Z",
+          "endAt": "2026-05-03T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "meo-pt:TVI.pt",
+      "name": "TVI",
+      "logoUrl": "https://i.imgur.com/H8Tgl7m.png",
+      "provider": "MEO Portugal guide",
+      "providerKey": "meo-pt",
+      "sources": [
+        "data/normalized/guide-PT-meo.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Secret Story - Desafio Final 2026: Gala",
+          "subtitle": null,
+          "description": "A Casa mais secreta e vigiada do País, em mais uma edição inesquecível de Desafio Final.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=TVI&progTitle=Secret%20Story%20-%20Desafio%20Final%202026%3A%20Gala&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf",
+          "startAt": "2026-05-03T19:30:00Z",
+          "endAt": "2026-05-03T23:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "nos-pt:DAZN1.uk",
+      "name": "DAZN 1",
+      "logoUrl": "https://i.imgur.com/2Z2EmZF.png",
+      "provider": "NOS Portugal guide",
+      "providerKey": "nos-pt",
+      "sources": [
+        "data/normalized/guide-PT-nostv.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Bundesliga 2025-26 - Borussia M'Gladbach x B. Dortmund - Md32",
+          "subtitle": "2526",
+          "description": "Assista ao jogo da Bundesliga M'Gladbach x Dortmund.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/ef8c1732667d4b33a54fe25ed5c83811&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI",
+          "startAt": "2026-05-03T21:15:00Z",
+          "endAt": "2026-05-03T23:15:00Z"
+        },
+        {
+          "title": "Premier League 2025-26 - Arsenal x Fulham - Md35",
+          "subtitle": "2526",
+          "description": "Assista ao jogo da Premier League Arsenal x Fulham.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/1b8025018d804af280752cb1a479cc32&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI",
+          "startAt": "2026-05-03T23:15:00Z",
+          "endAt": "2026-05-04T01:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:BenficaTV.pt",
+      "name": "BTV",
+      "logoUrl": "https://i.imgur.com/l6LACto.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Seniores - Basquetebol",
+          "subtitle": null,
+          "description": "Espaço dedicado à transmissão de jogos de basquetebol do SLB.",
+          "categories": [
+            "Basquetebol",
+            "Desportos de equipa",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T20:02:00Z",
+          "endAt": "2026-05-03T21:59:00Z"
+        },
+        {
+          "title": "Benfica 24 Horas",
+          "subtitle": null,
+          "description": "Bloco informativo dedicado ao Benfica e aos desafios em que se encontra envolvido.",
+          "categories": [
+            "Desporto",
+            "Notícias"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:59:00Z",
+          "endAt": "2026-05-03T22:25:00Z"
+        },
+        {
+          "title": "Quinta dos Lombos x SLB - Final Jogo 2: Basquetebol Feminino - Camp. Nacional",
+          "subtitle": null,
+          "description": "Transmissão do jogo do Campeonato Nacional de Basquetebol Feminino, entre Quinta dos Lombos e Benfica.",
+          "categories": [
+            "Basquetebol",
+            "Desportos de equipa",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:25:00Z",
+          "endAt": "2026-05-04T00:16:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:CNNPortugal.pt",
+      "name": "CNN Portugal",
+      "logoUrl": "https://i.imgur.com/bc6tYVZ.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "CNN 360º",
+          "subtitle": null,
+          "description": "Programa de informação e análise que oferece uma visão completa sobre os acontecimentos mais relevantes do mundo. Percorremos os principais temas da atualidade com rigor jornalístico, contexto e diversidade de perspectivas, explicamos o que está a acontecer e porquê.",
+          "categories": [
+            "Debate",
+            "Notícias",
+            "Notícias"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T20:58:00Z",
+          "endAt": "2026-05-03T22:05:00Z"
+        },
+        {
+          "title": "O Princípio da Incerteza",
+          "subtitle": null,
+          "description": "Um programa de resumo semanal dos principais temas da atualidade, de natureza política, social e económica. Carlos Andrade conduz o formato que tem Alexandra Leitão, José Pacheco Pereira e Pedro Duarte como comentadores.[S]",
+          "categories": [
+            "Debate",
+            "Notícias",
+            "Notícias"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:05:00Z",
+          "endAt": "2026-05-03T22:54:00Z"
+        },
+        {
+          "title": "CNN Meia Noite",
+          "subtitle": null,
+          "description": "Fecha-se um ciclo noticioso e abre-se outro. Recordamos os temas que marcaram as últimas hora e ganhamos balanço para um novo dia, espreitando as capas dos jornais e os destaques da imprensa nacional e internacional.",
+          "categories": [
+            "Notícias"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:54:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:DAZN1.uk",
+      "name": "DAZN 1",
+      "logoUrl": "https://i.imgur.com/2Z2EmZF.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "M'gladbach x Dortmund: Bundesliga",
+          "subtitle": null,
+          "description": "Assista ao jogo da Bundesliga M'Gladbach x Dortmund.",
+          "categories": [
+            "Futebol",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:15:00Z",
+          "endAt": "2026-05-03T23:15:00Z"
+        },
+        {
+          "title": "Arsenal x Fulham: Premier League",
+          "subtitle": null,
+          "description": "Assista ao jogo da Premier League Arsenal x Fulham.",
+          "categories": [
+            "Futebol",
+            "Desporto"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:15:00Z",
+          "endAt": "2026-05-04T01:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:Eurosport1.fr",
+      "name": "Eurosport 1",
+      "logoUrl": "https://i.imgur.com/olQJgm7.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Escalada: World Series",
+          "subtitle": null,
+          "description": "Não perca a World Climbing Series Keqiao 2026, na China, com o boulder em destaque na 1. ª etapa do circuito internacional de escalada.",
+          "categories": [
+            "Radical",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T23:00:00Z"
+        },
+        {
+          "title": "Ciclismo: Volta à Turquia",
+          "subtitle": null,
+          "description": "A Volta Presidencial de Ciclismo à Turquia é uma competição de ciclismo de estrada por etapas que se realiza desde 1963. A prova, que faz parte do calendário mundial da UCI,tem atraído nos últimos anos alguns dos melhores ciclistas e equipas do mundo.",
+          "categories": [
+            "Ciclismo",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:00:00Z",
+          "endAt": "2026-05-03T23:30:00Z"
+        },
+        {
+          "title": "Ciclismo: Volta a Espanha Feminina",
+          "subtitle": null,
+          "description": "Acompanhe mais uma edição da La Vuelta feminina.",
+          "categories": [
+            "Ciclismo",
+            "Desporto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:30:00Z",
+          "endAt": "2026-05-04T01:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:RTP1.pt",
+      "name": "RTP1",
+      "logoUrl": "https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp1_2026.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "The Voice Kids",
+          "subtitle": null,
+          "description": "Os mentores Nena, Miguel Cristovinho, Diogo Piçarra e Cuca Roseta regressam às cadeiras do The Voice Kids para partilhar a sua experiência, sensibilidade e paixão pela música com uma nova geração de talentos.",
+          "categories": [
+            "Concurso",
+            "Entretenimento",
+            "Série"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T20:15:00Z",
+          "endAt": "2026-05-03T22:36:00Z"
+        },
+        {
+          "title": "The Voice Kids - Os Apurados",
+          "subtitle": null,
+          "description": "Diversidade de estilos, surpresas únicas e sonhos concretizados no The Voice Kids com os mentores Cuca Roseta, Nininho Vaz Maia, Carlão e Bárbara Tinoco. Reveja os melhores momentos dos concorrentes já apurados.",
+          "categories": [
+            "Concurso",
+            "Entretenimento",
+            "Série"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T22:36:00Z",
+          "endAt": "2026-05-03T23:32:00Z"
+        },
+        {
+          "title": "O Mestre Jardineiro",
+          "subtitle": null,
+          "description": "Narvel é um jardineiro que se dedica tanto a cuidar de uma histórica propriedade quanto a agradar à sua patroa, uma viúva rica. Uma existência espartana que é perturbada pela chegada de Maya, que virá trazer a lume segredos de um passado violento.[S]",
+          "categories": [
+            "Thriller",
+            "Thriller",
+            "Filmes e séries",
+            "Filme"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:32:00Z",
+          "endAt": "2026-05-04T01:17:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:RTP2.pt",
+      "name": "RTP2",
+      "logoUrl": "https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtp2_2026.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "As Donzelas de Rochefort",
+          "subtitle": null,
+          "description": "Para animar as festas locais, chega a Rochefort um grupo de bailarinos. Amizades e pequenos romances irão nascer entre os habitantes e os elementos do grupo.",
+          "categories": [
+            "Musical",
+            "Filmes e séries",
+            "Filme"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:00:00Z",
+          "endAt": "2026-05-03T23:02:00Z"
+        },
+        {
+          "title": "Ute Lemper - Canções para a Eternidade",
+          "subtitle": null,
+          "description": "Ute Lemper dá vida a composições e letras de músicos e artistas judeus escritas nos campos de concentração durante a Segunda Guerra Mundial. Com grande sensibilidade e profundidade, Ute Lemper revela brilhantemente a gama de emoções dos compositores aprisionados.",
+          "categories": [
+            "Música"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:02:00Z",
+          "endAt": "2026-05-04T00:39:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:SIC.pt",
+      "name": "SIC",
+      "logoUrl": "https://i.imgur.com/SPMqiDG.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Casados à Primeira Vista",
+          "subtitle": null,
+          "description": "Este programa questiona a forma como se procura o amor e investiga alguns métodos possíveis de encorajá-lo e sustentá-lo. Pessoas solteiras cuidadosamente selecionadas põe agora nas mãos deste formato o sonho de encontrar o amor das suas vidas.[S]",
+          "categories": [
+            "Reality show",
+            "Concurso",
+            "Entretenimento",
+            "Série"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T21:30:00Z",
+          "endAt": "2026-05-03T23:50:00Z"
+        },
+        {
+          "title": "Terra Nossa",
+          "subtitle": null,
+          "description": "Durante 48 horas César Mourão viaja até uma localidade para conhecer as tradições e curiosidades da terra, descobrir as principais figuras e ouvir as suas histórias. Tudo isto... sem rede e completamente improvisado.[S]",
+          "categories": [
+            "Comédia",
+            "Filmes e séries",
+            "Série"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T23:50:00Z",
+          "endAt": "2026-05-04T01:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "vodafone-pt:TVI.pt",
+      "name": "TVI",
+      "logoUrl": "https://i.imgur.com/H8Tgl7m.png",
+      "provider": "Vodafone Portugal guide",
+      "providerKey": "vodafone-pt",
+      "sources": [
+        "data/normalized/guide-PT-vodafone.pt.xml"
+      ],
+      "currentProgram": null,
+      "programs": [
+        {
+          "title": "Secret Story - Desafio Final 2026",
+          "subtitle": null,
+          "description": "Dez edições de Secret Story são uma história. Um percurso. Uma viagem. E é com esse legado que nasce esta décima edição: numa Casa completamente renovada, reinventada de raiz após uma profunda transformação. Depois das obras, a Casa renasceu. É nova, surpreendente e irreconhecível.",
+          "categories": [
+            "Reality show",
+            "Concurso",
+            "Entretenimento",
+            "Série"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-03T20:40:00Z",
+          "endAt": "2026-05-04T00:10:00Z"
+        }
+      ]
+    }
+  ]
+}

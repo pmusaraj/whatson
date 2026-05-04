@@ -3,42 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>What's On TV</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>What's On</title>
+    <link id="theme-link" rel="stylesheet" href="sense-theme.css?v=schedule-dedupe" />
+    <link rel="stylesheet" href="styles.css?v=schedule-dedupe" />
   </head>
   <body>
     <header class="app-header">
       <div>
-        <h1>What's On TV</h1>
-        <p class="lede">Pick up to five channels and compare what is on now.</p>
+        <h1>What's On</h1>
+      </div>
+      <div class="header-controls">
+        <label class="theme-switcher" for="theme-select">
+          <span>Theme</span>
+          <select id="theme-select" class="theme-select" aria-label="Theme">
+            <option value="sense" selected>Sense</option>
+            <option value="default">Default</option>
+          </select>
+        </label>
+        <button id="mobile-menu" class="mobile-menu-button" type="button" aria-controls="channel-picker" aria-expanded="true" aria-label="Hide channels">☰</button>
       </div>
       <div class="status" id="status">Loading guide data…</div>
     </header>
 
     <main class="layout">
-      <section class="panel picker-panel" aria-labelledby="picker-title">
+      <section id="channel-picker" class="panel picker-panel" aria-labelledby="picker-title">
         <div class="panel-heading compact-heading">
           <h2 id="picker-title">Channels</h2>
-          <div class="selection-limit">Max 5</div>
+          <button id="clear-selection" class="secondary-button" type="button">Clear</button>
         </div>
 
-        <div class="mode-toggle" role="group" aria-label="Channel filter">
-          <button id="show-all" class="mode-button active" type="button">All channels</button>
-          <button id="show-sports" class="mode-button" type="button">Premium channels</button>
-        </div>
-
+        <div id="country-flags" class="country-flags" aria-label="Countries"></div>
         <input id="channel-search" class="search" type="search" placeholder="Search all channels" autocomplete="off" />
         <div id="channel-list" class="channel-list"></div>
       </section>
 
       <section class="panel guide-panel" aria-label="TV guide">
-        <div class="guide-actions">
-          <button id="clear-selection" class="secondary-button" type="button">Clear</button>
-        </div>
         <div id="guide" class="guide"></div>
       </section>
     </main>
 
-    <script src="app.js"></script>
+    <dialog id="program-dialog" class="program-dialog" aria-labelledby="program-dialog-title">
+      <div id="program-dialog-content" class="program-dialog-content"></div>
+      <form method="dialog">
+        <button class="secondary-button program-dialog-close" type="submit">Close</button>
+      </form>
+    </dialog>
+
+    <script src="app.js?v=schedule-dedupe"></script>
   </body>
 </html>
