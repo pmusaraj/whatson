@@ -1,7 +1,7 @@
 {
   "country": "US",
   "countryName": "United States",
-  "generatedAt": "2026-05-05T08:21:12.291656Z",
+  "generatedAt": "2026-05-05T11:26:33.310274Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": false,
@@ -21,53 +21,17 @@
         "data/normalized/guide-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "CNN Newsroom Live",
+        "title": "CNN News Central",
         "subtitle": null,
-        "description": "The latest news from around the world is presented.",
+        "description": "Live reports of the latest breaking news from around the world.",
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-05T08:00:00Z",
-        "endAt": "2026-05-05T09:00:00Z"
+        "startAt": "2026-05-05T11:00:00Z",
+        "endAt": "2026-05-05T12:00:00Z"
       },
       "programs": [
-        {
-          "title": "The Story Is with Elex Michaelson",
-          "subtitle": null,
-          "description": "Elex Michaelson tackles the breaking stories making headlines with sharp analysis, fresh perspective and a dose of humor.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T04:00:00Z",
-          "endAt": "2026-05-05T05:00:00Z"
-        },
-        {
-          "title": "The Story Is with Elex Michaelson",
-          "subtitle": null,
-          "description": "Elex Michaelson tackles the breaking stories making headlines with sharp analysis, fresh perspective and a dose of humor.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T05:00:00Z",
-          "endAt": "2026-05-05T06:00:00Z"
-        },
-        {
-          "title": "Anderson Cooper 360°",
-          "subtitle": null,
-          "description": "Anderson Cooper reports on breaking news from around the world, providing an in-depth look at headline news as well as the underreported events of the day, with medical commentary from Dr. Sanjay Gupt",
-          "categories": [
-            "News",
-            "Talk & Interview"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T06:00:00Z",
-          "endAt": "2026-05-05T07:00:00Z"
-        },
         {
           "title": "CNN NewsNight with Abby Phillip",
           "subtitle": null,
@@ -300,6 +264,28 @@
           "imageUrl": null,
           "startAt": "2026-05-06T03:00:00Z",
           "endAt": "2026-05-06T05:00:00Z"
+        },
+        {
+          "title": "CNN NewsNight with Abby Phillip",
+          "subtitle": null,
+          "description": "Live post-debate coverage and analysis of the California Governor Primary Debate. Abby Phillip anchors.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-06T05:00:00Z",
+          "endAt": "2026-05-06T07:00:00Z"
+        },
+        {
+          "title": "CNN Newsroom Live",
+          "subtitle": null,
+          "description": "The latest news from around the world is presented.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-06T07:00:00Z",
+          "endAt": "2026-05-06T08:00:00Z"
         }
       ]
     },
@@ -313,58 +299,21 @@
         "data/normalized/guide-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "2026 Stanley Cup Playoffs",
+        "title": "SportsCenter",
         "subtitle": null,
-        "description": "Teams compete in best-of-seven series throughout the bracket to make it to the finals and get closer to lifting the Stanley Cup trophy; Florida won back-to-back titles after defeating Edmonton last ye",
-        "categories": [],
-        "sportType": null,
+        "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+        "categories": [
+          "News",
+          "Sports",
+          "Talk & Interview"
+        ],
+        "sportType": "Sports",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-05T08:00:00Z",
-        "endAt": "2026-05-05T10:00:00Z"
+        "startAt": "2026-05-05T11:00:00Z",
+        "endAt": "2026-05-05T12:00:00Z"
       },
       "programs": [
-        {
-          "title": "SportsCenter with Scott Van Pelt",
-          "subtitle": null,
-          "description": "Host Scott Van Pelt covers all of the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day reports",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T04:00:00Z",
-          "endAt": "2026-05-05T05:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T05:00:00Z",
-          "endAt": "2026-05-05T06:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-05T06:00:00Z",
-          "endAt": "2026-05-05T07:00:00Z"
-        },
         {
           "title": "SportsCenter",
           "subtitle": null,
@@ -575,6 +524,47 @@
           "imageUrl": null,
           "startAt": "2026-05-06T02:30:00Z",
           "endAt": "2026-05-06T04:30:00Z"
+        },
+        {
+          "title": "SportsCenter with Scott Van Pelt",
+          "subtitle": null,
+          "description": "Host Scott Van Pelt covers all of the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day reports",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-06T04:30:00Z",
+          "endAt": "2026-05-06T05:30:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-06T05:30:00Z",
+          "endAt": "2026-05-06T06:30:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-06T06:30:00Z",
+          "endAt": "2026-05-06T07:30:00Z"
         }
       ]
     }

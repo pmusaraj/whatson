@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "countryName": "Spain",
-  "generatedAt": "2026-05-05T08:21:12.291656Z",
+  "generatedAt": "2026-05-05T11:26:33.310274Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -21,58 +21,19 @@
         "data/normalized/guide-premium-ES-programacion-tv.elpais.com.xml"
       ],
       "currentProgram": {
-        "title": "Euroliga de baloncesto (T25/26): Valencia - Panathinaikos. Partido 2",
+        "title": "Super Rugby Pacific (T2026): Hurricanes - Crusaders",
         "subtitle": null,
         "description": "sin descripción",
         "categories": [
           "Otros/Otros"
         ],
-        "sportType": null,
+        "sportType": "Rugby",
         "competition": null,
         "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-        "startAt": "2026-05-05T08:20:00Z",
-        "endAt": "2026-05-05T10:20:00Z"
+        "startAt": "2026-05-05T10:20:00Z",
+        "endAt": "2026-05-05T12:05:00Z"
       },
       "programs": [
-        {
-          "title": "Professional Fighters League (T2026): Main Card. Sioux Falls",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-05T03:25:00Z",
-          "endAt": "2026-05-05T05:35:00Z"
-        },
-        {
-          "title": "MLB Plays of the Week (T2026): Episodio 4",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
-          "startAt": "2026-05-05T05:35:00Z",
-          "endAt": "2026-05-05T06:00:00Z"
-        },
-        {
-          "title": "World of free sports (T2026): Episodio 17",
-          "subtitle": null,
-          "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://programacion-tv.elpais.com/",
-          "startAt": "2026-05-05T06:00:00Z",
-          "endAt": "2026-05-05T06:30:00Z"
-        },
         {
           "title": "Copa del Rey de Rugby (T25/26): Final Copa del Rey. Silicius Alcobendas Rugby - Complutense Cisneros",
           "subtitle": null,
@@ -246,12 +207,10 @@
           "title": "NHL (T25/26): Tampa Bay Lightning - Montreal Canadiens",
           "subtitle": null,
           "description": "sin descripción",
-          "categories": [
-            "Otros/Otros"
-          ],
+          "categories": [],
           "sportType": "Hockey",
           "competition": "NHL",
-          "imageUrl": "https://programacion-tv.elpais.com/imagenes/programas/12971.jpg",
+          "imageUrl": "https://programacion-tv.elpais.com/undefined",
           "startAt": "2026-05-05T23:55:00Z",
           "endAt": "2026-05-06T02:25:00Z"
         }
@@ -267,76 +226,20 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Real Madrid - FC Barcelona 2016/17",
-        "subtitle": null,
-        "description": null,
+        "title": "LaLiga FC Futures Mundial Sub12 - T2026, E01: Cuartos de final",
+        "subtitle": "LaLiga FC Futures Mundial Sub12",
+        "description": "Este torneo reúne a 20 clubes de élite de cinco continentes que lucharán por alzarse con el triunfo.",
         "categories": [
-          "Deportes",
+          "Fútbol",
           "Otros"
         ],
-        "sportType": "Sports",
-        "competition": null,
-        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3997635.jpg",
-        "startAt": "2026-05-05T07:18:11Z",
-        "endAt": "2026-05-05T09:59:59Z"
+        "sportType": "Football",
+        "competition": "LaLiga",
+        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5128041.jpg",
+        "startAt": "2026-05-05T09:59:59Z",
+        "endAt": "2026-05-05T12:59:35Z"
       },
       "programs": [
-        {
-          "title": "El Clásico - T2015, E01: ElClásico 2015/16: El Barça",
-          "subtitle": "El Clásico",
-          "description": "El Clásico.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024548.jpg",
-          "startAt": "2026-05-05T04:18:43Z",
-          "endAt": "2026-05-05T05:10:02Z"
-        },
-        {
-          "title": "Lo mejor de LaLiga - T2024, E01: Las mejores remontadas de 2024",
-          "subtitle": "Lo mejor de LaLiga",
-          "description": "Se presentan los momentos más destacados de LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024544.jpg",
-          "startAt": "2026-05-05T05:10:02Z",
-          "endAt": "2026-05-05T05:29:43Z"
-        },
-        {
-          "title": "Lo mejor de LaLiga - T2026, E05: Lo mejor de Nico Wlliams en LALIGA",
-          "subtitle": "Lo mejor de LaLiga",
-          "description": "Se presentan los momentos más destacados de LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024544.jpg",
-          "startAt": "2026-05-05T05:29:43Z",
-          "endAt": "2026-05-05T05:36:23Z"
-        },
-        {
-          "title": "LaLiga FC Pro",
-          "subtitle": null,
-          "description": "Una mirada a la edición de La Liga FC Pro.",
-          "categories": [
-            "Deportes",
-            "eSports"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4018746.jpg",
-          "startAt": "2026-05-05T05:36:23Z",
-          "endAt": "2026-05-05T07:18:11Z"
-        },
         {
           "title": "Real Madrid - FC Barcelona 2016/17",
           "subtitle": null,
@@ -728,6 +631,62 @@
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
           "startAt": "2026-05-06T03:51:07Z",
           "endAt": "2026-05-06T04:23:55Z"
+        },
+        {
+          "title": "LALIGA VS - T2, E05: Episodio 5",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-06T04:23:55Z",
+          "endAt": "2026-05-06T04:53:35Z"
+        },
+        {
+          "title": "LALIGA VS - T2025, E06: Episodio 6",
+          "subtitle": "LALIGA VS",
+          "description": "Plataforma de LALIGA cuya misión es erradicar el odio tanto dentro fuera de los estadios.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4024539.jpg",
+          "startAt": "2026-05-06T04:53:35Z",
+          "endAt": "2026-05-06T05:30:58Z"
+        },
+        {
+          "title": "Derbies - T2025, E03: Derbies Barcelona - Espanyol",
+          "subtitle": "Derbies",
+          "description": null,
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5177304.jpg",
+          "startAt": "2026-05-06T05:30:58Z",
+          "endAt": "2026-05-06T06:00:57Z"
+        },
+        {
+          "title": "LaLiga FC Pro",
+          "subtitle": null,
+          "description": "Una mirada a la edición de La Liga FC Pro.",
+          "categories": [
+            "Deportes",
+            "eSports"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4018746.jpg",
+          "startAt": "2026-05-06T06:00:57Z",
+          "endAt": "2026-05-06T07:50:08Z"
         }
       ]
     },
@@ -838,6 +797,20 @@
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
           "startAt": "2026-05-06T00:00:00Z",
           "endAt": "2026-05-06T05:00:00Z"
+        },
+        {
+          "title": "LaLiga TV Hypermotion",
+          "subtitle": null,
+          "description": "Información pendiente de actualización. Programación próximamente disponible. Por favor, inténtalo de nuevo más tarde.",
+          "categories": [
+            "Programa",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994643.jpg",
+          "startAt": "2026-05-06T05:00:00Z",
+          "endAt": "2026-05-06T08:00:00Z"
         }
       ]
     },
@@ -1099,48 +1072,20 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Resúmenes LALIGA EA Sports",
+        "title": "Resúmenes LALIGA HyperMotion",
         "subtitle": null,
-        "description": "Un repaso a los encuentros que se disputan cada jornada en LaLiga. Las jugadas más destacadas y todos los goles de los partidos de Primera División.",
+        "description": "Espacio que repasa los encuentros que se disputan cada jornada en Segunda División. Las mejores jugadas y todos los goles de LaLiga Hypermotion.",
         "categories": [
           "Fútbol",
           "Otros"
         ],
         "sportType": "Football",
-        "competition": "LaLiga",
-        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3994639.jpg",
-        "startAt": "2026-05-05T08:10:00Z",
-        "endAt": "2026-05-05T08:22:00Z"
+        "competition": "LaLiga Hypermotion",
+        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4020362.jpg",
+        "startAt": "2026-05-05T11:25:00Z",
+        "endAt": "2026-05-05T11:30:00Z"
       },
       "programs": [
-        {
-          "title": "El fútbol según Raúl",
-          "subtitle": null,
-          "description": "Una mirada a las mejores historias del fútbol español.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4386870.jpg",
-          "startAt": "2026-05-05T03:45:00Z",
-          "endAt": "2026-05-05T05:00:00Z"
-        },
-        {
-          "title": "Momentazos de LaLiga",
-          "subtitle": null,
-          "description": "Una mirada a los Momentazos de LaLiga.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4637238.jpg",
-          "startAt": "2026-05-05T05:00:00Z",
-          "endAt": "2026-05-05T06:00:00Z"
-        },
         {
           "title": "LaLiga Hypermotion - T38, E11: Real Racing Club-SD Huesca",
           "subtitle": "LaLiga Hypermotion",
@@ -1770,6 +1715,34 @@
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4386870.jpg",
           "startAt": "2026-05-06T04:20:00Z",
           "endAt": "2026-05-06T05:35:00Z"
+        },
+        {
+          "title": "El legado de Raúl",
+          "subtitle": null,
+          "description": "En el verano de 2010 Raúl González Blanco aterrizaba en Alemania para jugar en el Schalke 04. Cómo fue su vida en esos dos años pasa por comprender las razones que le llevaron hasta allí.",
+          "categories": [
+            "Cine",
+            "Documentales"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4789250.jpg",
+          "startAt": "2026-05-06T05:35:00Z",
+          "endAt": "2026-05-06T06:00:00Z"
+        },
+        {
+          "title": "LaLiga Hypermotion - T38, E02: RCD La Coruña-CD Leganés",
+          "subtitle": "LaLiga Hypermotion",
+          "description": "Deportivo La Coruña se enfrenta a Leganés en LaLiga Hypermotion. Deportivo La Coruña juega de local en el Estadio de Riazor. Ronda 38.",
+          "categories": [
+            "Fútbol",
+            "LaLiga Hypermotion"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga Hypermotion",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5220154.jpg",
+          "startAt": "2026-05-06T06:00:00Z",
+          "endAt": "2026-05-06T08:00:00Z"
         }
       ]
     },
@@ -2155,48 +2128,20 @@
         "data/normalized/guide-premium-ES-orangetv.orange.es.xml"
       ],
       "currentProgram": {
-        "title": "Liga brasileña",
+        "title": "Liga Argentina",
         "subtitle": null,
-        "description": "Toda la acción de la Primera División de Brasil, una de las ligas de fútbol más prestigiosas y competitivas del mundo.",
+        "description": "La Liga Profesional de Fútbol Argentino reúne a los equipos de primera división del país.",
         "categories": [
           "Fútbol",
           "Otros"
         ],
         "sportType": "Football",
         "competition": null,
-        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4320713.jpg",
-        "startAt": "2026-05-05T07:30:00Z",
-        "endAt": "2026-05-05T09:30:00Z"
+        "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4969046.jpg",
+        "startAt": "2026-05-05T10:00:00Z",
+        "endAt": "2026-05-05T12:00:00Z"
       },
       "programs": [
-        {
-          "title": "El tercer tiempo - T2026, E33: Episodio 33",
-          "subtitle": "El tercer tiempo",
-          "description": "Un programa de análisis de toda la jornada liguera, dirigido por José Sanchis, que echa un vistazo a lo mejor del fútbol internacional de la mano de Axel Torres.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025424.jpg",
-          "startAt": "2026-05-05T03:00:00Z",
-          "endAt": "2026-05-05T04:30:00Z"
-        },
-        {
-          "title": "Liga brasileña",
-          "subtitle": null,
-          "description": "Toda la acción de la Primera División de Brasil, una de las ligas de fútbol más prestigiosas y competitivas del mundo.",
-          "categories": [
-            "Fútbol",
-            "Otros"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4320713.jpg",
-          "startAt": "2026-05-05T04:30:00Z",
-          "endAt": "2026-05-05T06:30:00Z"
-        },
         {
           "title": "Universo Valdano - T9, E05: Filipe Luís",
           "subtitle": "Universo Valdano",
@@ -2438,6 +2383,34 @@
           "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4020143.jpg",
           "startAt": "2026-05-06T03:50:00Z",
           "endAt": "2026-05-06T04:50:00Z"
+        },
+        {
+          "title": "Champions League - T12, E03: Arsenal-Atlético de Madrid",
+          "subtitle": "Champions League",
+          "description": "Arsenal se enfrenta a Atlético de Madrid en la UEFA Champions League. Arsenal juega de local en el Emirates Stadium. Semifinales.",
+          "categories": [
+            "Fútbol",
+            "Champions League"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_5206239.jpg",
+          "startAt": "2026-05-06T04:50:00Z",
+          "endAt": "2026-05-06T06:40:00Z"
+        },
+        {
+          "title": "Magazine Europa League - T2026, E19: Episodio 19",
+          "subtitle": "Magazine Europa League",
+          "description": "La Europa League es la sucesora de la Copa UEFA. Se trata de una competición con doble premio, ya que, además de la gloria, da una plaza al ganador para la Champions. Este espacio analiza todo lo que ocurre alrededor del torneo.",
+          "categories": [
+            "Fútbol",
+            "Otros"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4025422.jpg",
+          "startAt": "2026-05-06T06:40:00Z",
+          "endAt": "2026-05-06T07:40:00Z"
         }
       ]
     },
