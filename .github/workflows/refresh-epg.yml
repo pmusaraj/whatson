@@ -1,0 +1,50 @@
+name: Refresh EPG data
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-epg
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install iptv-org EPG grabber
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
+          npm install --prefix .cache/epg
+
+      - name: Refresh guide data
+        run: python3 scripts/refresh_epg.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/normalized web/data
+          if git diff --cached --quiet; then
+            echo "No guide data changes to commit."
+          else
+            git commit -m "chore: refresh EPG data"
+            git push
+          fi

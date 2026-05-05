@@ -1,14 +1,13 @@
 # What's On TV
 
-What's On TV is a v0 static TV guide for quickly seeing what is on now and next across a curated set of international channels.
+This is a static TV guide for quickly seeing what is on now and next across a curated set of international channels.
 
-Live app: https://whatson.musaraj.com
-Repo: https://github.com/pmusaraj/whatson
+Live app: https://heywhatson.tv
 
 ## What it does
 
 - Shows a live, time-aligned guide grid for selected channels.
-- Groups channels by country in a compact sidebar.
+- Groups channels by country.
 - Includes curated general channels plus premium/pay-TV sports channels.
 - Searches across channels and programme titles/events.
 - Opens programme details in a modal when metadata is available.
@@ -16,19 +15,19 @@ Repo: https://github.com/pmusaraj/whatson
 
 Countries currently included:
 
-| Country | General channels | Premium sports/pay-TV channels |
-| --- | ---: | ---: |
-| France | 12 | 25 |
-| Spain | 18 | 21 |
-| Canada | 20 | 14 |
-| United States | 14 | 13 |
-| United Kingdom | 19 | 16 |
-| Italy | 10 | 8 |
-| Germany | 12 | 13 |
-| Turkiye | 12 | 6 |
-| Portugal | 21 | 17 |
-| Mexico | 10 | 10 |
-| Brazil | 12 | 9 |
+| Country        | General channels | Premium sports/pay-TV channels |
+| -------------- | ---------------: | -----------------------------: |
+| France         |               12 |                             25 |
+| Spain          |               18 |                             21 |
+| Canada         |               20 |                             14 |
+| United States  |               14 |                             13 |
+| United Kingdom |               19 |                             16 |
+| Italy          |               10 |                              8 |
+| Germany        |               12 |                             13 |
+| Turkiye        |               12 |                              6 |
+| Portugal       |               21 |                             17 |
+| Mexico         |               10 |                             10 |
+| Brazil         |               12 |                              9 |
 
 ## Architecture
 
@@ -47,9 +46,9 @@ Times are stored in UTC in the generated JSON. The browser renders the current g
 
 ## Data refresh and publishing
 
-The live app is served from the `web/` directory at https://whatson.musaraj.com.
+When deployed to Cloudflare Pages, the live app is served from the committed `web/` directory at https://heywhatson.tv.
 
-A Hermes cron job named `whatsontv EPG refresh` runs every 2 hours (`0 */2 * * *`) from this repository. It runs:
+A GitHub Actions workflow runs every 2 hours (`0 */2 * * *`) and updates the data. It runs:
 
 ```bash
 python3 scripts/refresh_epg.py
@@ -62,8 +61,6 @@ That script:
 3. Writes refreshed XMLTV snapshots to `data/normalized/`.
 4. Rebuilds `web/data/*.json` with a 24-hour browser payload window: now - 4h through now + 20h.
 5. Runs the unit tests and `node --check web/app.js`.
-
-Publishing is file-based: once the refresh updates `web/`, the served site reflects the new data. There is no separate build or deploy step for the live v0 instance.
 
 ## Run locally
 
@@ -117,6 +114,4 @@ node --check web/app.js
 
 ## Notes
 
-This is a schedule/metadata guide only. It does not stream video.
-
-The data comes from public guide sources through the iptv-org EPG tooling and curated channel mappings. Availability and licensing should be reviewed before using this beyond a personal/prototype context.
+This is a schedule/metadata guide only. It does not stream or store video.
