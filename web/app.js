@@ -698,7 +698,7 @@ function renderGuide() {
     els.guide.innerHTML = `
       <div class="empty-state">
         <p>This is a simple app to find what's on TV. Pick channels from the left column, or search above for a show, channel, or live event.</p>
-        <p class="empty-state-notes">Last update ${escapeHtml(formatRelativeTime(state.generatedAt))} · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
+        <p class="empty-state-notes">Data last updated ${escapeHtml(formatRelativeTime(state.generatedAt))} · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
       </div>`;
     return;
   }
