@@ -67,7 +67,6 @@ That script:
 From the repository root:
 
 ```bash
-cd /Users/pmusaraj/Projects/whatsontv
 python3 -m http.server 8000 --directory web
 ```
 
