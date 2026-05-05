@@ -45,6 +45,33 @@ h1 {
   margin-bottom: 0.15rem;
 }
 
+.brand-logo {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 0.08em;
+  row-gap: 0;
+  font-size: clamp(1.68rem, 3.7vw, 3.05rem);
+  letter-spacing: -0.075em;
+}
+
+.brand-logo-part {
+  display: inline-block;
+}
+
+.brand-logo-hey {
+  opacity: 0.48;
+}
+
+.brand-logo-main {
+  opacity: 0.94;
+}
+
+.brand-logo-domain {
+  margin-left: -0.06em;
+  opacity: 0.64;
+}
+
 h2 {
   margin-bottom: 0;
 }

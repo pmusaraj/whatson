@@ -3,7 +3,7 @@ const VISIBLE_HOURS = 9;
 const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
-const THEME_VERSION = "mobile-no-time-axis-2";
+const THEME_VERSION = "relative-update";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -12,6 +12,7 @@ const THEMES = {
 
 const state = {
   countries: [],
+  generatedAt: null,
   countryDataByCode: new Map(),
   selectedChannelKeys: loadSelection(),
   search: "",
@@ -138,6 +139,31 @@ function formatCurrentTime(value) {
   }).format(value);
 }
 
+function formatRelativeTime(value) {
+  if (!value) {
+    return "unknown";
+  }
+
+  const elapsedSeconds = Math.max(
+    0,
+    Math.round((state.now.getTime() - new Date(value).getTime()) / 1000),
+  );
+  const units = [
+    ["day", 86400],
+    ["hour", 3600],
+    ["minute", 60],
+  ];
+
+  for (const [unit, seconds] of units) {
+    if (elapsedSeconds >= seconds) {
+      const amount = Math.floor(elapsedSeconds / seconds);
+      return `${amount} ${unit}${amount === 1 ? "" : "s"} ago`;
+    }
+  }
+
+  return "just now";
+}
+
 function minutesBetween(start, end) {
   return (end.getTime() - start.getTime()) / 60000;
 }
@@ -194,6 +220,7 @@ async function loadJson(url) {
 async function loadGuideData() {
   const data = await loadJson("data/countries.json");
   state.countries = data.countries;
+  state.generatedAt = data.generatedAt;
   await loadCountryPayloads();
 }
 
@@ -671,7 +698,7 @@ function renderGuide() {
     els.guide.innerHTML = `
       <div class="empty-state">
         <p>This is a simple app to find what's on TV. Pick channels from the left column, or search above for a show, channel, or live event.</p>
-        <p class="empty-state-notes">Updated every 2 hours. <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
+        <p class="empty-state-notes">Last update ${escapeHtml(formatRelativeTime(state.generatedAt))} · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
       </div>`;
     return;
   }

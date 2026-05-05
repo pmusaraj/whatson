@@ -48,7 +48,7 @@ Times are stored in UTC in the generated JSON. The browser renders the current g
 
 When deployed to Cloudflare Pages, the live app is served from the committed `web/` directory at https://heywhatson.tv.
 
-A GitHub Actions workflow runs every 2 hours (`0 */2 * * *`) and updates the data. It runs:
+A GitHub Actions workflow runs every 6 hours (`0 */6 * * *`) and updates the data. It runs:
 
 ```bash
 python3 scripts/refresh_epg.py
