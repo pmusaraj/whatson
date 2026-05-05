@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>What's On</title>
-    <link id="theme-link" rel="stylesheet" href="sense-theme.css?v=schedule-dedupe" />
-    <link rel="stylesheet" href="styles.css?v=schedule-dedupe" />
+    <link id="theme-link" rel="stylesheet" href="sense-theme.css?v=mobile-no-time-axis-2" />
+    <link rel="stylesheet" href="styles.css?v=mobile-no-time-axis-2" />
   </head>
   <body>
     <header class="app-header">
@@ -13,13 +13,8 @@
         <h1>What's On</h1>
       </div>
       <div class="header-controls">
-        <label class="theme-switcher" for="theme-select">
-          <span>Theme</span>
-          <select id="theme-select" class="theme-select" aria-label="Theme">
-            <option value="sense" selected>Sense</option>
-            <option value="default">Default</option>
-          </select>
-        </label>
+        <input id="channel-search" class="search header-search" type="search" placeholder="Search" autocomplete="off" />
+        <button id="mobile-search" class="mobile-search-button" type="button" aria-controls="channel-search" aria-expanded="false" aria-label="Search">⌕</button>
         <button id="mobile-menu" class="mobile-menu-button" type="button" aria-controls="channel-picker" aria-expanded="true" aria-label="Hide channels">☰</button>
       </div>
       <div class="status" id="status">Loading guide data…</div>
@@ -33,11 +28,11 @@
         </div>
 
         <div id="country-flags" class="country-flags" aria-label="Countries"></div>
-        <input id="channel-search" class="search" type="search" placeholder="Search all channels" autocomplete="off" />
         <div id="channel-list" class="channel-list"></div>
       </section>
 
       <section class="panel guide-panel" aria-label="TV guide">
+        <div id="search-results" class="search-results" hidden></div>
         <div id="guide" class="guide"></div>
       </section>
     </main>
@@ -49,6 +44,6 @@
       </form>
     </dialog>
 
-    <script src="app.js?v=schedule-dedupe"></script>
+    <script src="app.js?v=mobile-no-time-axis-2"></script>
   </body>
 </html>

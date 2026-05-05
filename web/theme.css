@@ -58,7 +58,8 @@ h2 {
   font-size: 0.86rem;
 }
 
-.mobile-menu-button {
+.mobile-menu-button,
+.mobile-search-button {
   border: 1px solid var(--border);
   background: var(--surface-strong);
   color: var(--text);
@@ -68,7 +69,10 @@ h2 {
 }
 
 .mobile-menu-button:hover,
-.mobile-menu-button:focus-visible {
+.mobile-menu-button:focus-visible,
+.mobile-search-button:hover,
+.mobile-search-button:focus-visible,
+.mobile-search-button[aria-expanded="true"] {
   border-color: var(--accent);
   color: var(--accent);
   outline: none;
@@ -121,6 +125,43 @@ h2 {
   border-radius: 14px;
   background: var(--surface-strong);
   color: var(--text);
+}
+
+.search-results {
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 88%, white);
+}
+
+.search-results-heading h2 {
+  font-size: 0.98rem;
+}
+
+.search-results-heading span,
+.show-result-time,
+.show-result-meta {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.show-result {
+  border: 0;
+  border-left: 2px solid transparent;
+  background: transparent;
+  color: var(--text);
+}
+
+.show-result:hover,
+.show-result:focus-visible,
+.show-result.current {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-soft) 54%, transparent);
+  outline: none;
+}
+
+.show-result-title {
+  font-size: 0.88rem;
+  font-weight: 750;
 }
 
 .country-group h3 {

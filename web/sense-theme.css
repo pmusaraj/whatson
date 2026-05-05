@@ -62,7 +62,8 @@ h2 {
   font-size: 0.86rem;
 }
 
-.mobile-menu-button {
+.mobile-menu-button,
+.mobile-search-button {
   border: 1px solid var(--border);
   background: rgb(255 255 255 / 68%);
   color: var(--text);
@@ -75,7 +76,10 @@ h2 {
 }
 
 .mobile-menu-button:hover,
-.mobile-menu-button:focus-visible {
+.mobile-menu-button:focus-visible,
+.mobile-search-button:hover,
+.mobile-search-button:focus-visible,
+.mobile-search-button[aria-expanded="true"] {
   border-color: rgb(255 255 255 / 92%);
   background: rgb(255 255 255 / 82%);
   color: var(--accent);
@@ -136,6 +140,48 @@ h2 {
   background: rgb(255 255 255 / 68%);
   color: var(--text);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 72%);
+}
+
+.search-results {
+  border: 1px solid var(--border);
+  background: rgb(255 255 255 / 48%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 62%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.search-results-heading h2 {
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.search-results-heading span,
+.show-result-time,
+.show-result-meta {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.show-result {
+  border: 0;
+  border-left: 2px solid transparent;
+  background: transparent;
+  color: var(--text);
+}
+
+.show-result:hover,
+.show-result:focus-visible,
+.show-result.current {
+  border-color: var(--accent);
+  background: rgb(255 255 255 / 62%);
+  outline: 2px solid rgb(255 127 111 / 22%);
+  outline-offset: 1px;
+}
+
+.show-result-title {
+  font-size: 0.87rem;
+  font-weight: 760;
 }
 
 .country-group h3 {

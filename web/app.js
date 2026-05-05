@@ -2,7 +2,8 @@ const MAX_SELECTIONS = 10;
 const VISIBLE_HOURS = 9;
 const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
-const THEME_VERSION = "schedule-dedupe";
+const TIMELINE_LOOKBACK_MINUTES = 60;
+const THEME_VERSION = "mobile-no-time-axis-2";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -15,7 +16,8 @@ const state = {
   selectedChannelKeys: loadSelection(),
   search: "",
   now: new Date(),
-  mobileView: "picker",
+  mobileView: "guide",
+  searchOpen: false,
 };
 
 const els = {
@@ -23,10 +25,13 @@ const els = {
   countryFlags: document.querySelector("#country-flags"),
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
+  channelPicker: document.querySelector("#channel-picker"),
+  searchResults: document.querySelector("#search-results"),
   guide: document.querySelector("#guide"),
   programDialog: document.querySelector("#program-dialog"),
   programDialogContent: document.querySelector("#program-dialog-content"),
   clearSelection: document.querySelector("#clear-selection"),
+  mobileSearch: document.querySelector("#mobile-search"),
   mobileMenu: document.querySelector("#mobile-menu"),
   themeLink: document.querySelector("#theme-link"),
   themeSelect: document.querySelector("#theme-select"),
@@ -75,7 +80,9 @@ function loadTheme() {
 function setTheme(themeName) {
   const theme = Object.hasOwn(THEMES, themeName) ? themeName : DEFAULT_THEME;
   els.themeLink.href = THEMES[theme];
-  els.themeSelect.value = theme;
+  if (els.themeSelect) {
+    els.themeSelect.value = theme;
+  }
   document.documentElement.dataset.theme = theme;
   localStorage.setItem("whatsontv.theme", theme);
   localStorage.setItem("whatsontv.themeDefault", THEME_VERSION);
@@ -97,25 +104,23 @@ function selectedSet() {
   return new Set(state.selectedChannelKeys);
 }
 
+function getChannelByKey(key) {
+  const [countryCode, channelId] = parseChannelKey(key);
+  const countryData = state.countryDataByCode.get(countryCode);
+  const channel = countryData?.channels.find((item) => item.id === channelId);
+  if (!countryData || !channel) {
+    return null;
+  }
+  return {
+    ...channel,
+    countryCode,
+    countryName: countryData.countryName,
+    key,
+  };
+}
+
 function selectedChannels() {
-  return state.selectedChannelKeys
-    .map((key) => {
-      const [countryCode, channelId] = parseChannelKey(key);
-      const countryData = state.countryDataByCode.get(countryCode);
-      const channel = countryData?.channels.find(
-        (item) => item.id === channelId,
-      );
-      if (!countryData || !channel) {
-        return null;
-      }
-      return {
-        ...channel,
-        countryCode,
-        countryName: countryData.countryName,
-        key,
-      };
-    })
-    .filter(Boolean);
+  return state.selectedChannelKeys.map(getChannelByKey).filter(Boolean);
 }
 
 function formatTime(value) {
@@ -147,7 +152,7 @@ function roundDownToSlot(date) {
 }
 
 function timelineBounds() {
-  const start = new Date(state.now.getTime() - SLOT_MINUTES * 60000);
+  const start = new Date(state.now.getTime() - TIMELINE_LOOKBACK_MINUTES * 60000);
   start.setSeconds(0, 0);
   const end = new Date(start.getTime() + VISIBLE_HOURS * 60 * 60000);
   return { start, end };
@@ -218,7 +223,7 @@ async function loadCountryPayloads() {
       .get(countryCode)
       ?.channels.some((channel) => channel.id === channelId);
   });
-  state.mobileView = state.selectedChannelKeys.length ? "guide" : "picker";
+  state.mobileView = "guide";
   saveSelection();
 }
 
@@ -381,13 +386,135 @@ function channelMatchesSearch(countryData, channel, query) {
   return (
     countryMatchesSearch(countryData, query) ||
     channel.name.toLowerCase().includes(query) ||
-    channel.provider.toLowerCase().includes(query)
+    channel.provider.toLowerCase().includes(query) ||
+    (channel.programs || []).some((program) =>
+      programMatchesSearch(countryData, channel, program, query),
+    )
   );
+}
+
+function programMatchesSearch(countryData, channel, program, query) {
+  if (!query) {
+    return false;
+  }
+  const haystack = [
+    program.title,
+    program.subtitle,
+    program.description,
+    program.sportType,
+    program.competition,
+    ...(program.categories || []),
+    channel.name,
+    countryData.countryName,
+    countryData.country,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  return haystack.includes(query);
+}
+
+function searchProgramResults(query, limit = 60) {
+  if (!query) {
+    return [];
+  }
+  const results = [];
+  for (const country of state.countries) {
+    const countryData = state.countryDataByCode.get(country.code);
+    if (!countryData) {
+      continue;
+    }
+    for (const channel of countryData.channels) {
+      const key = channelKey(countryData.country, channel.id);
+      (channel.programs || []).forEach((program, index) => {
+        if (!programMatchesSearch(countryData, channel, program, query)) {
+          return;
+        }
+        results.push({
+          channel,
+          countryData,
+          key,
+          program,
+          index,
+          current: isCurrent(program),
+        });
+      });
+    }
+  }
+  return results
+    .sort((a, b) => {
+      if (a.current !== b.current) {
+        return a.current ? -1 : 1;
+      }
+      return a.program.startAt.localeCompare(b.program.startAt);
+    })
+    .slice(0, limit);
+}
+
+function renderSearchResults() {
+  const query = state.search.trim().toLowerCase();
+  if (!query) {
+    els.searchResults.hidden = true;
+    els.searchResults.innerHTML = "";
+    return;
+  }
+
+  const results = searchProgramResults(query);
+  els.searchResults.hidden = false;
+  els.searchResults.innerHTML = `
+    <div class="search-results-heading">
+      <h2>Shows matching “${escapeHtml(state.search.trim())}”</h2>
+      <span>${results.length ? `${results.length} result${results.length === 1 ? "" : "s"}` : "No matching shows"}</span>
+    </div>
+    ${results.length ? `
+      <div class="show-results-list">
+        ${results
+          .map(
+            ({ channel, countryData, key, program, index, current }) => `
+              <button class="show-result ${current ? "current" : ""}" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
+                <span class="show-result-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</span>
+                <span class="show-result-title">${escapeHtml(program.title)}</span>
+                <span class="show-result-meta">${flagEmoji(countryData.country)} ${escapeHtml(channel.name)}</span>
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+    ` : `<div class="empty-program">Try a channel, sport, team, league, or programme title.</div>`}
+  `;
 }
 
 function renderChannelList() {
   const selected = selectedSet();
   const query = state.search.trim().toLowerCase();
+
+  if (query) {
+    const matchingChannels = state.countries.flatMap((country) => {
+      const countryData = state.countryDataByCode.get(country.code);
+      if (!countryData) {
+        return [];
+      }
+      return countryData.channels
+        .filter((channel) => channelMatchesSearch(countryData, channel, query))
+        .map((channel) => ({ countryData, channel }));
+    });
+
+    els.channelList.innerHTML = matchingChannels
+      .map(({ countryData, channel }) => {
+        const key = channelKey(countryData.country, channel.id);
+        const checked = selected.has(key);
+        const disabled =
+          !checked && state.selectedChannelKeys.length >= MAX_SELECTIONS;
+        return `
+          <button class="channel-choice search-channel-choice ${checked ? "selected" : ""}" type="button" data-channel-key="${escapeHtml(key)}" aria-pressed="${checked}" ${disabled ? "disabled" : ""}>
+            <span class="channel-flag" aria-hidden="true">${flagEmoji(countryData.country)}</span>
+            <span class="channel-name">${escapeHtml(channel.name)}</span>
+          </button>
+        `;
+      })
+      .join("") || `<div class="empty-program">No matching channels.</div>`;
+    return;
+  }
 
   els.channelList.innerHTML = state.countries
     .map((country) => {
@@ -425,6 +552,12 @@ function renderChannelList() {
 
 function renderCountryFlags() {
   const query = state.search.trim().toLowerCase();
+  if (query) {
+    els.countryFlags.innerHTML = "";
+    els.countryFlags.hidden = true;
+    return;
+  }
+  els.countryFlags.hidden = false;
   els.countryFlags.innerHTML = state.countries
     .map((country) => {
       const countryData = state.countryDataByCode.get(country.code);
@@ -583,7 +716,7 @@ function programDetailRows(program, channel) {
 }
 
 function openProgramDetails(channelKeyValue, programIndex) {
-  const channel = selectedChannels().find((item) => item.key === channelKeyValue);
+  const channel = getChannelByKey(channelKeyValue);
   const program = channel?.programs[Number(programIndex)];
   if (!channel || !program) {
     return;
@@ -631,23 +764,49 @@ function setMobileView(view) {
   }
 }
 
+function setMobileSearchOpen(open, options = {}) {
+  state.searchOpen = open;
+  if (!open && options.clearSearch) {
+    state.search = "";
+    els.channelSearch.value = "";
+    renderCountryFlags();
+    renderChannelList();
+    renderSearchResults();
+  }
+  if (!open && isMobileLayout()) {
+    setMobileView("guide");
+  }
+  document.body.dataset.searchOpen = String(open);
+  document.body.dataset.searching = String(Boolean(state.search.trim()));
+  if (els.mobileSearch) {
+    els.mobileSearch.setAttribute("aria-expanded", String(open));
+    els.mobileSearch.setAttribute("aria-label", open ? "Hide search" : "Search");
+  }
+  if (open) {
+    els.channelSearch.focus();
+  }
+}
+
 function isMobileLayout() {
   return window.matchMedia("(max-width: 860px)").matches;
 }
 
 function render() {
   els.status.textContent = "";
-  els.channelSearch.placeholder = "Search channels";
   renderCountryFlags();
   renderChannelList();
+  renderSearchResults();
   renderGuide();
   setMobileView(state.mobileView);
+  setMobileSearchOpen(state.searchOpen);
 }
 
 els.channelSearch.addEventListener("input", (event) => {
   state.search = event.target.value;
+  document.body.dataset.searching = String(Boolean(state.search.trim()));
   renderCountryFlags();
   renderChannelList();
+  renderSearchResults();
 });
 
 els.countryFlags.addEventListener("click", (event) => {
@@ -685,8 +844,19 @@ els.channelList.addEventListener("click", (event) => {
   state.selectedChannelKeys = Array.from(selected).slice(0, MAX_SELECTIONS);
   saveSelection();
   render();
-  if (isMobileLayout() && !isSelected) {
+  if (isMobileLayout()) {
     setMobileView("guide");
+  }
+});
+
+els.channelPicker.addEventListener("click", (event) => {
+  if (
+    isMobileLayout() &&
+    state.mobileView === "guide" &&
+    !state.search.trim() &&
+    !event.target.closest("button")
+  ) {
+    setMobileView("picker");
   }
 });
 
@@ -700,8 +870,30 @@ els.mobileMenu.addEventListener("click", () => {
   setMobileView(state.mobileView === "picker" ? "guide" : "picker");
 });
 
-els.themeSelect.addEventListener("change", (event) => {
-  setTheme(event.target.value);
+els.mobileSearch?.addEventListener("click", () => {
+  const nextOpen = !state.searchOpen;
+  setMobileSearchOpen(nextOpen, { clearSearch: !nextOpen });
+});
+
+els.channelSearch.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && isMobileLayout()) {
+    event.preventDefault();
+    setMobileSearchOpen(false);
+  }
+});
+
+if (els.themeSelect) {
+  els.themeSelect.addEventListener("change", (event) => {
+    setTheme(event.target.value);
+  });
+}
+
+els.searchResults.addEventListener("click", (event) => {
+  const result = event.target.closest(".show-result");
+  if (!result) {
+    return;
+  }
+  openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
 });
 
 els.guide.addEventListener("click", (event) => {
