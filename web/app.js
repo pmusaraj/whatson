@@ -3,7 +3,7 @@ const VISIBLE_HOURS = 9;
 const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
-const THEME_VERSION = "relative-update";
+const THEME_VERSION = "accent-search";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -425,10 +425,17 @@ function mergeDuplicateChannels(a, b) {
   };
 }
 
+function normalizeSearchText(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 function countryMatchesSearch(countryData, query) {
   return (
-    countryData.countryName.toLowerCase().includes(query) ||
-    countryData.country.toLowerCase().includes(query)
+    normalizeSearchText(countryData.countryName).includes(query) ||
+    normalizeSearchText(countryData.country).includes(query)
   );
 }
 
@@ -438,8 +445,8 @@ function channelMatchesSearch(countryData, channel, query) {
   }
   return (
     countryMatchesSearch(countryData, query) ||
-    channel.name.toLowerCase().includes(query) ||
-    channel.provider.toLowerCase().includes(query) ||
+    normalizeSearchText(channel.name).includes(query) ||
+    normalizeSearchText(channel.provider).includes(query) ||
     (channel.programs || []).some((program) =>
       programMatchesSearch(countryData, channel, program, query),
     )
@@ -462,9 +469,8 @@ function programMatchesSearch(countryData, channel, program, query) {
     countryData.country,
   ]
     .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  return haystack.includes(query);
+    .join(" ");
+  return normalizeSearchText(haystack).includes(query);
 }
 
 function searchProgramResults(query, limit = 60) {
@@ -505,7 +511,7 @@ function searchProgramResults(query, limit = 60) {
 }
 
 function renderSearchResults() {
-  const query = state.search.trim().toLowerCase();
+  const query = normalizeSearchText(state.search.trim());
   if (!query) {
     els.searchResults.hidden = true;
     els.searchResults.innerHTML = "";
@@ -543,7 +549,7 @@ function renderSearchResults() {
 
 function renderChannelList() {
   const selected = selectedSet();
-  const query = state.search.trim().toLowerCase();
+  const query = normalizeSearchText(state.search.trim());
 
   if (query) {
     const matchingChannels = state.countries.flatMap((country) => {
@@ -609,7 +615,7 @@ function renderChannelList() {
 }
 
 function renderCountryFlags() {
-  const query = state.search.trim().toLowerCase();
+  const query = normalizeSearchText(state.search.trim());
   if (query) {
     els.countryFlags.innerHTML = "";
     els.countryFlags.hidden = true;
