@@ -152,7 +152,9 @@ function roundDownToSlot(date) {
 }
 
 function timelineBounds() {
-  const start = new Date(state.now.getTime() - TIMELINE_LOOKBACK_MINUTES * 60000);
+  const start = new Date(
+    state.now.getTime() - TIMELINE_LOOKBACK_MINUTES * 60000,
+  );
   start.setSeconds(0, 0);
   const end = new Date(start.getTime() + VISIBLE_HOURS * 60 * 60000);
   return { start, end };
@@ -213,7 +215,9 @@ async function loadCountryPayloads() {
     ...new Set(
       state.selectedChannelKeys.map((key) => {
         const [countryCode, channelId] = parseChannelKey(key);
-        const aliases = state.countryDataByCode.get(countryCode)?.duplicateChannelAliases || {};
+        const aliases =
+          state.countryDataByCode.get(countryCode)?.duplicateChannelAliases ||
+          {};
         return channelKey(countryCode, aliases[channelId] || channelId);
       }),
     ),
@@ -237,7 +241,10 @@ function mergeCountryPayloads(payloads) {
     for (const channel of payload.channels || []) {
       const existingById = channelMap.get(channel.id);
       if (existingById) {
-        channelMap.set(channel.id, mergeDuplicateChannels(existingById, channel));
+        channelMap.set(
+          channel.id,
+          mergeDuplicateChannels(existingById, channel),
+        );
         continue;
       }
 
@@ -251,7 +258,8 @@ function mergeCountryPayloads(payloads) {
 
       const existing = channelMap.get(existingId);
       const merged = mergeDuplicateChannels(existing, channel);
-      const keptId = betterChannel(channel, existing) === channel ? channel.id : existingId;
+      const keptId =
+        betterChannel(channel, existing) === channel ? channel.id : existingId;
       const droppedId = keptId === channel.id ? existingId : channel.id;
       channelMap.delete(droppedId);
       channelMap.set(keptId, { ...merged, id: keptId });
@@ -300,9 +308,13 @@ function channelScore(channel) {
   const metadataScore = programs.reduce(
     (total, program) =>
       total +
-      ["subtitle", "description", "imageUrl", "sportType", "competition"].filter(
-        (key) => program[key],
-      ).length +
+      [
+        "subtitle",
+        "description",
+        "imageUrl",
+        "sportType",
+        "competition",
+      ].filter((key) => program[key]).length +
       (program.categories || []).length,
     0,
   );
@@ -328,13 +340,20 @@ function mergePrograms(programs) {
   }
 
   const deduped = [];
-  for (const program of [...slots.values()].sort((a, b) => a.startAt.localeCompare(b.startAt))) {
-    const overlapIndex = deduped.findIndex((existing) => isOverlappingDuplicate(existing, program));
+  for (const program of [...slots.values()].sort((a, b) =>
+    a.startAt.localeCompare(b.startAt),
+  )) {
+    const overlapIndex = deduped.findIndex((existing) =>
+      isOverlappingDuplicate(existing, program),
+    );
     if (overlapIndex === -1) {
       deduped.push(program);
       continue;
     }
-    if (programMetadataScore(program) > programMetadataScore(deduped[overlapIndex])) {
+    if (
+      programMetadataScore(program) >
+      programMetadataScore(deduped[overlapIndex])
+    ) {
       deduped[overlapIndex] = program;
     }
   }
@@ -342,9 +361,11 @@ function mergePrograms(programs) {
 }
 
 function programMetadataScore(program) {
-  return ["subtitle", "description", "imageUrl", "sportType", "competition"].filter(
-    (field) => program[field],
-  ).length + (program.categories || []).length;
+  return (
+    ["subtitle", "description", "imageUrl", "sportType", "competition"].filter(
+      (field) => program[field],
+    ).length + (program.categories || []).length
+  );
 }
 
 function isOverlappingDuplicate(a, b) {
@@ -367,8 +388,13 @@ function mergeDuplicateChannels(a, b) {
     ...fallback,
     ...preferred,
     logoUrl: preferred.logoUrl || fallback.logoUrl,
-    sources: [...new Set([...(fallback.sources || []), ...(preferred.sources || [])])],
-    programs: mergePrograms([...(fallback.programs || []), ...(preferred.programs || [])]),
+    sources: [
+      ...new Set([...(fallback.sources || []), ...(preferred.sources || [])]),
+    ],
+    programs: mergePrograms([
+      ...(fallback.programs || []),
+      ...(preferred.programs || []),
+    ]),
   };
 }
 
@@ -466,7 +492,9 @@ function renderSearchResults() {
       <h2>Shows matching “${escapeHtml(state.search.trim())}”</h2>
       <span>${results.length ? `${results.length} result${results.length === 1 ? "" : "s"}` : "No matching shows"}</span>
     </div>
-    ${results.length ? `
+    ${
+      results.length
+        ? `
       <div class="show-results-list">
         ${results
           .map(
@@ -480,7 +508,9 @@ function renderSearchResults() {
           )
           .join("")}
       </div>
-    ` : `<div class="empty-program">Try a channel, sport, team, league, or programme title.</div>`}
+    `
+        : `<div class="empty-program">Try a channel, sport, team, league, or programme title.</div>`
+    }
   `;
 }
 
@@ -499,20 +529,21 @@ function renderChannelList() {
         .map((channel) => ({ countryData, channel }));
     });
 
-    els.channelList.innerHTML = matchingChannels
-      .map(({ countryData, channel }) => {
-        const key = channelKey(countryData.country, channel.id);
-        const checked = selected.has(key);
-        const disabled =
-          !checked && state.selectedChannelKeys.length >= MAX_SELECTIONS;
-        return `
+    els.channelList.innerHTML =
+      matchingChannels
+        .map(({ countryData, channel }) => {
+          const key = channelKey(countryData.country, channel.id);
+          const checked = selected.has(key);
+          const disabled =
+            !checked && state.selectedChannelKeys.length >= MAX_SELECTIONS;
+          return `
           <button class="channel-choice search-channel-choice ${checked ? "selected" : ""}" type="button" data-channel-key="${escapeHtml(key)}" aria-pressed="${checked}" ${disabled ? "disabled" : ""}>
             <span class="channel-flag" aria-hidden="true">${flagEmoji(countryData.country)}</span>
             <span class="channel-name">${escapeHtml(channel.name)}</span>
           </button>
         `;
-      })
-      .join("") || `<div class="empty-program">No matching channels.</div>`;
+        })
+        .join("") || `<div class="empty-program">No matching channels.</div>`;
     return;
   }
 
@@ -637,7 +668,11 @@ function renderGuide() {
   const channels = selectedChannels();
 
   if (!channels.length) {
-    els.guide.innerHTML = `<div class="empty-state">Pick channels on the left to build your guide.</div>`;
+    els.guide.innerHTML = `
+      <div class="empty-state">
+        <p>This is a simple app to find what's on TV. Pick channels from the left column, or search above for a show, channel, or live event.</p>
+        <p class="empty-state-notes">Updated every 2 hours. <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
+      </div>`;
     return;
   }
 
@@ -748,7 +783,10 @@ function handleProgramBlockOpen(event) {
   if (!programBlock) {
     return;
   }
-  openProgramDetails(programBlock.dataset.channelKey, programBlock.dataset.programIndex);
+  openProgramDetails(
+    programBlock.dataset.channelKey,
+    programBlock.dataset.programIndex,
+  );
 }
 
 function setMobileView(view) {
@@ -780,7 +818,10 @@ function setMobileSearchOpen(open, options = {}) {
   document.body.dataset.searching = String(Boolean(state.search.trim()));
   if (els.mobileSearch) {
     els.mobileSearch.setAttribute("aria-expanded", String(open));
-    els.mobileSearch.setAttribute("aria-label", open ? "Hide search" : "Search");
+    els.mobileSearch.setAttribute(
+      "aria-label",
+      open ? "Hide search" : "Search",
+    );
   }
   if (open) {
     els.channelSearch.focus();
@@ -918,7 +959,10 @@ els.guide.addEventListener("keydown", (event) => {
     return;
   }
   event.preventDefault();
-  openProgramDetails(programBlock.dataset.channelKey, programBlock.dataset.programIndex);
+  openProgramDetails(
+    programBlock.dataset.channelKey,
+    programBlock.dataset.programIndex,
+  );
 });
 
 els.programDialog.addEventListener("click", (event) => {

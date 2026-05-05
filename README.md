@@ -1,105 +1,77 @@
 # What's On TV
 
-Spike repo for a TV now-playing app.
+What's On TV is a v0 static TV guide for quickly seeing what is on now and next across a curated set of international channels.
 
-MVP target countries:
+Live app: https://whatson.musaraj.com
+Repo: https://github.com/pmusaraj/whatson
 
-- France (`FR`)
-- Spain (`ES`)
-- Canada (`CA`)
-- United States (`US`)
-- United Kingdom (`UK`)
-- Italy (`IT`)
-- Germany (`DE`)
-- Turkiye (`TR`)
-- Portugal (`PT`)
-- Mexico (`MX`)
-- Brazil (`BR`)
+## What it does
 
-The first milestone is data validation: prove that we can get channel metadata and current/near-term program data for at least 10 channels per country before building the full web UI.
+- Shows a live, time-aligned guide grid for selected channels.
+- Groups channels by country in a compact sidebar.
+- Includes curated general channels plus premium/pay-TV sports channels.
+- Searches across channels and programme titles/events.
+- Opens programme details in a modal when metadata is available.
+- Saves selected channels in browser `localStorage`.
 
-## First spike
+Countries currently included:
 
-Run:
+| Country | General channels | Premium sports/pay-TV channels |
+| --- | ---: | ---: |
+| France | 12 | 25 |
+| Spain | 18 | 21 |
+| Canada | 20 | 14 |
+| United States | 14 | 13 |
+| United Kingdom | 19 | 16 |
+| Italy | 10 | 8 |
+| Germany | 12 | 13 |
+| Turkiye | 12 | 6 |
+| Portugal | 21 | 17 |
+| Mexico | 10 | 10 |
+| Brazil | 12 | 9 |
+
+## Architecture
+
+The app is intentionally simple and static:
+
+- `web/` contains the browser app: `index.html`, `app.js`, CSS themes, and generated JSON data.
+- `data/sources/iptv-org/` contains curated XMLTV channel files and iptv-org metadata snapshots.
+- `data/normalized/` contains XMLTV guide snapshots fetched from validated public guide sources.
+- `scripts/refresh_epg.py` refreshes all curated XMLTV snapshots and rebuilds the static JSON payloads.
+- `scripts/build_web_data.py` converts XMLTV snapshots into browser-friendly files under `web/data/`.
+- `tests/` covers the data-building and normalization logic.
+
+The browser loads `web/data/countries.json`, then country payloads such as `web/data/FR.json` and `web/data/premium-FR.json`. Normal and premium payloads are merged client-side, de-duplicated by channel name, and rendered as schedule columns.
+
+Times are stored in UTC in the generated JSON. The browser renders the current guide window from the user's local time.
+
+## Data refresh and publishing
+
+The live app is served from the `web/` directory at https://whatson.musaraj.com.
+
+A Hermes cron job named `whatsontv EPG refresh` runs every 2 hours (`0 */2 * * *`) from this repository. It runs:
 
 ```bash
-python3 scripts/iptv_org_spike.py
+python3 scripts/refresh_epg.py
 ```
 
-This downloads iptv-org metadata, filters it to the MVP countries, generates summary files, creates small custom XMLTV channel files for candidate sources, and writes a spike report.
+That script:
 
-Outputs:
+1. Runs the iptv-org EPG grabber for each curated channel file.
+2. Sets `CURR_DATE` to yesterday and grabs 3 days of guide data.
+3. Writes refreshed XMLTV snapshots to `data/normalized/`.
+4. Rebuilds `web/data/*.json` with a 24-hour browser payload window: now - 4h through now + 20h.
+5. Runs the unit tests and `node --check web/app.js`.
 
-- `data/sources/iptv-org/countries.json`
-- `data/sources/iptv-org/channels-*.json`
-- `data/sources/iptv-org/guide-mappings-*.json`
-- `data/sources/iptv-org/spike-summary.json`
-- `data/sources/iptv-org/custom-*.channels.xml`
-- `spikes/001-iptv-org-data-source/README.md`
+Publishing is file-based: once the refresh updates `web/`, the served site reflects the new data. There is no separate build or deploy step for the live v0 instance.
 
-## Schedule validation
+## Run locally
 
-The first spike also validated actual schedule grabs using the upstream `iptv-org/epg` grabber. To reproduce:
-
-```bash
-git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
-npm install --prefix .cache/epg
-
-npm run grab --prefix .cache/epg --- \
-  --channels=$(pwd)/data/sources/iptv-org/custom-FR-tv.sfr.fr.channels.xml \
-  --output=$(pwd)/data/normalized/guide-FR-tv.sfr.fr.xml \
-  --days=1 --maxConnections=2 --timeout=20000
-
-npm run grab --prefix .cache/epg --- \
-  --channels=$(pwd)/data/sources/iptv-org/custom-ES-programacion-tv.elpais.com.channels.xml \
-  --output=$(pwd)/data/normalized/guide-ES-programacion-tv.elpais.com.xml \
-  --days=1 --maxConnections=2 --timeout=20000
-
-npm run grab --prefix .cache/epg --- \
-  --channels=$(pwd)/data/sources/iptv-org/custom-ES-orangetv.orange.es.channels.xml \
-  --output=$(pwd)/data/normalized/guide-ES-orangetv.orange.es.xml \
-  --days=1 --maxConnections=2 --timeout=20000
-
-npm run grab --prefix .cache/epg --- \
-  --channels=$(pwd)/data/sources/iptv-org/custom-CA-tvpassport.com.channels.xml \
-  --output=$(pwd)/data/normalized/guide-CA-tvpassport.com.xml \
-  --days=1 --maxConnections=2 --timeout=20000
-
-npm run grab --prefix .cache/epg --- \
-  --channels=$(pwd)/data/sources/iptv-org/custom-CA-tvhebdo.com.channels.xml \
-  --output=$(pwd)/data/normalized/guide-CA-tvhebdo.com.xml \
-  --days=1 --maxConnections=2 --timeout=20000
-
-python3 scripts/normalize_guides.py
-```
-
-Latest validation result:
-
-- France: 12 channels; 25 premium sports/pay-TV channels
-- Spain: 18 channels; 21 premium sports/pay-TV channels
-- Canada: 20 channels; 14 premium sports/pay-TV channels
-- United States: 14 channels; 13 premium sports/pay-TV channels
-- United Kingdom: 19 channels; 9 premium sports/pay-TV channels
-- Italy: 10 channels; 8 premium sports/pay-TV channels
-- Germany: 12 channels; 12 premium sports/pay-TV channels
-- Turkiye: 12 channels; 6 premium sports/pay-TV channels
-- Portugal: 21 channels; 17 premium sports/pay-TV channels
-- Mexico: 10 channels; 10 premium sports/pay-TV channels
-- Brazil: 12 channels; 9 premium sports/pay-TV channels
-
-## Run the web prototype
-
-Build browser-friendly JSON from the validated XMLTV snapshots:
+From the repository root:
 
 ```bash
-python3 scripts/build_web_data.py
-```
-
-Serve the static app:
-
-```bash
-cd web
-python3 -m http.server 8000
+cd /Users/pmusaraj/Projects/whatsontv
+python3 -m http.server 8000 --directory web
 ```
 
 Then open:
@@ -108,38 +80,43 @@ Then open:
 http://localhost:8000
 ```
 
-The prototype shows France, Spain, Canada, United States, United Kingdom, Italy, Germany, Turkiye, Portugal, Mexico, and Brazil channels grouped by country. Users can select channels and the guide renders those selected channels as aligned schedule columns. The browser computes the visible current/next-three-hours window from a longer generated schedule, shows a current-time line across every selected channel column, and refreshes that line every minute. Sidebar rows show only channel names; selected programme cells show genre/type tags when the source provides enough metadata, with descriptions collapsed by default. Selections are saved in browser `localStorage`.
+The committed `web/data/` files are enough to run the app locally without refreshing guide data.
 
-The premium channel view focuses on pay-TV / premium guide sources:
+## Rebuild local web data from existing XMLTV snapshots
 
-- France: Canal+, Canal+ Sport/Foot/Premier League/Sport 360, Eurosport, RMC Sport, Infosport+
-- Spain: Movistar Deportes, LaLiga, and Liga de Campeones channels
-- Canada: TSN, Sportsnet, RDS, TVA Sports
-- United States: ESPN, Fox Sports, NFL/MLB/NBA networks, Golf Channel, Tennis Channel, TNT/TBS
-- United Kingdom: Sky Sports, TNT Sports, Premier Sports
-- Italy: Sky Sport, DAZN, Eurosport, Rai Sport, Sportitalia
-- Germany: Sky Sport, DAZN, Eurosport, Sportdigital
-- Turkiye: S Sport, TRT Spor, Eurosport; Digiturk/beIN is mapped but currently returns 403 from the grabber
-- Portugal: Sport TV, DAZN, Eurosport, Benfica TV, Sporting TV
-- Mexico: TUDN, Sky Sports, Fox Sports, ESPN, Claro Sports mappings where schedules are available
-- Brazil: SporTV, ESPN, BandSports, Premiere Clubes, Fox Sports via `mi.tv`
+```bash
+python3 scripts/build_web_data.py
+```
 
-Current premium-channel counts:
+This reads `data/normalized/*.xml` and rewrites `web/data/*.json`.
 
-- France: 25
-- Spain: 21
-- Canada: 14
-- United States: 13
-- United Kingdom: 9
-- Italy: 8
-- Germany: 12
-- Turkiye: 6
-- Portugal: 17
-- Mexico: 10
-- Brazil: 9
+## Refresh EPG snapshots locally
+
+Refreshing source guide data requires the upstream iptv-org EPG grabber checkout and Node dependencies:
+
+```bash
+git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
+npm install --prefix .cache/epg
+python3 scripts/refresh_epg.py
+```
+
+Use a dry run to inspect the grab commands without fetching data:
+
+```bash
+python3 scripts/refresh_epg.py --dry-run
+```
+
+Some upstream guide sources can fail, block, or return partial data. The refresh script keeps going and uses previous snapshots for failed sources.
 
 ## Tests
 
 ```bash
 python3 -m unittest discover -s tests -v
+node --check web/app.js
 ```
+
+## Notes
+
+This is a schedule/metadata guide only. It does not stream video.
+
+The data comes from public guide sources through the iptv-org EPG tooling and curated channel mappings. Availability and licensing should be reviewed before using this beyond a personal/prototype context.

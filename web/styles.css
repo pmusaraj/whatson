@@ -325,9 +325,25 @@ h2 {
 }
 
 .empty-state {
+  display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
   padding: 2rem;
   text-align: center;
+}
+
+.empty-state p {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.empty-state-notes {
+  margin-top: auto !important;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  opacity: 0.65;
 }
 
 .guide-meta {
