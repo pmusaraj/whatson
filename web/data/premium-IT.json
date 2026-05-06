@@ -1,7 +1,7 @@
 {
   "country": "IT",
   "countryName": "Italy",
-  "generatedAt": "2026-05-06T02:21:37.275580Z",
+  "generatedAt": "2026-05-06T08:24:31.832799Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -11,6 +11,96 @@
   ],
   "channelCount": 8,
   "channels": [
+    {
+      "id": "ZonaDAZN2.it",
+      "name": "DAZN 2",
+      "logoUrl": "https://i.imgur.com/Jop3Vip.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Nessun evento in onda",
+        "subtitle": null,
+        "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+        "categories": [
+          "Altri Programmi/Altri Canali"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+        "startAt": "2026-05-06T04:00:00Z",
+        "endAt": "2026-05-06T10:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-05-06T04:00:00Z",
+          "endAt": "2026-05-06T10:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-05-06T10:00:00Z",
+          "endAt": "2026-05-06T16:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-05-06T16:00:00Z",
+          "endAt": "2026-05-06T22:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-05-06T22:00:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T10:00:00Z"
+        }
+      ]
+    },
     {
       "id": "RaiSport.it",
       "name": "RAI Sport",
@@ -22,49 +112,23 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Pallavolo: Serie A Maschile - Stag. 2026 - Finale: Civitanova - Perugia (gara 2)",
+        "title": "Atletica - Stag. 2026 - Campionati Mondiali Staffetta: 2a giornata",
         "subtitle": null,
-        "description": "St2026 Finale: Civitanova - Perugia (gara 2) - Prosegue la finale scudetto di Superlega Credem Banca con gara 2 tra Sir Susa Vim Perugia e Cucine Lube Civitanova. Dopo il netto successo per 3-0 di Perugia in gara 1, la serie entra nel vivo con ...",
+        "description": "St2026 Campionati Mondiali Staffetta: 2a giornata - Seconda giornata di gare a Gaborone per le World Relays 2026. Proseguono le sfide tra le migliori staffette internazionali, con in palio i pass per i Campionati Mondiali 2027.",
         "categories": [
           "Intrattenimento/Intrattenimento"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-        "startAt": "2026-05-06T02:20:00Z",
-        "endAt": "2026-05-06T04:00:00Z"
+        "startAt": "2026-05-06T07:00:00Z",
+        "endAt": "2026-05-06T10:00:00Z"
       },
       "programs": [
         {
-          "title": "Atletica - Stag. 2026 - Campionati Mondiali Staffetta: 2a giornata",
+          "title": "Atletica - Stag. 2026 - Stramilano Half Marathon",
           "subtitle": null,
-          "description": "St2026 Campionati Mondiali Staffetta: 2a giornata - Seconda giornata di gare a Gaborone per le World Relays 2026. Proseguono le sfide tra le migliori staffette internazionali, con in palio i pass per i Campionati Mondiali 2027.",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-05-06T00:00:00Z",
-          "endAt": "2026-05-06T02:20:00Z"
-        },
-        {
-          "title": "Pallavolo: Serie A Maschile - Stag. 2026 - Finale: Civitanova - Perugia (gara 2)",
-          "subtitle": null,
-          "description": "St2026 Finale: Civitanova - Perugia (gara 2) - Prosegue la finale scudetto di Superlega Credem Banca con gara 2 tra Sir Susa Vim Perugia e Cucine Lube Civitanova. Dopo il netto successo per 3-0 di Perugia in gara 1, la serie entra nel vivo con ...",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-05-06T02:20:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
-        {
-          "title": "Atletica",
-          "subtitle": null,
-          "description": "Atletica. StraMilano Half Marathon",
+          "description": "St2026 Stramilano Half Marathon - A Milano si corre la Stramilano Half Marathon, gara internazionale sulla distanza di 21,097 km che richiama atleti e appassionati sulle strade della citta'.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -88,9 +152,9 @@
           "endAt": "2026-05-06T05:30:00Z"
         },
         {
-          "title": "Biliardo",
+          "title": "Biliardo - Stag. 2025 - Campionato Italiano Master Fermo",
           "subtitle": null,
-          "description": "Biliardo Boccette. C.to Italiano Master Fermo",
+          "description": "St2025 Campionato Italiano Master Fermo - A Fermo si disputa il Campionato Italiano Assoluto di boccette, con gli otto migliori atleti della stagione pronti a sfidarsi per l'assegnazione del titolo nazionale.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -98,38 +162,38 @@
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
           "startAt": "2026-05-06T05:30:00Z",
-          "endAt": "2026-05-06T07:30:00Z"
+          "endAt": "2026-05-06T07:00:00Z"
         },
         {
-          "title": "Atletica",
+          "title": "Atletica - Stag. 2026 - Campionati Mondiali Staffetta: 2a giornata",
           "subtitle": null,
-          "description": "Atletica. Mondiali Staffetta Gaborone - 2a giornata",
+          "description": "St2026 Campionati Mondiali Staffetta: 2a giornata - Seconda giornata di gare a Gaborone per le World Relays 2026. Proseguono le sfide tra le migliori staffette internazionali, con in palio i pass per i Campionati Mondiali 2027.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-05-06T07:30:00Z",
-          "endAt": "2026-05-06T10:30:00Z"
+          "startAt": "2026-05-06T07:00:00Z",
+          "endAt": "2026-05-06T10:00:00Z"
         },
         {
-          "title": "Nuoto",
+          "title": "Nuoto - Stag. 2026 - 3 KM Knockout Sprint Maschile (3a tappa)",
           "subtitle": null,
-          "description": "World Aquatics Acque Libere. Coppa del Mondo Golfo degli Aranci - 3a tappa: Sprint 3 km Knock Out",
+          "description": "St2026 3 KM Knockout Sprint Maschile (3a tappa) - A Golfo Aranci spazio alla spettacolare knockout sprint maschile, format veloce e ad eliminazione diretta che promette duelli serrati fino agli ultimi metri.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-05-06T10:30:00Z",
+          "startAt": "2026-05-06T10:00:00Z",
           "endAt": "2026-05-06T13:30:00Z"
         },
         {
-          "title": "Nuoto Artistico",
+          "title": "Nuoto Artistico - Stag. 2026 - Coppa del Mondo - Xi'an: 3a tappa (1a parte)",
           "subtitle": null,
-          "description": "World Aquatics Nuoto Artistico. Coppa del Mondo Xi'an - 3a tappa (1a parte)",
+          "description": "St2026 Coppa del Mondo - Xi'an: 3a tappa (1a parte) - La Coppa del Mondo di nuoto artistico fa tappa a Xian per il terzo appuntamento stagionale. In scena le prime gare di un weekend internazionale che vede protagonisti i migliori specialisti della d...",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -137,12 +201,25 @@
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
           "startAt": "2026-05-06T13:30:00Z",
+          "endAt": "2026-05-06T14:30:00Z"
+        },
+        {
+          "title": "Memory - Rai Sport 2026",
+          "subtitle": null,
+          "description": "St2026 Memory",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-05-06T14:30:00Z",
           "endAt": "2026-05-06T15:00:00Z"
         },
         {
-          "title": "Ciclismo",
+          "title": "Ciclismo 2026",
           "subtitle": null,
-          "description": "Ciclismo. Presentazione Squadre Giro d'Italia 2026",
+          "description": "St2026 Presentazione Squadre - Evento di presentazione delle squadre del Giro dItalia 2026. Un momento simbolico che inaugura ufficialmente la nuova edizione della grande corsa a tappe italiana.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -153,9 +230,9 @@
           "endAt": "2026-05-06T16:30:00Z"
         },
         {
-          "title": "Bocce",
+          "title": "Bocce - Stag. 2026 - Final Four Petanque",
           "subtitle": null,
-          "description": "Bocce. C.to Italiano: Final Four Petanque",
+          "description": "St2026 Final Four Petanque - A Dronero va in scena la Final Four di pe'tanque, atto conclusivo della stagione che assegna i titoli tricolori. Due giorni di sfide decisive tra le migliori squadre, tra semifinale e finali, per c...",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -166,9 +243,9 @@
           "endAt": "2026-05-06T17:20:00Z"
         },
         {
-          "title": "Atletica",
+          "title": "Atletica - Stag. 2026 - Corsa Internazionale \"Citta' Archeologica",
           "subtitle": null,
-          "description": "Atletica. Oderzo Citta' Archeologica",
+          "description": "St2026 Corsa Internazionale \"Citta' Archeologica - A Oderzo torna la Corsa Internazionale \"Citta' Archeologica\", storica manifestazione del 1 maggio giunta alla 29 edizione. Un appuntamento di rilievo che unisce sport e tradizione, portando atleti...",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -179,9 +256,9 @@
           "endAt": "2026-05-06T18:20:00Z"
         },
         {
-          "title": "Pallavolo: Serie A Maschile",
+          "title": "Pallavolo: Serie A Maschile - Stag. 2026 - Finale: Perugia - Civitanova (gara 3)",
           "subtitle": null,
-          "description": "Pallavolo. SuperLega Credem Banca: Finale Perugia-Civitanova - gara 3",
+          "description": "St2026 Finale: Perugia - Civitanova (gara 3) - Finale scudetto di Superlega Credem Banca, gara 3 tra Perugia e Civitanova. Dopo i successi in gara 1 e gara 2, Perugia ha la possibilita' di chiudere la serie e conquistare il titolo, mentre Civit...",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -192,9 +269,9 @@
           "endAt": "2026-05-06T21:00:00Z"
         },
         {
-          "title": "Memory - Rai Sport",
+          "title": "Atletica - Stag. 2026 - Stramilano Half Marathon",
           "subtitle": null,
-          "description": "Intrattenimento",
+          "description": "St2026 Stramilano Half Marathon - A Milano si corre la Stramilano Half Marathon, gara internazionale sulla distanza di 21,097 km che richiama atleti e appassionati sulle strade della citta'.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -218,9 +295,9 @@
           "endAt": "2026-05-06T22:00:00Z"
         },
         {
-          "title": "Serie C",
+          "title": "Serie C - Stag. 2025 - Girone 2 turno: Lecco - Giana Erminio",
           "subtitle": null,
-          "description": "Calcio. Serie C Sky Wifi - Play Off del Girone - 2 turno",
+          "description": "St2025 Girone 2 turno: Lecco - Giana Erminio - Playoff di Serie C, secondo turno del girone, con il Lecco che affronta la Giana Erminio in casa.",
           "categories": [
             "Intrattenimento/Intrattenimento"
           ],
@@ -229,6 +306,45 @@
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
           "startAt": "2026-05-06T22:00:00Z",
           "endAt": "2026-05-07T00:00:00Z"
+        },
+        {
+          "title": "Biliardo - Stag. 2025 - Campionato Italiano Master Fermo",
+          "subtitle": null,
+          "description": "St2025 Campionato Italiano Master Fermo - A Fermo si disputa il Campionato Italiano Assoluto di boccette, con gli otto migliori atleti della stagione pronti a sfidarsi per l'assegnazione del titolo nazionale.",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-05-07T00:00:00Z",
+          "endAt": "2026-05-07T02:00:00Z"
+        },
+        {
+          "title": "Atletica - Stag. 2026 - Campionati Mondiali Staffetta: 2a giornata",
+          "subtitle": null,
+          "description": "St2026 Campionati Mondiali Staffetta: 2a giornata - Seconda giornata di gare a Gaborone per le World Relays 2026. Proseguono le sfide tra le migliori staffette internazionali, con in palio i pass per i Campionati Mondiali 2027.",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-05-07T02:00:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "Memory - Rai Sport",
+          "subtitle": null,
+          "description": "Intrattenimento",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:00:00Z"
         }
       ]
     },
@@ -243,58 +359,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Psg - Bayern Monaco",
+        "title": "FC Bayern Monaco - Heidenheim",
         "subtitle": null,
-        "description": "Francesi alla 3a semifinale di fila in Champions. Bayern alla 2a nelle ultime 3 stagioni. Ha vinto gli ultimi 5 precedenti di UCL, tra cui 3 a Parigi. TC: Marianella-Montolivo",
+        "description": "Bayern Monaco - Heidenheim 32ga - Dall'Allianz Arena di Monaco di Baviera, Germania.",
         "categories": [
           "Sport/Calcio"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/8a5292d5-65a1-4f87-aac5-1b835236f67a/cover?territory=IT&md5ChecksumParam=6d179cece49f459e4f87d2992a321208",
-        "startAt": "2026-05-06T02:10:00Z",
-        "endAt": "2026-05-06T04:00:00Z"
+        "imageUrl": "https://guidatv.sky.it/uuid/f43f828e-1d1f-454a-9de8-9e4154585bac/cover?territory=IT&md5ChecksumParam=54918ee115195db2c0ad77249a4929b9",
+        "startAt": "2026-05-06T06:35:00Z",
+        "endAt": "2026-05-06T08:25:00Z"
       },
       "programs": [
-        {
-          "title": "Premier League Review",
-          "subtitle": null,
-          "description": "Si e' conclusa la giornata di Premier League. Riviviamo insieme emozioni e sorprese attraverso i gol e i protagonisti",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://guidatv.sky.it/uuid/339574b7-3fbd-4657-80a2-05af3737fa79/cover?territory=IT&md5ChecksumParam=331bf85fd645064f7cd18ff1f151e121",
-          "startAt": "2026-05-06T00:00:00Z",
-          "endAt": "2026-05-06T01:00:00Z"
-        },
-        {
-          "title": "Uefa Europa&Conference League Magazine - Ep. 19 - Uefa Europa&Conference League Magazine Ep.19 04/05/2026",
-          "subtitle": null,
-          "description": "... League Magazine. - Notizie, interviste e analisi delle squadre di Europa League e Conference League.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/de36e356-2704-4a82-ae2c-61f1b658fc3c/cover?territory=IT&md5ChecksumParam=14055104228409ab2ced8c1c09e5b80f",
-          "startAt": "2026-05-06T01:00:00Z",
-          "endAt": "2026-05-06T02:10:00Z"
-        },
-        {
-          "title": "Psg - Bayern Monaco",
-          "subtitle": null,
-          "description": "Francesi alla 3a semifinale di fila in Champions. Bayern alla 2a nelle ultime 3 stagioni. Ha vinto gli ultimi 5 precedenti di UCL, tra cui 3 a Parigi. TC: Marianella-Montolivo",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/8a5292d5-65a1-4f87-aac5-1b835236f67a/cover?territory=IT&md5ChecksumParam=6d179cece49f459e4f87d2992a321208",
-          "startAt": "2026-05-06T02:10:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
         {
           "title": "Calcio Uefa Champions League - Ep. 178 - Calcio Ucl Semifinali (Ritorno) Arsenal/ Atletico Madrid 05/05/2026",
           "subtitle": null,
@@ -502,6 +579,97 @@
           "imageUrl": "https://guidatv.sky.it/uuid/de36e356-2704-4a82-ae2c-61f1b658fc3c/cover?territory=IT&md5ChecksumParam=14055104228409ab2ced8c1c09e5b80f",
           "startAt": "2026-05-06T21:50:00Z",
           "endAt": "2026-05-06T22:50:00Z"
+        },
+        {
+          "title": "Speciale Inter: Tutti I Gol Dello Scudetto",
+          "subtitle": null,
+          "description": "... Scudetto Inter Scudetto 2026. - Tutti i gol della cavalcata della squadra nerazzurra per lo scudetto numero 21, quello dell'anima nerazzurra.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/e9f1721a-2dcf-4c73-b3db-5e065d111570/cover?territory=IT&md5ChecksumParam=0b1c54bcc57e55664996316ef18dede5",
+          "startAt": "2026-05-06T22:50:00Z",
+          "endAt": "2026-05-06T23:25:00Z"
+        },
+        {
+          "title": "La Giovane Italia 2026 Ep.10 30/04/2026",
+          "subtitle": null,
+          "description": "Servizi informativi dedicati ai piu' piccoli sportivi italiani e alle realta' giovanili legate al calcio, tra trofei, incontri, e storie.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/288e783b-7b58-43fb-af41-1ecb4f56b984/cover?territory=IT&md5ChecksumParam=f09be49d1ae43de092bcaac4479e20fb",
+          "startAt": "2026-05-06T23:25:00Z",
+          "endAt": "2026-05-06T23:40:00Z"
+        },
+        {
+          "title": "Calcio Wsl Woman Super League - Ep. 21 - Calcio Wsl Highlights Ep.21 06/05/2026",
+          "subtitle": null,
+          "description": "WSL Woman Super League. - Calcio Wsl Highlights Ep.21 06/05/2026 - Calcio Wsl Woman Super League",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/321deb00-4292-408a-a0ac-64045fd8d2e0/cover?territory=IT&md5ChecksumParam=b4884641bcb0360c6abaa8879dd1d156",
+          "startAt": "2026-05-06T23:40:00Z",
+          "endAt": "2026-05-07T00:35:00Z"
+        },
+        {
+          "title": "Agostino Di Bartolomei",
+          "subtitle": null,
+          "description": "Di Bartolomei - Giorgio Porra' racconta Agostino Di Bartolomei, il 'capitano silenzioso', a 40 anni dal mitico scudetto romanista. Il viaggio romantico e sofferto del campione atipico e amatissimo.",
+          "categories": [
+            "Sport/Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/9891ed9f-a18f-43b0-8cf3-9484a9398047/cover?territory=IT&md5ChecksumParam=7a2032748d3b3924c2dbc22a8e03265e",
+          "startAt": "2026-05-07T00:35:00Z",
+          "endAt": "2026-05-07T01:35:00Z"
+        },
+        {
+          "title": "Ep. 4",
+          "subtitle": null,
+          "description": "Ep. 4 - Riviviamo il trionfo in Champions League di Ferguson e Ronaldo nella finale inglese terminata ai rigori tra United e Chelsea e la vittoria della \"decima\" del Real di Ancelotti nel derby di Madrid.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/88976008-910a-4342-8065-ab576ce34478/cover?territory=IT&md5ChecksumParam=262a48f22892e62804e0a9da212095e0",
+          "startAt": "2026-05-07T01:35:00Z",
+          "endAt": "2026-05-07T02:10:00Z"
+        },
+        {
+          "title": "Calcio Uefa Champions League - Ep. 178 - Calcio Ucl Semifinali (Ritorno) Arsenal/ Atletico Madrid 05/05/2026",
+          "subtitle": null,
+          "description": "... Champions League. - Gunners per ritrovare una finale di Champions League dopo 20 anni. Atletico Madrid dopo 10 anni. 1-1 il risultato della gara d'andata. TC: Zancan-Marchegiani",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/ed25d699-c4c7-4661-8f02-9fbbf3aa1445/cover?territory=IT&md5ChecksumParam=9c834b6eabec36ea1458b253823a902e",
+          "startAt": "2026-05-07T02:10:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "Borussia M. - Borussia Dortmund",
+          "subtitle": null,
+          "description": "... Bundesliga. - Dal Borussia-Park Stadium di Monchengladbach, Germania.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/ea7e1db6-e83f-472c-aa0b-d1eb338431d1/cover?territory=IT&md5ChecksumParam=4f16bfafa5d4a6ec4c7e7263a2f4ad37",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:45:00Z"
         }
       ]
     },
@@ -518,95 +686,17 @@
       "currentProgram": {
         "title": "GP Miami: Gara",
         "subtitle": null,
-        "description": "GP Miami: Gara - In Florida quarta gara stagionale: nelle prime tre, ben due vittorie di Kimi Antonelli, leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+        "description": "In Florida quarta gara stagionale: nelle prime tre, ben due vittorie di Kimi Antonelli, leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "categories": [
           "Sport/Motori"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": "https://guidatv.sky.it/uuid/e1d0ae0f-7f48-4fb3-bf55-576df33b9f2e/cover?territory=IT&md5ChecksumParam=00bb27e12067296e6c58f66364729bca",
-        "startAt": "2026-05-06T01:55:00Z",
-        "endAt": "2026-05-06T03:00:00Z"
+        "startAt": "2026-05-06T08:00:00Z",
+        "endAt": "2026-05-06T09:00:00Z"
       },
       "programs": [
-        {
-          "title": "Ep.3",
-          "subtitle": null,
-          "description": "Ep.3 - Alle origini del nuovo talento italiano della F1: il legame con la famiglia, le amicizie speciali e il mito di Senna. In questo episodio Antonelli ci svela le sue passioni e ci apre le porte di casa.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/3e4aabbc-c130-41ae-8161-3ab3a81d23cd/cover?territory=IT&md5ChecksumParam=fefdf76668cf14cb7163031b87babd75",
-          "startAt": "2026-05-06T00:00:00Z",
-          "endAt": "2026-05-06T00:30:00Z"
-        },
-        {
-          "title": "F1 Notebook 2026 03/05/2026",
-          "subtitle": null,
-          "description": "Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/b6c76334-00c1-4efa-b467-8fee1a43bce4/cover?territory=IT&md5ChecksumParam=c83709d6d0a57d4285866120932aa10e",
-          "startAt": "2026-05-06T00:30:00Z",
-          "endAt": "2026-05-06T00:45:00Z"
-        },
-        {
-          "title": "Reparto Corse F1",
-          "subtitle": null,
-          "description": "Davide Camicioli e Matteo Bobbi presentano e analizzano i week end di gara di Formula 1. I momenti principali, le parole dei protagonisti e le prospettive mondiali dei contendenti.",
-          "categories": [
-            "Altro/Altro"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/99037b82-cc19-4906-bfdc-6db680da098f/cover?territory=IT&md5ChecksumParam=5a9a246d1009fa66ea3e313809861239",
-          "startAt": "2026-05-06T00:45:00Z",
-          "endAt": "2026-05-06T01:00:00Z"
-        },
-        {
-          "title": "GP Miami: Gara Sprint",
-          "subtitle": null,
-          "description": "GP Miami: Gara Sprint - Prima gara del weekend sulla distanza di 100km: chi conquistera' gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/31ab1ed8-cd25-43ed-afb6-bf5d15d1cfe7/cover?territory=IT&md5ChecksumParam=d933022bbbaf21b087cf02a8e043b00a",
-          "startAt": "2026-05-06T01:00:00Z",
-          "endAt": "2026-05-06T01:55:00Z"
-        },
-        {
-          "title": "GP Miami: Gara",
-          "subtitle": null,
-          "description": "GP Miami: Gara - In Florida quarta gara stagionale: nelle prime tre, ben due vittorie di Kimi Antonelli, leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/e1d0ae0f-7f48-4fb3-bf55-576df33b9f2e/cover?territory=IT&md5ChecksumParam=00bb27e12067296e6c58f66364729bca",
-          "startAt": "2026-05-06T01:55:00Z",
-          "endAt": "2026-05-06T03:00:00Z"
-        },
-        {
-          "title": "Motori Race Anatomy F1 - Stag. Motori Race Anatomy F1 2026 - Motori Race Anatomy F1 2026 Ep.4 Miami 03/05/2026",
-          "subtitle": null,
-          "description": "Miami - L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/8172dd59-86f6-46db-ab13-691b55c8b9c8/cover?territory=IT&md5ChecksumParam=a3f678dd6153cbe4e5a7d6f2f76a5212",
-          "startAt": "2026-05-06T03:00:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
         {
           "title": "GP Giappone: Gara",
           "subtitle": null,
@@ -970,6 +1060,123 @@
           "imageUrl": "https://guidatv.sky.it/uuid/2bd8af1c-75de-42db-8e32-f93aad2ebeb5/cover?territory=IT&md5ChecksumParam=dbda30edb190f4e56d77572f7536a729",
           "startAt": "2026-05-06T22:05:00Z",
           "endAt": "2026-05-06T23:05:00Z"
+        },
+        {
+          "title": "Reparto Corse F1",
+          "subtitle": null,
+          "description": "Davide Camicioli e Matteo Bobbi presentano e analizzano i week end di gara di Formula 1. I momenti principali, le parole dei protagonisti e le prospettive mondiali dei contendenti.",
+          "categories": [
+            "Altro/Altro"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/99037b82-cc19-4906-bfdc-6db680da098f/cover?territory=IT&md5ChecksumParam=5a9a246d1009fa66ea3e313809861239",
+          "startAt": "2026-05-06T23:05:00Z",
+          "endAt": "2026-05-06T23:20:00Z"
+        },
+        {
+          "title": "Performance E Design: All'origine Delle Emozioni",
+          "subtitle": null,
+          "description": "... Delle Emozioni. - Il legame tra F1 e produzione di serie valorizzato da Audi: in vetrina alla Milano Design Week la R26 protagonista del mondiale e la nuova RS 5, la prima ibrida plug-in del marchio dei quattro anelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/97544484-1cd9-4dbb-9e28-461bd37ca0a4/cover?territory=IT&md5ChecksumParam=857b72e24757088d0ae0d2415f2bcdd1",
+          "startAt": "2026-05-06T23:20:00Z",
+          "endAt": "2026-05-06T23:35:00Z"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "Alle origini del nuovo talento italiano della F1: in questo episodio il sensazionale percorso giovanile di Antonelli che lo ha portato a sostituire Hamilton in Mercedes a soli 18 anni.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/948f56f9-d74c-4da4-a075-befd735893f2/COVER_TITLE_TALL?territory=IT&version=22e0e385-6cd4-3d34-8397-e1dc94617bee&w=600&h=800&md5ChecksumParam=e811278f08d351c5c2916ebba73d2656",
+          "startAt": "2026-05-06T23:35:00Z",
+          "endAt": "2026-05-07T00:05:00Z"
+        },
+        {
+          "title": "Ep.2",
+          "subtitle": null,
+          "description": "Alle origini del nuovo talento italiano della F1: in questo episodio il percorso di Antonelli nella massima categoria. Gli alti e bassi dell'anno da rookie, prima della definitiva esplosione del 2026.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/cb34037c-bfae-4947-9679-e4b509b12c7d/cover?territory=IT&md5ChecksumParam=823b3a76829262047133dd56b150e477",
+          "startAt": "2026-05-07T00:05:00Z",
+          "endAt": "2026-05-07T00:30:00Z"
+        },
+        {
+          "title": "Ep.3",
+          "subtitle": null,
+          "description": "Alle origini del nuovo talento italiano della F1: il legame con la famiglia, le amicizie speciali e il mito di Senna. In questo episodio Antonelli ci svela le sue passioni e ci apre le porte di casa.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/3e4aabbc-c130-41ae-8161-3ab3a81d23cd/cover?territory=IT&md5ChecksumParam=fefdf76668cf14cb7163031b87babd75",
+          "startAt": "2026-05-07T00:30:00Z",
+          "endAt": "2026-05-07T01:00:00Z"
+        },
+        {
+          "title": "Motori Race Anatomy F1 - Stag. Motori Race Anatomy F1 2026 - Motori Race Anatomy F1 2026 Ep.4 Miami 03/05/2026",
+          "subtitle": null,
+          "description": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/8172dd59-86f6-46db-ab13-691b55c8b9c8/cover?territory=IT&md5ChecksumParam=a3f678dd6153cbe4e5a7d6f2f76a5212",
+          "startAt": "2026-05-07T01:00:00Z",
+          "endAt": "2026-05-07T02:00:00Z"
+        },
+        {
+          "title": "GP Cina: Gara",
+          "subtitle": null,
+          "description": "GP Cina: Gara - Seconda gara della stagione: dopo la doppietta Mercedes a Melbourne chi trionfera' a Shanghai? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/a58a19fb-267a-4ff2-b504-24af2847e5d7/cover?territory=IT&md5ChecksumParam=d1dfb5e93d76cbb11f72efbc10e60d4c",
+          "startAt": "2026-05-07T02:00:00Z",
+          "endAt": "2026-05-07T03:00:00Z"
+        },
+        {
+          "title": "GP Miami: Gara",
+          "subtitle": null,
+          "description": "GP Miami: Gara - In Florida quarta gara stagionale: nelle prime tre, ben due vittorie di Kimi Antonelli, leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/e1d0ae0f-7f48-4fb3-bf55-576df33b9f2e/cover?territory=IT&md5ChecksumParam=00bb27e12067296e6c58f66364729bca",
+          "startAt": "2026-05-07T03:00:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "GP Australia: Gara",
+          "subtitle": null,
+          "description": "GP Australia: Gara - L'attesa e' finita: scopriamo la nuova F1 con le monoposto rivoluzionarie del 2026 impegnate nella prima gara dell'anno. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/2bd8af1c-75de-42db-8e32-f93aad2ebeb5/cover?territory=IT&md5ChecksumParam=dbda30edb190f4e56d77572f7536a729",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:00:00Z"
         }
       ]
     },
@@ -983,32 +1190,19 @@
         "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
       ],
       "currentProgram": {
-        "title": "Magical Kenya Open: Giorno 4",
+        "title": "Joburg Open: Giorno 4",
         "subtitle": null,
-        "description": "Magical Kenya Open: Giorno 4 - Tutti i tornei del tour europeo, il DP World Tour",
+        "description": "Joburg Open: Giorno 4 - Da Houghton Golf Club, Johannesburg, Sudafrica",
         "categories": [
           "Sport/Golf"
         ],
         "sportType": "Golf",
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/ed483c5f-235c-4ccb-9806-a73e7798d85d/cover?territory=IT&md5ChecksumParam=e6dd40926f061b7643f9a8f3c0764dd0",
-        "startAt": "2026-05-06T01:00:00Z",
-        "endAt": "2026-05-06T04:00:00Z"
+        "imageUrl": "https://guidatv.sky.it/uuid/cf98fdf7-aba0-49db-800d-ad38e6d7bf9a/cover?territory=IT&md5ChecksumParam=07d8a10193ac5f54a966dbabbc0d4f53",
+        "startAt": "2026-05-06T08:00:00Z",
+        "endAt": "2026-05-06T11:05:00Z"
       },
       "programs": [
-        {
-          "title": "Magical Kenya Open: Giorno 4",
-          "subtitle": null,
-          "description": "Magical Kenya Open: Giorno 4 - Tutti i tornei del tour europeo, il DP World Tour",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/ed483c5f-235c-4ccb-9806-a73e7798d85d/cover?territory=IT&md5ChecksumParam=e6dd40926f061b7643f9a8f3c0764dd0",
-          "startAt": "2026-05-06T01:00:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
         {
           "title": "South African Open Championship, 4a giornata",
           "subtitle": null,
@@ -1151,6 +1345,32 @@
           "imageUrl": "https://guidatv.sky.it/uuid/919b6523-c9c9-4b6b-82de-c386f8b77d98/cover?territory=IT&md5ChecksumParam=5b90e353cd25816e56828818445295de",
           "startAt": "2026-05-06T22:00:00Z",
           "endAt": "2026-05-07T01:00:00Z"
+        },
+        {
+          "title": "Qatar Masters: Giorno 4",
+          "subtitle": null,
+          "description": "Qatar Masters: Giorno 4 - Dal Doha Golf Club di Doha, Ad Dawhah, Qatar",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/82c571f3-28c1-4734-90cb-6b566db2249b/cover?territory=IT&md5ChecksumParam=4a8e23d735bf675cf4a8769c7c295992",
+          "startAt": "2026-05-07T01:00:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "Joburg Open: Giorno 4",
+          "subtitle": null,
+          "description": "Joburg Open: Giorno 4 - Da Houghton Golf Club, Johannesburg, Sudafrica",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cf98fdf7-aba0-49db-800d-ad38e6d7bf9a/cover?territory=IT&md5ChecksumParam=07d8a10193ac5f54a966dbabbc0d4f53",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T07:00:00Z"
         }
       ]
     },
@@ -1174,114 +1394,10 @@
         "sportType": null,
         "competition": null,
         "imageUrl": "https://guidatv.sky.it/uuid/8af11ba7-ccdf-4327-b9d0-0162d335b497/cover?territory=IT&md5ChecksumParam=4e0c44d8f65cd0b43565837164773b21",
-        "startAt": "2026-05-06T02:15:00Z",
-        "endAt": "2026-05-06T02:30:00Z"
+        "startAt": "2026-05-06T08:15:00Z",
+        "endAt": "2026-05-06T08:30:00Z"
       },
       "programs": [
-        {
-          "title": "La Cena Delle Leggende",
-          "subtitle": null,
-          "description": "In questa cena organizzata dalla MotoGP, siedono intorno al tavolo molte leggende che hanno fatto la storia del Motomondiale. Da Stoner a Rossi, da Lorenzo a Pedrosa per arrivare a Spencer e Schwantz.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/eff9cb14-4366-4de8-b99e-b91583d59f69/cover?territory=IT&md5ChecksumParam=d4af4ca82ef9a0fba28e5d38c23d7248",
-          "startAt": "2026-05-06T00:00:00Z",
-          "endAt": "2026-05-06T00:30:00Z"
-        },
-        {
-          "title": "Vado al massimo",
-          "subtitle": null,
-          "description": "Sandro Donato Grosso ha incontrato Massimo Rivola, amministratore delegato di Aprilia Racing, per parlare dell'ottima partenza di stagione in MotoGP e del futuro della casa di Noale",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/8af11ba7-ccdf-4327-b9d0-0162d335b497/cover?territory=IT&md5ChecksumParam=4e0c44d8f65cd0b43565837164773b21",
-          "startAt": "2026-05-06T00:30:00Z",
-          "endAt": "2026-05-06T00:45:00Z"
-        },
-        {
-          "title": "Reparto Corse Moto GP",
-          "subtitle": null,
-          "description": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/744532bc-0789-45a8-bfd8-4aa4505f533a/cover?territory=IT&md5ChecksumParam=d4dcdb96a5e745fd678fa3c8243d7348",
-          "startAt": "2026-05-06T00:45:00Z",
-          "endAt": "2026-05-06T01:00:00Z"
-        },
-        {
-          "title": "Motori Moto Gp 2021",
-          "subtitle": null,
-          "description": "Gara 16/05/2021 - Motori Moto Gp 2021",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/b8315fa5-5c5c-466a-a42a-a79a0509fdb3/cover?territory=IT&md5ChecksumParam=b7fc37ffd38a0247f628062e37b46c66",
-          "startAt": "2026-05-06T01:00:00Z",
-          "endAt": "2026-05-06T02:00:00Z"
-        },
-        {
-          "title": "Reparto Corse Moto GP",
-          "subtitle": null,
-          "description": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/744532bc-0789-45a8-bfd8-4aa4505f533a/cover?territory=IT&md5ChecksumParam=d4dcdb96a5e745fd678fa3c8243d7348",
-          "startAt": "2026-05-06T02:00:00Z",
-          "endAt": "2026-05-06T02:15:00Z"
-        },
-        {
-          "title": "Vado al massimo",
-          "subtitle": null,
-          "description": "Sandro Donato Grosso ha incontrato Massimo Rivola, amministratore delegato di Aprilia Racing, per parlare dell'ottima partenza di stagione in MotoGP e del futuro della casa di Noale",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/8af11ba7-ccdf-4327-b9d0-0162d335b497/cover?territory=IT&md5ChecksumParam=4e0c44d8f65cd0b43565837164773b21",
-          "startAt": "2026-05-06T02:15:00Z",
-          "endAt": "2026-05-06T02:30:00Z"
-        },
-        {
-          "title": "All On Red",
-          "subtitle": null,
-          "description": "il racconto della straordinaria stagione 2025 di Marc Marquez che si e' conclusa con la conquista del titolo mondiale di MotoGP, con le interviste e il backstage nel box Ducati durante la stagione.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/64b24473-4aa0-40da-9c84-79ff1d994daf/cover?territory=IT&md5ChecksumParam=1019c9390ce94e903763089ff8c274d7",
-          "startAt": "2026-05-06T02:30:00Z",
-          "endAt": "2026-05-06T03:00:00Z"
-        },
-        {
-          "title": "Ungheria: Gara 2",
-          "subtitle": null,
-          "description": "Quarto Round della stagione 2026. Dal Balaton Park, in Ungheria, la Race 2 della World Superbike. Telecronaca Vercellesi - Temporali",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/af63cf6c-b98f-4af4-96fc-9a7bf41b5cec/cover?territory=IT&md5ChecksumParam=694db958eeaeb7223a06b57d0a614778",
-          "startAt": "2026-05-06T03:00:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
         {
           "title": "Francia, Le Mans 2005. MotoGP - MOTOGP",
           "subtitle": null,
@@ -1632,305 +1748,136 @@
           "imageUrl": "https://guidatv.sky.it/uuid/b9a5017f-2e2e-48eb-af60-0a85f69cee69/cover?territory=IT&md5ChecksumParam=3ce7fcbe9b05f04fa7bf0f73e4c80789",
           "startAt": "2026-05-06T21:55:00Z",
           "endAt": "2026-05-06T23:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "SkySportUno.it",
-      "name": "Sky Sport Uno",
-      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Sky_Sport_Uno_-_Logo_2020.svg/960px-Sky_Sport_Uno_-_Logo_2020.svg.png",
-      "provider": "Sky Italia sports guide",
-      "providerKey": "premium-sky-it",
-      "sources": [
-        "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
-        "data/normalized/guide-premium-IT-superguidatv.it.xml"
-      ],
-      "currentProgram": {
-        "title": "Oklahoma City Thunder - Los Angeles Lakers",
-        "subtitle": null,
-        "description": "NBA - Inizia la serie tra i campioni NBA in carica, guidati da Shai Gilgeous-Alexander, e i Lakers di LeBron James, ancora senza Luka Doncic. Telecronaca di Dario Vismara e Davide Pessina",
-        "categories": [
-          "Sport/Basket"
-        ],
-        "sportType": "Basketball",
-        "competition": "NBA",
-        "imageUrl": "https://guidatv.sky.it/uuid/84a8324c-a1a4-4daf-a310-c66b2dcf4bd2/cover?territory=IT&md5ChecksumParam=decc41fed1f4a444ad32a5bdcb9c4908",
-        "startAt": "2026-05-06T00:30:00Z",
-        "endAt": "2026-05-06T03:30:00Z"
-      },
-      "programs": [
+        },
         {
-          "title": "Ep.2",
+          "title": "GP Francia",
           "subtitle": null,
-          "description": "Alle origini del nuovo talento italiano della F1: in questo episodio il percorso di Antonelli nella massima categoria. Gli alti e bassi dell'anno da rookie, prima della definitiva esplosione del 2026.",
+          "description": "Quinto appuntamento del Mondiale 2023: da Le Mans in Francia, si accendono i motori per la gara della MotoGP. In prima fila Bagnaia, Marquez e Marini. TC: Meda-Sanchini.",
           "categories": [
             "Sport/Motori"
           ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/cb34037c-bfae-4947-9679-e4b509b12c7d/cover?territory=IT&md5ChecksumParam=823b3a76829262047133dd56b150e477",
-          "startAt": "2026-05-06T00:00:00Z",
-          "endAt": "2026-05-06T00:30:00Z"
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b8315fa5-5c5c-466a-a42a-a79a0509fdb3/cover?territory=IT&md5ChecksumParam=b7fc37ffd38a0247f628062e37b46c66",
+          "startAt": "2026-05-06T23:00:00Z",
+          "endAt": "2026-05-07T00:00:00Z"
         },
         {
-          "title": "Oklahoma City Thunder - Los Angeles Lakers",
+          "title": "All On Red",
           "subtitle": null,
-          "description": "NBA - Inizia la serie tra i campioni NBA in carica, guidati da Shai Gilgeous-Alexander, e i Lakers di LeBron James, ancora senza Luka Doncic. Telecronaca di Dario Vismara e Davide Pessina",
-          "categories": [
-            "Sport/Basket"
-          ],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": "https://guidatv.sky.it/uuid/84a8324c-a1a4-4daf-a310-c66b2dcf4bd2/cover?territory=IT&md5ChecksumParam=decc41fed1f4a444ad32a5bdcb9c4908",
-          "startAt": "2026-05-06T00:30:00Z",
-          "endAt": "2026-05-06T03:30:00Z"
-        },
-        {
-          "title": "Ep.1",
-          "subtitle": null,
-          "description": "Alle origini del nuovo talento italiano della F1: in questo episodio il sensazionale percorso giovanile di Antonelli che lo ha portato a sostituire Hamilton in Mercedes a soli 18 anni.",
+          "description": "il racconto della straordinaria stagione 2025 di Marc Marquez che si e' conclusa con la conquista del titolo mondiale di MotoGP, con le interviste e il backstage nel box Ducati durante la stagione.",
           "categories": [
             "Sport/Motori"
           ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/948f56f9-d74c-4da4-a075-befd735893f2/COVER_TITLE_TALL?territory=IT&version=22e0e385-6cd4-3d34-8397-e1dc94617bee&w=600&h=800&md5ChecksumParam=e811278f08d351c5c2916ebba73d2656",
-          "startAt": "2026-05-06T03:30:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
-        {
-          "title": "Calcio Campionato Italiano Serie A - Stag. Calcio Campionato Italiano Serie A 2025/2026 - Calcio Serie A 35ga Roma/ Fiorentina 04/05/2026",
-          "subtitle": null,
-          "description": "Roma - Fiorentina - Giallorossi sesti con 7 punti in 3 giornate. Viola imbattuti da 7 turni con 3 vittorie e 4 pareggi. Non vincono all'Olimpico da 7 stagioni, 2 pari e 5 ko. TC: Compagnoni-Montolivo",
-          "categories": [
-            "Sport/Calcio"
-          ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a6414de3-29c0-4c8f-b45d-449b620ee67b/cover?territory=IT&md5ChecksumParam=877d16069afd43f58f380a7a3dbab084",
-          "startAt": "2026-05-06T04:00:00Z",
-          "endAt": "2026-05-06T05:40:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/64b24473-4aa0-40da-9c84-79ff1d994daf/cover?territory=IT&md5ChecksumParam=1019c9390ce94e903763089ff8c274d7",
+          "startAt": "2026-05-07T00:00:00Z",
+          "endAt": "2026-05-07T00:30:00Z"
         },
         {
-          "title": "Panatta & Bertolucci Tennis Heroes 2026 Ep.1 01/05/2026",
+          "title": "Reparto Corse Moto GP",
           "subtitle": null,
-          "description": "Ep.1 - Tennis Heroes\" celebra l'eroe Panatta a 50 anni dalla vittoria al Foro Italico. Con Adriano, Paolo Bertolucci, protagonista nella stessa epoca. Tra passato e presente nella storia di un torneo mitico",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/acab2fd7-ceab-4422-916d-05bad79f538d/cover?territory=IT&md5ChecksumParam=895df4e9bdd6a3cecff879f0c8fd1f5b",
-          "startAt": "2026-05-06T05:40:00Z",
-          "endAt": "2026-05-06T06:30:00Z"
-        },
-        {
-          "title": "Calcio Uefa Champions League - Ep. 178 - Calcio Ucl Semifinali (Ritorno) Arsenal/ Atletico Madrid 05/05/2026",
-          "subtitle": null,
-          "description": "Arsenal - Atletico Madrid - Gunners per ritrovare una finale di Champions League dopo 20 anni. Atletico Madrid dopo 10 anni. 1-1 il risultato della gara d'andata. TC: Zancan-Marchegiani",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/ed25d699-c4c7-4661-8f02-9fbbf3aa1445/cover?territory=IT&md5ChecksumParam=9c834b6eabec36ea1458b253823a902e",
-          "startAt": "2026-05-06T06:30:00Z",
-          "endAt": "2026-05-06T08:15:00Z"
-        },
-        {
-          "title": "Anteprima",
-          "subtitle": null,
-          "description": "The Insider 2026 Anteprima. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/4bb721fd-2c59-4c60-89ef-d7a480e9c332/cover?territory=IT&md5ChecksumParam=226c23ef8de7dc8ccdb846b00f330165",
-          "startAt": "2026-05-06T08:15:00Z",
-          "endAt": "2026-05-06T08:30:00Z"
-        },
-        {
-          "title": "Performance E Design: All'origine Delle Emozioni",
-          "subtitle": null,
-          "description": "... Delle Emozioni. - Il legame tra F1 e produzione di serie valorizzato da Audi: in vetrina alla Milano Design Week la R26 protagonista del mondiale e la nuova RS 5, la prima ibrida plug-in del marchio dei quattro anelli.",
+          "description": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
           "categories": [
             "Sport/Motori"
           ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/97544484-1cd9-4dbb-9e28-461bd37ca0a4/cover?territory=IT&md5ChecksumParam=857b72e24757088d0ae0d2415f2bcdd1",
-          "startAt": "2026-05-06T08:30:00Z",
-          "endAt": "2026-05-06T08:45:00Z"
-        },
-        {
-          "title": "Studio Tennis 2026 06/05/2026",
-          "subtitle": null,
-          "description": "Studio Tennis Roma - Dal Foro Italico, la presentazione della giornata degli Internazionali BNL d'Italia di tennis.",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
+          "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/cfa00961-0ec4-4261-8264-37a3b29d105d/cover?territory=IT&md5ChecksumParam=8dc30e427e549d099bb8c63026a67cf4",
-          "startAt": "2026-05-06T08:45:00Z",
-          "endAt": "2026-05-06T09:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/744532bc-0789-45a8-bfd8-4aa4505f533a/cover?territory=IT&md5ChecksumParam=d4dcdb96a5e745fd678fa3c8243d7348",
+          "startAt": "2026-05-07T00:30:00Z",
+          "endAt": "2026-05-07T00:45:00Z"
         },
         {
-          "title": "Tennis Atp&Wta - Ep. 179 - Tennis Atp Masters 1000&Wta 1000 2026 Roma 2a Giornata (Ss Uno) 06/05/2026",
+          "title": "Ep.3",
           "subtitle": null,
-          "description": "... Roma 2 giornata - ATP & WTA 1000 Roma",
+          "description": "Rosario Triolo raccoglie in questa rubrica tutte le attivita' social dei piloti del motomondiale, e ci racconta le curiosita' dietro ad alcuni post o stories pubblicate nella settimana.",
           "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
-          "startAt": "2026-05-06T09:00:00Z",
-          "endAt": "2026-05-06T16:30:00Z"
-        },
-        {
-          "title": "Sky Tennis Show - Ep. 1 - Sky Tennis Show 2026 06/05/2026",
-          "subtitle": null,
-          "description": "Lo show degli Internazionali BNL d'Italia di tennis commentato in studio dai giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/4f496bcf-183e-4752-ae10-c6168de2734b/cover?territory=IT&md5ChecksumParam=11b44afc0fbd87dc2a070b89873e6a1b",
-          "startAt": "2026-05-06T16:30:00Z",
-          "endAt": "2026-05-06T17:00:00Z"
-        },
-        {
-          "title": "Tennis Atp&Wta - Ep. 179 - Tennis Atp Masters 1000&Wta 1000 2026 Roma 2a Giornata (Ss Uno) 06/05/2026",
-          "subtitle": null,
-          "description": "...1000 Roma 2 giornata - ATP & WTA 1000 Roma",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
-          "startAt": "2026-05-06T17:00:00Z",
-          "endAt": "2026-05-06T20:30:00Z"
-        },
-        {
-          "title": "Sky Tennis Show - Ep. 1 - Sky Tennis Show 2026 06/05/2026",
-          "subtitle": null,
-          "description": "Lo show degli Internazionali BNL d'Italia di tennis commentato in studio dai giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/4f496bcf-183e-4752-ae10-c6168de2734b/cover?territory=IT&md5ChecksumParam=11b44afc0fbd87dc2a070b89873e6a1b",
-          "startAt": "2026-05-06T20:30:00Z",
-          "endAt": "2026-05-06T21:00:00Z"
-        },
-        {
-          "title": "Ep.1",
-          "subtitle": null,
-          "description": "The Insider 2026 Ep.1. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/3332184c-a428-467a-8594-0f2a9f0175ea/cover?territory=IT&md5ChecksumParam=f688ee08a6f1f6fe10ecd58b4e330d4a",
-          "startAt": "2026-05-06T21:00:00Z",
-          "endAt": "2026-05-06T21:25:00Z"
-        },
-        {
-          "title": "Generazione Leicester: 10 Anni Dopo",
-          "subtitle": null,
-          "description": "... L'impresa Leicester - Dopo aver citato il Leicester per parlare del secondo posto a Sanremo, Sayf incontra Ranieri, a 10 anni esatti da quel miracolo calcistico, in un incrocio tra generazioni.",
-          "categories": [
-            "Sport/Calcio"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/745bfdda-7caa-472d-af13-e0f6b8b7f495/cover?territory=IT&md5ChecksumParam=da7883511e890c73a7f44147dd688a93",
-          "startAt": "2026-05-06T21:25:00Z",
-          "endAt": "2026-05-06T21:45:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/3bdb8437-a0ad-4c9d-b216-d7dea7096e48/cover?territory=IT&md5ChecksumParam=a9873d8e1ce690dca470d9a992aed634",
+          "startAt": "2026-05-07T00:45:00Z",
+          "endAt": "2026-05-07T01:00:00Z"
         },
         {
-          "title": "2a giornata",
+          "title": "Ungheria",
           "subtitle": null,
-          "description": "...2026 Roma 2a Giornata - ATP & WTA 1000 Roma",
+          "description": "Il magazine di approfondimento sul lungo weekend della Superbike. Gli approfondimenti tecnici, i momenti di gara, le interviste agli addetti ai lavori e ai piloti, le immagini piu' belle.",
           "categories": [
-            "Sport/Tennis"
+            "Sport/Motori"
           ],
-          "sportType": "Tennis",
+          "sportType": "Combat sports",
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
-          "startAt": "2026-05-06T21:45:00Z",
-          "endAt": "2026-05-06T23:15:00Z"
-        }
-      ]
-    },
-    {
-      "id": "ZonaDAZN2.it",
-      "name": "DAZN 2",
-      "logoUrl": "https://i.imgur.com/Jop3Vip.png",
-      "provider": "Sky Italia sports guide",
-      "providerKey": "premium-sky-it",
-      "sources": [
-        "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
+          "imageUrl": "https://guidatv.sky.it/uuid/3a355d9c-8db7-4889-84b7-a49b97b81fab/cover?territory=IT&md5ChecksumParam=625e91682e1f072ec48de8b529ed16db",
+          "startAt": "2026-05-07T01:00:00Z",
+          "endAt": "2026-05-07T02:00:00Z"
+        },
         {
-          "title": "Nessun evento in onda",
+          "title": "GP Francia",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Settimo appuntamento del mondiale 2022: da Le Mans in Francia, si accendono i motori per la gara della MotoGP. In prima fila Bagnaia, Miller e A. Espargaro. TC: Meda-Sanchini.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-05-06T04:00:00Z",
-          "endAt": "2026-05-06T10:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/b9a5017f-2e2e-48eb-af60-0a85f69cee69/cover?territory=IT&md5ChecksumParam=3ce7fcbe9b05f04fa7bf0f73e4c80789",
+          "startAt": "2026-05-07T02:00:00Z",
+          "endAt": "2026-05-07T02:30:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "Reparto Corse Moto GP",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-05-06T10:00:00Z",
-          "endAt": "2026-05-06T16:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/744532bc-0789-45a8-bfd8-4aa4505f533a/cover?territory=IT&md5ChecksumParam=d4dcdb96a5e745fd678fa3c8243d7348",
+          "startAt": "2026-05-07T02:30:00Z",
+          "endAt": "2026-05-07T02:45:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "Vado al massimo",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Sandro Donato Grosso ha incontrato Massimo Rivola, amministratore delegato di Aprilia Racing, per parlare dell'ottima partenza di stagione in MotoGP e del futuro della casa di Noale",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-05-06T16:00:00Z",
-          "endAt": "2026-05-06T22:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/8af11ba7-ccdf-4327-b9d0-0162d335b497/cover?territory=IT&md5ChecksumParam=4e0c44d8f65cd0b43565837164773b21",
+          "startAt": "2026-05-07T02:45:00Z",
+          "endAt": "2026-05-07T03:00:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "MotoGP Gara: GP Francia",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Quinto appuntamento del mondiale 2024: da Le Mans in Francia, la gara della MotoGP. Telecronaca di Guido Meda e Mauro Sanchini.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-05-06T22:00:00Z",
+          "imageUrl": "https://guidatv.sky.it/uuid/aa45cf90-fca3-409f-890f-3f746da929f1/cover?territory=IT&md5ChecksumParam=ee152e92327f6c5fb590285d660852c2",
+          "startAt": "2026-05-07T03:00:00Z",
           "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "GP Francia",
+          "subtitle": null,
+          "description": "GP Francia, MotoGP: Gara - Settimo appuntamento del mondiale 2022: da Le Mans in Francia, si accendono i motori per la gara della MotoGP. In prima fila Bagnaia, Miller e A. Espargaro. TC: Meda-Sanchini.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b9a5017f-2e2e-48eb-af60-0a85f69cee69/cover?territory=IT&md5ChecksumParam=3ce7fcbe9b05f04fa7bf0f73e4c80789",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:00:00Z"
         }
       ]
     },
@@ -1944,34 +1891,20 @@
         "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
-      "currentProgram": null,
+      "currentProgram": {
+        "title": "Sky Tennis Show 2026 05/05/2026",
+        "subtitle": null,
+        "description": "... Tennis Show. - Lo show degli Internazionali BNL d'Italia di tennis commentato in studio dai giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'",
+        "categories": [
+          "Sport/Tennis"
+        ],
+        "sportType": "Tennis",
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/24537b64-e71e-45e8-acf6-a3e656589e0a/cover?territory=IT&md5ChecksumParam=253b734dde14588ccfbbaa7fae68c51d",
+        "startAt": "2026-05-06T08:00:00Z",
+        "endAt": "2026-05-06T08:30:00Z"
+      },
       "programs": [
-        {
-          "title": "Internazionali d'Italia",
-          "subtitle": null,
-          "description": "Internazionali d'Italia - Tennis History Remix",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/878cf143-e1a6-444d-966a-cea458abd8ae/cover?territory=IT&md5ChecksumParam=df1a05eeb94625dd37920648434de446",
-          "startAt": "2026-05-06T03:30:00Z",
-          "endAt": "2026-05-06T04:00:00Z"
-        },
-        {
-          "title": "Anteprima",
-          "subtitle": null,
-          "description": "... Internazionali d'Italia. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
-          "categories": [
-            "Sport/Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/4bb721fd-2c59-4c60-89ef-d7a480e9c332/cover?territory=IT&md5ChecksumParam=226c23ef8de7dc8ccdb846b00f330165",
-          "startAt": "2026-05-06T04:00:00Z",
-          "endAt": "2026-05-06T04:15:00Z"
-        },
         {
           "title": "Tennis Atp&Wta - Stag. Tennis Atp&Wta 2026 - Tennis Atp Masters 1000&Wta 1000 2026 Roma 1a Giornata (Solo Repl) 05/05/2026",
           "subtitle": null,
@@ -2066,7 +1999,7 @@
         {
           "title": "2a giornata",
           "subtitle": null,
-          "description": "... WTA 1000 Roma. - ATP & WTA 1000 Roma",
+          "description": "... WTA 1000 Roma. - ATP & WTA 1000 Roma: STEFANINI (Ita) - OSTAPENKO (Aut)",
           "categories": [
             "Sport/Tennis"
           ],
@@ -2140,6 +2073,266 @@
           "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
           "startAt": "2026-05-06T21:30:00Z",
           "endAt": "2026-05-06T23:30:00Z"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "... Internazionali d'Italia. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3332184c-a428-467a-8594-0f2a9f0175ea/cover?territory=IT&md5ChecksumParam=f688ee08a6f1f6fe10ecd58b4e330d4a",
+          "startAt": "2026-05-06T23:30:00Z",
+          "endAt": "2026-05-07T00:00:00Z"
+        },
+        {
+          "title": "2a giornata",
+          "subtitle": null,
+          "description": "ATP & WTA 1000 Roma",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-07T00:00:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "2a giornata",
+          "subtitle": null,
+          "description": "ATP & WTA 1000 Roma",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportUno.it",
+      "name": "Sky Sport Uno",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Sky_Sport_Uno_-_Logo_2020.svg/960px-Sky_Sport_Uno_-_Logo_2020.svg.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
+        "data/normalized/guide-premium-IT-superguidatv.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Anteprima",
+        "subtitle": null,
+        "description": "The Insider 2026 Anteprima. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
+        "categories": [
+          "Sport/Tennis"
+        ],
+        "sportType": "Tennis",
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/4bb721fd-2c59-4c60-89ef-d7a480e9c332/cover?territory=IT&md5ChecksumParam=226c23ef8de7dc8ccdb846b00f330165",
+        "startAt": "2026-05-06T08:15:00Z",
+        "endAt": "2026-05-06T08:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Calcio Campionato Italiano Serie A - Stag. Calcio Campionato Italiano Serie A 2025/2026 - Calcio Serie A 35ga Roma/ Fiorentina 04/05/2026",
+          "subtitle": null,
+          "description": "Roma - Fiorentina - Giallorossi sesti con 7 punti in 3 giornate. Viola imbattuti da 7 turni con 3 vittorie e 4 pareggi. Non vincono all'Olimpico da 7 stagioni, 2 pari e 5 ko. TC: Compagnoni-Montolivo",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/a6414de3-29c0-4c8f-b45d-449b620ee67b/cover?territory=IT&md5ChecksumParam=877d16069afd43f58f380a7a3dbab084",
+          "startAt": "2026-05-06T04:00:00Z",
+          "endAt": "2026-05-06T05:40:00Z"
+        },
+        {
+          "title": "Panatta & Bertolucci Tennis Heroes 2026 Ep.1 01/05/2026",
+          "subtitle": null,
+          "description": "Ep.1 - Tennis Heroes\" celebra l'eroe Panatta a 50 anni dalla vittoria al Foro Italico. Con Adriano, Paolo Bertolucci, protagonista nella stessa epoca. Tra passato e presente nella storia di un torneo mitico",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/acab2fd7-ceab-4422-916d-05bad79f538d/cover?territory=IT&md5ChecksumParam=895df4e9bdd6a3cecff879f0c8fd1f5b",
+          "startAt": "2026-05-06T05:40:00Z",
+          "endAt": "2026-05-06T06:30:00Z"
+        },
+        {
+          "title": "Calcio Uefa Champions League - Ep. 178 - Calcio Ucl Semifinali (Ritorno) Arsenal/ Atletico Madrid 05/05/2026",
+          "subtitle": null,
+          "description": "Arsenal - Atletico Madrid - Gunners per ritrovare una finale di Champions League dopo 20 anni. Atletico Madrid dopo 10 anni. 1-1 il risultato della gara d'andata. TC: Zancan-Marchegiani",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/ed25d699-c4c7-4661-8f02-9fbbf3aa1445/cover?territory=IT&md5ChecksumParam=9c834b6eabec36ea1458b253823a902e",
+          "startAt": "2026-05-06T06:30:00Z",
+          "endAt": "2026-05-06T08:15:00Z"
+        },
+        {
+          "title": "Anteprima",
+          "subtitle": null,
+          "description": "The Insider 2026 Anteprima. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/4bb721fd-2c59-4c60-89ef-d7a480e9c332/cover?territory=IT&md5ChecksumParam=226c23ef8de7dc8ccdb846b00f330165",
+          "startAt": "2026-05-06T08:15:00Z",
+          "endAt": "2026-05-06T08:30:00Z"
+        },
+        {
+          "title": "Performance E Design: All'origine Delle Emozioni",
+          "subtitle": null,
+          "description": "... Delle Emozioni. - Il legame tra F1 e produzione di serie valorizzato da Audi: in vetrina alla Milano Design Week la R26 protagonista del mondiale e la nuova RS 5, la prima ibrida plug-in del marchio dei quattro anelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/97544484-1cd9-4dbb-9e28-461bd37ca0a4/cover?territory=IT&md5ChecksumParam=857b72e24757088d0ae0d2415f2bcdd1",
+          "startAt": "2026-05-06T08:30:00Z",
+          "endAt": "2026-05-06T08:45:00Z"
+        },
+        {
+          "title": "Studio Tennis 2026 06/05/2026",
+          "subtitle": null,
+          "description": "Studio Tennis Roma - Dal Foro Italico, la presentazione della giornata degli Internazionali BNL d'Italia di tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cfa00961-0ec4-4261-8264-37a3b29d105d/cover?territory=IT&md5ChecksumParam=8dc30e427e549d099bb8c63026a67cf4",
+          "startAt": "2026-05-06T08:45:00Z",
+          "endAt": "2026-05-06T09:00:00Z"
+        },
+        {
+          "title": "Tennis Atp&Wta - Ep. 179 - Tennis Atp Masters 1000&Wta 1000 2026 Roma 2a Giornata (Ss Uno) 06/05/2026",
+          "subtitle": null,
+          "description": "... Roma 2 giornata - ATP & WTA 1000 Roma: BROOKSBY (Usa) - BAEZ (Arg)",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-06T09:00:00Z",
+          "endAt": "2026-05-06T20:30:00Z"
+        },
+        {
+          "title": "Sky Tennis Show - Ep. 1 - Sky Tennis Show 2026 06/05/2026",
+          "subtitle": null,
+          "description": "Lo show degli Internazionali BNL d'Italia di tennis commentato in studio dai giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/4f496bcf-183e-4752-ae10-c6168de2734b/cover?territory=IT&md5ChecksumParam=11b44afc0fbd87dc2a070b89873e6a1b",
+          "startAt": "2026-05-06T20:30:00Z",
+          "endAt": "2026-05-06T21:00:00Z"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "The Insider 2026 Ep.1. - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3332184c-a428-467a-8594-0f2a9f0175ea/cover?territory=IT&md5ChecksumParam=f688ee08a6f1f6fe10ecd58b4e330d4a",
+          "startAt": "2026-05-06T21:00:00Z",
+          "endAt": "2026-05-06T21:25:00Z"
+        },
+        {
+          "title": "Generazione Leicester: 10 Anni Dopo",
+          "subtitle": null,
+          "description": "... L'impresa Leicester - Dopo aver citato il Leicester per parlare del secondo posto a Sanremo, Sayf incontra Ranieri, a 10 anni esatti da quel miracolo calcistico, in un incrocio tra generazioni.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/745bfdda-7caa-472d-af13-e0f6b8b7f495/cover?territory=IT&md5ChecksumParam=da7883511e890c73a7f44147dd688a93",
+          "startAt": "2026-05-06T21:25:00Z",
+          "endAt": "2026-05-06T21:45:00Z"
+        },
+        {
+          "title": "2a giornata",
+          "subtitle": null,
+          "description": "...2026 Roma 2a Giornata - ATP & WTA 1000 Roma",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-06T21:45:00Z",
+          "endAt": "2026-05-06T23:15:00Z"
+        },
+        {
+          "title": "Panatta & Bertolucci Tennis Heroes 2026 Ep.1 01/05/2026",
+          "subtitle": null,
+          "description": "Ep.1 - Tennis Heroes\" celebra l'eroe Panatta a 50 anni dalla vittoria al Foro Italico. Con Adriano, Paolo Bertolucci, protagonista nella stessa epoca. Tra passato e presente nella storia di un torneo mitico",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/acab2fd7-ceab-4422-916d-05bad79f538d/cover?territory=IT&md5ChecksumParam=895df4e9bdd6a3cecff879f0c8fd1f5b",
+          "startAt": "2026-05-06T23:15:00Z",
+          "endAt": "2026-05-07T00:00:00Z"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "The Insider 2026 Ep.1 - Immagini e racconti dietro le quinte degli Internazionali d'Italia di tennis. Stefano Meloccaro, nel ruolo di \"insider' al Foro Italico, approfondisce temi e personaggi del torneo.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3332184c-a428-467a-8594-0f2a9f0175ea/cover?territory=IT&md5ChecksumParam=f688ee08a6f1f6fe10ecd58b4e330d4a",
+          "startAt": "2026-05-07T00:00:00Z",
+          "endAt": "2026-05-07T00:30:00Z"
+        },
+        {
+          "title": "2a giornata",
+          "subtitle": null,
+          "description": "... 2026 Roma 2a Giornata - ATP & WTA 1000 Roma",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-07T00:30:00Z",
+          "endAt": "2026-05-07T04:00:00Z"
+        },
+        {
+          "title": "2a giornata",
+          "subtitle": null,
+          "description": "ATP & WTA 1000 Roma",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/cc864960-4e54-4f05-8dd4-8cd40593b484/COVER_TITLE_TALL?territory=IT&version=c3ff71d1-b40e-31c1-9a87-a2e59f73da06&w=600&h=800&md5ChecksumParam=5bd4f6d9e8b539bf21a3a341fecbcb5d",
+          "startAt": "2026-05-07T04:00:00Z",
+          "endAt": "2026-05-07T05:30:00Z"
         }
       ]
     }
