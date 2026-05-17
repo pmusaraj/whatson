@@ -1,7 +1,7 @@
 {
   "country": "DE",
   "countryName": "Germany",
-  "generatedAt": "2026-05-17T08:25:49.419544Z",
+  "generatedAt": "2026-05-17T13:18:37.149702Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -9,7 +9,7 @@
     "data/normalized/guide-premium-DE-sky.de.xml",
     "data/normalized/guide-premium-DE-web.magentatv.de.xml"
   ],
-  "channelCount": 12,
+  "channelCount": 13,
   "channels": [
     {
       "id": "Eurosport1.fr",
@@ -21,56 +21,19 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "UCI WorldTour Frauen",
-        "subtitle": "Itzulia Women : 2. Etappe",
-        "description": "Übertragungen der Rennen der UCI World Tour Frauen.",
+        "title": "Giro d'Italia 2026",
+        "subtitle": "9. Etappe",
+        "description": "Der Giro d'Italia 2026 ist die 109. Austragung der italienischen Grand Tour. Die Rundfahrt führt über 21 Etappen und beinhaltet 3 Ruhetage.",
         "categories": [
           "Sport"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272741_i_h9_ac_2025-04-07T10_33_53.jpg",
-        "startAt": "2026-05-17T08:00:00Z",
-        "endAt": "2026-05-17T09:00:00Z"
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302255_i_h9_aa_2026-04-22T21_35_04.jpg",
+        "startAt": "2026-05-17T10:30:00Z",
+        "endAt": "2026-05-17T15:15:00Z"
       },
       "programs": [
-        {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g100_h9_ab.jpg",
-          "startAt": "2026-05-17T01:00:00Z",
-          "endAt": "2026-05-17T06:30:00Z"
-        },
-        {
-          "title": "IFSC Sportklettern Weltcup",
-          "subtitle": "Wujiang : Speed : Finale : Frauen Männer",
-          "description": "Wujiang ----- Speed ----- Finale.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-05-17T06:30:00Z",
-          "endAt": "2026-05-17T08:00:00Z"
-        },
-        {
-          "title": "UCI WorldTour Frauen",
-          "subtitle": "Itzulia Women : 2. Etappe",
-          "description": "Übertragungen der Rennen der UCI World Tour Frauen.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272741_i_h9_ac_2025-04-07T10_33_53.jpg",
-          "startAt": "2026-05-17T08:00:00Z",
-          "endAt": "2026-05-17T09:00:00Z"
-        },
         {
           "title": "Giro d'Italia 2026",
           "subtitle": "8. Etappe",
@@ -209,6 +172,45 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g100_h9_ab.jpg",
           "startAt": "2026-05-18T01:00:00Z",
           "endAt": "2026-05-18T06:30:00Z"
+        },
+        {
+          "title": "T100 Triathlon World Tour",
+          "subtitle": "Singapur",
+          "description": "Triathlon: T100 Triathlon World Tour in Singapur.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623976_i_h9_aa_2024-03-04T10_53_13.jpg",
+          "startAt": "2026-05-18T06:30:00Z",
+          "endAt": "2026-05-18T07:30:00Z"
+        },
+        {
+          "title": "Australian Open 2026",
+          "subtitle": "Finale",
+          "description": "Die Übertragung der Australian Open 2026, gespielt im Melbourne Park in Melbourne, Australien.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/1/p31639028_i_h9_aa_2025-12-24T20_14_45.jpg",
+          "startAt": "2026-05-18T07:30:00Z",
+          "endAt": "2026-05-18T09:00:00Z"
+        },
+        {
+          "title": "UCI ProSeries Männer",
+          "subtitle": "Ungarn-Rundfahrt : 5. Etappe",
+          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
+          "startAt": "2026-05-18T09:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
         }
       ]
     },
@@ -222,84 +224,19 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "Trail World Series",
-        "subtitle": "Saison-Rückblick",
-        "description": "Saison-Rückblick 2023.",
+        "title": "Formel E",
+        "subtitle": "Monaco : 2. Rennen",
+        "description": "Live-Übertragung des 10. Saisonlaufs der Formel-E-Weltmeisterschaft 2025/2026 aus Monaco.",
         "categories": [
           "Sport"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24788563_i_h9_aa_2023-08-08T13_33_36.jpg",
-        "startAt": "2026-05-17T07:30:00Z",
-        "endAt": "2026-05-17T08:30:00Z"
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11055708_i_h9_ae_2025-05-02T15_53_41.jpg",
+        "startAt": "2026-05-17T12:45:00Z",
+        "endAt": "2026-05-17T14:15:00Z"
       },
       "programs": [
-        {
-          "title": "Snooker-WM 2026",
-          "subtitle": "Finale : 4. Session",
-          "description": "Im legendären Crucible Theater kürt die Snooker-Elite ihren Weltmeister. Live-Übertragung des WM-Finale aus Sheffield.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32763116_i_h9_aa_2026-03-30T07_45_50.jpg",
-          "startAt": "2026-05-17T03:30:00Z",
-          "endAt": "2026-05-17T05:00:00Z"
-        },
-        {
-          "title": "Giro d'Italia 2026",
-          "subtitle": "8. Etappe",
-          "description": "Der Giro d'Italia 2026 ist die 109. Austragung der italienischen Grand Tour. Die Rundfahrt führt über 21 Etappen und beinhaltet 3 Ruhetage.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302255_i_h9_aa_2026-04-22T21_35_04.jpg",
-          "startAt": "2026-05-17T05:00:00Z",
-          "endAt": "2026-05-17T06:00:00Z"
-        },
-        {
-          "title": "UCI WorldTour Frauen",
-          "subtitle": "Itzulia Women : 2. Etappe",
-          "description": "Übertragungen der Rennen der UCI World Tour Frauen.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272741_i_h9_ac_2025-04-07T10_33_53.jpg",
-          "startAt": "2026-05-17T06:00:00Z",
-          "endAt": "2026-05-17T06:30:00Z"
-        },
-        {
-          "title": "UCI ProSeries Männer",
-          "subtitle": "Ungarn-Rundfahrt : 4. Etappe",
-          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
-          "startAt": "2026-05-17T06:30:00Z",
-          "endAt": "2026-05-17T07:30:00Z"
-        },
-        {
-          "title": "Trail World Series",
-          "subtitle": "Saison-Rückblick",
-          "description": "Saison-Rückblick 2023.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24788563_i_h9_aa_2023-08-08T13_33_36.jpg",
-          "startAt": "2026-05-17T07:30:00Z",
-          "endAt": "2026-05-17T08:30:00Z"
-        },
         {
           "title": "Trail World Series",
           "subtitle": "Golden Trail World Series",
@@ -468,6 +405,45 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
           "startAt": "2026-05-18T03:00:00Z",
           "endAt": "2026-05-18T05:00:00Z"
+        },
+        {
+          "title": "Giro d'Italia 2026",
+          "subtitle": "9. Etappe",
+          "description": "Der Giro d'Italia 2026 ist die 109. Austragung der italienischen Grand Tour. Die Rundfahrt führt über 21 Etappen und beinhaltet 3 Ruhetage.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302255_i_h9_aa_2026-04-22T21_35_04.jpg",
+          "startAt": "2026-05-18T05:00:00Z",
+          "endAt": "2026-05-18T07:00:00Z"
+        },
+        {
+          "title": "UCI ProSeries Männer",
+          "subtitle": "Ungarn-Rundfahrt : 5. Etappe",
+          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
+          "startAt": "2026-05-18T07:00:00Z",
+          "endAt": "2026-05-18T08:00:00Z"
+        },
+        {
+          "title": "World Snooker Tour",
+          "subtitle": "Northern Ireland Open - Finale",
+          "description": "Übertragung des Finales der Northern Ireland Open 2025 zwischen Jack Lisowski und Judd Trump.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
+          "startAt": "2026-05-18T08:00:00Z",
+          "endAt": "2026-05-18T09:30:00Z"
         }
       ]
     },
@@ -481,7 +457,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Bundesliga 25/26: FC St. Pauli - VFL Wolfsburg",
+        "title": "Google Pixel Frauen Bundesliga 25/26: Hamburger SV - FC Bayern München",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -490,49 +466,10 @@
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-17T07:30:00Z",
-        "endAt": "2026-05-17T09:25:00Z"
+        "startAt": "2026-05-17T11:45:00Z",
+        "endAt": "2026-05-17T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sendepause"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-16T22:00:00Z",
-          "endAt": "2026-05-17T06:00:00Z"
-        },
-        {
-          "title": "Best of DAZN: Highlights",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-17T06:00:00Z",
-          "endAt": "2026-05-17T06:15:00Z"
-        },
-        {
-          "title": "ALL IN - Die Bundesliga Highlight Show: 28. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-17T06:15:00Z",
-          "endAt": "2026-05-17T07:30:00Z"
-        },
         {
           "title": "Bundesliga 25/26: FC St. Pauli - VFL Wolfsburg",
           "subtitle": null,
@@ -701,6 +638,58 @@
           "imageUrl": null,
           "startAt": "2026-05-17T22:00:00Z",
           "endAt": "2026-05-18T06:00:00Z"
+        },
+        {
+          "title": "Das Herz des deutschen Fußballs: Episode 4",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sportmagazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-18T06:00:00Z",
+          "endAt": "2026-05-18T06:30:00Z"
+        },
+        {
+          "title": "Best of DAZN: Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-18T06:30:00Z",
+          "endAt": "2026-05-18T07:00:00Z"
+        },
+        {
+          "title": "Coppa Italia 25/26: Lazio Rom - Inter Mailand",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-18T07:00:00Z",
+          "endAt": "2026-05-18T08:55:00Z"
+        },
+        {
+          "title": "Best of DAZN: Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-18T08:55:00Z",
+          "endAt": "2026-05-18T09:30:00Z"
         }
       ]
     },
@@ -714,7 +703,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Coppa Italia 25/26: Lazio Rom - Inter Mailand",
+        "title": "Serie A 25/26: Inter Mailand - Hellas Verona",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -723,36 +712,10 @@
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-05-17T08:00:00Z",
-        "endAt": "2026-05-17T09:55:00Z"
+        "startAt": "2026-05-17T12:55:00Z",
+        "endAt": "2026-05-17T15:15:00Z"
       },
       "programs": [
-        {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sendepause"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-16T22:00:00Z",
-          "endAt": "2026-05-17T06:00:00Z"
-        },
-        {
-          "title": "Bundesliga 25/26: FC Bayern München - 1. FC Köln",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Bundesliga"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-05-17T06:00:00Z",
-          "endAt": "2026-05-17T08:00:00Z"
-        },
         {
           "title": "Coppa Italia 25/26: Lazio Rom - Inter Mailand",
           "subtitle": null,
@@ -934,6 +897,96 @@
           "imageUrl": null,
           "startAt": "2026-05-17T22:00:00Z",
           "endAt": "2026-05-18T06:00:00Z"
+        },
+        {
+          "title": "Bundesliga 25/26: FC St. Pauli - VFL Wolfsburg",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Bundesliga"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-05-18T06:00:00Z",
+          "endAt": "2026-05-18T08:00:00Z"
+        },
+        {
+          "title": "LaLiga 25/26: FC Barcelona - Real Betis Sevilla",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-05-18T08:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportBundesliga1.de",
+      "name": "Sky Sport Bundesliga 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/de/c/ca/Sky_Sport_Bundesliga_2020.svg",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Live 2. BL: Sonntags-Konferenz, 34. Spieltag",
+        "subtitle": null,
+        "description": null,
+        "categories": [
+          "Fußball"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://sky.de/static/img/program_guide/16200151_s.jpg",
+        "startAt": "2026-05-17T12:00:00Z",
+        "endAt": "2026-05-17T15:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Es folgt: LIVE 2. Bundesliga",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/7132678_s.jpg",
+          "startAt": "2026-05-17T11:40:00Z",
+          "endAt": "2026-05-17T12:00:00Z"
+        },
+        {
+          "title": "Live 2. BL: Sonntags-Konferenz, 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16200151_s.jpg",
+          "startAt": "2026-05-17T12:00:00Z",
+          "endAt": "2026-05-17T15:30:00Z"
+        },
+        {
+          "title": "Live 2. BL Alle Spiele, alle Tore: Die Vodafone Highlight-Show, 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16200152_s.jpg",
+          "startAt": "2026-05-17T15:30:00Z",
+          "endAt": "2026-05-17T18:00:00Z"
         }
       ]
     },
@@ -947,57 +1000,31 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "IndyCar: Qualifying Indy 500 - Day 1",
+        "title": "F1: Rennen 2003 in Suzuka",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Motorsport"
+          "Formel 1"
         ],
-        "sportType": "Motorsport",
-        "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17363268_s.jpg",
-        "startAt": "2026-05-17T06:00:00Z",
-        "endAt": "2026-05-17T13:00:00Z"
+        "sportType": "Formula 1",
+        "competition": "Formula 1",
+        "imageUrl": "http://sky.de/static/img/program_guide/11902111_s.jpg",
+        "startAt": "2026-05-17T11:30:00Z",
+        "endAt": "2026-05-17T13:30:00Z"
       },
       "programs": [
         {
-          "title": "F1: Rennen - GP Japan",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16136883_s.jpg",
-          "startAt": "2026-05-17T04:00:00Z",
-          "endAt": "2026-05-17T06:00:00Z"
-        },
-        {
-          "title": "IndyCar: Qualifying Indy 500 - Day 1",
+          "title": "IndyCar: Sonsio Grand Prix",
           "subtitle": null,
           "description": null,
           "categories": [
             "Motorsport"
           ],
-          "sportType": "Motorsport",
+          "sportType": "Formula 1",
           "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17363268_s.jpg",
-          "startAt": "2026-05-17T06:00:00Z",
-          "endAt": "2026-05-17T13:00:00Z"
-        },
-        {
-          "title": "Meine Geschichte: Das Leben von Ralf Schumacher und Étienne Bousquet-Cassagne",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Dokumentation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17734480_s.jpg",
-          "startAt": "2026-05-17T13:00:00Z",
-          "endAt": "2026-05-17T13:30:00Z"
+          "imageUrl": "http://sky.de/static/img/program_guide/17363264_s.jpg",
+          "startAt": "2026-05-17T07:30:00Z",
+          "endAt": "2026-05-17T09:30:00Z"
         },
         {
           "title": "F1: Rennen 2002 in Magny-Cours",
@@ -1009,8 +1036,8 @@
           "sportType": "Formula 1",
           "competition": "Formula 1",
           "imageUrl": "http://sky.de/static/img/program_guide/12448081_s.jpg",
-          "startAt": "2026-05-17T13:30:00Z",
-          "endAt": "2026-05-17T15:30:00Z"
+          "startAt": "2026-05-17T09:30:00Z",
+          "endAt": "2026-05-17T11:30:00Z"
         },
         {
           "title": "F1: Rennen 2003 in Suzuka",
@@ -1022,8 +1049,8 @@
           "sportType": "Formula 1",
           "competition": "Formula 1",
           "imageUrl": "http://sky.de/static/img/program_guide/11902111_s.jpg",
-          "startAt": "2026-05-17T15:30:00Z",
-          "endAt": "2026-05-17T17:30:00Z"
+          "startAt": "2026-05-17T11:30:00Z",
+          "endAt": "2026-05-17T13:30:00Z"
         },
         {
           "title": "F1: Rennen 2004 in Spa-Francorchamps",
@@ -1035,8 +1062,8 @@
           "sportType": "Formula 1",
           "competition": "Formula 1",
           "imageUrl": "http://sky.de/static/img/program_guide/12671111_s.jpg",
-          "startAt": "2026-05-17T17:30:00Z",
-          "endAt": "2026-05-17T19:30:00Z"
+          "startAt": "2026-05-17T13:30:00Z",
+          "endAt": "2026-05-17T15:30:00Z"
         },
         {
           "title": "IndyCar: Timo meets Mick - Faszination Indy 500",
@@ -1048,8 +1075,8 @@
           "sportType": "Motorsport",
           "competition": null,
           "imageUrl": "http://sky.de/static/img/program_guide/18074564_s.jpg",
-          "startAt": "2026-05-17T19:30:00Z",
-          "endAt": "2026-05-17T20:00:00Z"
+          "startAt": "2026-05-17T15:30:00Z",
+          "endAt": "2026-05-17T16:00:00Z"
         },
         {
           "title": "Live IndyCar: Qualifying Indy 500 - Day 2",
@@ -1061,7 +1088,7 @@
           "sportType": "Motorsport",
           "competition": null,
           "imageUrl": "http://sky.de/static/img/program_guide/17363269_s.jpg",
-          "startAt": "2026-05-17T20:00:00Z",
+          "startAt": "2026-05-17T16:00:00Z",
           "endAt": "2026-05-17T23:00:00Z"
         },
         {
@@ -1128,6 +1155,32 @@
           "imageUrl": "http://sky.de/static/img/program_guide/16136992_s.jpg",
           "startAt": "2026-05-18T04:00:00Z",
           "endAt": "2026-05-18T06:00:00Z"
+        },
+        {
+          "title": "F1: Rennen 2002 in Magny-Cours",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/12448081_s.jpg",
+          "startAt": "2026-05-18T06:00:00Z",
+          "endAt": "2026-05-18T08:00:00Z"
+        },
+        {
+          "title": "F1: Rennen - GP Kanada 2024",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/14515075_s.jpg",
+          "startAt": "2026-05-18T08:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
         }
       ]
     },
@@ -1141,7 +1194,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "PGA Championship: 3. Tag in Newtown Square, PA (USA)",
+        "title": "Live Golf Ladies ET: Amundi German Masters, 4. Tag in Hamburg (Deutschland)",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -1149,37 +1202,11 @@
         ],
         "sportType": "Golf",
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17610338_s.jpg",
-        "startAt": "2026-05-17T08:00:00Z",
-        "endAt": "2026-05-17T11:00:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17610332_s.jpg",
+        "startAt": "2026-05-17T11:00:00Z",
+        "endAt": "2026-05-17T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "PGA Championship: Official Film 2019 (Brooks Koepka)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/13933478_s.jpg",
-          "startAt": "2026-05-17T04:00:00Z",
-          "endAt": "2026-05-17T05:00:00Z"
-        },
-        {
-          "title": "LPGA: Kroger Queen City Championship presented by P&G, 3. Tag in Cincinnati, OH (USA)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17610343_s.jpg",
-          "startAt": "2026-05-17T05:00:00Z",
-          "endAt": "2026-05-17T08:00:00Z"
-        },
         {
           "title": "PGA Championship: 3. Tag in Newtown Square, PA (USA)",
           "subtitle": null,
@@ -1283,6 +1310,19 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17610340_s.jpg",
           "startAt": "2026-05-18T04:00:00Z",
           "endAt": "2026-05-18T07:00:00Z"
+        },
+        {
+          "title": "LPGA: Kroger Queen City Championship presented by P&G, 4. Tag in Cincinnati, OH (USA)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17610344_s.jpg",
+          "startAt": "2026-05-18T07:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
         }
       ]
     },
@@ -1296,45 +1336,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Live Sky Sport News: Guten Morgen Fans!",
+        "title": "Live 2. BL: Vorbericht: Sonntags-Konferenz, 34. Spieltag",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Sport (allgemein)"
+          "Fußball"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17716826_s.jpg",
-        "startAt": "2026-05-17T07:00:00Z",
-        "endAt": "2026-05-17T08:45:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17734781_s.jpg",
+        "startAt": "2026-05-17T12:30:00Z",
+        "endAt": "2026-05-17T13:30:00Z"
       },
       "programs": [
-        {
-          "title": "Sky Sport News: Der Morgen",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
-          "startAt": "2026-05-17T04:00:00Z",
-          "endAt": "2026-05-17T07:00:00Z"
-        },
-        {
-          "title": "Live Sky Sport News: Guten Morgen Fans!",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17716826_s.jpg",
-          "startAt": "2026-05-17T07:00:00Z",
-          "endAt": "2026-05-17T08:45:00Z"
-        },
         {
           "title": "Live DFB-Nachwuchsliga: SC Paderborn 07 U19 - 1. FC Köln U19, Halbfinale",
           "subtitle": null,
@@ -1581,6 +1595,58 @@
           "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
           "startAt": "2026-05-18T04:00:00Z",
           "endAt": "2026-05-18T06:00:00Z"
+        },
+        {
+          "title": "BL Kompakt: 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17734485_s.jpg",
+          "startAt": "2026-05-18T06:00:00Z",
+          "endAt": "2026-05-18T07:00:00Z"
+        },
+        {
+          "title": "BL: Sky90 - Die Fußballdebatte",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17916260_s.jpg",
+          "startAt": "2026-05-18T07:00:00Z",
+          "endAt": "2026-05-18T08:30:00Z"
+        },
+        {
+          "title": "Sky Sport News: Der Morgen",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
+          "startAt": "2026-05-18T08:30:00Z",
+          "endAt": "2026-05-18T09:00:00Z"
+        },
+        {
+          "title": "2. BL Kompakt: 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17734486_s.jpg",
+          "startAt": "2026-05-18T09:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
         }
       ]
     },
@@ -1594,7 +1660,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "PL: Aston Villa - FC Liverpool, 37. Spieltag",
+        "title": "Live PL: Manchester United - Nottingham Forest, 37. Spieltag",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -1602,63 +1668,11 @@
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/15550618_s.jpg",
-        "startAt": "2026-05-17T08:00:00Z",
-        "endAt": "2026-05-17T10:05:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17720711_s.jpg",
+        "startAt": "2026-05-17T11:20:00Z",
+        "endAt": "2026-05-17T13:50:00Z"
       },
       "programs": [
-        {
-          "title": "PL: GOATS (Wayne Rooney)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14562596_s.jpg",
-          "startAt": "2026-05-17T04:00:00Z",
-          "endAt": "2026-05-17T05:00:00Z"
-        },
-        {
-          "title": "PL: PL Rewind: MCI vs. QPR 2011/12",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/15419452_s.jpg",
-          "startAt": "2026-05-17T05:00:00Z",
-          "endAt": "2026-05-17T05:30:00Z"
-        },
-        {
-          "title": "PL: 90in30: AVL - LIV, 37. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17720717_s.jpg",
-          "startAt": "2026-05-17T05:30:00Z",
-          "endAt": "2026-05-17T06:00:00Z"
-        },
-        {
-          "title": "EFL: Salford City - Grimsby Town, Playoffs Halbfinale Rückspiel",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17974466_s.jpg",
-          "startAt": "2026-05-17T06:00:00Z",
-          "endAt": "2026-05-17T08:00:00Z"
-        },
         {
           "title": "PL: Aston Villa - FC Liverpool, 37. Spieltag",
           "subtitle": null,
@@ -1866,6 +1880,71 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17720714_s.jpg",
           "startAt": "2026-05-18T03:00:00Z",
           "endAt": "2026-05-18T05:00:00Z"
+        },
+        {
+          "title": "PL: Leeds United - Brighton & Hove Albion, 37. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17720715_s.jpg",
+          "startAt": "2026-05-18T05:00:00Z",
+          "endAt": "2026-05-18T07:00:00Z"
+        },
+        {
+          "title": "PL: Highlights Sonntag, 37. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17720693_s.jpg",
+          "startAt": "2026-05-18T07:00:00Z",
+          "endAt": "2026-05-18T07:30:00Z"
+        },
+        {
+          "title": "PL: PL Moments: Robert Pires",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15419453_s.jpg",
+          "startAt": "2026-05-18T07:30:00Z",
+          "endAt": "2026-05-18T08:30:00Z"
+        },
+        {
+          "title": "PL: PL Stories (Didier Drogba)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/13444466_s.jpg",
+          "startAt": "2026-05-18T08:30:00Z",
+          "endAt": "2026-05-18T09:00:00Z"
+        },
+        {
+          "title": "PL: Highlights Sonntag, 37. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17720693_s.jpg",
+          "startAt": "2026-05-18T09:00:00Z",
+          "endAt": "2026-05-18T09:30:00Z"
         }
       ]
     },
@@ -1879,7 +1958,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "WTA 1000: C. Gauff (USA) - E. Svitolina (UKR), Internazionali BNL d'Italia in Rom (Italien), Finale",
+        "title": "ATP 1000: J. Sinner (ITA) - D. Medvedev, Internazionali BNL d'Italia in Rom (Italien), Halbfinale 2",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -1887,50 +1966,11 @@
         ],
         "sportType": "Tennis",
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17716990_s.jpg",
-        "startAt": "2026-05-17T08:00:00Z",
-        "endAt": "2026-05-17T10:30:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17716989_s.jpg",
+        "startAt": "2026-05-17T12:15:00Z",
+        "endAt": "2026-05-17T14:30:00Z"
       },
       "programs": [
-        {
-          "title": "ATP 1000: L. Darderi (ITA) - C. Ruud (NOR), Internazionali BNL d'Italia in Rom (Italien), Halbfinale 1",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17716987_s.jpg",
-          "startAt": "2026-05-17T03:30:00Z",
-          "endAt": "2026-05-17T05:30:00Z"
-        },
-        {
-          "title": "ATP 1000: J. Sinner (ITA) - D. Medvedev, Internazionali BNL d'Italia in Rom (Italien), Halbfinale 2",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17716989_s.jpg",
-          "startAt": "2026-05-17T05:30:00Z",
-          "endAt": "2026-05-17T07:30:00Z"
-        },
-        {
-          "title": "ATP: This Week",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17268767_s.jpg",
-          "startAt": "2026-05-17T07:30:00Z",
-          "endAt": "2026-05-17T08:00:00Z"
-        },
         {
           "title": "WTA 1000: C. Gauff (USA) - E. Svitolina (UKR), Internazionali BNL d'Italia in Rom (Italien), Finale",
           "subtitle": null,
@@ -1941,8 +1981,8 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": "http://sky.de/static/img/program_guide/17716990_s.jpg",
-          "startAt": "2026-05-17T08:00:00Z",
-          "endAt": "2026-05-17T10:30:00Z"
+          "startAt": "2026-05-17T07:50:00Z",
+          "endAt": "2026-05-17T10:25:00Z"
         },
         {
           "title": "ATP 1000: L. Darderi (ITA) - C. Ruud (NOR), Internazionali BNL d'Italia in Rom (Italien), Halbfinale 1",
@@ -1954,8 +1994,8 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": "http://sky.de/static/img/program_guide/17716987_s.jpg",
-          "startAt": "2026-05-17T10:30:00Z",
-          "endAt": "2026-05-17T12:30:00Z"
+          "startAt": "2026-05-17T10:25:00Z",
+          "endAt": "2026-05-17T12:15:00Z"
         },
         {
           "title": "ATP 1000: J. Sinner (ITA) - D. Medvedev, Internazionali BNL d'Italia in Rom (Italien), Halbfinale 2",
@@ -1967,7 +2007,7 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": "http://sky.de/static/img/program_guide/17716989_s.jpg",
-          "startAt": "2026-05-17T12:30:00Z",
+          "startAt": "2026-05-17T12:15:00Z",
           "endAt": "2026-05-17T14:30:00Z"
         },
         {
@@ -1984,7 +2024,7 @@
           "endAt": "2026-05-17T14:50:00Z"
         },
         {
-          "title": "Live ATP 1000: Finale, Internazionali BNL d'Italia in Rom (Italien), Finale",
+          "title": "Live ATP 1000: J. Sinner (ITA) - C. Ruud (NOR), Internazionali BNL d'Italia in Rom (Italien), Finale",
           "subtitle": null,
           "description": null,
           "categories": [
@@ -2036,7 +2076,7 @@
           "endAt": "2026-05-17T22:00:00Z"
         },
         {
-          "title": "ATP 1000: Finale, Internazionali BNL d'Italia in Rom (Italien), Finale",
+          "title": "ATP 1000: J. Sinner (ITA) - C. Ruud (NOR), Internazionali BNL d'Italia in Rom (Italien), Finale",
           "subtitle": null,
           "description": null,
           "categories": [
@@ -2073,6 +2113,45 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17732092_s.jpg",
           "startAt": "2026-05-18T03:00:00Z",
           "endAt": "2026-05-18T05:00:00Z"
+        },
+        {
+          "title": "ATP 1000: J. Sinner (ITA) - C. Ruud (NOR), Internazionali BNL d'Italia in Rom (Italien), Finale",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17716998_s.jpg",
+          "startAt": "2026-05-18T05:00:00Z",
+          "endAt": "2026-05-18T07:30:00Z"
+        },
+        {
+          "title": "WTA 1000: Review Rom",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17291799_s.jpg",
+          "startAt": "2026-05-18T07:30:00Z",
+          "endAt": "2026-05-18T08:00:00Z"
+        },
+        {
+          "title": "ATP 500: Topspiel, Bitpanda Hamburg Open in Hamburg, 1. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17732092_s.jpg",
+          "startAt": "2026-05-18T08:00:00Z",
+          "endAt": "2026-05-18T10:00:00Z"
         }
       ]
     },
@@ -2086,58 +2165,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Live MotoGP: Warm Up - GP Katalonien",
+        "title": "Live 2. BL: Sonntags-Konferenz, 34. Spieltag",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Motorsport"
+          "Fußball"
         ],
-        "sportType": "Motorsport",
+        "sportType": null,
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17193553_s.jpg",
-        "startAt": "2026-05-17T07:35:00Z",
-        "endAt": "2026-05-17T08:35:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/16200151_s.jpg",
+        "startAt": "2026-05-17T12:00:00Z",
+        "endAt": "2026-05-17T15:30:00Z"
       },
       "programs": [
-        {
-          "title": "3. Liga: Alle Spiele, alle Tore, 38. Spieltag komplett - letzter Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17734477_s.jpg",
-          "startAt": "2026-05-17T04:00:00Z",
-          "endAt": "2026-05-17T05:00:00Z"
-        },
-        {
-          "title": "BL Alle Spiele, alle Tore: Die Vodafone Highlight-Show, 34. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16481711_s.jpg",
-          "startAt": "2026-05-17T05:00:00Z",
-          "endAt": "2026-05-17T07:35:00Z"
-        },
-        {
-          "title": "Live MotoGP: Warm Up - GP Katalonien",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17193553_s.jpg",
-          "startAt": "2026-05-17T07:35:00Z",
-          "endAt": "2026-05-17T08:35:00Z"
-        },
         {
           "title": "Live Moto3: Rennen - GP Katalonien",
           "subtitle": null,
@@ -2267,6 +2307,58 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17193556_s.jpg",
           "startAt": "2026-05-18T03:30:00Z",
           "endAt": "2026-05-18T04:30:00Z"
+        },
+        {
+          "title": "Frauen-BL: Alle Spiele, alle Tore, 26. Spieltag komplett - letzter Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17734425_s.jpg",
+          "startAt": "2026-05-18T04:30:00Z",
+          "endAt": "2026-05-18T05:00:00Z"
+        },
+        {
+          "title": "BL Kompakt: 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17734485_s.jpg",
+          "startAt": "2026-05-18T05:00:00Z",
+          "endAt": "2026-05-18T06:00:00Z"
+        },
+        {
+          "title": "BL: Sky90 - Die Fußballdebatte",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17916260_s.jpg",
+          "startAt": "2026-05-18T06:00:00Z",
+          "endAt": "2026-05-18T07:30:00Z"
+        },
+        {
+          "title": "2. BL Alle Spiele, alle Tore: Die Vodafone Highlight-Show, 34. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16200152_s.jpg",
+          "startAt": "2026-05-18T07:30:00Z",
+          "endAt": "2026-05-18T09:30:00Z"
         }
       ]
     },
@@ -2281,45 +2373,19 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "Sporting Lissabon - FC Gil Vicente, Primeira Liga (34. Spieltag)",
+        "title": "LIVE PSV Eindhoven - FC Twente Enschede, Eredivisie (34. Spieltag)",
         "subtitle": null,
-        "description": "(Wh. v. 16.05.26) Sporting Lissabon - FC Gil Vicente, Primeira Liga (34. Spieltag)",
+        "description": "Aus dem Philips-Stadion in Eindhoven, Niederlande.",
         "categories": [
-          "Sport"
+          "Fußball"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-        "startAt": "2026-05-17T07:50:00Z",
-        "endAt": "2026-05-17T09:50:00Z"
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605388_i_h9_ak_2025-11-18T07_26_40.jpg",
+        "startAt": "2026-05-17T12:25:00Z",
+        "endAt": "2026-05-17T14:45:00Z"
       },
       "programs": [
-        {
-          "title": "FC Porto - CD Santa Clara, Primeira Liga (34. Spieltag)",
-          "subtitle": null,
-          "description": "(Wh. v. 16.05.26) FC Porto - CD Santa Clara, Primeira Liga (34. Spieltag)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-          "startAt": "2026-05-17T03:00:00Z",
-          "endAt": "2026-05-17T05:30:00Z"
-        },
-        {
-          "title": "Al-Nassr (KSA) - Gamba Osaka (JPN), AFC Champions League Two (Finale)",
-          "subtitle": "Al-Nassr FC - Gamba Osaka",
-          "description": "Aus dem King Saud University Stadium, in Saudi Arabien.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/8/p28204186_i_h9_ab_2025-09-30T08_26_41.jpg",
-          "startAt": "2026-05-17T05:30:00Z",
-          "endAt": "2026-05-17T07:50:00Z"
-        },
         {
           "title": "Sporting Lissabon - FC Gil Vicente, Primeira Liga (34. Spieltag)",
           "subtitle": null,
@@ -2462,13 +2528,52 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
           "startAt": "2026-05-18T02:40:00Z",
           "endAt": "2026-05-18T04:40:00Z"
+        },
+        {
+          "title": "Deutschland U17 F - Frankreich U17 F, UEFA U-17 EM Frauen (Finale)",
+          "subtitle": null,
+          "description": "(Wh. v. 17.05.26) Deutschland U17 F - Frankreich U17 F, UEFA U-17 EM Frauen (Finale)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-05-18T04:40:00Z",
+          "endAt": "2026-05-18T06:55:00Z"
+        },
+        {
+          "title": "PSV Eindhoven - FC Twente Enschede, Eredivisie (34. Spieltag)",
+          "subtitle": null,
+          "description": "Aus dem Philips-Stadion in Eindhoven, Niederlande.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605388_i_h9_ak_2025-11-18T07_26_40.jpg",
+          "startAt": "2026-05-18T06:55:00Z",
+          "endAt": "2026-05-18T09:05:00Z"
+        },
+        {
+          "title": "SC Heerenveen - Ajax Amsterdam, Eredivisie (34. Spieltag)",
+          "subtitle": null,
+          "description": "Aus dem Abe-Lenstra-Stadion in Heerenveen, Niederlande.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605388_i_h9_ak_2025-11-18T07_26_40.jpg",
+          "startAt": "2026-05-18T09:05:00Z",
+          "endAt": "2026-05-18T11:05:00Z"
         }
       ]
     },
     {
-      "id": "SkySportBundesliga1.de",
-      "name": "Sky Sport Bundesliga 1 HD",
-      "logoUrl": "https://upload.wikimedia.org/wikipedia/de/c/ca/Sky_Sport_Bundesliga_2020.svg",
+      "id": "SkySport1.de",
+      "name": "Sky Sport 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png",
       "provider": "Sky Germany sports guide",
       "providerKey": "premium-sky-de",
       "sources": [
@@ -2477,43 +2582,30 @@
       "currentProgram": null,
       "programs": [
         {
-          "title": "Es folgt: LIVE 2. Bundesliga",
+          "title": "Es folgt: LIVE Tennis WTA",
           "subtitle": null,
           "description": null,
           "categories": [
-            "Fußball"
+            "Tennis"
           ],
-          "sportType": null,
+          "sportType": "Tennis",
           "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/7132678_s.jpg",
-          "startAt": "2026-05-17T11:40:00Z",
-          "endAt": "2026-05-17T12:00:00Z"
+          "imageUrl": null,
+          "startAt": "2026-05-18T08:10:00Z",
+          "endAt": "2026-05-18T08:30:00Z"
         },
         {
-          "title": "Live 2. BL: Sonntags-Konferenz, 34. Spieltag",
+          "title": "Live WTA 500: Internationaux de Strasbourg in Straßburg (FRA), 2. Tag",
           "subtitle": null,
           "description": null,
           "categories": [
-            "Fußball"
+            "Tennis"
           ],
-          "sportType": null,
+          "sportType": "Tennis",
           "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16200151_s.jpg",
-          "startAt": "2026-05-17T12:00:00Z",
-          "endAt": "2026-05-17T15:30:00Z"
-        },
-        {
-          "title": "Live 2. BL Alle Spiele, alle Tore: Die Vodafone Highlight-Show, 34. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16200152_s.jpg",
-          "startAt": "2026-05-17T15:30:00Z",
-          "endAt": "2026-05-17T18:00:00Z"
+          "imageUrl": "http://sky.de/static/img/program_guide/17732098_s.jpg",
+          "startAt": "2026-05-18T08:30:00Z",
+          "endAt": "2026-05-18T17:30:00Z"
         }
       ]
     }
