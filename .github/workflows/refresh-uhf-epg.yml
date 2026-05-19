@@ -1,0 +1,84 @@
+name: Refresh UHF EPG data
+
+on:
+  schedule:
+    # Every two days at 03:35 UTC.
+    - cron: "35 3 */2 * *"
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-uhf-epg
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-uhf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Install iptv-org EPG grabber
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
+          npm install --prefix .cache/epg
+
+      - name: Refresh UHF guide data
+        run: python3 scripts/refresh_uhf_epg.py
+
+      - name: Verify UHF XMLTV export
+        run: |
+          python3 - <<'PY'
+          import gzip
+          import json
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+
+          root = Path.cwd()
+          xml_root = ET.parse(root / "web/data/uhf/epg.xml").getroot()
+          gzip_root = ET.parse(gzip.open(root / "web/data/uhf/epg.xml.gz", "rb")).getroot()
+          channels = xml_root.findall("channel")
+          programmes = xml_root.findall("programme")
+          channel_ids = {channel.attrib["id"] for channel in channels}
+          bad_refs = [
+              programme.attrib.get("channel")
+              for programme in programmes
+              if programme.attrib.get("channel") not in channel_ids
+          ]
+          summary = json.loads((root / "web/data/uhf/summary.json").read_text())
+          print(f"channels={len(channels)} programmes={len(programmes)} gzip_channels={len(gzip_root.findall('channel'))}")
+          print(f"includedByCountry={summary.get('includedByCountry')}")
+          if bad_refs:
+              raise SystemExit(f"UHF XMLTV has {len(bad_refs)} programme refs without matching channels")
+          if len(channels) < 200:
+              raise SystemExit(f"UHF XMLTV coverage dropped below 200 channels: {len(channels)}")
+          PY
+
+      - name: Commit refreshed UHF data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/normalized/guide-uhf-*.xml data/uhf/grab-plan.json data/sources/iptv-org/custom-uhf-*.channels.xml web/data/uhf
+          if git diff --cached --quiet; then
+            echo "No UHF guide data changes to commit."
+          else
+            git commit -m "chore: refresh UHF EPG data"
+            git push
+          fi
+
+      - name: Delete generated build artifacts
+        if: always()
+        run: |
+          rm -rf .cache node_modules __pycache__ scripts/__pycache__ tests/__pycache__

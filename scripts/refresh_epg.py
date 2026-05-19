@@ -53,13 +53,11 @@ def main() -> int:
     NORMALIZED_DIR.mkdir(parents=True, exist_ok=True)
     WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    if (ROOT / "scripts" / "build_uhf_grab_lists.py").exists() and (ROOT / "data" / "uhf-channel-mapping.csv").exists():
-        if args.dry_run:
-            print("$ python3 scripts/build_uhf_grab_lists.py")
-        else:
-            run(["python3", "scripts/build_uhf_grab_lists.py"])
-
-    channels_files = sorted(SOURCES_DIR.glob("custom-*.channels.xml"))
+    channels_files = sorted(
+        path
+        for path in SOURCES_DIR.glob("custom-*.channels.xml")
+        if not path.name.startswith("custom-uhf-")
+    )
     if not channels_files:
         raise SystemExit(f"No custom channel XML files found under {SOURCES_DIR}")
 
@@ -116,14 +114,12 @@ def main() -> int:
     if args.dry_run:
         print("$ python3 scripts/build_web_data.py")
         print("$ python3 scripts/build_xmltv_export.py")
-        print("$ python3 scripts/build_uhf_custom_xmltv.py")
         print("$ python3 -m unittest discover -s tests -v")
         print("$ node --check web/app.js")
         return 0
 
     run(["python3", "scripts/build_web_data.py"])
     run(["python3", "scripts/build_xmltv_export.py"])
-    run(["python3", "scripts/build_uhf_custom_xmltv.py"])
     run(["python3", "-m", "unittest", "discover", "-s", "tests", "-v"])
     run(["node", "--check", "web/app.js"])
 
