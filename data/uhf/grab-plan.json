@@ -1,0 +1,154 @@
+{
+  "mappingCsv": "data/uhf-channel-mapping.csv",
+  "outputPattern": "data/sources/iptv-org/custom-uhf-<country>-<site>.channels.xml",
+  "refreshScript": "python3 scripts/refresh_epg.py",
+  "okUniqueTargets": 321,
+  "writtenFiles": [
+    {
+      "country": "CA",
+      "site": "tvhebdo.com",
+      "path": "data/sources/iptv-org/custom-uhf-CA-tvhebdo.com.channels.xml",
+      "channels": 19
+    },
+    {
+      "country": "CA",
+      "site": "tvpassport.com",
+      "path": "data/sources/iptv-org/custom-uhf-CA-tvpassport.com.channels.xml",
+      "channels": 53
+    },
+    {
+      "country": "ES",
+      "site": "orangetv.orange.es",
+      "path": "data/sources/iptv-org/custom-uhf-ES-orangetv.orange.es.channels.xml",
+      "channels": 35
+    },
+    {
+      "country": "ES",
+      "site": "programacion-tv.elpais.com",
+      "path": "data/sources/iptv-org/custom-uhf-ES-programacion-tv.elpais.com.channels.xml",
+      "channels": 2
+    },
+    {
+      "country": "FR",
+      "site": "airtelxstream.in",
+      "path": "data/sources/iptv-org/custom-uhf-FR-airtelxstream.in.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "FR",
+      "site": "canalplus.com",
+      "path": "data/sources/iptv-org/custom-uhf-FR-canalplus.com.channels.xml",
+      "channels": 74
+    },
+    {
+      "country": "FR",
+      "site": "chaines-tv.orange.fr",
+      "path": "data/sources/iptv-org/custom-uhf-FR-chaines-tv.orange.fr.channels.xml",
+      "channels": 2
+    },
+    {
+      "country": "FR",
+      "site": "programme-tv.net",
+      "path": "data/sources/iptv-org/custom-uhf-FR-programme-tv.net.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "FR",
+      "site": "tv-programme.telecablesat.fr",
+      "path": "data/sources/iptv-org/custom-uhf-FR-tv-programme.telecablesat.fr.channels.xml",
+      "channels": 9
+    },
+    {
+      "country": "FR",
+      "site": "tv.sfr.fr",
+      "path": "data/sources/iptv-org/custom-uhf-FR-tv.sfr.fr.channels.xml",
+      "channels": 27
+    },
+    {
+      "country": "FR",
+      "site": "tvcesoir.fr",
+      "path": "data/sources/iptv-org/custom-uhf-FR-tvcesoir.fr.channels.xml",
+      "channels": 4
+    },
+    {
+      "country": "UK",
+      "site": "m.tv.sms.cz",
+      "path": "data/sources/iptv-org/custom-uhf-UK-m.tv.sms.cz.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "UK",
+      "site": "melita.com",
+      "path": "data/sources/iptv-org/custom-uhf-UK-melita.com.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "UK",
+      "site": "sky.com",
+      "path": "data/sources/iptv-org/custom-uhf-UK-sky.com.channels.xml",
+      "channels": 4
+    },
+    {
+      "country": "UK",
+      "site": "teliatv.ee",
+      "path": "data/sources/iptv-org/custom-uhf-UK-teliatv.ee.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "UK",
+      "site": "virgintvgo.virginmedia.com",
+      "path": "data/sources/iptv-org/custom-uhf-UK-virgintvgo.virginmedia.com.channels.xml",
+      "channels": 33
+    },
+    {
+      "country": "US",
+      "site": "cubmu.com",
+      "path": "data/sources/iptv-org/custom-uhf-US-cubmu.com.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "US",
+      "site": "i.mjh.nz",
+      "path": "data/sources/iptv-org/custom-uhf-US-i.mjh.nz.channels.xml",
+      "channels": 2
+    },
+    {
+      "country": "US",
+      "site": "meuguia.tv",
+      "path": "data/sources/iptv-org/custom-uhf-US-meuguia.tv.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "US",
+      "site": "mi.tv",
+      "path": "data/sources/iptv-org/custom-uhf-US-mi.tv.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "US",
+      "site": "tvguide.com",
+      "path": "data/sources/iptv-org/custom-uhf-US-tvguide.com.channels.xml",
+      "channels": 2
+    },
+    {
+      "country": "US",
+      "site": "tvhebdo.com",
+      "path": "data/sources/iptv-org/custom-uhf-US-tvhebdo.com.channels.xml",
+      "channels": 1
+    },
+    {
+      "country": "US",
+      "site": "tvtv.us",
+      "path": "data/sources/iptv-org/custom-uhf-US-tvtv.us.channels.xml",
+      "channels": 46
+    }
+  ],
+  "channelsByCountry": {
+    "CA": 72,
+    "ES": 37,
+    "FR": 118,
+    "UK": 40,
+    "US": 54
+  },
+  "missingGuideMappings": []
+}

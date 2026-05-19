@@ -1,0 +1,377 @@
+{
+  "input": "data/uhf-live-channels-target-categories.csv",
+  "epgXml": "web/data/epg.xml",
+  "targetMetadata": "data/sources/iptv-org",
+  "ignoredCategories": [
+    "Canal + Africa",
+    "French-FHD",
+    "French-SD",
+    "beIN FHD",
+    "beIN HD",
+    "beIN SD"
+  ],
+  "sourceRows": 1189,
+  "mappedRows": 708,
+  "byCategory": {
+    "Bein Channels": 30,
+    "Canada": 147,
+    "French Sports": 120,
+    "French-HD": 156,
+    "Spain": 108,
+    "UK": 64,
+    "USA": 83
+  },
+  "byReview": {
+    "unmapped": 326,
+    "ok": 376,
+    "review": 6
+  },
+  "byMethod": {
+    "unmapped": 326,
+    "source_epg_id_exact": 65,
+    "fuzzy_name_high": 290,
+    "fuzzy_name_review": 6,
+    "manual_alias": 21
+  },
+  "matchedTargetCount": 323,
+  "unmappedSamples": [
+    {
+      "category": "Bein Channels",
+      "name": "AR-beinJeem HD",
+      "sourceEpgId": "JeemTV.qa",
+      "notes": "source EPG id present but no target-country guide channel: JeemTV.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar-Bein-Junior",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein BBC Earth",
+      "sourceEpgId": "BBCEarth.qa",
+      "notes": "source EPG id present but no target-country guide channel: BBCEarth.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein Fox Rewayat",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_AMC_HD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Baraem_HD",
+      "sourceEpgId": "Baraem.qa",
+      "notes": "source EPG id present but no target-country guide channel: Baraem.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Bejunior_HD",
+      "sourceEpgId": "beJunior.qa",
+      "notes": "source EPG id present but no target-country guide channel: beJunior.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Boomerang_HD",
+      "sourceEpgId": "BoomerangMENAar.ae",
+      "notes": "source EPG id present but no target-country guide channel: BoomerangMENAar.ae"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Cartoon_Network_HD",
+      "sourceEpgId": "CartoonNetworkEn.qa",
+      "notes": "source EPG id present but no target-country guide channel: CartoonNetworkEn.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Discovery_Turbo_Xtra",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Drama_HD1",
+      "sourceEpgId": "Drama.qa",
+      "notes": "source EPG id present but no target-country guide channel: Drama.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Fatafeat",
+      "sourceEpgId": "Fatafeat.qa",
+      "notes": "source EPG id present but no target-country guide channel: Fatafeat.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Fox_Action_Movies_HD",
+      "sourceEpgId": "FOXMoviesAction.qa",
+      "notes": "source EPG id present but no target-country guide channel: FOXMoviesAction.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Fox_Movies_HD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Gourmet_HD",
+      "sourceEpgId": "Gourmet.qa",
+      "notes": "source EPG id present but no target-country guide channel: Gourmet.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_HGTV_HD",
+      "sourceEpgId": "HGTV.qa",
+      "notes": "source EPG id present but no target-country guide channel: HGTV.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Movies_HD1",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Movies_HD2",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Movies_HD3",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Movies_HD4",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Nat_Geo",
+      "sourceEpgId": "NationalGeographicAbuDhabi.ae",
+      "notes": "source EPG id present but no target-country guide channel: NationalGeographicAbuDhabi.ae"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Nat_People",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Nat_Wild",
+      "sourceEpgId": "NatGeoWild.qa",
+      "notes": "source EPG id present but no target-country guide channel: NatGeoWild.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_OutDoor_HD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Series_HD1",
+      "sourceEpgId": "beINSeries1.qa",
+      "notes": "source EPG id present but no target-country guide channel: beINSeries1.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Series_HD2",
+      "sourceEpgId": "beINSeries2.qa",
+      "notes": "source EPG id present but no target-country guide channel: beINSeries2.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_Travel_HD",
+      "sourceEpgId": "TravelChannel.qa",
+      "notes": "source EPG id present but no target-country guide channel: TravelChannel.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_fox_Life_HD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_fox_crime_HD",
+      "sourceEpgId": "FoxCrime.qa",
+      "notes": "source EPG id present but no target-country guide channel: FoxCrime.qa"
+    },
+    {
+      "category": "Bein Channels",
+      "name": "Ar||Bein_jeem_HD",
+      "sourceEpgId": "JeemTV.qa",
+      "notes": "source EPG id present but no target-country guide channel: JeemTV.qa"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- ABC Spark",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- AMC Ca",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- AMC HD CA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- BEIN SPORTS CANADA",
+      "sourceEpgId": "",
+      "notes": "manual alias target not in target guide metadata: CA:beINSportsCanada.ca"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- BNN HD CA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Edmonton",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC HD CA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Halifax",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC MONTREAL QC",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Montreal CA-FR",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC OTTAWA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Toronto SD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Vancouver HD CA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC Winnipeg",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CBC-Toronto HD",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CITY TORONTO",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CITYLGARY",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV 2 VANCOUVER",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV Calgary",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV MONTREAL Ca",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    }
+  ],
+  "reviewSamples": [
+    {
+      "category": "Canada",
+      "name": "Canada- MTV",
+      "target": "CA:MAtv.ca",
+      "confidence": "0.857"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- NTV News HD CA",
+      "target": "CA:CTVNewsChannel.ca",
+      "confidence": "0.875"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- crave 2",
+      "target": "CA:Crave1.ca",
+      "confidence": "0.857"
+    },
+    {
+      "category": "French-HD",
+      "name": "BFM Haute Provence",
+      "target": "FR:BFMDICIHauteProvence.fr",
+      "confidence": "0.878"
+    },
+    {
+      "category": "Spain",
+      "name": "Tele de porte",
+      "target": "ES:Teledeporte.es",
+      "confidence": "0.857"
+    },
+    {
+      "category": "UK",
+      "name": "UK-COMEDY EXTRA",
+      "target": "UK:ComedyCentral.uk",
+      "confidence": "0.846"
+    }
+  ]
+}
