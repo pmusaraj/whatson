@@ -14,11 +14,9 @@ import unicodedata
 from collections import Counter
 from difflib import SequenceMatcher
 from pathlib import Path
-from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data" / "uhf-live-channels-target-categories.csv"
-EPG_XML = ROOT / "web" / "data" / "epg.xml"
 IPTV_ORG_DIR = ROOT / "data" / "sources" / "iptv-org"
 OUT_CSV = ROOT / "data" / "uhf-channel-mapping.csv"
 OUT_JSON = ROOT / "data" / "uhf-channel-mapping.json"
@@ -109,7 +107,6 @@ FIELDNAMES = [
     "target_name",
     "target_country",
     "target_guide_sites",
-    "target_in_current_epg",
     "match_method",
     "confidence",
     "review",
@@ -150,11 +147,6 @@ def clean_source_epg_id(value: str | None) -> str:
     return value.strip()
 
 
-def current_epg_ids() -> set[str]:
-    root = ET.parse(EPG_XML).getroot()
-    return {channel.attrib["id"] for channel in root.findall("channel")}
-
-
 def guide_sites_by_channel(country: str) -> dict[str, list[str]]:
     path = IPTV_ORG_DIR / f"guide-mappings-{country}.json"
     if not path.exists():
@@ -172,12 +164,10 @@ def guide_sites_by_channel(country: str) -> dict[str, list[str]]:
 def load_targets() -> tuple[dict[str, dict], dict[str, str], dict[str, list[str]]]:
     """Load all iptv-org mapped channels for target countries.
 
-    The live app's current `epg.xml` is intentionally curated and small; this
-    mapping should cover the UHF playlist more broadly. We therefore match
-    against iptv-org channel metadata with guide mappings, while recording
-    whether each target is already present in the current generated EPG export.
+    This mapping should cover the UHF playlist broadly, so match against
+    iptv-org channel metadata with guide mappings rather than the smaller
+    browser guide payload.
     """
-    current_ids = current_epg_ids()
     targets: dict[str, dict] = {}
     raw_to_target: dict[str, str] = {}
     norm_to_targets: dict[str, list[str]] = {}
@@ -187,10 +177,9 @@ def load_targets() -> tuple[dict[str, dict], dict[str, str], dict[str, list[str]
         channels = json.loads(channels_path.read_text(encoding="utf-8"))
         for channel in channels:
             raw_id = channel["id"]
-            # Prefer channels that actually have guide mappings. Keep existing
-            # current-EPG IDs even if the metadata snapshot lacks a mapping row.
+            # Prefer channels that actually have guide mappings.
             target_id = f"{country}:{raw_id}"
-            if raw_id not in guide_sites and target_id not in current_ids:
+            if raw_id not in guide_sites:
                 continue
             name = channel.get("name") or raw_id
             targets[target_id] = {
@@ -199,7 +188,6 @@ def load_targets() -> tuple[dict[str, dict], dict[str, str], dict[str, list[str]
                 "country": country,
                 "raw_id": raw_id,
                 "guide_sites": guide_sites.get(raw_id, []),
-                "in_current_epg": target_id in current_ids,
             }
             raw_to_target[raw_id.lower()] = target_id
             raw_to_target[target_id.lower()] = target_id
@@ -320,7 +308,6 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
         "target_name": target.get("name", ""),
         "target_country": target.get("country", ""),
         "target_guide_sites": ";".join(target.get("guide_sites", [])),
-        "target_in_current_epg": "yes" if target.get("in_current_epg") else "no" if target_id else "",
         "match_method": method,
         "confidence": f"{confidence:.3f}",
         "review": review,
@@ -347,7 +334,6 @@ def main() -> int:
 
     summary = {
         "input": str(INPUT.relative_to(ROOT)),
-        "epgXml": str(EPG_XML.relative_to(ROOT)),
         "targetMetadata": str(IPTV_ORG_DIR.relative_to(ROOT)),
         "ignoredCategories": sorted(IGNORED_CATEGORIES),
         "sourceRows": len(source_rows),

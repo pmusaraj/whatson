@@ -3,7 +3,7 @@
 
 This script is intentionally data-driven:
 
-1. Refresh the upstream What's On TV XMLTV snapshots / web/data/epg.xml.
+1. Refresh the targeted UHF XMLTV snapshots under data/normalized/guide-uhf-*.xml.
 2. Rebuild data/uhf-channel-mapping.csv if the UHF channel list changed.
 3. Run this script to emit an XMLTV file containing only rows marked `ok`.
 
@@ -26,7 +26,6 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 MAPPING_CSV = ROOT / "data" / "uhf-channel-mapping.csv"
-SOURCE_EPG_XML = ROOT / "web" / "data" / "epg.xml"
 NORMALIZED_DIR = ROOT / "data" / "normalized"
 OUT_DIR = ROOT / "web" / "data" / "uhf"
 OUT_XML = OUT_DIR / "epg.xml"
@@ -44,7 +43,6 @@ CHANNEL_FIELDS = [
     "target_name",
     "target_country",
     "target_guide_sites",
-    "target_in_current_epg",
     "source_epg_channel_id",
     "logo_url",
 ]
@@ -99,12 +97,9 @@ def load_ok_mappings() -> list[dict[str, str]]:
 
 
 def source_xml_files() -> list[Path]:
-    files = []
-    if SOURCE_EPG_XML.exists():
-        files.append(SOURCE_EPG_XML)
-    files.extend(sorted(NORMALIZED_DIR.glob("guide-uhf-*.xml")))
+    files = sorted(NORMALIZED_DIR.glob("guide-uhf-*.xml"))
     if not files:
-        raise FileNotFoundError(f"Missing source XMLTV: {SOURCE_EPG_XML} and no {NORMALIZED_DIR}/guide-uhf-*.xml")
+        raise FileNotFoundError(f"Missing source XMLTV: no {NORMALIZED_DIR}/guide-uhf-*.xml")
     return files
 
 
@@ -114,8 +109,7 @@ def target_id_for_source_channel(path: Path, raw_id: str) -> str:
     match = re.match(r"guide-uhf-([A-Z]+)-", path.name)
     if match:
         return f"{match.group(1)}:{raw_id}"
-    # web/data/epg.xml already uses country-prefixed IDs, so this fallback is
-    # only for malformed/legacy inputs.
+    # Fallback for malformed/legacy inputs.
     return raw_id
 
 
@@ -162,11 +156,11 @@ def build_xmltv(rows: list[dict[str, str]]) -> tuple[ET.ElementTree, dict]:
         {
             "generator-info-name": "heywhatson.tv UHF custom XMLTV",
             "generator-info-url": "https://heywhatson.tv",
-            "source-info-name": "UHF OK mappings over curated XMLTV export",
+            "source-info-name": "UHF OK mappings over targeted guide snapshots",
             "date": generated_at,
         },
     )
-    tv.append(ET.Comment(f" Generated from {MAPPING_CSV.relative_to(ROOT)} and {SOURCE_EPG_XML.relative_to(ROOT)} at {generated_at} "))
+    tv.append(ET.Comment(f" Generated from {MAPPING_CSV.relative_to(ROOT)} and targeted guide-uhf snapshots at {generated_at} "))
 
     included_rows = []
     missing_source_targets = []
@@ -204,7 +198,6 @@ def build_xmltv(rows: list[dict[str, str]]) -> tuple[ET.ElementTree, dict]:
     summary = {
         "generatedAt": generated_at,
         "mappingCsv": str(MAPPING_CSV.relative_to(ROOT)),
-        "sourceEpgXml": str(SOURCE_EPG_XML.relative_to(ROOT)),
         "sourceXmlFiles": source_files,
         "outputXml": str(OUT_XML.relative_to(ROOT)),
         "outputGzip": str(OUT_GZ.relative_to(ROOT)),
