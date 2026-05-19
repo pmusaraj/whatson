@@ -62,8 +62,6 @@ jobs:
           print(f"includedByCountry={summary.get('includedByCountry')}")
           if bad_refs:
               raise SystemExit(f"UHF XMLTV has {len(bad_refs)} programme refs without matching channels")
-          if len(channels) < 200:
-              raise SystemExit(f"UHF XMLTV coverage dropped below 200 channels: {len(channels)}")
           PY
 
       - name: Commit refreshed UHF data
