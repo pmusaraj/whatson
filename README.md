@@ -38,9 +38,19 @@ The app is intentionally simple and static:
 - `data/normalized/` contains XMLTV guide snapshots fetched from validated public guide sources.
 - `scripts/refresh_epg.py` refreshes all curated XMLTV snapshots and rebuilds the static JSON payloads.
 - `scripts/build_web_data.py` converts XMLTV snapshots into browser-friendly files under `web/data/`.
+- `scripts/build_xmltv_export.py` aggregates the same 3-day XMLTV snapshots into `web/data/epg.xml` and `web/data/epg.xml.gz`.
 - `tests/` covers the data-building and normalization logic.
 
 The browser loads `web/data/countries.json`, then country payloads such as `web/data/FR.json` and `web/data/premium-FR.json`. Normal and premium payloads are merged client-side, de-duplicated by channel name, and rendered as schedule columns.
+
+The global XMLTV export is published at:
+
+```text
+https://heywhatson.tv/data/epg.xml
+https://heywhatson.tv/data/epg.xml.gz
+```
+
+Unlike the browser JSON, which is trimmed to the current 24-hour viewing window, the global XMLTV export uses the full 3-day refreshed XMLTV snapshots.
 
 Times are stored in UTC in the generated JSON. The browser renders the current guide window from the user's local time.
 
@@ -60,7 +70,8 @@ That script:
 2. Sets `CURR_DATE` to yesterday and grabs 3 days of guide data.
 3. Writes refreshed XMLTV snapshots to `data/normalized/`.
 4. Rebuilds `web/data/*.json` with a 24-hour browser payload window: now - 4h through now + 20h.
-5. Runs the unit tests and `node --check web/app.js`.
+5. Builds global 3-day XMLTV exports at `web/data/epg.xml` and `web/data/epg.xml.gz`.
+6. Runs the unit tests and `node --check web/app.js`.
 
 ## Run locally
 
@@ -82,9 +93,10 @@ The committed `web/data/` files are enough to run the app locally without refres
 
 ```bash
 python3 scripts/build_web_data.py
+python3 scripts/build_xmltv_export.py
 ```
 
-This reads `data/normalized/*.xml` and rewrites `web/data/*.json`.
+This reads `data/normalized/*.xml` and rewrites `web/data/*.json`, `web/data/epg.xml`, and `web/data/epg.xml.gz`.
 
 ## Refresh EPG snapshots locally
 
