@@ -100,6 +100,33 @@ class BuildWebDataTest(unittest.TestCase):
             )
 
         self.assertEqual([channel["name"] for channel in payload["channels"]], ["Canal+ Sport"])
+    def test_mls_apple_event_feed_preserves_overlapping_matches(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            guide = root / "guide.xml"
+            guide.write_text(
+                """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<tv>
+  <channel id=\"MLSSeasonPass.us\"><display-name>MLS Season Pass</display-name></channel>
+  <programme start=\"20260502120000 +0000\" stop=\"20260502143000 +0000\" channel=\"MLSSeasonPass.us\"><title>A vs B</title><category>Sports</category><category>Soccer</category><category>MLS</category><category>Apple TV</category></programme>
+  <programme start=\"20260502120000 +0000\" stop=\"20260502143000 +0000\" channel=\"MLSSeasonPass.us\"><title>C vs D</title><category>Sports</category><category>Soccer</category><category>MLS</category><category>Apple TV</category></programme>
+</tv>
+""",
+                encoding="utf-8",
+            )
+
+            payload = build_web_data.build_country_payload(
+                "US",
+                [build_web_data.LocalGuide(guide, "MLS Apple TV guide", "premium-mls-apple")],
+                root,
+                datetime(2026, 5, 2, 12, 15, tzinfo=timezone.utc),
+                premium_sports_only=True,
+            )
+
+        programs = payload["channels"][0]["programs"]
+        self.assertEqual([program["title"] for program in programs], ["A vs B", "C vs D"])
+        self.assertEqual(programs[0]["sportType"], "Football")
+        self.assertEqual(programs[0]["competition"], "MLS")
 
 
 if __name__ == "__main__":

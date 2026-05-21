@@ -3,7 +3,8 @@ const VISIBLE_HOURS = 9;
 const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
-const THEME_VERSION = "sports-on-now-filter-layout";
+const SPORTS_NOW_UPCOMING_MINUTES = 60;
+const THEME_VERSION = "mobile-sports-full-height";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -197,6 +198,16 @@ function isCurrent(program) {
   );
 }
 
+function startsWithinNextHour(program) {
+  const now = state.now.getTime();
+  const start = new Date(program.startAt).getTime();
+  return start > now && start <= now + SPORTS_NOW_UPCOMING_MINUTES * 60000;
+}
+
+function isCurrentOrStartingSoon(program) {
+  return isCurrent(program) || startsWithinNextHour(program);
+}
+
 function escapeHtml(value) {
   return String(value || "")
     .replaceAll("&", "&amp;")
@@ -356,8 +367,10 @@ function betterChannel(a, b) {
 }
 
 function mergePrograms(programs) {
+  const eventFeedPrograms = programs.filter(isMlsAppleProgram);
+  const dedupeCandidates = programs.filter((program) => !isMlsAppleProgram(program));
   const slots = new Map();
-  for (const program of programs) {
+  for (const program of dedupeCandidates) {
     const key = `${program.startAt}|${program.endAt}`;
     const existing = slots.get(key);
     if (!existing) {
@@ -387,7 +400,12 @@ function mergePrograms(programs) {
       deduped[overlapIndex] = program;
     }
   }
-  return deduped.sort((a, b) => a.startAt.localeCompare(b.startAt));
+  return [...deduped, ...eventFeedPrograms].sort((a, b) => a.startAt.localeCompare(b.startAt));
+}
+
+function isMlsAppleProgram(program) {
+  const categories = new Set((program.categories || []).map((category) => String(category).toLowerCase()));
+  return categories.has("mls") && categories.has("apple tv");
 }
 
 function programMetadataScore(program) {
@@ -485,6 +503,12 @@ const SPORT_BUCKETS = [
     terms: ["olympic", "olympics", "world cup", "commonwealth games", "pan american games"],
   },
   {
+    id: "american-football",
+    label: "American football",
+    emoji: "🏈",
+    terms: ["american football", "nfl", "ufl", "college football", "ncaa football", "ncaaf", "cfl"],
+  },
+  {
     id: "soccer",
     label: "Soccer",
     emoji: "⚽",
@@ -515,12 +539,6 @@ const SPORT_BUCKETS = [
     terms: ["tennis", "atp", "wta", "roland garros", "wimbledon", "us open", "australian open"],
   },
   {
-    id: "american-football",
-    label: "American football",
-    emoji: "🏈",
-    terms: ["american football", "nfl", "ncaa football", "cfl"],
-  },
-  {
     id: "golf",
     label: "Golf",
     emoji: "⛳",
@@ -533,6 +551,7 @@ const SPORTS_CATEGORY_TERMS = new Set([
   "sports",
   "soccer",
   "football",
+  "american football",
   "hockey",
   "basketball",
   "baseball",
@@ -547,6 +566,21 @@ const SPORTS_CATEGORY_TERMS = new Set([
   "cricket",
   "cycling",
 ]);
+
+const EMPTY_EVENT_LABEL_PATTERNS = [
+  /^(no|not any)\s+(live\s+|upcoming\s+)?(event|events|game|games|match|matches|program|programs|programme|programmes)(\s+(scheduled|available|found|today|now|in programma))?$/,
+  /^nothing\s+(scheduled|available|on|live)$/,
+  /^no\s+hay\s+eventos?$/,
+  /^sin\s+eventos?$/,
+  /^nessun\s+event[io](\s+in\s+(programma|onda))?$/,
+  /^nessuna\s+(partita|programmazione)$/,
+  /^aucun\s+evenement$/,
+  /^aucun\s+match$/,
+  /^keine\s+(veranstaltung|veranstaltungen|ereignisse|spiele)$/,
+  /^geen\s+(evenement|evenementen|wedstrijd|wedstrijden)$/,
+  /^sem\s+eventos?$/,
+  /^nenhum\s+evento$/,
+];
 
 const NON_SPORT_CATEGORY_TERMS = new Set([
   "sitcom",
@@ -597,10 +631,34 @@ function hasNonSportCategory(categories) {
   return categories.some((category) => NON_SPORT_CATEGORY_TERMS.has(category));
 }
 
+function isEmptyEventPlaceholder(program) {
+  const labels = [program.title, program.subtitle]
+    .map((value) => normalizeSearchText(value).trim())
+    .filter(Boolean);
+  return labels.some((label) => EMPTY_EVENT_LABEL_PATTERNS.some((pattern) => pattern.test(label)));
+}
+
+function genericSportsBucket() {
+  return {
+    id: "other-sports",
+    label: "Sports",
+    emoji: "🏟️",
+    terms: [],
+  };
+}
+
 function detectSportBucket(program) {
+  if (isEmptyEventPlaceholder(program)) {
+    return null;
+  }
+
   const parts = normalizedProgramParts(program);
   const sportsCategory = hasSportsCategory(parts.categories);
   const nonSportCategory = hasNonSportCategory(parts.categories);
+
+  if (includesTerm(parts.all, "rugby")) {
+    return genericSportsBucket();
+  }
 
   for (const bucket of SPORT_BUCKETS) {
     if (bucket.terms.some((term) => includesTerm(parts.strong, term))) {
@@ -631,7 +689,7 @@ function detectSportBucket(program) {
 }
 
 function isLiveSportsProgram(program) {
-  if (!isCurrent(program)) {
+  if (!isCurrentOrStartingSoon(program)) {
     return false;
   }
   return Boolean(detectSportBucket(program));
@@ -649,7 +707,7 @@ function currentLiveSportsResults(limit = 100) {
       const key = channelKey(countryData.country, channel.id);
       (channel.programs || []).forEach((program, index) => {
         const sport = detectSportBucket(program);
-        if (!sport || !isCurrent(program)) {
+        if (!sport || !isCurrentOrStartingSoon(program)) {
           return;
         }
         const duplicateKey = [countryData.country, channel.id, program.title, program.startAt, program.endAt].join("|");
@@ -657,24 +715,25 @@ function currentLiveSportsResults(limit = 100) {
           return;
         }
         seen.add(duplicateKey);
-        results.push({ channel, countryData, key, program, index, sport });
+        results.push({
+          channel,
+          countryData,
+          key,
+          program,
+          index,
+          sport,
+          current: isCurrent(program),
+        });
       });
     }
   }
-  const order = new Map(SPORT_BUCKETS.map((bucket, index) => [bucket.id, index]));
-  order.set("other-sports", SPORT_BUCKETS.length);
   return results
-    .sort((a, b) => {
-      const sportOrder = (order.get(a.sport.id) ?? 99) - (order.get(b.sport.id) ?? 99);
-      if (sportOrder) {
-        return sportOrder;
-      }
-      return (
-        a.countryData.country.localeCompare(b.countryData.country) ||
-        a.channel.name.localeCompare(b.channel.name) ||
-        a.program.title.localeCompare(b.program.title)
-      );
-    })
+    .sort((a, b) =>
+      a.program.startAt.localeCompare(b.program.startAt) ||
+      a.countryData.country.localeCompare(b.countryData.country) ||
+      a.channel.name.localeCompare(b.channel.name) ||
+      a.program.title.localeCompare(b.program.title),
+    )
     .slice(0, limit);
 }
 
@@ -800,13 +859,13 @@ function renderLiveSportsResults() {
   const filters = availableSportFilters(allResults);
   const results = visibleLiveSportsResults(allResults);
   const countText = results.length === allResults.length
-    ? `${results.length} event${results.length === 1 ? "" : "s"} now`
-    : `${results.length} of ${allResults.length} event${allResults.length === 1 ? "" : "s"} now`;
+    ? `${results.length} event${results.length === 1 ? "" : "s"} now or starting soon`
+    : `${results.length} of ${allResults.length} event${allResults.length === 1 ? "" : "s"} now or starting soon`;
   els.searchResults.hidden = false;
   els.searchResults.innerHTML = `
     <div class="search-results-heading live-sports-heading">
       ${renderSportFilters(filters)}
-      <span>${allResults.length ? countText : "No sports on now"}</span>
+      <span>${allResults.length ? countText : "No sports now or starting soon"}</span>
       <button class="secondary-button live-sports-close" type="button" data-close-live-sports aria-label="Close sports on now">×</button>
     </div>
     ${
@@ -815,8 +874,8 @@ function renderLiveSportsResults() {
       <div class="show-results-list live-sports-list">
         ${results
           .map(
-            ({ channel, countryData, key, program, index, sport }) => `
-              <button class="show-result current live-sport-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
+            ({ channel, countryData, key, program, index, sport, current }) => `
+              <button class="show-result ${current ? "current" : ""} live-sport-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
                 <span class="show-result-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</span>
                 <span class="sport-chip">${sport.emoji} ${escapeHtml(sport.label)}</span>
                 <span class="show-result-title">${escapeHtml(program.title)}</span>
@@ -962,7 +1021,33 @@ function overlappingPrograms(channel, start, end) {
     });
 }
 
-function programmeBlock(program, start, end, channelKeyValue, programIndex) {
+function layoutProgramColumns(programEntries) {
+  const entries = programEntries.map((entry) => ({ ...entry, laneIndex: 0, laneCount: 1 }));
+  const active = [];
+  for (const entry of entries) {
+    const start = new Date(entry.program.startAt).getTime();
+    const end = new Date(entry.program.endAt).getTime();
+    for (let index = active.length - 1; index >= 0; index -= 1) {
+      if (active[index].end <= start) {
+        active.splice(index, 1);
+      }
+    }
+    const usedLanes = new Set(active.map((item) => item.entry.laneIndex));
+    let laneIndex = 0;
+    while (usedLanes.has(laneIndex)) {
+      laneIndex += 1;
+    }
+    entry.laneIndex = laneIndex;
+    active.push({ entry, end });
+    const laneCount = Math.max(...active.map((item) => item.entry.laneIndex)) + 1;
+    for (const item of active) {
+      item.entry.laneCount = Math.max(item.entry.laneCount, laneCount);
+    }
+  }
+  return entries;
+}
+
+function programmeBlock(program, start, end, channelKeyValue, programIndex, laneIndex = 0, laneCount = 1) {
   const programStart = new Date(program.startAt);
   const programEnd = new Date(program.endAt);
   const clippedStart = programStart < start ? start : programStart;
@@ -978,8 +1063,16 @@ function programmeBlock(program, start, end, channelKeyValue, programIndex) {
   const current = isCurrent(program);
   const tags = programTags(program);
 
+  const laneGap = 0.16;
+  const laneWidth = laneCount > 1 ? 100 / laneCount : 100;
+  const laneLeft = laneIndex * laneWidth;
+  const laneStyle =
+    laneCount > 1
+      ? `left: calc(${laneLeft}% + 0.25rem); right: auto; width: calc(${laneWidth}% - ${laneGap + 0.5}rem);`
+      : "";
+
   return `
-    <article class="program-block ${current ? "current" : ""}" role="button" tabindex="0" data-channel-key="${escapeHtml(channelKeyValue)}" data-program-index="${programIndex}" aria-label="Show details for ${escapeHtml(program.title)}" style="top: ${top}px; height: ${height}px">
+    <article class="program-block ${current ? "current" : ""}" role="button" tabindex="0" data-channel-key="${escapeHtml(channelKeyValue)}" data-program-index="${programIndex}" aria-label="Show details for ${escapeHtml(program.title)}" style="top: ${top}px; height: ${height}px; ${laneStyle}">
       <div class="program-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
       <div class="program-title">${escapeHtml(program.title)}</div>
       ${program.subtitle ? `<div class="program-subtitle">${escapeHtml(program.subtitle)}</div>` : ""}
@@ -1035,10 +1128,10 @@ function renderGuide() {
 
   const columns = channels
     .map((channel) => {
-      const programs = overlappingPrograms(channel, start, end);
+      const programs = layoutProgramColumns(overlappingPrograms(channel, start, end));
       return `
         <div class="schedule-column" style="height: ${totalHeight}px">
-          ${programs.length ? programs.map(({ program, index }) => programmeBlock(program, start, end, channel.key, index)).join("") : `<div class="empty-program">No program in this window</div>`}
+          ${programs.length ? programs.map(({ program, index, laneIndex, laneCount }) => programmeBlock(program, start, end, channel.key, index, laneIndex, laneCount)).join("") : `<div class="empty-program">No program in this window</div>`}
         </div>
       `;
     })
@@ -1245,7 +1338,6 @@ els.channelPicker.addEventListener("click", (event) => {
     isMobileLayout() &&
     state.mobileView === "guide" &&
     !state.search.trim() &&
-    !state.liveSportsOpen &&
     !event.target.closest("button")
   ) {
     setMobileView("picker");

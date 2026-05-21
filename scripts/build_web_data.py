@@ -38,8 +38,8 @@ PREMIUM_SPORTS_TERMS = re.compile(
     r"(canal\+|canal plus|bein|dazn|rmc sport|eurosport|multisports|infosport|"
     r"movistar|laliga|liga de campeones|champions|vamos|deportes|golf|"
     r"tsn|sportsnet|rds|tva sports|cbs sports|espn|fox sports|fs1|fs2|"
-    r"nbc sports|nfl network|mlb network|nba tv|tennis channel|sky sports|"
-    r"tnt sports|premier sports|sky sport|rai sport|sportitalia|sport tv|"
+    r"nbc sports|nfl network|mlb network|nba tv|tennis channel|mls season pass|apple tv mls|"
+    r"sky sports|tnt sports|premier sports|sky sport|rai sport|sportitalia|sport tv|"
     r"sporttv|s sport|trt spor|sportdigital|benfica tv|sporting tv|tudn|"
     r"claro sports|sporTV|premiere clubes|combate|band sports)",
     re.I,
@@ -48,7 +48,7 @@ PREMIUM_SPORTS_TERMS = re.compile(
 PREMIUM_SPORTS_ID_TERMS = re.compile(
     r"(CanalPlus|beIN|DAZN|RMCSport|Eurosport|MultiSports|InfosportPlus|"
     r"Movistar|LaLiga|LigadeCampeones|Vamos|Deportes|Golf|TSN|Sportsnet|RDS|TVASports|CBSSports|"
-    r"ESPN|FoxSports|NBCSports|NFLNetwork|MLBNetwork|NBATV|TennisChannel|SkySports|TNTSports|"
+    r"ESPN|FoxSports|NBCSports|NFLNetwork|MLBNetwork|NBATV|TennisChannel|MLSSeasonPass|AppleTVMLS|SkySports|TNTSports|"
     r"PremierSports|SkySport|RaiSport|Sportitalia|SportTV|SSport|TRTSpor|Sportdigital|BenficaTV|SportingTV|"
     r"TUDN|ClaroSports|SporTV|PremiereClubes|Combate|BandSports)",
     re.I,
@@ -126,6 +126,7 @@ PREMIUM_SPORTS_GUIDES = {
     "US": [
         LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvtv.us.xml", "TVTV US sports guide", "premium-tvtv-us"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvguide.com.xml", "TV Guide US sports guide", "premium-tvguide-us"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-US-mls-apple.xml", "MLS Apple TV guide", "premium-mls-apple"),
     ],
     "UK": [
         LocalGuide(NORMALIZED_DIR / "guide-premium-UK-virgintvgo.virginmedia.com.xml", "Virgin TV Go UK sports guide", "premium-virgin-uk"),
@@ -241,7 +242,7 @@ def first_image_url(programme: ET.Element) -> str | None:
 def infer_sport_type(title: str, description: str | None, categories: list[str]) -> str | None:
     haystack = " ".join([title, description or "", *categories]).lower()
     sport_terms = [
-        ("Football", r"football|fútbol|soccer|premier league|laliga|liga de campeones|champions league|ligue 1"),
+        ("Football", r"football|fútbol|soccer|\bmls\b|premier league|laliga|liga de campeones|champions league|ligue 1"),
         ("Formula 1", r"formule 1|formula 1|\bf1\b|grand prix|auto racing|automobilisme"),
         ("Hockey", r"hockey|\bnhl\b"),
         ("Tennis", r"tennis|open de madrid|madrid open|roland-garros|wimbledon|atp|wta"),
@@ -269,6 +270,8 @@ def infer_competition(title: str, description: str | None, categories: list[str]
         ("LaLiga Hypermotion", r"laliga hypermotion"),
         ("LaLiga", r"laliga ea sports|\blaliga\b"),
         ("Premier League", r"premier league"),
+        ("MLS", r"\bmls\b|major league soccer|mls season pass"),
+        ("Leagues Cup", r"leagues cup"),
         ("Formula 1", r"formule 1|formula 1|\bf1\b"),
         ("NHL", r"\bnhl\b"),
         ("MLB", r"\bmlb\b"),
@@ -318,8 +321,16 @@ def metadata_score(program: dict) -> int:
     ) + len(program.get("categories") or [])
 
 
+def is_mls_apple_program(channel_id: str, program: dict) -> bool:
+    categories = {str(category).lower() for category in program.get("categories") or []}
+    return channel_id == "MLSSeasonPass.us" or ({"mls", "apple tv"} <= categories)
+
+
 def add_program(programs_by_channel: dict, channel_id: str, program: dict) -> None:
     programs = programs_by_channel.setdefault(channel_id, [])
+    if is_mls_apple_program(channel_id, program):
+        programs.append(program)
+        return
     for index, existing in enumerate(programs):
         same_slot = existing["startAt"] == program["startAt"] and existing["endAt"] == program["endAt"]
         overlapping_duplicate = program_overlap_ratio(existing, program) >= 0.5

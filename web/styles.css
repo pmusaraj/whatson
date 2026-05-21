@@ -835,6 +835,17 @@ body[data-mobile-view="picker"] .picker-panel > * {
   max-height: 38vh;
 }
 
+body[data-live-sports-open="true"] .search-results {
+  flex: 1 1 auto;
+  max-height: none;
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+body[data-live-sports-open="true"] .guide {
+  display: none;
+}
+
 .show-result,
 .live-sport-result {
   grid-template-columns: 1fr;

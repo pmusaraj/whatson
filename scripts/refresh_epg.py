@@ -112,10 +112,18 @@ def main() -> int:
             print(f"- {failure}", flush=True)
 
     if args.dry_run:
+        print("$ python3 scripts/build_mls_apple_xmltv.py")
         print("$ python3 scripts/build_web_data.py")
         print("$ python3 -m unittest discover -s tests -v")
         print("$ node --check web/app.js")
         return 0
+
+    try:
+        run(["python3", "scripts/build_mls_apple_xmltv.py"])
+    except subprocess.CalledProcessError as error:
+        print(f"FAILED exit {error.returncode}: build_mls_apple_xmltv.py; using previous MLS Apple snapshot if present", flush=True)
+    except Exception as error:
+        print(f"FAILED: build_mls_apple_xmltv.py: {error}; using previous MLS Apple snapshot if present", flush=True)
 
     run(["python3", "scripts/build_web_data.py"])
     run(["python3", "-m", "unittest", "discover", "-s", "tests", "-v"])
