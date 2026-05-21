@@ -120,6 +120,68 @@ h2 {
   outline-offset: 1px;
 }
 
+.live-sports-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 750;
+}
+
+.live-sports-toggle:hover,
+.live-sports-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+  outline: 2px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 1px;
+}
+
+.live-sports-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  outline: none;
+}
+
+.sport-chip {
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.sport-filter-button {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 1rem;
+  opacity: 0.42;
+}
+
+.sport-filter-button:hover,
+.sport-filter-button:focus-visible {
+  border-color: var(--accent);
+  background: var(--surface-strong);
+  color: var(--text);
+  outline: 2px solid color-mix(in srgb, var(--accent) 24%, transparent);
+  outline-offset: 1px;
+}
+
+.sport-filter-button.enabled {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  opacity: 1;
+  outline: none;
+}
+
+.sport-filter-button.enabled:hover,
+.sport-filter-button.enabled:focus-visible {
+  background: color-mix(in srgb, var(--accent-soft) 72%, white);
+  outline: 2px solid color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
 .search {
   border: 1px solid var(--border);
   border-radius: 14px;

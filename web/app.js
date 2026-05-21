@@ -3,7 +3,7 @@ const VISIBLE_HOURS = 9;
 const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
-const THEME_VERSION = "accent-search";
+const THEME_VERSION = "sports-on-now-filter-layout";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -19,11 +19,14 @@ const state = {
   now: new Date(),
   mobileView: "guide",
   searchOpen: false,
+  liveSportsOpen: false,
+  disabledSportFilters: new Set(),
 };
 
 const els = {
   status: document.querySelector("#status"),
   countryFlags: document.querySelector("#country-flags"),
+  liveSportsToggle: document.querySelector("#live-sports-toggle"),
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   channelPicker: document.querySelector("#channel-picker"),
@@ -473,6 +476,246 @@ function programMatchesSearch(countryData, channel, program, query) {
   return normalizeSearchText(haystack).includes(query);
 }
 
+
+const SPORT_BUCKETS = [
+  {
+    id: "major-events",
+    label: "Major event",
+    emoji: "🏅",
+    terms: ["olympic", "olympics", "world cup", "commonwealth games", "pan american games"],
+  },
+  {
+    id: "soccer",
+    label: "Soccer",
+    emoji: "⚽",
+    terms: ["soccer", "football", "fifa", "uefa", "champions league", "premier league", "la liga", "ligue 1", "serie a", "bundesliga", "copa libertadores", "mls"],
+  },
+  {
+    id: "hockey",
+    label: "Hockey",
+    emoji: "🏒",
+    terms: ["hockey", "nhl", "ice hockey", "iihf"],
+  },
+  {
+    id: "basketball",
+    label: "Basketball",
+    emoji: "🏀",
+    terms: ["basketball", "nba", "wnba", "euroleague", "lecb"],
+  },
+  {
+    id: "baseball",
+    label: "Baseball",
+    emoji: "⚾",
+    terms: ["baseball", "mlb"],
+  },
+  {
+    id: "tennis",
+    label: "Tennis",
+    emoji: "🎾",
+    terms: ["tennis", "atp", "wta", "roland garros", "wimbledon", "us open", "australian open"],
+  },
+  {
+    id: "american-football",
+    label: "American football",
+    emoji: "🏈",
+    terms: ["american football", "nfl", "ncaa football", "cfl"],
+  },
+  {
+    id: "golf",
+    label: "Golf",
+    emoji: "⛳",
+    terms: ["golf", "pga", "lpga", "masters", "ryder cup"],
+  },
+];
+
+const SPORTS_CATEGORY_TERMS = new Set([
+  "sport",
+  "sports",
+  "soccer",
+  "football",
+  "hockey",
+  "basketball",
+  "baseball",
+  "tennis",
+  "golf",
+  "extreme",
+  "motorsports",
+  "watersports",
+  "boxing",
+  "mma",
+  "rugby",
+  "cricket",
+  "cycling",
+]);
+
+const NON_SPORT_CATEGORY_TERMS = new Set([
+  "sitcom",
+  "comedy",
+  "drama",
+  "movie",
+  "movies",
+  "film",
+  "documentary",
+  "news",
+  "children",
+  "kids",
+  "reality",
+  "talk",
+  "entertainment",
+]);
+
+function normalizedProgramParts(program) {
+  const categories = program.categories || [];
+  return {
+    strong: normalizeSearchText([
+      program.sportType,
+      program.competition,
+      ...categories,
+    ].filter(Boolean).join(" ")),
+    all: normalizeSearchText([
+      program.title,
+      program.subtitle,
+      program.description,
+      program.sportType,
+      program.competition,
+      ...categories,
+    ].filter(Boolean).join(" ")),
+    categories: categories.map((category) => normalizeSearchText(category)),
+  };
+}
+
+function includesTerm(haystack, term) {
+  const normalized = normalizeSearchText(term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^|[^a-z0-9])${normalized}([^a-z0-9]|$)`).test(haystack);
+}
+
+function hasSportsCategory(categories) {
+  return categories.some((category) => SPORTS_CATEGORY_TERMS.has(category));
+}
+
+function hasNonSportCategory(categories) {
+  return categories.some((category) => NON_SPORT_CATEGORY_TERMS.has(category));
+}
+
+function detectSportBucket(program) {
+  const parts = normalizedProgramParts(program);
+  const sportsCategory = hasSportsCategory(parts.categories);
+  const nonSportCategory = hasNonSportCategory(parts.categories);
+
+  for (const bucket of SPORT_BUCKETS) {
+    if (bucket.terms.some((term) => includesTerm(parts.strong, term))) {
+      if (!nonSportCategory || sportsCategory) {
+        return bucket;
+      }
+    }
+  }
+
+  for (const bucket of SPORT_BUCKETS) {
+    if (bucket.terms.some((term) => includesTerm(parts.all, term))) {
+      if (sportsCategory || !nonSportCategory) {
+        return bucket;
+      }
+    }
+  }
+
+  if (sportsCategory && (program.sportType || program.competition)) {
+    return {
+      id: "other-sports",
+      label: program.sportType || "Sports",
+      emoji: "🏟️",
+      terms: [],
+    };
+  }
+
+  return null;
+}
+
+function isLiveSportsProgram(program) {
+  if (!isCurrent(program)) {
+    return false;
+  }
+  return Boolean(detectSportBucket(program));
+}
+
+function currentLiveSportsResults(limit = 100) {
+  const results = [];
+  const seen = new Set();
+  for (const country of state.countries) {
+    const countryData = state.countryDataByCode.get(country.code);
+    if (!countryData) {
+      continue;
+    }
+    for (const channel of countryData.channels) {
+      const key = channelKey(countryData.country, channel.id);
+      (channel.programs || []).forEach((program, index) => {
+        const sport = detectSportBucket(program);
+        if (!sport || !isCurrent(program)) {
+          return;
+        }
+        const duplicateKey = [countryData.country, channel.id, program.title, program.startAt, program.endAt].join("|");
+        if (seen.has(duplicateKey)) {
+          return;
+        }
+        seen.add(duplicateKey);
+        results.push({ channel, countryData, key, program, index, sport });
+      });
+    }
+  }
+  const order = new Map(SPORT_BUCKETS.map((bucket, index) => [bucket.id, index]));
+  order.set("other-sports", SPORT_BUCKETS.length);
+  return results
+    .sort((a, b) => {
+      const sportOrder = (order.get(a.sport.id) ?? 99) - (order.get(b.sport.id) ?? 99);
+      if (sportOrder) {
+        return sportOrder;
+      }
+      return (
+        a.countryData.country.localeCompare(b.countryData.country) ||
+        a.channel.name.localeCompare(b.channel.name) ||
+        a.program.title.localeCompare(b.program.title)
+      );
+    })
+    .slice(0, limit);
+}
+
+
+function availableSportFilters(results) {
+  const filters = [];
+  const seen = new Set();
+  for (const result of results) {
+    if (seen.has(result.sport.id)) {
+      continue;
+    }
+    seen.add(result.sport.id);
+    filters.push(result.sport);
+  }
+  return filters;
+}
+
+function visibleLiveSportsResults(results) {
+  return results.filter((result) => !state.disabledSportFilters.has(result.sport.id));
+}
+
+function renderSportFilters(filters) {
+  if (!filters.length) {
+    return "";
+  }
+  return `
+    <div class="sport-filter-bar" aria-label="Filter sports">
+      ${filters
+        .map((sport) => {
+          const enabled = !state.disabledSportFilters.has(sport.id);
+          return `
+            <button class="sport-filter-button ${enabled ? "enabled" : ""}" type="button" data-sport-filter="${escapeHtml(sport.id)}" aria-pressed="${enabled}" title="${escapeHtml(sport.label)}" aria-label="${enabled ? "Hide" : "Show"} ${escapeHtml(sport.label)}">
+              <span aria-hidden="true">${sport.emoji}</span>
+            </button>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
 function searchProgramResults(query, limit = 60) {
   if (!query) {
     return [];
@@ -511,6 +754,11 @@ function searchProgramResults(query, limit = 60) {
 }
 
 function renderSearchResults() {
+  if (state.liveSportsOpen) {
+    renderLiveSportsResults();
+    return;
+  }
+
   const query = normalizeSearchText(state.search.trim());
   if (!query) {
     els.searchResults.hidden = true;
@@ -545,6 +793,61 @@ function renderSearchResults() {
         : `<div class="empty-program">Try a channel, sport, team, league, or programme title.</div>`
     }
   `;
+}
+
+function renderLiveSportsResults() {
+  const allResults = currentLiveSportsResults();
+  const filters = availableSportFilters(allResults);
+  const results = visibleLiveSportsResults(allResults);
+  const countText = results.length === allResults.length
+    ? `${results.length} event${results.length === 1 ? "" : "s"} now`
+    : `${results.length} of ${allResults.length} event${allResults.length === 1 ? "" : "s"} now`;
+  els.searchResults.hidden = false;
+  els.searchResults.innerHTML = `
+    <div class="search-results-heading live-sports-heading">
+      ${renderSportFilters(filters)}
+      <span>${allResults.length ? countText : "No sports on now"}</span>
+      <button class="secondary-button live-sports-close" type="button" data-close-live-sports aria-label="Close sports on now">×</button>
+    </div>
+    ${
+      results.length
+        ? `
+      <div class="show-results-list live-sports-list">
+        ${results
+          .map(
+            ({ channel, countryData, key, program, index, sport }) => `
+              <button class="show-result current live-sport-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
+                <span class="show-result-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</span>
+                <span class="sport-chip">${sport.emoji} ${escapeHtml(sport.label)}</span>
+                <span class="show-result-title">${escapeHtml(program.title)}</span>
+                <span class="show-result-meta">${flagEmoji(countryData.country)} ${escapeHtml(channel.name)}</span>
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+    `
+        : `<div class="empty-program">No sports match the active filters.</div>`
+    }
+  `;
+}
+
+function setLiveSportsOpen(open) {
+  state.liveSportsOpen = open;
+  if (open) {
+    state.search = "";
+    els.channelSearch.value = "";
+    setMobileSearchOpen(false);
+    if (isMobileLayout()) {
+      setMobileView("guide");
+    }
+  }
+  document.body.dataset.liveSportsOpen = String(open);
+  document.body.dataset.guideEmpty = String(selectedChannels().length === 0);
+  els.liveSportsToggle?.setAttribute("aria-expanded", String(open));
+  renderCountryFlags();
+  renderChannelList();
+  renderSearchResults();
 }
 
 function renderChannelList() {
@@ -699,6 +1002,7 @@ function timelineLabels(start, totalMinutes) {
 
 function renderGuide() {
   const channels = selectedChannels();
+  document.body.dataset.guideEmpty = String(!channels.length);
 
   if (!channels.length) {
     els.guide.innerHTML = `
@@ -867,20 +1171,33 @@ function isMobileLayout() {
 
 function render() {
   els.status.textContent = "";
+  document.body.dataset.guideEmpty = String(selectedChannels().length === 0);
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
   renderGuide();
   setMobileView(state.mobileView);
   setMobileSearchOpen(state.searchOpen);
+  document.body.dataset.liveSportsOpen = String(state.liveSportsOpen);
+  els.liveSportsToggle?.setAttribute("aria-expanded", String(state.liveSportsOpen));
+  if (els.clearSelection) {
+    els.clearSelection.hidden = state.selectedChannelKeys.length === 0;
+  }
 }
 
 els.channelSearch.addEventListener("input", (event) => {
+  state.liveSportsOpen = false;
+  document.body.dataset.liveSportsOpen = "false";
+  els.liveSportsToggle?.setAttribute("aria-expanded", "false");
   state.search = event.target.value;
   document.body.dataset.searching = String(Boolean(state.search.trim()));
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
+});
+
+els.liveSportsToggle?.addEventListener("click", () => {
+  setLiveSportsOpen(!state.liveSportsOpen);
 });
 
 els.countryFlags.addEventListener("click", (event) => {
@@ -928,6 +1245,7 @@ els.channelPicker.addEventListener("click", (event) => {
     isMobileLayout() &&
     state.mobileView === "guide" &&
     !state.search.trim() &&
+    !state.liveSportsOpen &&
     !event.target.closest("button")
   ) {
     setMobileView("picker");
@@ -952,6 +1270,7 @@ els.mobileSearch?.addEventListener("click", () => {
 els.channelSearch.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && isMobileLayout()) {
     event.preventDefault();
+    setLiveSportsOpen(false);
     setMobileSearchOpen(false);
   }
 });
@@ -963,6 +1282,21 @@ if (els.themeSelect) {
 }
 
 els.searchResults.addEventListener("click", (event) => {
+  const filterButton = event.target.closest("[data-sport-filter]");
+  if (filterButton) {
+    const sportId = filterButton.dataset.sportFilter;
+    if (state.disabledSportFilters.has(sportId)) {
+      state.disabledSportFilters.delete(sportId);
+    } else {
+      state.disabledSportFilters.add(sportId);
+    }
+    renderLiveSportsResults();
+    return;
+  }
+  if (event.target.closest("[data-close-live-sports]")) {
+    setLiveSportsOpen(false);
+    return;
+  }
   const result = event.target.closest(".show-result");
   if (!result) {
     return;
@@ -1013,6 +1347,9 @@ async function start() {
     window.setInterval(() => {
       state.now = new Date();
       renderGuide();
+      if (state.liveSportsOpen) {
+        renderLiveSportsResults();
+      }
     }, 60000);
   } catch (error) {
     els.status.textContent = error.message;
