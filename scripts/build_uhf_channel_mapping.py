@@ -57,6 +57,13 @@ MANUAL_ALIASES = {
     ("CA", "Canada- Sports Net 360 FHD"): "CA:Sportsnet360.ca",
     ("CA", "Canada- Sports Net One HD"): "CA:SportsnetOne.ca",
     ("CA", "Canada- Sports Net World HD"): "CA:SportsnetWorld.ca",
+    ("CA", "Canada- CBC Toronto HD"): "CA:CBLTDT.ca",
+    ("CA", "Canada- CBC Toronto SD"): "CA:CBLTDT.ca",
+    ("CA", "Canada- CBC-Toronto HD"): "CA:CBLTDT.ca",
+    ("CA", "Canada- CBC Vancouver HD CA"): "CA:CBUTDT.ca",
+    ("CA", "Canada- CBC MONTREAL QC"): "CA:CBMTDT.ca",
+    ("CA", "Canada- CBC Montreal CA-FR"): "CA:CBFTDT.ca",
+    ("CA", "Canada- CBC News Network"): "CA:CBCNewsNetwork.ca",
     ("CA", "Canada- TSN 1 HD CA"): "CA:TSN1.ca",
     ("CA", "Canada- TSN 2 HD CA"): "CA:TSN2.ca",
     ("CA", "Canada- TSN 3 HD CA"): "CA:TSN3.ca",
@@ -91,6 +98,9 @@ MANUAL_ALIASES = {
     ("US", "USA- ESPNU"): "US:ESPNU.us",
     ("US", "USA- FOX SPORTS 1"): "US:FoxSports1.us",
     ("US", "USA- FOX SPORTS 2"): "US:FoxSports2.us",
+    ("US", "USA-HBO-1"): "US:HBO.us",
+    ("US", "USA-HBO-2"): "US:HBO2.us",
+    ("US", "USA-HBO_ZONE"): "US:HBOZone.us",
     ("US", "USA- MLB NETWORK"): "US:MLBNetwork.us",
     ("US", "USA- NBA TV"): "US:NBATV.us",
     ("US", "USA- NFL NETWORK"): "US:NFLNetwork.us",
@@ -212,6 +222,7 @@ def skip_fuzzy_name(name: str) -> bool:
         r"eurosport\s+(?:360|[3-9])\b",
         r"canal\+\s+sports?\s+(?:fhd\s*)?\d+",
         r"canal\+\s+sport\s+[2-9]\b",
+        r"hbo[-_ ]family\b",
         r"be?in[-_ ]sports[-_ ]max[-_ ]\d+",
     ]
     return any(re.search(pattern, lowered) for pattern in event_patterns)
@@ -250,14 +261,17 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
     notes = ""
 
     manual_key = (source_country or "", name)
-    if manual_key in MANUAL_ALIASES:
-        candidate = MANUAL_ALIASES[manual_key]
-        if candidate in targets:
-            target_id = candidate
-            method = "manual_alias"
-            confidence = 1.0
-        else:
-            notes = f"manual alias target not in target guide metadata: {candidate}"
+    original_manual_key = (source_country or "", row.get("original_name") or "")
+    for candidate_key in (manual_key, original_manual_key):
+        if candidate_key in MANUAL_ALIASES:
+            candidate = MANUAL_ALIASES[candidate_key]
+            if candidate in targets:
+                target_id = candidate
+                method = "manual_alias"
+                confidence = 1.0
+                break
+            else:
+                notes = f"manual alias target not in target guide metadata: {candidate}"
 
     if not target_id and clean_epg:
         candidate = raw_to_target.get(clean_epg.lower())
@@ -275,7 +289,7 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
 
     if not target_id:
         if skip_fuzzy_name(name):
-            notes = notes or "event/pop-up channel; not mapped to parent linear EPG channel"
+            notes = notes or "ambiguous/event channel; not mapped to a different parent/region EPG channel"
         else:
             scoped = country_targets(targets, source_country)
             candidate, score = best_fuzzy(name, scoped)

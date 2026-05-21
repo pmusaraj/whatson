@@ -2,19 +2,19 @@
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "outputPattern": "data/sources/iptv-org/custom-uhf-<country>-<site>.channels.xml",
   "refreshScript": "python3 scripts/refresh_epg.py",
-  "okUniqueTargets": 321,
+  "okUniqueTargets": 324,
   "writtenFiles": [
     {
       "country": "CA",
       "site": "tvhebdo.com",
       "path": "data/sources/iptv-org/custom-uhf-CA-tvhebdo.com.channels.xml",
-      "channels": 19
+      "channels": 20
     },
     {
       "country": "CA",
       "site": "tvpassport.com",
       "path": "data/sources/iptv-org/custom-uhf-CA-tvpassport.com.channels.xml",
-      "channels": 53
+      "channels": 55
     },
     {
       "country": "ES",
@@ -144,7 +144,7 @@
     }
   ],
   "channelsByCountry": {
-    "CA": 72,
+    "CA": 75,
     "ES": 37,
     "FR": 118,
     "UK": 40,

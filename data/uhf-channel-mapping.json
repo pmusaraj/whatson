@@ -516,11 +516,11 @@
     "original_name": "Canada- CBC Toronto HD",
     "source_epg_channel_id": "CA:CBATDT.ca",
     "source_country": "CA",
-    "target_xmltv_id": "CA:CBATDT.ca",
-    "target_name": "CBAT-DT",
+    "target_xmltv_id": "CA:CBLTDT.ca",
+    "target_name": "CBLT-DT",
     "target_country": "CA",
-    "target_guide_sites": "ontvtonight.com;tvpassport.com",
-    "match_method": "source_epg_id_exact",
+    "target_guide_sites": "ontvtonight.com;tvpassport.com;tvtv.us",
+    "match_method": "manual_alias",
     "confidence": "1.000",
     "review": "ok",
     "notes": "",
@@ -771,14 +771,14 @@
     "original_name": "Canada- CBC MONTREAL QC",
     "source_epg_channel_id": "",
     "source_country": "CA",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.476",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "CA:CBMTDT.ca",
+    "target_name": "CBMT-DT",
+    "target_country": "CA",
+    "target_guide_sites": "tvhebdo.com;tvpassport.com;tvtv.us",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/007bf-thumbnail_canada.jpg"
   },
   {
@@ -788,14 +788,14 @@
     "original_name": "Canada- CBC Montreal CA-FR",
     "source_epg_channel_id": "",
     "source_country": "CA",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.476",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "CA:CBFTDT.ca",
+    "target_name": "CBFT-DT",
+    "target_country": "CA",
+    "target_guide_sites": "ontvtonight.com;tvhebdo.com;tvtv.us",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/007bf-thumbnail_canada.jpg"
   },
   {
@@ -809,7 +809,7 @@
     "target_name": "CBC News Network",
     "target_country": "CA",
     "target_guide_sites": "i.mjh.nz;ontvtonight.com;plex.tv;tvhebdo.com;tvpassport.com;tvtv.us;xumo.tv",
-    "match_method": "fuzzy_name_high",
+    "match_method": "manual_alias",
     "confidence": "1.000",
     "review": "ok",
     "notes": "",
@@ -839,14 +839,14 @@
     "original_name": "Canada- CBC Toronto SD",
     "source_epg_channel_id": "",
     "source_country": "CA",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.560",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "CA:CBLTDT.ca",
+    "target_name": "CBLT-DT",
+    "target_country": "CA",
+    "target_guide_sites": "ontvtonight.com;tvpassport.com;tvtv.us",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/007bf-thumbnail_canada.jpg"
   },
   {
@@ -856,14 +856,14 @@
     "original_name": "Canada- CBC Vancouver HD CA",
     "source_epg_channel_id": "",
     "source_country": "CA",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.483",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "CA:CBUTDT.ca",
+    "target_name": "CBUT-DT",
+    "target_country": "CA",
+    "target_guide_sites": "ontvtonight.com;tvhebdo.com;tvpassport.com",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/007bf-thumbnail_canada.jpg"
   },
   {
@@ -890,14 +890,14 @@
     "original_name": "Canada- CBC-Toronto HD",
     "source_epg_channel_id": "",
     "source_country": "CA",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.560",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "CA:CBLTDT.ca",
+    "target_name": "CBLT-DT",
+    "target_country": "CA",
+    "target_guide_sites": "ontvtonight.com;tvpassport.com;tvtv.us",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/007bf-thumbnail_canada.jpg"
   },
   {
@@ -3039,7 +3039,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3056,7 +3056,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3073,7 +3073,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3090,7 +3090,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3107,7 +3107,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3124,7 +3124,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3141,7 +3141,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3158,7 +3158,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3175,7 +3175,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3192,7 +3192,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3209,7 +3209,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3226,7 +3226,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3243,7 +3243,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3260,7 +3260,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3277,7 +3277,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3294,7 +3294,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3311,7 +3311,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3328,7 +3328,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3345,7 +3345,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3362,7 +3362,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3379,7 +3379,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3396,7 +3396,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3413,7 +3413,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3430,7 +3430,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3447,7 +3447,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3464,7 +3464,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3481,7 +3481,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3498,7 +3498,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/869df-0a039-canal-.png"
   },
   {
@@ -3515,7 +3515,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -3804,7 +3804,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3821,7 +3821,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3838,7 +3838,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3855,7 +3855,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3872,7 +3872,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3889,7 +3889,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3906,7 +3906,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3923,7 +3923,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3957,7 +3957,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/1083a-a391b-canal-sport_360.png"
   },
   {
@@ -3974,7 +3974,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -3991,7 +3991,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/a6840-280_medium.png"
   },
   {
@@ -4110,7 +4110,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4127,7 +4127,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4144,7 +4144,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4161,7 +4161,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4178,7 +4178,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4195,7 +4195,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4212,7 +4212,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -4229,7 +4229,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": ""
   },
   {
@@ -10723,7 +10723,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/31f63-26be7340-5cc9-4323-bbbd-35f4cb09b275-medium16x9_channellogos_white1251x125101.png"
   },
   {
@@ -10740,7 +10740,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/6f1ad-0b1e369c-0cc9-4a74-b26a-5b2a84fdf01d-medium16x9_channellogos_white1251x125112.png"
   },
   {
@@ -10757,7 +10757,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/396ef-6112a742-2737-4ae0-9612-24062491f2dc-medium16x9_channellogos_white1251x125102.png"
   },
   {
@@ -10774,7 +10774,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/c4e6f-f6772994-3ec6-4823-9892-b2ba03c25733-medium16x9_channellogos_white1251x125103.png"
   },
   {
@@ -10791,7 +10791,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/10473-b514b66c-221e-441f-93c5-9d007effd154-medium16x9_channellogos_white1251x125104.png"
   },
   {
@@ -10808,7 +10808,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/6982e-c6dda2dd-7923-4e3c-ae22-02c3c420d16d-medium16x9_channellogos_white1251x125105.png"
   },
   {
@@ -10825,7 +10825,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/52422-b2ff8064-7899-44e2-8293-7cd97fcbef7d-medium16x9_channellogos_white1251x125106.png"
   },
   {
@@ -10842,7 +10842,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/2b5c9-00661484-99e5-493c-a4a6-5064529bae6a-medium16x9_channellogos_white1251x125107.png"
   },
   {
@@ -10859,7 +10859,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/18239-d3927fad-9c55-426e-bd75-c2de7dd890eb-medium16x9_channellogos_white1251x125108.png"
   },
   {
@@ -10876,7 +10876,7 @@
     "match_method": "unmapped",
     "confidence": "0.000",
     "review": "unmapped",
-    "notes": "event/pop-up channel; not mapped to parent linear EPG channel",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/4a21f-93670407-2724-4367-b43e-2cdb3ed8af22-medium16x9_channellogos_white1251x125111.png"
   },
   {
@@ -11685,14 +11685,14 @@
     "original_name": "USA-HBO-1",
     "source_epg_channel_id": "",
     "source_country": "US",
-    "target_xmltv_id": "",
-    "target_name": "",
-    "target_country": "",
-    "target_guide_sites": "",
-    "match_method": "unmapped",
-    "confidence": "0.800",
-    "review": "unmapped",
-    "notes": "no reliable match in target-country guide channel set",
+    "target_xmltv_id": "US:HBO.us",
+    "target_name": "HBO",
+    "target_country": "US",
+    "target_guide_sites": "ontvtonight.com;tvguide.com;tvpassport.com;tvtv.us",
+    "match_method": "manual_alias",
+    "confidence": "1.000",
+    "review": "ok",
+    "notes": "",
     "logo_url": "https://cms123456.com/assets/uploads/files/2e983-hbo-150x150.jpg"
   },
   {
@@ -11706,7 +11706,7 @@
     "target_name": "HBO 2",
     "target_country": "US",
     "target_guide_sites": "ontvtonight.com;tvguide.com;tvpassport.com;tvtv.us",
-    "match_method": "fuzzy_name_high",
+    "match_method": "manual_alias",
     "confidence": "1.000",
     "review": "ok",
     "notes": "",
@@ -11719,14 +11719,14 @@
     "original_name": "USA-HBO_FAMILY",
     "source_epg_channel_id": "",
     "source_country": "US",
-    "target_xmltv_id": "US:HBOFamilyLatinAmerica.us",
-    "target_name": "HBO Family Latin America",
-    "target_country": "US",
-    "target_guide_sites": "gatotv.com;mi.tv;nuevosiglo.com.uy;programacion.tcc.com.uy;reportv.com.ar;tvtv.us",
-    "match_method": "fuzzy_name_high",
-    "confidence": "0.920",
-    "review": "ok",
-    "notes": "",
+    "target_xmltv_id": "",
+    "target_name": "",
+    "target_country": "",
+    "target_guide_sites": "",
+    "match_method": "unmapped",
+    "confidence": "0.000",
+    "review": "unmapped",
+    "notes": "ambiguous/event channel; not mapped to a different parent/region EPG channel",
     "logo_url": "https://cms123456.com/assets/uploads/files/936ee-hbo_family.png"
   },
   {
@@ -11740,7 +11740,7 @@
     "target_name": "HBO Zone",
     "target_country": "US",
     "target_guide_sites": "ontvtonight.com;tvguide.com;tvpassport.com;tvtv.us",
-    "match_method": "fuzzy_name_high",
+    "match_method": "manual_alias",
     "confidence": "1.000",
     "review": "ok",
     "notes": "",

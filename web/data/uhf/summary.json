@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T00:01:42.301813Z",
+  "generatedAt": "2026-05-21T00:12:46.751728Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -28,27 +28,28 @@
   ],
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
-  "okMappingRows": 376,
-  "includedChannels": 199,
-  "programmes": 18823,
+  "okMappingRows": 381,
+  "includedChannels": 254,
+  "programmes": 22584,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 145,
+  "missingProgrammeTargets": 101,
   "includedByCategory": {
-    "Canada": 81,
+    "Canada": 86,
     "Spain": 37,
     "French Sports": 3,
     "French-HD": 33,
     "UK": 40,
-    "USA": 5
+    "USA": 55
   },
   "includedByCountry": {
-    "CA": 81,
+    "CA": 86,
     "ES": 37,
     "FR": 36,
     "UK": 40,
-    "US": 5
+    "US": 55
   },
   "duplicateTargetMappings": {
+    "CA:CBLTDT.ca": 3,
     "CA:CHCHDT.ca": 2,
     "CA:CP24.ca": 2,
     "CA:CPACEnglish.ca": 2,
@@ -63,7 +64,9 @@
     "ES:LaLigaTV.es": 4,
     "FR:BFMGrandLittoral.fr": 2,
     "FR:DiscoveryChannel.fr": 3,
-    "UK:DiscoveryChannel.uk": 3
+    "UK:DiscoveryChannel.uk": 3,
+    "US:ActionMax.us": 2,
+    "US:Cinemax.us": 6
   },
   "missingSourceTargetSamples": [],
   "missingProgrammeTargetSamples": [

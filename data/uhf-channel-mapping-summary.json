@@ -21,18 +21,18 @@
     "USA": 83
   },
   "byReview": {
-    "unmapped": 326,
-    "ok": 376,
+    "unmapped": 321,
+    "ok": 381,
     "review": 6
   },
   "byMethod": {
-    "unmapped": 326,
-    "source_epg_id_exact": 65,
-    "fuzzy_name_high": 290,
+    "unmapped": 321,
+    "manual_alias": 31,
+    "fuzzy_name_high": 286,
     "fuzzy_name_review": 6,
-    "manual_alias": 21
+    "source_epg_id_exact": 64
   },
-  "matchedTargetCount": 323,
+  "matchedTargetCount": 326,
   "unmappedSamples": [
     {
       "category": "Bein Channels",
@@ -264,43 +264,13 @@
     },
     {
       "category": "Canada",
-      "name": "Canada- CBC MONTREAL QC",
-      "sourceEpgId": "",
-      "notes": "no reliable match in target-country guide channel set"
-    },
-    {
-      "category": "Canada",
-      "name": "Canada- CBC Montreal CA-FR",
-      "sourceEpgId": "",
-      "notes": "no reliable match in target-country guide channel set"
-    },
-    {
-      "category": "Canada",
       "name": "Canada- CBC OTTAWA",
       "sourceEpgId": "",
       "notes": "no reliable match in target-country guide channel set"
     },
     {
       "category": "Canada",
-      "name": "Canada- CBC Toronto SD",
-      "sourceEpgId": "",
-      "notes": "no reliable match in target-country guide channel set"
-    },
-    {
-      "category": "Canada",
-      "name": "Canada- CBC Vancouver HD CA",
-      "sourceEpgId": "",
-      "notes": "no reliable match in target-country guide channel set"
-    },
-    {
-      "category": "Canada",
       "name": "Canada- CBC Winnipeg",
-      "sourceEpgId": "",
-      "notes": "no reliable match in target-country guide channel set"
-    },
-    {
-      "category": "Canada",
-      "name": "Canada- CBC-Toronto HD",
       "sourceEpgId": "",
       "notes": "no reliable match in target-country guide channel set"
     },
@@ -331,6 +301,36 @@
     {
       "category": "Canada",
       "name": "Canada- CTV MONTREAL Ca",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV TORONTO",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV VANCOUVER",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV2 OTTAWA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- CTV2 OTTAWA",
+      "sourceEpgId": "",
+      "notes": "no reliable match in target-country guide channel set"
+    },
+    {
+      "category": "Canada",
+      "name": "Canada- Canal Savoir",
       "sourceEpgId": "",
       "notes": "no reliable match in target-country guide channel set"
     }
