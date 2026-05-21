@@ -66,6 +66,16 @@ def copy_child_texts(source: ET.Element, dest: ET.Element, tag: str) -> None:
             add_text(dest, tag, child.text, **child.attrib)
 
 
+def add_display_name(channel: ET.Element, value: str | None, seen: set[str]) -> None:
+    if not value:
+        return
+    normalized = re.sub(r"\s+", " ", value).strip().casefold()
+    if not normalized or normalized in seen:
+        return
+    seen.add(normalized)
+    add_text(channel, "display-name", value)
+
+
 def copy_programme(source_programme: ET.Element, custom_channel_id: str) -> ET.Element:
     attrs = dict(source_programme.attrib)
     attrs["channel"] = custom_channel_id
@@ -179,9 +189,12 @@ def build_xmltv(rows: list[dict[str, str]]) -> tuple[ET.ElementTree, dict]:
             continue
 
         channel = ET.SubElement(tv, "channel", {"id": row["custom_xmltv_id"]})
-        add_text(channel, "display-name", row["name"])
-        add_text(channel, "display-name", row["target_name"])
-        add_text(channel, "display-name", row["target_country"])
+        display_names: set[str] = set()
+        add_display_name(channel, row["name"], display_names)
+        add_display_name(channel, row["target_name"], display_names)
+        for display_name in source_channel.findall("display-name"):
+            add_display_name(channel, display_name.text, display_names)
+        add_display_name(channel, row["target_country"], display_names)
         logo = row.get("logo_url")
         if not logo:
             source_icon = source_channel.find("icon")
