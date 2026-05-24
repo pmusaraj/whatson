@@ -1,7 +1,7 @@
 {
   "country": "BR",
   "countryName": "Brazil",
-  "generatedAt": "2026-05-24T04:33:29.639508Z",
+  "generatedAt": "2026-05-24T14:04:04.491234Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -10,6 +10,309 @@
   ],
   "channelCount": 9,
   "channels": [
+    {
+      "id": "BandSports.br",
+      "name": "BandSports",
+      "logoUrl": "https://i.imgur.com/EuPvzJe.png",
+      "provider": "Mi.tv Brazil sports guide",
+      "providerKey": "premium-mitv-br",
+      "sources": [
+        "data/normalized/guide-premium-BR-mi.tv_br.xml"
+      ],
+      "currentProgram": {
+        "title": "Segunda Etapa - Goiânia, GO",
+        "subtitle": null,
+        "description": "Campeonato de motovelocidade monomarca disputado por pilotos de diversas idades e partes do mundo.",
+        "categories": [
+          "Yamalube R3 Cup"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-segunda-etapa-goiania-go_l_m.jpg",
+        "startAt": "2026-05-24T13:00:00Z",
+        "endAt": "2026-05-24T14:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Encontro de Craques",
+          "subtitle": null,
+          "description": "O programa recebe convidados do mundo esportivo e celebridades para uma conversa bem-humorada cheia de conteúdo, histórias e temas relevantes.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-encontro-de-craques_l_m.jpg",
+          "startAt": "2026-05-24T09:30:00Z",
+          "endAt": "2026-05-24T10:30:00Z"
+        },
+        {
+          "title": "Acelerados",
+          "subtitle": null,
+          "description": "Conheça as novidades do mercado automobilístico, além de supermáquinas e grandes clássicos.",
+          "categories": [
+            "Auto racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_acelerados_l_m.jpg",
+          "startAt": "2026-05-24T10:30:00Z",
+          "endAt": "2026-05-24T11:00:00Z"
+        },
+        {
+          "title": "MX2: França - Corrida 1",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mx2-franca-corrida-1_l_m.jpg",
+          "startAt": "2026-05-24T11:00:00Z",
+          "endAt": "2026-05-24T12:00:00Z"
+        },
+        {
+          "title": "MXGP: França - Corrida 1",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-1-1_l_m.jpg",
+          "startAt": "2026-05-24T12:00:00Z",
+          "endAt": "2026-05-24T13:00:00Z"
+        },
+        {
+          "title": "Segunda Etapa - Goiânia, GO",
+          "subtitle": null,
+          "description": "Campeonato de motovelocidade monomarca disputado por pilotos de diversas idades e partes do mundo.",
+          "categories": [
+            "Yamalube R3 Cup"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-segunda-etapa-goiania-go_l_m.jpg",
+          "startAt": "2026-05-24T13:00:00Z",
+          "endAt": "2026-05-24T14:30:00Z"
+        },
+        {
+          "title": "Acelerados",
+          "subtitle": null,
+          "description": "Conheça as novidades do mercado automobilístico, além de supermáquinas e grandes clássicos.",
+          "categories": [
+            "Auto racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_acelerados_l_m.jpg",
+          "startAt": "2026-05-24T14:30:00Z",
+          "endAt": "2026-05-24T15:00:00Z"
+        },
+        {
+          "title": "MXGP: França - Corrida 2",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-2-1_l_m.jpg",
+          "startAt": "2026-05-24T15:00:00Z",
+          "endAt": "2026-05-24T16:00:00Z"
+        },
+        {
+          "title": "Segunda Etapa - Goiânia",
+          "subtitle": null,
+          "description": "Competição histórica para a motovelocidade brasileira integra o Campeonato Brasileiro da modalidade.",
+          "categories": [
+            "Moto 1000 GP"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-segunda-etapa-goiania_l_m.jpg",
+          "startAt": "2026-05-24T16:00:00Z",
+          "endAt": "2026-05-24T17:30:00Z"
+        },
+        {
+          "title": "MX2: França - Corrida 2",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mx2-franca-corrida-2_l_m.jpg",
+          "startAt": "2026-05-24T17:30:00Z",
+          "endAt": "2026-05-24T18:30:00Z"
+        },
+        {
+          "title": "The Golf Brasil",
+          "subtitle": null,
+          "description": "O programa traz os atletas e o mundo que rodeia o golfe, como o seu círculo de tomadores de decisão, empresários, executivos, empreendedores e personalidades. Além, é claro, de cobrir os eventos e os fãs do esporte.",
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-the-golf-brasil_l_m.jpg",
+          "startAt": "2026-05-24T18:30:00Z",
+          "endAt": "2026-05-24T19:00:00Z"
+        },
+        {
+          "title": "Papo de Paddock",
+          "subtitle": null,
+          "description": "O jornalista Ale Speitzzer traz uma visão única e privilegiada do mundo do automobilismo, combinando análise aprofundada e curiosidades fascinantes por meio de entrevistas exclusivas com pilotos, especialistas e personalidades de diversas categorias.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_papo-de-paddock_l_m.jpg",
+          "startAt": "2026-05-24T19:00:00Z",
+          "endAt": "2026-05-24T20:00:00Z"
+        },
+        {
+          "title": "MXGP: França - Corrida 1",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-1-1_l_m.jpg",
+          "startAt": "2026-05-24T20:00:00Z",
+          "endAt": "2026-05-24T21:00:00Z"
+        },
+        {
+          "title": "MXGP: França - Corrida 2",
+          "subtitle": null,
+          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-2-1_l_m.jpg",
+          "startAt": "2026-05-24T21:00:00Z",
+          "endAt": "2026-05-24T22:00:00Z"
+        },
+        {
+          "title": "TUFF Arena",
+          "subtitle": null,
+          "description": "Evento de boxe em octógono com premiação de vinte mil dólares. Do Rio de Janeiro?RJ.",
+          "categories": [
+            "TUFF Arena"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_martial-arts-tuff-arena_l_m.jpg",
+          "startAt": "2026-05-24T22:00:00Z",
+          "endAt": "2026-05-25T00:00:00Z"
+        },
+        {
+          "title": "Encontro de Craques",
+          "subtitle": null,
+          "description": "O programa recebe convidados do mundo esportivo e celebridades para uma conversa bem-humorada cheia de conteúdo, histórias e temas relevantes.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-encontro-de-craques_l_m.jpg",
+          "startAt": "2026-05-25T00:00:00Z",
+          "endAt": "2026-05-25T01:00:00Z"
+        },
+        {
+          "title": "Segunda Etapa - Goiânia, GO",
+          "subtitle": null,
+          "description": "Campeonato de motovelocidade monomarca disputado por pilotos de diversas idades e partes do mundo.",
+          "categories": [
+            "Yamalube R3 Cup"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-segunda-etapa-goiania-go_l_m.jpg",
+          "startAt": "2026-05-25T01:00:00Z",
+          "endAt": "2026-05-25T02:30:00Z"
+        },
+        {
+          "title": "Segunda Etapa - Goiânia",
+          "subtitle": null,
+          "description": "Competição histórica para a motovelocidade brasileira integra o Campeonato Brasileiro da modalidade.",
+          "categories": [
+            "Moto 1000 GP"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-segunda-etapa-goiania_l_m.jpg",
+          "startAt": "2026-05-25T02:30:00Z",
+          "endAt": "2026-05-25T04:00:00Z"
+        },
+        {
+          "title": "TUFF Arena",
+          "subtitle": null,
+          "description": "Evento de boxe em octógono com premiação de vinte mil dólares. Do Rio de Janeiro?RJ.",
+          "categories": [
+            "TUFF Arena"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_martial-arts-tuff-arena_l_m.jpg",
+          "startAt": "2026-05-25T04:00:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "SFT",
+          "subtitle": null,
+          "description": "Todas as emoções das lutas de artes marciais mistas promovidas pela organização brasileira SFT.",
+          "categories": [
+            "SFT"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_mixed-martial-arts-sft_l_m.jpg",
+          "startAt": "2026-05-25T06:00:00Z",
+          "endAt": "2026-05-25T08:00:00Z"
+        },
+        {
+          "title": "BWF",
+          "subtitle": null,
+          "description": "Todas as emoções dos eventos de luta livre promovidos pela Brazilian Wrestling Federation.",
+          "categories": [
+            "BWF"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_wrestling-bwf_l_m.jpg",
+          "startAt": "2026-05-25T08:00:00Z",
+          "endAt": "2026-05-25T09:00:00Z"
+        },
+        {
+          "title": "Gearing Up",
+          "subtitle": null,
+          "description": "Tudo sobre as competições mais eletrizantes do universo dos esportes a motor.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-gearing-up_l_m.jpg",
+          "startAt": "2026-05-25T09:00:00Z",
+          "endAt": "2026-05-25T09:30:00Z"
+        },
+        {
+          "title": "TUFF Arena",
+          "subtitle": null,
+          "description": "Evento de boxe em octógono com premiação de vinte mil dólares. Do Rio de Janeiro?RJ.",
+          "categories": [
+            "TUFF Arena"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_martial-arts-tuff-arena_l_m.jpg",
+          "startAt": "2026-05-25T09:30:00Z",
+          "endAt": "2026-05-25T11:30:00Z"
+        }
+      ]
+    },
     {
       "id": "ESPN.us",
       "name": "ESPN",
@@ -20,98 +323,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "SportsCenter",
+        "title": "Torneio de Roland Garros 2026",
         "subtitle": null,
-        "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
-        "categories": [],
+        "description": null,
+        "categories": [
+          "Torneio de Roland Garros 2026"
+        ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-        "startAt": "2026-05-24T04:30:00Z",
-        "endAt": "2026-05-24T05:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-torneio-de-roland-garros-2026_l_m.jpg",
+        "startAt": "2026-05-24T09:00:00Z",
+        "endAt": "2026-05-24T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Jogo 3: Cleveland Cavaliers x New York Knicks",
-          "subtitle": null,
-          "description": "Trinta equipes dos Estados Unidos e Canadá se enfrentam na principal liga de basquete do mundo.",
-          "categories": [
-            "NBA"
-          ],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-jogo-3-cleveland-cavaliers-x-new-york-knicks_l_m.jpg",
-          "startAt": "2026-05-24T00:00:00Z",
-          "endAt": "2026-05-24T02:30:00Z"
-        },
-        {
-          "title": "League de Passe",
-          "subtitle": null,
-          "description": "Comentaristas debatem os acontecimentos das principais partidas de ligas norte-americanas.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_football-league-de-passe_l_m.jpg",
-          "startAt": "2026-05-24T02:30:00Z",
-          "endAt": "2026-05-24T03:00:00Z"
-        },
-        {
-          "title": "Messi: The Forgotten Tape",
-          "subtitle": null,
-          "description": "Destaca o momento crucial que moldou o futuro internacional de Lionel Messi.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_special-messi-the-forgotten-tape_l_m.jpg",
-          "startAt": "2026-05-24T03:00:00Z",
-          "endAt": "2026-05-24T03:30:00Z"
-        },
-        {
-          "title": "Aquece Roland Garros 2026",
-          "subtitle": null,
-          "description": "Uma prévia do segundo Grand Slam de tênis da temporada 2026, disputado no saibro de Paris, França.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-aquece-roland-garros-2026_l_m.jpg",
-          "startAt": "2026-05-24T03:30:00Z",
-          "endAt": "2026-05-24T04:30:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-          "startAt": "2026-05-24T04:30:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Jogo 3: Cleveland Cavaliers x New York Knicks",
-          "subtitle": null,
-          "description": "Trinta equipes dos Estados Unidos e Canadá se enfrentam na principal liga de basquete do mundo.",
-          "categories": [
-            "NBA"
-          ],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-jogo-3-cleveland-cavaliers-x-new-york-knicks_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-          "startAt": "2026-05-24T08:00:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
-        },
         {
           "title": "Torneio de Roland Garros 2026",
           "subtitle": null,
@@ -172,6 +396,91 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_hockey-jogo-3-vegas-golden-knights-x-colorado-avalanche_l_m.jpg",
           "startAt": "2026-05-25T00:00:00Z",
           "endAt": "2026-05-25T02:30:00Z"
+        },
+        {
+          "title": "Último Trem para A América do Norte",
+          "subtitle": null,
+          "description": "Os últimos preparativos para a disputa da Copa do Mundo da FIFA 2026, disputada na América do Norte. Ao todo, Estados Unidos, México e Canadá são os países anfitriões do mundial entre seleções, que conta com 48 equipes nacionais.",
+          "categories": [
+            "Soccer"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_ultimo-trem-para-a-america-do-norte_l_m.jpg",
+          "startAt": "2026-05-25T02:30:00Z",
+          "endAt": "2026-05-25T03:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
+          "startAt": "2026-05-25T03:00:00Z",
+          "endAt": "2026-05-25T04:00:00Z"
+        },
+        {
+          "title": "Crystal Palace x Arsenal",
+          "subtitle": null,
+          "description": "Pela primeira rodada, o Crystal Palace recebe o Arsenal no Selhurst Park. Na estreia da temporada, o Palace quer causar uma boa impressão frente à sua torcida. Já os Gunners vêm impulsionados por muitos reforços, como o brasileiro Gabriel Jesus.",
+          "categories": [
+            "Campeonato Inglês"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-crystal-palace-x-arsenal_l_m.jpg",
+          "startAt": "2026-05-25T04:00:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "Mina de Passe",
+          "subtitle": null,
+          "description": "Acompanhe tudo sobre o futebol feminino.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_mina-de-passe_l_m.jpg",
+          "startAt": "2026-05-25T06:00:00Z",
+          "endAt": "2026-05-25T07:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
+          "startAt": "2026-05-25T07:00:00Z",
+          "endAt": "2026-05-25T08:00:00Z"
+        },
+        {
+          "title": "Pelas Quadras de Roland Garros 2026",
+          "subtitle": null,
+          "description": "Toda a repercussão das partidas do dia no segundo dos quatro Grand Slams do calendário anual do tênis: o Torneio de Roland Garros, disputado nas quadras de saibro de Paris, França. Análises táticas, reportagens especiais e muito mais.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-pelas-quadras-de-roland-garros-2026_l_m.jpg",
+          "startAt": "2026-05-25T08:00:00Z",
+          "endAt": "2026-05-25T09:00:00Z"
+        },
+        {
+          "title": "Torneio de Roland Garros 2026",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Torneio de Roland Garros 2026"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-torneio-de-roland-garros-2026_l_m.jpg",
+          "startAt": "2026-05-25T09:00:00Z",
+          "endAt": "2026-05-25T17:00:00Z"
         }
       ]
     },
@@ -185,113 +494,17 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Bola da Vez",
+        "title": "SportsCenter Abre o Jogo",
         "subtitle": null,
-        "description": "Grandes personalidades do esporte nacional e internacional são colocadas no \"paredão\" e respondem às perguntas de uma bancada de entrevistadores formada por jornalistas, ex-atletas ou especialistas em geral.",
-        "categories": [
-          "Sports talk"
-        ],
+        "description": "Acompanhe análises completas, materiais exclusivos e as últimas notícias sobre a maior liga de basquete do mundo, que dá início à temporada 2022-23.",
+        "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_bola-da-vez_l_m.jpg",
-        "startAt": "2026-05-24T04:30:00Z",
-        "endAt": "2026-05-24T05:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sportscenter-abre-o-jogo_l_m.jpg",
+        "startAt": "2026-05-24T14:00:00Z",
+        "endAt": "2026-05-24T14:50:00Z"
       },
       "programs": [
-        {
-          "title": "Encontros Premier League",
-          "subtitle": null,
-          "description": "O ex-jogador Gilberto Silva, de passagem marcante pelo Arsenal, entrevista atletas brasileiros que se destacaram em diferentes equipes do Campeonato Inglês, em um bate-papo descontraído e cheio de boas histórias.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-encontros-premier-league_l_m.jpg",
-          "startAt": "2026-05-24T00:30:00Z",
-          "endAt": "2026-05-24T01:00:00Z"
-        },
-        {
-          "title": "Reboot Seleção - Do Quadrado Mágico ao Mister Carlo",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Soccer"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg",
-          "startAt": "2026-05-24T01:00:00Z",
-          "endAt": "2026-05-24T02:00:00Z"
-        },
-        {
-          "title": "Linha de Passe: Mesa-Redonda",
-          "subtitle": null,
-          "description": "Comentaristas esportivos conceituados entram em campo para uma análise completa da rodada do futebol ao estilo \"mesa redonda\", com debates acalorados e comentários de qualidade, sempre a partir de um olhar crítico e da imparcialidade.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
-          "startAt": "2026-05-24T02:00:00Z",
-          "endAt": "2026-05-24T03:30:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-          "startAt": "2026-05-24T03:30:00Z",
-          "endAt": "2026-05-24T04:30:00Z"
-        },
-        {
-          "title": "Bola da Vez",
-          "subtitle": null,
-          "description": "Grandes personalidades do esporte nacional e internacional são colocadas no \"paredão\" e respondem às perguntas de uma bancada de entrevistadores formada por jornalistas, ex-atletas ou especialistas em geral.",
-          "categories": [
-            "Sports talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bola-da-vez_l_m.jpg",
-          "startAt": "2026-05-24T04:30:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Encontros Premier League",
-          "subtitle": null,
-          "description": "O ex-jogador Gilberto Silva, de passagem marcante pelo Arsenal, entrevista atletas brasileiros que se destacaram em diferentes equipes do Campeonato Inglês, em um bate-papo descontraído e cheio de boas histórias.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-encontros-premier-league_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "Valencia x Barcelona",
-          "subtitle": null,
-          "description": "Acompanhe as partidas da primeira divisão de futebol masculino da Espanha.",
-          "categories": [
-            "Campeonato Espanhol"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-valencia-x-barcelona_l_m.jpg",
-          "startAt": "2026-05-24T06:30:00Z",
-          "endAt": "2026-05-24T08:30:00Z"
-        },
-        {
-          "title": "Linha de Passe: Mesa-Redonda",
-          "subtitle": null,
-          "description": "Comentaristas esportivos conceituados entram em campo para uma análise completa da rodada do futebol ao estilo \"mesa redonda\", com debates acalorados e comentários de qualidade, sempre a partir de um olhar crítico e da imparcialidade.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
-          "startAt": "2026-05-24T08:30:00Z",
-          "endAt": "2026-05-24T10:00:00Z"
-        },
         {
           "title": "SportsCenter",
           "subtitle": null,
@@ -411,6 +624,93 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-equipe-f_l_m.jpg",
           "startAt": "2026-05-24T23:30:00Z",
           "endAt": "2026-05-25T01:30:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
+          "startAt": "2026-05-25T01:30:00Z",
+          "endAt": "2026-05-25T02:30:00Z"
+        },
+        {
+          "title": "Messi: The Forgotten Tape",
+          "subtitle": null,
+          "description": "Destaca o momento crucial que moldou o futuro internacional de Lionel Messi.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_special-messi-the-forgotten-tape_l_m.jpg",
+          "startAt": "2026-05-25T02:30:00Z",
+          "endAt": "2026-05-25T03:00:00Z"
+        },
+        {
+          "title": "Resenha ESPN",
+          "subtitle": null,
+          "description": "Atletas da atualidade e do passado participam de bate-papo descontraído e cheio de boas histórias.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_resenha-espn_l_m.jpg",
+          "startAt": "2026-05-25T03:00:00Z",
+          "endAt": "2026-05-25T04:00:00Z"
+        },
+        {
+          "title": "Milan x Cagliari",
+          "subtitle": null,
+          "description": "Todas as emoções da Serie A, primeira divisão de futebol masculino entre clubes da Itália.",
+          "categories": [
+            "Campeonato Italiano"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-milan-x-cagliari_l_m.jpg",
+          "startAt": "2026-05-25T04:00:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "Final: Middlesbrough x Hull City",
+          "subtitle": null,
+          "description": "Do Estádio de Wembley, em Londres, Inglaterra.",
+          "categories": [
+            "Campeonato Inglês - Segunda Divisão"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-final-middlesbrough-x-hull-city_l_m.jpg",
+          "startAt": "2026-05-25T06:00:00Z",
+          "endAt": "2026-05-25T08:00:00Z"
+        },
+        {
+          "title": "Reboot Seleção - Do Quadrado Mágico ao Mister Carlo",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Soccer"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg",
+          "startAt": "2026-05-25T08:00:00Z",
+          "endAt": "2026-05-25T09:00:00Z"
+        },
+        {
+          "title": "Tottenham Hotspur vs. Everton",
+          "subtitle": null,
+          "description": "Todas as emoções da Premier League, a divisão de elite do futebol masculino de clubes na Inglaterra. Disputada por 20 clubes, a competição é uma das principais ligas do futebol mundial, reunindo grandes atletas e técnicos.",
+          "categories": [
+            "Campeonato Inglês"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-tottenham-hotspur-vs-everton_l_m.jpg",
+          "startAt": "2026-05-25T09:00:00Z",
+          "endAt": "2026-05-25T11:00:00Z"
         }
       ]
     },
@@ -424,93 +724,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "ESPN KnockOut",
+        "title": "Operário-PR x Criciúma",
         "subtitle": null,
-        "description": "O melhor dos eventos de boxe realizados na América Latina.",
+        "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
         "categories": [
-          "Boxing"
+          "Campeonato Brasileiro - Série B"
         ],
-        "sportType": "Combat sports",
+        "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_espn-knockout_l_m.jpg",
-        "startAt": "2026-05-24T02:00:00Z",
-        "endAt": "2026-05-24T05:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-operario-pr-x-criciuma_l_m.jpg",
+        "startAt": "2026-05-24T13:00:00Z",
+        "endAt": "2026-05-24T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "Real Madrid x Athletic Bilbao",
-          "subtitle": null,
-          "description": "Acompanhe as partidas da primeira divisão de futebol masculino da Espanha.",
-          "categories": [
-            "Campeonato Espanhol"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-real-madrid-x-athletic-bilbao_l_m.jpg",
-          "startAt": "2026-05-23T23:30:00Z",
-          "endAt": "2026-05-24T01:30:00Z"
-        },
-        {
-          "title": "Encontros Premier League",
-          "subtitle": null,
-          "description": "O ex-jogador Gilberto Silva, de passagem marcante pelo Arsenal, entrevista atletas brasileiros que se destacaram em diferentes equipes do Campeonato Inglês, em um bate-papo descontraído e cheio de boas histórias.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-encontros-premier-league_l_m.jpg",
-          "startAt": "2026-05-24T01:30:00Z",
-          "endAt": "2026-05-24T02:00:00Z"
-        },
-        {
-          "title": "ESPN KnockOut",
-          "subtitle": null,
-          "description": "O melhor dos eventos de boxe realizados na América Latina.",
-          "categories": [
-            "Boxing"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_espn-knockout_l_m.jpg",
-          "startAt": "2026-05-24T02:00:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Linha de Passe: Mesa-Redonda",
-          "subtitle": null,
-          "description": "Comentaristas esportivos conceituados entram em campo para uma análise completa da rodada do futebol ao estilo \"mesa redonda\", com debates acalorados e comentários de qualidade, sempre a partir de um olhar crítico e da imparcialidade.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "Fortaleza x Londrina",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
-          "categories": [
-            "Campeonato Brasileiro - Série B"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fortaleza-x-londrina_l_m.jpg",
-          "startAt": "2026-05-24T07:00:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
-        },
-        {
-          "title": "Bola da Vez",
-          "subtitle": null,
-          "description": "Grandes personalidades do esporte nacional e internacional são colocadas no \"paredão\" e respondem às perguntas de uma bancada de entrevistadores formada por jornalistas, ex-atletas ou especialistas em geral.",
-          "categories": [
-            "Sports talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bola-da-vez_l_m.jpg",
-          "startAt": "2026-05-24T09:00:00Z",
-          "endAt": "2026-05-24T10:00:00Z"
-        },
         {
           "title": "Momento ESPN",
           "subtitle": null,
@@ -658,6 +884,82 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_baseball-los-angeles-angels-x-texas-rangers_l_m.jpg",
           "startAt": "2026-05-24T23:00:00Z",
           "endAt": "2026-05-25T02:00:00Z"
+        },
+        {
+          "title": "FC Barcelona: Dream, Play, Win",
+          "subtitle": null,
+          "description": "Acompanha a jornada competitiva e cultural do time feminino do FC Barcelona.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_special-fc-barcelona-dream-play-win_l_m.jpg",
+          "startAt": "2026-05-25T02:00:00Z",
+          "endAt": "2026-05-25T03:00:00Z"
+        },
+        {
+          "title": "América-MG x Vila Nova",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
+          "categories": [
+            "Campeonato Brasileiro - Série B"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-america-mg-x-vila-nova_l_m.jpg",
+          "startAt": "2026-05-25T03:00:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "Tottenham Hotspur vs. Everton",
+          "subtitle": null,
+          "description": "Todas as emoções da Premier League, a divisão de elite do futebol masculino de clubes na Inglaterra. Disputada por 20 clubes, a competição é uma das principais ligas do futebol mundial, reunindo grandes atletas e técnicos.",
+          "categories": [
+            "Campeonato Inglês"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-tottenham-hotspur-vs-everton_l_m.jpg",
+          "startAt": "2026-05-25T05:00:00Z",
+          "endAt": "2026-05-25T06:00:00Z"
+        },
+        {
+          "title": "River Plate x Belgrano",
+          "subtitle": null,
+          "description": "Acompanhe as grandes partidas do torneio de elite do futebol argentino.",
+          "categories": [
+            "Campeonato Argentino"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-river-plate-x-belgrano_l_m.jpg",
+          "startAt": "2026-05-25T07:00:00Z",
+          "endAt": "2026-05-25T09:00:00Z"
+        },
+        {
+          "title": "Bola da Vez",
+          "subtitle": null,
+          "description": "Grandes personalidades do esporte nacional e internacional são colocadas no \"paredão\" e respondem às perguntas de uma bancada de entrevistadores formada por jornalistas, ex-atletas ou especialistas em geral.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bola-da-vez_l_m.jpg",
+          "startAt": "2026-05-25T09:00:00Z",
+          "endAt": "2026-05-25T10:00:00Z"
+        },
+        {
+          "title": "500 Milhas de Indianápolis",
+          "subtitle": null,
+          "description": "Toda a disputa da IndyCar, ou Fórmula Indy, uma das principais competições de automobilismo do mundo. Com os famosos circuitos ovais e também corridas de rua, as etapas do calendário são disputadas em diversas cidades pelos Estados Unidos.",
+          "categories": [
+            "Fórmula Indy"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-500-milhas-de-indianapolis_l_m.jpg",
+          "startAt": "2026-05-25T10:00:00Z",
+          "endAt": "2026-05-25T13:30:00Z"
         }
       ]
     },
@@ -671,93 +973,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Final - Andrey Rublev (RUS) x Fabio Cobolli (ITA)",
+        "title": "Novorizontino x Ceará",
         "subtitle": null,
-        "description": "Pela grande decisão do torneio de simples, Andrey Rublev e Flavio Cobolli se enfrentam no Tennisstadion Am Rothenbaum, em Hamburgo, Alemanha. O russo iniciou o torneio na 17ª colocação do ranking mundial, enquanto o italiano aparecia em 35º lugar.",
+        "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
         "categories": [
-          "Aberto de Hamburgo de Tênis Masculino 2025"
+          "Campeonato Brasileiro - Série B"
         ],
-        "sportType": "Tennis",
+        "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-final-andrey-rublev-rus-x-fabio-cobolli-ita_l_m.jpg",
-        "startAt": "2026-05-24T04:00:00Z",
-        "endAt": "2026-05-24T05:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-novorizontino-x-ceara_l_m.jpg",
+        "startAt": "2026-05-24T13:00:00Z",
+        "endAt": "2026-05-24T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "Campinas x Sesi Araraquara",
-          "subtitle": null,
-          "description": "Torneio anual de formato semifinal e final que reúne as quatro primeiras colocadas da Liga de Basquete Feminino ao final do primeiro turno de cada temporada.",
-          "categories": [
-            "Copa LBF de Basquete"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-campinas-x-sesi-araraquara-1_l_m.jpg",
-          "startAt": "2026-05-23T23:00:00Z",
-          "endAt": "2026-05-24T01:00:00Z"
-        },
-        {
-          "title": "Santo André x Sampaio Basquete",
-          "subtitle": null,
-          "description": "Torneio anual de formato semifinal e final que reúne as quatro primeiras colocadas da Liga de Basquete Feminino ao final do primeiro turno de cada temporada.",
-          "categories": [
-            "Copa LBF de Basquete"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-santo-andre-x-sampaio-basquete-1_l_m.jpg",
-          "startAt": "2026-05-24T01:00:00Z",
-          "endAt": "2026-05-24T03:00:00Z"
-        },
-        {
-          "title": "ESPN League",
-          "subtitle": null,
-          "description": "Notícias, análises e curiosidades sobre tudo o que rola com a bola: redonda, oval ou achatada.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-espn-league_l_m.jpg",
-          "startAt": "2026-05-24T03:00:00Z",
-          "endAt": "2026-05-24T04:00:00Z"
-        },
-        {
-          "title": "Final - Andrey Rublev (RUS) x Fabio Cobolli (ITA)",
-          "subtitle": null,
-          "description": "Pela grande decisão do torneio de simples, Andrey Rublev e Flavio Cobolli se enfrentam no Tennisstadion Am Rothenbaum, em Hamburgo, Alemanha. O russo iniciou o torneio na 17ª colocação do ranking mundial, enquanto o italiano aparecia em 35º lugar.",
-          "categories": [
-            "Aberto de Hamburgo de Tênis Masculino 2025"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-final-andrey-rublev-rus-x-fabio-cobolli-ita_l_m.jpg",
-          "startAt": "2026-05-24T04:00:00Z",
-          "endAt": "2026-05-24T05:00:00Z"
-        },
-        {
-          "title": "Final: Middlesbrough x Hull City",
-          "subtitle": null,
-          "description": "Do Estádio de Wembley, em Londres, Inglaterra.",
-          "categories": [
-            "Campeonato Inglês - Segunda Divisão"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-final-middlesbrough-x-hull-city_l_m.jpg",
-          "startAt": "2026-05-24T06:00:00Z",
-          "endAt": "2026-05-24T08:00:00Z"
-        },
-        {
-          "title": "F1: The Inside Line",
-          "subtitle": null,
-          "description": "Veja a cobertura completa da Fórmula 1, a maior e mais badalada categoria do automobilismo mundial. Acompanhe as principais notícias da semana, os bastidores, entrevistas exclusivas e reportagens especiais.",
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-f1-the-inside-line_l_m.jpg",
-          "startAt": "2026-05-24T08:00:00Z",
-          "endAt": "2026-05-24T08:30:00Z"
-        },
         {
           "title": "Legacy Fighting Alliance 233: Piersma x Bianchini",
           "subtitle": null,
@@ -907,6 +1135,71 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_rugby-pampas-x-cobras-brasil-xv_l_m.jpg",
           "startAt": "2026-05-24T23:00:00Z",
           "endAt": "2026-05-25T01:00:00Z"
+        },
+        {
+          "title": "Copa LBF de Basquete",
+          "subtitle": null,
+          "description": "Torneio anual de formato semifinal e final que reúne as quatro primeiras colocadas da Liga de Basquete Feminino ao final do primeiro turno de cada temporada.",
+          "categories": [
+            "Copa LBF de Basquete"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-copa-lbf-de-basquete_l_m.jpg",
+          "startAt": "2026-05-25T01:00:00Z",
+          "endAt": "2026-05-25T03:00:00Z"
+        },
+        {
+          "title": "River Plate x Belgrano",
+          "subtitle": null,
+          "description": "Acompanhe as grandes partidas do torneio de elite do futebol argentino.",
+          "categories": [
+            "Campeonato Argentino"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-river-plate-x-belgrano_l_m.jpg",
+          "startAt": "2026-05-25T03:00:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "Etapa de Zandvoort - Corrida 1",
+          "subtitle": null,
+          "description": "Uma das categorias de automobilismo mais disputadas e populares do continente europeu. O grid conta com carros da Audi, BMW e Mercedes-Benz.",
+          "categories": [
+            "DTM"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-etapa-de-zandvoort-corrida-1_l_m.jpg",
+          "startAt": "2026-05-25T05:00:00Z",
+          "endAt": "2026-05-25T06:00:00Z"
+        },
+        {
+          "title": "Etapa de Zandvoort - Corrida 2",
+          "subtitle": null,
+          "description": "Uma das categorias de automobilismo mais disputadas e populares do continente europeu. O grid conta com carros da Audi, BMW e Mercedes-Benz.",
+          "categories": [
+            "DTM"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-etapa-de-zandvoort-corrida-2_l_m.jpg",
+          "startAt": "2026-05-25T06:45:00Z",
+          "endAt": "2026-05-25T08:30:00Z"
+        },
+        {
+          "title": "Final - Andrey Rublev (RUS) x Fabio Cobolli (ITA)",
+          "subtitle": null,
+          "description": "Pela grande decisão do torneio de simples, Andrey Rublev e Flavio Cobolli se enfrentam no Tennisstadion Am Rothenbaum, em Hamburgo, Alemanha. O russo iniciou o torneio na 17ª colocação do ranking mundial, enquanto o italiano aparecia em 35º lugar.",
+          "categories": [
+            "Aberto de Hamburgo de Tênis Masculino 2025"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-final-andrey-rublev-rus-x-fabio-cobolli-ita_l_m.jpg",
+          "startAt": "2026-05-25T08:30:00Z",
+          "endAt": "2026-05-25T10:30:00Z"
         }
       ]
     },
@@ -920,7 +1213,7 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Flamengo x Palmeiras",
+        "title": "Fluminense x São Paulo",
         "subtitle": null,
         "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
         "categories": [
@@ -928,204 +1221,11 @@
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-        "startAt": "2026-05-24T04:10:00Z",
-        "endAt": "2026-05-24T04:40:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-s-o-paulo-4_l_m.jpg",
+        "startAt": "2026-05-24T14:00:00Z",
+        "endAt": "2026-05-24T14:30:00Z"
       },
       "programs": [
-        {
-          "title": "Flamengo x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-          "startAt": "2026-05-24T00:00:00Z",
-          "endAt": "2026-05-24T02:10:00Z"
-        },
-        {
-          "title": "Grêmio x Santos",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gremio-x-santos-1_l_m.jpg",
-          "startAt": "2026-05-24T02:10:00Z",
-          "endAt": "2026-05-24T02:40:00Z"
-        },
-        {
-          "title": "São Paulo x Botafogo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-botafogo-3_l_m.jpg",
-          "startAt": "2026-05-24T02:40:00Z",
-          "endAt": "2026-05-24T03:10:00Z"
-        },
-        {
-          "title": "Mirassol x Fluminense",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-fluminense_l_m.jpg",
-          "startAt": "2026-05-24T03:10:00Z",
-          "endAt": "2026-05-24T03:40:00Z"
-        },
-        {
-          "title": "Vitória x Internacional",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-internacional-2_l_m.jpg",
-          "startAt": "2026-05-24T03:40:00Z",
-          "endAt": "2026-05-24T04:10:00Z"
-        },
-        {
-          "title": "Flamengo x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-          "startAt": "2026-05-24T04:10:00Z",
-          "endAt": "2026-05-24T04:40:00Z"
-        },
-        {
-          "title": "Giro da Rodada",
-          "subtitle": null,
-          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
-          "startAt": "2026-05-24T04:40:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Coritiba x Internacional",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-coritiba-x-internacional-1_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "Bahia x Cruzeiro",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-bahia-x-cruzeiro-2_l_m.jpg",
-          "startAt": "2026-05-24T06:30:00Z",
-          "endAt": "2026-05-24T07:00:00Z"
-        },
-        {
-          "title": "Atlético-MG x Botafogo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-botafogo-2_l_m.jpg",
-          "startAt": "2026-05-24T07:00:00Z",
-          "endAt": "2026-05-24T07:30:00Z"
-        },
-        {
-          "title": "Remo x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-remo-x-palmeiras_l_m.jpg",
-          "startAt": "2026-05-24T07:30:00Z",
-          "endAt": "2026-05-24T08:00:00Z"
-        },
-        {
-          "title": "Santos x Bragantino",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-santos-x-bragantino-1_l_m.jpg",
-          "startAt": "2026-05-24T08:00:00Z",
-          "endAt": "2026-05-24T08:30:00Z"
-        },
-        {
-          "title": "Mirassol x Chapecoense",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-chapecoense-1_l_m.jpg",
-          "startAt": "2026-05-24T08:30:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
-        },
-        {
-          "title": "Grêmio x Flamengo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gremio-x-flamengo-1_l_m.jpg",
-          "startAt": "2026-05-24T09:00:00Z",
-          "endAt": "2026-05-24T09:30:00Z"
-        },
-        {
-          "title": "Santos x Coritiba",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-santos-x-coritiba-1_l_m.jpg",
-          "startAt": "2026-05-24T09:30:00Z",
-          "endAt": "2026-05-24T10:00:00Z"
-        },
         {
           "title": "Flamengo x Palmeiras",
           "subtitle": null,
@@ -1429,6 +1529,212 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-bragantino-1_l_m.jpg",
           "startAt": "2026-05-24T23:30:00Z",
           "endAt": "2026-05-25T01:40:00Z"
+        },
+        {
+          "title": "Corinthians x Atlético-MG",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-corinthians-x-atletico-mg-1_l_m.jpg",
+          "startAt": "2026-05-25T01:40:00Z",
+          "endAt": "2026-05-25T02:10:00Z"
+        },
+        {
+          "title": "Remo x Athletico-PR",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-remo-x-athletico-pr-1_l_m.jpg",
+          "startAt": "2026-05-25T02:10:00Z",
+          "endAt": "2026-05-25T02:40:00Z"
+        },
+        {
+          "title": "Flamengo x Palmeiras",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
+          "startAt": "2026-05-25T02:40:00Z",
+          "endAt": "2026-05-25T03:10:00Z"
+        },
+        {
+          "title": "Grêmio x Santos",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gremio-x-santos-1_l_m.jpg",
+          "startAt": "2026-05-25T03:10:00Z",
+          "endAt": "2026-05-25T03:40:00Z"
+        },
+        {
+          "title": "Vasco x Bragantino",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-bragantino-1_l_m.jpg",
+          "startAt": "2026-05-25T03:40:00Z",
+          "endAt": "2026-05-25T04:10:00Z"
+        },
+        {
+          "title": "São Paulo x Botafogo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-botafogo-3_l_m.jpg",
+          "startAt": "2026-05-25T04:10:00Z",
+          "endAt": "2026-05-25T04:40:00Z"
+        },
+        {
+          "title": "Mirassol x Fluminense",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-fluminense_l_m.jpg",
+          "startAt": "2026-05-25T04:40:00Z",
+          "endAt": "2026-05-25T05:10:00Z"
+        },
+        {
+          "title": "Vitória x Internacional",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-internacional-2_l_m.jpg",
+          "startAt": "2026-05-25T05:10:00Z",
+          "endAt": "2026-05-25T05:40:00Z"
+        },
+        {
+          "title": "Giro da Rodada",
+          "subtitle": null,
+          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
+          "startAt": "2026-05-25T05:40:00Z",
+          "endAt": "2026-05-25T06:40:00Z"
+        },
+        {
+          "title": "Botafogo x Corinthians",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-botafogo-x-corinthians-3_l_m.jpg",
+          "startAt": "2026-05-25T06:40:00Z",
+          "endAt": "2026-05-25T07:10:00Z"
+        },
+        {
+          "title": "Chapecoense x Remo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-remo-1_l_m.jpg",
+          "startAt": "2026-05-25T07:10:00Z",
+          "endAt": "2026-05-25T07:40:00Z"
+        },
+        {
+          "title": "Atlético-MG x Mirassol",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-mirassol_l_m.jpg",
+          "startAt": "2026-05-25T07:40:00Z",
+          "endAt": "2026-05-25T08:10:00Z"
+        },
+        {
+          "title": "Fluminense x São Paulo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-s-o-paulo-4_l_m.jpg",
+          "startAt": "2026-05-25T08:10:00Z",
+          "endAt": "2026-05-25T08:40:00Z"
+        },
+        {
+          "title": "Palmeiras x Cruzeiro",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-palmeiras-x-cruzeiro-2_l_m.jpg",
+          "startAt": "2026-05-25T08:40:00Z",
+          "endAt": "2026-05-25T09:10:00Z"
+        },
+        {
+          "title": "Santos x Coritiba",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-santos-x-coritiba-1_l_m.jpg",
+          "startAt": "2026-05-25T09:10:00Z",
+          "endAt": "2026-05-25T09:40:00Z"
+        },
+        {
+          "title": "Bahia x Grêmio",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-bahia-x-gremio_l_m.jpg",
+          "startAt": "2026-05-25T09:40:00Z",
+          "endAt": "2026-05-25T10:10:00Z"
         }
       ]
     },
@@ -1442,147 +1748,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Flamengo x Palmeiras",
+        "title": "Final, Jogo de Ida",
         "subtitle": null,
-        "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+        "description": "Competição nacional de futebol feminino entre clubes brasileiros com atletas de até 20 anos.",
         "categories": [
-          "Campeonato Brasileiro"
+          "Campeonato Brasileiro de Futebol Feminino Sub-20"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-        "startAt": "2026-05-24T04:30:00Z",
-        "endAt": "2026-05-24T05:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-final-jogo-de-ida-2_l_m.jpg",
+        "startAt": "2026-05-24T13:45:00Z",
+        "endAt": "2026-05-24T16:00:00Z"
       },
       "programs": [
-        {
-          "title": "Flamengo x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-          "startAt": "2026-05-24T00:00:00Z",
-          "endAt": "2026-05-24T02:00:00Z"
-        },
-        {
-          "title": "Troca de Passes",
-          "subtitle": null,
-          "description": "O dia a dia do esporte e as principais notícias pelo país.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-troca-de-passes_l_m.jpg",
-          "startAt": "2026-05-24T02:00:00Z",
-          "endAt": "2026-05-24T03:30:00Z"
-        },
-        {
-          "title": "Que Copa É Essa?",
-          "subtitle": null,
-          "description": "Favorito, o Brasil voltou a sucumbir diante de Zidane. O francês deu show, mas saiu da Copa pela porta dos fundos. Melhor para a Itália, tetracampeã mundial.",
-          "categories": [
-            "Soccer"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_que-copa-e-essa_l_m.jpg",
-          "startAt": "2026-05-24T03:30:00Z",
-          "endAt": "2026-05-24T04:30:00Z"
-        },
-        {
-          "title": "Flamengo x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
-          "startAt": "2026-05-24T04:30:00Z",
-          "endAt": "2026-05-24T05:00:00Z"
-        },
-        {
-          "title": "São Paulo x Botafogo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-botafogo-3_l_m.jpg",
-          "startAt": "2026-05-24T05:00:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Vitória x Internacional",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-internacional-2_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "Mirassol x Fluminense",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-fluminense_l_m.jpg",
-          "startAt": "2026-05-24T06:30:00Z",
-          "endAt": "2026-05-24T07:00:00Z"
-        },
-        {
-          "title": "Flamengo x Santos",
-          "subtitle": null,
-          "description": "As emoções da principal competição nacional de futebol masculino entre clubes na categoria sub-20.",
-          "categories": [
-            "Campeonato Brasileiro Sub-20"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-santos-4_l_m.jpg",
-          "startAt": "2026-05-24T07:00:00Z",
-          "endAt": "2026-05-24T08:00:00Z"
-        },
-        {
-          "title": "Náutico x Cuiabá",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
-          "categories": [
-            "Campeonato Brasileiro - Série B"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-nautico-x-cuiaba_l_m.jpg",
-          "startAt": "2026-05-24T08:00:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
-        },
-        {
-          "title": "Internacional x Flamengo",
-          "subtitle": null,
-          "description": "Acompanhe as emoções da divisão de elite do futebol feminino brasileiro, com 16 clubes na disputa.",
-          "categories": [
-            "Campeonato Brasileiro de Futebol Feminino - Série A1"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-flamengo-4_l_m.jpg",
-          "startAt": "2026-05-24T09:00:00Z",
-          "endAt": "2026-05-24T10:00:00Z"
-        },
         {
           "title": "São Paulo x Bragantino",
           "subtitle": null,
@@ -1786,6 +1964,145 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-bragantino-1_l_m.jpg",
           "startAt": "2026-05-24T23:30:00Z",
           "endAt": "2026-05-25T01:30:00Z"
+        },
+        {
+          "title": "Fechamento Sportv",
+          "subtitle": null,
+          "description": "Uma análise aprofundada dos acontecimentos mais marcantes de cada rodada do Campeonato Brasileiro, com informação e muita irreverência.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fechamento-sportv_l_m.jpg",
+          "startAt": "2026-05-25T01:30:00Z",
+          "endAt": "2026-05-25T03:30:00Z"
+        },
+        {
+          "title": "Que Copa É Essa?",
+          "subtitle": null,
+          "description": "Favorito, o Brasil voltou a sucumbir diante de Zidane. O francês deu show, mas saiu da Copa pela porta dos fundos. Melhor para a Itália, tetracampeã mundial.",
+          "categories": [
+            "Soccer"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_que-copa-e-essa_l_m.jpg",
+          "startAt": "2026-05-25T03:30:00Z",
+          "endAt": "2026-05-25T04:30:00Z"
+        },
+        {
+          "title": "Vasco x Bragantino",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-bragantino-1_l_m.jpg",
+          "startAt": "2026-05-25T04:30:00Z",
+          "endAt": "2026-05-25T05:00:00Z"
+        },
+        {
+          "title": "Remo x Athletico-PR",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-remo-x-athletico-pr-1_l_m.jpg",
+          "startAt": "2026-05-25T05:00:00Z",
+          "endAt": "2026-05-25T05:30:00Z"
+        },
+        {
+          "title": "Flamengo x Palmeiras",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-palmeiras-1_l_m.jpg",
+          "startAt": "2026-05-25T05:30:00Z",
+          "endAt": "2026-05-25T06:30:00Z"
+        },
+        {
+          "title": "Mirassol x Fluminense",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-fluminense_l_m.jpg",
+          "startAt": "2026-05-25T06:30:00Z",
+          "endAt": "2026-05-25T07:00:00Z"
+        },
+        {
+          "title": "Grêmio x Santos",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gremio-x-santos-1_l_m.jpg",
+          "startAt": "2026-05-25T07:00:00Z",
+          "endAt": "2026-05-25T07:30:00Z"
+        },
+        {
+          "title": "Final, Jogo de Ida",
+          "subtitle": null,
+          "description": "Competição nacional de futebol feminino entre clubes brasileiros com atletas de até 20 anos.",
+          "categories": [
+            "Campeonato Brasileiro de Futebol Feminino Sub-20"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-final-jogo-de-ida-2_l_m.jpg",
+          "startAt": "2026-05-25T07:30:00Z",
+          "endAt": "2026-05-25T08:30:00Z"
+        },
+        {
+          "title": "Vasco x Bragantino",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-bragantino-1_l_m.jpg",
+          "startAt": "2026-05-25T08:30:00Z",
+          "endAt": "2026-05-25T09:00:00Z"
+        },
+        {
+          "title": "Remo x Athletico-PR",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-remo-x-athletico-pr-1_l_m.jpg",
+          "startAt": "2026-05-25T09:00:00Z",
+          "endAt": "2026-05-25T09:30:00Z"
+        },
+        {
+          "title": "Fechamento Sportv",
+          "subtitle": null,
+          "description": "Uma análise aprofundada dos acontecimentos mais marcantes de cada rodada do Campeonato Brasileiro, com informação e muita irreverência.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fechamento-sportv_l_m.jpg",
+          "startAt": "2026-05-25T09:30:00Z",
+          "endAt": "2026-05-25T11:30:00Z"
         }
       ]
     },
@@ -1799,158 +2116,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Challenge: Nuvali, Filipinas - Semifinal",
+        "title": "Final: Minas x Praia Clube",
         "subtitle": null,
-        "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
+        "description": "Todas as emoções da principal competição de vôlei feminino entre equipes brasileiras.",
         "categories": [
-          "Circuito Mundial de Vôlei de Praia"
+          "Superliga Feminina de Vôlei"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-semifinal_l_m.jpg",
-        "startAt": "2026-05-24T04:00:00Z",
-        "endAt": "2026-05-24T05:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_volleyball-final-minas-x-praia-clube-1_l_m.jpg",
+        "startAt": "2026-05-24T13:00:00Z",
+        "endAt": "2026-05-24T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "Semifinal, Jogo 3: Brasília x Franca",
-          "subtitle": null,
-          "description": "Todas as emoções da principal competição de basquete masculino profissional entre clubes do Brasil.",
-          "categories": [
-            "NBB"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_basketball-semifinal-jogo-3-brasilia-x-franca_l_m.jpg",
-          "startAt": "2026-05-23T22:45:00Z",
-          "endAt": "2026-05-24T00:45:00Z"
-        },
-        {
-          "title": "Baú do Esporte",
-          "subtitle": null,
-          "description": "Galvão Bueno relembra as sete medalhas de ouro olímpicas do Brasil narradas na carreira e o dia em que quase fez a lenda Michael Phelps perder uma vitória.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_documentary-bau-do-esporte_l_m.jpg",
-          "startAt": "2026-05-24T00:45:00Z",
-          "endAt": "2026-05-24T01:00:00Z"
-        },
-        {
-          "title": "Challenge: Nuvali, Filipinas - Semifinal",
-          "subtitle": null,
-          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
-          "categories": [
-            "Circuito Mundial de Vôlei de Praia"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-semifinal_l_m.jpg",
-          "startAt": "2026-05-24T01:00:00Z",
-          "endAt": "2026-05-24T02:00:00Z"
-        },
-        {
-          "title": "Challenge: Nuvali, Filipinas - Semifinal",
-          "subtitle": null,
-          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
-          "categories": [
-            "Circuito Mundial de Vôlei de Praia"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-semifinal_l_m.jpg",
-          "startAt": "2026-05-24T02:00:00Z",
-          "endAt": "2026-05-24T03:00:00Z"
-        },
-        {
-          "title": "Challenge: Nuvali, Filipinas - Semifinal",
-          "subtitle": null,
-          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
-          "categories": [
-            "Circuito Mundial de Vôlei de Praia"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-semifinal_l_m.jpg",
-          "startAt": "2026-05-24T03:00:00Z",
-          "endAt": "2026-05-24T04:00:00Z"
-        },
-        {
-          "title": "Challenge: Nuvali, Filipinas - Semifinal",
-          "subtitle": null,
-          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
-          "categories": [
-            "Circuito Mundial de Vôlei de Praia"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-semifinal_l_m.jpg",
-          "startAt": "2026-05-24T04:00:00Z",
-          "endAt": "2026-05-24T05:00:00Z"
-        },
-        {
-          "title": "Lendas Olímpicas",
-          "subtitle": null,
-          "description": "Após ganhar a primeira medalha de ouro feminina no vôlei de praia, Jackie Silva está concentrada em ajudar a próxima geração.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_none-lendas-olimpicas_l_m.jpg",
-          "startAt": "2026-05-24T05:00:00Z",
-          "endAt": "2026-05-24T05:30:00Z"
-        },
-        {
-          "title": "Segunda Etapa - Xiamen, China",
-          "subtitle": null,
-          "description": "Os principais nomes do atletismo mundial se reúnem em uma série anual de competições disputada em diversas etapas pelo planeta.",
-          "categories": [
-            "Diamond League"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_track-field-segunda-etapa-xiamen-china_l_m.jpg",
-          "startAt": "2026-05-24T05:30:00Z",
-          "endAt": "2026-05-24T06:30:00Z"
-        },
-        {
-          "title": "Sem Bloqueio",
-          "subtitle": null,
-          "description": "Com apenas seis jogadoras que estiveram nas Olimpíadas de Tóquio, a seleção feminina de vôlei se prepara para temporada com Liga das Nações e Mundial, título que as brasileiras ainda não têm; o técnico José Roberto Guimarães revela suas superstições.",
-          "categories": [
-            "Temporada 1 Episódio 1 - O Início do Ciclo"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sem-bloqueio-s01e01-da-preparac-o-a-estreia-na-liga-das-nac-es_l_m.jpg",
-          "startAt": "2026-05-24T07:30:00Z",
-          "endAt": "2026-05-24T08:15:00Z"
-        },
-        {
-          "title": "Sem Bloqueio",
-          "subtitle": null,
-          "description": "A seleção volta ao Brasil e o técnico José Roberto Guimarães anuncia a chegada da ponteira Gabi, nova capitã da equipe e maior \"papa-títulos\" do mundo do vôlei no ciclo 2022; a oposta Rosamaria retorna, assim como o calor humano das arquibancadas.",
-          "categories": [
-            "Temporada 1 Episódio 2 - A Capitã Chegou"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sem-bloqueio-s01e02_l_m.jpg",
-          "startAt": "2026-05-24T08:15:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
-        },
-        {
-          "title": "Challenge: Nuvali, Filipinas - Disputa de Terceiro Lugar",
-          "subtitle": null,
-          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
-          "categories": [
-            "Circuito Mundial de Vôlei de Praia"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-disputa-de-terceiro-lugar_l_m.jpg",
-          "startAt": "2026-05-24T09:00:00Z",
-          "endAt": "2026-05-24T10:00:00Z"
-        },
         {
           "title": "Challenge: Nuvali, Filipinas - Disputa de Terceiro Lugar",
           "subtitle": null,
@@ -2087,6 +2265,97 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_indoor-soccer-penarol-x-carlos-barbosa_l_m.jpg",
           "startAt": "2026-05-24T22:45:00Z",
           "endAt": "2026-05-25T01:00:00Z"
+        },
+        {
+          "title": "A Máfia do Apito",
+          "subtitle": null,
+          "description": "O talentoso árbitro Edílson Pereira de Carvalho alcança o auge de sua carreira nos anos 2000, mas se envolve em um esquema de manipulação de jogos por dinheiro, entrando no submundo das apostas em um cenário ainda amador no Brasil.",
+          "categories": [
+            "Temporada 1 Episódio 1 - Canastra Real"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-mafia-do-apito-s01e01-canastra-real_l_m.jpg",
+          "startAt": "2026-05-25T01:00:00Z",
+          "endAt": "2026-05-25T01:30:00Z"
+        },
+        {
+          "title": "Challenge: Nuvali, Filipinas - Final",
+          "subtitle": null,
+          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
+          "categories": [
+            "Circuito Mundial de Vôlei de Praia"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-final_l_m.jpg",
+          "startAt": "2026-05-25T01:30:00Z",
+          "endAt": "2026-05-25T02:30:00Z"
+        },
+        {
+          "title": "Challenge: Nuvali, Filipinas - Final",
+          "subtitle": null,
+          "description": "Todas as emoções da competição que reúne as melhores duplas do vôlei de praia de todo o planeta.",
+          "categories": [
+            "Circuito Mundial de Vôlei de Praia"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_beach-volleyball-challenge-nuvali-filipinas-final_l_m.jpg",
+          "startAt": "2026-05-25T02:30:00Z",
+          "endAt": "2026-05-25T03:30:00Z"
+        },
+        {
+          "title": "Final: Cruzeiro x Campinas",
+          "subtitle": null,
+          "description": "Todas as emoções da principal competição de vôlei masculino entre equipes brasileiras.",
+          "categories": [
+            "Superliga Masculina de Vôlei"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_volleyball-final-cruzeiro-x-campinas_l_m.jpg",
+          "startAt": "2026-05-25T03:30:00Z",
+          "endAt": "2026-05-25T05:50:00Z"
+        },
+        {
+          "title": "Final: Osasco x Sesi Bauru",
+          "subtitle": null,
+          "description": "Pela grande decisão, em jogo único, Osasco e Sesi Bauru se enfrentam no Ginásio do Ibirapuera, em São Paulo?SP. Cinco vezes campeão da Superliga, o Osasco não conquista o título desde 2012; já o Sesi chega à sua primeira final após mudar para Bauru.",
+          "categories": [
+            "Superliga Feminina de Vôlei"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_volleyball-final-osasco-x-sesi-bauru-1_l_m.jpg",
+          "startAt": "2026-05-25T05:50:00Z",
+          "endAt": "2026-05-25T06:50:00Z"
+        },
+        {
+          "title": "Final: Minas x Praia Clube",
+          "subtitle": null,
+          "description": "Todas as emoções da principal competição de vôlei feminino entre equipes brasileiras.",
+          "categories": [
+            "Superliga Feminina de Vôlei"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_volleyball-final-minas-x-praia-clube-1_l_m.jpg",
+          "startAt": "2026-05-25T08:15:00Z",
+          "endAt": "2026-05-25T10:00:00Z"
+        },
+        {
+          "title": "Primeira Etapa - Xangai, China",
+          "subtitle": null,
+          "description": "Os principais nomes do atletismo mundial se reúnem em uma série anual de competições disputada em diversas etapas pelo planeta.",
+          "categories": [
+            "Diamond League"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_track-field-primeira-etapa-xangai-china_l_m.jpg",
+          "startAt": "2026-05-25T10:00:00Z",
+          "endAt": "2026-05-25T12:00:00Z"
         }
       ]
     },
@@ -2100,71 +2369,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "De Corpo e Alma",
+        "title": "Fome de Medalha",
         "subtitle": null,
-        "description": "As artes marciais vão além da luta: promovem disciplina, foco e controle emocional. Mestres e atletas mostram como o treino fortalece a mente e ajuda a lidar com pressões dentro e fora do tatame.",
+        "description": "Thiago Castanho conhece Flavia Saraiva, a \"pequena gigante\" da ginástica artística brasileira. Uma conversa descontraída revela a modalidade favorita da atleta, seus ídolos no esporte, a sensação de se descobrir famosa em todo o Brasil e muito mais.",
         "categories": [
-          "Temporada 1 Episódio 1 - Equilíbrio Mental"
+          "Temporada 1 Episódio 5 - Ginástica Artística, com Flavia Saraiva"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_de-corpo-e-alma-s01e01-equilibrio-mental_l_m.jpg",
-        "startAt": "2026-05-24T04:00:00Z",
-        "endAt": "2026-05-24T04:35:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_fome-de-medalha-s01e05-flavia-saraiva_l_m.jpg",
+        "startAt": "2026-05-24T14:00:00Z",
+        "endAt": "2026-05-24T14:30:00Z"
       },
       "programs": [
-        {
-          "title": "Jungle Fight 150",
-          "subtitle": null,
-          "description": "Edição número 150 do evento brasileiro de artes marciais mistas. Da Arena Jungle, em São Paulo?SP. O card da competição conta com as eliminatórias para a \"Fight do Milhão\", com as quartas de final da divisão feminina do Jungle Fight.",
-          "categories": [
-            "Jungle Fight 150"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_mixed-martial-arts-jungle-fight-150_l_m.jpg",
-          "startAt": "2026-05-23T22:55:00Z",
-          "endAt": "2026-05-24T04:00:00Z"
-        },
-        {
-          "title": "De Corpo e Alma",
-          "subtitle": null,
-          "description": "As artes marciais vão além da luta: promovem disciplina, foco e controle emocional. Mestres e atletas mostram como o treino fortalece a mente e ajuda a lidar com pressões dentro e fora do tatame.",
-          "categories": [
-            "Temporada 1 Episódio 1 - Equilíbrio Mental"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_de-corpo-e-alma-s01e01-equilibrio-mental_l_m.jpg",
-          "startAt": "2026-05-24T04:00:00Z",
-          "endAt": "2026-05-24T04:35:00Z"
-        },
-        {
-          "title": "Jungle Fight 150",
-          "subtitle": null,
-          "description": "Edição número 150 do evento brasileiro de artes marciais mistas. Da Arena Jungle, em São Paulo?SP. O card da competição conta com as eliminatórias para a \"Fight do Milhão\", com as quartas de final da divisão feminina do Jungle Fight.",
-          "categories": [
-            "Jungle Fight 150"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_mixed-martial-arts-jungle-fight-150_l_m.jpg",
-          "startAt": "2026-05-24T04:35:00Z",
-          "endAt": "2026-05-24T05:35:00Z"
-        },
-        {
-          "title": "Astana, Cazaquistão - Finais",
-          "subtitle": null,
-          "description": "Todas as emoções da tradicional competição de judô que vale pontos no ranking mundial e conta com a participação de alguns dos melhores judocas do mundo.",
-          "categories": [
-            "Grand Slam de Judô"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_martial-arts-astana-cazaquist-o-finais_l_m.jpg",
-          "startAt": "2026-05-24T07:30:00Z",
-          "endAt": "2026-05-24T09:55:00Z"
-        },
         {
           "title": "Ginástica Artística: Tashkent, Uzbequistão - Finais",
           "subtitle": null,
@@ -2297,291 +2514,95 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_surfing-wsl-1_l_m.jpg",
           "startAt": "2026-05-24T23:00:00Z",
           "endAt": "2026-05-25T01:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "BandSports.br",
-      "name": "BandSports",
-      "logoUrl": "https://i.imgur.com/EuPvzJe.png",
-      "provider": "Mi.tv Brazil sports guide",
-      "providerKey": "premium-mitv-br",
-      "sources": [
-        "data/normalized/guide-premium-BR-mi.tv_br.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
+        },
         {
-          "title": "WEC",
+          "title": "WSL",
           "subtitle": null,
-          "description": "Todas as emoções das etapas do Campeonato Mundial de Endurance organizado pela FIA.",
+          "description": "Melhores momentos das etapas do Circuito Mundial de Surfe, com os principais atletas da modalidade.",
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-wec-1_l_m.jpg",
-          "startAt": "2026-05-23T23:15:00Z",
-          "endAt": "2026-05-24T01:15:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_surfing-wsl-1_l_m.jpg",
+          "startAt": "2026-05-25T01:00:00Z",
+          "endAt": "2026-05-25T02:00:00Z"
         },
         {
-          "title": "Mundo PBR",
+          "title": "Meu Nome É João Chianca",
           "subtitle": null,
-          "description": "Os principais destaques e acontecimentos dos maiores eventos de rodeio ao redor do mundo.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_rodeo-mundo-pbr_l_m.jpg",
-          "startAt": "2026-05-24T01:15:00Z",
-          "endAt": "2026-05-24T02:00:00Z"
-        },
-        {
-          "title": "Esporte Agora",
-          "subtitle": null,
-          "description": "Todas as atualizações do mundo esportivo, com muita opinião.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-agora_l_m.jpg",
-          "startAt": "2026-05-24T02:00:00Z",
-          "endAt": "2026-05-24T03:00:00Z"
-        },
-        {
-          "title": "Etapa da Espanha - Feminino",
-          "subtitle": null,
-          "description": "As emoções do circuito mundial de triatlo, com provas em percursos de 100 km espalhadas pelo mundo.",
+          "description": "A história do surfista brasileiro João Chianca, que chegou como um meteoro à elite do esporte, experimentou altos e baixos, lutou e conseguiu se levantar.",
           "categories": [
-            "T100 Triathlon World Tour"
+            "Special"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_triathlon-etapa-da-espanha-feminino_l_m.jpg",
-          "startAt": "2026-05-24T03:00:00Z",
-          "endAt": "2026-05-24T04:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_meu-nome-e-jo-o-chianca_l_m.jpg",
+          "startAt": "2026-05-25T02:00:00Z",
+          "endAt": "2026-05-25T02:30:00Z"
         },
         {
-          "title": "SailGP",
+          "title": "GP do Canadá",
           "subtitle": null,
-          "description": "Melhores momentos e destaques da competição mundial de vela envolvendo catamarãs F50.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sailing-sailgp-1_l_m.jpg",
-          "startAt": "2026-05-24T06:30:00Z",
-          "endAt": "2026-05-24T07:30:00Z"
-        },
-        {
-          "title": "Campeonato Saudita de Futebol",
-          "subtitle": null,
-          "description": "Todas as emoções da principal competição de futebol masculino profissional da Arábia Saudita.",
+          "description": "Todas as emoções da mais prestigiada competição de automobilismo do planeta, a Fórmula 1.",
           "categories": [
-            "Campeonato Saudita de Futebol"
+            "Fórmula 1"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-campeonato-saudita-de-futebol_l_m.jpg",
-          "startAt": "2026-05-24T07:30:00Z",
-          "endAt": "2026-05-24T09:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-do-canada_l_m.jpg",
+          "startAt": "2026-05-25T02:30:00Z",
+          "endAt": "2026-05-25T04:30:00Z"
         },
         {
-          "title": "Campeonato Saudita de Futebol",
+          "title": "GP do Canadá - Sprint",
           "subtitle": null,
-          "description": "Todas as emoções da principal competição de futebol masculino profissional da Arábia Saudita.",
+          "description": "Todas as emoções da mais prestigiada competição de automobilismo do planeta, a Fórmula 1.",
           "categories": [
-            "Campeonato Saudita de Futebol"
+            "Fórmula 1"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-campeonato-saudita-de-futebol_l_m.jpg",
-          "startAt": "2026-05-24T09:00:00Z",
-          "endAt": "2026-05-24T09:30:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-do-canada-sprint_l_m.jpg",
+          "startAt": "2026-05-25T04:30:00Z",
+          "endAt": "2026-05-25T05:30:00Z"
         },
         {
-          "title": "Encontro de Craques",
+          "title": "GP da Austrália",
           "subtitle": null,
-          "description": "O programa recebe convidados do mundo esportivo e celebridades para uma conversa bem-humorada cheia de conteúdo, histórias e temas relevantes.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-encontro-de-craques_l_m.jpg",
-          "startAt": "2026-05-24T09:30:00Z",
-          "endAt": "2026-05-24T10:30:00Z"
-        },
-        {
-          "title": "Acelerados",
-          "subtitle": null,
-          "description": "Conheça as novidades do mercado automobilístico, além de supermáquinas e grandes clássicos.",
+          "description": "Os pilotos aceleram para a etapa de abertura da temporada, no Circuito de Albert Park, em Melbourne, Austrália. A Ferrari é a equipe que mais ganhou a prova australiana, com 14 triunfos: um a mais do que a McLaren, vencedora em 2025 com Lando Norris.",
           "categories": [
-            "Auto racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_acelerados_l_m.jpg",
-          "startAt": "2026-05-24T10:30:00Z",
-          "endAt": "2026-05-24T11:00:00Z"
-        },
-        {
-          "title": "MX2: França - Corrida 1",
-          "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
-          "categories": [
-            "Mundial de Motocross"
+            "Fórmula 1"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mx2-franca-corrida-1_l_m.jpg",
-          "startAt": "2026-05-24T11:00:00Z",
-          "endAt": "2026-05-24T12:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-da-australia_l_m.jpg",
+          "startAt": "2026-05-25T05:30:00Z",
+          "endAt": "2026-05-25T06:30:00Z"
         },
         {
-          "title": "MXGP: França - Corrida 1",
+          "title": "GP da China",
           "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
+          "description": "Todas as emoções da mais prestigiada competição de automobilismo do planeta, a Fórmula 1.",
           "categories": [
-            "Mundial de Motocross"
+            "Fórmula 1"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-1-1_l_m.jpg",
-          "startAt": "2026-05-24T12:00:00Z",
-          "endAt": "2026-05-24T13:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-da-china_l_m.jpg",
+          "startAt": "2026-05-25T07:30:00Z",
+          "endAt": "2026-05-25T09:30:00Z"
         },
         {
-          "title": "Segunda Etapa - Goiânia, GO",
+          "title": "GP do Japão",
           "subtitle": null,
-          "description": "Campeonato de motovelocidade monomarca disputado por pilotos de diversas idades e partes do mundo.",
+          "description": "Todas as emoções da mais prestigiada competição de automobilismo do planeta, a Fórmula 1.",
           "categories": [
-            "Yamalube R3 Cup"
+            "Fórmula 1"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-segunda-etapa-goiania-go_l_m.jpg",
-          "startAt": "2026-05-24T13:00:00Z",
-          "endAt": "2026-05-24T14:30:00Z"
-        },
-        {
-          "title": "Acelerados",
-          "subtitle": null,
-          "description": "Conheça as novidades do mercado automobilístico, além de supermáquinas e grandes clássicos.",
-          "categories": [
-            "Auto racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_acelerados_l_m.jpg",
-          "startAt": "2026-05-24T14:30:00Z",
-          "endAt": "2026-05-24T15:00:00Z"
-        },
-        {
-          "title": "MXGP: França - Corrida 2",
-          "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
-          "categories": [
-            "Mundial de Motocross"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-2-1_l_m.jpg",
-          "startAt": "2026-05-24T15:00:00Z",
-          "endAt": "2026-05-24T16:00:00Z"
-        },
-        {
-          "title": "Segunda Etapa - Goiânia",
-          "subtitle": null,
-          "description": "Competição histórica para a motovelocidade brasileira integra o Campeonato Brasileiro da modalidade.",
-          "categories": [
-            "Moto 1000 GP"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-segunda-etapa-goiania_l_m.jpg",
-          "startAt": "2026-05-24T16:00:00Z",
-          "endAt": "2026-05-24T17:30:00Z"
-        },
-        {
-          "title": "MX2: França - Corrida 2",
-          "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
-          "categories": [
-            "Mundial de Motocross"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mx2-franca-corrida-2_l_m.jpg",
-          "startAt": "2026-05-24T17:30:00Z",
-          "endAt": "2026-05-24T18:30:00Z"
-        },
-        {
-          "title": "The Golf Brasil",
-          "subtitle": null,
-          "description": "O programa traz os atletas e o mundo que rodeia o golfe, como o seu círculo de tomadores de decisão, empresários, executivos, empreendedores e personalidades. Além, é claro, de cobrir os eventos e os fãs do esporte.",
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-the-golf-brasil_l_m.jpg",
-          "startAt": "2026-05-24T18:30:00Z",
-          "endAt": "2026-05-24T19:00:00Z"
-        },
-        {
-          "title": "Papo de Paddock",
-          "subtitle": null,
-          "description": "O jornalista Ale Speitzzer traz uma visão única e privilegiada do mundo do automobilismo, combinando análise aprofundada e curiosidades fascinantes por meio de entrevistas exclusivas com pilotos, especialistas e personalidades de diversas categorias.",
-          "categories": [
-            "Sports talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_papo-de-paddock_l_m.jpg",
-          "startAt": "2026-05-24T19:00:00Z",
-          "endAt": "2026-05-24T20:00:00Z"
-        },
-        {
-          "title": "MXGP: França - Corrida 1",
-          "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
-          "categories": [
-            "Mundial de Motocross"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-1-1_l_m.jpg",
-          "startAt": "2026-05-24T20:00:00Z",
-          "endAt": "2026-05-24T21:00:00Z"
-        },
-        {
-          "title": "MXGP: França - Corrida 2",
-          "subtitle": null,
-          "description": "Do Circuito Internacional Georges Filhol, em La Capelle-Marival, na França.",
-          "categories": [
-            "Mundial de Motocross"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-franca-corrida-2-1_l_m.jpg",
-          "startAt": "2026-05-24T21:00:00Z",
-          "endAt": "2026-05-24T22:00:00Z"
-        },
-        {
-          "title": "TUFF Arena",
-          "subtitle": null,
-          "description": "Evento de boxe em octógono com premiação de vinte mil dólares. Do Rio de Janeiro?RJ.",
-          "categories": [
-            "TUFF Arena"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_martial-arts-tuff-arena_l_m.jpg",
-          "startAt": "2026-05-24T22:00:00Z",
-          "endAt": "2026-05-25T00:00:00Z"
-        },
-        {
-          "title": "Encontro de Craques",
-          "subtitle": null,
-          "description": "O programa recebe convidados do mundo esportivo e celebridades para uma conversa bem-humorada cheia de conteúdo, histórias e temas relevantes.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-encontro-de-craques_l_m.jpg",
-          "startAt": "2026-05-25T00:00:00Z",
-          "endAt": "2026-05-25T01:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-do-jap-o_l_m.jpg",
+          "startAt": "2026-05-25T09:30:00Z",
+          "endAt": "2026-05-25T11:35:00Z"
         }
       ]
     }
