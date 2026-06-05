@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T08:42:57.306153Z",
+  "generatedAt": "2026-06-05T08:01:34.280068Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -30,23 +30,23 @@
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 381,
   "includedChannels": 203,
-  "programmes": 19751,
+  "programmes": 19903,
   "missingCurrentSourceTargets": 0,
   "missingProgrammeTargets": 146,
   "includedByCategory": {
     "Canada": 86,
     "Spain": 37,
     "French Sports": 3,
-    "French-HD": 33,
+    "French-HD": 34,
     "UK": 40,
-    "USA": 4
+    "USA": 3
   },
   "includedByCountry": {
     "CA": 86,
     "ES": 37,
-    "FR": 36,
+    "FR": 37,
     "UK": 40,
-    "US": 4
+    "US": 3
   },
   "duplicateTargetMappings": {
     "CA:CBLTDT.ca": 3,
@@ -77,7 +77,6 @@
     "ES:APunt.es",
     "ES:BomCine.es",
     "ES:ETB1.es",
-    "FR:Animaux.fr",
     "FR:Automotolachaine.fr",
     "FR:BFMBusiness.fr",
     "FR:BFMParisIledeFrance.fr",
@@ -117,6 +116,7 @@
     "FR:InfosportPlus.fr",
     "FR:LCI.fr",
     "FR:LCP.fr",
-    "FR:LEquipe.fr"
+    "FR:LEquipe.fr",
+    "FR:LaChaineMeteo.fr"
   ]
 }
