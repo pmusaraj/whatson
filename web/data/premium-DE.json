@@ -1,7 +1,7 @@
 {
   "country": "DE",
   "countryName": "Germany",
-  "generatedAt": "2026-06-08T05:06:42.226007Z",
+  "generatedAt": "2026-06-08T16:22:45.722083Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -9,7 +9,7 @@
     "data/normalized/guide-premium-DE-sky.de.xml",
     "data/normalized/guide-premium-DE-web.magentatv.de.xml"
   ],
-  "channelCount": 12,
+  "channelCount": 13,
   "channels": [
     {
       "id": "Eurosport1.fr",
@@ -21,97 +21,36 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "Sendepause",
-        "subtitle": null,
-        "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
-        "categories": [],
-        "sportType": null,
+        "title": "Roland Garros 2026",
+        "subtitle": "Finale",
+        "description": "Die Übertragung der French Open, ein Grand-Slam-Tennisturnier, gespielt im Stade Roland Garros.",
+        "categories": [
+          "Sport"
+        ],
+        "sportType": "Tennis",
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/45a8fee854d32af5885e35569491edd6071158fb.png",
-        "startAt": "2026-06-08T01:00:00Z",
-        "endAt": "2026-06-08T06:30:00Z"
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
+        "startAt": "2026-06-08T15:14:00Z",
+        "endAt": "2026-06-08T17:01:00Z"
       },
       "programs": [
         {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/45a8fee854d32af5885e35569491edd6071158fb.png",
-          "startAt": "2026-06-08T01:00:00Z",
-          "endAt": "2026-06-08T06:30:00Z"
-        },
-        {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 1. Etappe",
+          "description": "Neuer Name, gleiche Schwierigkeit: Das vormalige Critérium du Dauphiné beginnt direkt mit einer knackigen Etappe über fünf Anstiege.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T06:30:00Z",
-          "endAt": "2026-06-08T08:00:00Z"
-        },
-        {
-          "title": "T100 Triathlon World Tour",
-          "subtitle": "San Francisco",
-          "description": "Übertragung der T100 Triathlon World Tour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623976_i_h9_aa_2024-03-04T10_53_13.jpg",
-          "startAt": "2026-06-08T08:00:00Z",
-          "endAt": "2026-06-08T09:30:00Z"
-        },
-        {
-          "title": "Roland Garros 2026",
-          "subtitle": "Finale",
-          "description": "Die Übertragung der French Open, ein Grand-Slam-Tennisturnier, gespielt im Stade Roland Garros.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
-          "startAt": "2026-06-08T09:30:00Z",
-          "endAt": "2026-06-08T11:00:00Z"
-        },
-        {
-          "title": "Giro d'Italia Frauen 2026",
-          "subtitle": "9. Etappe",
-          "description": null,
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32963529_i_h6_aa_2026-05-25T09_55_35.jpg",
-          "startAt": "2026-06-08T11:00:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
-        },
-        {
-          "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T12:00:00Z",
+          "startAt": "2026-06-08T11:59:00Z",
           "endAt": "2026-06-08T13:20:00Z"
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
@@ -119,7 +58,7 @@
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
           "startAt": "2026-06-08T13:20:00Z",
-          "endAt": "2026-06-08T15:15:00Z"
+          "endAt": "2026-06-08T15:14:00Z"
         },
         {
           "title": "Roland Garros 2026",
@@ -131,33 +70,33 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
-          "startAt": "2026-06-08T15:15:00Z",
-          "endAt": "2026-06-08T16:45:00Z"
+          "startAt": "2026-06-08T15:14:00Z",
+          "endAt": "2026-06-08T17:01:00Z"
         },
         {
-          "title": "Roland Garros 2026",
-          "subtitle": "Finale",
-          "description": "Die Übertragung der French Open, ein Grand-Slam-Tennisturnier, gespielt im Stade Roland Garros.",
+          "title": "Matchball Becker Spezial",
+          "subtitle": "Analyse des Finals Zverev - Cobolli",
+          "description": "Analysen, Highlights, Interviews und mehr. Mit Boris Becker und Matthias Stach.",
           "categories": [
             "Sport"
           ],
-          "sportType": "Tennis",
+          "sportType": null,
           "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
-          "startAt": "2026-06-08T16:45:00Z",
-          "endAt": "2026-06-08T17:30:00Z"
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/4/p14479750_i_h9_ab_2019-02-20T06_00_20.jpg",
+          "startAt": "2026-06-08T17:01:00Z",
+          "endAt": "2026-06-08T17:31:00Z"
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T17:30:00Z",
+          "startAt": "2026-06-08T17:31:00Z",
           "endAt": "2026-06-08T18:30:00Z"
         },
         {
@@ -188,7 +127,7 @@
         },
         {
           "title": "FIM EWC",
-          "subtitle": null,
+          "subtitle": "8h von Spa : Rennen",
           "description": "Übertragung aktueller Wettbewerbe aus der FIM Weltmeisterschaft der Langstrecken-Motorrad-Rennserie.",
           "categories": [
             "Sport"
@@ -201,8 +140,8 @@
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
@@ -233,6 +172,84 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/45a8fee854d32af5885e35569491edd6071158fb.png",
           "startAt": "2026-06-09T01:00:00Z",
           "endAt": "2026-06-09T06:30:00Z"
+        },
+        {
+          "title": "UCI WorldTour Männer",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
+          "startAt": "2026-06-09T06:30:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "IFSC Sportklettern Weltcup",
+          "subtitle": "Prag : Finale : Männer",
+          "description": "Übertragung des Boulder-Finals der Männer beim IFSC World Climbing Series Event 2026 in Prag.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T09:00:00Z"
+        },
+        {
+          "title": "FIM EWC",
+          "subtitle": "8h von Spa : Rennen",
+          "description": "Übertragung aktueller Wettbewerbe aus der FIM Weltmeisterschaft der Langstrecken-Motorrad-Rennserie.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p8287667_i_h9_ab_2022-09-13T15_47_14.jpg",
+          "startAt": "2026-06-09T09:00:00Z",
+          "endAt": "2026-06-09T10:30:00Z"
+        },
+        {
+          "title": "Rallye",
+          "subtitle": null,
+          "description": "Gezeigt werden Übertragungen aktueller Rennen des Rallye-Sports.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/4/7/p473093_i_h9_ab_2022-01-19T17_46_48.jpg",
+          "startAt": "2026-06-09T10:30:00Z",
+          "endAt": "2026-06-09T11:30:00Z"
+        },
+        {
+          "title": "UCI Mountainbike Weltcup",
+          "subtitle": "Loudenvielle : Männer Elite",
+          "description": "Die Übertragung der Rennen des UCI Mountainbike Weltcups.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623971_i_h9_ab_2024-04-12T09_13_36.jpg",
+          "startAt": "2026-06-09T11:30:00Z",
+          "endAt": "2026-06-09T12:00:00Z"
+        },
+        {
+          "title": "UCI WorldTour Männer",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
+          "startAt": "2026-06-09T12:00:00Z",
+          "endAt": "2026-06-09T13:20:00Z"
         }
       ]
     },
@@ -246,136 +263,19 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "UCI WorldTour Männer",
-        "subtitle": null,
-        "description": "Übertragungen der Rennen der UCI WorldTour.",
+        "title": "FIA WEC",
+        "subtitle": "24h von Le Mans - Rennen",
+        "description": "Übertragung der Rennen der FIA World Endurance Championship.",
         "categories": [
           "Sport"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-        "startAt": "2026-06-08T05:00:00Z",
-        "endAt": "2026-06-08T06:30:00Z"
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11631169_i_h9_af_2025-02-19T19_04_49.jpg",
+        "startAt": "2026-06-08T15:02:00Z",
+        "endAt": "2026-06-08T16:29:00Z"
       },
       "programs": [
-        {
-          "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T01:00:00Z",
-          "endAt": "2026-06-08T02:00:00Z"
-        },
-        {
-          "title": "FIM EWC",
-          "subtitle": "8h von Spa : Rennen",
-          "description": "Übertragung aktueller Wettbewerbe aus der FIM Weltmeisterschaft der Langstrecken-Motorrad-Rennserie.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p8287667_i_h9_ab_2022-09-13T15_47_14.jpg",
-          "startAt": "2026-06-08T02:00:00Z",
-          "endAt": "2026-06-08T04:00:00Z"
-        },
-        {
-          "title": "T100 Triathlon World Tour",
-          "subtitle": "San Francisco",
-          "description": "Übertragung der T100 Triathlon World Tour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623976_i_h9_aa_2024-03-04T10_53_13.jpg",
-          "startAt": "2026-06-08T04:00:00Z",
-          "endAt": "2026-06-08T05:00:00Z"
-        },
-        {
-          "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T05:00:00Z",
-          "endAt": "2026-06-08T06:30:00Z"
-        },
-        {
-          "title": "FIM Motocross-WM",
-          "subtitle": "Lettland : MX2 : 1. Rennen",
-          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
-          "startAt": "2026-06-08T06:30:00Z",
-          "endAt": "2026-06-08T07:30:00Z"
-        },
-        {
-          "title": "FIM Motocross-WM",
-          "subtitle": "Lettland : MX2 : 1. Rennen",
-          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
-          "startAt": "2026-06-08T07:30:00Z",
-          "endAt": "2026-06-08T08:30:00Z"
-        },
-        {
-          "title": "FIM Motocross-WM",
-          "subtitle": "Lettland : MX2 : 2. Rennen",
-          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
-          "startAt": "2026-06-08T08:30:00Z",
-          "endAt": "2026-06-08T09:30:00Z"
-        },
-        {
-          "title": "FIM Motocross-WM",
-          "subtitle": "Lettland : MXGP : 2. Rennen",
-          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
-          "startAt": "2026-06-08T09:30:00Z",
-          "endAt": "2026-06-08T10:30:00Z"
-        },
-        {
-          "title": "T100 Triathlon World Tour",
-          "subtitle": "San Francisco",
-          "description": "Übertragung der T100 Triathlon World Tour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26623976_i_h9_aa_2024-03-04T10_53_13.jpg",
-          "startAt": "2026-06-08T10:30:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
-        },
         {
           "title": "Roland Garros 2026",
           "subtitle": "Finale",
@@ -386,8 +286,8 @@
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
-          "startAt": "2026-06-08T12:00:00Z",
-          "endAt": "2026-06-08T15:00:00Z"
+          "startAt": "2026-06-08T11:55:00Z",
+          "endAt": "2026-06-08T15:02:00Z"
         },
         {
           "title": "FIA WEC",
@@ -399,34 +299,34 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11631169_i_h9_af_2025-02-19T19_04_49.jpg",
-          "startAt": "2026-06-08T15:00:00Z",
-          "endAt": "2026-06-08T16:30:00Z"
+          "startAt": "2026-06-08T15:02:00Z",
+          "endAt": "2026-06-08T16:29:00Z"
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T16:30:00Z",
-          "endAt": "2026-06-08T17:30:00Z"
+          "startAt": "2026-06-08T16:29:00Z",
+          "endAt": "2026-06-08T17:29:00Z"
         },
         {
           "title": "IFSC Sportklettern Weltcup",
           "subtitle": "Prag : Lead : Finale : Frauen Männer",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
+          "description": "Übertragung des Lead-Finals der Frauen und Männer in der IFSC Climbing World Series 2026 aus Prag.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-06-08T17:30:00Z",
-          "endAt": "2026-06-08T19:00:00Z"
+          "startAt": "2026-06-08T17:29:00Z",
+          "endAt": "2026-06-08T19:02:00Z"
         },
         {
           "title": "FIM EWC",
@@ -438,65 +338,65 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p8287667_i_h9_ab_2022-09-13T15_47_14.jpg",
-          "startAt": "2026-06-08T19:00:00Z",
-          "endAt": "2026-06-08T20:30:00Z"
+          "startAt": "2026-06-08T19:02:00Z",
+          "endAt": "2026-06-08T20:28:00Z"
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
-          "startAt": "2026-06-08T20:30:00Z",
-          "endAt": "2026-06-08T22:00:00Z"
+          "startAt": "2026-06-08T20:28:00Z",
+          "endAt": "2026-06-08T22:02:00Z"
         },
         {
           "title": "IFSC Sportklettern Weltcup",
           "subtitle": "Prag : Finale : Männer",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
+          "description": "Übertragung des Boulder-Finals der Männer beim IFSC World Climbing Series Event 2026 in Prag.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-06-08T22:00:00Z",
-          "endAt": "2026-06-08T23:00:00Z"
+          "startAt": "2026-06-08T22:02:00Z",
+          "endAt": "2026-06-08T23:02:00Z"
         },
         {
           "title": "IFSC Sportklettern Weltcup",
           "subtitle": "Prag : Finale : Frauen",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
+          "description": "Übertragung des Boulder-Finals der Frauen in der IFSC World Climbing Series 2026 aus Prag.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-06-08T23:00:00Z",
-          "endAt": "2026-06-09T00:00:00Z"
+          "startAt": "2026-06-08T23:02:00Z",
+          "endAt": "2026-06-09T00:03:00Z"
         },
         {
           "title": "IFSC Sportklettern Weltcup",
           "subtitle": "Prag : Lead : Finale : Frauen Männer",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
+          "description": "Übertragung des Lead-Finals der Frauen und Männer in der IFSC Climbing World Series 2026 aus Prag.",
           "categories": [
             "Sport"
           ],
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-06-09T00:00:00Z",
+          "startAt": "2026-06-09T00:03:00Z",
           "endAt": "2026-06-09T01:00:00Z"
         },
         {
           "title": "UCI WorldTour Männer",
-          "subtitle": null,
-          "description": "Übertragungen der Rennen der UCI WorldTour.",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
           "categories": [
             "Sport"
           ],
@@ -505,6 +405,110 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
           "startAt": "2026-06-09T01:00:00Z",
           "endAt": "2026-06-09T02:00:00Z"
+        },
+        {
+          "title": "Motorsport: FIA WEC",
+          "subtitle": "FIA WEC : 6h von Imola : Rennen",
+          "description": "Live-Übertragung des Langstreckenrennens zum Auftakt der FIA World Endurance Championship 2026 auf dem Autodromo Enzo e Dino Ferrari.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11631169_i_h9_af_2025-02-19T19_04_49.jpg",
+          "startAt": "2026-06-09T02:00:00Z",
+          "endAt": "2026-06-09T03:30:00Z"
+        },
+        {
+          "title": "Roland Garros 2026",
+          "subtitle": "Finale",
+          "description": "Die Übertragung der French Open, ein Grand-Slam-Tennisturnier, gespielt im Stade Roland Garros.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32172779_i_h9_aa_2026-03-26T20_15_32.jpg",
+          "startAt": "2026-06-09T03:30:00Z",
+          "endAt": "2026-06-09T05:00:00Z"
+        },
+        {
+          "title": "UCI WorldTour Männer",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
+          "startAt": "2026-06-09T05:00:00Z",
+          "endAt": "2026-06-09T06:30:00Z"
+        },
+        {
+          "title": "IFSC Sportklettern Weltcup",
+          "subtitle": "Prag : Finale : Männer",
+          "description": "Übertragung des Boulder-Finals der Männer beim IFSC World Climbing Series Event 2026 in Prag.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
+          "startAt": "2026-06-09T06:30:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "FIA WEC",
+          "subtitle": "6 Hours of Imola - Race",
+          "description": "Vom Autodromo Enzo e Dino Ferrari in Imola, Emilia-Romagna, Italien.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11631169_i_h9_af_2025-02-19T19_04_49.jpg",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T09:30:00Z"
+        },
+        {
+          "title": "Rallye",
+          "subtitle": null,
+          "description": "Gezeigt werden Übertragungen aktueller Rennen des Rallye-Sports.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/4/7/p473093_i_h9_ab_2022-01-19T17_46_48.jpg",
+          "startAt": "2026-06-09T09:30:00Z",
+          "endAt": "2026-06-09T10:30:00Z"
+        },
+        {
+          "title": "UCI WorldTour Männer",
+          "subtitle": "Tour Auvergne Rhone Alpes - 2. Etappe",
+          "description": "Die 2. Etappe ist mit Abstand die längste der Rundfahrt: Über 234,3 Kilometer geht es quer durch Ostfrankreich von den Alpen ins Zentralmassiv.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23581551_i_h9_ad_2024-10-10T09_14_18.jpg",
+          "startAt": "2026-06-09T10:30:00Z",
+          "endAt": "2026-06-09T11:30:00Z"
+        },
+        {
+          "title": "IFSC Sportklettern Weltcup",
+          "subtitle": "Prag : Finale : Männer",
+          "description": "Übertragung des Boulder-Finals der Männer beim IFSC World Climbing Series Event 2026 in Prag.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
+          "startAt": "2026-06-09T11:30:00Z",
+          "endAt": "2026-06-09T12:30:00Z"
         }
       ]
     },
@@ -518,97 +522,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Sendepause",
+        "title": "Best of DAZN: Highlights",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Sendepause"
+          "Sport (allgemein)"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-07T22:10:00Z",
-        "endAt": "2026-06-08T06:00:00Z"
+        "startAt": "2026-06-08T16:20:00Z",
+        "endAt": "2026-06-08T16:50:00Z"
       },
       "programs": [
-        {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sendepause"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-07T22:10:00Z",
-          "endAt": "2026-06-08T06:00:00Z"
-        },
-        {
-          "title": "3. Liga Highlightshow 25/26: 35. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T06:00:00Z",
-          "endAt": "2026-06-08T07:00:00Z"
-        },
-        {
-          "title": "Best of DAZN: Highlights",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T07:00:00Z",
-          "endAt": "2026-06-08T07:30:00Z"
-        },
-        {
-          "title": "Serie A 25/26: Inter Mailand - AS Rom",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T07:30:00Z",
-          "endAt": "2026-06-08T09:30:00Z"
-        },
-        {
-          "title": "Freundschaftsspiele: Frankreich - Elfenbeinküste",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T09:30:00Z",
-          "endAt": "2026-06-08T11:30:00Z"
-        },
-        {
-          "title": "Best of DAZN: Highlights",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T11:30:00Z",
-          "endAt": "2026-06-08T12:05:00Z"
-        },
         {
           "title": "Let's go Ballin': Episode 3",
           "subtitle": null,
@@ -764,6 +690,84 @@
           "imageUrl": null,
           "startAt": "2026-06-08T22:00:00Z",
           "endAt": "2026-06-09T06:00:00Z"
+        },
+        {
+          "title": "Primera Division Features 2025/26: End of year Special",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T06:00:00Z",
+          "endAt": "2026-06-09T06:30:00Z"
+        },
+        {
+          "title": "Best of DAZN: Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T06:30:00Z",
+          "endAt": "2026-06-09T07:05:00Z"
+        },
+        {
+          "title": "Freundschaftsspiele: Frankreich - Elfenbeinküste",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T07:05:00Z",
+          "endAt": "2026-06-09T09:00:00Z"
+        },
+        {
+          "title": "Best of DAZN: Highlights",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T09:00:00Z",
+          "endAt": "2026-06-09T09:40:00Z"
+        },
+        {
+          "title": "Serie A 25/26: Inter Mailand - AS Rom",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T09:40:00Z",
+          "endAt": "2026-06-09T11:40:00Z"
+        },
+        {
+          "title": "ALL IN - Die Bundesliga Highlight Show: 30. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T11:40:00Z",
+          "endAt": "2026-06-09T12:40:00Z"
         }
       ]
     },
@@ -777,71 +781,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Sendepause",
+        "title": "Das Herz des deutschen Fußballs: Episode 1",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Sendepause"
+          "Sportmagazin"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-07T22:10:00Z",
-        "endAt": "2026-06-08T06:00:00Z"
+        "startAt": "2026-06-08T15:55:00Z",
+        "endAt": "2026-06-08T16:25:00Z"
       },
       "programs": [
-        {
-          "title": "Sendepause",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sendepause"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-07T22:10:00Z",
-          "endAt": "2026-06-08T06:00:00Z"
-        },
-        {
-          "title": "Freundschaftsspiele: Frankreich - Elfenbeinküste",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T06:00:00Z",
-          "endAt": "2026-06-08T08:00:00Z"
-        },
-        {
-          "title": "Freundschaftsspiele: Kroatien - Belgien",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T08:00:00Z",
-          "endAt": "2026-06-08T10:05:00Z"
-        },
-        {
-          "title": "Porträt von Holger Gehrke: Fußball-Urgestein auf neuen Plätzen",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sportmagazin"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T10:05:00Z",
-          "endAt": "2026-06-08T11:00:00Z"
-        },
         {
           "title": "Ligue 1 25/26: PSG - Olympique Marseille",
           "subtitle": null,
@@ -971,6 +923,303 @@
           "imageUrl": null,
           "startAt": "2026-06-08T22:00:00Z",
           "endAt": "2026-06-09T06:00:00Z"
+        },
+        {
+          "title": "Freundschaftsspiele: Deutschland - Finnland",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T06:00:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "Freundschaftsspiele: Frankreich - Nordirland",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T09:55:00Z"
+        },
+        {
+          "title": "Google Pixel Frauen-Bundesliga Highlightshow 25/26: 22. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T09:55:00Z",
+          "endAt": "2026-06-09T10:25:00Z"
+        },
+        {
+          "title": "Google Pixel Frauen-Bundesliga Highlightshow 25/26: 23. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T10:25:00Z",
+          "endAt": "2026-06-09T10:55:00Z"
+        },
+        {
+          "title": "Google Pixel Frauen-Bundesliga Highlightshow 25/26: 24. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T10:55:00Z",
+          "endAt": "2026-06-09T11:30:00Z"
+        },
+        {
+          "title": "FA Cup 25/26: Manchester City - FC Liverpool",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T11:30:00Z",
+          "endAt": "2026-06-09T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySport1.de",
+      "name": "Sky Sport 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Live WTA 500: HSBC Championships in London (GBR), 1. Tag",
+        "subtitle": null,
+        "description": null,
+        "categories": [
+          "Tennis"
+        ],
+        "sportType": "Tennis",
+        "competition": null,
+        "imageUrl": "http://sky.de/static/img/program_guide/17921961_s.jpg",
+        "startAt": "2026-06-08T12:00:00Z",
+        "endAt": "2026-06-08T21:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Live WTA 500: HSBC Championships in London (GBR), 1. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921961_s.jpg",
+          "startAt": "2026-06-08T12:00:00Z",
+          "endAt": "2026-06-08T21:00:00Z"
+        },
+        {
+          "title": "Es folgt: Live Tennis WTA Tour",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T11:40:00Z",
+          "endAt": "2026-06-09T12:00:00Z"
+        },
+        {
+          "title": "Live WTA 500: HSBC Championships in London (GBR), 2. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17949545_s.jpg",
+          "startAt": "2026-06-09T12:00:00Z",
+          "endAt": "2026-06-09T18:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySport2.de",
+      "name": "Sky Sport 2 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sky_Sport_2_DE_Logo_2020.svg/960px-Sky_Sport_2_DE_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Argentinien - Deutschland, FIFA WM 2010",
+        "subtitle": null,
+        "description": null,
+        "categories": [
+          "Fußball"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": null,
+        "startAt": "2026-06-08T15:40:00Z",
+        "endAt": "2026-06-08T17:20:00Z"
+      },
+      "programs": [
+        {
+          "title": "Italien - Frankreich, FIFA WM 2006",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T11:00:00Z",
+          "endAt": "2026-06-08T13:20:00Z"
+        },
+        {
+          "title": "Wontorras World Cup - Vater. Tochter. WM. - Episode 2",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T13:20:00Z",
+          "endAt": "2026-06-08T13:50:00Z"
+        },
+        {
+          "title": "Deutschland - England, FIFA WM 2010",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T13:50:00Z",
+          "endAt": "2026-06-08T15:25:00Z"
+        },
+        {
+          "title": "England, Analyse Lab FIFA WM 2026",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T15:25:00Z",
+          "endAt": "2026-06-08T15:40:00Z"
+        },
+        {
+          "title": "Argentinien - Deutschland, FIFA WM 2010",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T15:40:00Z",
+          "endAt": "2026-06-08T17:20:00Z"
+        },
+        {
+          "title": "FIFA WM 1986, World Cup History",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T17:20:00Z",
+          "endAt": "2026-06-08T17:30:00Z"
+        },
+        {
+          "title": "Deutschland - Spanien, FIFA WM 2010",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T18:00:00Z",
+          "endAt": "2026-06-08T19:40:00Z"
+        },
+        {
+          "title": "FIFA WM 2014, World Cup History",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T19:40:00Z",
+          "endAt": "2026-06-08T20:00:00Z"
+        },
+        {
+          "title": "Deutschland - Portugal, FIFA WM 2014",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T20:00:00Z",
+          "endAt": "2026-06-08T21:35:00Z"
+        },
+        {
+          "title": "Guadalajara, FIFA Stories from the Cities",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-08T21:35:00Z",
+          "endAt": "2026-06-08T22:00:00Z"
         }
       ]
     },
@@ -984,7 +1233,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "F1: 1. Freies Training - GP Monaco",
+        "title": "F1: Rennen - GP Monaco",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -992,102 +1241,11 @@
         ],
         "sportType": "Formula 1",
         "competition": "Formula 1",
-        "imageUrl": "http://sky.de/static/img/program_guide/16137512_s.jpg",
-        "startAt": "2026-06-08T04:00:00Z",
-        "endAt": "2026-06-08T05:30:00Z"
+        "imageUrl": null,
+        "startAt": "2026-06-08T15:00:00Z",
+        "endAt": "2026-06-08T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Live IndyCar: Bommarito Automotive Group 500",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Motorsport"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T01:00:00Z",
-          "endAt": "2026-06-08T03:30:00Z"
-        },
-        {
-          "title": "F1: Rennen Kompakt - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137529_s.jpg",
-          "startAt": "2026-06-08T03:30:00Z",
-          "endAt": "2026-06-08T04:00:00Z"
-        },
-        {
-          "title": "F1: 1. Freies Training - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137512_s.jpg",
-          "startAt": "2026-06-08T04:00:00Z",
-          "endAt": "2026-06-08T05:30:00Z"
-        },
-        {
-          "title": "F1: 2. Freies Training - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137514_s.jpg",
-          "startAt": "2026-06-08T05:30:00Z",
-          "endAt": "2026-06-08T07:00:00Z"
-        },
-        {
-          "title": "F1: 3. Freies Training - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137517_s.jpg",
-          "startAt": "2026-06-08T07:00:00Z",
-          "endAt": "2026-06-08T08:30:00Z"
-        },
-        {
-          "title": "F1: Qualifying - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137519_s.jpg",
-          "startAt": "2026-06-08T08:30:00Z",
-          "endAt": "2026-06-08T10:00:00Z"
-        },
-        {
-          "title": "F1: Rennen - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-06-08T10:00:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
-        },
         {
           "title": "Motorsport: Die grüne Hölle - 24h wie im Rausch",
           "subtitle": null,
@@ -1230,6 +1388,136 @@
           "imageUrl": null,
           "startAt": "2026-06-09T00:00:00Z",
           "endAt": "2026-06-09T02:00:00Z"
+        },
+        {
+          "title": "F2: 1. Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16137518_s.jpg",
+          "startAt": "2026-06-09T02:00:00Z",
+          "endAt": "2026-06-09T03:00:00Z"
+        },
+        {
+          "title": "F2: 2. Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16137523_s.jpg",
+          "startAt": "2026-06-09T03:00:00Z",
+          "endAt": "2026-06-09T04:00:00Z"
+        },
+        {
+          "title": "IndyCar: Bommarito Automotive Group 500",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T04:00:00Z",
+          "endAt": "2026-06-09T06:00:00Z"
+        },
+        {
+          "title": "GTWC: Highlights: Monza (Endurance Cup)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17341041_s.jpg",
+          "startAt": "2026-06-09T06:00:00Z",
+          "endAt": "2026-06-09T07:45:00Z"
+        },
+        {
+          "title": "F1: Top 20: Spektakuläre Abflüge",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/14407665_s.jpg",
+          "startAt": "2026-06-09T07:45:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "F1: Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T10:00:00Z"
+        },
+        {
+          "title": "Motorsport: Die grüne Hölle - 24h wie im Rausch",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T10:00:00Z",
+          "endAt": "2026-06-09T10:30:00Z"
+        },
+        {
+          "title": "F1: Rennen Kompakt - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://sky.de/static/img/program_guide/16137529_s.jpg",
+          "startAt": "2026-06-09T10:30:00Z",
+          "endAt": "2026-06-09T11:00:00Z"
+        },
+        {
+          "title": "PMSC: Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17205483_s.jpg",
+          "startAt": "2026-06-09T11:00:00Z",
+          "endAt": "2026-06-09T12:00:00Z"
+        },
+        {
+          "title": "F1: Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Formel 1"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-06-09T12:00:00Z",
+          "endAt": "2026-06-09T14:00:00Z"
         }
       ]
     },
@@ -1243,7 +1531,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "Golf: US Women's Open, 4. Tag in Pacific Palisades, CA (USA)",
+        "title": "Golf: US Women's Open, 3. Tag in Pacific Palisades, CA (USA)",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -1251,102 +1539,11 @@
         ],
         "sportType": "Golf",
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17990592_s.jpg",
-        "startAt": "2026-06-08T03:00:00Z",
-        "endAt": "2026-06-08T06:00:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17990591_s.jpg",
+        "startAt": "2026-06-08T16:00:00Z",
+        "endAt": "2026-06-08T19:00:00Z"
       },
       "programs": [
-        {
-          "title": "LIV Golf: Andalusien, 4. Tag in Sotogrande",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17840282_s.jpg",
-          "startAt": "2026-06-08T00:00:00Z",
-          "endAt": "2026-06-08T03:00:00Z"
-        },
-        {
-          "title": "Golf: US Women's Open, 4. Tag in Pacific Palisades, CA (USA)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17990592_s.jpg",
-          "startAt": "2026-06-08T03:00:00Z",
-          "endAt": "2026-06-08T06:00:00Z"
-        },
-        {
-          "title": "LIV Golf: Andalusien, 4. Tag in Sotogrande",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17840282_s.jpg",
-          "startAt": "2026-06-08T06:00:00Z",
-          "endAt": "2026-06-08T09:00:00Z"
-        },
-        {
-          "title": "Golf: Creator Golf Masters 2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T09:00:00Z",
-          "endAt": "2026-06-08T09:15:00Z"
-        },
-        {
-          "title": "Golf: Tee Time Stories (2)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17215260_s.jpg",
-          "startAt": "2026-06-08T09:15:00Z",
-          "endAt": "2026-06-08T09:30:00Z"
-        },
-        {
-          "title": "Golf: Tee Time Stories (4)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17630056_s.jpg",
-          "startAt": "2026-06-08T09:30:00Z",
-          "endAt": "2026-06-08T09:45:00Z"
-        },
-        {
-          "title": "Golf: Tee Time Stories (5)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17840518_s.jpg",
-          "startAt": "2026-06-08T09:45:00Z",
-          "endAt": "2026-06-08T10:00:00Z"
-        },
         {
           "title": "Golf: US Women's Open, 1. Tag in Pacific Palisades, CA (USA)",
           "subtitle": null,
@@ -1424,6 +1621,110 @@
           "imageUrl": "http://sky.de/static/img/program_guide/15334431_s.jpg",
           "startAt": "2026-06-09T01:00:00Z",
           "endAt": "2026-06-09T01:30:00Z"
+        },
+        {
+          "title": "Golf: Greatest Holes (2)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15334432_s.jpg",
+          "startAt": "2026-06-09T01:30:00Z",
+          "endAt": "2026-06-09T02:00:00Z"
+        },
+        {
+          "title": "Golf: Greatest Holes (3)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15334433_s.jpg",
+          "startAt": "2026-06-09T02:00:00Z",
+          "endAt": "2026-06-09T02:30:00Z"
+        },
+        {
+          "title": "Golf: Greatest Holes (4)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15334434_s.jpg",
+          "startAt": "2026-06-09T02:30:00Z",
+          "endAt": "2026-06-09T03:00:00Z"
+        },
+        {
+          "title": "Golf: Greatest Holes (5)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15334435_s.jpg",
+          "startAt": "2026-06-09T03:00:00Z",
+          "endAt": "2026-06-09T03:30:00Z"
+        },
+        {
+          "title": "Golf: Greatest Holes (6)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15334436_s.jpg",
+          "startAt": "2026-06-09T03:30:00Z",
+          "endAt": "2026-06-09T04:00:00Z"
+        },
+        {
+          "title": "LIV Golf: Andalusien, 4. Tag in Sotogrande",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17840282_s.jpg",
+          "startAt": "2026-06-09T04:00:00Z",
+          "endAt": "2026-06-09T07:00:00Z"
+        },
+        {
+          "title": "Golf: US Women's Open, 4. Tag in Pacific Palisades, CA (USA)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17990592_s.jpg",
+          "startAt": "2026-06-09T07:00:00Z",
+          "endAt": "2026-06-09T10:00:00Z"
+        },
+        {
+          "title": "LIV Golf: Andalusien, 1. Tag in Sotogrande",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17840279_s.jpg",
+          "startAt": "2026-06-09T10:00:00Z",
+          "endAt": "2026-06-09T13:00:00Z"
         }
       ]
     },
@@ -1437,149 +1738,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "F1: Rennen Kompakt - GP Monaco",
+        "title": "Live Transfer Update: Die Show XXL",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Formel 1"
+          "Sport (allgemein)"
         ],
-        "sportType": "Formula 1",
-        "competition": "Formula 1",
-        "imageUrl": "http://sky.de/static/img/program_guide/16137529_s.jpg",
-        "startAt": "2026-06-08T05:00:00Z",
-        "endAt": "2026-06-08T05:30:00Z"
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://sky.de/static/img/program_guide/17910231_s.jpg",
+        "startAt": "2026-06-08T16:00:00Z",
+        "endAt": "2026-06-08T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Sky Sport News: Nightline",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14094135_s.jpg",
-          "startAt": "2026-06-07T22:00:00Z",
-          "endAt": "2026-06-08T04:00:00Z"
-        },
-        {
-          "title": "Sky Sport News: Der Morgen",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
-          "startAt": "2026-06-08T04:00:00Z",
-          "endAt": "2026-06-08T05:00:00Z"
-        },
-        {
-          "title": "F1: Rennen Kompakt - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137529_s.jpg",
-          "startAt": "2026-06-08T05:00:00Z",
-          "endAt": "2026-06-08T05:30:00Z"
-        },
-        {
-          "title": "Sky Sport News: Der Morgen",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
-          "startAt": "2026-06-08T05:30:00Z",
-          "endAt": "2026-06-08T06:00:00Z"
-        },
-        {
-          "title": "BL: Road to the Americas (3)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17734419_s.jpg",
-          "startAt": "2026-06-08T06:00:00Z",
-          "endAt": "2026-06-08T06:30:00Z"
-        },
-        {
-          "title": "Sky Sport News: Wake up, World Cup!",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T06:30:00Z",
-          "endAt": "2026-06-08T07:00:00Z"
-        },
-        {
-          "title": "Live Sky Sport News: Guten Morgen Fans!",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17979047_s.jpg",
-          "startAt": "2026-06-08T07:00:00Z",
-          "endAt": "2026-06-08T08:30:00Z"
-        },
-        {
-          "title": "Sky Sport News: Guten Morgen Fans!",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17979047_s.jpg",
-          "startAt": "2026-06-08T08:30:00Z",
-          "endAt": "2026-06-08T09:00:00Z"
-        },
-        {
-          "title": "Live Fußball: Sammer & Basile - Der Hagedorn-Talk",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T09:00:00Z",
-          "endAt": "2026-06-08T10:00:00Z"
-        },
-        {
-          "title": "Live Sky Sport News: Der Mittag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14094127_s.jpg",
-          "startAt": "2026-06-08T10:00:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
-        },
         {
           "title": "Live Sky Sport News: Dein WM Update",
           "subtitle": null,
@@ -1735,6 +1906,123 @@
           "imageUrl": "http://sky.de/static/img/program_guide/14094135_s.jpg",
           "startAt": "2026-06-09T00:00:00Z",
           "endAt": "2026-06-09T04:00:00Z"
+        },
+        {
+          "title": "Sky Sport News: Der Morgen",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/14094126_s.jpg",
+          "startAt": "2026-06-09T04:00:00Z",
+          "endAt": "2026-06-09T05:00:00Z"
+        },
+        {
+          "title": "Transfer Update: Die Show XXL",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17910231_s.jpg",
+          "startAt": "2026-06-09T05:00:00Z",
+          "endAt": "2026-06-09T06:00:00Z"
+        },
+        {
+          "title": "BL: Road to the Americas (4)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17734421_s.jpg",
+          "startAt": "2026-06-09T06:00:00Z",
+          "endAt": "2026-06-09T06:30:00Z"
+        },
+        {
+          "title": "Sky Sport News: Wake up, World Cup!",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T06:30:00Z",
+          "endAt": "2026-06-09T07:00:00Z"
+        },
+        {
+          "title": "Live Sky Sport News: Guten Morgen Fans!",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17979049_s.jpg",
+          "startAt": "2026-06-09T07:00:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "Sky Sport News: Guten Morgen Fans!",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17979049_s.jpg",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T08:30:00Z"
+        },
+        {
+          "title": "Live Sky Sport News: Guten Morgen Fans!",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17979050_s.jpg",
+          "startAt": "2026-06-09T08:30:00Z",
+          "endAt": "2026-06-09T09:30:00Z"
+        },
+        {
+          "title": "Live Sky Sport News: Der Mittag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/14094127_s.jpg",
+          "startAt": "2026-06-09T10:00:00Z",
+          "endAt": "2026-06-09T12:00:00Z"
+        },
+        {
+          "title": "Live Sky Sport News: Dein WM Update",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport (allgemein)"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T12:00:00Z",
+          "endAt": "2026-06-09T12:30:00Z"
         }
       ]
     },
@@ -1748,7 +2036,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "PL: PL Rewind: Peter Schmeichel",
+        "title": "PL: Goals of the Season 2025/2026",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -1756,271 +2044,11 @@
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/15073078_s.jpg",
-        "startAt": "2026-06-08T05:00:00Z",
-        "endAt": "2026-06-08T05:30:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17883206_s.jpg",
+        "startAt": "2026-06-08T16:00:00Z",
+        "endAt": "2026-06-08T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "PL: 1 to 11 (Peter Schmeichel)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/12657924_s.jpg",
-          "startAt": "2026-06-08T01:00:00Z",
-          "endAt": "2026-06-08T02:00:00Z"
-        },
-        {
-          "title": "PL: Goals of the Season 2025/2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17883206_s.jpg",
-          "startAt": "2026-06-08T02:00:00Z",
-          "endAt": "2026-06-08T03:00:00Z"
-        },
-        {
-          "title": "PL: 1 to 11 (Thomas Hitzlsperger)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17081352_s.jpg",
-          "startAt": "2026-06-08T03:00:00Z",
-          "endAt": "2026-06-08T04:00:00Z"
-        },
-        {
-          "title": "PL: PL Rewind: Aaron Ramsey - My Arsenal Years",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17610319_s.jpg",
-          "startAt": "2026-06-08T04:00:00Z",
-          "endAt": "2026-06-08T04:30:00Z"
-        },
-        {
-          "title": "PL: PL Rewind: Dietmar Hamann - My Liverpool Years",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16830128_s.jpg",
-          "startAt": "2026-06-08T04:30:00Z",
-          "endAt": "2026-06-08T05:00:00Z"
-        },
-        {
-          "title": "PL: PL Rewind: Peter Schmeichel",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/15073078_s.jpg",
-          "startAt": "2026-06-08T05:00:00Z",
-          "endAt": "2026-06-08T05:30:00Z"
-        },
-        {
-          "title": "PL: Liverpool Classic Match: Manchester City - FC Liverpool (2008/2009)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/10705305_s.jpg",
-          "startAt": "2026-06-08T05:30:00Z",
-          "endAt": "2026-06-08T06:00:00Z"
-        },
-        {
-          "title": "PL: 90in30: LIV - MCI, 25. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17291916_s.jpg",
-          "startAt": "2026-06-08T06:00:00Z",
-          "endAt": "2026-06-08T06:30:00Z"
-        },
-        {
-          "title": "PL: Liverpool Classic Match: Manchester City - FC Liverpool (2017/2018)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/10684110_s.jpg",
-          "startAt": "2026-06-08T06:30:00Z",
-          "endAt": "2026-06-08T07:00:00Z"
-        },
-        {
-          "title": "PL: 90in30: TOT - ARS, 27. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17315563_s.jpg",
-          "startAt": "2026-06-08T07:00:00Z",
-          "endAt": "2026-06-08T07:30:00Z"
-        },
-        {
-          "title": "PL: Best Goals: North London Derby",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/13308447_s.jpg",
-          "startAt": "2026-06-08T07:30:00Z",
-          "endAt": "2026-06-08T08:00:00Z"
-        },
-        {
-          "title": "PL: 90in30: ARS - CHE, 28. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17323474_s.jpg",
-          "startAt": "2026-06-08T08:00:00Z",
-          "endAt": "2026-06-08T08:30:00Z"
-        },
-        {
-          "title": "PL: Greatest Games: FC Chelsea - FC Arsenal (1997)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/13308480_s.jpg",
-          "startAt": "2026-06-08T08:30:00Z",
-          "endAt": "2026-06-08T08:45:00Z"
-        },
-        {
-          "title": "PL: 90in30: CHE - MCI, 32. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17425536_s.jpg",
-          "startAt": "2026-06-08T08:45:00Z",
-          "endAt": "2026-06-08T09:15:00Z"
-        },
-        {
-          "title": "PL: Classic Match: FC Chelsea - Manchester City (2009/10)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/14183056_s.jpg",
-          "startAt": "2026-06-08T09:15:00Z",
-          "endAt": "2026-06-08T09:45:00Z"
-        },
-        {
-          "title": "PL: 90in30: MCI - ARS, 33. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17556923_s.jpg",
-          "startAt": "2026-06-08T09:45:00Z",
-          "endAt": "2026-06-08T10:15:00Z"
-        },
-        {
-          "title": "PL: Classic Match: Manchester City - FC Arsenal (2013/2014)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/13938906_s.jpg",
-          "startAt": "2026-06-08T10:15:00Z",
-          "endAt": "2026-06-08T10:45:00Z"
-        },
-        {
-          "title": "PL: Classic Match: FC Arsenal - Manchester City (2000/2001)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/13938905_s.jpg",
-          "startAt": "2026-06-08T10:45:00Z",
-          "endAt": "2026-06-08T11:15:00Z"
-        },
-        {
-          "title": "PL: Liverpool Classic Match: FC Liverpool - Manchester United (1993/1994)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/10705296_s.jpg",
-          "startAt": "2026-06-08T11:15:00Z",
-          "endAt": "2026-06-08T11:45:00Z"
-        },
-        {
-          "title": "PL: 90in30: MUN - LIV, 35. Spieltag",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17666484_s.jpg",
-          "startAt": "2026-06-08T11:45:00Z",
-          "endAt": "2026-06-08T12:15:00Z"
-        },
         {
           "title": "PL: Greatest Games: Manchester United - FC Liverpool (1995)",
           "subtitle": null,
@@ -2319,6 +2347,266 @@
           "imageUrl": "http://sky.de/static/img/program_guide/14887465_s.jpg",
           "startAt": "2026-06-09T01:00:00Z",
           "endAt": "2026-06-09T01:30:00Z"
+        },
+        {
+          "title": "PL: PL Rewind: Paul Scholes - My Greatest Rivalry",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/14707187_s.jpg",
+          "startAt": "2026-06-09T01:30:00Z",
+          "endAt": "2026-06-09T02:00:00Z"
+        },
+        {
+          "title": "PL: PL Moments: Michael Owen",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15026639_s.jpg",
+          "startAt": "2026-06-09T02:00:00Z",
+          "endAt": "2026-06-09T03:00:00Z"
+        },
+        {
+          "title": "PL: PL Moments: Robert Pires",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15419453_s.jpg",
+          "startAt": "2026-06-09T03:00:00Z",
+          "endAt": "2026-06-09T04:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: LIV - BOU, 1. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15584206_s.jpg",
+          "startAt": "2026-06-09T04:00:00Z",
+          "endAt": "2026-06-09T04:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: WHU - CHE, 2. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15663192_s.jpg",
+          "startAt": "2026-06-09T04:30:00Z",
+          "endAt": "2026-06-09T05:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: MUN - BUR, 3. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15795498_s.jpg",
+          "startAt": "2026-06-09T05:00:00Z",
+          "endAt": "2026-06-09T05:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: WHU - TOT, 4. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/15997429_s.jpg",
+          "startAt": "2026-06-09T05:30:00Z",
+          "endAt": "2026-06-09T06:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: BRI - TOT, 5. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16455172_s.jpg",
+          "startAt": "2026-06-09T06:00:00Z",
+          "endAt": "2026-06-09T06:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: MCI - BUR, 6. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16455747_s.jpg",
+          "startAt": "2026-06-09T06:30:00Z",
+          "endAt": "2026-06-09T07:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: EVE - CRY, 7. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16505235_s.jpg",
+          "startAt": "2026-06-09T07:00:00Z",
+          "endAt": "2026-06-09T07:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: CRY - BOU, 8. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16787517_s.jpg",
+          "startAt": "2026-06-09T07:30:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: MUN - BRI, 9. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16789920_s.jpg",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T08:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: WHU - NEW, 10. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16830203_s.jpg",
+          "startAt": "2026-06-09T08:30:00Z",
+          "endAt": "2026-06-09T09:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: WHU - BUR, 11. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16855423_s.jpg",
+          "startAt": "2026-06-09T09:00:00Z",
+          "endAt": "2026-06-09T09:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: ARS - TOT, 12. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16904897_s.jpg",
+          "startAt": "2026-06-09T09:30:00Z",
+          "endAt": "2026-06-09T10:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: SUN - BOU, 13. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16977351_s.jpg",
+          "startAt": "2026-06-09T10:00:00Z",
+          "endAt": "2026-06-09T10:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: FUL - MCI, 14. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16990091_s.jpg",
+          "startAt": "2026-06-09T10:30:00Z",
+          "endAt": "2026-06-09T11:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: LEE - LIV, 15. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17042540_s.jpg",
+          "startAt": "2026-06-09T11:00:00Z",
+          "endAt": "2026-06-09T11:30:00Z"
+        },
+        {
+          "title": "PL: 90in30: BUR - FUL, 16. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17057502_s.jpg",
+          "startAt": "2026-06-09T11:30:00Z",
+          "endAt": "2026-06-09T12:00:00Z"
+        },
+        {
+          "title": "PL: 90in30: LEE - CRY, 17. Spieltag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17063028_s.jpg",
+          "startAt": "2026-06-09T12:00:00Z",
+          "endAt": "2026-06-09T12:30:00Z"
         }
       ]
     },
@@ -2332,7 +2620,7 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "WTA 500: T. Maria (GER) - M. Keys (USA), HSBC Championships in London (GBR), Halbfinale 1",
+        "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 1. Tag",
         "subtitle": null,
         "description": null,
         "categories": [
@@ -2340,76 +2628,11 @@
         ],
         "sportType": "Tennis",
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/15303276_s.jpg",
-        "startAt": "2026-06-08T05:00:00Z",
-        "endAt": "2026-06-08T07:00:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17921947_s.jpg",
+        "startAt": "2026-06-08T09:00:00Z",
+        "endAt": "2026-06-08T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "ATP 500: I. Buse (PER) - T. Paul (USA), Bitpanda Hamburg Open in Hamburg, Finale",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17732167_s.jpg",
-          "startAt": "2026-06-07T23:50:00Z",
-          "endAt": "2026-06-08T02:20:00Z"
-        },
-        {
-          "title": "Meine Geschichte: Das Leben von Boris Becker (Teil 1)",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Dokumentation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16789869_s.jpg",
-          "startAt": "2026-06-08T02:20:00Z",
-          "endAt": "2026-06-08T02:50:00Z"
-        },
-        {
-          "title": "WTA 500: T. Maria (GER) - A. Anisimova (USA), HSBC Championships in London (GBR), Finale",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/15303179_s.jpg",
-          "startAt": "2026-06-08T02:50:00Z",
-          "endAt": "2026-06-08T05:00:00Z"
-        },
-        {
-          "title": "WTA 500: T. Maria (GER) - M. Keys (USA), HSBC Championships in London (GBR), Halbfinale 1",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/15303276_s.jpg",
-          "startAt": "2026-06-08T05:00:00Z",
-          "endAt": "2026-06-08T07:00:00Z"
-        },
-        {
-          "title": "WTA 500: T. Maria (GER) - A. Anisimova (USA), HSBC Championships in London (GBR), Finale",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/15303179_s.jpg",
-          "startAt": "2026-06-08T07:00:00Z",
-          "endAt": "2026-06-08T09:00:00Z"
-        },
         {
           "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 1. Tag",
           "subtitle": null,
@@ -2437,7 +2660,7 @@
           "endAt": "2026-06-08T20:00:00Z"
         },
         {
-          "title": "ATP 250: Topspiel, Boss Open in Stuttgart, 1. Tag",
+          "title": "ATP 250: T. Paul (USA) - G. Mpetshi Perricard (FRA), Boss Open in Stuttgart, 1. Tag",
           "subtitle": null,
           "description": null,
           "categories": [
@@ -2474,6 +2697,71 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17716998_s.jpg",
           "startAt": "2026-06-09T00:00:00Z",
           "endAt": "2026-06-09T02:30:00Z"
+        },
+        {
+          "title": "ATP 250: Topspiel, Boss Open in Stuttgart, 1. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921957_s.jpg",
+          "startAt": "2026-06-09T02:30:00Z",
+          "endAt": "2026-06-09T04:30:00Z"
+        },
+        {
+          "title": "Tennis: Andrey Rublev - Breaking Back",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16005571_s.jpg",
+          "startAt": "2026-06-09T04:30:00Z",
+          "endAt": "2026-06-09T05:00:00Z"
+        },
+        {
+          "title": "WTA 500: Topspiel, HSBC Championships in London (GBR), 1. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921962_s.jpg",
+          "startAt": "2026-06-09T05:00:00Z",
+          "endAt": "2026-06-09T07:00:00Z"
+        },
+        {
+          "title": "ATP 250: Topspiel, Boss Open in Stuttgart, 1. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921957_s.jpg",
+          "startAt": "2026-06-09T07:00:00Z",
+          "endAt": "2026-06-09T09:00:00Z"
+        },
+        {
+          "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 2. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921948_s.jpg",
+          "startAt": "2026-06-09T09:00:00Z",
+          "endAt": "2026-06-09T18:30:00Z"
         }
       ]
     },
@@ -2487,84 +2775,19 @@
         "data/normalized/guide-premium-DE-sky.de.xml"
       ],
       "currentProgram": {
-        "title": "LIV Golf: Andalusien, 4. Tag in Sotogrande",
+        "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 1. Tag",
         "subtitle": null,
         "description": null,
         "categories": [
-          "Sport (allgemein)"
+          "Tennis"
         ],
-        "sportType": "Golf",
+        "sportType": "Tennis",
         "competition": null,
-        "imageUrl": "http://sky.de/static/img/program_guide/17840282_s.jpg",
-        "startAt": "2026-06-08T03:30:00Z",
-        "endAt": "2026-06-08T06:30:00Z"
+        "imageUrl": "http://sky.de/static/img/program_guide/17921947_s.jpg",
+        "startAt": "2026-06-08T09:00:00Z",
+        "endAt": "2026-06-08T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "Live IndyCar: Bommarito Automotive Group 500",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Motorsport"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T01:00:00Z",
-          "endAt": "2026-06-08T03:30:00Z"
-        },
-        {
-          "title": "LIV Golf: Andalusien, 4. Tag in Sotogrande",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Sport (allgemein)"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17840282_s.jpg",
-          "startAt": "2026-06-08T03:30:00Z",
-          "endAt": "2026-06-08T06:30:00Z"
-        },
-        {
-          "title": "F3: 2. Rennen - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16137522_s.jpg",
-          "startAt": "2026-06-08T06:30:00Z",
-          "endAt": "2026-06-08T07:30:00Z"
-        },
-        {
-          "title": "F2: 2. Rennen - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/16137523_s.jpg",
-          "startAt": "2026-06-08T07:30:00Z",
-          "endAt": "2026-06-08T08:30:00Z"
-        },
-        {
-          "title": "F1: Rennen Kompakt - GP Monaco",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Formel 1"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "http://sky.de/static/img/program_guide/16137529_s.jpg",
-          "startAt": "2026-06-08T08:30:00Z",
-          "endAt": "2026-06-08T09:00:00Z"
-        },
         {
           "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 1. Tag",
           "subtitle": null,
@@ -2642,6 +2865,84 @@
           "imageUrl": "http://sky.de/static/img/program_guide/17196571_s.jpg",
           "startAt": "2026-06-09T01:00:00Z",
           "endAt": "2026-06-09T02:00:00Z"
+        },
+        {
+          "title": "Moto2: Rennen - GP Ungarn",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17196572_s.jpg",
+          "startAt": "2026-06-09T02:00:00Z",
+          "endAt": "2026-06-09T03:00:00Z"
+        },
+        {
+          "title": "MotoGP: Rennen - GP Ungarn",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-09T03:00:00Z",
+          "endAt": "2026-06-09T04:00:00Z"
+        },
+        {
+          "title": "Golf: US Women's Open, 4. Tag in Pacific Palisades, CA (USA)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17990592_s.jpg",
+          "startAt": "2026-06-09T04:00:00Z",
+          "endAt": "2026-06-09T07:00:00Z"
+        },
+        {
+          "title": "F3: 2. Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16137522_s.jpg",
+          "startAt": "2026-06-09T07:00:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "F2: 2. Rennen - GP Monaco",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/16137523_s.jpg",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T09:00:00Z"
+        },
+        {
+          "title": "Live ATP 250: Konferenz Stuttgart & s'Hertogenbosch, 2. Tag",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://sky.de/static/img/program_guide/17921948_s.jpg",
+          "startAt": "2026-06-09T09:00:00Z",
+          "endAt": "2026-06-09T18:30:00Z"
         }
       ]
     },
@@ -2656,149 +2957,19 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "Der WM-Check 2026 – alle Teams, Kap Verde & Modric (20)",
+        "title": "Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
         "subtitle": null,
-        "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Kap Verde & Modric (20)",
+        "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
         "categories": [
           "Fußball"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-        "startAt": "2026-06-08T05:00:00Z",
-        "endAt": "2026-06-08T05:25:00Z"
+        "startAt": "2026-06-08T16:15:00Z",
+        "endAt": "2026-06-08T16:40:00Z"
       },
       "programs": [
-        {
-          "title": "Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
-          "subtitle": null,
-          "description": "(Wh. v. 07.06.26) Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-          "startAt": "2026-06-08T00:45:00Z",
-          "endAt": "2026-06-08T03:00:00Z"
-        },
-        {
-          "title": "Ecuador - Guatemala, Internationales Freundschaftsspiel",
-          "subtitle": null,
-          "description": "Gezeigt wird ein ausgewähltes Freundschaftsspiel aus den internationalen Topligen des Fußballs.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23914624_i_h9_af_2026-05-18T10_36_49.jpg",
-          "startAt": "2026-06-08T03:00:00Z",
-          "endAt": "2026-06-08T05:00:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, Kap Verde & Modric (20)",
-          "subtitle": null,
-          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Kap Verde & Modric (20)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T05:00:00Z",
-          "endAt": "2026-06-08T05:25:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, Katar & Xhaka (21)",
-          "subtitle": null,
-          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Katar & Xhaka (21)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T05:25:00Z",
-          "endAt": "2026-06-08T05:55:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, Deutschland (33)",
-          "subtitle": null,
-          "description": "(Wh. v. 04.06.26) Der WM-Check 2026 – alle Teams, Deutschland (33)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T05:55:00Z",
-          "endAt": "2026-06-08T06:25:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, Bosnien und Herzegowina & Schweden (34)",
-          "subtitle": null,
-          "description": "(Wh. v. 04.06.26) Der WM-Check 2026 – alle Teams, Bosnien und Herzegowina & Schweden (34)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T06:25:00Z",
-          "endAt": "2026-06-08T06:50:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, Türkei & Tschechien (35)",
-          "subtitle": "Tuerkei & Tschechien",
-          "description": "(Wh. v. 04.06.26) Der WM-Check 2026 – alle Teams, Türkei & Tschechien (35)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T06:50:00Z",
-          "endAt": "2026-06-08T07:20:00Z"
-        },
-        {
-          "title": "Der WM-Check 2026 – alle Teams, DR Kongo & Irak (36)",
-          "subtitle": null,
-          "description": "(Wh. v. 04.06.26) Der WM-Check 2026 – alle Teams, DR Kongo & Irak (36)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T07:20:00Z",
-          "endAt": "2026-06-08T07:45:00Z"
-        },
-        {
-          "title": "Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
-          "subtitle": null,
-          "description": "(Wh. v. 07.06.26) Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-          "startAt": "2026-06-08T07:45:00Z",
-          "endAt": "2026-06-08T10:00:00Z"
-        },
-        {
-          "title": "Ecuador - Guatemala, Internationales Freundschaftsspiel",
-          "subtitle": null,
-          "description": "Gezeigt wird ein ausgewähltes Freundschaftsspiel aus den internationalen Topligen des Fußballs.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23914624_i_h9_af_2026-05-18T10_36_49.jpg",
-          "startAt": "2026-06-08T10:00:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
-        },
         {
           "title": "Im Rampenlicht - Football’s Greatest Stage, Mehr als ein Spieler: Pelé (Episode 14)",
           "subtitle": null,
@@ -2865,7 +3036,7 @@
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
           "startAt": "2026-06-08T16:15:00Z",
-          "endAt": "2026-06-08T16:45:00Z"
+          "endAt": "2026-06-08T16:40:00Z"
         },
         {
           "title": "Der WM-Check 2026 – alle Teams, Norwegen & Mbappé (24)",
@@ -2877,8 +3048,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T16:45:00Z",
-          "endAt": "2026-06-08T17:15:00Z"
+          "startAt": "2026-06-08T16:40:00Z",
+          "endAt": "2026-06-08T17:10:00Z"
         },
         {
           "title": "Der WM-Check 2026 – alle Teams, Kroatien & Caicedo (25)",
@@ -2890,8 +3061,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T17:15:00Z",
-          "endAt": "2026-06-08T17:45:00Z"
+          "startAt": "2026-06-08T17:10:00Z",
+          "endAt": "2026-06-08T17:35:00Z"
         },
         {
           "title": "Der WM-Check 2026 – alle Teams, Frankreich & Mané (26)",
@@ -2903,8 +3074,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
-          "startAt": "2026-06-08T17:45:00Z",
-          "endAt": "2026-06-08T18:15:00Z"
+          "startAt": "2026-06-08T17:35:00Z",
+          "endAt": "2026-06-08T18:05:00Z"
         },
         {
           "title": "Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
@@ -2916,8 +3087,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-          "startAt": "2026-06-08T18:15:00Z",
-          "endAt": "2026-06-08T20:30:00Z"
+          "startAt": "2026-06-08T18:05:00Z",
+          "endAt": "2026-06-08T20:40:00Z"
         },
         {
           "title": "LFC TV - 38. Spieltag, Liverpool FC - FC Brentford",
@@ -2929,22 +3100,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13777297_i_h9_ab_2022-08-22T08_36_27.jpg",
-          "startAt": "2026-06-08T20:30:00Z",
-          "endAt": "2026-06-08T22:30:00Z"
-        },
-        {
-          "title": "Auckland FC - Sydney FC, A-League (Grand Final)",
-          "subtitle": null,
-          "description": "Aus dem Go Media Stadium Mt Smart in Penrose, Auckland, Neuseeland.",
-          "categories": [
-            "Sport",
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/0/p20803885_i_h9_ad_2025-10-22T09_15_10.jpg",
-          "startAt": "2026-06-08T22:30:00Z",
-          "endAt": "2026-06-09T00:45:00Z"
+          "startAt": "2026-06-08T20:40:00Z",
+          "endAt": "2026-06-08T22:40:00Z"
         },
         {
           "title": "scooore Niederlande! Der Rückblick, Highlights Eredivisie (Saison 2025/2026)",
@@ -2956,47 +3113,177 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
-          "startAt": "2026-06-09T00:45:00Z",
-          "endAt": "2026-06-09T01:45:00Z"
-        }
-      ]
-    },
-    {
-      "id": "SkySport1.de",
-      "name": "Sky Sport 1 HD",
-      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png",
-      "provider": "Sky Germany sports guide",
-      "providerKey": "premium-sky-de",
-      "sources": [
-        "data/normalized/guide-premium-DE-sky.de.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
-        {
-          "title": "Es folgt: Live Tennis WTA Tour",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Tennis"
-          ],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-08T11:40:00Z",
-          "endAt": "2026-06-08T12:00:00Z"
+          "startAt": "2026-06-08T22:40:00Z",
+          "endAt": "2026-06-08T23:40:00Z"
         },
         {
-          "title": "Live WTA 500: HSBC Championships in London (GBR), 1. Tag",
+          "title": "Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
           "subtitle": null,
-          "description": null,
+          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
           "categories": [
-            "Tennis"
+            "Fußball"
           ],
-          "sportType": "Tennis",
+          "sportType": null,
           "competition": null,
-          "imageUrl": "http://sky.de/static/img/program_guide/17921961_s.jpg",
-          "startAt": "2026-06-08T12:00:00Z",
-          "endAt": "2026-06-08T16:00:00Z"
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-08T23:40:00Z",
+          "endAt": "2026-06-09T00:05:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Norwegen & Mbappé (24)",
+          "subtitle": null,
+          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Norwegen & Mbappé (24)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T00:05:00Z",
+          "endAt": "2026-06-09T00:35:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Kroatien & Caicedo (25)",
+          "subtitle": null,
+          "description": "(Wh. v. 28.05.26) Der WM-Check 2026 – alle Teams, Kroatien & Caicedo (25)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T00:35:00Z",
+          "endAt": "2026-06-09T01:00:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Frankreich & Mané (26)",
+          "subtitle": "Portugal & McTominay",
+          "description": "(Wh. v. 28.05.26) Der WM-Check 2026 – alle Teams, Frankreich & Mané (26)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
+          "startAt": "2026-06-09T01:00:00Z",
+          "endAt": "2026-06-09T01:30:00Z"
+        },
+        {
+          "title": "Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
+          "subtitle": null,
+          "description": "(Wh. v. 07.06.26) Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T01:30:00Z",
+          "endAt": "2026-06-09T04:05:00Z"
+        },
+        {
+          "title": "LFC TV - 38. Spieltag, Liverpool FC - FC Brentford",
+          "subtitle": null,
+          "description": "(Wh. v. 26.05.26) LFC TV - 38. Spieltag, Liverpool FC - FC Brentford",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T04:05:00Z",
+          "endAt": "2026-06-09T06:05:00Z"
+        },
+        {
+          "title": "scooore Niederlande! Der Rückblick, Highlights Eredivisie (Saison 2025/2026)",
+          "subtitle": null,
+          "description": "(Wh. v. 01.06.26) scooore Niederlande! Der Rückblick, Highlights Eredivisie (Saison 2025/2026)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T06:05:00Z",
+          "endAt": "2026-06-09T07:05:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
+          "subtitle": null,
+          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Portugal & McTominay (23)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T07:05:00Z",
+          "endAt": "2026-06-09T07:30:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Norwegen & Mbappé (24)",
+          "subtitle": null,
+          "description": "(Wh. v. 21.05.26) Der WM-Check 2026 – alle Teams, Norwegen & Mbappé (24)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T07:30:00Z",
+          "endAt": "2026-06-09T08:00:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Kroatien & Caicedo (25)",
+          "subtitle": null,
+          "description": "(Wh. v. 28.05.26) Der WM-Check 2026 – alle Teams, Kroatien & Caicedo (25)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T08:00:00Z",
+          "endAt": "2026-06-09T08:25:00Z"
+        },
+        {
+          "title": "Der WM-Check 2026 – alle Teams, Frankreich & Mané (26)",
+          "subtitle": "Portugal & McTominay",
+          "description": "(Wh. v. 28.05.26) Der WM-Check 2026 – alle Teams, Frankreich & Mané (26)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32913385_i_h9_aa_2026-04-22T06_45_19.jpg",
+          "startAt": "2026-06-09T08:25:00Z",
+          "endAt": "2026-06-09T08:55:00Z"
+        },
+        {
+          "title": "Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
+          "subtitle": null,
+          "description": "(Wh. v. 07.06.26) Belgien U17 - Italien U17, UEFA U-17 EM (Finale)",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T08:55:00Z",
+          "endAt": "2026-06-09T11:30:00Z"
+        },
+        {
+          "title": "LFC TV - 38. Spieltag, Liverpool FC - FC Brentford",
+          "subtitle": null,
+          "description": "(Wh. v. 26.05.26) LFC TV - 38. Spieltag, Liverpool FC - FC Brentford",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/88a3d08c82dbf9add0aaed16cdb40054c97be211.png",
+          "startAt": "2026-06-09T11:30:00Z",
+          "endAt": "2026-06-09T13:30:00Z"
         }
       ]
     }
