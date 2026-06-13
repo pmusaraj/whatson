@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UHF XMLTV inspector -- heywhatson.tv</title>
     <meta name="description" content="Inspect the generated UHF XMLTV guide feed, validation warnings, channels, and programme coverage." />
-    <link rel="stylesheet" href="uhf.css?v=uhf-validator-v2" />
+    <link rel="stylesheet" href="uhf.css?v=uhf-validator-v3" />
   </head>
   <body>
     <header class="page-header">
@@ -22,7 +22,13 @@
     </header>
 
     <main>
-      <section id="summary" class="summary-grid" aria-label="Validation summary"></section>
+      <details class="summary-panel" aria-label="Validation summary">
+        <summary>
+          <span>Stats</span>
+          <span id="summary-compact">Loading…</span>
+        </summary>
+        <section id="summary" class="summary-grid"></section>
+      </details>
       <section class="controls" aria-label="Filters">
         <input id="search" type="search" placeholder="Search channel, id, target, programme…" autocomplete="off" />
         <select id="country-filter" aria-label="Country">
@@ -41,6 +47,6 @@
       </section>
     </main>
 
-    <script src="uhf.js?v=uhf-validator-v2"></script>
+    <script src="uhf.js?v=uhf-validator-v3"></script>
   </body>
 </html>

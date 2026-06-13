@@ -11,6 +11,7 @@ const state = {
 const els = {
   status: document.querySelector('#status'),
   summary: document.querySelector('#summary'),
+  summaryCompact: document.querySelector('#summary-compact'),
   search: document.querySelector('#search'),
   country: document.querySelector('#country-filter'),
   severity: document.querySelector('#severity-filter'),
@@ -92,6 +93,7 @@ function renderSummary() {
     ['Errors', counts.errors, 'structural validation issues', counts.errors ? 'error' : 'ok'],
     ['Warnings', counts.warnings, 'coverage or quality findings', counts.warnings ? 'warning' : 'ok'],
   ];
+  els.summaryCompact.textContent = `${counts.channels ?? '—'} channels · ${counts.errors ?? '—'} errors · ${counts.warnings ?? '—'} warnings`;
   els.summary.innerHTML = cards.map(([label, value, hint, klass]) => `
     <div class="summary-card ${klass}">
       <strong>${escapeHtml(value ?? '—')}</strong>
