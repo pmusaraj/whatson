@@ -14,7 +14,10 @@
 
 * { box-sizing: border-box; }
 
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+  height: 100dvh;
+}
 
 body {
   margin: 0;
@@ -31,6 +34,7 @@ a:hover, a:focus { text-decoration: underline; }
 
 .page-header {
   display: grid;
+  flex: 0 0 auto;
   grid-template-columns: auto 1fr auto;
   gap: 1rem;
   align-items: center;
@@ -60,6 +64,7 @@ main {
 
 .summary-grid {
   display: grid;
+  flex: 0 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: .75rem;
 }
@@ -78,7 +83,8 @@ main {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  flex: 0 0 auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: .75rem;
 }
 
@@ -93,6 +99,7 @@ input, select, button {
 .workspace {
   flex: 1 1 auto;
   min-height: 0;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(260px, 34%) minmax(0, 1fr);
   border: 1px solid var(--border);
@@ -101,7 +108,10 @@ input, select, button {
 
 .channel-list {
   min-width: 0;
+  min-height: 0;
   overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   border-right: 1px solid var(--border);
 }
 
@@ -152,7 +162,10 @@ input, select, button {
 
 .channel-detail {
   min-width: 0;
+  min-height: 0;
   overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   padding: 1rem;
 }
 
@@ -193,11 +206,34 @@ input, select, button {
 .empty { color: var(--muted); padding: 1rem; }
 
 @media (max-width: 760px) {
-  body { overflow: auto; }
+  body { overflow: hidden; }
   .page-header { grid-template-columns: 1fr; }
   .header-links { justify-content: flex-start; }
-  main { min-height: 80vh; }
+  main {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: .65rem;
+    gap: .65rem;
+    overflow: hidden;
+  }
   .controls { grid-template-columns: 1fr; }
-  .workspace { grid-template-columns: 1fr; }
-  .channel-list { max-height: 40vh; border-right: 0; border-bottom: 1px solid var(--border); }
+  .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+  .summary-card { padding: .55rem; }
+  .summary-card strong { font-size: 1rem; }
+  .workspace {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(9rem, 32%) minmax(0, 1fr);
+    min-height: 0;
+  }
+  .channel-list {
+    max-height: none;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .channel-detail {
+    min-height: 0;
+    padding: .75rem;
+  }
+  .kv { grid-template-columns: 1fr; }
 }

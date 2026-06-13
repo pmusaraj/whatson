@@ -4,6 +4,7 @@ const state = {
   channels: [],
   selectedId: null,
   query: '',
+  country: 'all',
   severity: 'all',
 };
 
@@ -11,6 +12,7 @@ const els = {
   status: document.querySelector('#status'),
   summary: document.querySelector('#summary'),
   search: document.querySelector('#search'),
+  country: document.querySelector('#country-filter'),
   severity: document.querySelector('#severity-filter'),
   list: document.querySelector('#channel-list'),
   detail: document.querySelector('#channel-detail'),
@@ -113,9 +115,24 @@ function searchableText(channel) {
   ].filter(Boolean).join(' ').toLowerCase();
 }
 
+function countryLabel(code) {
+  return code || 'Unknown';
+}
+
+function renderCountryFilter() {
+  const countries = [...new Set(state.channels.map((channel) => channel.targetCountry || '').filter(Boolean))].sort();
+  els.country.innerHTML = [
+    '<option value="all">All countries</option>',
+    ...countries.map((code) => `<option value="${escapeHtml(code)}">${escapeHtml(countryLabel(code))}</option>`),
+  ].join('');
+  els.country.value = countries.includes(state.country) ? state.country : 'all';
+  state.country = els.country.value;
+}
+
 function filteredChannels() {
   const query = state.query.trim().toLowerCase();
   return state.channels.filter((channel) => {
+    if (state.country !== 'all' && channel.targetCountry !== state.country) return false;
     if (state.severity === 'errors' && !channel.errorCount) return false;
     if (state.severity === 'warnings' && channel.warningCount === 0) return false;
     if (state.severity === 'clean' && (channel.errorCount || channel.warningCount)) return false;
@@ -129,6 +146,7 @@ function renderList() {
   if (!channels.length) {
     els.list.innerHTML = '<div class="empty">No channels match the current filters.</div>';
     els.detail.innerHTML = '<div class="empty">Select a channel to inspect its schedule.</div>';
+    state.selectedId = null;
     return;
   }
   if (!state.selectedId || !channels.some((channel) => channel.id === state.selectedId)) {
@@ -235,6 +253,7 @@ async function init() {
     state.preview = preview;
     state.channels = mergeData(validation, preview);
     renderSummary();
+    renderCountryFilter();
     renderList();
   } catch (error) {
     els.status.textContent = `Failed to load UHF validation data: ${error.message}`;
@@ -244,6 +263,10 @@ async function init() {
 
 els.search.addEventListener('input', (event) => {
   state.query = event.target.value;
+  renderList();
+});
+els.country.addEventListener('change', (event) => {
+  state.country = event.target.value;
   renderList();
 });
 els.severity.addEventListener('change', (event) => {
