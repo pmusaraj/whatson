@@ -38,31 +38,14 @@ jobs:
       - name: Refresh UHF guide data
         run: python3 scripts/refresh_uhf_epg.py
 
-      - name: Verify UHF XMLTV export
-        run: |
-          python3 - <<'PY'
-          import gzip
-          import json
-          from pathlib import Path
-          from xml.etree import ElementTree as ET
+      - name: Validate UHF XMLTV export
+        run: python3 scripts/validate_uhf_xmltv.py
 
-          root = Path.cwd()
-          xml_root = ET.parse(root / "web/data/uhf/epg.xml").getroot()
-          gzip_root = ET.parse(gzip.open(root / "web/data/uhf/epg.xml.gz", "rb")).getroot()
-          channels = xml_root.findall("channel")
-          programmes = xml_root.findall("programme")
-          channel_ids = {channel.attrib["id"] for channel in channels}
-          bad_refs = [
-              programme.attrib.get("channel")
-              for programme in programmes
-              if programme.attrib.get("channel") not in channel_ids
-          ]
-          summary = json.loads((root / "web/data/uhf/summary.json").read_text())
-          print(f"channels={len(channels)} programmes={len(programmes)} gzip_channels={len(gzip_root.findall('channel'))}")
-          print(f"includedByCountry={summary.get('includedByCountry')}")
-          if bad_refs:
-              raise SystemExit(f"UHF XMLTV has {len(bad_refs)} programme refs without matching channels")
-          PY
+      - name: Run tests and syntax checks
+        run: |
+          python3 -m unittest discover -s tests -v
+          node --check web/app.js
+          node --check web/uhf.js
 
       - name: Commit refreshed UHF data
         run: |

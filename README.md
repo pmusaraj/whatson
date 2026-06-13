@@ -62,6 +62,28 @@ That script:
 4. Rebuilds `web/data/*.json` with a 24-hour browser payload window: now - 4h through now + 20h.
 5. Runs the unit tests and `node --check web/app.js`.
 
+## UHF / Xtream XMLTV export
+
+The project also publishes a custom XMLTV-style guide export for approved UHF/Xtream channel mappings:
+
+- XMLTV: https://heywhatson.tv/data/uhf/epg.xml
+- Gzipped XMLTV: https://heywhatson.tv/data/uhf/epg.xml.gz
+- Channel mapping index: https://heywhatson.tv/data/uhf/channels.json
+- Build summary: https://heywhatson.tv/data/uhf/summary.json
+- Validation report: https://heywhatson.tv/data/uhf/validation.json
+- Preview data: https://heywhatson.tv/data/uhf/preview.json
+- Visual inspector: https://heywhatson.tv/uhf.html
+
+The export uses stable custom channel ids in the form `uhf:<uhf_pk>`, with display-name aliases copied from the UHF playlist row and the matched source guide channel.
+
+To validate the committed export locally:
+
+```bash
+python3 scripts/validate_uhf_xmltv.py
+```
+
+Warnings in `validation.json` are useful for debugging downstream guide clients. Structural errors fail the command and the UHF refresh workflow.
+
 ## Run locally
 
 From the repository root:
@@ -109,6 +131,8 @@ Some upstream guide sources can fail, block, or return partial data. The refresh
 ```bash
 python3 -m unittest discover -s tests -v
 node --check web/app.js
+node --check web/uhf.js
+python3 scripts/validate_uhf_xmltv.py
 ```
 
 ## Notes

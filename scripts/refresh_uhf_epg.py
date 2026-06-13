@@ -88,6 +88,7 @@ def main() -> int:
             print(f"- {failure}", flush=True)
 
     run(["python3", "scripts/build_uhf_custom_xmltv.py"])
+    run(["python3", "scripts/validate_uhf_xmltv.py"])
     print("UHF EPG refresh complete", flush=True)
     return 0
 

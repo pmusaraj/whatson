@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UHF XMLTV inspector -- heywhatson.tv</title>
+    <meta name="description" content="Inspect the generated UHF XMLTV guide feed, validation warnings, channels, and programme coverage." />
+    <link rel="stylesheet" href="uhf.css?v=uhf-validator-v1" />
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="brand" href="/">heywhatson.tv</a>
+      <div>
+        <h1>UHF XMLTV inspector</h1>
+        <p id="status">Loading UHF validation data…</p>
+      </div>
+      <nav class="header-links" aria-label="UHF data links">
+        <a href="data/uhf/epg.xml">XMLTV</a>
+        <a href="data/uhf/epg.xml.gz">gzip</a>
+        <a href="data/uhf/validation.json">validation JSON</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="summary" class="summary-grid" aria-label="Validation summary"></section>
+      <section class="controls" aria-label="Filters">
+        <input id="search" type="search" placeholder="Search channel, id, target, programme…" autocomplete="off" />
+        <select id="severity-filter" aria-label="Severity">
+          <option value="all">All channels</option>
+          <option value="errors">Channels with errors</option>
+          <option value="warnings">Channels with warnings</option>
+          <option value="clean">Clean channels</option>
+        </select>
+      </section>
+      <section class="workspace">
+        <aside id="channel-list" class="channel-list" aria-label="Channels"></aside>
+        <section id="channel-detail" class="channel-detail" aria-label="Selected channel"></section>
+      </section>
+    </main>
+
+    <script src="uhf.js?v=uhf-validator-v1"></script>
+  </body>
+</html>
