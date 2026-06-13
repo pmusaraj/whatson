@@ -29,6 +29,12 @@ body {
   overflow: hidden;
 }
 
+.detail-page-body {
+  min-height: 100dvh;
+  height: auto;
+  overflow: auto;
+}
+
 a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus { text-decoration: underline; }
 
@@ -151,6 +157,14 @@ input, select, button {
   border-bottom: 1px solid var(--border);
   background: transparent;
   cursor: pointer;
+  color: inherit;
+  padding: .65rem .75rem;
+  text-decoration: none;
+}
+
+.channel-row:hover,
+.channel-row:focus {
+  text-decoration: none;
 }
 
 .channel-row:hover,
@@ -232,6 +246,72 @@ input, select, button {
 .program-description { color: var(--muted); }
 .empty { color: var(--muted); padding: 1rem; }
 
+.channel-page-main {
+  overflow: visible;
+  display: block;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.channel-detail-page {
+  overflow: visible;
+  padding: 0;
+}
+
+.detail-header-page {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.detail-section h3,
+.detail-meta h3 {
+  margin-top: 0;
+}
+
+.program-table {
+  display: grid;
+  gap: .5rem;
+}
+
+.program-table-row {
+  display: grid;
+  grid-template-columns: minmax(13rem, .8fr) minmax(14rem, 1fr) minmax(0, 1.5fr);
+  gap: .85rem;
+  align-items: start;
+  background: #12151b;
+  border: 1px solid var(--border);
+  padding: .75rem;
+}
+
+.program-table-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.program-table h3 {
+  margin: 0 0 .25rem;
+  font-size: 1rem;
+}
+
+.program-table .program-time {
+  display: grid;
+  gap: .15rem;
+}
+
+.program-time small {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 760px) {
   body { overflow: hidden; }
   .page-header { grid-template-columns: 1fr; }
@@ -269,4 +349,17 @@ input, select, button {
     padding: .75rem;
   }
   .kv { grid-template-columns: 1fr; }
+  .detail-page-body { overflow: auto; }
+  .detail-page-body .page-header { grid-template-columns: 1fr; }
+  .detail-page-body main {
+    display: block;
+    overflow: visible;
+  }
+  .channel-page-main { padding: .65rem; }
+  .program-table-row {
+    grid-template-columns: 1fr;
+  }
+  .program-table-head {
+    display: none;
+  }
 }

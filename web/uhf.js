@@ -162,12 +162,12 @@ function renderList() {
       `<span class="badge">${channel.programmeCount || channel.programs.length} programmes</span>`,
     ].join('');
     return `
-      <button class="channel-row ${channel.id === state.selectedId ? 'active' : ''}" type="button" data-id="${escapeHtml(channel.id)}">
+      <a class="channel-row ${channel.id === state.selectedId ? 'active' : ''}" href="uhf-channel.html?id=${encodeURIComponent(channel.id)}" data-id="${escapeHtml(channel.id)}">
         <span class="channel-row-title">${escapeHtml(channel.name || channel.id)}</span>
         <span class="channel-row-meta">${escapeHtml(channel.id)} · ${escapeHtml(channel.targetXmltvId || 'no target')} · ${escapeHtml(channel.targetCountry || '—')}</span>
         <span class="channel-row-program">${escapeHtml(current)}</span>
         <span class="badges">${badges}</span>
-      </button>
+      </a>
     `;
   }).join('');
   renderDetail();
@@ -278,6 +278,7 @@ els.severity.addEventListener('change', (event) => {
 els.list.addEventListener('click', (event) => {
   const row = event.target.closest('.channel-row');
   if (!row) return;
+  if (row.tagName === 'A') return;
   state.selectedId = row.dataset.id;
   renderList();
 });
