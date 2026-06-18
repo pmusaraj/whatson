@@ -17,12 +17,12 @@ Countries currently included:
 
 | Country        | General channels | Premium sports/pay-TV channels |
 | -------------- | ---------------: | -----------------------------: |
-| France         |               12 |                             25 |
-| Spain          |               18 |                             21 |
-| Canada         |               20 |                             14 |
-| United States  |               14 |                             13 |
+| France         |               12 |                             12 |
+| Spain          |               19 |                             19 |
+| Canada         |               27 |                             14 |
+| United States  |               35 |                             13 |
 | United Kingdom |               19 |                             16 |
-| Italy          |               10 |                              8 |
+| Italy          |                9 |                              7 |
 | Germany        |               12 |                             13 |
 | Turkiye        |               12 |                              6 |
 | Portugal       |               21 |                             17 |
