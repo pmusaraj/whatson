@@ -118,6 +118,7 @@ PREMIUM_SPORTS_GUIDES = {
     "ES": [
         LocalGuide(NORMALIZED_DIR / "guide-premium-ES-orangetv.orange.es.xml", "Orange Spain guide", "premium-orange-es"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-ES-programacion-tv.elpais.com.xml", "El País guide", "premium-elpais"),
+        LocalGuide(NORMALIZED_DIR / "guide-premium-ES-gatotv.com.xml", "GatoTV Spain guide", "premium-gatotv-es"),
     ],
     "CA": [
         LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvpassport.com.xml", "TV Passport guide", "premium-tvpassport"),
