@@ -2,7 +2,7 @@
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "outputPattern": "data/sources/iptv-org/custom-uhf-<country>-<site>.channels.xml",
   "refreshScript": "python3 scripts/refresh_epg.py",
-  "okUniqueTargets": 324,
+  "okUniqueTargets": 323,
   "writtenFiles": [
     {
       "country": "CA",
@@ -140,7 +140,7 @@
       "country": "US",
       "site": "tvtv.us",
       "path": "data/sources/iptv-org/custom-uhf-US-tvtv.us.channels.xml",
-      "channels": 46
+      "channels": 45
     }
   ],
   "channelsByCountry": {
@@ -148,7 +148,7 @@
     "ES": 37,
     "FR": 118,
     "UK": 40,
-    "US": 54
+    "US": 53
   },
   "missingGuideMappings": []
 }

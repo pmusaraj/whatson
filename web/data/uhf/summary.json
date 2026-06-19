@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T00:39:46.938389Z",
+  "generatedAt": "2026-06-19T09:01:11.297115Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -29,24 +29,24 @@
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 380,
-  "includedChannels": 244,
-  "programmes": 20884,
+  "includedChannels": 243,
+  "programmes": 22258,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 110,
+  "missingProgrammeTargets": 111,
   "includedByCategory": {
     "Canada": 86,
     "Spain": 37,
     "French Sports": 3,
     "French-HD": 32,
     "UK": 40,
-    "USA": 46
+    "USA": 45
   },
   "includedByCountry": {
     "CA": 86,
     "ES": 37,
     "FR": 35,
     "UK": 40,
-    "US": 46
+    "US": 45
   },
   "duplicateTargetMappings": {
     "CA:CBLTDT.ca": 3,
@@ -79,6 +79,7 @@
     "ES:APunt.es",
     "ES:BomCine.es",
     "ES:ETB1.es",
+    "FR:Action.fr",
     "FR:Animaux.fr",
     "FR:Automotolachaine.fr",
     "FR:BFMBusiness.fr",
@@ -90,7 +91,6 @@
     "FR:CanalPlus.fr",
     "FR:CanalPlusCinemas.fr",
     "FR:CanalPlusDocs.fr",
-    "FR:CanalPlusFamily.fr",
     "FR:CanalPlusFoot.fr",
     "FR:CanalPlusGrandEcran.fr",
     "FR:CanalPlusKids.fr",
