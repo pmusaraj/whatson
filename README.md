@@ -20,10 +20,10 @@ Countries currently included:
 | France         |               12 |                             12 |
 | Spain          |               19 |                             19 |
 | Canada         |               27 |                             14 |
-| United States  |               35 |                             13 |
+| United States  |               34 |                             12 |
 | United Kingdom |               19 |                             16 |
-| Italy          |                9 |                              7 |
-| Germany        |               12 |                             13 |
+| Italy          |                9 |                              6 |
+| Germany        |               12 |                             12 |
 | Turkiye        |               12 |                              6 |
 | Portugal       |               21 |                             17 |
 | Mexico         |               10 |                             10 |
