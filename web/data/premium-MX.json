@@ -1,14 +1,14 @@
 {
   "country": "MX",
   "countryName": "Mexico",
-  "generatedAt": "2026-06-23T15:31:49.028379Z",
+  "generatedAt": "2026-06-24T04:29:19.043336Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
   "sourceGuides": [
     "data/normalized/guide-premium-MX-gatotv.com.xml"
   ],
-  "channelCount": 10,
+  "channelCount": 9,
   "channels": [
     {
       "id": "ESPN2LatinAmerica.us",
@@ -20,105 +20,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Wimbledon Tennis",
+        "title": "SportsCenter",
         "subtitle": null,
-        "description": null,
+        "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
         "categories": [],
-        "sportType": "Tennis",
+        "sportType": null,
         "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
+        "startAt": "2026-06-24T04:00:00Z",
+        "endAt": "2026-06-24T05:00:00Z"
       },
       "programs": [
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
-          "startAt": "2026-06-23T11:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Lo Mejor de MotoGP 2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T12:30:00Z"
-        },
-        {
-          "title": "Messi La Cinta Olvidada",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:30:00Z",
-          "endAt": "2026-06-23T13:00:00Z"
-        },
-        {
-          "title": "Futbol Picante",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T13:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Wimbledon Tennis",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "Wimbledon Tennis",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "ESPN Knockout",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:30:00Z"
-        },
-        {
-          "title": "NBA Esta Noche 25-26",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:30:00Z",
-          "endAt": "2026-06-23T21:00:00Z"
-        },
         {
           "title": "SportsCenter Especial",
           "subtitle": null,
@@ -127,8 +39,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T21:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-24T00:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "NBA Draft 2026",
@@ -138,55 +50,22 @@
           "sportType": "Basketball",
           "competition": "NBA",
           "imageUrl": null,
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-24T01:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
           "startAt": "2026-06-24T01:00:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
-        },
-        {
-          "title": "Generación Futbol",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T03:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
-          "startAt": "2026-06-24T03:00:00Z",
           "endAt": "2026-06-24T04:00:00Z"
         },
         {
-          "title": "Futbol Picante",
+          "title": "SportsCenter",
           "subtitle": null,
-          "description": null,
+          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
           "startAt": "2026-06-24T04:00:00Z",
           "endAt": "2026-06-24T05:00:00Z"
         },
         {
-          "title": "Futbol Picante",
+          "title": "Generación Futbol",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -208,7 +87,7 @@
           "endAt": "2026-06-24T07:00:00Z"
         },
         {
-          "title": "ESPN Knockout",
+          "title": "Futbol Picante",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -216,18 +95,40 @@
           "competition": null,
           "imageUrl": null,
           "startAt": "2026-06-24T07:00:00Z",
+          "endAt": "2026-06-24T08:00:00Z"
+        },
+        {
+          "title": "Futbol Picante",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T08:00:00Z",
+          "endAt": "2026-06-24T09:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
+          "startAt": "2026-06-24T09:00:00Z",
           "endAt": "2026-06-24T10:00:00Z"
         },
         {
-          "title": "SportsCenter",
+          "title": "ESPN Knockout",
           "subtitle": null,
-          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
+          "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
+          "imageUrl": null,
           "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "SportsCenter",
@@ -237,8 +138,74 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T14:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
+          "startAt": "2026-06-24T14:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "Futbol Picante",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T16:00:00Z"
+        },
+        {
+          "title": "IndyCar Road America",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T16:00:00Z",
+          "endAt": "2026-06-24T18:00:00Z"
+        },
+        {
+          "title": "Ncaa College World Series",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T18:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
+        },
+        {
+          "title": "Ncaa College World Series",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
+        },
+        {
+          "title": "ESPN Knockout",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     },
@@ -252,83 +219,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Diablos Rojos vs. Piratas",
+        "title": "Braves vs. Padres",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T17:00:00Z"
+        "startAt": "2026-06-24T02:30:00Z",
+        "endAt": "2026-06-24T05:30:00Z"
       },
       "programs": [
-        {
-          "title": "Get Up!",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T10:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "First Take",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Diablos Rojos vs. Piratas",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T17:00:00Z"
-        },
-        {
-          "title": "Ncaa College World Series",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T17:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
-        {
-          "title": "Lo Mejor de MotoGP 2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T20:30:00Z"
-        },
-        {
-          "title": "NBA Action",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:30:00Z",
-          "endAt": "2026-06-23T21:00:00Z"
-        },
         {
           "title": "Bandits vs. Volts",
           "subtitle": null,
@@ -337,8 +238,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T21:00:00Z",
-          "endAt": "2026-06-23T23:00:00Z"
+          "startAt": "2026-06-24T00:00:00Z",
+          "endAt": "2026-06-24T02:00:00Z"
         },
         {
           "title": "Messi La Cinta Olvidada",
@@ -348,8 +249,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:00:00Z",
-          "endAt": "2026-06-23T23:30:00Z"
+          "startAt": "2026-06-24T02:00:00Z",
+          "endAt": "2026-06-24T02:30:00Z"
         },
         {
           "title": "Braves vs. Padres",
@@ -359,8 +260,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:30:00Z",
-          "endAt": "2026-06-24T02:30:00Z"
+          "startAt": "2026-06-24T02:30:00Z",
+          "endAt": "2026-06-24T05:30:00Z"
         },
         {
           "title": "Bandits vs. Volts",
@@ -370,8 +271,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T02:30:00Z",
-          "endAt": "2026-06-24T04:30:00Z"
+          "startAt": "2026-06-24T05:30:00Z",
+          "endAt": "2026-06-24T07:30:00Z"
         },
         {
           "title": "Braves vs. Padres",
@@ -381,8 +282,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T04:30:00Z",
-          "endAt": "2026-06-24T07:00:00Z"
+          "startAt": "2026-06-24T07:30:00Z",
+          "endAt": "2026-06-24T10:00:00Z"
         },
         {
           "title": "Astros vs. Frayles",
@@ -392,8 +293,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T07:00:00Z",
-          "endAt": "2026-06-24T09:00:00Z"
+          "startAt": "2026-06-24T10:00:00Z",
+          "endAt": "2026-06-24T12:00:00Z"
         },
         {
           "title": "SportsCenter",
@@ -403,8 +304,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
-          "startAt": "2026-06-24T09:00:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T12:00:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "Get Up!",
@@ -414,8 +315,52 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "First Take",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T17:00:00Z"
+        },
+        {
+          "title": "Astros vs. Frayles",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:00:00Z",
+          "endAt": "2026-06-24T19:00:00Z"
+        },
+        {
+          "title": "ESPN Knockout",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T19:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
+        },
+        {
+          "title": "NBA Draft 2026",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     },
@@ -429,105 +374,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "The Pat McAfee Show",
+        "title": "Astros vs. Frayles",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "startAt": "2026-06-24T03:30:00Z",
+        "endAt": "2026-06-24T06:00:00Z"
       },
       "programs": [
-        {
-          "title": "Generación Futbol",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T11:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Braves vs. Padres",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "The Pat McAfee Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T17:00:00Z"
-        },
-        {
-          "title": "NBA Today Draft Special",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-06-23T17:00:00Z",
-          "endAt": "2026-06-23T19:00:00Z"
-        },
-        {
-          "title": "NBA Today NBA Draft Red Carpet",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-06-23T19:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
-        {
-          "title": "NBA Action",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T20:30:00Z"
-        },
-        {
-          "title": "Lo Mejor de MotoGP 2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:30:00Z",
-          "endAt": "2026-06-23T21:00:00Z"
-        },
         {
           "title": "Equipo Futbol",
           "subtitle": null,
@@ -536,8 +393,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T21:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-24T00:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "ESPN Enfocados",
@@ -547,8 +404,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-23T23:00:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T02:00:00Z"
         },
         {
           "title": "Generación Futbol",
@@ -558,8 +415,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:00:00Z",
-          "endAt": "2026-06-24T00:00:00Z"
+          "startAt": "2026-06-24T02:00:00Z",
+          "endAt": "2026-06-24T03:00:00Z"
         },
         {
           "title": "Messi La Cinta Olvidada",
@@ -569,8 +426,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T00:00:00Z",
-          "endAt": "2026-06-24T00:30:00Z"
+          "startAt": "2026-06-24T03:00:00Z",
+          "endAt": "2026-06-24T03:30:00Z"
         },
         {
           "title": "Astros vs. Frayles",
@@ -580,8 +437,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T00:30:00Z",
-          "endAt": "2026-06-24T03:00:00Z"
+          "startAt": "2026-06-24T03:30:00Z",
+          "endAt": "2026-06-24T06:00:00Z"
         },
         {
           "title": "The players Championship",
@@ -591,8 +448,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T03:00:00Z",
-          "endAt": "2026-06-24T04:00:00Z"
+          "startAt": "2026-06-24T06:00:00Z",
+          "endAt": "2026-06-24T07:00:00Z"
         },
         {
           "title": "Equipo Futbol",
@@ -602,8 +459,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T04:00:00Z",
-          "endAt": "2026-06-24T05:00:00Z"
+          "startAt": "2026-06-24T07:00:00Z",
+          "endAt": "2026-06-24T08:00:00Z"
         },
         {
           "title": "ESPN Enfocados",
@@ -613,8 +470,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T05:00:00Z",
-          "endAt": "2026-06-24T06:00:00Z"
+          "startAt": "2026-06-24T08:00:00Z",
+          "endAt": "2026-06-24T09:00:00Z"
         },
         {
           "title": "ESPN Knockout",
@@ -624,8 +481,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T06:00:00Z",
-          "endAt": "2026-06-24T09:00:00Z"
+          "startAt": "2026-06-24T09:00:00Z",
+          "endAt": "2026-06-24T12:00:00Z"
         },
         {
           "title": "IndyCar Road America",
@@ -635,8 +492,8 @@
           "sportType": "Motorsport",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T09:00:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
+          "startAt": "2026-06-24T12:00:00Z",
+          "endAt": "2026-06-24T14:00:00Z"
         },
         {
           "title": "Generación Futbol",
@@ -646,8 +503,85 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T14:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "Braves vs. Padres",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T17:00:00Z"
+        },
+        {
+          "title": "The Pat McAfee Show",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:00:00Z",
+          "endAt": "2026-06-24T19:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena ESPN el cual muestra los acontecimientos más importantes del deporte incluyendo resúmenes y marcadores.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/sportscenter.png",
+          "startAt": "2026-06-24T19:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
+        },
+        {
+          "title": "NBA Today",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T21:00:00Z"
+        },
+        {
+          "title": "NFL Live",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T21:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
+        },
+        {
+          "title": "IndyCar Road America",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-25T00:00:00Z"
+        },
+        {
+          "title": "Equipo Futbol",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-25T00:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     },
@@ -661,116 +595,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Budo Combat",
+        "title": "Central Fox",
         "subtitle": null,
-        "description": null,
+        "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
         "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-06-23T15:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+        "startAt": "2026-06-24T04:00:00Z",
+        "endAt": "2026-06-24T05:00:00Z"
       },
       "programs": [
-        {
-          "title": "Fox Fit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T11:30:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "The Outdoor Sports Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T12:30:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:30:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Fox gol México",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T15:00:00Z"
-        },
-        {
-          "title": "Budo Combat",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T15:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "ALL Elite Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T17:00:00Z"
-        },
-        {
-          "title": "Fox gol México",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T17:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "AEW Collision",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
-        {
-          "title": "Fox Sports Radio",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T21:00:00Z"
-        },
         {
           "title": "Central Fox",
           "subtitle": null,
@@ -779,8 +614,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-23T21:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-24T00:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "Money Line Show",
@@ -790,8 +625,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-23T23:00:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T02:00:00Z"
         },
         {
           "title": "+90",
@@ -801,8 +636,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:00:00Z",
-          "endAt": "2026-06-24T00:00:00Z"
+          "startAt": "2026-06-24T02:00:00Z",
+          "endAt": "2026-06-24T03:00:00Z"
         },
         {
           "title": "Monster Jam",
@@ -812,8 +647,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T00:00:00Z",
-          "endAt": "2026-06-24T00:30:00Z"
+          "startAt": "2026-06-24T03:00:00Z",
+          "endAt": "2026-06-24T03:30:00Z"
         },
         {
           "title": "Fox fight club",
@@ -823,8 +658,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T00:30:00Z",
-          "endAt": "2026-06-24T01:00:00Z"
+          "startAt": "2026-06-24T03:30:00Z",
+          "endAt": "2026-06-24T04:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -834,32 +669,32 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-24T01:00:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T03:30:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T03:30:00Z",
+          "startAt": "2026-06-24T04:00:00Z",
           "endAt": "2026-06-24T05:00:00Z"
         },
         {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T05:00:00Z",
+          "endAt": "2026-06-24T06:30:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T06:30:00Z",
+          "endAt": "2026-06-24T08:00:00Z"
+        },
+        {
           "title": "Central Fox",
           "subtitle": null,
           "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
@@ -867,8 +702,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-24T05:00:00Z",
-          "endAt": "2026-06-24T06:00:00Z"
+          "startAt": "2026-06-24T08:00:00Z",
+          "endAt": "2026-06-24T09:00:00Z"
         },
         {
           "title": "Major Arena Soccer League",
@@ -878,8 +713,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T06:00:00Z",
-          "endAt": "2026-06-24T08:30:00Z"
+          "startAt": "2026-06-24T09:00:00Z",
+          "endAt": "2026-06-24T11:30:00Z"
         },
         {
           "title": "La última palabra",
@@ -889,8 +724,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T08:30:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T11:30:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -900,8 +735,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T14:00:00Z"
         },
         {
           "title": "Fox Fit",
@@ -911,8 +746,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T11:30:00Z"
+          "startAt": "2026-06-24T14:00:00Z",
+          "endAt": "2026-06-24T14:30:00Z"
         },
         {
           "title": "Fox Fit",
@@ -922,8 +757,118 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T11:30:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T14:30:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T16:00:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T16:00:00Z",
+          "endAt": "2026-06-24T17:30:00Z"
+        },
+        {
+          "title": "Mediterranean Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:30:00Z",
+          "endAt": "2026-06-24T18:00:00Z"
+        },
+        {
+          "title": "Mediterranean Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T18:00:00Z",
+          "endAt": "2026-06-24T18:30:00Z"
+        },
+        {
+          "title": "Mediterranean Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T18:30:00Z",
+          "endAt": "2026-06-24T19:00:00Z"
+        },
+        {
+          "title": "Fox gol México",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T19:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
+        },
+        {
+          "title": "AEW Collision",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
+        },
+        {
+          "title": "Fox Sports Radio",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-24T23:00:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-06-24T23:00:00Z",
+          "endAt": "2026-06-25T00:00:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-25T00:00:00Z",
+          "endAt": "2026-06-25T02:00:00Z"
         }
       ]
     },
@@ -937,94 +882,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "UIPM Pentathlon World Cup",
+        "title": "AEW DYNAMITE",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T17:30:00Z"
+        "startAt": "2026-06-24T03:00:00Z",
+        "endAt": "2026-06-24T05:00:00Z"
       },
       "programs": [
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T10:30:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Fox Fit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T12:30:00Z"
-        },
-        {
-          "title": "Fox Fit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:30:00Z",
-          "endAt": "2026-06-23T13:00:00Z"
-        },
-        {
-          "title": "Central Fox",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-23T13:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "UIPM Pentathlon World Cup",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T17:30:00Z"
-        },
-        {
-          "title": "The Outdoor Sports Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T17:30:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Budo Sento Championship",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
         {
           "title": "AEW Collision",
           "subtitle": null,
@@ -1033,8 +901,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-23T23:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -1044,8 +912,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-23T23:00:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T02:00:00Z"
         },
         {
           "title": "ALL Elite Show",
@@ -1055,44 +923,11 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:00:00Z",
-          "endAt": "2026-06-24T00:00:00Z"
-        },
-        {
-          "title": "AEW DYNAMITE",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T00:00:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
-        },
-        {
-          "title": "The Outdoor Sports Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
           "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T02:30:00Z"
-        },
-        {
-          "title": "Monster Jam",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T02:30:00Z",
           "endAt": "2026-06-24T03:00:00Z"
         },
         {
-          "title": "UIPM Pentathlon World Cup",
+          "title": "AEW DYNAMITE",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1103,7 +938,7 @@
           "endAt": "2026-06-24T05:00:00Z"
         },
         {
-          "title": "ALL Elite Show",
+          "title": "The Outdoor Sports Show",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1111,10 +946,21 @@
           "competition": null,
           "imageUrl": null,
           "startAt": "2026-06-24T05:00:00Z",
+          "endAt": "2026-06-24T05:30:00Z"
+        },
+        {
+          "title": "Monster Jam",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T05:30:00Z",
           "endAt": "2026-06-24T06:00:00Z"
         },
         {
-          "title": "La última palabra",
+          "title": "UIPM Pentathlon World Cup",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1122,21 +968,10 @@
           "competition": null,
           "imageUrl": null,
           "startAt": "2026-06-24T06:00:00Z",
-          "endAt": "2026-06-24T07:30:00Z"
-        },
-        {
-          "title": "Mediterranean Games",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T07:30:00Z",
           "endAt": "2026-06-24T08:00:00Z"
         },
         {
-          "title": "Budo Combat",
+          "title": "ALL Elite Show",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1147,6 +982,39 @@
           "endAt": "2026-06-24T09:00:00Z"
         },
         {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T09:00:00Z",
+          "endAt": "2026-06-24T10:30:00Z"
+        },
+        {
+          "title": "Mediterranean Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T10:30:00Z",
+          "endAt": "2026-06-24T11:00:00Z"
+        },
+        {
+          "title": "Budo Combat",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T11:00:00Z",
+          "endAt": "2026-06-24T12:00:00Z"
+        },
+        {
           "title": "Central Fox",
           "subtitle": null,
           "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
@@ -1154,8 +1022,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-24T09:00:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T12:00:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "The Outdoor Sports Show",
@@ -1165,8 +1033,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T10:30:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T13:30:00Z"
         },
         {
           "title": "La última palabra",
@@ -1176,8 +1044,96 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:30:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T13:30:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "Fox Fit",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T15:30:00Z"
+        },
+        {
+          "title": "Fox Fit",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:30:00Z",
+          "endAt": "2026-06-24T16:00:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-06-24T16:00:00Z",
+          "endAt": "2026-06-24T17:00:00Z"
+        },
+        {
+          "title": "UIPM Pentathlon World Cup",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:00:00Z",
+          "endAt": "2026-06-24T19:00:00Z"
+        },
+        {
+          "title": "UIPM Pentathlon World Cup",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T19:00:00Z",
+          "endAt": "2026-06-24T21:00:00Z"
+        },
+        {
+          "title": "Budo Sento Championship",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T21:00:00Z",
+          "endAt": "2026-06-24T23:00:00Z"
+        },
+        {
+          "title": "ALL Elite Show",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T23:00:00Z",
+          "endAt": "2026-06-25T00:00:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-06-25T00:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     },
@@ -1191,116 +1147,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "FMFA",
+        "title": "ALL Elite Show",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T15:00:00Z",
-        "endAt": "2026-06-23T18:00:00Z"
+        "startAt": "2026-06-24T04:00:00Z",
+        "endAt": "2026-06-24T05:00:00Z"
       },
       "programs": [
-        {
-          "title": "Central Fox",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-23T11:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Fox fight club",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T12:30:00Z"
-        },
-        {
-          "title": "Mediterranean Games",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:30:00Z",
-          "endAt": "2026-06-23T13:00:00Z"
-        },
-        {
-          "title": "Budo Combat",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T13:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "ALL Elite Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T15:00:00Z"
-        },
-        {
-          "title": "FMFA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T15:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Mediterranean Games",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T18:30:00Z"
-        },
-        {
-          "title": "The Outdoor Sports Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:30:00Z",
-          "endAt": "2026-06-23T19:00:00Z"
-        },
-        {
-          "title": "Budo Combat",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T19:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
         {
           "title": "Major Arena Soccer League",
           "subtitle": null,
@@ -1309,8 +1166,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T22:30:00Z"
+          "startAt": "2026-06-23T23:00:00Z",
+          "endAt": "2026-06-24T01:30:00Z"
         },
         {
           "title": "Hyrox the world of fitness rac",
@@ -1320,8 +1177,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T22:30:00Z",
-          "endAt": "2026-06-23T23:00:00Z"
+          "startAt": "2026-06-24T01:30:00Z",
+          "endAt": "2026-06-24T02:00:00Z"
         },
         {
           "title": "Súper Copa Aguascalientes",
@@ -1331,8 +1188,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:00:00Z",
-          "endAt": "2026-06-24T01:00:00Z"
+          "startAt": "2026-06-24T02:00:00Z",
+          "endAt": "2026-06-24T04:00:00Z"
         },
         {
           "title": "ALL Elite Show",
@@ -1342,8 +1199,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T01:00:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
+          "startAt": "2026-06-24T04:00:00Z",
+          "endAt": "2026-06-24T05:00:00Z"
         },
         {
           "title": "FMFA",
@@ -1353,8 +1210,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T05:00:00Z"
+          "startAt": "2026-06-24T05:00:00Z",
+          "endAt": "2026-06-24T08:00:00Z"
         },
         {
           "title": "AEW DYNAMITE",
@@ -1364,8 +1221,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T05:00:00Z",
-          "endAt": "2026-06-24T07:00:00Z"
+          "startAt": "2026-06-24T08:00:00Z",
+          "endAt": "2026-06-24T10:00:00Z"
         },
         {
           "title": "Mediterranean Games",
@@ -1375,8 +1232,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T07:00:00Z",
-          "endAt": "2026-06-24T07:30:00Z"
+          "startAt": "2026-06-24T10:00:00Z",
+          "endAt": "2026-06-24T10:30:00Z"
         },
         {
           "title": "FMFA",
@@ -1386,8 +1243,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T07:30:00Z",
-          "endAt": "2026-06-24T10:30:00Z"
+          "startAt": "2026-06-24T10:30:00Z",
+          "endAt": "2026-06-24T13:30:00Z"
         },
         {
           "title": "Monster Jam",
@@ -1397,8 +1254,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:30:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
+          "startAt": "2026-06-24T13:30:00Z",
+          "endAt": "2026-06-24T14:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -1408,8 +1265,96 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T14:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "Súper Copa Aguascalientes",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T17:00:00Z"
+        },
+        {
+          "title": "Budo Sento Championship",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:00:00Z",
+          "endAt": "2026-06-24T19:00:00Z"
+        },
+        {
+          "title": "Volleyball world beach pro tou",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T19:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
+        },
+        {
+          "title": "Volleyball world beach pro tou",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T21:00:00Z"
+        },
+        {
+          "title": "Budo Combat",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T21:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
+        },
+        {
+          "title": "Monster Jam",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-24T22:30:00Z"
+        },
+        {
+          "title": "Monster Jam",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T22:30:00Z",
+          "endAt": "2026-06-24T23:00:00Z"
+        },
+        {
+          "title": "Major Arena Soccer League",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T23:00:00Z",
+          "endAt": "2026-06-25T01:30:00Z"
         }
       ]
     },
@@ -1423,72 +1368,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Wanda diamond league 2026 Rom",
+        "title": "World athletics continental to",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "startAt": "2026-06-24T03:00:00Z",
+        "endAt": "2026-06-24T05:00:00Z"
       },
       "programs": [
-        {
-          "title": "CD Leganés vs. CD Mirandés",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T10:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "World athletics continental to",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Wanda diamond league 2026 Rom",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "World athletics continental to",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Granada vs. Real Sporting de",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
         {
           "title": "Málaga vs. R. Racing Club",
           "subtitle": null,
@@ -1497,8 +1387,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-23T23:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "Wanda diamond league 2026 Doh",
@@ -1508,8 +1398,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-24T00:00:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T03:00:00Z"
         },
         {
           "title": "World athletics continental to",
@@ -1519,8 +1409,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T00:00:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
+          "startAt": "2026-06-24T03:00:00Z",
+          "endAt": "2026-06-24T05:00:00Z"
         },
         {
           "title": "Almería vs. CD Castellón",
@@ -1530,8 +1420,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T04:00:00Z"
+          "startAt": "2026-06-24T05:00:00Z",
+          "endAt": "2026-06-24T07:00:00Z"
         },
         {
           "title": "Málaga vs. UD las Palmas",
@@ -1541,8 +1431,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T04:00:00Z",
-          "endAt": "2026-06-24T06:00:00Z"
+          "startAt": "2026-06-24T07:00:00Z",
+          "endAt": "2026-06-24T09:00:00Z"
         },
         {
           "title": "Wanda diamond league 2026 Doh",
@@ -1552,8 +1442,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T06:00:00Z",
-          "endAt": "2026-06-24T08:00:00Z"
+          "startAt": "2026-06-24T09:00:00Z",
+          "endAt": "2026-06-24T11:00:00Z"
         },
         {
           "title": "Granada vs. Real Sporting de",
@@ -1563,8 +1453,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T08:00:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T11:00:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "World athletics continental to",
@@ -1574,8 +1464,96 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
+        },
+        {
+          "title": "World athletics continental to",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T17:00:00Z"
+        },
+        {
+          "title": "Real Madrid vs. Girona FC",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:00:00Z",
+          "endAt": "2026-06-24T17:30:00Z"
+        },
+        {
+          "title": "Sevilla vs. Deportivo Alavés",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T17:30:00Z",
+          "endAt": "2026-06-24T18:00:00Z"
+        },
+        {
+          "title": "Sevilla vs. Elche",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T18:00:00Z",
+          "endAt": "2026-06-24T18:45:00Z"
+        },
+        {
+          "title": "Real Madrid Vs. Real Betis",
+          "subtitle": null,
+          "description": "El Real Madrid C. F. recibe al Real Betis en el estadio Santiago Bernabéu en la ciudad de Madrid, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/real_madrid_vs_real_betis.png",
+          "startAt": "2026-06-24T18:45:00Z",
+          "endAt": "2026-06-24T19:30:00Z"
+        },
+        {
+          "title": "Real Madrid vs. Elche",
+          "subtitle": null,
+          "description": "El Real Madrid CF recibe al Elche CF en el estadio Santiago Bernabéu en la ciudad de Madrid, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/real_madrid_vs_elche.png",
+          "startAt": "2026-06-24T19:30:00Z",
+          "endAt": "2026-06-24T21:00:00Z"
+        },
+        {
+          "title": "Carolina Hurricanes vs. Vegas G",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T21:00:00Z",
+          "endAt": "2026-06-25T00:00:00Z"
+        },
+        {
+          "title": "Barcelona vs. Real Oviedo",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-25T00:00:00Z",
+          "endAt": "2026-06-25T00:30:00Z"
         }
       ]
     },
@@ -1589,72 +1567,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "CA Osasuna vs. Atlético de Madridadr",
+        "title": "Villarreal vs. Atlético de Madrid",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "startAt": "2026-06-24T04:15:00Z",
+        "endAt": "2026-06-24T06:15:00Z"
       },
       "programs": [
-        {
-          "title": "Elche vs. Getafe",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T10:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Valencia vs. Rayo Vallecano",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "CA Osasuna vs. Atlético de Madridadr",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "Barcelona Vs. Real Betis",
-          "subtitle": null,
-          "description": "El Fútbol Club Barcelona recibe al Real Betis en el estadio Camp Nou en la ciudad de Barcelona, España.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/barcelona_vs_real_betis.png",
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Valencia vs. Barcelona",
-          "subtitle": null,
-          "description": "El Valencia Club de Fútbol recibe al FC Barcelona en el estadio Mestalla en la ciudad de Valencia, España.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/valencia_vs_barcelona.png",
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
         {
           "title": "Real Madrid vs. Real Oviedo",
           "subtitle": null,
@@ -1663,8 +1586,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-23T23:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "Barcelona vs. Real Madrid",
@@ -1674,8 +1597,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/barcelona_vs_real_madrid.png",
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-24T00:15:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T03:15:00Z"
         },
         {
           "title": "Programa LALIGA EA SPORTS Sil",
@@ -1685,8 +1608,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T00:15:00Z",
-          "endAt": "2026-06-24T01:15:00Z"
+          "startAt": "2026-06-24T03:15:00Z",
+          "endAt": "2026-06-24T04:15:00Z"
         },
         {
           "title": "Villarreal vs. Atlético de Madrid",
@@ -1696,8 +1619,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T01:15:00Z",
-          "endAt": "2026-06-24T03:15:00Z"
+          "startAt": "2026-06-24T04:15:00Z",
+          "endAt": "2026-06-24T06:15:00Z"
         },
         {
           "title": "CA Osasuna vs. Espanyol",
@@ -1707,8 +1630,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T03:15:00Z",
-          "endAt": "2026-06-24T04:00:00Z"
+          "startAt": "2026-06-24T06:15:00Z",
+          "endAt": "2026-06-24T07:00:00Z"
         },
         {
           "title": "CA Osasuna vs. Espanyol",
@@ -1718,8 +1641,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T04:00:00Z",
-          "endAt": "2026-06-24T05:15:00Z"
+          "startAt": "2026-06-24T07:00:00Z",
+          "endAt": "2026-06-24T08:15:00Z"
         },
         {
           "title": "RCD Mallorca vs. Villarreal",
@@ -1729,8 +1652,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T05:15:00Z",
-          "endAt": "2026-06-24T07:15:00Z"
+          "startAt": "2026-06-24T08:15:00Z",
+          "endAt": "2026-06-24T10:15:00Z"
         },
         {
           "title": "Sky Sports 16",
@@ -1740,8 +1663,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T07:15:00Z",
-          "endAt": "2026-06-24T07:45:00Z"
+          "startAt": "2026-06-24T10:15:00Z",
+          "endAt": "2026-06-24T10:45:00Z"
         },
         {
           "title": "Programa LALIGA EA SPORTS Est",
@@ -1751,8 +1674,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T07:45:00Z",
-          "endAt": "2026-06-24T08:00:00Z"
+          "startAt": "2026-06-24T10:45:00Z",
+          "endAt": "2026-06-24T11:00:00Z"
         },
         {
           "title": "Valencia vs. Rayo Vallecano",
@@ -1762,8 +1685,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T08:00:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T11:00:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "Programa LALIGA EA SPORTS Sil",
@@ -1773,8 +1696,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T14:00:00Z"
         },
         {
           "title": "Elche vs. Deportivo Alavés",
@@ -1784,8 +1707,63 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T13:00:00Z"
+          "startAt": "2026-06-24T14:00:00Z",
+          "endAt": "2026-06-24T16:00:00Z"
+        },
+        {
+          "title": "Real Sociedad vs. Real Betis",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T16:00:00Z",
+          "endAt": "2026-06-24T18:00:00Z"
+        },
+        {
+          "title": "CA Osasuna vs. Espanyol",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T18:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
+        },
+        {
+          "title": "Programa LALIGA EA SPORTS Sil",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T21:00:00Z"
+        },
+        {
+          "title": "Sevilla Vs. Real Madrid",
+          "subtitle": null,
+          "description": "El Sevilla FC recibe al Real Madrid CF en el estadio Ramón Sánchez-Pizjuán en la ciudad de Sevilla, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/sevilla_vs_real_madrid.png",
+          "startAt": "2026-06-24T21:00:00Z",
+          "endAt": "2026-06-24T23:00:00Z"
+        },
+        {
+          "title": "CA Osasuna vs. Atlético de Madridadr",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-06-24T23:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     },
@@ -1799,72 +1777,17 @@
         "data/normalized/guide-premium-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Valencia vs. Rayo Vallecano",
+        "title": "Barcelona vs. Real Madrid",
         "subtitle": null,
-        "description": null,
+        "description": "El FC Barcelona recibe al Real Madrid CF en el estadio Camp Nou en la ciudad de Barcelona, España.",
         "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
+        "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/barcelona_vs_real_madrid.png",
+        "startAt": "2026-06-24T03:00:00Z",
+        "endAt": "2026-06-24T05:15:00Z"
       },
       "programs": [
-        {
-          "title": "Espanyol vs. Real Sociedad",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T10:00:00Z",
-          "endAt": "2026-06-23T12:00:00Z"
-        },
-        {
-          "title": "Elche vs. Getafe",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Valencia vs. Rayo Vallecano",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "CA Osasuna vs. Atlético de Madridadr",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Barcelona Vs. Real Betis",
-          "subtitle": null,
-          "description": "El Fútbol Club Barcelona recibe al Real Betis en el estadio Camp Nou en la ciudad de Barcelona, España.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/barcelona_vs_real_betis.png",
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
         {
           "title": "Valencia vs. Barcelona",
           "subtitle": null,
@@ -1873,8 +1796,8 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/valencia_vs_barcelona.png",
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T22:00:00Z"
+          "startAt": "2026-06-23T23:00:00Z",
+          "endAt": "2026-06-24T01:00:00Z"
         },
         {
           "title": "Real Madrid vs. Real Oviedo",
@@ -1884,8 +1807,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T22:00:00Z",
-          "endAt": "2026-06-24T00:00:00Z"
+          "startAt": "2026-06-24T01:00:00Z",
+          "endAt": "2026-06-24T03:00:00Z"
         },
         {
           "title": "Barcelona vs. Real Madrid",
@@ -1895,8 +1818,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/barcelona_vs_real_madrid.png",
-          "startAt": "2026-06-24T00:00:00Z",
-          "endAt": "2026-06-24T02:15:00Z"
+          "startAt": "2026-06-24T03:00:00Z",
+          "endAt": "2026-06-24T05:15:00Z"
         },
         {
           "title": "Programa LALIGA EA SPORTS Sil",
@@ -1906,8 +1829,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T02:15:00Z",
-          "endAt": "2026-06-24T03:15:00Z"
+          "startAt": "2026-06-24T05:15:00Z",
+          "endAt": "2026-06-24T06:15:00Z"
         },
         {
           "title": "Villarreal vs. Atlético de Madrid",
@@ -1917,8 +1840,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T03:15:00Z",
-          "endAt": "2026-06-24T04:00:00Z"
+          "startAt": "2026-06-24T06:15:00Z",
+          "endAt": "2026-06-24T07:00:00Z"
         },
         {
           "title": "Villarreal vs. Atlético de Madrid",
@@ -1928,8 +1851,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T04:00:00Z",
-          "endAt": "2026-06-24T05:15:00Z"
+          "startAt": "2026-06-24T07:00:00Z",
+          "endAt": "2026-06-24T08:15:00Z"
         },
         {
           "title": "CA Osasuna vs. Espanyol",
@@ -1939,8 +1862,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T05:15:00Z",
-          "endAt": "2026-06-24T07:15:00Z"
+          "startAt": "2026-06-24T08:15:00Z",
+          "endAt": "2026-06-24T10:15:00Z"
         },
         {
           "title": "RCD Mallorca vs. Villarreal",
@@ -1950,8 +1873,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T07:15:00Z",
-          "endAt": "2026-06-24T09:15:00Z"
+          "startAt": "2026-06-24T10:15:00Z",
+          "endAt": "2026-06-24T12:15:00Z"
         },
         {
           "title": "Sky Sports 24",
@@ -1961,8 +1884,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T09:15:00Z",
-          "endAt": "2026-06-24T09:45:00Z"
+          "startAt": "2026-06-24T12:15:00Z",
+          "endAt": "2026-06-24T12:45:00Z"
         },
         {
           "title": "Programa LALIGA EA SPORTS Est",
@@ -1972,8 +1895,8 @@
           "sportType": "Football",
           "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T09:45:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
+          "startAt": "2026-06-24T12:45:00Z",
+          "endAt": "2026-06-24T13:00:00Z"
         },
         {
           "title": "Valencia vs. Rayo Vallecano",
@@ -1983,240 +1906,74 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "TUDN.mx",
-      "name": "Canal TUDN (México)",
-      "logoUrl": "https://i.imgur.com/oT5CAvd.png",
-      "provider": "GatoTV Mexico sports guide",
-      "providerKey": "premium-gatotv-mx",
-      "sources": [
-        "data/normalized/guide-premium-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Archivo mundialista",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-06-23T14:00:00Z",
-        "endAt": "2026-06-23T16:00:00Z"
-      },
-      "programs": [
-        {
-          "title": "La jugada del verano",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T11:00:00Z",
-          "endAt": "2026-06-23T12:30:00Z"
+          "startAt": "2026-06-24T13:00:00Z",
+          "endAt": "2026-06-24T15:00:00Z"
         },
         {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T12:30:00Z",
-          "endAt": "2026-06-23T13:00:00Z"
-        },
-        {
-          "title": "Tricolor al día",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T13:00:00Z",
-          "endAt": "2026-06-23T14:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T14:00:00Z",
-          "endAt": "2026-06-23T16:00:00Z"
-        },
-        {
-          "title": "Los maestros",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T16:00:00Z",
-          "endAt": "2026-06-23T17:00:00Z"
-        },
-        {
-          "title": "Tricolor al día",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T17:00:00Z",
-          "endAt": "2026-06-23T18:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T18:00:00Z",
-          "endAt": "2026-06-23T20:00:00Z"
-        },
-        {
-          "title": "Contacto Deportivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T20:00:00Z",
-          "endAt": "2026-06-23T21:00:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-23T21:00:00Z",
-          "endAt": "2026-06-23T22:30:00Z"
-        },
-        {
-          "title": "Fútbol Central",
+          "title": "Programa LALIGA EA SPORTS Sil",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": "Football",
-          "competition": null,
+          "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-23T22:30:00Z",
-          "endAt": "2026-06-23T23:40:00Z"
+          "startAt": "2026-06-24T15:00:00Z",
+          "endAt": "2026-06-24T16:00:00Z"
         },
         {
-          "title": "Copa Mundial de la FIFA 2026",
+          "title": "Elche vs. Deportivo Alavés",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-23T23:40:00Z",
-          "endAt": "2026-06-24T02:00:00Z"
+          "startAt": "2026-06-24T16:00:00Z",
+          "endAt": "2026-06-24T18:00:00Z"
         },
         {
-          "title": "La jugada del verano",
+          "title": "Real Sociedad vs. Real Betis",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T02:00:00Z",
-          "endAt": "2026-06-24T03:30:00Z"
+          "startAt": "2026-06-24T18:00:00Z",
+          "endAt": "2026-06-24T20:00:00Z"
         },
         {
-          "title": "Línea de cuatro",
+          "title": "CA Osasuna vs. Espanyol",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-06-24T03:30:00Z",
-          "endAt": "2026-06-24T04:30:00Z"
+          "startAt": "2026-06-24T20:00:00Z",
+          "endAt": "2026-06-24T22:00:00Z"
         },
         {
-          "title": "Archivo mundialista",
+          "title": "Programa LALIGA EA SPORTS Sil",
           "subtitle": null,
           "description": null,
           "categories": [],
-          "sportType": null,
-          "competition": null,
+          "sportType": "Football",
+          "competition": "LaLiga",
           "imageUrl": null,
-          "startAt": "2026-06-24T04:30:00Z",
-          "endAt": "2026-06-24T06:00:00Z"
+          "startAt": "2026-06-24T22:00:00Z",
+          "endAt": "2026-06-24T23:00:00Z"
         },
         {
-          "title": "Línea de cuatro",
+          "title": "Sevilla Vs. Real Madrid",
           "subtitle": null,
-          "description": null,
+          "description": "El Sevilla FC recibe al Real Madrid CF en el estadio Ramón Sánchez-Pizjuán en la ciudad de Sevilla, España.",
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T06:00:00Z",
-          "endAt": "2026-06-24T07:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T07:00:00Z",
-          "endAt": "2026-06-24T09:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T09:00:00Z",
-          "endAt": "2026-06-24T10:00:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T10:00:00Z",
-          "endAt": "2026-06-24T11:00:00Z"
-        },
-        {
-          "title": "La jugada del verano",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-06-24T11:00:00Z",
-          "endAt": "2026-06-24T12:30:00Z"
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/sevilla_vs_real_madrid.png",
+          "startAt": "2026-06-24T23:00:00Z",
+          "endAt": "2026-06-25T01:00:00Z"
         }
       ]
     }
