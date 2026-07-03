@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:02:05.760285Z",
+  "generatedAt": "2026-07-03T06:55:16.780314Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -29,24 +29,24 @@
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 380,
-  "includedChannels": 244,
-  "programmes": 21415,
+  "includedChannels": 201,
+  "programmes": 20081,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 107,
+  "missingProgrammeTargets": 144,
   "includedByCategory": {
     "Canada": 86,
     "Spain": 33,
     "French Sports": 3,
-    "French-HD": 33,
+    "French-HD": 35,
     "UK": 40,
-    "USA": 49
+    "USA": 4
   },
   "includedByCountry": {
     "CA": 86,
     "ES": 33,
-    "FR": 36,
+    "FR": 38,
     "UK": 40,
-    "US": 49
+    "US": 4
   },
   "duplicateTargetMappings": {
     "CA:CBLTDT.ca": 3,
@@ -63,9 +63,7 @@
     "CA:Sportsnet.ca": 4,
     "FR:BFMGrandLittoral.fr": 2,
     "FR:DiscoveryChannel.fr": 3,
-    "UK:DiscoveryChannel.uk": 3,
-    "US:ActionMax.us": 2,
-    "US:Cinemax.us": 6
+    "UK:DiscoveryChannel.uk": 3
   },
   "missingSourceTargetSamples": [],
   "missingProgrammeTargetSamples": [
@@ -79,7 +77,6 @@
     "ES:BomCine.es",
     "ES:ETB1.es",
     "ES:LaLigaTV.es",
-    "FR:Animaux.fr",
     "FR:Automotolachaine.fr",
     "FR:BFMBusiness.fr",
     "FR:BFMParisIledeFrance.fr",
@@ -118,6 +115,7 @@
     "FR:HistoireTV.fr",
     "FR:InfosportPlus.fr",
     "FR:LCI.fr",
-    "FR:LCP.fr"
+    "FR:LCP.fr",
+    "FR:LEquipe.fr"
   ]
 }
