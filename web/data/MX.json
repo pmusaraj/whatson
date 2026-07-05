@@ -1,1286 +1,15 @@
 {
   "country": "MX",
   "countryName": "Mexico",
-  "generatedAt": "2026-07-04T14:11:14.699822Z",
+  "generatedAt": "2026-07-05T04:38:44.664752Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": false,
   "sourceGuides": [
     "data/normalized/guide-MX-gatotv.com.xml"
   ],
-  "channelCount": 10,
+  "channelCount": 3,
   "channels": [
-    {
-      "id": "gatotv-mx:5_mexico",
-      "name": "Canal 5 de México (XHGC)",
-      "logoUrl": null,
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Paulie",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T13:35:00Z",
-        "endAt": "2026-07-04T15:15:00Z"
-      },
-      "programs": [
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:00:00Z",
-          "endAt": "2026-07-04T10:30:00Z"
-        },
-        {
-          "title": "Especial de R.T.C",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:30:00Z",
-          "endAt": "2026-07-04T11:00:00Z"
-        },
-        {
-          "title": "Cronicas",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:00:00Z",
-          "endAt": "2026-07-04T11:30:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:30:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "El chavo animado",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T12:15:00Z"
-        },
-        {
-          "title": "Scooby-Doo y la persecución",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:15:00Z",
-          "endAt": "2026-07-04T13:35:00Z"
-        },
-        {
-          "title": "Paulie",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T13:35:00Z",
-          "endAt": "2026-07-04T15:15:00Z"
-        },
-        {
-          "title": "Daniel el Travieso",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T15:15:00Z",
-          "endAt": "2026-07-04T17:05:00Z"
-        },
-        {
-          "title": "El Profesor Chiflado",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T17:05:00Z",
-          "endAt": "2026-07-04T18:50:00Z"
-        },
-        {
-          "title": "La Máscara",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:50:00Z",
-          "endAt": "2026-07-04T20:40:00Z"
-        },
-        {
-          "title": "Paraguay vs. FranciaEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:40:00Z",
-          "endAt": "2026-07-04T23:00:00Z"
-        },
-        {
-          "title": "Anaconda 3 La amenaza",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:00:00Z",
-          "endAt": "2026-07-05T00:45:00Z"
-        },
-        {
-          "title": "Tremors Islas de las Bestias",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:45:00Z",
-          "endAt": "2026-07-05T03:00:00Z"
-        },
-        {
-          "title": "La jugada del veranoEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T03:00:00Z",
-          "endAt": "2026-07-05T04:30:00Z"
-        },
-        {
-          "title": "Snatch cerdos y diamantes",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T04:30:00Z",
-          "endAt": "2026-07-05T06:30:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:30:00Z",
-          "endAt": "2026-07-05T10:30:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:Azteca7.mx",
-      "name": "Canal Azteca 7 (México)",
-      "logoUrl": "https://i.imgur.com/UtFXjIn.png",
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Fuego en el cielo",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T16:15:00Z"
-      },
-      "programs": [
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T09:00:00Z",
-          "endAt": "2026-07-04T11:00:00Z"
-        },
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:00:00Z",
-          "endAt": "2026-07-04T11:15:00Z"
-        },
-        {
-          "title": "Masha y el Oso",
-          "subtitle": null,
-          "description": "Un oso conoce a Masha, una niña traviesa que al principio no la soporta, pero con el paso del tiempo se da cuenta que solo necesita su cuidado y atención.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/caricaturas/miniatura/masha_y_el_oso.jpg",
-          "startAt": "2026-07-04T11:15:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "Ataque triásico",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "Fuego en el cielo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T16:15:00Z"
-        },
-        {
-          "title": "Volcano",
-          "subtitle": null,
-          "description": "Tommy Lee Jones, Anne Heche. Un volcán nace en el centro de la ciudad de Los Ángeles, California, amenazando con destruir totalmente la ciudad.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/volcano.png",
-          "startAt": "2026-07-04T16:15:00Z",
-          "endAt": "2026-07-04T18:30:00Z"
-        },
-        {
-          "title": "El Día Después de Mañana",
-          "subtitle": null,
-          "description": "Jack Hall, un experto en el clima deberá atravesar el país para llegar a su hijo, atrapado en una tormenta repentina que cambiará por completo la tierra.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/el_dia_despues_de_manana.jpg",
-          "startAt": "2026-07-04T18:30:00Z",
-          "endAt": "2026-07-04T20:40:00Z"
-        },
-        {
-          "title": "Paraguay vs. FranciaEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:40:00Z",
-          "endAt": "2026-07-04T23:00:00Z"
-        },
-        {
-          "title": "Deportv",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:00:00Z",
-          "endAt": "2026-07-04T23:30:00Z"
-        },
-        {
-          "title": "Celular llamada desesperada",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:30:00Z",
-          "endAt": "2026-07-05T00:30:00Z"
-        },
-        {
-          "title": "Azteca 7",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:30:00Z",
-          "endAt": "2026-07-05T04:30:00Z"
-        },
-        {
-          "title": "Los protagonistas",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T04:30:00Z",
-          "endAt": "2026-07-05T06:00:00Z"
-        },
-        {
-          "title": "Los Protagonistas Extra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:00:00Z",
-          "endAt": "2026-07-05T07:00:00Z"
-        },
-        {
-          "title": "República Checa vs. MéxicoRepetición",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T07:00:00Z",
-          "endAt": "2026-07-05T09:30:00Z"
-        },
-        {
-          "title": "México Vs. Ecuador",
-          "subtitle": null,
-          "description": "La selección de México se enfrenta a la selección de Ecuador en un partido entre ambos países.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/mexico_vs_ecuador.png",
-          "startAt": "2026-07-05T09:30:00Z",
-          "endAt": "2026-07-05T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:AztecaUno.mx",
-      "name": "Canal Azteca Uno",
-      "logoUrl": "https://i.imgur.com/rRxgBtI.png",
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Hechos Sábado",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T15:00:00Z"
-      },
-      "programs": [
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:00:00Z",
-          "endAt": "2026-07-04T10:30:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:30:00Z",
-          "endAt": "2026-07-04T11:00:00Z"
-        },
-        {
-          "title": "Farmacias Similares",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:00:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "Los platillos voladores",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "Hechos Sábado",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T15:00:00Z"
-        },
-        {
-          "title": "Venga la alegría - Fin de semana",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T15:00:00Z",
-          "endAt": "2026-07-04T17:00:00Z"
-        },
-        {
-          "title": "Venga la alegría - Fin de semana",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T17:00:00Z",
-          "endAt": "2026-07-04T19:00:00Z"
-        },
-        {
-          "title": "A cada quien su santo",
-          "subtitle": null,
-          "description": "Un programa donde se narran historias donde las personas le piden a su santo predilecto para pedirle para que les solucionen sus problemas.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/a_cada_quien_su_santo.png",
-          "startAt": "2026-07-04T19:00:00Z",
-          "endAt": "2026-07-04T20:00:00Z"
-        },
-        {
-          "title": "A cada quien su santo",
-          "subtitle": null,
-          "description": "Un programa donde se narran historias donde las personas le piden a su santo predilecto para pedirle para que les solucionen sus problemas.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/a_cada_quien_su_santo.png",
-          "startAt": "2026-07-04T20:00:00Z",
-          "endAt": "2026-07-04T21:00:00Z"
-        },
-        {
-          "title": "A cada quien su santo",
-          "subtitle": null,
-          "description": "Un programa donde se narran historias donde las personas le piden a su santo predilecto para pedirle para que les solucionen sus problemas.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/a_cada_quien_su_santo.png",
-          "startAt": "2026-07-04T21:00:00Z",
-          "endAt": "2026-07-04T22:00:00Z"
-        },
-        {
-          "title": "Lo que callamos las mujeres",
-          "subtitle": null,
-          "description": "Un programa que presenta dramatizaciones de historias enviadas por los televidentes en México, y en cada episodio trata sobre resolver un problema.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/lo_que_callamos_las_mujeres.png",
-          "startAt": "2026-07-04T22:00:00Z",
-          "endAt": "2026-07-04T23:00:00Z"
-        },
-        {
-          "title": "Lo que callamos las mujeres",
-          "subtitle": null,
-          "description": "Un programa que presenta dramatizaciones de historias enviadas por los televidentes en México, y en cada episodio trata sobre resolver un problema.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/lo_que_callamos_las_mujeres.png",
-          "startAt": "2026-07-04T23:00:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "Lo que callamos las mujeres",
-          "subtitle": null,
-          "description": "Un programa que presenta dramatizaciones de historias enviadas por los televidentes en México, y en cada episodio trata sobre resolver un problema.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/lo_que_callamos_las_mujeres.png",
-          "startAt": "2026-07-05T00:00:00Z",
-          "endAt": "2026-07-05T01:00:00Z"
-        },
-        {
-          "title": "Sábado al extremo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T01:00:00Z",
-          "endAt": "2026-07-05T03:00:00Z"
-        },
-        {
-          "title": "Acércate a Rocío - Al límite",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T03:00:00Z",
-          "endAt": "2026-07-05T05:00:00Z"
-        },
-        {
-          "title": "Pedro el Escamoso: Más Escamoso que Nunca",
-          "subtitle": null,
-          "description": "Pedro regresa a Colombia para conocer a su hijo Pedro Jr. cuya carrera en ascenso se pone en riesgo cuando su padre se enamora de su jefa y futura suegra.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/programas/miniatura/pedro_el_escamoso_mas_escamoso_que_nunca.jpg",
-          "startAt": "2026-07-05T05:00:00Z",
-          "endAt": "2026-07-05T06:00:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:00:00Z",
-          "endAt": "2026-07-05T06:30:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:30:00Z",
-          "endAt": "2026-07-05T07:00:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T07:00:00Z",
-          "endAt": "2026-07-05T07:30:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T07:30:00Z",
-          "endAt": "2026-07-05T08:00:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:00:00Z",
-          "endAt": "2026-07-05T08:30:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:30:00Z",
-          "endAt": "2026-07-05T09:00:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T09:00:00Z",
-          "endAt": "2026-07-05T09:30:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T09:30:00Z",
-          "endAt": "2026-07-05T10:00:00Z"
-        },
-        {
-          "title": "Inova",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T10:00:00Z",
-          "endAt": "2026-07-05T10:30:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:de_las_estrellas_-1h_mexico",
-      "name": "Canal de las Estrellas -1 Hora - México (XEW)",
-      "logoUrl": null,
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Un novio para dos hermanas",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T13:00:00Z",
-        "endAt": "2026-07-04T15:00:00Z"
-      },
-      "programs": [
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T07:30:00Z",
-          "endAt": "2026-07-04T11:30:00Z"
-        },
-        {
-          "title": "Especial de R.T.C",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:30:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T13:00:00Z"
-        },
-        {
-          "title": "Un novio para dos hermanas",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T13:00:00Z",
-          "endAt": "2026-07-04T15:00:00Z"
-        },
-        {
-          "title": "La última batalla",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T15:00:00Z",
-          "endAt": "2026-07-04T18:00:00Z"
-        },
-        {
-          "title": "Cuéntamelo ya, al fin",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:00:00Z",
-          "endAt": "2026-07-04T20:00:00Z"
-        },
-        {
-          "title": "Uno y medio contra el mundo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:00:00Z",
-          "endAt": "2026-07-04T22:00:00Z"
-        },
-        {
-          "title": "María la del Barrio",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T22:00:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "Esta historia me suena",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:00:00Z",
-          "endAt": "2026-07-05T02:00:00Z"
-        },
-        {
-          "title": "Como dice el dicho",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T02:00:00Z",
-          "endAt": "2026-07-05T04:00:00Z"
-        },
-        {
-          "title": "La Rosa de Guadalupe",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T04:00:00Z",
-          "endAt": "2026-07-05T06:00:00Z"
-        },
-        {
-          "title": "Sin miedo a la verdad",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:00:00Z",
-          "endAt": "2026-07-05T07:00:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T07:00:00Z",
-          "endAt": "2026-07-05T09:00:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T09:00:00Z",
-          "endAt": "2026-07-05T11:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:DistritoComedia.mx",
-      "name": "Canal Distrito Comedia",
-      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png",
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "El chapulin colorado animado",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T15:10:00Z"
-      },
-      "programs": [
-        {
-          "title": "Vecinos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:00:00Z",
-          "endAt": "2026-07-04T11:10:00Z"
-        },
-        {
-          "title": "Está libre T.1 (inicia)",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:10:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "Nosotros los guapos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T12:50:00Z"
-        },
-        {
-          "title": "El chavo animado",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:50:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "El chapulin colorado animado",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T15:10:00Z"
-        },
-        {
-          "title": "La CQ Nuevo Ingreso",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T15:10:00Z",
-          "endAt": "2026-07-04T16:25:00Z"
-        },
-        {
-          "title": "María de todos los Angeles",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T16:25:00Z",
-          "endAt": "2026-07-04T18:30:00Z"
-        },
-        {
-          "title": "Nosotros los guapos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:30:00Z",
-          "endAt": "2026-07-04T20:40:00Z"
-        },
-        {
-          "title": "Parodiando",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:40:00Z",
-          "endAt": "2026-07-04T21:40:00Z"
-        },
-        {
-          "title": "Una familia de diez",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T21:40:00Z",
-          "endAt": "2026-07-05T00:10:00Z"
-        },
-        {
-          "title": "Vecinos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:10:00Z",
-          "endAt": "2026-07-05T02:40:00Z"
-        },
-        {
-          "title": "40 y 20",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T02:40:00Z",
-          "endAt": "2026-07-05T05:10:00Z"
-        },
-        {
-          "title": "5x8 Comedia",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T05:10:00Z",
-          "endAt": "2026-07-05T06:10:00Z"
-        },
-        {
-          "title": "Nosotros los guapos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:10:00Z",
-          "endAt": "2026-07-05T08:15:00Z"
-        },
-        {
-          "title": "Vecinos",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:15:00Z",
-          "endAt": "2026-07-05T10:15:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:Foro.mx",
-      "name": "Canal Foro TV",
-      "logoUrl": "https://i.imgur.com/dDFrONz.png",
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Sábados de ForoEn Vivo",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T18:00:00Z"
-      },
-      "programs": [
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T08:30:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T12:30:00Z"
-        },
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:30:00Z",
-          "endAt": "2026-07-04T13:00:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T13:00:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "Sábados de ForoEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T18:00:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:00:00Z",
-          "endAt": "2026-07-04T18:30:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:30:00Z",
-          "endAt": "2026-07-04T20:00:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:00:00Z",
-          "endAt": "2026-07-04T20:30:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:30:00Z",
-          "endAt": "2026-07-04T21:30:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T21:30:00Z",
-          "endAt": "2026-07-04T22:30:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T22:30:00Z",
-          "endAt": "2026-07-04T23:30:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:30:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "Las noticiasEn Vivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:00:00Z",
-          "endAt": "2026-07-05T04:00:00Z"
-        },
-        {
-          "title": "Clío TV",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T04:00:00Z",
-          "endAt": "2026-07-05T05:00:00Z"
-        },
-        {
-          "title": "Infomerciales",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T05:00:00Z",
-          "endAt": "2026-07-05T06:00:00Z"
-        },
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:00:00Z",
-          "endAt": "2026-07-05T08:00:00Z"
-        },
-        {
-          "title": "Especial de R.T.C",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:00:00Z",
-          "endAt": "2026-07-05T08:30:00Z"
-        },
-        {
-          "title": "Paid Programing",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:30:00Z",
-          "endAt": "2026-07-05T12:00:00Z"
-        }
-      ]
-    },
     {
       "id": "gatotv-mx:fox_sports",
       "name": "Canal Fox Sports",
@@ -1291,38 +20,27 @@
         "data/normalized/guide-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "Gearing Up",
+        "title": "La última palabra",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T14:30:00Z"
+        "startAt": "2026-07-05T03:30:00Z",
+        "endAt": "2026-07-05T05:00:00Z"
       },
       "programs": [
         {
-          "title": "AEW DYNAMITE",
+          "title": "Gearing Up",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T08:30:00Z",
-          "endAt": "2026-07-04T10:30:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:30:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
+          "startAt": "2026-07-05T00:30:00Z",
+          "endAt": "2026-07-05T01:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -1332,176 +50,11 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T13:00:00Z"
-        },
-        {
-          "title": "Fox Fit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T13:00:00Z",
-          "endAt": "2026-07-04T13:30:00Z"
-        },
-        {
-          "title": "Fox Fit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T13:30:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "Gearing Up",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T14:30:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:30:00Z",
-          "endAt": "2026-07-04T16:00:00Z"
-        },
-        {
-          "title": "Fox gol México",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T16:00:00Z",
-          "endAt": "2026-07-04T17:00:00Z"
-        },
-        {
-          "title": "Monster Jam",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T17:00:00Z",
-          "endAt": "2026-07-04T17:30:00Z"
-        },
-        {
-          "title": "Gearing Up",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T17:30:00Z",
-          "endAt": "2026-07-04T18:00:00Z"
-        },
-        {
-          "title": "Fox fight club",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:00:00Z",
-          "endAt": "2026-07-04T18:30:00Z"
-        },
-        {
-          "title": "Money Line Show",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:30:00Z",
-          "endAt": "2026-07-04T19:00:00Z"
-        },
-        {
-          "title": "Fox Sports Radio",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T19:00:00Z",
-          "endAt": "2026-07-04T20:00:00Z"
-        },
-        {
-          "title": "Fox Sports Radio",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:00:00Z",
-          "endAt": "2026-07-04T21:00:00Z"
-        },
-        {
-          "title": "AEW DYNAMITE",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T21:00:00Z",
-          "endAt": "2026-07-04T23:00:00Z"
-        },
-        {
-          "title": "+90",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:00:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "+90",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:00:00Z",
-          "endAt": "2026-07-05T01:00:00Z"
-        },
-        {
-          "title": "Budo Combat",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
           "startAt": "2026-07-05T01:00:00Z",
           "endAt": "2026-07-05T02:00:00Z"
         },
         {
-          "title": "Monster Jam",
+          "title": "La última palabra",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1509,29 +62,7 @@
           "competition": null,
           "imageUrl": null,
           "startAt": "2026-07-05T02:00:00Z",
-          "endAt": "2026-07-05T02:30:00Z"
-        },
-        {
-          "title": "Gearing Up",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T02:30:00Z",
-          "endAt": "2026-07-05T03:00:00Z"
-        },
-        {
-          "title": "Central Fox",
-          "subtitle": null,
-          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-07-05T03:00:00Z",
-          "endAt": "2026-07-05T04:00:00Z"
+          "endAt": "2026-07-05T03:30:00Z"
         },
         {
           "title": "La última palabra",
@@ -1541,19 +72,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-05T04:00:00Z",
-          "endAt": "2026-07-05T05:30:00Z"
-        },
-        {
-          "title": "La última palabra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T05:30:00Z",
-          "endAt": "2026-07-05T07:00:00Z"
+          "startAt": "2026-07-05T03:30:00Z",
+          "endAt": "2026-07-05T05:00:00Z"
         },
         {
           "title": "Central Fox",
@@ -1563,8 +83,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
-          "startAt": "2026-07-05T07:00:00Z",
-          "endAt": "2026-07-05T08:00:00Z"
+          "startAt": "2026-07-05T05:00:00Z",
+          "endAt": "2026-07-05T06:00:00Z"
         },
         {
           "title": "Major Arena Soccer League",
@@ -1574,8 +94,162 @@
           "sportType": "Football",
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-05T08:00:00Z",
-          "endAt": "2026-07-05T10:30:00Z"
+          "startAt": "2026-07-05T06:00:00Z",
+          "endAt": "2026-07-05T08:30:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T08:30:00Z",
+          "endAt": "2026-07-05T10:00:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-07-05T10:00:00Z",
+          "endAt": "2026-07-05T11:00:00Z"
+        },
+        {
+          "title": "Fox Fit",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T11:00:00Z",
+          "endAt": "2026-07-05T11:30:00Z"
+        },
+        {
+          "title": "Fox Fit",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T11:30:00Z",
+          "endAt": "2026-07-05T12:00:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T12:00:00Z",
+          "endAt": "2026-07-05T13:00:00Z"
+        },
+        {
+          "title": "Lucha libre CMLL",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T13:00:00Z",
+          "endAt": "2026-07-05T16:00:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T16:00:00Z",
+          "endAt": "2026-07-05T17:30:00Z"
+        },
+        {
+          "title": "+90",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T17:30:00Z",
+          "endAt": "2026-07-05T18:00:00Z"
+        },
+        {
+          "title": "Mediterranean Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T18:00:00Z",
+          "endAt": "2026-07-05T18:30:00Z"
+        },
+        {
+          "title": "Fox Sports Radio",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T18:30:00Z",
+          "endAt": "2026-07-05T19:30:00Z"
+        },
+        {
+          "title": "Central Fox",
+          "subtitle": null,
+          "description": "El noticiero deportivo de la cadena de televisión Fox Sports que desde México y Argentina mantiene al tanto al público latinoamericano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/noticieros/miniatura/central_fox.png",
+          "startAt": "2026-07-05T19:30:00Z",
+          "endAt": "2026-07-05T20:30:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T20:30:00Z",
+          "endAt": "2026-07-05T22:00:00Z"
+        },
+        {
+          "title": "AEW DYNAMITE",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T22:00:00Z",
+          "endAt": "2026-07-06T00:00:00Z"
+        },
+        {
+          "title": "La última palabra",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-06T00:00:00Z",
+          "endAt": "2026-07-06T02:00:00Z"
         }
       ]
     },
@@ -1589,105 +263,17 @@
         "data/normalized/guide-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "La cabaña",
+        "title": "Dolittle",
         "subtitle": null,
-        "description": null,
+        "description": "El excéntrico doctor John Dolittle zarpa a una aventura junto con sus amigos animales después de que la joven reina Victoria cayera gravemente enferma.",
         "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T11:51:00Z",
-        "endAt": "2026-07-04T14:14:00Z"
+        "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/dolittle.jpg",
+        "startAt": "2026-07-05T03:06:00Z",
+        "endAt": "2026-07-05T04:50:00Z"
       },
       "programs": [
-        {
-          "title": "Mi hijo y yo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:06:00Z",
-          "endAt": "2026-07-04T11:51:00Z"
-        },
-        {
-          "title": "La cabaña",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T11:51:00Z",
-          "endAt": "2026-07-04T14:14:00Z"
-        },
-        {
-          "title": "El gran pequeño",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:14:00Z",
-          "endAt": "2026-07-04T16:06:00Z"
-        },
-        {
-          "title": "El hombre sin sombra",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T16:06:00Z",
-          "endAt": "2026-07-04T18:06:00Z"
-        },
-        {
-          "title": "Kong: La Isla Calavera",
-          "subtitle": null,
-          "description": "Un grupo de exploradores viajan a una misteriosa isla del Pacifico que tiene forma de calavera sin saber de los peligros de esta.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/kong_la_isla_calavera.jpg",
-          "startAt": "2026-07-04T18:06:00Z",
-          "endAt": "2026-07-04T20:11:00Z"
-        },
-        {
-          "title": "Los Juegos del Hambre: En Llamas",
-          "subtitle": null,
-          "description": "Katnis y Peeta se convierten en blancos del capitolio después de su victoria en los juegos No. 74 de los juegos del hambre que provoca una rebelión en distrito Panem.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/los_juegos_del_hambre_en_llamas.jpg",
-          "startAt": "2026-07-04T20:11:00Z",
-          "endAt": "2026-07-04T22:46:00Z"
-        },
-        {
-          "title": "Soy Leyenda",
-          "subtitle": null,
-          "description": "Años atrás una plaga ha aniquilado la mayoría de los humanos y transformara el resto en monstruos, un sobreviviente solitario de Nueva York trata de buscar una cura.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/soy_leyenda.jpg",
-          "startAt": "2026-07-04T22:46:00Z",
-          "endAt": "2026-07-05T00:31:00Z"
-        },
-        {
-          "title": "Volver al Futuro II",
-          "subtitle": null,
-          "description": "Después de visitar el año 2015, Marty McFly debe regresar al año de 1955 para evitar cambios en su presente de 1985, sin interferir en su primer viaje.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/volver_al_futuro_ii.jpg",
-          "startAt": "2026-07-05T00:31:00Z",
-          "endAt": "2026-07-05T02:30:00Z"
-        },
         {
           "title": "Jurassic World Dominion",
           "subtitle": null,
@@ -1696,8 +282,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/jurassic_world_dominio.jpg",
-          "startAt": "2026-07-05T02:30:00Z",
-          "endAt": "2026-07-05T05:06:00Z"
+          "startAt": "2026-07-05T00:30:00Z",
+          "endAt": "2026-07-05T03:06:00Z"
         },
         {
           "title": "Dolittle",
@@ -1707,8 +293,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/dolittle.jpg",
-          "startAt": "2026-07-05T05:06:00Z",
-          "endAt": "2026-07-05T06:50:00Z"
+          "startAt": "2026-07-05T03:06:00Z",
+          "endAt": "2026-07-05T04:50:00Z"
         },
         {
           "title": "Los Juegos del Hambre: En Llamas",
@@ -1718,8 +304,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/los_juegos_del_hambre_en_llamas.jpg",
-          "startAt": "2026-07-05T06:50:00Z",
-          "endAt": "2026-07-05T09:24:00Z"
+          "startAt": "2026-07-05T04:50:00Z",
+          "endAt": "2026-07-05T07:24:00Z"
         },
         {
           "title": "Mirreyes vs Godínez",
@@ -1729,8 +315,96 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/mirreyes_contra_godinez.jpg",
-          "startAt": "2026-07-05T09:24:00Z",
-          "endAt": "2026-07-05T11:23:00Z"
+          "startAt": "2026-07-05T07:24:00Z",
+          "endAt": "2026-07-05T09:23:00Z"
+        },
+        {
+          "title": "Otra película de huevos y",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T09:23:00Z",
+          "endAt": "2026-07-05T11:13:00Z"
+        },
+        {
+          "title": "Un Gallo con Muchos Huevos",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T11:13:00Z",
+          "endAt": "2026-07-05T12:57:00Z"
+        },
+        {
+          "title": "Dolittle",
+          "subtitle": null,
+          "description": "El excéntrico doctor John Dolittle zarpa a una aventura junto con sus amigos animales después de que la joven reina Victoria cayera gravemente enferma.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/dolittle.jpg",
+          "startAt": "2026-07-05T12:57:00Z",
+          "endAt": "2026-07-05T14:41:00Z"
+        },
+        {
+          "title": "Volver al Futuro II",
+          "subtitle": null,
+          "description": "Después de visitar el año 2015, Marty McFly debe regresar al año de 1955 para evitar cambios en su presente de 1985, sin interferir en su primer viaje.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/volver_al_futuro_ii.jpg",
+          "startAt": "2026-07-05T14:41:00Z",
+          "endAt": "2026-07-05T16:40:00Z"
+        },
+        {
+          "title": "Jurassic World Dominion",
+          "subtitle": null,
+          "description": "Los humanos y los dinosaurios viven en un frágil equilibrio que determinará de una vez por todas si las personas seguirán siendo los depredadores máximos.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/jurassic_world_dominio.jpg",
+          "startAt": "2026-07-05T16:40:00Z",
+          "endAt": "2026-07-05T19:16:00Z"
+        },
+        {
+          "title": "King Kong",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-05T19:16:00Z",
+          "endAt": "2026-07-05T22:36:00Z"
+        },
+        {
+          "title": "Non-Stop: Sin Escalas",
+          "subtitle": null,
+          "description": "Un mariscal aéreo recibe una serie de mensajes amenazadores diciéndole que matará a una persona cada 20 minutos si no le transfieren 150 millones de dólares.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/peliculas/miniatura/non-stop_sin_escalas.jpg",
+          "startAt": "2026-07-05T22:36:00Z",
+          "endAt": "2026-07-06T00:30:00Z"
+        },
+        {
+          "title": "Viejos",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-07-06T00:30:00Z",
+          "endAt": "2026-07-06T02:29:00Z"
         }
       ]
     },
@@ -1744,96 +418,19 @@
         "data/normalized/guide-MX-gatotv.com.xml"
       ],
       "currentProgram": {
-        "title": "World athletics continental to",
+        "title": "Wanda diamond league 2026 Par",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-07-04T14:00:00Z",
-        "endAt": "2026-07-04T16:00:00Z"
+        "startAt": "2026-07-05T04:00:00Z",
+        "endAt": "2026-07-05T06:00:00Z"
       },
       "programs": [
         {
-          "title": "Granada vs. Real Sporting de",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T10:00:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
-        },
-        {
-          "title": "World athletics continental to",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T14:00:00Z"
-        },
-        {
-          "title": "World athletics continental to",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T14:00:00Z",
-          "endAt": "2026-07-04T16:00:00Z"
-        },
-        {
-          "title": "CD Castellón vs. Almería",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T16:00:00Z",
-          "endAt": "2026-07-04T18:00:00Z"
-        },
-        {
-          "title": "UD las Palmas vs. Málaga",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:00:00Z",
-          "endAt": "2026-07-04T20:00:00Z"
-        },
-        {
-          "title": "Wanda diamond league 2026 Eug",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:00:00Z",
-          "endAt": "2026-07-04T22:00:00Z"
-        },
-        {
-          "title": "Almería vs. CD Castellón",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T22:00:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "Málaga vs. UD las Palmas",
+          "title": "Málaga vs. Almería",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1844,7 +441,7 @@
           "endAt": "2026-07-05T02:00:00Z"
         },
         {
-          "title": "Málaga vs. Almería",
+          "title": "Almería vs. Málaga",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1855,7 +452,7 @@
           "endAt": "2026-07-05T04:00:00Z"
         },
         {
-          "title": "Almería vs. Málaga",
+          "title": "Wanda diamond league 2026 Par",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1866,7 +463,7 @@
           "endAt": "2026-07-05T06:00:00Z"
         },
         {
-          "title": "Wanda diamond league 2026 Par",
+          "title": "Wanda diamond league 2026 Doh",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1877,7 +474,7 @@
           "endAt": "2026-07-05T08:00:00Z"
         },
         {
-          "title": "Wanda diamond league 2026 Doh",
+          "title": "Granada vs. Real Sporting de",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1888,7 +485,7 @@
           "endAt": "2026-07-05T10:00:00Z"
         },
         {
-          "title": "Granada vs. Real Sporting de",
+          "title": "World athletics continental to",
           "subtitle": null,
           "description": null,
           "categories": [],
@@ -1897,260 +494,127 @@
           "imageUrl": null,
           "startAt": "2026-07-05T10:00:00Z",
           "endAt": "2026-07-05T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "gatotv-mx:TUDN.mx",
-      "name": "Canal TUDN (México)",
-      "logoUrl": "https://i.imgur.com/oT5CAvd.png",
-      "provider": "GatoTV Mexico guide",
-      "providerKey": "gatotv-mx",
-      "sources": [
-        "data/normalized/guide-MX-gatotv.com.xml"
-      ],
-      "currentProgram": {
-        "title": "Archivo mundialista",
-        "subtitle": null,
-        "description": null,
-        "categories": [],
-        "sportType": null,
-        "competition": null,
-        "imageUrl": null,
-        "startAt": "2026-07-04T13:30:00Z",
-        "endAt": "2026-07-04T15:30:00Z"
-      },
-      "programs": [
+        },
         {
-          "title": "Archivo mundialista",
+          "title": "World athletics continental to",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T09:00:00Z",
-          "endAt": "2026-07-04T11:00:00Z"
+          "startAt": "2026-07-05T12:00:00Z",
+          "endAt": "2026-07-05T14:00:00Z"
         },
         {
-          "title": "Vasco, una vida",
+          "title": "Real Madrid vs. Girona FC",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T11:00:00Z",
-          "endAt": "2026-07-04T12:00:00Z"
+          "startAt": "2026-07-05T14:00:00Z",
+          "endAt": "2026-07-05T14:30:00Z"
         },
         {
-          "title": "Línea de cuatro",
+          "title": "Sevilla vs. Deportivo Alavés",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T12:00:00Z",
-          "endAt": "2026-07-04T13:00:00Z"
+          "startAt": "2026-07-05T14:30:00Z",
+          "endAt": "2026-07-05T15:00:00Z"
         },
         {
-          "title": "Archivo mundialista",
+          "title": "Sevilla vs. Elche",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T13:00:00Z",
-          "endAt": "2026-07-04T13:30:00Z"
+          "startAt": "2026-07-05T15:00:00Z",
+          "endAt": "2026-07-05T15:45:00Z"
         },
         {
-          "title": "Archivo mundialista",
+          "title": "Real Madrid Vs. Real Betis",
+          "subtitle": null,
+          "description": "El Real Madrid C. F. recibe al Real Betis en el estadio Santiago Bernabéu en la ciudad de Madrid, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/real_madrid_vs_real_betis.png",
+          "startAt": "2026-07-05T15:45:00Z",
+          "endAt": "2026-07-05T16:30:00Z"
+        },
+        {
+          "title": "Real Madrid vs. Elche",
+          "subtitle": null,
+          "description": "El Real Madrid CF recibe al Elche CF en el estadio Santiago Bernabéu en la ciudad de Madrid, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/real_madrid_vs_elche.png",
+          "startAt": "2026-07-05T16:30:00Z",
+          "endAt": "2026-07-05T18:00:00Z"
+        },
+        {
+          "title": "Carolina Hurricanes vs. Vegas G",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T13:30:00Z",
-          "endAt": "2026-07-04T15:30:00Z"
+          "startAt": "2026-07-05T18:00:00Z",
+          "endAt": "2026-07-05T21:00:00Z"
         },
         {
-          "title": "Los maestros",
+          "title": "Barcelona vs. Real Oviedo",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T15:30:00Z",
-          "endAt": "2026-07-04T16:30:00Z"
+          "startAt": "2026-07-05T21:00:00Z",
+          "endAt": "2026-07-05T21:30:00Z"
         },
         {
-          "title": "Tricolor al día",
+          "title": "Real Madrid vs. Getafe",
+          "subtitle": null,
+          "description": "El Real Madrid CF recibe al Getafe CF en el estadio Santiago Bernabéu en la ciudad de Madrid, España.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://imagenes.gatotv.com/categorias/deportes/miniatura/real_madrid_vs_getafe.png",
+          "startAt": "2026-07-05T21:30:00Z",
+          "endAt": "2026-07-05T22:00:00Z"
+        },
+        {
+          "title": "World athletics continental to",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T16:30:00Z",
-          "endAt": "2026-07-04T17:30:00Z"
+          "startAt": "2026-07-05T22:00:00Z",
+          "endAt": "2026-07-06T00:00:00Z"
         },
         {
-          "title": "Línea de cuatro",
+          "title": "Wanda diamond league 2026 Rom",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-07-04T17:30:00Z",
-          "endAt": "2026-07-04T18:30:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T18:30:00Z",
-          "endAt": "2026-07-04T19:30:00Z"
-        },
-        {
-          "title": "Fútbol Central",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T19:30:00Z",
-          "endAt": "2026-07-04T20:40:00Z"
-        },
-        {
-          "title": "Copa Mundial de la FIFA 2026",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T20:40:00Z",
-          "endAt": "2026-07-04T23:00:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-04T23:00:00Z",
-          "endAt": "2026-07-05T00:00:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T00:00:00Z",
-          "endAt": "2026-07-05T01:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T01:00:00Z",
-          "endAt": "2026-07-05T02:00:00Z"
-        },
-        {
-          "title": "Contacto Deportivo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T02:00:00Z",
-          "endAt": "2026-07-05T03:00:00Z"
-        },
-        {
-          "title": "La jugada del verano",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T03:00:00Z",
-          "endAt": "2026-07-05T04:30:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T04:30:00Z",
-          "endAt": "2026-07-05T05:30:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T05:30:00Z",
-          "endAt": "2026-07-05T06:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T06:00:00Z",
-          "endAt": "2026-07-05T08:00:00Z"
-        },
-        {
-          "title": "Línea de cuatro",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T08:00:00Z",
-          "endAt": "2026-07-05T09:00:00Z"
-        },
-        {
-          "title": "Archivo mundialista",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-07-05T09:00:00Z",
-          "endAt": "2026-07-05T11:00:00Z"
+          "startAt": "2026-07-06T00:00:00Z",
+          "endAt": "2026-07-06T02:00:00Z"
         }
       ]
     }
