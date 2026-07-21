@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T06:22:40.904612Z",
+  "generatedAt": "2026-07-21T06:19:56.244262Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -29,22 +29,22 @@
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 380,
-  "includedChannels": 208,
-  "programmes": 20715,
+  "includedChannels": 196,
+  "programmes": 19915,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 143,
+  "missingProgrammeTargets": 149,
   "includedByCategory": {
     "Canada": 86,
-    "Spain": 33,
-    "French Sports": 11,
-    "French-HD": 34,
+    "Spain": 31,
+    "French Sports": 3,
+    "French-HD": 32,
     "UK": 40,
     "USA": 4
   },
   "includedByCountry": {
     "CA": 86,
-    "ES": 33,
-    "FR": 45,
+    "ES": 31,
+    "FR": 35,
     "UK": 40,
     "US": 4
   },
@@ -61,7 +61,6 @@
     "CA:RDSInfo.ca": 2,
     "CA:Slice.ca": 2,
     "CA:Sportsnet.ca": 4,
-    "FR:LEquipe.fr": 7,
     "FR:BFMGrandLittoral.fr": 2,
     "FR:DiscoveryChannel.fr": 3,
     "UK:DiscoveryChannel.uk": 3
@@ -75,9 +74,13 @@
     "CA:Vrak.ca",
     "CA:Yoopa.ca",
     "ES:APunt.es",
+    "ES:AragonTV.es",
     "ES:BomCine.es",
+    "ES:CazayPesca.es",
     "ES:ETB1.es",
     "ES:LaLigaTV.es",
+    "FR:Action.fr",
+    "FR:Animaux.fr",
     "FR:Automotolachaine.fr",
     "FR:BFMBusiness.fr",
     "FR:BFMParisIledeFrance.fr",
@@ -113,10 +116,6 @@
     "FR:GolfChannel.fr",
     "FR:GolfPlus.fr",
     "FR:Gulli.fr",
-    "FR:HistoireTV.fr",
-    "FR:LCI.fr",
-    "FR:LCP.fr",
-    "FR:LaChaineMeteo.fr",
-    "FR:M6.fr"
+    "FR:HistoireTV.fr"
   ]
 }
