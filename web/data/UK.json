@@ -1,7 +1,7 @@
 {
   "country": "UK",
   "countryName": "United Kingdom",
-  "generatedAt": "2026-08-02T03:55:18.674971Z",
+  "generatedAt": "2026-08-02T13:55:14.527596Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": false,
@@ -12,6 +12,326 @@
   "channelCount": 11,
   "channels": [
     {
+      "id": "mytelly-uk:BBCOne.uk",
+      "name": "BBC One Northern Ireland",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png",
+      "provider": "MyTelly UK guide",
+      "providerKey": "mytelly-uk",
+      "sources": [
+        "data/normalized/guide-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": {
+        "title": "Puss in Boots (2011)",
+        "subtitle": null,
+        "description": null,
+        "categories": [],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": null,
+        "startAt": "2026-08-02T13:15:00Z",
+        "endAt": "2026-08-02T14:35:00Z"
+      },
+      "programs": [
+        {
+          "title": "Pilgrimage",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T09:30:00Z",
+          "endAt": "2026-08-02T10:30:00Z"
+        },
+        {
+          "title": "Money for Nothing",
+          "subtitle": "No Pane, No Gain - Season 16, Episode 13",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T10:30:00Z",
+          "endAt": "2026-08-02T11:15:00Z"
+        },
+        {
+          "title": "Bargain Hunt",
+          "subtitle": "Southwell 9 - Season 67, Episode 9",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T11:15:00Z",
+          "endAt": "2026-08-02T12:00:00Z"
+        },
+        {
+          "title": "BBC News",
+          "subtitle": "02/08/2026 - 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T12:00:00Z",
+          "endAt": "2026-08-02T12:10:00Z"
+        },
+        {
+          "title": "Weather for the Week Ahead",
+          "subtitle": "02/08/2026 - 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T12:10:00Z",
+          "endAt": "2026-08-02T12:15:00Z"
+        },
+        {
+          "title": "Songs of Praise",
+          "subtitle": "Mountains - Season 2026, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T12:15:00Z",
+          "endAt": "2026-08-02T12:50:00Z"
+        },
+        {
+          "title": "Escape to the Country",
+          "subtitle": "Caithness - Season 24, Episode 8",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T12:50:00Z",
+          "endAt": "2026-08-02T13:15:00Z"
+        },
+        {
+          "title": "Puss in Boots (2011)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T13:15:00Z",
+          "endAt": "2026-08-02T14:35:00Z"
+        },
+        {
+          "title": "The Mating Game",
+          "subtitle": "Jungles: In the Thick of It - Season 1, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T14:35:00Z",
+          "endAt": "2026-08-02T15:35:00Z"
+        },
+        {
+          "title": "Homes Under the Hammer",
+          "subtitle": "Old News to New News! - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T15:35:00Z",
+          "endAt": "2026-08-02T16:35:00Z"
+        },
+        {
+          "title": "BBC News",
+          "subtitle": "02/08/2026 - 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T16:35:00Z",
+          "endAt": "2026-08-02T16:50:00Z"
+        },
+        {
+          "title": "BBC Newsline; Weather",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T16:50:00Z",
+          "endAt": "2026-08-02T16:55:00Z"
+        },
+        {
+          "title": "Weather",
+          "subtitle": "02/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T16:55:00Z",
+          "endAt": "2026-08-02T17:00:00Z"
+        },
+        {
+          "title": "Celebrity Escape to the Country",
+          "subtitle": "Angellica Bell - Season 3, Episode 4",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T17:00:00Z",
+          "endAt": "2026-08-02T18:00:00Z"
+        },
+        {
+          "title": "Countryfile",
+          "subtitle": "Adam's Young Farmers: Gwynedd - Season 2026, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T18:00:00Z",
+          "endAt": "2026-08-02T19:00:00Z"
+        },
+        {
+          "title": "Antiques Roadshow",
+          "subtitle": "Brodie Castle & Estate, Morayshire 1 - Season 45, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T19:00:00Z",
+          "endAt": "2026-08-02T20:00:00Z"
+        },
+        {
+          "title": "The Rapture",
+          "subtitle": "- Season 1, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T20:00:00Z",
+          "endAt": "2026-08-02T21:00:00Z"
+        },
+        {
+          "title": "BBC News at Ten",
+          "subtitle": "02/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T21:00:00Z",
+          "endAt": "2026-08-02T21:25:00Z"
+        },
+        {
+          "title": "BBC Newsline; Weather",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T21:25:00Z",
+          "endAt": "2026-08-02T21:30:00Z"
+        },
+        {
+          "title": "Fleadh Folk",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T21:30:00Z",
+          "endAt": "2026-08-02T22:30:00Z"
+        },
+        {
+          "title": "The Impossible (2012)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-02T22:30:00Z",
+          "endAt": "2026-08-02T23:00:00Z"
+        },
+        {
+          "title": "Weather for the Week Ahead",
+          "subtitle": "02/08/2026 - 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:10:00Z",
+          "endAt": "2026-08-03T00:15:00Z"
+        },
+        {
+          "title": "BBC News",
+          "subtitle": "02/08/2026 - 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:15:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Breakfast",
+          "subtitle": "03/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T08:30:00Z"
+        },
+        {
+          "title": "Animal Park",
+          "subtitle": "Summer 2025 7 - Season 2025, Episode 7",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:30:00Z",
+          "endAt": "2026-08-03T09:15:00Z"
+        },
+        {
+          "title": "Trace, Track, Get My Car Back",
+          "subtitle": "- Season 1, Episode 6",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:15:00Z",
+          "endAt": "2026-08-03T09:45:00Z"
+        },
+        {
+          "title": "Expert Witness",
+          "subtitle": "Unearthing the Truth - Season 4, Episode 13",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:45:00Z",
+          "endAt": "2026-08-03T10:15:00Z"
+        }
+      ]
+    },
+    {
       "id": "mytelly-uk:BBCTwo.uk",
       "name": "BBC Two Northern Ireland",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/BBC_Two_logo_2021.svg/960px-BBC_Two_logo_2021.svg.png",
@@ -21,116 +341,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "This Is BBC Two",
-        "subtitle": null,
+        "title": "Cricket: The Hundred",
+        "subtitle": "MI London Women v Manchester Super Giants Women",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T02:25:00Z",
-        "endAt": "2026-08-02T05:40:00Z"
+        "startAt": "2026-08-02T13:15:00Z",
+        "endAt": "2026-08-02T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Ann Droid",
-          "subtitle": "- Season 1, Episode 3",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:55:00Z",
-          "endAt": "2026-08-02T00:25:00Z"
-        },
-        {
-          "title": "Who Do You Think You Are?",
-          "subtitle": "Adeel Akhtar - Season 23, Episode 6",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:25:00Z",
-          "endAt": "2026-08-02T01:25:00Z"
-        },
-        {
-          "title": "The Rapture",
-          "subtitle": "- Season 1, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:25:00Z",
-          "endAt": "2026-08-02T02:25:00Z"
-        },
-        {
-          "title": "This Is BBC Two",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:25:00Z",
-          "endAt": "2026-08-02T05:40:00Z"
-        },
-        {
-          "title": "A to Z of TV Gardening",
-          "subtitle": "Letter I - Season 1, Episode 9",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:40:00Z",
-          "endAt": "2026-08-02T06:25:00Z"
-        },
-        {
-          "title": "Glorious Gardens from Above",
-          "subtitle": "Staffordshire - Season 1, Episode 12",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:25:00Z",
-          "endAt": "2026-08-02T07:10:00Z"
-        },
-        {
-          "title": "Countryfile",
-          "subtitle": "Anita's East Coast Road Trip: Orford Ness - Season 2026, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:10:00Z",
-          "endAt": "2026-08-02T08:05:00Z"
-        },
-        {
-          "title": "Best of Weatherman Walking",
-          "subtitle": "Mountain Rambles - Season 2, Episode 4",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:05:00Z",
-          "endAt": "2026-08-02T08:35:00Z"
-        },
-        {
-          "title": "Beechgrove Garden",
-          "subtitle": "- Season 2026, Episode 18",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:35:00Z",
-          "endAt": "2026-08-02T09:05:00Z"
-        },
         {
           "title": "Saturday Kitchen Best Bites",
           "subtitle": "02/08/2026 - Season 2026, Episode 1",
@@ -240,6 +461,72 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:45:00Z",
           "endAt": "2026-08-03T00:25:00Z"
+        },
+        {
+          "title": "The Devil in the Family: The Fall of Ruby Franke",
+          "subtitle": "Distortion - Season 1, Episode 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:25:00Z",
+          "endAt": "2026-08-03T01:20:00Z"
+        },
+        {
+          "title": "This Is BBC Two",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:20:00Z",
+          "endAt": "2026-08-03T05:30:00Z"
+        },
+        {
+          "title": "Bargain Hunt",
+          "subtitle": "Malvern 30 - Season 74, Episode 30",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:30:00Z",
+          "endAt": "2026-08-03T06:15:00Z"
+        },
+        {
+          "title": "Money for Nothing",
+          "subtitle": "Spike's Old Chairs - Season 18, Episode 4",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:15:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "The Repair Shop",
+          "subtitle": "- Season 16, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "BBC News",
+          "subtitle": "03/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T12:00:00Z"
         }
       ]
     },
@@ -253,204 +540,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Location, Location, Location",
-        "subtitle": "- Season 39, Episode 8",
+        "title": "Our Farm Next Door: Amanda, Clive and Kids",
+        "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:55:00Z",
-        "endAt": "2026-08-02T04:50:00Z"
+        "startAt": "2026-08-02T13:00:00Z",
+        "endAt": "2026-08-02T14:05:00Z"
       },
       "programs": [
-        {
-          "title": "Ramy",
-          "subtitle": "Bad Momma - Season 3, Episode 5",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:30:00Z",
-          "endAt": "2026-08-02T00:25:00Z"
-        },
-        {
-          "title": "Ramy",
-          "subtitle": "That's What She Said - Season 3, Episode 4",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:25:00Z",
-          "endAt": "2026-08-02T01:00:00Z"
-        },
-        {
-          "title": "Ramsay's Kitchen Nightmares USA",
-          "subtitle": "The Prohibition Grille - Season 6, Episode 14",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:00:00Z",
-          "endAt": "2026-08-02T01:50:00Z"
-        },
-        {
-          "title": "The Simpsons",
-          "subtitle": "Fear of Flying - Season 6, Episode 11",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:50:00Z",
-          "endAt": "2026-08-02T02:15:00Z"
-        },
-        {
-          "title": "The Simpsons",
-          "subtitle": "Homer of Seville - Season 19, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:15:00Z",
-          "endAt": "2026-08-02T02:40:00Z"
-        },
-        {
-          "title": "The Simpsons",
-          "subtitle": "Lisa's Wedding - Season 6, Episode 19",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:40:00Z",
-          "endAt": "2026-08-02T03:05:00Z"
-        },
-        {
-          "title": "Couples Come Dine with Me",
-          "subtitle": "- Season 3, Episode 7",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:05:00Z",
-          "endAt": "2026-08-02T03:55:00Z"
-        },
-        {
-          "title": "Location, Location, Location",
-          "subtitle": "- Season 39, Episode 8",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:55:00Z",
-          "endAt": "2026-08-02T04:50:00Z"
-        },
-        {
-          "title": "Cheers",
-          "subtitle": "Truce or Consequences - Season 1, Episode 8",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:50:00Z",
-          "endAt": "2026-08-02T05:20:00Z"
-        },
-        {
-          "title": "Cheers",
-          "subtitle": "Coach Returns to Action - Season 1, Episode 9",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:20:00Z",
-          "endAt": "2026-08-02T05:45:00Z"
-        },
-        {
-          "title": "Cheers",
-          "subtitle": "Endless Slumper - Season 1, Episode 10",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:45:00Z",
-          "endAt": "2026-08-02T06:15:00Z"
-        },
-        {
-          "title": "Everybody Loves Raymond",
-          "subtitle": "Sweet Charity - Season 7, Episode 16",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:15:00Z",
-          "endAt": "2026-08-02T06:40:00Z"
-        },
-        {
-          "title": "Everybody Loves Raymond",
-          "subtitle": "Meeting the Parents - Season 7, Episode 17",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:40:00Z",
-          "endAt": "2026-08-02T07:05:00Z"
-        },
-        {
-          "title": "Everybody Loves Raymond",
-          "subtitle": "The Plan - Season 7, Episode 18",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:05:00Z",
-          "endAt": "2026-08-02T07:30:00Z"
-        },
-        {
-          "title": "Frasier",
-          "subtitle": "Where There's Smoke There's Fired - Season 3, Episode 21",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:30:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Frasier",
-          "subtitle": "Frasier Loves Roz - Season 3, Episode 22",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T08:30:00Z"
-        },
-        {
-          "title": "Frasier",
-          "subtitle": "The Focus Group - Season 3, Episode 23",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:30:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
         {
           "title": "Sunday Brunch",
           "subtitle": "02/08/2026",
@@ -593,6 +693,182 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:55:00Z",
           "endAt": "2026-08-03T00:05:00Z"
+        },
+        {
+          "title": "Ramy",
+          "subtitle": "American Life Coach - Season 3, Episode 6",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:05:00Z",
+          "endAt": "2026-08-03T00:40:00Z"
+        },
+        {
+          "title": "Ramsay's Kitchen Nightmares USA",
+          "subtitle": "Chappy's Cajun - Season 6, Episode 15",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:40:00Z",
+          "endAt": "2026-08-03T01:35:00Z"
+        },
+        {
+          "title": "Mr & Mrs '55 Remembered",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:35:00Z",
+          "endAt": "2026-08-03T01:50:00Z"
+        },
+        {
+          "title": "Mr & Mrs '55 (1955)",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:50:00Z",
+          "endAt": "2026-08-03T04:20:00Z"
+        },
+        {
+          "title": "Kirstie and Phil's Love It or List It: Brilliant Builds",
+          "subtitle": "Brilliant Builds: Storage Hacks and Smart Spends - Season 2, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:20:00Z",
+          "endAt": "2026-08-03T04:50:00Z"
+        },
+        {
+          "title": "Countdown",
+          "subtitle": "31/07/2026 - Season 2026, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:50:00Z",
+          "endAt": "2026-08-03T05:30:00Z"
+        },
+        {
+          "title": "The King of Queens",
+          "subtitle": "Head First - Season 1, Episode 6",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:30:00Z",
+          "endAt": "2026-08-03T05:55:00Z"
+        },
+        {
+          "title": "The King of Queens",
+          "subtitle": "The Rock - Season 1, Episode 7",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:55:00Z",
+          "endAt": "2026-08-03T06:20:00Z"
+        },
+        {
+          "title": "The King of Queens",
+          "subtitle": "Educating Doug - Season 1, Episode 8",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:20:00Z",
+          "endAt": "2026-08-03T06:45:00Z"
+        },
+        {
+          "title": "Everybody Loves Raymond",
+          "subtitle": "Sleepover at Peggy's - Season 7, Episode 19",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:45:00Z",
+          "endAt": "2026-08-03T07:10:00Z"
+        },
+        {
+          "title": "Everybody Loves Raymond",
+          "subtitle": "Who's Next? - Season 7, Episode 20",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:10:00Z",
+          "endAt": "2026-08-03T07:40:00Z"
+        },
+        {
+          "title": "Everybody Loves Raymond",
+          "subtitle": "The Shower - Season 7, Episode 21",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:40:00Z",
+          "endAt": "2026-08-03T08:10:00Z"
+        },
+        {
+          "title": "Frasier",
+          "subtitle": "You Can Go Home Again - Season 3, Episode 24",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:10:00Z",
+          "endAt": "2026-08-03T08:40:00Z"
+        },
+        {
+          "title": "Frasier",
+          "subtitle": "The Two Mrs Cranes - Season 4, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:40:00Z",
+          "endAt": "2026-08-03T09:10:00Z"
+        },
+        {
+          "title": "Frasier",
+          "subtitle": "Love Bites Dog - Season 4, Episode 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:10:00Z",
+          "endAt": "2026-08-03T09:40:00Z"
+        },
+        {
+          "title": "Frasier",
+          "subtitle": "The Impossible Dream - Season 4, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:40:00Z",
+          "endAt": "2026-08-03T10:10:00Z"
         }
       ]
     },
@@ -606,314 +882,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "The Highland Vet",
-        "subtitle": "- Season 2, Episode 1",
+        "title": "Jane McDonald: My Yorkshire",
+        "subtitle": "- Season 1, Episode 1",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:35:00Z",
-        "endAt": "2026-08-02T04:25:00Z"
+        "startAt": "2026-08-02T13:30:00Z",
+        "endAt": "2026-08-02T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "Cruise TV with LoveitBookit",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:00:00Z",
-          "endAt": "2026-08-02T01:00:00Z"
-        },
-        {
-          "title": "GPs: Behind Closed Doors",
-          "subtitle": "- Season 8, Episode 24",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:00:00Z",
-          "endAt": "2026-08-02T01:50:00Z"
-        },
-        {
-          "title": "Motorway Cops: Catching Britain's Speeders",
-          "subtitle": "- Season 8, Episode 3",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:50:00Z",
-          "endAt": "2026-08-02T02:45:00Z"
-        },
-        {
-          "title": "Friends",
-          "subtitle": "The One Where Rachel Is Late - Season 8, Episode 22",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:45:00Z",
-          "endAt": "2026-08-02T03:10:00Z"
-        },
-        {
-          "title": "Friends",
-          "subtitle": "The One Where Rachel Has a Baby - Part One - Season 8, Episode 23",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:10:00Z",
-          "endAt": "2026-08-02T03:35:00Z"
-        },
-        {
-          "title": "The Highland Vet",
-          "subtitle": "- Season 2, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:35:00Z",
-          "endAt": "2026-08-02T04:25:00Z"
-        },
-        {
-          "title": "Entertainment News on 5",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:25:00Z",
-          "endAt": "2026-08-02T04:35:00Z"
-        },
-        {
-          "title": "Milo",
-          "subtitle": "Milo the Cleaner - Season 1, Episode 45",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:35:00Z",
-          "endAt": "2026-08-02T04:45:00Z"
-        },
-        {
-          "title": "The Adventures of Paddington",
-          "subtitle": "Paddington and the Missing Tickets - Season 1, Episode 30",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:45:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "Peppa Pig",
-          "subtitle": "Secrets - Season 1, Episode 13",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T05:05:00Z"
-        },
-        {
-          "title": "Peppa Pig",
-          "subtitle": "Flying a Kite - Season 1, Episode 14",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:05:00Z",
-          "endAt": "2026-08-02T05:10:00Z"
-        },
-        {
-          "title": "Peppa Pig",
-          "subtitle": "Picnic - Season 1, Episode 15",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:10:00Z",
-          "endAt": "2026-08-02T05:15:00Z"
-        },
-        {
-          "title": "Milo",
-          "subtitle": "Milo the Refuse Collector - Season 2, Episode 19",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:15:00Z",
-          "endAt": "2026-08-02T05:25:00Z"
-        },
-        {
-          "title": "Thomas & Friends: All Engines Go!",
-          "subtitle": "A Very Percy Valentine's Day - Season 26, Episode 29",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:25:00Z",
-          "endAt": "2026-08-02T05:35:00Z"
-        },
-        {
-          "title": "Fireman Sam",
-          "subtitle": "The Last Straw - Season 13, Episode 21",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:35:00Z",
-          "endAt": "2026-08-02T05:45:00Z"
-        },
-        {
-          "title": "The Adventures of Paddington",
-          "subtitle": "Paddington's Not Himself - Season 2, Episode 38",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:45:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "Tim Rex in Space",
-          "subtitle": "Stuck - Season 2, Episode 20",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T06:05:00Z"
-        },
-        {
-          "title": "Pip and Posy",
-          "subtitle": "Robo-Posy - Season 1, Episode 33",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:05:00Z",
-          "endAt": "2026-08-02T06:15:00Z"
-        },
-        {
-          "title": "Pip and Posy",
-          "subtitle": "Jamila Day - Season 1, Episode 34",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:15:00Z",
-          "endAt": "2026-08-02T06:20:00Z"
-        },
-        {
-          "title": "Peppa Pig",
-          "subtitle": "Jigsaw Festival - Season 1, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:20:00Z",
-          "endAt": "2026-08-02T06:30:00Z"
-        },
-        {
-          "title": "Peppa Pig",
-          "subtitle": "Hobbies - Season 9, Episode 6",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:30:00Z",
-          "endAt": "2026-08-02T06:40:00Z"
-        },
-        {
-          "title": "Paw Patrol",
-          "subtitle": "Rescue Knights: Quest for the Dragon's Tooth - Season 8, Episode 28",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:40:00Z",
-          "endAt": "2026-08-02T07:05:00Z"
-        },
-        {
-          "title": "Animal Care Club",
-          "subtitle": "Askham Bryan - Season 3, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:05:00Z",
-          "endAt": "2026-08-02T07:25:00Z"
-        },
-        {
-          "title": "The Smurfs",
-          "subtitle": "Smurfing a Masterpiece - Season 3, Episode 18",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:25:00Z",
-          "endAt": "2026-08-02T07:35:00Z"
-        },
-        {
-          "title": "The Creature Cases",
-          "subtitle": "The Hunt for the Hidden Hive - Season 1, Episode 6",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:35:00Z",
-          "endAt": "2026-08-02T07:50:00Z"
-        },
-        {
-          "title": "The Patrick Star Show",
-          "subtitle": "Pearl Wants to Be a Star - Season 1, Episode 19",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:50:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Entertainment News on 5",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T08:15:00Z"
-        },
         {
           "title": "Rango (2011)",
           "subtitle": null,
@@ -1056,6 +1035,347 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:05:00Z",
           "endAt": "2026-08-03T00:00:00Z"
+        },
+        {
+          "title": "Cruise TV with LoveitBookit",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:00:00Z",
+          "endAt": "2026-08-03T01:00:00Z"
+        },
+        {
+          "title": "GPs: Behind Closed Doors",
+          "subtitle": "- Season 8, Episode 25",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:00:00Z",
+          "endAt": "2026-08-03T01:50:00Z"
+        },
+        {
+          "title": "Holiday Scams: Don't Get Caught Out",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:50:00Z",
+          "endAt": "2026-08-03T02:40:00Z"
+        },
+        {
+          "title": "Friends",
+          "subtitle": "The One Where Rachel Has a Baby - Part Two - Season 8, Episode 24",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:40:00Z",
+          "endAt": "2026-08-03T03:05:00Z"
+        },
+        {
+          "title": "Friends",
+          "subtitle": "The One Where No One Proposes - Season 9, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:05:00Z",
+          "endAt": "2026-08-03T03:30:00Z"
+        },
+        {
+          "title": "The Highland Vet",
+          "subtitle": "- Season 2, Episode 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:30:00Z",
+          "endAt": "2026-08-03T04:20:00Z"
+        },
+        {
+          "title": "Entertainment News on 5",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:20:00Z",
+          "endAt": "2026-08-03T04:35:00Z"
+        },
+        {
+          "title": "Milo",
+          "subtitle": "Milo the Gardener - Season 1, Episode 46",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:35:00Z",
+          "endAt": "2026-08-03T04:45:00Z"
+        },
+        {
+          "title": "The Adventures of Paddington",
+          "subtitle": "Paddington and the Summer Games - Season 1, Episode 31",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:45:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "Getting Ready for a Wedding - Season 8, Episode 15",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T05:05:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "Wedding Day - Season 8, Episode 16",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:05:00Z",
+          "endAt": "2026-08-03T05:10:00Z"
+        },
+        {
+          "title": "Tweedy & Fluff",
+          "subtitle": "The Bed - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:10:00Z",
+          "endAt": "2026-08-03T05:15:00Z"
+        },
+        {
+          "title": "Odo",
+          "subtitle": "The Babysitter - Season 2, Episode 46",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:15:00Z",
+          "endAt": "2026-08-03T05:20:00Z"
+        },
+        {
+          "title": "Thomas & Friends",
+          "subtitle": "Not So Slow Coaches - Season 18, Episode 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:20:00Z",
+          "endAt": "2026-08-03T05:35:00Z"
+        },
+        {
+          "title": "Fireman Sam",
+          "subtitle": "Castles in the Air - Season 10, Episode 16",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:35:00Z",
+          "endAt": "2026-08-03T05:45:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "Party Bus - Season 8, Episode 17",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:45:00Z",
+          "endAt": "2026-08-03T05:50:00Z"
+        },
+        {
+          "title": "Pip and Posy",
+          "subtitle": "Catchy Leaf - Season 2, Episode 20",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:50:00Z",
+          "endAt": "2026-08-03T06:00:00Z"
+        },
+        {
+          "title": "Paw Patrol",
+          "subtitle": "Mighty Pups Stop the Hiccups - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:00:00Z",
+          "endAt": "2026-08-03T06:10:00Z"
+        },
+        {
+          "title": "Move It Milkshakers!",
+          "subtitle": "Z-Zig Zag - Season 1, Episode 26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:10:00Z",
+          "endAt": "2026-08-03T06:20:00Z"
+        },
+        {
+          "title": "Rubble & Crew",
+          "subtitle": "The Crew Builds a Waterway - Season 1, Episode 26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:20:00Z",
+          "endAt": "2026-08-03T06:35:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "Mr Bull's Road - Season 5, Episode 44",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:35:00Z",
+          "endAt": "2026-08-03T06:40:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "The Panda Twins - Season 6, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:40:00Z",
+          "endAt": "2026-08-03T06:45:00Z"
+        },
+        {
+          "title": "Tim Rex in Space",
+          "subtitle": "Road Trip - Season 2, Episode 16",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:45:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "Stan & Gran",
+          "subtitle": "The Trail of Pebbles - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T07:15:00Z"
+        },
+        {
+          "title": "Paw Patrol",
+          "subtitle": "Pups Stop a Coconut Catapult - Season 12, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:15:00Z",
+          "endAt": "2026-08-03T07:30:00Z"
+        },
+        {
+          "title": "The Adventures of Paddington",
+          "subtitle": "Paddington and the Bone - Season 1, Episode 33",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:30:00Z",
+          "endAt": "2026-08-03T07:40:00Z"
+        },
+        {
+          "title": "Ben and Holly's Little Kingdom",
+          "subtitle": "Tadpoles - Season 1, Episode 32",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:40:00Z",
+          "endAt": "2026-08-03T07:50:00Z"
+        },
+        {
+          "title": "Kangaroo Beach",
+          "subtitle": "Castaway Cadets - Season 3, Episode 166",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:50:00Z",
+          "endAt": "2026-08-03T08:05:00Z"
+        },
+        {
+          "title": "Peppa Pig",
+          "subtitle": "The Long Grass - Season 2, Episode 27",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:05:00Z",
+          "endAt": "2026-08-03T08:10:00Z"
+        },
+        {
+          "title": "Tim Rex in Space: Sing-Alongs",
+          "subtitle": "Rex Family Rockets - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:10:00Z",
+          "endAt": "2026-08-03T08:15:00Z"
+        },
+        {
+          "title": "Jeremy Vine",
+          "subtitle": "03/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:15:00Z",
+          "endAt": "2026-08-03T10:30:00Z"
         }
       ]
     },
@@ -1069,149 +1389,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Brooklyn Nine-Nine",
-        "subtitle": "Crime & Punishment - Season 4, Episode 22",
+        "title": "Cheaper By the Dozen 2 (2005)",
+        "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:35:00Z",
-        "endAt": "2026-08-02T04:00:00Z"
+        "startAt": "2026-08-02T12:20:00Z",
+        "endAt": "2026-08-02T14:10:00Z"
       },
       "programs": [
-        {
-          "title": "Below Deck: Mediterranean",
-          "subtitle": "Raising the Bar-celona - Season 10, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:05:00Z",
-          "endAt": "2026-08-02T01:05:00Z"
-        },
-        {
-          "title": "Below Deck: Mediterranean",
-          "subtitle": "Stingled Out - Season 10, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:05:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "Below Deck: Mediterranean",
-          "subtitle": "Excess Baggage - Season 10, Episode 3",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T02:45:00Z"
-        },
-        {
-          "title": "Brooklyn Nine-Nine",
-          "subtitle": "The Slaughterhouse - Season 4, Episode 20",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:45:00Z",
-          "endAt": "2026-08-02T03:10:00Z"
-        },
-        {
-          "title": "Brooklyn Nine-Nine",
-          "subtitle": "The Bank Job - Season 4, Episode 21",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:10:00Z",
-          "endAt": "2026-08-02T03:35:00Z"
-        },
-        {
-          "title": "Brooklyn Nine-Nine",
-          "subtitle": "Crime & Punishment - Season 4, Episode 22",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:35:00Z",
-          "endAt": "2026-08-02T04:00:00Z"
-        },
-        {
-          "title": "Brooklyn Nine-Nine",
-          "subtitle": "The Big House - Part One - Season 5, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:00:00Z",
-          "endAt": "2026-08-02T04:25:00Z"
-        },
-        {
-          "title": "Brooklyn Nine-Nine",
-          "subtitle": "The Big House - Part Two - Season 5, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:25:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "Hollyoaks Omnibus",
-          "subtitle": "04/08/2026 - Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T06:05:00Z"
-        },
-        {
-          "title": "The Great Australian Bake Off",
-          "subtitle": "Patisserie Week - Season 7, Episode 9",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:05:00Z",
-          "endAt": "2026-08-02T07:20:00Z"
-        },
-        {
-          "title": "Ramsay's Hotel Hell",
-          "subtitle": "Town's Inn - Part One",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:20:00Z",
-          "endAt": "2026-08-02T08:20:00Z"
-        },
-        {
-          "title": "Ramsay's Kitchen Nightmares USA",
-          "subtitle": "Hot Potato Cafe - Season 3, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:20:00Z",
-          "endAt": "2026-08-02T09:20:00Z"
-        },
         {
           "title": "Ramsay's Kitchen Nightmares USA",
           "subtitle": "Flamangos - Season 3, Episode 2",
@@ -1387,6 +1575,149 @@
           "imageUrl": null,
           "startAt": "2026-08-02T22:55:00Z",
           "endAt": "2026-08-02T23:25:00Z"
+        },
+        {
+          "title": "Gogglebox",
+          "subtitle": "- Season 20, Episode 7",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:00:00Z",
+          "endAt": "2026-08-03T01:05:00Z"
+        },
+        {
+          "title": "Below Deck: Mediterranean",
+          "subtitle": "Tough Divisions - Season 10, Episode 4",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:05:00Z",
+          "endAt": "2026-08-03T01:55:00Z"
+        },
+        {
+          "title": "Below Deck: Mediterranean",
+          "subtitle": "Let the Games Vegan - Season 10, Episode 5",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:55:00Z",
+          "endAt": "2026-08-03T02:40:00Z"
+        },
+        {
+          "title": "Brooklyn Nine-Nine",
+          "subtitle": "Kicks - Season 5, Episode 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:40:00Z",
+          "endAt": "2026-08-03T03:05:00Z"
+        },
+        {
+          "title": "Brooklyn Nine-Nine",
+          "subtitle": "HalloVeen - Season 5, Episode 4",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:05:00Z",
+          "endAt": "2026-08-03T03:30:00Z"
+        },
+        {
+          "title": "Hollyoaks Omnibus",
+          "subtitle": "04/08/2026 - Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:30:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Hollyoaks",
+          "subtitle": "28/07/2026 - Episode 6750",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T05:30:00Z"
+        },
+        {
+          "title": "Hollyoaks",
+          "subtitle": "29/07/2026 - Episode 6751",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:30:00Z",
+          "endAt": "2026-08-03T05:55:00Z"
+        },
+        {
+          "title": "Rude(ish) Tube",
+          "subtitle": "Sports - Season 1, Episode 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:55:00Z",
+          "endAt": "2026-08-03T06:00:00Z"
+        },
+        {
+          "title": "Couples Come Dine with Me",
+          "subtitle": "- Season 3, Episode 9",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:00:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "Ramsay's Kitchen Nightmares USA",
+          "subtitle": "PJ's Steakhouse - Season 3, Episode 5",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "Ramsay's Kitchen Nightmares USA",
+          "subtitle": "Fleming - Season 3, Episode 6",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "America's Funniest Home Videos",
+          "subtitle": "- Season 33, Episode 10",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T10:00:00Z"
         }
       ]
     },
@@ -1400,94 +1731,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Unwind with ITV",
+        "title": "The Man with the Golden Gun (1974)",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T02:50:00Z",
-        "endAt": "2026-08-02T04:05:00Z"
+        "startAt": "2026-08-02T13:10:00Z",
+        "endAt": "2026-08-02T15:35:00Z"
       },
       "programs": [
-        {
-          "title": "Shop on TV",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:25:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "Cold Case Forensics",
-          "subtitle": "The Death of God's Banker",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T02:50:00Z"
-        },
-        {
-          "title": "Unwind with ITV",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:50:00Z",
-          "endAt": "2026-08-02T04:05:00Z"
-        },
-        {
-          "title": "Fern Britton: Inside the Vet's",
-          "subtitle": "- Season 2, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:05:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "James Martin's American Adventure",
-          "subtitle": "Sonoma Raceway - Season 1, Episode 5",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "James Martin's Saturday Morning",
-          "subtitle": "- Season 9, Episode 18",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T08:25:00Z"
-        },
-        {
-          "title": "ITV News",
-          "subtitle": "02/08/2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:25:00Z",
-          "endAt": "2026-08-02T08:30:00Z"
-        },
         {
           "title": "Love Your Weekend with Alan Titchmarsh",
           "subtitle": null,
@@ -1674,6 +1928,61 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:45:00Z",
           "endAt": "2026-08-03T02:00:00Z"
+        },
+        {
+          "title": "Motorsport UK",
+          "subtitle": "27/07/2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:00:00Z",
+          "endAt": "2026-08-03T02:50:00Z"
+        },
+        {
+          "title": "Unwind with ITV",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:50:00Z",
+          "endAt": "2026-08-03T04:05:00Z"
+        },
+        {
+          "title": "Dickinson's Real Deal",
+          "subtitle": "Telford 2 - Season 16, Episode 14",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:05:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Good Morning Britain",
+          "subtitle": "03/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "This Morning",
+          "subtitle": "03/08/2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T12:30:00Z"
         }
       ]
     },
@@ -1688,181 +1997,16 @@
       ],
       "currentProgram": {
         "title": "Sky News",
-        "subtitle": null,
+        "subtitle": "Generic Sky News: Today",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:00:00Z",
-        "endAt": "2026-08-02T04:00:00Z"
+        "startAt": "2026-08-02T13:30:00Z",
+        "endAt": "2026-08-02T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:00:00Z",
-          "endAt": "2026-08-02T00:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:00:00Z",
-          "endAt": "2026-08-02T01:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:00:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T03:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:00:00Z",
-          "endAt": "2026-08-02T04:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:00:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": "Generic Jones and Melbourne",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T05:30:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": "Generic Jones and Melbourne",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:30:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": "Generic Jones and Melbourne",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T06:30:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": "Generic Jones and Melbourne",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:30:00Z",
-          "endAt": "2026-08-02T07:00:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:00:00Z",
-          "endAt": "2026-08-02T07:30:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:30:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T08:30:00Z"
-        },
-        {
-          "title": "Mornings",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:30:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
-        {
-          "title": "Sky News",
-          "subtitle": "Generic Today With Matt Barbet",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T09:00:00Z",
-          "endAt": "2026-08-02T09:30:00Z"
-        },
         {
           "title": "Sky News",
           "subtitle": "Generic Today With Matt Barbet",
@@ -2170,6 +2314,171 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:00:00Z",
           "endAt": "2026-08-03T00:00:00Z"
+        },
+        {
+          "title": "Sky News",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T00:00:00Z",
+          "endAt": "2026-08-03T01:00:00Z"
+        },
+        {
+          "title": "Sky News",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:00:00Z",
+          "endAt": "2026-08-03T02:00:00Z"
+        },
+        {
+          "title": "Sky News",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:00:00Z",
+          "endAt": "2026-08-03T03:00:00Z"
+        },
+        {
+          "title": "Sky News",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:00:00Z",
+          "endAt": "2026-08-03T04:00:00Z"
+        },
+        {
+          "title": "Sky News",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:00:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T05:30:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:30:00Z",
+          "endAt": "2026-08-03T06:00:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:00:00Z",
+          "endAt": "2026-08-03T06:30:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:30:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T07:30:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:30:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T08:30:00Z"
+        },
+        {
+          "title": "Mornings",
+          "subtitle": "Generic Ridge and Frost",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:30:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "Sky News Today",
+          "subtitle": "Generic Today with Gareth Barlow",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T09:30:00Z"
+        },
+        {
+          "title": "Sky News Today",
+          "subtitle": "Generic Today with Gareth Barlow",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:30:00Z",
+          "endAt": "2026-08-03T10:00:00Z"
         }
       ]
     },
@@ -2183,215 +2492,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "SPFL",
-        "subtitle": "How the Scot Prem Was Won 2025/26",
+        "title": "Live SPFL",
+        "subtitle": "St Johnstone v Kilmarnock 02.08",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:00:00Z",
-        "endAt": "2026-08-02T04:30:00Z"
+        "startAt": "2026-08-02T12:00:00Z",
+        "endAt": "2026-08-02T15:00:00Z"
       },
       "programs": [
-        {
-          "title": "EFL Cup Retro",
-          "subtitle": "Arsenal v Manchester City: 2018",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:00:00Z",
-          "endAt": "2026-08-02T01:00:00Z"
-        },
-        {
-          "title": "Craig Brown: My Scotland",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:00:00Z",
-          "endAt": "2026-08-02T01:30:00Z"
-        },
-        {
-          "title": "There's Only One Sauzee",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:30:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "SPFL Greatest Games",
-          "subtitle": "Rangers 0-2 Celtic 23/09/17",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T02:15:00Z"
-        },
-        {
-          "title": "SPFL Greatest Games",
-          "subtitle": "Celtic 0-0 Rangers 30/12/17",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:15:00Z",
-          "endAt": "2026-08-02T02:30:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "N.Forest/Yeovil 2007",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:30:00Z",
-          "endAt": "2026-08-02T02:45:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "Cardiff/Swansea 2009",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:45:00Z",
-          "endAt": "2026-08-02T03:00:00Z"
-        },
-        {
-          "title": "SPFL",
-          "subtitle": "How the Scot Prem Was Won 2025/26",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:00:00Z",
-          "endAt": "2026-08-02T04:30:00Z"
-        },
-        {
-          "title": "Best Scottish Premiership Goals 2025/26",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:30:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Efl Cup Semi Final 1st Leg Highlights: Newcastle United V Manchester City 13.01",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T05:30:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Efl Cup Semi Final 1st Leg Highlights: Chelsea v Arsenal 14.01",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:30:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Arsenal v Chelsea 03.02",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T06:30:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Manchester City v Newcastle United 04.02",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:30:00Z",
-          "endAt": "2026-08-02T07:00:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Arsenal v Manchester City 22.03",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:00:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Best Goals: Efl Cup 25/26",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T08:30:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Dundee United v Rangers 31.07",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:30:00Z",
-          "endAt": "2026-08-02T08:45:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Falkirk v St Mirren 01.08",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:45:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Aberdeen v Hearts 01.08",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T09:00:00Z",
-          "endAt": "2026-08-02T09:15:00Z"
-        },
         {
           "title": "150 Years of the Edinburgh Derby",
           "subtitle": null,
@@ -2611,6 +2722,182 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:00:00Z",
           "endAt": "2026-08-03T01:00:00Z"
+        },
+        {
+          "title": "Dundee United - Champions 83",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:00:00Z",
+          "endAt": "2026-08-03T01:30:00Z"
+        },
+        {
+          "title": "John Robertson: Hammer of Hibs",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T01:30:00Z",
+          "endAt": "2026-08-03T02:00:00Z"
+        },
+        {
+          "title": "SPFL Greatest Games",
+          "subtitle": "Rangers 2-3 Celtic 11/03/18",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:00:00Z",
+          "endAt": "2026-08-03T02:30:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Sheff Wed/Leeds '14",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:30:00Z",
+          "endAt": "2026-08-03T02:45:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Derby/N.Forest '14",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:45:00Z",
+          "endAt": "2026-08-03T03:00:00Z"
+        },
+        {
+          "title": "Championship Season Review",
+          "subtitle": "Championship Season Review 23/24",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:00:00Z",
+          "endAt": "2026-08-03T04:30:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Qpr/N.Forest '14",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:30:00Z",
+          "endAt": "2026-08-03T04:45:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Brentford/Fulham '14",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:45:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "EFL",
+          "subtitle": "League 2 Play-Off Final: Coventry V Exeter Highlights 28.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T06:00:00Z"
+        },
+        {
+          "title": "EFL",
+          "subtitle": "League 1 Play-Off Final: Rotherham V Shrewsbury Highlights 27.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:00:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "EFL",
+          "subtitle": "Championship Play-Off Final: Aston Villa V Fulham Highlights 26.05",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "SPFL Highlights",
+          "subtitle": "St Johnstone v Kilmarnock 02.08",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T08:15:00Z"
+        },
+        {
+          "title": "SPFL Highlights",
+          "subtitle": "Hibernian v Motherwell 02.08",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:15:00Z",
+          "endAt": "2026-08-03T08:30:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Bristol C/Man Utd '17",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:30:00Z",
+          "endAt": "2026-08-03T08:45:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Leeds/Bristol City 18",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:45:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "EFL Cup Retro",
+          "subtitle": "Aston Villa v Manchester United: 2010",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T11:00:00Z"
         }
       ]
     },
@@ -2624,105 +2911,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Sky Sports News",
-        "subtitle": "Generic Sky Sports News",
+        "title": "Live Women's Golf",
+        "subtitle": "2026 AIG Women's Open Championship Day 4",
         "description": null,
         "categories": [],
-        "sportType": null,
+        "sportType": "Golf",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:00:00Z",
-        "endAt": "2026-08-02T04:00:00Z"
+        "startAt": "2026-08-02T12:30:00Z",
+        "endAt": "2026-08-02T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "Live Tennis",
-          "subtitle": "Atp/Wta 1000 Tennis 02.08.26 Evening",
-          "description": null,
-          "categories": [],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:00:00Z",
-          "endAt": "2026-08-02T02:30:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:30:00Z",
-          "endAt": "2026-08-02T03:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:00:00Z",
-          "endAt": "2026-08-02T04:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T04:00:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T07:00:00Z"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:00:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
         {
           "title": "Sky Sports News",
           "subtitle": "Generic Sky Sports News",
@@ -2799,6 +2998,94 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:00:00Z",
           "endAt": "2026-08-03T03:00:00Z"
+        },
+        {
+          "title": "Sky Sports News",
+          "subtitle": "Generic Sky Sports News",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:00:00Z",
+          "endAt": "2026-08-03T04:00:00Z"
+        },
+        {
+          "title": "Sky Sports News",
+          "subtitle": "Generic Sky Sports News",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:00:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Sky Sports News",
+          "subtitle": "Generic Sky Sports News",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T06:00:00Z"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T06:00:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "Good Morning Transfers",
+          "subtitle": "Generic Good Morning Transfers",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "Sky Sports FC",
+          "subtitle": "Generic Sky Sports FC",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T09:30:00Z"
+        },
+        {
+          "title": "Sky Sports FC",
+          "subtitle": "Generic Sky Sports FC",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:30:00Z",
+          "endAt": "2026-08-03T10:00:00Z"
         }
       ]
     },
@@ -2812,105 +3099,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Live AFL",
-        "subtitle": "Richmond v West Coast Eagles",
+        "title": "Live: Tour de France Women",
+        "subtitle": "Stage 2",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:00:00Z",
-        "endAt": "2026-08-02T06:00:00Z"
+        "startAt": "2026-08-02T13:30:00Z",
+        "endAt": "2026-08-02T16:45:00Z"
       },
       "programs": [
-        {
-          "title": "Live MLB",
-          "subtitle": "Red Sox @ Dodgers",
-          "description": null,
-          "categories": [],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:15:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "MLB Plays of the Week",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T02:30:00Z"
-        },
-        {
-          "title": "World Rally Championship",
-          "subtitle": "Daily Highlights #2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:30:00Z",
-          "endAt": "2026-08-02T03:00:00Z"
-        },
-        {
-          "title": "Live AFL",
-          "subtitle": "Richmond v West Coast Eagles",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:00:00Z",
-          "endAt": "2026-08-02T06:00:00Z"
-        },
-        {
-          "title": "British Superbikes",
-          "subtitle": "Round 6 Oulton Park-Race 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:00:00Z",
-          "endAt": "2026-08-02T06:30:00Z"
-        },
-        {
-          "title": "SailGP - Racing on the Edge",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:30:00Z",
-          "endAt": "2026-08-02T07:00:00Z"
-        },
-        {
-          "title": "World Rally Championship",
-          "subtitle": "Daily Highlights #2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:00:00Z",
-          "endAt": "2026-08-02T07:30:00Z"
-        },
-        {
-          "title": "Live World Rally Championship",
-          "subtitle": "Special Stage 19",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:30:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
         {
           "title": "WRC: More Than Machine",
           "subtitle": null,
@@ -3053,6 +3252,138 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:00:00Z",
           "endAt": "2026-08-03T02:00:00Z"
+        },
+        {
+          "title": "UEC Mountain Bike European Championship",
+          "subtitle": "XCO Elite Women",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:00:00Z",
+          "endAt": "2026-08-03T02:30:00Z"
+        },
+        {
+          "title": "UEC Mountain Bike European Championship",
+          "subtitle": "XCO Elite Men",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:30:00Z",
+          "endAt": "2026-08-03T03:00:00Z"
+        },
+        {
+          "title": "ABB FIA Formula E World Championship Highlights",
+          "subtitle": "Tokyo Race 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T03:00:00Z",
+          "endAt": "2026-08-03T04:00:00Z"
+        },
+        {
+          "title": "ABB FIA Formula E World Championship Highlights",
+          "subtitle": "Tokyo Race 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T04:00:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
+        },
+        {
+          "title": "Shanghai Masters Snooker",
+          "subtitle": "Daily Highlights 02/08",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T07:00:00Z"
+        },
+        {
+          "title": "World Rally Championship",
+          "subtitle": "Daily Highlights #3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:00:00Z",
+          "endAt": "2026-08-03T07:30:00Z"
+        },
+        {
+          "title": "TNT Sports Cricket Reload",
+          "subtitle": "West Indies v Pakistan-1st Test Best Batting",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:30:00Z",
+          "endAt": "2026-08-03T07:45:00Z"
+        },
+        {
+          "title": "TNT Sports Cricket Reload",
+          "subtitle": "West Indies v Pakistan-1st Test Best Bowling",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T07:45:00Z",
+          "endAt": "2026-08-03T08:00:00Z"
+        },
+        {
+          "title": "Test Cricket Highlights",
+          "subtitle": "West Indies v Pakistan-2nd Test, Day One",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T08:00:00Z",
+          "endAt": "2026-08-03T09:00:00Z"
+        },
+        {
+          "title": "Roll the Tape",
+          "subtitle": "Fran Kirby",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:00:00Z",
+          "endAt": "2026-08-03T09:15:00Z"
+        },
+        {
+          "title": "No Filter Football",
+          "subtitle": "Adobe Women's FA Cup Final-Brighton v Manchester City",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:15:00Z",
+          "endAt": "2026-08-03T09:30:00Z"
+        },
+        {
+          "title": "World Rally Championship",
+          "subtitle": "Daily Highlights #3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T09:30:00Z",
+          "endAt": "2026-08-03T10:00:00Z"
         }
       ]
     },
@@ -3066,127 +3397,17 @@
         "data/normalized/guide-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Teleshopping",
-        "subtitle": null,
+        "title": "Mortimer & Whitehouse: Gone Fishing",
+        "subtitle": "- Season 1, Episode 6",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-08-02T03:00:00Z",
-        "endAt": "2026-08-02T05:00:00Z"
+        "startAt": "2026-08-02T13:20:00Z",
+        "endAt": "2026-08-02T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "Live at the Apollo",
-          "subtitle": "- Season 19, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-01T23:00:00Z",
-          "endAt": "2026-08-02T00:00:00Z"
-        },
-        {
-          "title": "Have I Got a Bit More News for You",
-          "subtitle": "- Season 62, Episode 5",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T00:00:00Z",
-          "endAt": "2026-08-02T01:00:00Z"
-        },
-        {
-          "title": "Live at the Apollo",
-          "subtitle": "- Season 19, Episode 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T01:00:00Z",
-          "endAt": "2026-08-02T02:00:00Z"
-        },
-        {
-          "title": "James May's Cars of the People",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T02:00:00Z",
-          "endAt": "2026-08-02T03:00:00Z"
-        },
-        {
-          "title": "Teleshopping",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T03:00:00Z",
-          "endAt": "2026-08-02T05:00:00Z"
-        },
-        {
-          "title": "Teleshopping",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T06:10:00Z"
-        },
-        {
-          "title": "Top Gear",
-          "subtitle": "- Season 6, Episode 11",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T06:10:00Z",
-          "endAt": "2026-08-02T07:00:00Z"
-        },
-        {
-          "title": "Storage Hunters UK",
-          "subtitle": "Bucks - Season 5, Episode 9",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:00:00Z",
-          "endAt": "2026-08-02T07:30:00Z"
-        },
-        {
-          "title": "Storage Hunters UK",
-          "subtitle": "Hertfordshire - Season 5, Episode 10",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T07:30:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
-        },
-        {
-          "title": "Guy Martin: Proper Jobs",
-          "subtitle": "Dairy Farmer",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
-        },
         {
           "title": "Guy Martin: Proper Jobs",
           "subtitle": "Truck Rescue",
@@ -3384,283 +3605,116 @@
           "imageUrl": null,
           "startAt": "2026-08-02T23:40:00Z",
           "endAt": "2026-08-03T00:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "mytelly-uk:BBCOne.uk",
-      "name": "BBC One Northern Ireland",
-      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/960px-BBC_One_logo_2021.svg.png",
-      "provider": "MyTelly UK guide",
-      "providerKey": "mytelly-uk",
-      "sources": [
-        "data/normalized/guide-UK-mytelly.co.uk.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
+        },
         {
-          "title": "Breakfast",
-          "subtitle": "02/08/2026",
+          "title": "Live at the Apollo",
+          "subtitle": "- Season 19, Episode 3",
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T05:00:00Z",
-          "endAt": "2026-08-02T08:00:00Z"
+          "startAt": "2026-08-03T00:00:00Z",
+          "endAt": "2026-08-03T01:00:00Z"
         },
         {
-          "title": "BBC News",
-          "subtitle": "02/08/2026 - 1",
+          "title": "QI XL",
+          "subtitle": "Lying - Season 12, Episode 10",
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T08:00:00Z",
-          "endAt": "2026-08-02T09:00:00Z"
+          "startAt": "2026-08-03T01:00:00Z",
+          "endAt": "2026-08-03T02:00:00Z"
         },
         {
-          "title": "Prayer and Reflection",
-          "subtitle": "Sikh Gurdwara, Roath, Cardiff - Season 1, Episode 9",
+          "title": "Parks and Recreation",
+          "subtitle": "End of the World - Season 4, Episode 6",
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T09:00:00Z",
-          "endAt": "2026-08-02T09:30:00Z"
+          "startAt": "2026-08-03T02:00:00Z",
+          "endAt": "2026-08-03T02:25:00Z"
         },
         {
-          "title": "Pilgrimage",
+          "title": "Parks and Recreation",
+          "subtitle": "The Treaty - Season 4, Episode 7",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-08-03T02:25:00Z",
+          "endAt": "2026-08-03T03:00:00Z"
+        },
+        {
+          "title": "Teleshopping",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T09:30:00Z",
-          "endAt": "2026-08-02T10:30:00Z"
+          "startAt": "2026-08-03T03:00:00Z",
+          "endAt": "2026-08-03T05:00:00Z"
         },
         {
-          "title": "Money for Nothing",
-          "subtitle": "No Pane, No Gain - Season 16, Episode 13",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T10:30:00Z",
-          "endAt": "2026-08-02T11:15:00Z"
-        },
-        {
-          "title": "Bargain Hunt",
-          "subtitle": "Southwell 9 - Season 67, Episode 9",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T11:15:00Z",
-          "endAt": "2026-08-02T12:00:00Z"
-        },
-        {
-          "title": "BBC News",
-          "subtitle": "02/08/2026 - 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T12:00:00Z",
-          "endAt": "2026-08-02T12:10:00Z"
-        },
-        {
-          "title": "Weather for the Week Ahead",
-          "subtitle": "02/08/2026 - 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T12:10:00Z",
-          "endAt": "2026-08-02T12:15:00Z"
-        },
-        {
-          "title": "Songs of Praise",
-          "subtitle": "Mountains - Season 2026, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T12:15:00Z",
-          "endAt": "2026-08-02T12:50:00Z"
-        },
-        {
-          "title": "Escape to the Country",
-          "subtitle": "Caithness - Season 24, Episode 8",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T12:50:00Z",
-          "endAt": "2026-08-02T13:15:00Z"
-        },
-        {
-          "title": "Puss in Boots (2011)",
+          "title": "Teleshopping",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T13:15:00Z",
-          "endAt": "2026-08-02T14:35:00Z"
+          "startAt": "2026-08-03T05:00:00Z",
+          "endAt": "2026-08-03T06:25:00Z"
         },
         {
-          "title": "The Mating Game",
-          "subtitle": "Jungles: In the Thick of It - Season 1, Episode 3",
+          "title": "Top Gear",
+          "subtitle": "- Season 7, Episode 1",
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T14:35:00Z",
-          "endAt": "2026-08-02T15:35:00Z"
+          "startAt": "2026-08-03T06:25:00Z",
+          "endAt": "2026-08-03T07:20:00Z"
         },
         {
-          "title": "Homes Under the Hammer",
-          "subtitle": "Old News to New News! - Season 1, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T15:35:00Z",
-          "endAt": "2026-08-02T16:35:00Z"
-        },
-        {
-          "title": "BBC News",
-          "subtitle": "02/08/2026 - 3",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T16:35:00Z",
-          "endAt": "2026-08-02T16:50:00Z"
-        },
-        {
-          "title": "BBC Newsline; Weather",
+          "title": "Border Force: America's Gatekeepers",
           "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T16:50:00Z",
-          "endAt": "2026-08-02T16:55:00Z"
+          "startAt": "2026-08-03T07:20:00Z",
+          "endAt": "2026-08-03T08:20:00Z"
         },
         {
-          "title": "Weather",
-          "subtitle": "02/08/2026",
+          "title": "Border Force: America's Gatekeepers",
+          "subtitle": null,
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T16:55:00Z",
-          "endAt": "2026-08-02T17:00:00Z"
+          "startAt": "2026-08-03T08:20:00Z",
+          "endAt": "2026-08-03T09:20:00Z"
         },
         {
-          "title": "Celebrity Escape to the Country",
-          "subtitle": "Angellica Bell - Season 3, Episode 4",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T17:00:00Z",
-          "endAt": "2026-08-02T18:00:00Z"
-        },
-        {
-          "title": "Countryfile",
-          "subtitle": "Adam's Young Farmers: Gwynedd - Season 2026, Episode 1",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T18:00:00Z",
-          "endAt": "2026-08-02T19:00:00Z"
-        },
-        {
-          "title": "Antiques Roadshow",
-          "subtitle": "Brodie Castle & Estate, Morayshire 1 - Season 45, Episode 3",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T19:00:00Z",
-          "endAt": "2026-08-02T20:00:00Z"
-        },
-        {
-          "title": "The Rapture",
+          "title": "Rick Stein's Spain",
           "subtitle": "- Season 1, Episode 3",
           "description": null,
           "categories": [],
           "sportType": null,
           "competition": null,
           "imageUrl": null,
-          "startAt": "2026-08-02T20:00:00Z",
-          "endAt": "2026-08-02T21:00:00Z"
-        },
-        {
-          "title": "BBC News at Ten",
-          "subtitle": "02/08/2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T21:00:00Z",
-          "endAt": "2026-08-02T21:25:00Z"
-        },
-        {
-          "title": "BBC Newsline; Weather",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T21:25:00Z",
-          "endAt": "2026-08-02T21:30:00Z"
-        },
-        {
-          "title": "Fleadh Folk",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T21:30:00Z",
-          "endAt": "2026-08-02T22:30:00Z"
-        },
-        {
-          "title": "The Impossible (2012)",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-08-02T22:30:00Z",
-          "endAt": "2026-08-02T23:00:00Z"
+          "startAt": "2026-08-03T09:20:00Z",
+          "endAt": "2026-08-03T10:20:00Z"
         }
       ]
     }
