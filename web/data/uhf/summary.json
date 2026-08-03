@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T06:24:40.727328Z",
+  "generatedAt": "2026-08-03T06:53:43.616297Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -29,23 +29,23 @@
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 380,
-  "includedChannels": 198,
-  "programmes": 19885,
+  "includedChannels": 192,
+  "programmes": 18744,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 147,
+  "missingProgrammeTargets": 151,
   "includedByCategory": {
     "Canada": 86,
     "Spain": 33,
     "French Sports": 3,
     "French-HD": 32,
-    "UK": 40,
+    "UK": 34,
     "USA": 4
   },
   "includedByCountry": {
     "CA": 86,
     "ES": 33,
     "FR": 35,
-    "UK": 40,
+    "UK": 34,
     "US": 4
   },
   "duplicateTargetMappings": {
@@ -62,8 +62,7 @@
     "CA:Slice.ca": 2,
     "CA:Sportsnet.ca": 4,
     "FR:BFMGrandLittoral.fr": 2,
-    "FR:DiscoveryChannel.fr": 3,
-    "UK:DiscoveryChannel.uk": 3
+    "FR:DiscoveryChannel.fr": 3
   },
   "missingSourceTargetSamples": [],
   "missingProgrammeTargetSamples": [
