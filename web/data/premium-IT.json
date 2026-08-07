@@ -1,7 +1,7 @@
 {
   "country": "IT",
   "countryName": "Italy",
-  "generatedAt": "2026-08-07T03:22:12.718250Z",
+  "generatedAt": "2026-08-07T13:34:02.925406Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -11,6 +11,96 @@
   ],
   "channelCount": 6,
   "channels": [
+    {
+      "id": "ZonaDAZN2.it",
+      "name": "DAZN 2",
+      "logoUrl": "https://i.imgur.com/Jop3Vip.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Nessun evento in onda",
+        "subtitle": null,
+        "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+        "categories": [
+          "Altri Programmi/Altri Canali"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+        "startAt": "2026-08-07T10:00:00Z",
+        "endAt": "2026-08-07T16:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-08-07T04:00:00Z",
+          "endAt": "2026-08-07T10:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-08-07T10:00:00Z",
+          "endAt": "2026-08-07T16:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-08-07T16:00:00Z",
+          "endAt": "2026-08-07T22:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-08-07T22:00:00Z",
+          "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T10:00:00Z"
+        }
+      ]
+    },
     {
       "id": "RaiSport.it",
       "name": "RAI Sport",
@@ -22,84 +112,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Mondiale Motocross - Stag. 2026 - GP Fiandre: MXGP2 (gara 2)",
+        "title": "Atletica 2026",
         "subtitle": null,
-        "description": "St2026 GP Fiandre: MXGP2 (gara 2) - Mondiale Motocross - GP Fiandre: MXGP2 (gara 2)",
+        "description": "St2026 2a giornata: Finali - Le migliori promesse dell'atletica internazionale si sfidano ai Mondiali Under 20 2026, in programma all'Hayward Field di Eugene, negli Stati Uniti. Cinque giornate di gare tra corse, salti, lanci,...",
         "categories": [
           "Intrattenimento/Intrattenimento"
         ],
-        "sportType": null,
+        "sportType": "Combat sports",
         "competition": null,
         "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-        "startAt": "2026-08-07T02:35:00Z",
-        "endAt": "2026-08-07T03:30:00Z"
+        "startAt": "2026-08-07T12:05:00Z",
+        "endAt": "2026-08-07T15:10:00Z"
       },
       "programs": [
-        {
-          "title": "Mondiale Motocross - Stag. 2026 - GP Fiandre: MX2 (gara 2)",
-          "subtitle": null,
-          "description": "St2026 GP Fiandre: MX2 (gara 2) - Mondiale Motocross - GP Fiandre: MX2 (gara 2)",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-08-07T01:50:00Z",
-          "endAt": "2026-08-07T02:35:00Z"
-        },
-        {
-          "title": "Mondiale Motocross - Stag. 2026 - GP Fiandre: MXGP2 (gara 2)",
-          "subtitle": null,
-          "description": "St2026 GP Fiandre: MXGP2 (gara 2) - Mondiale Motocross - GP Fiandre: MXGP2 (gara 2)",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-08-07T02:35:00Z",
-          "endAt": "2026-08-07T03:30:00Z"
-        },
-        {
-          "title": "Perle di Sport",
-          "subtitle": null,
-          "description": "Perle di Sport: Londra '48",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-08-07T03:30:00Z",
-          "endAt": "2026-08-07T04:00:00Z"
-        },
-        {
-          "title": "Atletica - Stag. 2026 - Giro di Castelbuono",
-          "subtitle": null,
-          "description": "St2026 Giro di Castelbuono - Castelbuono celebra la centesima edizione della storica \"Cursa di Sant'Anna\". I grandi protagonisti dell'atletica internazionale si sfidano lungo l'impegnativo circuito cittadino, tra sport, tradiz...",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T05:30:00Z"
-        },
-        {
-          "title": "Atletica 2026",
-          "subtitle": null,
-          "description": "St2026 2a giornata: Finali - Le migliori promesse dell'atletica internazionale si sfidano ai Mondiali Under 20 2026, in programma all'Hayward Field di Eugene, negli Stati Uniti. Cinque giornate di gare tra corse, salti, lanci,...",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-08-07T05:30:00Z",
-          "endAt": "2026-08-07T08:30:00Z"
-        },
         {
           "title": "Atletica - Stag. 2026 - Campionati Italiani Assoluti: 2a giornata",
           "subtitle": null,
@@ -229,6 +254,84 @@
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
           "startAt": "2026-08-07T23:00:00Z",
           "endAt": "2026-08-08T00:30:00Z"
+        },
+        {
+          "title": "European Aquatics Championships - Stag. 2026 - Tuffi: Finali Piattaforma 10mt Uomini",
+          "subtitle": null,
+          "description": "St2026 Tuffi: Finali Piattaforma 10mt Uomini - Sessione conclusiva dei tuffi agli Europei di Parigi 2026, con le finali della piattaforma maschile da 10 metri.",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T00:30:00Z",
+          "endAt": "2026-08-08T02:00:00Z"
+        },
+        {
+          "title": "Mondiale Motocross - Stag. 2026 - GP Fiandre: MX2 (gara 2)",
+          "subtitle": null,
+          "description": "St2026 GP Fiandre: MX2 (gara 2) - Mondiale Motocross - GP Fiandre: MX2 (gara 2)",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T02:00:00Z",
+          "endAt": "2026-08-08T03:00:00Z"
+        },
+        {
+          "title": "Mondiale Motocross - Stag. 2026 - GP Fiandre: MXGP2 (gara 2)",
+          "subtitle": null,
+          "description": "St2026 GP Fiandre: MXGP2 (gara 2) - Mondiale Motocross - GP Fiandre: MXGP2 (gara 2)",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T03:00:00Z",
+          "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "European Aquatics Championships",
+          "subtitle": null,
+          "description": "European Aquatics Parigi 2026. Finale Tuffi: 3m Sincro femminile + Finale 3m Maschile",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T05:30:00Z"
+        },
+        {
+          "title": "Atletica",
+          "subtitle": null,
+          "description": "Atletica. Mondiali U20 Eugene -Finali 3a g.ta",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T05:30:00Z",
+          "endAt": "2026-08-08T09:00:00Z"
+        },
+        {
+          "title": "Mondiali di Calcio 2026",
+          "subtitle": null,
+          "description": "Calcio: Campionati Mondiali Finale Spagna - Argentina",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-08-08T09:00:00Z",
+          "endAt": "2026-08-08T11:25:00Z"
         }
       ]
     },
@@ -243,97 +346,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Tutti i gol di Van Nistelrooy in Champions League",
+        "title": "Inter - Juventus",
         "subtitle": null,
-        "description": "Rivediamo tutti i gol di Ruud Van Nistelrooy in Champions League, con le maglie di PSV Eindhoven, Manchester United e Real Madrid.",
+        "description": "Nerazzurri imbattuti da 12 turni, 11 vittorie e un pari. Juve quarta dopo il 2-2 con la Lazio. Due vittorie a testa nelle ultime 7 sfide di A a San Siro. TC: Compagnoni-Marchegiani",
         "categories": [
           "Sport/Calcio"
         ],
-        "sportType": "Football",
-        "competition": "Champions League",
-        "imageUrl": "https://guidatv.sky.it/uuid/fe3c0e6d-261d-48f9-b2d4-5eec82f1a931/cover?territory=IT&md5ChecksumParam=569f77416b639176451725aab46ecc39",
-        "startAt": "2026-08-07T03:10:00Z",
-        "endAt": "2026-08-07T03:30:00Z"
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/dea12aa2-eaaf-4cef-bd3d-6683a2bdb8be/cover?territory=IT&md5ChecksumParam=27a2832dcde71aba16cbb54688b1de6e",
+        "startAt": "2026-08-07T11:55:00Z",
+        "endAt": "2026-08-07T13:45:00Z"
       },
       "programs": [
-        {
-          "title": "Parma - Marsiglia 1999",
-          "subtitle": null,
-          "description": "... Europa League Story. - Il Parma e' l'ultima squadra italiana ad aver conquistato la Coppa Uefa/Europa League. La squadra di Malesani poteva contare su Buffon, Thuram, Cannavaro, Veron e Crespo. TC: Marianella.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/6cb6386b-100b-4d57-a608-385d3338639c/cover?territory=IT&md5ChecksumParam=2fc5b29d5ecaee743b2495fe1022c16c",
-          "startAt": "2026-08-07T01:30:00Z",
-          "endAt": "2026-08-07T03:10:00Z"
-        },
-        {
-          "title": "Tutti i gol di Van Nistelrooy in Champions League",
-          "subtitle": null,
-          "description": "Rivediamo tutti i gol di Ruud Van Nistelrooy in Champions League, con le maglie di PSV Eindhoven, Manchester United e Real Madrid.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/fe3c0e6d-261d-48f9-b2d4-5eec82f1a931/cover?territory=IT&md5ChecksumParam=569f77416b639176451725aab46ecc39",
-          "startAt": "2026-08-07T03:10:00Z",
-          "endAt": "2026-08-07T03:30:00Z"
-        },
-        {
-          "title": "Ep.2",
-          "subtitle": null,
-          "description": "In questa puntata diamo uno sguardo a quattro dei piu' illustri allenatore che hanno vinto la UEFA Champions League: Mourinho, Ancelotti, Rijkaard e Di Matteo.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/bee536b6-aa38-4fdb-aa14-d80d8c876707/cover?territory=IT&md5ChecksumParam=6abc7cfb8fcc859e8c27e5b438162471",
-          "startAt": "2026-08-07T03:30:00Z",
-          "endAt": "2026-08-07T04:00:00Z"
-        },
-        {
-          "title": "Real Madrid - Liverpool 2018",
-          "subtitle": null,
-          "description": "... Liverpool UEFA Champions League Story. - A Kiev la finale tra Real e Liverpool. Zidane punta alla 3a Champions da allenatore, Klopp invece a regalare ai Reds la sesta Coppa della sua storia.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/a951ca77-3886-49ae-9c1b-7b62772dfa7b/cover?territory=IT&md5ChecksumParam=262a48f22892e62804e0a9da212095e0",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T06:00:00Z"
-        },
-        {
-          "title": "Milan - Ajax 1969",
-          "subtitle": null,
-          "description": "... Champions League Story. - Riviviamo i momenti piu' esaltanti di questa competizione attraverso le partite piu' interessanti. Buon divertimento!",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/f53f56bd-aad5-4c29-a828-fda851d45c55/cover?territory=IT&md5ChecksumParam=8f66e9cc1c585d05392bbf7eb6b6712b",
-          "startAt": "2026-08-07T06:00:00Z",
-          "endAt": "2026-08-07T07:00:00Z"
-        },
-        {
-          "title": "Ep.3",
-          "subtitle": null,
-          "description": "In questa puntata diamo uno sguardo a quattro dei piu' illustri allenatore che hanno vinto la UEFA Champions League: Benitez, Hitzfeld, Van Gaal e Del Bosque.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": "https://guidatv.sky.it/uuid/7b50d6e2-9572-4015-a08e-b9b1bb155f0e/cover?territory=IT&md5ChecksumParam=f9488f48e98a99432a1e7ff4ab4226bb",
-          "startAt": "2026-08-07T08:55:00Z",
-          "endAt": "2026-08-07T09:25:00Z"
-        },
         {
           "title": "Sport 24 Calciomercato",
           "subtitle": null,
@@ -541,6 +566,123 @@
           "imageUrl": "https://guidatv.sky.it/uuid/b655de12-df4b-4a30-a802-8829ba37d072/cover?territory=IT&md5ChecksumParam=943e8b53791ed24fbabd7fc6af325b07",
           "startAt": "2026-08-07T21:55:00Z",
           "endAt": "2026-08-07T23:45:00Z"
+        },
+        {
+          "title": "Real Madrid - Liverpool 2018",
+          "subtitle": null,
+          "description": "... Liverpool UEFA Champions League Story. - A Kiev la finale tra Real e Liverpool. Zidane punta alla 3a Champions da allenatore, Klopp invece a regalare ai Reds la sesta Coppa della sua storia.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/a951ca77-3886-49ae-9c1b-7b62772dfa7b/cover?territory=IT&md5ChecksumParam=262a48f22892e62804e0a9da212095e0",
+          "startAt": "2026-08-07T23:45:00Z",
+          "endAt": "2026-08-08T01:50:00Z"
+        },
+        {
+          "title": "Milan - Steaua Bucarest 1989",
+          "subtitle": null,
+          "description": "... Bucarest UEFA Champions League Story. - La finale di Coppa dei Campioni giocata al Camp Nou di Barcellona il 24 maggio 1989 con i rossoneri allenati da Sacchi che vincono 4-0 con doppiette di Gullit e Van Basten.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/c6466ca0-53b6-42e3-b71d-7c127105d80e/cover?territory=IT&md5ChecksumParam=262a48f22892e62804e0a9da212095e0",
+          "startAt": "2026-08-08T01:50:00Z",
+          "endAt": "2026-08-08T03:40:00Z"
+        },
+        {
+          "title": "Calafiori, Ripartire Da Campioni...",
+          "subtitle": null,
+          "description": "- ... 07/08/2026. - - Calafiori, Ripartire Da Campioni... (ITA 2026) (ITA 2026) (ITA 2026)",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/ceaa6e3f-794b-4152-9cec-bd2c2c0888e4/cover?territory=IT&md5ChecksumParam=a331730b8db985bfb25405209ba82a71",
+          "startAt": "2026-08-08T03:40:00Z",
+          "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "Bayern M. - Inter 2010",
+          "subtitle": null,
+          "description": "... UEFA Champions League Story. - 22 Maggio 2010, al Santiago Bernabeu di Madrid, Inter e Bayern Monaco si sfidano nella finale di Champions League. Per i nerazzurri sara' il terzo titolo della storia",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/a8ee8c06-f02c-4a28-a451-0407c5745254/cover?territory=IT&md5ChecksumParam=262a48f22892e62804e0a9da212095e0",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T06:00:00Z"
+        },
+        {
+          "title": "Review Of The Season",
+          "subtitle": null,
+          "description": "... League Magazine. - L'attenzione e' rivolta alla finale tra Paris Saint Germain e Arsenal, giocata alla Puskas Arena di Budapest. Un'occasione per rivivere momenti salienti, interviste esclusive ai protagonisti e retroscena della massima competizione europea.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/4ac4c5d3-e5cc-47fe-90b1-b03eb2a986d2/cover?territory=IT&md5ChecksumParam=f6ddb2c4c896acb272f6c238ed514398",
+          "startAt": "2026-08-08T06:00:00Z",
+          "endAt": "2026-08-08T06:55:00Z"
+        },
+        {
+          "title": "VfL Bochum - Hertha Berlino",
+          "subtitle": null,
+          "description": "I biancazzurri a Bochum hanno vinto gli ultimi due precedenti contro l'Hertha Berlino: 3-1 nella Bundesliga del 2023 e 3-2 nella Zweite Bundesliga del 2025. TC: Pietro Nicolodi",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b655de12-df4b-4a30-a802-8829ba37d072/cover?territory=IT&md5ChecksumParam=943e8b53791ed24fbabd7fc6af325b07",
+          "startAt": "2026-08-08T06:55:00Z",
+          "endAt": "2026-08-08T08:40:00Z"
+        },
+        {
+          "title": "La rovesciata di Rooney",
+          "subtitle": null,
+          "description": "Il 12 febbraio 2011 Wayne Rooney segna in rovesciata per lo United il gol piu' iconico dei derby di Manchester. Riviviamo le emozioni di un momento che restera' nella storia della Premier.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/bede26ef-72be-44d9-a73f-21fef6343d35/cover?territory=IT&md5ChecksumParam=52ab5fc8877ef3056239af5153087dc9",
+          "startAt": "2026-08-08T08:40:00Z",
+          "endAt": "2026-08-08T08:55:00Z"
+        },
+        {
+          "title": "The Ipswich Way",
+          "subtitle": null,
+          "description": "Dopo una stagione di assenza, l'Ipswich Town e' tornato in Premier League. Ripercorriamo la storia del club, campione di Inghilterra nella stagione 1961-1962.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://guidatv.sky.it/uuid/1d7fd3d6-445c-4af3-828d-f2a35c95bc70/cover?territory=IT&md5ChecksumParam=90510e23ab18bfecef5f31159c1e9c9b",
+          "startAt": "2026-08-08T08:55:00Z",
+          "endAt": "2026-08-08T09:25:00Z"
+        },
+        {
+          "title": "Sport 24 Calciomercato",
+          "subtitle": null,
+          "description": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/ac8f938f-a120-48e1-97df-31f16e173d1c/cover?territory=IT&md5ChecksumParam=c3d6854955f6d9ebda43eff5a9b0e600",
+          "startAt": "2026-08-08T09:25:00Z",
+          "endAt": "2026-08-08T10:25:00Z"
         }
       ]
     },
@@ -555,123 +697,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "GP Belgio: Gara",
+        "title": "GP Monaco: Gara",
         "subtitle": null,
-        "description": "Decimo appuntamento del mondiale sulla pista di Spa: Antonelli guida la classifica con 25 punti di vantaggio su Russell e 32 su Hamilton. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+        "description": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "categories": [
           "Sport/Motori"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/54250fe4-a333-47b9-9667-6b2eb286b036/cover?territory=IT&md5ChecksumParam=4bfb27208e801e0f32c7e75fa3d069cf",
-        "startAt": "2026-08-07T03:00:00Z",
-        "endAt": "2026-08-07T04:00:00Z"
+        "imageUrl": "https://guidatv.sky.it/uuid/31c9ee61-7460-43f6-b6e1-b3a9761ab834/cover?territory=IT&md5ChecksumParam=a03aabad5e5ef7552a4faf28ef89260e",
+        "startAt": "2026-08-07T13:00:00Z",
+        "endAt": "2026-08-07T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "GP Monaco: Gara",
-          "subtitle": null,
-          "description": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/31c9ee61-7460-43f6-b6e1-b3a9761ab834/cover?territory=IT&md5ChecksumParam=a03aabad5e5ef7552a4faf28ef89260e",
-          "startAt": "2026-08-07T01:00:00Z",
-          "endAt": "2026-08-07T02:00:00Z"
-        },
-        {
-          "title": "Gp Gran Bretagna Race 2",
-          "subtitle": null,
-          "description": "Sul circuito di Silverstone la gara piu' importante del weekend, quella che assegna punteggio pieno: chi prendera' i 25 punti che spettano alla vincitrice? Telecronaca di Andrea Sillitti e Vicky Piria.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/645e0513-4303-40b2-858a-9a17dce3eba3/cover?territory=IT&md5ChecksumParam=8f084a7fd4e825cd6b3c459bc60e67d1",
-          "startAt": "2026-08-07T02:00:00Z",
-          "endAt": "2026-08-07T03:00:00Z"
-        },
-        {
-          "title": "GP Belgio: Gara",
-          "subtitle": null,
-          "description": "Decimo appuntamento del mondiale sulla pista di Spa: Antonelli guida la classifica con 25 punti di vantaggio su Russell e 32 su Hamilton. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/54250fe4-a333-47b9-9667-6b2eb286b036/cover?territory=IT&md5ChecksumParam=4bfb27208e801e0f32c7e75fa3d069cf",
-          "startAt": "2026-08-07T03:00:00Z",
-          "endAt": "2026-08-07T04:00:00Z"
-        },
-        {
-          "title": "Monaco: Feature Race",
-          "subtitle": null,
-          "description": "Dal Circuito di Monaco.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/f2f3c148-a258-4e10-bb15-6085121853e7/cover?territory=IT&md5ChecksumParam=7740266dc24eca199b1eeefd98198192",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T05:30:00Z"
-        },
-        {
-          "title": "Le Tute Dei Campioni",
-          "subtitle": null,
-          "description": "Le Tute Dei Campioni",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/ad5a39bc-f5b1-4917-aaf6-839ff1113846/cover?territory=IT&md5ChecksumParam=cf2017d149e4248fc40900a7825e1060",
-          "startAt": "2026-08-07T05:30:00Z",
-          "endAt": "2026-08-07T05:45:00Z"
-        },
-        {
-          "title": "Motori Formula 3 - Stag. Motori Formula 3 2026 - Motori Formula 3 2026 [F3 Monaco F.Race '26] 07/06/2026",
-          "subtitle": null,
-          "description": "Dal Circuito di Monaco.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/8bb4b1ab-5c64-433e-8bd9-d822542a2045/cover?territory=IT&md5ChecksumParam=e854db267c97e990789c53431813a8c7",
-          "startAt": "2026-08-07T05:45:00Z",
-          "endAt": "2026-08-07T07:00:00Z"
-        },
-        {
-          "title": "GP Monaco: Gara",
-          "subtitle": null,
-          "description": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/31c9ee61-7460-43f6-b6e1-b3a9761ab834/cover?territory=IT&md5ChecksumParam=a03aabad5e5ef7552a4faf28ef89260e",
-          "startAt": "2026-08-07T07:00:00Z",
-          "endAt": "2026-08-07T08:00:00Z"
-        },
-        {
-          "title": "Gp Gran Bretagna Race 2",
-          "subtitle": null,
-          "description": "Sul circuito di Silverstone la gara piu' importante del weekend, quella che assegna punteggio pieno: chi prendera' i 25 punti che spettano alla vincitrice? Telecronaca di Andrea Sillitti e Vicky Piria.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/645e0513-4303-40b2-858a-9a17dce3eba3/cover?territory=IT&md5ChecksumParam=8f084a7fd4e825cd6b3c459bc60e67d1",
-          "startAt": "2026-08-07T08:00:00Z",
-          "endAt": "2026-08-07T09:00:00Z"
-        },
         {
           "title": "GP Belgio: Gara",
           "subtitle": null,
@@ -892,6 +930,227 @@
           "imageUrl": "https://guidatv.sky.it/uuid/13cb1596-bca5-410d-af9d-c0827346cfc9/cover?territory=IT&md5ChecksumParam=32d2c469f13578dc4b900599df4214da",
           "startAt": "2026-08-07T21:55:00Z",
           "endAt": "2026-08-07T23:30:00Z"
+        },
+        {
+          "title": "Spielberg",
+          "subtitle": null,
+          "description": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/f14c54c0-38e7-4331-8635-b4d7ac39b8c7/cover?territory=IT&md5ChecksumParam=72cb42fab5bf1759197368922f29dfb6",
+          "startAt": "2026-08-07T23:30:00Z",
+          "endAt": "2026-08-07T23:45:00Z"
+        },
+        {
+          "title": "Motori Formula 3 - Ep. 16 - Motori Formula 3 2026 [F3 Spagna F.Race '26] 14/06/2026",
+          "subtitle": null,
+          "description": "Dal Circuito di Catalogna, Barcellona, Spagna.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/1224c5ac-031d-43af-ba58-8581dc1726e4/cover?territory=IT&md5ChecksumParam=f550dc21a18cd232130fde950950b8f3",
+          "startAt": "2026-08-07T23:45:00Z",
+          "endAt": "2026-08-08T00:45:00Z"
+        },
+        {
+          "title": "Spielberg",
+          "subtitle": null,
+          "description": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-08-08T00:45:00Z",
+          "endAt": "2026-08-08T01:00:00Z"
+        },
+        {
+          "title": "GP Barcellona: Gara",
+          "subtitle": null,
+          "description": "A Barcellona settima gara del mondiale: tutti a caccia di Kimi Antonelli, dominatore del mondiale e reduce da 5 vittorie consecutive. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/d68f1756-5674-47cf-8987-1c9ee2e5bfc2/cover?territory=IT&md5ChecksumParam=21e407e48b37b1dcc1da493da4364053",
+          "startAt": "2026-08-08T01:00:00Z",
+          "endAt": "2026-08-08T02:00:00Z"
+        },
+        {
+          "title": "Little Italy: La Mercedes di Kimi",
+          "subtitle": null,
+          "description": "La Mercedes di Kimi Antonelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/2eb35e6e-1e77-4610-b6f3-1ca1a5f922db/cover?territory=IT&md5ChecksumParam=51ddbbb7bbabb71ee0266175f2be145e",
+          "startAt": "2026-08-08T02:00:00Z",
+          "endAt": "2026-08-08T02:30:00Z"
+        },
+        {
+          "title": "Budapest",
+          "subtitle": null,
+          "description": "Seguiamo l'intensa nona tappa del campionato all'Hungaroring, mettendo in luce la serrata lotta per il titolo, le strategie dei piloti e offrendo un accesso esclusivo all'area scuderie poco prima della pausa estiva.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/dd4ad344-8030-4ce1-b4bb-682b71e2e316/cover?territory=IT&md5ChecksumParam=99e1298aa8c4f55486301b7a9f70c1b3",
+          "startAt": "2026-08-08T02:30:00Z",
+          "endAt": "2026-08-08T02:45:00Z"
+        },
+        {
+          "title": "Inside F1",
+          "subtitle": null,
+          "description": "Dietro le quinte della F1: il viaggio nel Media & Technology Centre di Biggin Hill. Con Davide Camicioli e Ivan Capelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/f76e909e-b9cd-4fbe-924f-43986e869660/cover?territory=IT&md5ChecksumParam=20fbe48c350214619ad8adb80889701c",
+          "startAt": "2026-08-08T02:45:00Z",
+          "endAt": "2026-08-08T03:00:00Z"
+        },
+        {
+          "title": "GP Austria: Gara",
+          "subtitle": null,
+          "description": "Ottava gara del mondiale in casa della Red Bull. Antonelli guida la classifica con 41 punti su Hamilton e 50 su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/aeb0c188-4fd2-426a-8e68-9e4bcfb5e666/cover?territory=IT&md5ChecksumParam=84336280c95b1f1b8818d4f6d8a51a67",
+          "startAt": "2026-08-08T03:00:00Z",
+          "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "Madrid: Feature Race",
+          "subtitle": null,
+          "description": "Dal Circuito di Catalogna, Barcellona, Spagna.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/13cb1596-bca5-410d-af9d-c0827346cfc9/cover?territory=IT&md5ChecksumParam=32d2c469f13578dc4b900599df4214da",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T05:25:00Z"
+        },
+        {
+          "title": "Spielberg",
+          "subtitle": null,
+          "description": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/f14c54c0-38e7-4331-8635-b4d7ac39b8c7/cover?territory=IT&md5ChecksumParam=72cb42fab5bf1759197368922f29dfb6",
+          "startAt": "2026-08-08T05:25:00Z",
+          "endAt": "2026-08-08T05:40:00Z"
+        },
+        {
+          "title": "Motori Formula 3 - Ep. 16 - Motori Formula 3 2026 [F3 Spagna F.Race '26] 14/06/2026",
+          "subtitle": null,
+          "description": "Dal Circuito di Catalogna, Barcellona, Spagna.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/1224c5ac-031d-43af-ba58-8581dc1726e4/cover?territory=IT&md5ChecksumParam=f550dc21a18cd232130fde950950b8f3",
+          "startAt": "2026-08-08T05:40:00Z",
+          "endAt": "2026-08-08T06:45:00Z"
+        },
+        {
+          "title": "Spielberg",
+          "subtitle": null,
+          "description": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-08-08T06:45:00Z",
+          "endAt": "2026-08-08T07:00:00Z"
+        },
+        {
+          "title": "GP Barcellona: Gara",
+          "subtitle": null,
+          "description": "A Barcellona settima gara del mondiale: tutti a caccia di Kimi Antonelli, dominatore del mondiale e reduce da 5 vittorie consecutive. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/d68f1756-5674-47cf-8987-1c9ee2e5bfc2/cover?territory=IT&md5ChecksumParam=21e407e48b37b1dcc1da493da4364053",
+          "startAt": "2026-08-08T07:00:00Z",
+          "endAt": "2026-08-08T08:00:00Z"
+        },
+        {
+          "title": "Little Italy: La Mercedes di Kimi",
+          "subtitle": null,
+          "description": "La Mercedes di Kimi Antonelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/2eb35e6e-1e77-4610-b6f3-1ca1a5f922db/cover?territory=IT&md5ChecksumParam=51ddbbb7bbabb71ee0266175f2be145e",
+          "startAt": "2026-08-08T08:00:00Z",
+          "endAt": "2026-08-08T08:30:00Z"
+        },
+        {
+          "title": "Budapest",
+          "subtitle": null,
+          "description": "Seguiamo l'intensa nona tappa del campionato all'Hungaroring, mettendo in luce la serrata lotta per il titolo, le strategie dei piloti e offrendo un accesso esclusivo all'area scuderie poco prima della pausa estiva.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/dd4ad344-8030-4ce1-b4bb-682b71e2e316/cover?territory=IT&md5ChecksumParam=99e1298aa8c4f55486301b7a9f70c1b3",
+          "startAt": "2026-08-08T08:30:00Z",
+          "endAt": "2026-08-08T08:45:00Z"
+        },
+        {
+          "title": "Inside F1",
+          "subtitle": null,
+          "description": "Dietro le quinte della F1: il viaggio nel Media & Technology Centre di Biggin Hill. Con Davide Camicioli e Ivan Capelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/f76e909e-b9cd-4fbe-924f-43986e869660/cover?territory=IT&md5ChecksumParam=20fbe48c350214619ad8adb80889701c",
+          "startAt": "2026-08-08T08:45:00Z",
+          "endAt": "2026-08-08T09:00:00Z"
+        },
+        {
+          "title": "GP Austria: Gara",
+          "subtitle": null,
+          "description": "Ottava gara del mondiale in casa della Red Bull. Antonelli guida la classifica con 41 punti su Hamilton e 50 su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/aeb0c188-4fd2-426a-8e68-9e4bcfb5e666/cover?territory=IT&md5ChecksumParam=84336280c95b1f1b8818d4f6d8a51a67",
+          "startAt": "2026-08-08T09:00:00Z",
+          "endAt": "2026-08-08T10:00:00Z"
         }
       ]
     },
@@ -905,71 +1164,19 @@
         "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
       ],
       "currentProgram": {
-        "title": "Golf Dp World Tour - Ep. 80 - Golf Dp World Tour 2026 Austrian Alpine Open 4a Giornata 31/05/2026",
+        "title": "Giorno 4",
         "subtitle": null,
-        "description": "... World Tour. - From Golfclub Kitzbuhel-Schwarzsee-Reith in Kitzbuhel, Austria.",
+        "description": "Dal Shinnecock Hills Golf Club di Southampton, Stati Uniti.",
         "categories": [
           "Sport/Golf"
         ],
         "sportType": "Golf",
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/2918e46a-a6f7-4d38-80a8-e861f0a5a09b/cover?territory=IT&md5ChecksumParam=48bb22097558ccefbb05eca43101a555",
-        "startAt": "2026-08-07T01:00:00Z",
-        "endAt": "2026-08-07T04:00:00Z"
+        "imageUrl": "https://guidatv.sky.it/uuid/b9235728-85ae-42f3-a9dd-ba74b8902a49/COVER_TITLE_TALL?territory=IT&version=1576c7fd-d774-3152-bc9e-5d83cb064932&w=600&h=800&md5ChecksumParam=bfc46c763d531161ea4016044650a7c0",
+        "startAt": "2026-08-07T11:30:00Z",
+        "endAt": "2026-08-07T14:25:00Z"
       },
       "programs": [
-        {
-          "title": "Golf Dp World Tour - Ep. 80 - Golf Dp World Tour 2026 Austrian Alpine Open 4a Giornata 31/05/2026",
-          "subtitle": null,
-          "description": "... World Tour. - From Golfclub Kitzbuhel-Schwarzsee-Reith in Kitzbuhel, Austria.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/2918e46a-a6f7-4d38-80a8-e861f0a5a09b/cover?territory=IT&md5ChecksumParam=48bb22097558ccefbb05eca43101a555",
-          "startAt": "2026-08-07T01:00:00Z",
-          "endAt": "2026-08-07T04:00:00Z"
-        },
-        {
-          "title": "DS Automobiles Open d'Italia: Giorno 4",
-          "subtitle": null,
-          "description": "... 4 DP World Tour. - Tutti i tornei del tour europeo, il DP World Tour.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/98e8acd1-6d73-40ee-ac95-782c6a57bb6c/cover?territory=IT&md5ChecksumParam=6123fef70e693f7de8f8bf147fc81f96",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T07:10:00Z"
-        },
-        {
-          "title": "Danish Golf Challenge",
-          "subtitle": null,
-          "description": "Tapio Pulkkanen si aggiudica il suo secondo titolo dell'Hotel Planner Tour 2026.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a1d17b7f-c040-4adc-ac7d-4d6df2546aa9/cover?territory=IT&md5ChecksumParam=f9421bfb2b7da132e1cc7cc6c2d33502",
-          "startAt": "2026-08-07T07:10:00Z",
-          "endAt": "2026-08-07T07:35:00Z"
-        },
-        {
-          "title": "Italian Pro Tour",
-          "subtitle": null,
-          "description": "I momenti salienti dell'Italian Challenge Open, prestigioso torneo di golf dell'European Challenge.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/9581dfae-39f0-4481-9855-f3b451ab4b23/cover?territory=IT&md5ChecksumParam=46eb5f7dbc1fe6b0afe807137734658f",
-          "startAt": "2026-08-07T07:35:00Z",
-          "endAt": "2026-08-07T08:05:00Z"
-        },
         {
           "title": "Giorno 4",
           "subtitle": null,
@@ -1099,6 +1306,84 @@
           "imageUrl": "https://guidatv.sky.it/uuid/713e8d27-ab20-47e3-97b4-15ab77b85a9b/cover?territory=IT&md5ChecksumParam=7afecbd17c87f89712a1429b11d34798",
           "startAt": "2026-08-07T22:00:00Z",
           "endAt": "2026-08-08T01:00:00Z"
+        },
+        {
+          "title": "Volvo Cina Open: Giorno 4",
+          "subtitle": null,
+          "description": "From Shanghai Enhance Anting GC in Shanghai.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/f4fe2d75-f8ea-488a-bfe3-b9c4b036785f/cover?territory=IT&md5ChecksumParam=ebc71aae7625cdbe555b81f8c03a99bf",
+          "startAt": "2026-08-08T01:00:00Z",
+          "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "Giorno 4",
+          "subtitle": null,
+          "description": "Dal Shinnecock Hills Golf Club di Southampton, Stati Uniti.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b9235728-85ae-42f3-a9dd-ba74b8902a49/COVER_TITLE_TALL?territory=IT&version=1576c7fd-d774-3152-bc9e-5d83cb064932&w=600&h=800&md5ChecksumParam=bfc46c763d531161ea4016044650a7c0",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T06:55:00Z"
+        },
+        {
+          "title": "Speciale Golf - Golf Vde Legend Exhibition 26/07/2026",
+          "subtitle": null,
+          "description": "... Exhibition 26/07/2026. - Scopriamo insieme i giocatori piu' interessanti, vincenti e talentuosi del golf tedesco.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/a4ad6015-3797-45ff-9783-ff250389a112/cover?territory=IT&md5ChecksumParam=96497f056bcb65efebcb70a4b7d1b532",
+          "startAt": "2026-08-08T06:55:00Z",
+          "endAt": "2026-08-08T07:15:00Z"
+        },
+        {
+          "title": "Scottish Open",
+          "subtitle": null,
+          "description": "I momenti salienti del round finale del Genesis Scottish Open 2026 del DP World Tour.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/d88cf2ba-4343-4737-b371-4a7799ae24db/cover?territory=IT&md5ChecksumParam=564a74053b577b550ccfc51e35e80026",
+          "startAt": "2026-08-08T07:15:00Z",
+          "endAt": "2026-08-08T07:30:00Z"
+        },
+        {
+          "title": "Challenge De Catalunya",
+          "subtitle": null,
+          "description": "Pablo Ereno vince Challenge de Catalunya 2026 dopo aver sconfitto il danese Hamish Brown.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/ca90f2cb-6849-4bf0-8d2a-8b1cf1237a6b/cover?territory=IT&md5ChecksumParam=cf87e6a85d0d3238a46cd8120c594cb2",
+          "startAt": "2026-08-08T07:30:00Z",
+          "endAt": "2026-08-08T08:00:00Z"
+        },
+        {
+          "title": "Genesis Scottish Open: Giorno 4",
+          "subtitle": null,
+          "description": "... World Tour. - Dal Renaissance Club, a North Berwick, Scozia.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/713e8d27-ab20-47e3-97b4-15ab77b85a9b/cover?territory=IT&md5ChecksumParam=7afecbd17c87f89712a1429b11d34798",
+          "startAt": "2026-08-08T08:00:00Z",
+          "endAt": "2026-08-08T11:00:00Z"
         }
       ]
     },
@@ -1113,240 +1398,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "GP Gran Bretagna",
+        "title": "GP Gran Bretagna: Pre Qualifiche",
         "subtitle": null,
-        "description": "... piloti MotoGP. - Segui in esclusiva la conferenza stampa dei piloti della MotoGp, con tutte le anticipazioni del weekend, alla vigilia del gran premio.",
+        "description": "... Qualifiche Moto3. - Dal Circuito di Silverstone, Towcester, Inghilterra.",
         "categories": [
           "Sport/Motori"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/a1524bf5-f06d-4bc2-85ae-7df3e4911023/cover?territory=IT&md5ChecksumParam=d36797616063585daab5fe0cfb948c2e",
-        "startAt": "2026-08-07T02:55:00Z",
-        "endAt": "2026-08-07T03:45:00Z"
+        "imageUrl": "https://guidatv.sky.it/uuid/f571e8fd-ff08-4a89-a741-3652d253fcdf/cover?territory=IT&md5ChecksumParam=a924fe7edf1dcf506df068ca884493b7",
+        "startAt": "2026-08-07T13:15:00Z",
+        "endAt": "2026-08-07T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "Marquez: E' rosso",
-          "subtitle": null,
-          "description": "Speciale giornalistico con cui la Ducati e i principali media sportivi celebrano e annunciano il clamoroso rinnovo di contratto di Marc Marquez con la squadra ufficiale Ducati Lenovo Team fino al 2028.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/185c1e47-47bf-4e09-b063-45f5c471fb2b/COVER_TITLE_TALL?territory=IT&version=6e21a822-60cf-3a27-bfbc-b3c77c2f3c1a&w=600&h=800&md5ChecksumParam=85f511af8e15cad54ed0649022d0286e",
-          "startAt": "2026-08-07T00:00:00Z",
-          "endAt": "2026-08-07T00:15:00Z"
-        },
-        {
-          "title": "GP Gran Bretagna",
-          "subtitle": null,
-          "description": "... piloti MotoGP. - Segui in esclusiva la conferenza stampa dei piloti della MotoGp, con tutte le anticipazioni del weekend, alla vigilia del gran premio.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a1524bf5-f06d-4bc2-85ae-7df3e4911023/cover?territory=IT&md5ChecksumParam=d36797616063585daab5fe0cfb948c2e",
-          "startAt": "2026-08-07T00:15:00Z",
-          "endAt": "2026-08-07T01:00:00Z"
-        },
-        {
-          "title": "Racebook",
-          "subtitle": null,
-          "description": "Le parole dei piloti e le curiosita' dal paddock prima che le moto scendano in pista per il weekend di gara.",
-          "categories": [
-            "Altro/Altro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/95300ff3-8a7e-4b7b-ba8e-b9a5852851d4/cover?territory=IT&md5ChecksumParam=31e13668d68157f63fa977c098d704cc",
-          "startAt": "2026-08-07T01:00:00Z",
-          "endAt": "2026-08-07T01:15:00Z"
-        },
-        {
-          "title": "MotoGP Paddock Pass",
-          "subtitle": null,
-          "description": "Il magazine dedicato all'approfondimento del weekend di gara e di anticipazione del prossimo GP: tecnica, colore, statistiche, storia, curiosita'. Il mondo delle gare visto dai box.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/7baec4c8-1081-4b9b-8e97-90e211b5fc1f/cover?territory=IT&md5ChecksumParam=54c137d0ad0fa59a404847870b6774aa",
-          "startAt": "2026-08-07T01:15:00Z",
-          "endAt": "2026-08-07T01:30:00Z"
-        },
-        {
-          "title": "MotoGP Gara: Gran Bretagna",
-          "subtitle": null,
-          "description": "Settimo appuntamento del mondiale 2025: al circuito di Silverstone, in Gran Bretagna, si accendono i motori per la gara della MotoGP. Telecronaca Rosario Triolo e Mattia Pasini",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/37833299-5652-414d-9789-88aa6b2245b1/cover?territory=IT&md5ChecksumParam=e75f832617ab3c3202cdeefdbce742db",
-          "startAt": "2026-08-07T01:30:00Z",
-          "endAt": "2026-08-07T02:30:00Z"
-        },
-        {
-          "title": "Speciale Sterlacchini",
-          "subtitle": null,
-          "description": "Fabiano Sterlacchini, Technical Director di Aprilia Racing, ci racconta l'atmosfera del box Aprilia e il lavoro che ha portato i piloti al vertice della classifica del mondiale 2026 di MotoGP.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/f09c780e-4aed-4c4c-94e8-d11ed5ffaf15/cover?territory=IT&md5ChecksumParam=a4dbab7982eeaa70e801de73692e11e0",
-          "startAt": "2026-08-07T02:30:00Z",
-          "endAt": "2026-08-07T02:55:00Z"
-        },
-        {
-          "title": "GP Gran Bretagna",
-          "subtitle": null,
-          "description": "... piloti MotoGP. - Segui in esclusiva la conferenza stampa dei piloti della MotoGp, con tutte le anticipazioni del weekend, alla vigilia del gran premio.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a1524bf5-f06d-4bc2-85ae-7df3e4911023/cover?territory=IT&md5ChecksumParam=d36797616063585daab5fe0cfb948c2e",
-          "startAt": "2026-08-07T02:55:00Z",
-          "endAt": "2026-08-07T03:45:00Z"
-        },
-        {
-          "title": "Bulega: La Stagione Dei Record",
-          "subtitle": null,
-          "description": "Nicolo' Bulega sta battendo ogni record di vittorie in Superbike in attesa di scoprire se per lui, nel 2027, si apriranno le porte della MotoGP.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/ad2df663-0e03-4e0b-89af-a49dcd2f94bf/cover?territory=IT&md5ChecksumParam=118d6b3b00323492be0b3c022d8f4139",
-          "startAt": "2026-08-07T03:45:00Z",
-          "endAt": "2026-08-07T04:00:00Z"
-        },
-        {
-          "title": "GP Gran Bretagna",
-          "subtitle": null,
-          "description": "Dodicesimo appuntamento del mondiale 2022: da Silverstone in Inghilterra, si accendono i motori per la gara della MotoGP. TC: Meda-Sanchini.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/d88fd077-f15e-4f0f-b8ef-e213fce40e5b/cover?territory=IT&md5ChecksumParam=e8604a10bb98d101413e933f99b953f1",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T05:00:00Z"
-        },
-        {
-          "title": "GP Gran Bretagna",
-          "subtitle": null,
-          "description": "... piloti MotoGP. - Segui in esclusiva la conferenza stampa dei piloti della MotoGp, con tutte le anticipazioni del weekend, alla vigilia del gran premio.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a1524bf5-f06d-4bc2-85ae-7df3e4911023/cover?territory=IT&md5ChecksumParam=d36797616063585daab5fe0cfb948c2e",
-          "startAt": "2026-08-07T05:00:00Z",
-          "endAt": "2026-08-07T05:45:00Z"
-        },
-        {
-          "title": "Racebook",
-          "subtitle": null,
-          "description": "Le parole dei piloti e le curiosita' dal paddock prima che le moto scendano in pista per il weekend di gara.",
-          "categories": [
-            "Altro/Altro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/95300ff3-8a7e-4b7b-ba8e-b9a5852851d4/cover?territory=IT&md5ChecksumParam=31e13668d68157f63fa977c098d704cc",
-          "startAt": "2026-08-07T05:45:00Z",
-          "endAt": "2026-08-07T06:00:00Z"
-        },
-        {
-          "title": "MotoGP Gara: Gran Bretagna",
-          "subtitle": null,
-          "description": "Settimo appuntamento del mondiale 2025: al circuito di Silverstone, in Gran Bretagna, si accendono i motori per la gara della MotoGP. Telecronaca Rosario Triolo e Mattia Pasini",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/37833299-5652-414d-9789-88aa6b2245b1/cover?territory=IT&md5ChecksumParam=e75f832617ab3c3202cdeefdbce742db",
-          "startAt": "2026-08-07T06:00:00Z",
-          "endAt": "2026-08-07T07:00:00Z"
-        },
-        {
-          "title": "Speciale Sterlacchini",
-          "subtitle": null,
-          "description": "Fabiano Sterlacchini, Technical Director di Aprilia Racing, ci racconta l'atmosfera del box Aprilia e il lavoro che ha portato i piloti al vertice della classifica del mondiale 2026 di MotoGP.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/f09c780e-4aed-4c4c-94e8-d11ed5ffaf15/cover?territory=IT&md5ChecksumParam=a4dbab7982eeaa70e801de73692e11e0",
-          "startAt": "2026-08-07T07:00:00Z",
-          "endAt": "2026-08-07T07:30:00Z"
-        },
-        {
-          "title": "GP Gran Bretagna",
-          "subtitle": null,
-          "description": "... piloti MotoGP. - Segui in esclusiva la conferenza stampa dei piloti della MotoGp, con tutte le anticipazioni del weekend, alla vigilia del gran premio.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a1524bf5-f06d-4bc2-85ae-7df3e4911023/cover?territory=IT&md5ChecksumParam=d36797616063585daab5fe0cfb948c2e",
-          "startAt": "2026-08-07T07:30:00Z",
-          "endAt": "2026-08-07T08:15:00Z"
-        },
-        {
-          "title": "Racebook",
-          "subtitle": null,
-          "description": "Le parole dei piloti e le curiosita' dal paddock prima che le moto scendano in pista per il weekend di gara.",
-          "categories": [
-            "Altro/Altro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/95300ff3-8a7e-4b7b-ba8e-b9a5852851d4/cover?territory=IT&md5ChecksumParam=31e13668d68157f63fa977c098d704cc",
-          "startAt": "2026-08-07T08:15:00Z",
-          "endAt": "2026-08-07T08:30:00Z"
-        },
-        {
-          "title": "MotoGP Paddock Pass",
-          "subtitle": null,
-          "description": "Il magazine dedicato all'approfondimento del weekend di gara e di anticipazione del prossimo GP: tecnica, colore, statistiche, storia, curiosita'. Il mondo delle gare visto dai box.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/7baec4c8-1081-4b9b-8e97-90e211b5fc1f/cover?territory=IT&md5ChecksumParam=54c137d0ad0fa59a404847870b6774aa",
-          "startAt": "2026-08-07T08:30:00Z",
-          "endAt": "2026-08-07T08:45:00Z"
-        },
-        {
-          "title": "Programmazione non disponibile",
-          "subtitle": null,
-          "description": "Highlights MotoGP",
-          "categories": [
-            "Intrattenimento/Fiction"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/a66dc379-a517-48cd-8e58-587794b0f617/cover?territory=IT&md5ChecksumParam=352072f7c196c6542a1e97073a0f0508",
-          "startAt": "2026-08-07T08:45:00Z",
-          "endAt": "2026-08-07T08:55:00Z"
-        },
         {
           "title": "GP Gran Bretagna: Prove libere 1",
           "subtitle": null,
@@ -1619,71 +1683,201 @@
           "imageUrl": "https://guidatv.sky.it/uuid/0dc06057-aa09-4afa-871c-e873687b43e1/cover?territory=IT&md5ChecksumParam=48edcb4b47d934ed1c74bce4b8d04b91",
           "startAt": "2026-08-07T22:45:00Z",
           "endAt": "2026-08-08T00:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "ZonaDAZN2.it",
-      "name": "DAZN 2",
-      "logoUrl": "https://i.imgur.com/Jop3Vip.png",
-      "provider": "Sky Italia sports guide",
-      "providerKey": "premium-sky-it",
-      "sources": [
-        "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
-        {
-          "title": "Nessun evento in onda",
-          "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
-          "categories": [
-            "Altri Programmi/Altri Canali"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-08-07T04:00:00Z",
-          "endAt": "2026-08-07T10:00:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "MotoGP Paddock Live Show",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Il meglio della giornata in pista: gli highlights, i temi del giorno e tutti gli approfondimenti direttamente dal paddock.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-08-07T10:00:00Z",
-          "endAt": "2026-08-07T16:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/9d9e0bbd-b9a6-46f6-b512-71d1dbda9072/cover?territory=IT&md5ChecksumParam=0d2f640395e4f3f00027d468babc3a82",
+          "startAt": "2026-08-08T00:00:00Z",
+          "endAt": "2026-08-08T00:30:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "MotoGP Talent Time",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "L'approfondimento a conclusione della giornata in pista con un occhio al talento e ai protagonisti che fanno parlare di se'.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-08-07T16:00:00Z",
-          "endAt": "2026-08-07T22:00:00Z"
+          "imageUrl": "https://guidatv.sky.it/uuid/408c4fd3-d96f-48ec-8d86-c2c754c68cda/cover?territory=IT&md5ChecksumParam=b81805bdf34f5602b286453395def3e9",
+          "startAt": "2026-08-08T00:30:00Z",
+          "endAt": "2026-08-08T00:45:00Z"
         },
         {
-          "title": "Nessun evento in onda",
+          "title": "GP Gran Bretagna: Pre Qualifiche",
           "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
           "categories": [
-            "Altri Programmi/Altri Canali"
+            "Sport/Motori"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-08-07T22:00:00Z",
+          "imageUrl": "https://guidatv.sky.it/uuid/f571e8fd-ff08-4a89-a741-3652d253fcdf/cover?territory=IT&md5ChecksumParam=a924fe7edf1dcf506df068ca884493b7",
+          "startAt": "2026-08-08T00:45:00Z",
+          "endAt": "2026-08-08T01:30:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Pre Qualifiche",
+          "subtitle": null,
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/0dc06057-aa09-4afa-871c-e873687b43e1/cover?territory=IT&md5ChecksumParam=48edcb4b47d934ed1c74bce4b8d04b91",
+          "startAt": "2026-08-08T01:30:00Z",
+          "endAt": "2026-08-08T02:45:00Z"
+        },
+        {
+          "title": "MotoGP Talent Time",
+          "subtitle": null,
+          "description": "L'approfondimento a conclusione della giornata in pista con un occhio al talento e ai protagonisti che fanno parlare di se'.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/408c4fd3-d96f-48ec-8d86-c2c754c68cda/cover?territory=IT&md5ChecksumParam=b81805bdf34f5602b286453395def3e9",
+          "startAt": "2026-08-08T02:45:00Z",
+          "endAt": "2026-08-08T03:00:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Prove libere 1",
+          "subtitle": null,
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/58be37dd-4714-4f6f-9a34-30bbd01039e4/cover?territory=IT&md5ChecksumParam=af0fd01ec523c0e2fa5c4be477622fd1",
+          "startAt": "2026-08-08T03:00:00Z",
           "endAt": "2026-08-08T04:00:00Z"
+        },
+        {
+          "title": "MotoGP Paddock Live Show",
+          "subtitle": null,
+          "description": "Il meglio della giornata in pista: gli highlights, i temi del giorno e tutti gli approfondimenti direttamente dal paddock.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/9d9e0bbd-b9a6-46f6-b512-71d1dbda9072/cover?territory=IT&md5ChecksumParam=0d2f640395e4f3f00027d468babc3a82",
+          "startAt": "2026-08-08T04:00:00Z",
+          "endAt": "2026-08-08T04:30:00Z"
+        },
+        {
+          "title": "MotoGP Talent Time",
+          "subtitle": null,
+          "description": "L'approfondimento a conclusione della giornata in pista con un occhio al talento e ai protagonisti che fanno parlare di se'.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/408c4fd3-d96f-48ec-8d86-c2c754c68cda/cover?territory=IT&md5ChecksumParam=b81805bdf34f5602b286453395def3e9",
+          "startAt": "2026-08-08T04:30:00Z",
+          "endAt": "2026-08-08T04:45:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Pre Qualifiche",
+          "subtitle": null,
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/e10637f6-bde6-4353-b15a-76ce4a8fe8e7/cover?territory=IT&md5ChecksumParam=e34129e776036b9a7d7c1585cd51dec9",
+          "startAt": "2026-08-08T04:45:00Z",
+          "endAt": "2026-08-08T05:45:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Pre Qualifiche",
+          "subtitle": null,
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/0dc06057-aa09-4afa-871c-e873687b43e1/cover?territory=IT&md5ChecksumParam=48edcb4b47d934ed1c74bce4b8d04b91",
+          "startAt": "2026-08-08T05:45:00Z",
+          "endAt": "2026-08-08T07:00:00Z"
+        },
+        {
+          "title": "MotoGP Paddock Live Show",
+          "subtitle": null,
+          "description": "Il meglio della giornata in pista: gli highlights, i temi del giorno e tutti gli approfondimenti direttamente dal paddock.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/9d9e0bbd-b9a6-46f6-b512-71d1dbda9072/cover?territory=IT&md5ChecksumParam=0d2f640395e4f3f00027d468babc3a82",
+          "startAt": "2026-08-08T07:00:00Z",
+          "endAt": "2026-08-08T07:30:00Z"
+        },
+        {
+          "title": "MotoGP Talent Time",
+          "subtitle": null,
+          "description": "L'approfondimento a conclusione della giornata in pista con un occhio al talento e ai protagonisti che fanno parlare di se'.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/408c4fd3-d96f-48ec-8d86-c2c754c68cda/cover?territory=IT&md5ChecksumParam=b81805bdf34f5602b286453395def3e9",
+          "startAt": "2026-08-08T07:30:00Z",
+          "endAt": "2026-08-08T07:45:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Pre Qualifiche",
+          "subtitle": null,
+          "description": "Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/f571e8fd-ff08-4a89-a741-3652d253fcdf/cover?territory=IT&md5ChecksumParam=a924fe7edf1dcf506df068ca884493b7",
+          "startAt": "2026-08-08T07:45:00Z",
+          "endAt": "2026-08-08T08:35:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Prove libere 2",
+          "subtitle": null,
+          "description": "... libere 2 Moto3. - Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/1352649a-aa2f-443e-80fa-cd51319b4d69/cover?territory=IT&md5ChecksumParam=22d645bb4ff0bdf9aca6acb6395e200a",
+          "startAt": "2026-08-08T08:35:00Z",
+          "endAt": "2026-08-08T09:20:00Z"
+        },
+        {
+          "title": "GP Gran Bretagna: Prove libere 2",
+          "subtitle": null,
+          "description": "... libere 2 Moto2. - Dal Circuito di Silverstone, Towcester, Inghilterra.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/1a18b4a1-482b-4ed8-901f-a714576f328a/cover?territory=IT&md5ChecksumParam=fd32b8a4da53b81aa4823c01d264deeb",
+          "startAt": "2026-08-08T09:20:00Z",
+          "endAt": "2026-08-08T10:05:00Z"
         }
       ]
     }
