@@ -1,7 +1,7 @@
 {
   "country": "BR",
   "countryName": "Brazil",
-  "generatedAt": "2026-08-18T01:56:34.178437Z",
+  "generatedAt": "2026-08-18T13:12:05.607676Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": false,
@@ -11,40 +11,157 @@
   "channelCount": 12,
   "channels": [
     {
-      "id": "mitv-br:BandSaoPaulo.br",
-      "name": "Band São Paulo",
-      "logoUrl": "https://i.imgur.com/roCodnj.png",
+      "id": "mitv-br:BandNews.br",
+      "name": "Band News",
+      "logoUrl": "https://i.ibb.co/0jVZBFp/u8ya-iw-R-400x400.jpg",
       "provider": "Mi.tv Brazil guide",
       "providerKey": "mitv-br",
       "sources": [
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Apito Final",
+        "title": "Manhã BandNews",
         "subtitle": null,
-        "description": "Acompanhe um giro esportivo para você ficar por dentro de tudo o que acontece no mundo da bola.",
+        "description": "A atualização das notícias da manhã e tudo o que é importante para se manter antenado ao longo do dia.",
         "categories": [
-          "Sports talk"
+          "News"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_apito-final_l_m.jpg",
-        "startAt": "2026-08-18T01:20:00Z",
-        "endAt": "2026-08-18T03:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_manh-bandnews-1_l_m.jpg",
+        "startAt": "2026-08-18T13:00:00Z",
+        "endAt": "2026-08-18T15:00:00Z"
       },
       "programs": [
         {
-          "title": "Brasil Urgente",
+          "title": "Jornal BandNews",
           "subtitle": null,
-          "description": "Acompanhe os principais acontecimentos do dia no Piauí, com foco em temas do cotidiano.",
+          "description": "As principais notícias do Brasil e do mundo, trânsito, previsão do tempo e prestação de serviço.",
           "categories": [
             "News"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_brasil-urgente-1_l_m.jpg",
-          "startAt": "2026-08-17T19:00:00Z",
-          "endAt": "2026-08-17T22:20:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-bandnews_l_m.jpg",
+          "startAt": "2026-08-18T09:00:00Z",
+          "endAt": "2026-08-18T11:00:00Z"
+        },
+        {
+          "title": "Jornal Gente",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo, com fatos importantes para se informar a cada dia.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-gente_l_m.jpg",
+          "startAt": "2026-08-18T11:00:00Z",
+          "endAt": "2026-08-18T12:30:00Z"
+        },
+        {
+          "title": "Radar BandNews",
+          "subtitle": null,
+          "description": "As notícias mais importantes do dia que estão no radar do brasileiro.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_radar-bandnews_l_m.jpg",
+          "startAt": "2026-08-18T12:30:00Z",
+          "endAt": "2026-08-18T13:00:00Z"
+        },
+        {
+          "title": "Manhã BandNews",
+          "subtitle": null,
+          "description": "A atualização das notícias da manhã e tudo o que é importante para se manter antenado ao longo do dia.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_manh-bandnews-1_l_m.jpg",
+          "startAt": "2026-08-18T13:00:00Z",
+          "endAt": "2026-08-18T15:00:00Z"
+        },
+        {
+          "title": "BandNews no Meio do Dia",
+          "subtitle": null,
+          "description": "Fique por dentro dos fatos mais importantes com participação de entrevistados e comentaristas.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bandnews-no-meio-do-dia-1_l_m.jpg",
+          "startAt": "2026-08-18T15:00:00Z",
+          "endAt": "2026-08-18T17:00:00Z"
+        },
+        {
+          "title": "Tarde BandNews",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo. Coberturas ao vivo e a participação de repórteres espalhados por todo o país e pelo exterior.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tarde-bandnews-1_l_m.jpg",
+          "startAt": "2026-08-18T17:00:00Z",
+          "endAt": "2026-08-18T19:00:00Z"
+        },
+        {
+          "title": "Entre Nós",
+          "subtitle": null,
+          "description": "Atração jornalística com notícias de destaque e com formato inovador, transmitida simultaneamente de dois estúdios diferentes, um da rádio e um de TV.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_entre-nos-2016_l_m.jpg",
+          "startAt": "2026-08-18T19:00:00Z",
+          "endAt": "2026-08-18T20:00:00Z"
+        },
+        {
+          "title": "Expresso BandNews",
+          "subtitle": null,
+          "description": "As principais notícias do dia de forma rápida e dinâmica com a credibilidade da BandNews TV.",
+          "categories": [
+            "Special"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_expresso-bandnews-1_l_m.jpg",
+          "startAt": "2026-08-18T20:00:00Z",
+          "endAt": "2026-08-18T21:00:00Z"
+        },
+        {
+          "title": "O É da Coisa",
+          "subtitle": null,
+          "description": "O jornalista Reinaldo Azevedo comenta principais notícias do momento com opiniões, polêmica e motivação para o pensamento a respeito de acontecimentos e destaques no Brasil e no mundo.",
+          "categories": [
+            "Politics"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_o-e-da-coisa_l_m.jpg",
+          "startAt": "2026-08-18T21:00:00Z",
+          "endAt": "2026-08-18T22:30:00Z"
+        },
+        {
+          "title": "Jornal BandNews",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo, trânsito, previsão do tempo e prestação de serviço.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-bandnews_l_m.jpg",
+          "startAt": "2026-08-18T22:30:00Z",
+          "endAt": "2026-08-18T23:30:00Z"
         },
         {
           "title": "Jornal da Band",
@@ -56,47 +173,47 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-band_l_m.jpg",
-          "startAt": "2026-08-17T22:20:00Z",
-          "endAt": "2026-08-17T23:30:00Z"
+          "startAt": "2026-08-18T23:30:00Z",
+          "endAt": "2026-08-19T00:30:00Z"
         },
         {
-          "title": "Guerra das Rosas",
+          "title": "Edição da Noite",
           "subtitle": null,
-          "description": "Desde criança, Gülru sonha em ser como Gülfem, a dona da mansão em que seu pai trabalha. Desejosa de se tornar uma designer de moda como ela, a vida de Gülru muda completamente quando Ömer demonstra interesse pela jovem.",
+          "description": "Felipe Vieira e Veruska Donato apresentam o \"Edição da Noite\", com análise dos principais acontecimentos do Brasil e do mundo. O jornal traz os bastidores da política e participação de Fernando Schüler, Emanuel Pessoa, Fernando Mitre e Aod Cunha.",
           "categories": [
-            "Temporada 1 Episódio 111"
+            "News"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_guerra-das-rosas-s01e111_l_m.jpg",
-          "startAt": "2026-08-17T23:30:00Z",
-          "endAt": "2026-08-18T00:25:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_edic-o-da-noite_l_m.jpg",
+          "startAt": "2026-08-19T00:30:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
         },
         {
-          "title": "Show da Fé",
+          "title": "Capital & Mercado",
           "subtitle": null,
-          "description": "Acompanhe depoimentos, testemunhos e histórias surpreendentes de amor e de superação. Com uma ótica cristã, o programa leva o Evangelho de Jesus Cristo aos quatro cantos do mundo e difunde a reveladora Palavra de Deus.",
+          "description": "O programa reúne os nomes mais importantes da economia brasileira para debater as questões centrais do país e do mundo. Ideias e propostas para ajudar na retomada do crescimento sustentado é um dos assuntos mais debatidos no espaço.",
           "categories": [
-            "Religious"
+            "Bus./financial"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_show-da-fe-1_l_m.jpg",
-          "startAt": "2026-08-18T00:25:00Z",
-          "endAt": "2026-08-18T01:20:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_capital-mercado_l_m.jpg",
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T03:00:00Z"
         },
         {
-          "title": "Apito Final",
+          "title": "Madrugada BandNews",
           "subtitle": null,
-          "description": "Acompanhe um giro esportivo para você ficar por dentro de tudo o que acontece no mundo da bola.",
+          "description": "Acompanhe o noticiário atualizado com as principais informações a cada 30 minutos.",
           "categories": [
-            "Sports talk"
+            "News"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_apito-final_l_m.jpg",
-          "startAt": "2026-08-18T01:20:00Z",
-          "endAt": "2026-08-18T03:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_madrugada-bandnews-1_l_m.jpg",
+          "startAt": "2026-08-19T03:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
         },
         {
           "title": "Jornal da Noite",
@@ -108,46 +225,73 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-noite-1_l_m.jpg",
-          "startAt": "2026-08-18T03:00:00Z",
-          "endAt": "2026-08-18T03:30:00Z"
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T05:45:00Z"
         },
         {
-          "title": "Band Eleições",
+          "title": "Madrugada BandNews",
           "subtitle": null,
-          "description": "A cobertura completa das eleições de 2026.",
+          "description": "Acompanhe o noticiário atualizado com as principais informações a cada 30 minutos.",
           "categories": [
-            "Politics"
+            "News"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_band-eleic-es_l_m.jpg",
-          "startAt": "2026-08-18T03:30:00Z",
-          "endAt": "2026-08-18T04:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_madrugada-bandnews-1_l_m.jpg",
+          "startAt": "2026-08-19T05:45:00Z",
+          "endAt": "2026-08-19T06:45:00Z"
         },
         {
-          "title": "Esporte Total",
+          "title": "1º Jornal",
           "subtitle": null,
-          "description": "Confira as notícias locais do mundo esportivo e os destaques do futebol goiano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-total_l_m.jpg",
-          "startAt": "2026-08-18T04:00:00Z",
-          "endAt": "2026-08-18T05:00:00Z"
-        },
-        {
-          "title": "Igreja Universal do Reino de Deus",
-          "subtitle": null,
-          "description": "Acompanhe momentos de fé proporcionados pela Igreja Universal do Reino de Deus.",
+          "description": "Acompanhe as principais notícias do Brasil e do mundo, com agilidade e prestação de serviços, deixando o telespectador bem informado logo nas primeiras horas da manhã.",
           "categories": [
-            "Religious"
+            "News"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-universal-do-reino-de-deus-1_l_m.jpg",
-          "startAt": "2026-08-18T05:00:00Z",
-          "endAt": "2026-08-18T06:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_1-jornal_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
         },
+        {
+          "title": "Jornal BandNews",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo, trânsito, previsão do tempo e prestação de serviço.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-bandnews_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mitv-br:BandSaoPaulo.br",
+      "name": "Band São Paulo",
+      "logoUrl": "https://i.imgur.com/roCodnj.png",
+      "provider": "Mi.tv Brazil guide",
+      "providerKey": "mitv-br",
+      "sources": [
+        "data/normalized/guide-BR-mi.tv_br.xml"
+      ],
+      "currentProgram": {
+        "title": "Bora Brasil",
+        "subtitle": null,
+        "description": "Acompanhe as principais informações do Brasil e do mundo com leveza, interatividade e credibilidade.",
+        "categories": [
+          "News"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_bora-brasil_l_m.jpg",
+        "startAt": "2026-08-18T12:00:00Z",
+        "endAt": "2026-08-18T14:00:00Z"
+      },
+      "programs": [
         {
           "title": "Igreja Universal do Reino de Deus",
           "subtitle": null,
@@ -258,6 +402,457 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_brasil-urgente-1_l_m.jpg",
           "startAt": "2026-08-18T19:00:00Z",
           "endAt": "2026-08-18T22:20:00Z"
+        },
+        {
+          "title": "Jornal da Band",
+          "subtitle": null,
+          "description": "Os principais fatos do Brasil e do mundo relatados com imparcialidade e profundidade.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-band_l_m.jpg",
+          "startAt": "2026-08-18T22:20:00Z",
+          "endAt": "2026-08-18T23:30:00Z"
+        },
+        {
+          "title": "Guerra das Rosas",
+          "subtitle": null,
+          "description": "Desde criança, Gülru sonha em ser como Gülfem, a dona da mansão em que seu pai trabalha. Desejosa de se tornar uma designer de moda como ela, a vida de Gülru muda completamente quando Ömer demonstra interesse pela jovem.",
+          "categories": [
+            "Temporada 1 Episódio 112"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_guerra-das-rosas-s01e112_l_m.jpg",
+          "startAt": "2026-08-18T23:30:00Z",
+          "endAt": "2026-08-19T00:25:00Z"
+        },
+        {
+          "title": "Show da Fé",
+          "subtitle": null,
+          "description": "Acompanhe depoimentos, testemunhos e histórias surpreendentes de amor e de superação. Com uma ótica cristã, o programa leva o Evangelho de Jesus Cristo aos quatro cantos do mundo e difunde a reveladora Palavra de Deus.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_show-da-fe-1_l_m.jpg",
+          "startAt": "2026-08-19T00:25:00Z",
+          "endAt": "2026-08-19T01:20:00Z"
+        },
+        {
+          "title": "A Prévia",
+          "subtitle": null,
+          "description": "Os preparativos, curiosidades e bastidores do MasterChef Brasil.",
+          "categories": [
+            "Entertainment"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-previa_l_m.jpg",
+          "startAt": "2026-08-19T01:20:00Z",
+          "endAt": "2026-08-19T01:30:00Z"
+        },
+        {
+          "title": "MasterChef",
+          "subtitle": null,
+          "description": "O maior reality de culinária do mundo revela os novos talentos da cozinha brasileira.",
+          "categories": [
+            "Temporada 13 Episódio 13"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_masterchef-s13e13_l_m.jpg",
+          "startAt": "2026-08-19T01:30:00Z",
+          "endAt": "2026-08-19T03:30:00Z"
+        },
+        {
+          "title": "Jornal da Noite",
+          "subtitle": null,
+          "description": "Acompanhe diariamente notícias do país e do mundo.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-noite-1_l_m.jpg",
+          "startAt": "2026-08-19T03:30:00Z",
+          "endAt": "2026-08-19T04:15:00Z"
+        },
+        {
+          "title": "Esporte Total",
+          "subtitle": null,
+          "description": "Confira as notícias locais do mundo esportivo e os destaques do futebol goiano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-total_l_m.jpg",
+          "startAt": "2026-08-19T04:15:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
+        },
+        {
+          "title": "Igreja Universal do Reino de Deus",
+          "subtitle": null,
+          "description": "Acompanhe momentos de fé proporcionados pela Igreja Universal do Reino de Deus.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-universal-do-reino-de-deus-1_l_m.jpg",
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T06:00:00Z"
+        },
+        {
+          "title": "Igreja Universal do Reino de Deus",
+          "subtitle": null,
+          "description": "Acompanhe momentos de fé proporcionados pela Igreja Universal do Reino de Deus.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-universal-do-reino-de-deus-1_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "mitv-br:BandSports.br",
+      "name": "BandSports",
+      "logoUrl": "https://i.imgur.com/EuPvzJe.png",
+      "provider": "Mi.tv Brazil guide",
+      "providerKey": "mitv-br",
+      "sources": [
+        "data/normalized/guide-BR-mi.tv_br.xml"
+      ],
+      "currentProgram": {
+        "title": "Tempo Técnico",
+        "subtitle": null,
+        "description": "O jornalista Elia Júnior, juntamente com o comentarista Jorge Nicola e o ex-árbitro Sálvio Spinola, traz análises táticas, debates e entrevistas com os principais técnicos do futebol brasileiro.",
+        "categories": [],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-tempo-tecnico_l_m.jpg",
+        "startAt": "2026-08-18T12:00:00Z",
+        "endAt": "2026-08-18T13:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Africa Eco Race",
+          "subtitle": null,
+          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
+          "startAt": "2026-08-18T09:00:00Z",
+          "endAt": "2026-08-18T09:15:00Z"
+        },
+        {
+          "title": "MXGP: Suécia - Corrida 2",
+          "subtitle": null,
+          "description": "Toda a disputa da principal competição de motocross do mundo, organizada pela Federação Internacional de Motociclismo, a FIM, com etapas por todo o planeta.",
+          "categories": [
+            "Mundial de Motocross"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-suecia-corrida-2_l_m.jpg",
+          "startAt": "2026-08-18T09:15:00Z",
+          "endAt": "2026-08-18T10:15:00Z"
+        },
+        {
+          "title": "Oléé S.A.",
+          "subtitle": null,
+          "description": "Acompanhe uma discussão sobre o que acontece fora das disputas esportivas. Veja tudo sobre as modalidades por meio da ótica dos negócios e do nicho econômico.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bus-financial-olee-s-a_l_m.jpg",
+          "startAt": "2026-08-18T10:15:00Z",
+          "endAt": "2026-08-18T10:30:00Z"
+        },
+        {
+          "title": "Depois do Jogo",
+          "subtitle": null,
+          "description": "Gols da rodada, análise dos resultados e discussões das polêmicas do mundo da bola.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-depois-do-jogo_l_m.jpg",
+          "startAt": "2026-08-18T10:30:00Z",
+          "endAt": "2026-08-18T11:30:00Z"
+        },
+        {
+          "title": "BandSports News",
+          "subtitle": null,
+          "description": "Acompanhe as notícias esportivas mais relevantes no Brasil e no mundo.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-bandsports-news_l_m.jpg",
+          "startAt": "2026-08-18T11:30:00Z",
+          "endAt": "2026-08-18T12:00:00Z"
+        },
+        {
+          "title": "Tempo Técnico",
+          "subtitle": null,
+          "description": "O jornalista Elia Júnior, juntamente com o comentarista Jorge Nicola e o ex-árbitro Sálvio Spinola, traz análises táticas, debates e entrevistas com os principais técnicos do futebol brasileiro.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-tempo-tecnico_l_m.jpg",
+          "startAt": "2026-08-18T12:00:00Z",
+          "endAt": "2026-08-18T13:30:00Z"
+        },
+        {
+          "title": "Africa Eco Race",
+          "subtitle": null,
+          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
+          "startAt": "2026-08-18T13:30:00Z",
+          "endAt": "2026-08-18T13:45:00Z"
+        },
+        {
+          "title": "Esporte Total",
+          "subtitle": null,
+          "description": "Confira as notícias locais do mundo esportivo e os destaques do futebol goiano.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-total_l_m.jpg",
+          "startAt": "2026-08-18T13:45:00Z",
+          "endAt": "2026-08-18T14:45:00Z"
+        },
+        {
+          "title": "Oléé S.A.",
+          "subtitle": null,
+          "description": "Acompanhe uma discussão sobre o que acontece fora das disputas esportivas. Veja tudo sobre as modalidades por meio da ótica dos negócios e do nicho econômico.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bus-financial-olee-s-a_l_m.jpg",
+          "startAt": "2026-08-18T14:45:00Z",
+          "endAt": "2026-08-18T15:00:00Z"
+        },
+        {
+          "title": "G4",
+          "subtitle": null,
+          "description": "Os principais assuntos do futebol são debatidos por especialistas no assunto.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_g4_l_m.jpg",
+          "startAt": "2026-08-18T15:00:00Z",
+          "endAt": "2026-08-18T17:00:00Z"
+        },
+        {
+          "title": "Sala do Esporte",
+          "subtitle": null,
+          "description": "Veja tudo o que aconteceu em rodadas esportivas mundo afora, de maneira descontraída e bem-humorada.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sala-do-esporte_l_m.jpg",
+          "startAt": "2026-08-18T17:00:00Z",
+          "endAt": "2026-08-18T19:00:00Z"
+        },
+        {
+          "title": "SailGP",
+          "subtitle": null,
+          "description": "Melhores momentos e destaques da competição mundial de vela envolvendo catamarãs F50.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sailing-sailgp-1_l_m.jpg",
+          "startAt": "2026-08-18T19:00:00Z",
+          "endAt": "2026-08-18T20:00:00Z"
+        },
+        {
+          "title": "Os Donos da Bola",
+          "subtitle": null,
+          "description": "Acompanhe o programa de debate sobre o mundo do futebol mais bem-humorado da televisão.",
+          "categories": [
+            "Soccer"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_os-donos-da-bola_l_m.jpg",
+          "startAt": "2026-08-18T20:00:00Z",
+          "endAt": "2026-08-18T21:00:00Z"
+        },
+        {
+          "title": "Bola Rolando",
+          "subtitle": null,
+          "description": "As notícias do futebol no Brasil e no mundo, com muita análise e debate.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-bola-rolando_l_m.jpg",
+          "startAt": "2026-08-18T21:00:00Z",
+          "endAt": "2026-08-18T23:00:00Z"
+        },
+        {
+          "title": "Respirando a Semana de Vela",
+          "subtitle": null,
+          "description": "Os principais destaques e acontecimentos do mundo da vela, na última semana.",
+          "categories": [
+            "Sailing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg",
+          "startAt": "2026-08-18T23:00:00Z",
+          "endAt": "2026-08-19T00:00:00Z"
+        },
+        {
+          "title": "Esporte Agora",
+          "subtitle": null,
+          "description": "Todas as atualizações do mundo esportivo, com muita opinião.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-agora_l_m.jpg",
+          "startAt": "2026-08-19T00:00:00Z",
+          "endAt": "2026-08-19T01:00:00Z"
+        },
+        {
+          "title": "Papo de Paddock",
+          "subtitle": null,
+          "description": "O jornalista Ale Speitzzer traz uma visão única e privilegiada do mundo do automobilismo, combinando análise aprofundada e curiosidades fascinantes por meio de entrevistas exclusivas com pilotos, especialistas e personalidades de diversas categorias.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_papo-de-paddock_l_m.jpg",
+          "startAt": "2026-08-19T01:00:00Z",
+          "endAt": "2026-08-19T02:00:00Z"
+        },
+        {
+          "title": "SBK Docs",
+          "subtitle": null,
+          "description": "Entrevistas, curiosidades e informações sobre os maiores nomes do Superbike.",
+          "categories": [
+            "Motorcycle"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbk-docs_l_m.jpg",
+          "startAt": "2026-08-19T02:00:00Z",
+          "endAt": "2026-08-19T02:15:00Z"
+        },
+        {
+          "title": "Africa Eco Race",
+          "subtitle": null,
+          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
+          "startAt": "2026-08-19T02:15:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
+        },
+        {
+          "title": "Depois do Jogo",
+          "subtitle": null,
+          "description": "Gols da rodada, análise dos resultados e discussões das polêmicas do mundo da bola.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-depois-do-jogo_l_m.jpg",
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T03:30:00Z"
+        },
+        {
+          "title": "Al Ittihad x Al Kholood",
+          "subtitle": null,
+          "description": "O Al Ittihad recebe o Al Kholod na Cidade dos Esportes Rei Abdullah, em Jidá, Arábia Saudita.",
+          "categories": [
+            "Campeonato Saudita de Futebol"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-al-ittihad-x-al-kholood_l_m.jpg",
+          "startAt": "2026-08-19T03:30:00Z",
+          "endAt": "2026-08-19T05:30:00Z"
+        },
+        {
+          "title": "Depois do Jogo",
+          "subtitle": null,
+          "description": "Gols da rodada, análise dos resultados e discussões das polêmicas do mundo da bola.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-depois-do-jogo_l_m.jpg",
+          "startAt": "2026-08-19T05:30:00Z",
+          "endAt": "2026-08-19T06:30:00Z"
+        },
+        {
+          "title": "Papo de Paddock",
+          "subtitle": null,
+          "description": "O jornalista Ale Speitzzer traz uma visão única e privilegiada do mundo do automobilismo, combinando análise aprofundada e curiosidades fascinantes por meio de entrevistas exclusivas com pilotos, especialistas e personalidades de diversas categorias.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_papo-de-paddock_l_m.jpg",
+          "startAt": "2026-08-19T06:30:00Z",
+          "endAt": "2026-08-19T07:30:00Z"
+        },
+        {
+          "title": "The Golf Brasil",
+          "subtitle": null,
+          "description": "O programa traz os atletas e o mundo que rodeia o golfe, como o seu círculo de tomadores de decisão, empresários, executivos, empreendedores e personalidades. Além, é claro, de cobrir os eventos e os fãs do esporte.",
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-the-golf-brasil_l_m.jpg",
+          "startAt": "2026-08-19T07:30:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Vila Bandsports",
+          "subtitle": null,
+          "description": "O programa acompanha a preparação de atletas olímpicos do Brasil para os Jogos de Los Angeles 2028, com um olhar aprofundado e exclusivo sobre a jornada de cada esportista.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_olympics-vila-bandsports_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T08:15:00Z"
+        },
+        {
+          "title": "SailGP",
+          "subtitle": null,
+          "description": "Melhores momentos e destaques da competição mundial de vela envolvendo catamarãs F50.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sailing-sailgp-1_l_m.jpg",
+          "startAt": "2026-08-19T08:15:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
+        },
+        {
+          "title": "SailGP",
+          "subtitle": null,
+          "description": "Melhores momentos e destaques da competição mundial de vela envolvendo catamarãs F50.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sailing-sailgp-1_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T09:15:00Z"
         }
       ]
     },
@@ -271,27 +866,40 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Linha de Passe: Mesa-Redonda",
+        "title": "Copa Libertadores da América",
         "subtitle": null,
-        "description": "Comentaristas esportivos conceituados entram em campo para uma análise completa da rodada do futebol ao estilo \"mesa redonda\", com debates acalorados e comentários de qualidade, sempre a partir de um olhar crítico e da imparcialidade.",
+        "description": "Acompanhe o que de melhor aconteceu no torneio e reveja os grandes confrontos.",
         "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
-        "startAt": "2026-08-18T01:00:00Z",
-        "endAt": "2026-08-18T02:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-libertadores-da-america-1_l_m.jpg",
+        "startAt": "2026-08-18T12:00:00Z",
+        "endAt": "2026-08-18T14:00:00Z"
       },
       "programs": [
         {
-          "title": "Equipe F",
+          "title": "Linha de Passe: Mesa-Redonda",
           "subtitle": null,
-          "description": "Especialistas comentam os principais acontecimentos notícia no futebol brasileiro.",
+          "description": "Comentaristas esportivos conceituados entram em campo para uma análise completa da rodada do futebol ao estilo \"mesa redonda\", com debates acalorados e comentários de qualidade, sempre a partir de um olhar crítico e da imparcialidade.",
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-equipe-f_l_m.jpg",
-          "startAt": "2026-08-17T21:15:00Z",
-          "endAt": "2026-08-17T23:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
+          "startAt": "2026-08-18T09:00:00Z",
+          "endAt": "2026-08-18T10:00:00Z"
+        },
+        {
+          "title": "Resenha ESPN",
+          "subtitle": null,
+          "description": "Atletas da atualidade e do passado participam de bate-papo descontraído e cheio de boas histórias.",
+          "categories": [
+            "Sports talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_resenha-espn_l_m.jpg",
+          "startAt": "2026-08-18T10:00:00Z",
+          "endAt": "2026-08-18T11:00:00Z"
         },
         {
           "title": "SportsCenter",
@@ -301,8 +909,111 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-          "startAt": "2026-08-17T23:00:00Z",
-          "endAt": "2026-08-18T01:00:00Z"
+          "startAt": "2026-08-18T11:00:00Z",
+          "endAt": "2026-08-18T12:00:00Z"
+        },
+        {
+          "title": "Copa Libertadores da América",
+          "subtitle": null,
+          "description": "Acompanhe o que de melhor aconteceu no torneio e reveja os grandes confrontos.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-libertadores-da-america-1_l_m.jpg",
+          "startAt": "2026-08-18T12:00:00Z",
+          "endAt": "2026-08-18T14:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
+          "startAt": "2026-08-18T14:00:00Z",
+          "endAt": "2026-08-18T16:00:00Z"
+        },
+        {
+          "title": "F Show",
+          "subtitle": null,
+          "description": "O programa debate os principais acontecimentos do mundo do futebol de forma acalorada, porém inteligente, mesclando jornalismo, opinião e entretenimento.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-f-show_l_m.jpg",
+          "startAt": "2026-08-18T16:00:00Z",
+          "endAt": "2026-08-18T18:00:00Z"
+        },
+        {
+          "title": "Mundo F",
+          "subtitle": null,
+          "description": "Os principais assuntos notícia no futebol internacional abordados com linguagem contemporânea; grandes temas, clubes e personagens são destacados por especialistas que trazem informação e opinião.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mundo-f_l_m.jpg",
+          "startAt": "2026-08-18T18:00:00Z",
+          "endAt": "2026-08-18T19:30:00Z"
+        },
+        {
+          "title": "Equipe F",
+          "subtitle": null,
+          "description": "Especialistas comentam os principais acontecimentos notícia no futebol brasileiro.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-equipe-f_l_m.jpg",
+          "startAt": "2026-08-18T19:30:00Z",
+          "endAt": "2026-08-18T21:15:00Z"
+        },
+        {
+          "title": "SportsCenter Abre o Jogo",
+          "subtitle": null,
+          "description": "Os preparativos para os principais eventos esportivos do Brasil e do mundo.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sportscenter-abre-o-jogo_l_m.jpg",
+          "startAt": "2026-08-18T21:15:00Z",
+          "endAt": "2026-08-18T21:45:00Z"
+        },
+        {
+          "title": "Independiente Rivadavia x Fluminense",
+          "subtitle": null,
+          "description": "Todas as emoções da principal competição de futebol masculino disputada entre clubes da América do Sul, e que garante ao campeão vaga no Mundial de Clubes da FIFA.",
+          "categories": [
+            "Copa Libertadores da América"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-independiente-rivadavia-x-fluminense_l_m.jpg",
+          "startAt": "2026-08-18T21:45:00Z",
+          "endAt": "2026-08-19T00:00:00Z"
+        },
+        {
+          "title": "SportsCenter Abre o Jogo",
+          "subtitle": null,
+          "description": "Os preparativos para os principais eventos esportivos do Brasil e do mundo.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sportscenter-abre-o-jogo_l_m.jpg",
+          "startAt": "2026-08-19T00:00:00Z",
+          "endAt": "2026-08-19T00:15:00Z"
+        },
+        {
+          "title": "São Paulo x Bolívar",
+          "subtitle": null,
+          "description": "Toda a disputa da segunda mais importante competição masculina entre clubes da América do Sul.",
+          "categories": [
+            "Copa Sul-Americana"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-bolivar_l_m.jpg",
+          "startAt": "2026-08-19T00:15:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
         },
         {
           "title": "Linha de Passe: Mesa-Redonda",
@@ -312,21 +1023,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-linha-de-passe-mesa-redonda_l_m.jpg",
-          "startAt": "2026-08-18T01:00:00Z",
-          "endAt": "2026-08-18T02:00:00Z"
-        },
-        {
-          "title": "Resenha ESPN",
-          "subtitle": null,
-          "description": "Atletas da atualidade e do passado participam de bate-papo descontraído e cheio de boas histórias.",
-          "categories": [
-            "Sports talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_resenha-espn_l_m.jpg",
-          "startAt": "2026-08-18T02:00:00Z",
-          "endAt": "2026-08-18T03:00:00Z"
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T04:00:00Z"
         },
         {
           "title": "SportsCenter",
@@ -336,34 +1034,45 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-          "startAt": "2026-08-18T03:00:00Z",
-          "endAt": "2026-08-18T04:00:00Z"
+          "startAt": "2026-08-19T04:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
         },
         {
-          "title": "Resenha ESPN",
+          "title": "Universidad Católica x Estudiantes",
           "subtitle": null,
-          "description": "Atletas da atualidade e do passado participam de bate-papo descontraído e cheio de boas histórias.",
+          "description": "Todas as emoções da principal competição de futebol masculino disputada entre clubes da América do Sul, e que garante ao campeão vaga no Mundial de Clubes da FIFA.",
           "categories": [
-            "Sports talk"
+            "Copa Libertadores da América"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_resenha-espn_l_m.jpg",
-          "startAt": "2026-08-18T04:00:00Z",
-          "endAt": "2026-08-18T05:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-universidad-catolica-x-estudiantes_l_m.jpg",
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T06:00:00Z"
         },
         {
-          "title": "Gençlerbirligi x Fenerbahçe",
+          "title": "Premier League Stories",
           "subtitle": null,
-          "description": "Todas as emoções da Süper Lig, a principal competição de futebol masculino entre clubes da Turquia.",
+          "description": "Um panorama completo sobre a Premier League ao redor do mundo. As últimas notícias, entrevistas, curiosidades e histórias sobre a paixão do torcedor pelo futebol inglês.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-premier-league-stories_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T07:30:00Z"
+        },
+        {
+          "title": "Independiente Rivadavia x Fluminense",
+          "subtitle": null,
+          "description": "Todas as emoções da principal competição de futebol masculino disputada entre clubes da América do Sul, e que garante ao campeão vaga no Mundial de Clubes da FIFA.",
           "categories": [
-            "Campeonato Turco de Futebol"
+            "Copa Libertadores da América"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-genclerbirligi-x-fenerbahce_l_m.jpg",
-          "startAt": "2026-08-18T05:00:00Z",
-          "endAt": "2026-08-18T06:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-independiente-rivadavia-x-fluminense_l_m.jpg",
+          "startAt": "2026-08-19T07:30:00Z",
+          "endAt": "2026-08-19T09:30:00Z"
         }
       ]
     },
@@ -377,162 +1086,19 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Vítimas do Dia",
+        "title": "Encontro com Patrícia Poeta",
         "subtitle": null,
-        "description": "Elder e Daiane são um casal em meio a uma guerra urbana. Enquanto ele luta para sobreviver após uma bala perdida, o primeiro filho deles está prestes a nascer.",
+        "description": "O programa é uma mistura de jornalismo, informação, humor e música. Com a participação de comentaristas, jornalistas e convidados especiais, os assuntos são abordados em um formato de bate-papo.",
         "categories": [
-          "Drama / 2025"
+          "Entertainment"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_vitimas-do-dia-2025_l_m.jpg",
-        "startAt": "2026-08-18T01:45:00Z",
-        "endAt": "2026-08-18T03:10:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_encontro-com-patricia-poeta_l_m.jpg",
+        "startAt": "2026-08-18T12:30:00Z",
+        "endAt": "2026-08-18T13:35:00Z"
       },
       "programs": [
-        {
-          "title": "A Nobreza do Amor",
-          "subtitle": null,
-          "description": "Pascoal entrega Kênia para Jendal, que volta a castigar a filha e a trancar em seu quarto. Fortunato descobre que Maria Helena consegue se libertar dos aposentos.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-nobreza-do-amor_l_m.jpg",
-          "startAt": "2026-08-17T21:25:00Z",
-          "endAt": "2026-08-17T22:10:00Z"
-        },
-        {
-          "title": "Praça TV - 2ª Edição",
-          "subtitle": null,
-          "description": "O telejornal apresenta as principais notícias locais e prioriza o jornalismo comunitário.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_praca-tv-2-edic-o-1_l_m.jpg",
-          "startAt": "2026-08-17T22:10:00Z",
-          "endAt": "2026-08-17T22:40:00Z"
-        },
-        {
-          "title": "Por Você",
-          "subtitle": null,
-          "description": "Bela diz a Lucas que não está em um bom momento para se envolver com alguém. Vanessa anuncia a Pérola e Gabriel que pensa em vender o hospital para Junqueira e Leandra acompanha Bela durante um parto.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_por-voce_l_m.jpg",
-          "startAt": "2026-08-17T22:40:00Z",
-          "endAt": "2026-08-17T23:30:00Z"
-        },
-        {
-          "title": "Jornal Nacional",
-          "subtitle": null,
-          "description": "As principais notícias do Brasil e do mundo, tendo sempre em pauta atualidades, matérias de denúncia e investigação. O telejornal aborda política, economia, jornalismo internacional, esporte e a tradicional previsão do tempo.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-nacional-1_l_m.jpg",
-          "startAt": "2026-08-17T23:30:00Z",
-          "endAt": "2026-08-18T00:40:00Z"
-        },
-        {
-          "title": "Quem Ama Cuida",
-          "subtitle": null,
-          "description": "Pedro decide esperar Adriana na casa dela para descobrir o motivo de sua mentira. Adriana vende as joias para um sheik. Adriana conta a Pedro e à família sobre a herança que recebeu de Arthur.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_quem-ama-cuida_l_m.jpg",
-          "startAt": "2026-08-18T00:40:00Z",
-          "endAt": "2026-08-18T01:45:00Z"
-        },
-        {
-          "title": "Vítimas do Dia",
-          "subtitle": null,
-          "description": "Elder e Daiane são um casal em meio a uma guerra urbana. Enquanto ele luta para sobreviver após uma bala perdida, o primeiro filho deles está prestes a nascer.",
-          "categories": [
-            "Drama / 2025"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_vitimas-do-dia-2025_l_m.jpg",
-          "startAt": "2026-08-18T01:45:00Z",
-          "endAt": "2026-08-18T03:10:00Z"
-        },
-        {
-          "title": "Jornal da Globo",
-          "subtitle": null,
-          "description": "O telejornal cobre os fatos do dia e as últimas notícias da noite. Conta com a colaboração de colunistas em áreas como economia e cultura.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-globo_l_m.jpg",
-          "startAt": "2026-08-18T03:10:00Z",
-          "endAt": "2026-08-18T04:00:00Z"
-        },
-        {
-          "title": "A Nobreza do Amor",
-          "subtitle": null,
-          "description": "Pascoal entrega Kênia para Jendal, que volta a castigar a filha e a trancar em seu quarto. Fortunato descobre que Maria Helena consegue se libertar dos aposentos.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-nobreza-do-amor_l_m.jpg",
-          "startAt": "2026-08-18T04:00:00Z",
-          "endAt": "2026-08-18T04:40:00Z"
-        },
-        {
-          "title": "Por Você",
-          "subtitle": null,
-          "description": "Bela diz a Lucas que não está em um bom momento para se envolver com alguém. Vanessa anuncia a Pérola e Gabriel que pensa em vender o hospital para Junqueira e Leandra acompanha Bela durante um parto.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_por-voce_l_m.jpg",
-          "startAt": "2026-08-18T04:40:00Z",
-          "endAt": "2026-08-18T05:30:00Z"
-        },
-        {
-          "title": "Vai que Cola",
-          "subtitle": null,
-          "description": "Depois de se envolver em uma falcatrua, o malandro Valdomiro vai morar em uma pensão no subúrbio carioca. Dona Jô, proprietária do local, acredita que o rapaz tem um bom coração e decide recebê-lo como hóspede.",
-          "categories": [
-            "Comedy"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_vai-que-cola-1_l_m.jpg",
-          "startAt": "2026-08-18T05:30:00Z",
-          "endAt": "2026-08-18T06:30:00Z"
-        },
-        {
-          "title": "Hora 1",
-          "subtitle": null,
-          "description": "Os assuntos mais importantes do Brasil e do mundo durante as primeiras horas da manhã. Voltado para o público que acorda cedo, o telejornal conta ainda com a participação de correspondentes internacionais.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_hora-1_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
         {
           "title": "Bom Dia Praça",
           "subtitle": null,
@@ -673,6 +1239,175 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-nobreza-do-amor_l_m.jpg",
           "startAt": "2026-08-18T21:30:00Z",
           "endAt": "2026-08-18T22:15:00Z"
+        },
+        {
+          "title": "Praça TV - 2ª Edição",
+          "subtitle": null,
+          "description": "O telejornal apresenta as principais notícias locais e prioriza o jornalismo comunitário.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_praca-tv-2-edic-o-1_l_m.jpg",
+          "startAt": "2026-08-18T22:15:00Z",
+          "endAt": "2026-08-18T22:45:00Z"
+        },
+        {
+          "title": "Por Você",
+          "subtitle": null,
+          "description": "Bela diz a Lucas que não está em um bom momento para se envolver com alguém. Vanessa anuncia a Pérola e Gabriel que pensa em vender o hospital para Junqueira e Leandra acompanha Bela durante um parto.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_por-voce_l_m.jpg",
+          "startAt": "2026-08-18T22:45:00Z",
+          "endAt": "2026-08-18T23:30:00Z"
+        },
+        {
+          "title": "Jornal Nacional",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo, tendo sempre em pauta atualidades, matérias de denúncia e investigação. O telejornal aborda política, economia, jornalismo internacional, esporte e a tradicional previsão do tempo.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-nacional-1_l_m.jpg",
+          "startAt": "2026-08-18T23:30:00Z",
+          "endAt": "2026-08-19T00:40:00Z"
+        },
+        {
+          "title": "Quem Ama Cuida",
+          "subtitle": null,
+          "description": "Pedro decide esperar Adriana na casa dela para descobrir o motivo de sua mentira. Adriana vende as joias para um sheik. Adriana conta a Pedro e à família sobre a herança que recebeu de Arthur.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_quem-ama-cuida_l_m.jpg",
+          "startAt": "2026-08-19T00:40:00Z",
+          "endAt": "2026-08-19T01:45:00Z"
+        },
+        {
+          "title": "Pablo & Luisão",
+          "subtitle": null,
+          "description": "Pablo é preso por brigar com o diretor da escola pelo melhor ponto de venda de salgados. Ele, Luisão e os salgueiros se unem para criar um sindicato e proteger a profissão.",
+          "categories": [
+            "Temporada 1 Episódio 13 - Guerra dos Salgados"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_pablo-luis-o-s01e13-guerra-dos-salgados_l_m.jpg",
+          "startAt": "2026-08-19T01:45:00Z",
+          "endAt": "2026-08-19T02:15:00Z"
+        },
+        {
+          "title": "Conversa com Bial",
+          "subtitle": null,
+          "description": "Pedro Bial debate e propõe o diálogo sobre assuntos contemporâneos, do Brasil e do mundo, com seus convidados.",
+          "categories": [
+            "Temporada 10 Episódio 7"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_conversa-com-bial-s10e07_l_m.jpg",
+          "startAt": "2026-08-19T02:15:00Z",
+          "endAt": "2026-08-19T03:05:00Z"
+        },
+        {
+          "title": "Justiça 2",
+          "subtitle": null,
+          "description": "Fernando persegue o carro que atropelou Balthazar, e Cassiano descobre a relação de Nestor com o atentado; Silvana sai da clínica; o pedido de indenização de Balthazar é deferido.",
+          "categories": [
+            "Temporada 1 Episódio 25"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_justica-2-s01e25_l_m.jpg",
+          "startAt": "2026-08-19T03:05:00Z",
+          "endAt": "2026-08-19T03:50:00Z"
+        },
+        {
+          "title": "Jornal da Globo",
+          "subtitle": null,
+          "description": "O telejornal cobre os fatos do dia e as últimas notícias da noite. Conta com a colaboração de colunistas em áreas como economia e cultura.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-globo_l_m.jpg",
+          "startAt": "2026-08-19T03:50:00Z",
+          "endAt": "2026-08-19T04:40:00Z"
+        },
+        {
+          "title": "A Nobreza do Amor",
+          "subtitle": null,
+          "description": "Pascoal entrega Kênia para Jendal, que volta a castigar a filha e a trancar em seu quarto. Fortunato descobre que Maria Helena consegue se libertar dos aposentos.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-nobreza-do-amor_l_m.jpg",
+          "startAt": "2026-08-19T04:40:00Z",
+          "endAt": "2026-08-19T05:20:00Z"
+        },
+        {
+          "title": "Por Você",
+          "subtitle": null,
+          "description": "Bela diz a Lucas que não está em um bom momento para se envolver com alguém. Vanessa anuncia a Pérola e Gabriel que pensa em vender o hospital para Junqueira e Leandra acompanha Bela durante um parto.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_por-voce_l_m.jpg",
+          "startAt": "2026-08-19T05:20:00Z",
+          "endAt": "2026-08-19T06:20:00Z"
+        },
+        {
+          "title": "Vai que Cola",
+          "subtitle": null,
+          "description": "Depois de se envolver em uma falcatrua, o malandro Valdomiro vai morar em uma pensão no subúrbio carioca. Dona Jô, proprietária do local, acredita que o rapaz tem um bom coração e decide recebê-lo como hóspede.",
+          "categories": [
+            "Comedy"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_vai-que-cola-1_l_m.jpg",
+          "startAt": "2026-08-19T06:05:00Z",
+          "endAt": "2026-08-19T07:00:00Z"
+        },
+        {
+          "title": "Hora 1",
+          "subtitle": null,
+          "description": "Os assuntos mais importantes do Brasil e do mundo durante as primeiras horas da manhã. Voltado para o público que acorda cedo, o telejornal conta ainda com a participação de correspondentes internacionais.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_hora-1_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
+        },
+        {
+          "title": "Bom Dia Praça",
+          "subtitle": null,
+          "description": "Programa jornalístico com as primeiras notícias de cada estado.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bom-dia-praca-1_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T11:30:00Z"
         }
       ]
     },
@@ -686,136 +1421,19 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Jornal das Dez",
+        "title": "GloboNews Radar",
         "subtitle": null,
-        "description": "Aline Midlej e um time de comentaristas apresentam e analisam os bastidores das notícias.",
+        "description": null,
         "categories": [
           "News"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-das-dez-1_l_m.jpg",
-        "startAt": "2026-08-18T01:00:00Z",
-        "endAt": "2026-08-18T02:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_globonews-radar_l_m.jpg",
+        "startAt": "2026-08-18T11:25:00Z",
+        "endAt": "2026-08-18T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "Jornal GloboNews - Edição das 18 Horas",
-          "subtitle": null,
-          "description": "Natuza Nery apresenta a cobertura completa de tudo o que foi destaque ao longo do dia, no Brasil e no mundo, e um time de comentaristas analisa os principais acontecimentos do momento.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-das-18-horas-1_l_m.jpg",
-          "startAt": "2026-08-17T21:00:00Z",
-          "endAt": "2026-08-17T23:00:00Z"
-        },
-        {
-          "title": "Em Pauta",
-          "subtitle": null,
-          "description": "O time de comentaristas analisa e debate os grandes temas políticos, econômicos, culturais e internacionais do dia, aprofundando os assuntos e gerando reflexão.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_em-pauta-1_l_m.jpg",
-          "startAt": "2026-08-17T23:00:00Z",
-          "endAt": "2026-08-18T01:00:00Z"
-        },
-        {
-          "title": "Jornal das Dez",
-          "subtitle": null,
-          "description": "Aline Midlej e um time de comentaristas apresentam e analisam os bastidores das notícias.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-das-dez-1_l_m.jpg",
-          "startAt": "2026-08-18T01:00:00Z",
-          "endAt": "2026-08-18T02:30:00Z"
-        },
-        {
-          "title": "GloboNews Especial",
-          "subtitle": null,
-          "description": "O programa analisa questões que em um primeiro momento podem parecer desconexas, mas que têm em comum o fato de ajudar a entender melhor o mundo atual e a formar opinião.",
-          "categories": [
-            "Public affairs"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_globonews-especial_l_m.jpg",
-          "startAt": "2026-08-18T02:30:00Z",
-          "endAt": "2026-08-18T03:00:00Z"
-        },
-        {
-          "title": "Jornal GloboNews - Edição da Meia-Noite",
-          "subtitle": null,
-          "description": "Narayanna Borges traz as repercussões das principais notícias no Brasil e no mundo.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-da-meia-noite-2_l_m.jpg",
-          "startAt": "2026-08-18T03:00:00Z",
-          "endAt": "2026-08-18T04:00:00Z"
-        },
-        {
-          "title": "Em Pauta",
-          "subtitle": null,
-          "description": "O time de comentaristas analisa e debate os grandes temas políticos, econômicos, culturais e internacionais do dia, aprofundando os assuntos e gerando reflexão.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_em-pauta-1_l_m.jpg",
-          "startAt": "2026-08-18T04:00:00Z",
-          "endAt": "2026-08-18T05:00:00Z"
-        },
-        {
-          "title": "GloboNews Especial",
-          "subtitle": null,
-          "description": "O programa analisa questões que em um primeiro momento podem parecer desconexas, mas que têm em comum o fato de ajudar a entender melhor o mundo atual e a formar opinião.",
-          "categories": [
-            "Public affairs"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_globonews-especial_l_m.jpg",
-          "startAt": "2026-08-18T06:00:00Z",
-          "endAt": "2026-08-18T06:30:00Z"
-        },
-        {
-          "title": "Jornal das Dez",
-          "subtitle": null,
-          "description": "Aline Midlej e um time de comentaristas apresentam e analisam os bastidores das notícias.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-das-dez-1_l_m.jpg",
-          "startAt": "2026-08-18T06:30:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
-        {
-          "title": "Jornal GloboNews - Edição das 5 Horas",
-          "subtitle": null,
-          "description": "Os principais fatos que acontecem no Brasil e no mundo.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-das-5-horas-1_l_m.jpg",
-          "startAt": "2026-08-18T08:00:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
         {
           "title": "Jornal GloboNews - Edição das 6 Horas",
           "subtitle": null,
@@ -906,6 +1524,123 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-das-18-horas-1_l_m.jpg",
           "startAt": "2026-08-18T21:00:00Z",
           "endAt": "2026-08-18T23:00:00Z"
+        },
+        {
+          "title": "Em Pauta",
+          "subtitle": null,
+          "description": "O time de comentaristas analisa e debate os grandes temas políticos, econômicos, culturais e internacionais do dia, aprofundando os assuntos e gerando reflexão.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_em-pauta-1_l_m.jpg",
+          "startAt": "2026-08-18T23:00:00Z",
+          "endAt": "2026-08-19T01:00:00Z"
+        },
+        {
+          "title": "Jornal das Dez",
+          "subtitle": null,
+          "description": "Aline Midlej e um time de comentaristas apresentam e analisam os bastidores das notícias.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-das-dez-1_l_m.jpg",
+          "startAt": "2026-08-19T01:00:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
+        },
+        {
+          "title": "Roberto D'Avila",
+          "subtitle": null,
+          "description": "Roberto D'Avila recebe personalidades para conversar sobre política, economia e cultura.",
+          "categories": [
+            "Interview"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_roberto-d-avila_l_m.jpg",
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T03:00:00Z"
+        },
+        {
+          "title": "Jornal GloboNews - Edição da Meia-Noite",
+          "subtitle": null,
+          "description": "Narayanna Borges traz as repercussões das principais notícias no Brasil e no mundo.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-da-meia-noite-2_l_m.jpg",
+          "startAt": "2026-08-19T03:00:00Z",
+          "endAt": "2026-08-19T04:00:00Z"
+        },
+        {
+          "title": "Em Pauta",
+          "subtitle": null,
+          "description": "O time de comentaristas analisa e debate os grandes temas políticos, econômicos, culturais e internacionais do dia, aprofundando os assuntos e gerando reflexão.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_em-pauta-1_l_m.jpg",
+          "startAt": "2026-08-19T04:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
+        },
+        {
+          "title": "Roberto D'Avila",
+          "subtitle": null,
+          "description": "Roberto D'Avila recebe personalidades para conversar sobre política, economia e cultura.",
+          "categories": [
+            "Interview"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_roberto-d-avila_l_m.jpg",
+          "startAt": "2026-08-19T06:00:00Z",
+          "endAt": "2026-08-19T06:30:00Z"
+        },
+        {
+          "title": "Jornal das Dez",
+          "subtitle": null,
+          "description": "Aline Midlej e um time de comentaristas apresentam e analisam os bastidores das notícias.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-das-dez-1_l_m.jpg",
+          "startAt": "2026-08-19T06:30:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Jornal GloboNews - Edição das 5 Horas",
+          "subtitle": null,
+          "description": "Os principais fatos que acontecem no Brasil e no mundo.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-das-5-horas-1_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
+        },
+        {
+          "title": "Jornal GloboNews - Edição das 6 Horas",
+          "subtitle": null,
+          "description": "As principais notícias, agenda política, previsão do tempo e informações para ficar bem-informado.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-globonews-edic-o-das-6-horas-1_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T09:30:00Z"
         }
       ]
     },
@@ -919,7 +1654,7 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Atlético-MG x Grêmio",
+        "title": "Chapecoense x Bahia",
         "subtitle": null,
         "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
         "categories": [
@@ -927,228 +1662,11 @@
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
-        "startAt": "2026-08-18T01:40:00Z",
-        "endAt": "2026-08-18T02:10:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
+        "startAt": "2026-08-18T13:00:00Z",
+        "endAt": "2026-08-18T13:30:00Z"
       },
       "programs": [
-        {
-          "title": "Campeonato Brasileiro",
-          "subtitle": null,
-          "description": "Tudo o que aconteceu na partida válida pela 27ª rodada do Campeonato Brasileiro de 2008.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-campeonato-brasileiro-2_l_m.jpg",
-          "startAt": "2026-08-17T21:30:00Z",
-          "endAt": "2026-08-17T22:30:00Z"
-        },
-        {
-          "title": "Internacional x Remo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
-          "startAt": "2026-08-17T22:30:00Z",
-          "endAt": "2026-08-18T01:10:00Z"
-        },
-        {
-          "title": "Vasco x Santos",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-santos-1_l_m.jpg",
-          "startAt": "2026-08-18T01:10:00Z",
-          "endAt": "2026-08-18T01:40:00Z"
-        },
-        {
-          "title": "Atlético-MG x Grêmio",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
-          "startAt": "2026-08-18T01:40:00Z",
-          "endAt": "2026-08-18T02:10:00Z"
-        },
-        {
-          "title": "Chapecoense x Bahia",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
-          "startAt": "2026-08-18T02:10:00Z",
-          "endAt": "2026-08-18T02:40:00Z"
-        },
-        {
-          "title": "São Paulo x Coritiba",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-coritiba-2_l_m.jpg",
-          "startAt": "2026-08-18T02:40:00Z",
-          "endAt": "2026-08-18T03:10:00Z"
-        },
-        {
-          "title": "Internacional x Remo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
-          "startAt": "2026-08-18T03:10:00Z",
-          "endAt": "2026-08-18T03:40:00Z"
-        },
-        {
-          "title": "Fluminense x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-palmeiras-2_l_m.jpg",
-          "startAt": "2026-08-18T03:40:00Z",
-          "endAt": "2026-08-18T04:10:00Z"
-        },
-        {
-          "title": "Athletico-PR x Bragantino",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-athletico-pr-x-bragantino_l_m.jpg",
-          "startAt": "2026-08-18T04:10:00Z",
-          "endAt": "2026-08-18T04:40:00Z"
-        },
-        {
-          "title": "Mirassol x Flamengo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-mirassol-x-flamengo_l_m.jpg",
-          "startAt": "2026-08-18T04:40:00Z",
-          "endAt": "2026-08-18T05:10:00Z"
-        },
-        {
-          "title": "Vitória x Botafogo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-botafogo-1_l_m.jpg",
-          "startAt": "2026-08-18T05:10:00Z",
-          "endAt": "2026-08-18T05:40:00Z"
-        },
-        {
-          "title": "Giro da Rodada",
-          "subtitle": null,
-          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
-          "startAt": "2026-08-18T05:40:00Z",
-          "endAt": "2026-08-18T06:40:00Z"
-        },
-        {
-          "title": "Vasco x Santos",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-santos-1_l_m.jpg",
-          "startAt": "2026-08-18T06:30:00Z",
-          "endAt": "2026-08-18T07:00:00Z"
-        },
-        {
-          "title": "Atlético-MG x Grêmio",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T07:30:00Z"
-        },
-        {
-          "title": "Chapecoense x Bahia",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
-          "startAt": "2026-08-18T07:30:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
-        {
-          "title": "São Paulo x Coritiba",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-coritiba-2_l_m.jpg",
-          "startAt": "2026-08-18T08:00:00Z",
-          "endAt": "2026-08-18T08:30:00Z"
-        },
-        {
-          "title": "Internacional x Remo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
-          "startAt": "2026-08-18T08:30:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
         {
           "title": "Fluminense x Palmeiras",
           "subtitle": null,
@@ -1456,6 +1974,195 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-botafogo-1_l_m.jpg",
           "startAt": "2026-08-18T21:30:00Z",
           "endAt": "2026-08-18T22:00:00Z"
+        },
+        {
+          "title": "Giro da Rodada",
+          "subtitle": null,
+          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
+          "startAt": "2026-08-18T22:00:00Z",
+          "endAt": "2026-08-18T23:00:00Z"
+        },
+        {
+          "title": "Copa do Brasil",
+          "subtitle": null,
+          "description": "Acompanhe destaques da principal competição eliminatória do futebol masculino brasileiro.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-do-brasil_l_m.jpg",
+          "startAt": "2026-08-18T23:00:00Z",
+          "endAt": "2026-08-19T00:00:00Z"
+        },
+        {
+          "title": "Náutico x Ceará",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
+          "categories": [
+            "Campeonato Brasileiro - Série B"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-nautico-x-ceara-1_l_m.jpg",
+          "startAt": "2026-08-19T00:00:00Z",
+          "endAt": "2026-08-19T02:40:00Z"
+        },
+        {
+          "title": "Vasco x Santos",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-santos-1_l_m.jpg",
+          "startAt": "2026-08-19T02:40:00Z",
+          "endAt": "2026-08-19T03:10:00Z"
+        },
+        {
+          "title": "Atlético-MG x Grêmio",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
+          "startAt": "2026-08-19T03:10:00Z",
+          "endAt": "2026-08-19T03:40:00Z"
+        },
+        {
+          "title": "Chapecoense x Bahia",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
+          "startAt": "2026-08-19T03:40:00Z",
+          "endAt": "2026-08-19T04:10:00Z"
+        },
+        {
+          "title": "São Paulo x Coritiba",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-coritiba-2_l_m.jpg",
+          "startAt": "2026-08-19T04:10:00Z",
+          "endAt": "2026-08-19T04:40:00Z"
+        },
+        {
+          "title": "Internacional x Remo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
+          "startAt": "2026-08-19T04:40:00Z",
+          "endAt": "2026-08-19T05:10:00Z"
+        },
+        {
+          "title": "Fluminense x Palmeiras",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-palmeiras-2_l_m.jpg",
+          "startAt": "2026-08-19T05:10:00Z",
+          "endAt": "2026-08-19T05:40:00Z"
+        },
+        {
+          "title": "Athletico-PR x Bragantino",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-athletico-pr-x-bragantino_l_m.jpg",
+          "startAt": "2026-08-19T05:40:00Z",
+          "endAt": "2026-08-19T06:40:00Z"
+        },
+        {
+          "title": "Vitória x Botafogo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-botafogo-1_l_m.jpg",
+          "startAt": "2026-08-19T06:40:00Z",
+          "endAt": "2026-08-19T07:10:00Z"
+        },
+        {
+          "title": "Giro da Rodada",
+          "subtitle": null,
+          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
+          "startAt": "2026-08-19T07:10:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Vasco x Santos",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-santos-1_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T08:30:00Z"
+        },
+        {
+          "title": "Atlético-MG x Grêmio",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
+          "startAt": "2026-08-19T08:30:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
+        },
+        {
+          "title": "Chapecoense x Bahia",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T09:30:00Z"
         }
       ]
     },
@@ -1469,201 +2176,19 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Alerta Aeroporto",
+        "title": "Hoje em Dia",
         "subtitle": null,
-        "description": "Registros exclusivos e flagrantes do trabalho de agentes da imigração, alfândega e polícia no combate ao crime nos maiores aeroportos ao redor do mundo.",
+        "description": "Notícias, prestação de serviço e entretenimento na medida certa são o mote do programa, concebido a partir do mais nobre compromisso da comunicação: informar e formar a opinião pública, sem perder de vista a opção de lazer.",
         "categories": [
-          "Reality"
+          "News"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_alerta-aeroporto_l_m.jpg",
-        "startAt": "2026-08-18T01:30:00Z",
-        "endAt": "2026-08-18T02:45:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_hoje-em-dia-1_l_m.jpg",
+        "startAt": "2026-08-18T12:50:00Z",
+        "endAt": "2026-08-18T14:30:00Z"
       },
       "programs": [
-        {
-          "title": "Cidade Alerta",
-          "subtitle": null,
-          "description": "Programa jornalístico que transmite informações com agilidade e credibilidade, oferecendo ao público uma visão diferente da notícia habitual.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_cidade-alerta-1_l_m.jpg",
-          "startAt": "2026-08-17T21:50:00Z",
-          "endAt": "2026-08-17T22:55:00Z"
-        },
-        {
-          "title": "Jornal da Record",
-          "subtitle": null,
-          "description": "Reportagens e séries especiais sobre os mais variados assuntos de interesse da população.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-record_l_m.jpg",
-          "startAt": "2026-08-17T22:55:00Z",
-          "endAt": "2026-08-18T00:00:00Z"
-        },
-        {
-          "title": "Coração de Mãe",
-          "subtitle": null,
-          "description": "Karsu vive um casamento infeliz e enfrenta uma rotina sufocante como mãe de três filhos. Sua vida muda radicalmente quando Kuzey desaparece por três anos. Ao retornar, Karsu tenta reconquistar o amor do filho, enquanto descobre a traição do marido.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_corac-o-de-m-e_l_m.jpg",
-          "startAt": "2026-08-18T00:00:00Z",
-          "endAt": "2026-08-18T01:00:00Z"
-        },
-        {
-          "title": "Reis",
-          "subtitle": null,
-          "description": "A história da nação de Israel, do momento em que o último juiz, o profeta Samuel, é usado por Deus para guiar o Seu povo, até a lamentável queda de Jerusalém, causada pelos exércitos da Babilônia.",
-          "categories": [
-            "Temporada 11 Episódio 388"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_reis-s11e388_l_m.jpg",
-          "startAt": "2026-08-18T01:00:00Z",
-          "endAt": "2026-08-18T01:30:00Z"
-        },
-        {
-          "title": "Alerta Aeroporto",
-          "subtitle": null,
-          "description": "Registros exclusivos e flagrantes do trabalho de agentes da imigração, alfândega e polícia no combate ao crime nos maiores aeroportos ao redor do mundo.",
-          "categories": [
-            "Reality"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_alerta-aeroporto_l_m.jpg",
-          "startAt": "2026-08-18T01:30:00Z",
-          "endAt": "2026-08-18T02:45:00Z"
-        },
-        {
-          "title": "Chicago Med - Atendimento de Emergência",
-          "subtitle": null,
-          "description": "A equipe de médicos, enfermeiros e funcionários do Gaffney Chicago Medical Center enfrenta desafios diários enquanto faz o que é necessário para tratar seus pacientes.",
-          "categories": [
-            "Drama"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_chicago-med-atendimento-de-emergencia_l_m.jpg",
-          "startAt": "2026-08-18T02:45:00Z",
-          "endAt": "2026-08-18T03:35:00Z"
-        },
-        {
-          "title": "Jornal da Record - 24h",
-          "subtitle": null,
-          "description": "Acompanhe o boletim informativo com as últimas notícias do Brasil e do mundo.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-record-24h_l_m.jpg",
-          "startAt": "2026-08-18T03:35:00Z",
-          "endAt": "2026-08-18T03:45:00Z"
-        },
-        {
-          "title": "Entre Linhas",
-          "subtitle": null,
-          "description": "Convidados especiais comentam assuntos relevantes sobre fé e religião.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_entre-linhas_l_m.jpg",
-          "startAt": "2026-08-18T03:45:00Z",
-          "endAt": "2026-08-18T05:00:00Z"
-        },
-        {
-          "title": "Dicas de Amor",
-          "subtitle": null,
-          "description": "Dicas relacionadas à vida sentimental são apresentadas de uma forma descontraída e espontânea.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_dicas-de-amor_l_m.jpg",
-          "startAt": "2026-08-18T05:00:00Z",
-          "endAt": "2026-08-18T05:30:00Z"
-        },
-        {
-          "title": "Palavra Amiga",
-          "subtitle": null,
-          "description": "O bispo Edir Macedo leva uma mensagem de fé para as pessoas que precisam de ajuda.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_palavra-amiga_l_m.jpg",
-          "startAt": "2026-08-18T05:30:00Z",
-          "endAt": "2026-08-18T06:30:00Z"
-        },
-        {
-          "title": "A Última Porta",
-          "subtitle": null,
-          "description": "O programa leva mensagens de esperança a pessoas com problemas que parecem não ter solução.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-ultima-porta_l_m.jpg",
-          "startAt": "2026-08-18T06:30:00Z",
-          "endAt": "2026-08-18T07:00:00Z"
-        },
-        {
-          "title": "Nosso Tempo",
-          "subtitle": null,
-          "description": "Acompanhe depoimentos com casos verídicos de pessoas que superaram seus problemas.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_nosso-tempo-1_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T07:30:00Z"
-        },
-        {
-          "title": "Corrente dos 70",
-          "subtitle": null,
-          "description": "Reuniões inteiramente dedicadas à saúde, falando sobre doenças causadas e alimentadas por um espírito, o Espírito de Enfermidade.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_corrente-dos-70_l_m.jpg",
-          "startAt": "2026-08-18T07:30:00Z",
-          "endAt": "2026-08-18T07:45:00Z"
-        },
-        {
-          "title": "Prosperidade com Deus",
-          "subtitle": null,
-          "description": "Programa produzido pela Igreja Universal do Reino de Deus, com notícias e testemunhos de fiéis.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_prosperidade-com-deus_l_m.jpg",
-          "startAt": "2026-08-18T07:45:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
         {
           "title": "Balanço Geral Manhã",
           "subtitle": null,
@@ -1832,6 +2357,175 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_cidade-alerta-1_l_m.jpg",
           "startAt": "2026-08-18T21:50:00Z",
           "endAt": "2026-08-18T22:55:00Z"
+        },
+        {
+          "title": "Jornal da Record",
+          "subtitle": null,
+          "description": "Reportagens e séries especiais sobre os mais variados assuntos de interesse da população.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-record_l_m.jpg",
+          "startAt": "2026-08-18T22:55:00Z",
+          "endAt": "2026-08-19T00:00:00Z"
+        },
+        {
+          "title": "Coração de Mãe",
+          "subtitle": null,
+          "description": "Karsu vive um casamento infeliz e enfrenta uma rotina sufocante como mãe de três filhos. Sua vida muda radicalmente quando Kuzey desaparece por três anos. Ao retornar, Karsu tenta reconquistar o amor do filho, enquanto descobre a traição do marido.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_corac-o-de-m-e_l_m.jpg",
+          "startAt": "2026-08-19T00:00:00Z",
+          "endAt": "2026-08-19T01:00:00Z"
+        },
+        {
+          "title": "Reis",
+          "subtitle": null,
+          "description": "A história da nação de Israel, do momento em que o último juiz, o profeta Samuel, é usado por Deus para guiar o Seu povo, até a lamentável queda de Jerusalém, causada pelos exércitos da Babilônia.",
+          "categories": [
+            "Temporada 11 Episódio 389"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_reis-s11e389_l_m.jpg",
+          "startAt": "2026-08-19T01:00:00Z",
+          "endAt": "2026-08-19T01:30:00Z"
+        },
+        {
+          "title": "Canta Comigo Teen",
+          "subtitle": null,
+          "description": "Jovens artistas, com idades de nove a 16 anos, prometem dar tudo de si em apresentações para levar para casa o prêmio de 200 mil reais.",
+          "categories": [
+            "Temporada 6 Episódio 9"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_canta-comigo-teen-s06e09_l_m.jpg",
+          "startAt": "2026-08-19T01:30:00Z",
+          "endAt": "2026-08-19T02:45:00Z"
+        },
+        {
+          "title": "Chicago Med - Atendimento de Emergência",
+          "subtitle": null,
+          "description": "A equipe de médicos, enfermeiros e funcionários do Gaffney Chicago Medical Center enfrenta desafios diários enquanto faz o que é necessário para tratar seus pacientes.",
+          "categories": [
+            "Drama"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_chicago-med-atendimento-de-emergencia_l_m.jpg",
+          "startAt": "2026-08-19T02:45:00Z",
+          "endAt": "2026-08-19T03:35:00Z"
+        },
+        {
+          "title": "Jornal da Record - 24h",
+          "subtitle": null,
+          "description": "Acompanhe o boletim informativo com as últimas notícias do Brasil e do mundo.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-da-record-24h_l_m.jpg",
+          "startAt": "2026-08-19T03:35:00Z",
+          "endAt": "2026-08-19T03:45:00Z"
+        },
+        {
+          "title": "Fala que Eu te Escuto",
+          "subtitle": null,
+          "description": "Pastores e bispos da Igreja Universal do Reino de Deus debatem diariamente os temas mais relevantes da atualidade a partir de uma perspectiva cristã. Os telespectadores participam do programa dando testemunhos impressionantes do poder da fé.",
+          "categories": [
+            "Talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_fala-que-eu-te-escuto-1_l_m.jpg",
+          "startAt": "2026-08-19T03:45:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
+        },
+        {
+          "title": "Dicas de Amor",
+          "subtitle": null,
+          "description": "Dicas relacionadas à vida sentimental são apresentadas de uma forma descontraída e espontânea.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_dicas-de-amor_l_m.jpg",
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T05:30:00Z"
+        },
+        {
+          "title": "Palavra Amiga",
+          "subtitle": null,
+          "description": "O bispo Edir Macedo leva uma mensagem de fé para as pessoas que precisam de ajuda.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_palavra-amiga_l_m.jpg",
+          "startAt": "2026-08-19T05:30:00Z",
+          "endAt": "2026-08-19T06:30:00Z"
+        },
+        {
+          "title": "A Última Porta",
+          "subtitle": null,
+          "description": "O programa leva mensagens de esperança a pessoas com problemas que parecem não ter solução.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-ultima-porta_l_m.jpg",
+          "startAt": "2026-08-19T06:30:00Z",
+          "endAt": "2026-08-19T07:00:00Z"
+        },
+        {
+          "title": "Nosso Tempo",
+          "subtitle": null,
+          "description": "Acompanhe depoimentos com casos verídicos de pessoas que superaram seus problemas.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_nosso-tempo-1_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T07:30:00Z"
+        },
+        {
+          "title": "Prosperidade com Deus",
+          "subtitle": null,
+          "description": "Programa produzido pela Igreja Universal do Reino de Deus, com notícias e testemunhos de fiéis.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_prosperidade-com-deus_l_m.jpg",
+          "startAt": "2026-08-19T07:30:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Balanço Geral Manhã",
+          "subtitle": null,
+          "description": "O programa apresenta reportagens exclusivas, denúncias e prestação de serviços.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_balanco-geral-manh-1_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T10:00:00Z"
         }
       ]
     },
@@ -1845,136 +2539,19 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Sensacional",
+        "title": "Bola na Rede",
         "subtitle": null,
-        "description": "As curiosidades do mundo e da vida das personalidades mais influentes do Brasil. Tudo isso de forma leve e espontânea, com muita música, dança e quadros irreverentes.",
+        "description": "O programa traz os principais assuntos esportivos, campeonatos internacionais e torneios nacionais, mostrando os melhores momentos.",
         "categories": [
-          "Variety"
+          "Sports talk"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_sensacional_l_m.jpg",
-        "startAt": "2026-08-18T01:45:00Z",
-        "endAt": "2026-08-18T03:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_bola-na-rede-1_l_m.jpg",
+        "startAt": "2026-08-18T12:30:00Z",
+        "endAt": "2026-08-18T13:30:00Z"
       },
       "programs": [
-        {
-          "title": "Brasil do Povo",
-          "subtitle": null,
-          "description": "Uma ampla cobertura dos principais acontecimentos tanto no Brasil quanto no cenário internacional. Destaca-se por suas pautas voltadas à segurança pública, prestação de serviços e outros temas que impactam diretamente o cotidiano da população.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_brasil-do-povo_l_m.jpg",
-          "startAt": "2026-08-17T21:30:00Z",
-          "endAt": "2026-08-17T22:45:00Z"
-        },
-        {
-          "title": "RedeTV! News",
-          "subtitle": null,
-          "description": "Os principais acontecimentos do Brasil e do mundo, com correspondentes internacionais e os melhores comentaristas da imprensa brasileira.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_redetv-news-1_l_m.jpg",
-          "startAt": "2026-08-17T22:45:00Z",
-          "endAt": "2026-08-17T23:30:00Z"
-        },
-        {
-          "title": "Igreja Internacional da Graça de Deus",
-          "subtitle": null,
-          "description": "Acompanhe a programação da Igreja Universal da Graça de Deus.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-internacional-da-graca-de-deus-1_l_m.jpg",
-          "startAt": "2026-08-17T23:30:00Z",
-          "endAt": "2026-08-18T00:30:00Z"
-        },
-        {
-          "title": "Rapidinhas da Fama",
-          "subtitle": null,
-          "description": "As últimas novidades do mundo dos famosos de maneira rápida e dinâmica.",
-          "categories": [
-            "Variety"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_rapidinhas-da-fama_l_m.jpg",
-          "startAt": "2026-08-18T00:30:00Z",
-          "endAt": "2026-08-18T00:40:00Z"
-        },
-        {
-          "title": "TV Fama",
-          "subtitle": null,
-          "description": "Tudo o que acontece no mundo das celebridades. As festas mais badaladas, os bastidores dos eventos exclusivos e as casas dos mais ricos e famosos.",
-          "categories": [
-            "Variety"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tv-fama-1_l_m.jpg",
-          "startAt": "2026-08-18T00:40:00Z",
-          "endAt": "2026-08-18T01:45:00Z"
-        },
-        {
-          "title": "Sensacional",
-          "subtitle": null,
-          "description": "As curiosidades do mundo e da vida das personalidades mais influentes do Brasil. Tudo isso de forma leve e espontânea, com muita música, dança e quadros irreverentes.",
-          "categories": [
-            "Variety"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sensacional_l_m.jpg",
-          "startAt": "2026-08-18T01:45:00Z",
-          "endAt": "2026-08-18T03:00:00Z"
-        },
-        {
-          "title": "Leitura Dinâmica",
-          "subtitle": null,
-          "description": "Revista eletrônica que apresenta o que foi destaque no dia e o que será manchete amanhã. Os universos da moda, cultura e estilo também são contemplados.",
-          "categories": [
-            "Newsmagazine"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_leitura-dinamica-1_l_m.jpg",
-          "startAt": "2026-08-18T03:00:00Z",
-          "endAt": "2026-08-18T03:30:00Z"
-        },
-        {
-          "title": "Madrugada Animada",
-          "subtitle": null,
-          "description": "João Kleber comanda uma atração cheia de humor, pegadinhas e esquetes divertidas.",
-          "categories": [
-            "Comedy"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_madrugada-animada_l_m.jpg",
-          "startAt": "2026-08-18T03:30:00Z",
-          "endAt": "2026-08-18T04:30:00Z"
-        },
-        {
-          "title": "Igreja da Graça no Seu Lar",
-          "subtitle": null,
-          "description": "Cultos realizados com ensinamentos bíblicos, louvor e adoração.",
-          "categories": [
-            "Religious"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-da-graca-no-seu-lar-1_l_m.jpg",
-          "startAt": "2026-08-18T06:00:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
         {
           "title": "Igreja Internacional da Graça de Deus",
           "subtitle": null,
@@ -2117,6 +2694,110 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_brasil-do-povo_l_m.jpg",
           "startAt": "2026-08-18T21:30:00Z",
           "endAt": "2026-08-18T22:45:00Z"
+        },
+        {
+          "title": "RedeTV! News",
+          "subtitle": null,
+          "description": "Os principais acontecimentos do Brasil e do mundo, com correspondentes internacionais e os melhores comentaristas da imprensa brasileira.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_redetv-news-1_l_m.jpg",
+          "startAt": "2026-08-18T22:45:00Z",
+          "endAt": "2026-08-18T23:30:00Z"
+        },
+        {
+          "title": "Igreja Internacional da Graça de Deus",
+          "subtitle": null,
+          "description": "Acompanhe a programação da Igreja Universal da Graça de Deus.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-internacional-da-graca-de-deus-1_l_m.jpg",
+          "startAt": "2026-08-18T23:30:00Z",
+          "endAt": "2026-08-19T00:30:00Z"
+        },
+        {
+          "title": "Goiás x Juventude",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
+          "categories": [
+            "Campeonato Brasileiro - Série B"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-goias-x-juventude_l_m.jpg",
+          "startAt": "2026-08-19T00:30:00Z",
+          "endAt": "2026-08-19T02:45:00Z"
+        },
+        {
+          "title": "É Notícia",
+          "subtitle": null,
+          "description": "Entrevistas com personalidades que se destacam em suas áreas de atuação, mostrando o lado público e o lado cidadão dos convidados.",
+          "categories": [
+            "Interview"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_e-noticia-1_l_m.jpg",
+          "startAt": "2026-08-19T02:45:00Z",
+          "endAt": "2026-08-19T03:30:00Z"
+        },
+        {
+          "title": "Leitura Dinâmica",
+          "subtitle": null,
+          "description": "Revista eletrônica que apresenta o que foi destaque no dia e o que será manchete amanhã. Os universos da moda, cultura e estilo também são contemplados.",
+          "categories": [
+            "Newsmagazine"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_leitura-dinamica-1_l_m.jpg",
+          "startAt": "2026-08-19T03:30:00Z",
+          "endAt": "2026-08-19T04:00:00Z"
+        },
+        {
+          "title": "Madrugada Animada",
+          "subtitle": null,
+          "description": "João Kleber comanda uma atração cheia de humor, pegadinhas e esquetes divertidas.",
+          "categories": [
+            "Comedy"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_madrugada-animada_l_m.jpg",
+          "startAt": "2026-08-19T04:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
+        },
+        {
+          "title": "Igreja da Graça no Seu Lar",
+          "subtitle": null,
+          "description": "Cultos realizados com ensinamentos bíblicos, louvor e adoração.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-da-graca-no-seu-lar-1_l_m.jpg",
+          "startAt": "2026-08-19T06:00:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Igreja Internacional da Graça de Deus",
+          "subtitle": null,
+          "description": "Acompanhe a programação da Igreja Universal da Graça de Deus.",
+          "categories": [
+            "Religious"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_igreja-internacional-da-graca-de-deus-1_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T11:30:00Z"
         }
       ]
     },
@@ -2130,147 +2811,19 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Programa do Ratinho",
+        "title": "Primeiro Impacto",
         "subtitle": null,
-        "description": "O apresentador Carlos Massa leva ao público um programa alegre e repleto de atrações. Ele recebe convidados famosos e games, comédia, participação do público e quadros únicos, como o \"Jornal Racional\", \"Gol Show\" e \"Dez ou Mil\", entre outros.",
+        "description": "Acompanhe as reportagens que trazem informações do dia a dia. Saiba o que é relevante para o cenário cotidiano por meio de análises e opiniões de colunistas.",
         "categories": [
-          "Variety"
+          "News"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_programa-do-ratinho_l_m.jpg",
-        "startAt": "2026-08-18T01:00:00Z",
-        "endAt": "2026-08-18T02:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_primeiro-impacto-1997_l_m.jpg",
+        "startAt": "2026-08-18T11:30:00Z",
+        "endAt": "2026-08-18T15:45:00Z"
       },
       "programs": [
-        {
-          "title": "SBT Cidades",
-          "subtitle": null,
-          "description": "Notícias com foco em prestação de serviços, defesa do cidadão e participação popular.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-cidades_l_m.jpg",
-          "startAt": "2026-08-17T21:15:00Z",
-          "endAt": "2026-08-17T22:45:00Z"
-        },
-        {
-          "title": "SBT Brasil",
-          "subtitle": null,
-          "description": "As principais notícias do Brasil e do mundo com análise profunda dos fatos.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-brasil_l_m.jpg",
-          "startAt": "2026-08-17T22:45:00Z",
-          "endAt": "2026-08-17T23:45:00Z"
-        },
-        {
-          "title": "A História de Joana, a Virgem",
-          "subtitle": null,
-          "description": "Joana, uma virgem, é inseminada artificialmente por engano após uma confusão na clínica. Sua vida vira de cabeça para baixo com a gravidez inesperada, especialmente quando ela se apaixona pelo pai biológico do bebê, Gabriel.",
-          "categories": [
-            "Soap"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-historia-de-joana-a-virgem_l_m.jpg",
-          "startAt": "2026-08-17T23:45:00Z",
-          "endAt": "2026-08-18T00:30:00Z"
-        },
-        {
-          "title": "Sessão +SBT",
-          "subtitle": null,
-          "description": "Para celebrar os 45 anos da emissora, o programa resgata momentos históricos do acervo do canal.",
-          "categories": [
-            "Entertainment"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sess-o-sbt_l_m.jpg",
-          "startAt": "2026-08-18T00:30:00Z",
-          "endAt": "2026-08-18T01:00:00Z"
-        },
-        {
-          "title": "Programa do Ratinho",
-          "subtitle": null,
-          "description": "O apresentador Carlos Massa leva ao público um programa alegre e repleto de atrações. Ele recebe convidados famosos e games, comédia, participação do público e quadros únicos, como o \"Jornal Racional\", \"Gol Show\" e \"Dez ou Mil\", entre outros.",
-          "categories": [
-            "Variety"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_programa-do-ratinho_l_m.jpg",
-          "startAt": "2026-08-18T01:00:00Z",
-          "endAt": "2026-08-18T02:00:00Z"
-        },
-        {
-          "title": "Galvão FC",
-          "subtitle": null,
-          "description": "Galvão Bueno comanda programa que reúne informação, análise e leveza para debater os principais assuntos do futebol, conectando o público ao universo do esporte com uma linguagem moderna e envolvente.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-galv-o-fc_l_m.jpg",
-          "startAt": "2026-08-18T02:00:00Z",
-          "endAt": "2026-08-18T03:00:00Z"
-        },
-        {
-          "title": "The Noite com Danilo Gentili",
-          "subtitle": null,
-          "description": "Talk show com alto índice de piadas por minuto, que, com muita irreverência, aborda os fatos relevantes do dia.",
-          "categories": [
-            "Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_the-noite-com-danilo-gentili_l_m.jpg",
-          "startAt": "2026-08-18T03:00:00Z",
-          "endAt": "2026-08-18T04:00:00Z"
-        },
-        {
-          "title": "Operação Mesquita",
-          "subtitle": null,
-          "description": "Descubra o lado B dos famosos, que mostram o seu cotidiano de forma curiosa e divertida por meio de entrevistas. Acompanhe ainda pessoas comuns que estão prestes a protagonizar um grande momento que pode mudar para sempre as suas vidas.",
-          "categories": [
-            "Entertainment"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_operac-o-mesquita_l_m.jpg",
-          "startAt": "2026-08-18T04:00:00Z",
-          "endAt": "2026-08-18T04:30:00Z"
-        },
-        {
-          "title": "Passe de Milhões",
-          "subtitle": null,
-          "description": "Programa de mesa-redonda voltado ao universo do futebol e dos palpites esportivos.",
-          "categories": [
-            "Special"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_passe-de-milh-es_l_m.jpg",
-          "startAt": "2026-08-18T04:30:00Z",
-          "endAt": "2026-08-18T05:00:00Z"
-        },
-        {
-          "title": "SBT Notícias",
-          "subtitle": null,
-          "description": "Os principais assuntos e notícias do Brasil e do mundo e tudo que ganhou repercussão durante o dia.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-noticias_l_m.jpg",
-          "startAt": "2026-08-18T05:00:00Z",
-          "endAt": "2026-08-18T06:00:00Z"
-        },
         {
           "title": "Se Liga Brasil",
           "subtitle": null,
@@ -2361,6 +2914,110 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-cidades_l_m.jpg",
           "startAt": "2026-08-18T21:00:00Z",
           "endAt": "2026-08-18T22:45:00Z"
+        },
+        {
+          "title": "SBT Brasil",
+          "subtitle": null,
+          "description": "As principais notícias do Brasil e do mundo com análise profunda dos fatos.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-brasil_l_m.jpg",
+          "startAt": "2026-08-18T22:45:00Z",
+          "endAt": "2026-08-18T23:45:00Z"
+        },
+        {
+          "title": "A História de Joana, a Virgem",
+          "subtitle": null,
+          "description": "Joana, uma virgem, é inseminada artificialmente por engano após uma confusão na clínica. Sua vida vira de cabeça para baixo com a gravidez inesperada, especialmente quando ela se apaixona pelo pai biológico do bebê, Gabriel.",
+          "categories": [
+            "Soap"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_a-historia-de-joana-a-virgem_l_m.jpg",
+          "startAt": "2026-08-18T23:45:00Z",
+          "endAt": "2026-08-19T00:15:00Z"
+        },
+        {
+          "title": "São Paulo x Bolívar",
+          "subtitle": null,
+          "description": "Toda a disputa da segunda mais importante competição masculina entre clubes da América do Sul.",
+          "categories": [
+            "Copa Sul-Americana"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-s-o-paulo-x-bolivar_l_m.jpg",
+          "startAt": "2026-08-19T00:15:00Z",
+          "endAt": "2026-08-19T02:15:00Z"
+        },
+        {
+          "title": "Programa do Ratinho",
+          "subtitle": null,
+          "description": "O apresentador Carlos Massa leva ao público um programa alegre e repleto de atrações. Ele recebe convidados famosos e games, comédia, participação do público e quadros únicos, como o \"Jornal Racional\", \"Gol Show\" e \"Dez ou Mil\", entre outros.",
+          "categories": [
+            "Variety"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_programa-do-ratinho_l_m.jpg",
+          "startAt": "2026-08-19T02:15:00Z",
+          "endAt": "2026-08-19T03:15:00Z"
+        },
+        {
+          "title": "The Noite com Danilo Gentili",
+          "subtitle": null,
+          "description": "Talk show com alto índice de piadas por minuto, que, com muita irreverência, aborda os fatos relevantes do dia.",
+          "categories": [
+            "Talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_the-noite-com-danilo-gentili_l_m.jpg",
+          "startAt": "2026-08-19T03:15:00Z",
+          "endAt": "2026-08-19T04:15:00Z"
+        },
+        {
+          "title": "Operação Mesquita",
+          "subtitle": null,
+          "description": "Descubra o lado B dos famosos, que mostram o seu cotidiano de forma curiosa e divertida por meio de entrevistas. Acompanhe ainda pessoas comuns que estão prestes a protagonizar um grande momento que pode mudar para sempre as suas vidas.",
+          "categories": [
+            "Entertainment"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_operac-o-mesquita_l_m.jpg",
+          "startAt": "2026-08-19T04:15:00Z",
+          "endAt": "2026-08-19T04:45:00Z"
+        },
+        {
+          "title": "SBT Notícias",
+          "subtitle": null,
+          "description": "Os principais assuntos e notícias do Brasil e do mundo e tudo que ganhou repercussão durante o dia.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sbt-noticias_l_m.jpg",
+          "startAt": "2026-08-19T04:45:00Z",
+          "endAt": "2026-08-19T05:45:00Z"
+        },
+        {
+          "title": "Se Liga Brasil",
+          "subtitle": null,
+          "description": "Um telejornal que traz as principais notícias do Brasil, notícias policiais e os temas que repercutem nas redes sociais.",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_se-liga-brasil_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T11:30:00Z"
         }
       ]
     },
@@ -2374,152 +3031,17 @@
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Troca de Passes",
+        "title": "Redação SporTV",
         "subtitle": null,
-        "description": "O dia a dia do esporte e as principais notícias pelo país.",
+        "description": "Um programa de debate sobre as notícias esportivas com alguns dos principais cronistas do esporte brasileiro.",
         "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-troca-de-passes_l_m.jpg",
-        "startAt": "2026-08-18T01:00:00Z",
-        "endAt": "2026-08-18T02:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-redac-o-sportv_l_m.jpg",
+        "startAt": "2026-08-18T13:00:00Z",
+        "endAt": "2026-08-18T15:15:00Z"
       },
       "programs": [
-        {
-          "title": "Tá na Área",
-          "subtitle": null,
-          "description": "Os principais assuntos esportivos com uma dose de entretenimento e bom humor. As notícias mais quentes do dia são informadas com leveza e dividem espaço com esquetes, entrevistas, imitações e muita risada.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-ta-na-area_l_m.jpg",
-          "startAt": "2026-08-17T21:30:00Z",
-          "endAt": "2026-08-17T22:30:00Z"
-        },
-        {
-          "title": "Internacional x Remo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
-          "startAt": "2026-08-17T22:30:00Z",
-          "endAt": "2026-08-18T01:00:00Z"
-        },
-        {
-          "title": "Troca de Passes",
-          "subtitle": null,
-          "description": "O dia a dia do esporte e as principais notícias pelo país.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-troca-de-passes_l_m.jpg",
-          "startAt": "2026-08-18T01:00:00Z",
-          "endAt": "2026-08-18T02:30:00Z"
-        },
-        {
-          "title": "Panela Sportv",
-          "subtitle": null,
-          "description": "Fred Bruno e André Balada recebem convidados para um bate-papo descontraído sobre os principais acontecimentos da rodada esportiva, com muita \"resenha\", polêmicas e quadros especiais.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-panela-sportv_l_m.jpg",
-          "startAt": "2026-08-18T02:30:00Z",
-          "endAt": "2026-08-18T04:30:00Z"
-        },
-        {
-          "title": "Giro da Rodada",
-          "subtitle": null,
-          "description": "Destaques das principais competições de futebol masculino e feminino pelo Brasil.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-giro-da-rodada_l_m.jpg",
-          "startAt": "2026-08-18T04:30:00Z",
-          "endAt": "2026-08-18T05:30:00Z"
-        },
-        {
-          "title": "Internacional x Remo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
-          "startAt": "2026-08-18T05:30:00Z",
-          "endAt": "2026-08-18T06:30:00Z"
-        },
-        {
-          "title": "Vitória x Botafogo",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-botafogo-1_l_m.jpg",
-          "startAt": "2026-08-18T06:30:00Z",
-          "endAt": "2026-08-18T07:00:00Z"
-        },
-        {
-          "title": "Chapecoense x Bahia",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T07:30:00Z"
-        },
-        {
-          "title": "Atlético-MG x Grêmio",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
-          "startAt": "2026-08-18T07:30:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
-        {
-          "title": "Fluminense x Palmeiras",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-palmeiras-2_l_m.jpg",
-          "startAt": "2026-08-18T08:00:00Z",
-          "endAt": "2026-08-18T08:30:00Z"
-        },
-        {
-          "title": "Athletico-PR x Bragantino",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-athletico-pr-x-bragantino_l_m.jpg",
-          "startAt": "2026-08-18T08:30:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
         {
           "title": "Botafogo x Flamengo",
           "subtitle": null,
@@ -2657,383 +3179,147 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-ta-na-area_l_m.jpg",
           "startAt": "2026-08-18T21:30:00Z",
           "endAt": "2026-08-19T00:00:00Z"
-        }
-      ]
-    },
-    {
-      "id": "mitv-br:BandNews.br",
-      "name": "Band News",
-      "logoUrl": "https://i.ibb.co/0jVZBFp/u8ya-iw-R-400x400.jpg",
-      "provider": "Mi.tv Brazil guide",
-      "providerKey": "mitv-br",
-      "sources": [
-        "data/normalized/guide-BR-mi.tv_br.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
-        {
-          "title": "Jornal Terraviva",
-          "subtitle": null,
-          "description": "Um telejornal dedicado ao agronegócio brasileiro, apresentando os principais fatos do dia do setor agropecuário, as notícias atualizadas, a previsão do tempo, boletins ao vivo dos principais eventos e leilões que acontecem no país.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-terraviva_l_m.jpg",
-          "startAt": "2026-08-18T06:00:00Z",
-          "endAt": "2026-08-18T06:30:00Z"
         },
         {
-          "title": "Aqui Tem Vaga",
+          "title": "Náutico x Ceará",
           "subtitle": null,
-          "description": "Convidados especiais falam sobre carreira e mercado de trabalho, no intuito de informar, orientar e debater os temas de uma forma mais próxima ao público.",
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
           "categories": [
-            "Self improvement"
+            "Campeonato Brasileiro - Série B"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_aqui-tem-vaga_l_m.jpg",
-          "startAt": "2026-08-18T06:30:00Z",
-          "endAt": "2026-08-18T07:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-nautico-x-ceara-1_l_m.jpg",
+          "startAt": "2026-08-19T00:00:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
         },
         {
-          "title": "1º Jornal",
+          "title": "Troca de Passes",
           "subtitle": null,
-          "description": "Acompanhe as principais notícias do Brasil e do mundo, com agilidade e prestação de serviços, deixando o telespectador bem informado logo nas primeiras horas da manhã.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_1-jornal_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
-        {
-          "title": "Jornal BandNews",
-          "subtitle": null,
-          "description": "As principais notícias do Brasil e do mundo, trânsito, previsão do tempo e prestação de serviço.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-bandnews_l_m.jpg",
-          "startAt": "2026-08-18T09:00:00Z",
-          "endAt": "2026-08-18T11:00:00Z"
-        },
-        {
-          "title": "Jornal Gente",
-          "subtitle": null,
-          "description": "As principais notícias do Brasil e do mundo, com fatos importantes para se informar a cada dia.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_jornal-gente_l_m.jpg",
-          "startAt": "2026-08-18T11:00:00Z",
-          "endAt": "2026-08-18T12:30:00Z"
-        },
-        {
-          "title": "Radar BandNews",
-          "subtitle": null,
-          "description": "As notícias mais importantes do dia que estão no radar do brasileiro.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_radar-bandnews_l_m.jpg",
-          "startAt": "2026-08-18T12:30:00Z",
-          "endAt": "2026-08-18T13:00:00Z"
-        },
-        {
-          "title": "Manhã BandNews",
-          "subtitle": null,
-          "description": "A atualização das notícias da manhã e tudo o que é importante para se manter antenado ao longo do dia.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_manh-bandnews-1_l_m.jpg",
-          "startAt": "2026-08-18T13:00:00Z",
-          "endAt": "2026-08-18T15:00:00Z"
-        },
-        {
-          "title": "BandNews no Meio do Dia",
-          "subtitle": null,
-          "description": "Fique por dentro dos fatos mais importantes com participação de entrevistados e comentaristas.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bandnews-no-meio-do-dia-1_l_m.jpg",
-          "startAt": "2026-08-18T15:00:00Z",
-          "endAt": "2026-08-18T17:00:00Z"
-        },
-        {
-          "title": "Tarde BandNews",
-          "subtitle": null,
-          "description": "As principais notícias do Brasil e do mundo. Coberturas ao vivo e a participação de repórteres espalhados por todo o país e pelo exterior.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_tarde-bandnews-1_l_m.jpg",
-          "startAt": "2026-08-18T17:00:00Z",
-          "endAt": "2026-08-18T19:00:00Z"
-        },
-        {
-          "title": "Entre Nós",
-          "subtitle": null,
-          "description": "Atração jornalística com notícias de destaque e com formato inovador, transmitida simultaneamente de dois estúdios diferentes, um da rádio e um de TV.",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_entre-nos-2016_l_m.jpg",
-          "startAt": "2026-08-18T19:00:00Z",
-          "endAt": "2026-08-18T20:00:00Z"
-        },
-        {
-          "title": "Expresso BandNews",
-          "subtitle": null,
-          "description": "As principais notícias do dia de forma rápida e dinâmica com a credibilidade da BandNews TV.",
-          "categories": [
-            "Special"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_expresso-bandnews-1_l_m.jpg",
-          "startAt": "2026-08-18T20:00:00Z",
-          "endAt": "2026-08-18T21:00:00Z"
-        },
-        {
-          "title": "O É da Coisa",
-          "subtitle": null,
-          "description": "O jornalista Reinaldo Azevedo comenta principais notícias do momento com opiniões, polêmica e motivação para o pensamento a respeito de acontecimentos e destaques no Brasil e no mundo.",
-          "categories": [
-            "Politics"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_o-e-da-coisa_l_m.jpg",
-          "startAt": "2026-08-18T21:00:00Z",
-          "endAt": "2026-08-18T22:30:00Z"
-        }
-      ]
-    },
-    {
-      "id": "mitv-br:BandSports.br",
-      "name": "BandSports",
-      "logoUrl": "https://i.imgur.com/EuPvzJe.png",
-      "provider": "Mi.tv Brazil guide",
-      "providerKey": "mitv-br",
-      "sources": [
-        "data/normalized/guide-BR-mi.tv_br.xml"
-      ],
-      "currentProgram": null,
-      "programs": [
-        {
-          "title": "Depois do Jogo",
-          "subtitle": null,
-          "description": "Gols da rodada, análise dos resultados e discussões das polêmicas do mundo da bola.",
+          "description": "O dia a dia do esporte e as principais notícias pelo país.",
           "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-depois-do-jogo_l_m.jpg",
-          "startAt": "2026-08-18T05:45:00Z",
-          "endAt": "2026-08-18T06:45:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-troca-de-passes_l_m.jpg",
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T04:00:00Z"
         },
         {
-          "title": "Baltika x Spartak Moscou",
+          "title": "Botafogo x Flamengo",
           "subtitle": null,
-          "description": "Acompanhe as emoções da elite do futebol masculino da Rússia.",
+          "description": "Todas as emoções da principal competição nacional de futebol masculino com equipes sub-17.",
           "categories": [
-            "Campeonato Russo"
+            "Campeonato Brasileiro Sub-17"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-baltika-x-spartak-moscou_l_m.jpg",
-          "startAt": "2026-08-18T06:45:00Z",
-          "endAt": "2026-08-18T08:45:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-botafogo-x-flamengo-6_l_m.jpg",
+          "startAt": "2026-08-19T04:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
         },
         {
-          "title": "Africa Eco Race",
+          "title": "Náutico x Ceará",
           "subtitle": null,
-          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
-          "startAt": "2026-08-18T08:45:00Z",
-          "endAt": "2026-08-18T09:00:00Z"
-        },
-        {
-          "title": "Africa Eco Race",
-          "subtitle": null,
-          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
-          "startAt": "2026-08-18T09:00:00Z",
-          "endAt": "2026-08-18T09:15:00Z"
-        },
-        {
-          "title": "MXGP: Suécia - Corrida 2",
-          "subtitle": null,
-          "description": "Toda a disputa da principal competição de motocross do mundo, organizada pela Federação Internacional de Motociclismo, a FIM, com etapas por todo o planeta.",
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
           "categories": [
-            "Mundial de Motocross"
+            "Campeonato Brasileiro - Série B"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-mxgp-suecia-corrida-2_l_m.jpg",
-          "startAt": "2026-08-18T09:15:00Z",
-          "endAt": "2026-08-18T10:15:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-nautico-x-ceara-1_l_m.jpg",
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T06:00:00Z"
         },
         {
-          "title": "Oléé S.A.",
+          "title": "Chapecoense x Bahia",
           "subtitle": null,
-          "description": "Acompanhe uma discussão sobre o que acontece fora das disputas esportivas. Veja tudo sobre as modalidades por meio da ótica dos negócios e do nicho econômico.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bus-financial-olee-s-a_l_m.jpg",
-          "startAt": "2026-08-18T10:15:00Z",
-          "endAt": "2026-08-18T10:30:00Z"
-        },
-        {
-          "title": "Depois do Jogo",
-          "subtitle": null,
-          "description": "Gols da rodada, análise dos resultados e discussões das polêmicas do mundo da bola.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-depois-do-jogo_l_m.jpg",
-          "startAt": "2026-08-18T10:30:00Z",
-          "endAt": "2026-08-18T11:30:00Z"
-        },
-        {
-          "title": "BandSports News",
-          "subtitle": null,
-          "description": "Acompanhe as notícias esportivas mais relevantes no Brasil e no mundo.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-bandsports-news_l_m.jpg",
-          "startAt": "2026-08-18T11:30:00Z",
-          "endAt": "2026-08-18T12:00:00Z"
-        },
-        {
-          "title": "Tempo Técnico",
-          "subtitle": null,
-          "description": "O jornalista Elia Júnior, juntamente com o comentarista Jorge Nicola e o ex-árbitro Sálvio Spinola, traz análises táticas, debates e entrevistas com os principais técnicos do futebol brasileiro.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-tempo-tecnico_l_m.jpg",
-          "startAt": "2026-08-18T12:00:00Z",
-          "endAt": "2026-08-18T13:30:00Z"
-        },
-        {
-          "title": "Africa Eco Race",
-          "subtitle": null,
-          "description": "Aventureiros atravessam desertos e regiões selvagens da África em um rali extenuante de Marrocos a Dakar. A prova testa a resistência e a navegação dos participantes em um percurso desafiador pelo continente.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-africa-eco-race_l_m.jpg",
-          "startAt": "2026-08-18T13:30:00Z",
-          "endAt": "2026-08-18T13:45:00Z"
-        },
-        {
-          "title": "Esporte Total",
-          "subtitle": null,
-          "description": "Confira as notícias locais do mundo esportivo e os destaques do futebol goiano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-total_l_m.jpg",
-          "startAt": "2026-08-18T13:45:00Z",
-          "endAt": "2026-08-18T14:45:00Z"
-        },
-        {
-          "title": "Oléé S.A.",
-          "subtitle": null,
-          "description": "Acompanhe uma discussão sobre o que acontece fora das disputas esportivas. Veja tudo sobre as modalidades por meio da ótica dos negócios e do nicho econômico.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bus-financial-olee-s-a_l_m.jpg",
-          "startAt": "2026-08-18T14:45:00Z",
-          "endAt": "2026-08-18T15:00:00Z"
-        },
-        {
-          "title": "G4",
-          "subtitle": null,
-          "description": "Os principais assuntos do futebol são debatidos por especialistas no assunto.",
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
           "categories": [
-            "Sports talk"
+            "Campeonato Brasileiro"
           ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_g4_l_m.jpg",
-          "startAt": "2026-08-18T15:00:00Z",
-          "endAt": "2026-08-18T17:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-chapecoense-x-bahia_l_m.jpg",
+          "startAt": "2026-08-19T06:00:00Z",
+          "endAt": "2026-08-19T06:30:00Z"
         },
         {
-          "title": "Sala do Esporte",
+          "title": "Atlético-MG x Grêmio",
           "subtitle": null,
-          "description": "Veja tudo o que aconteceu em rodadas esportivas mundo afora, de maneira descontraída e bem-humorada.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sala-do-esporte_l_m.jpg",
-          "startAt": "2026-08-18T17:00:00Z",
-          "endAt": "2026-08-18T19:00:00Z"
-        },
-        {
-          "title": "SailGP",
-          "subtitle": null,
-          "description": "Melhores momentos e destaques da competição mundial de vela envolvendo catamarãs F50.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sailing-sailgp-1_l_m.jpg",
-          "startAt": "2026-08-18T19:00:00Z",
-          "endAt": "2026-08-18T20:00:00Z"
-        },
-        {
-          "title": "Os Donos da Bola",
-          "subtitle": null,
-          "description": "Acompanhe o programa de debate sobre o mundo do futebol mais bem-humorado da televisão.",
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
           "categories": [
-            "Soccer"
+            "Campeonato Brasileiro"
           ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_os-donos-da-bola_l_m.jpg",
-          "startAt": "2026-08-18T20:00:00Z",
-          "endAt": "2026-08-18T21:00:00Z"
-        },
-        {
-          "title": "Bola Rolando",
-          "subtitle": null,
-          "description": "As notícias do futebol no Brasil e no mundo, com muita análise e debate.",
-          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-bola-rolando_l_m.jpg",
-          "startAt": "2026-08-18T21:00:00Z",
-          "endAt": "2026-08-18T23:00:00Z"
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-atletico-mg-x-gremio-3_l_m.jpg",
+          "startAt": "2026-08-19T06:30:00Z",
+          "endAt": "2026-08-19T07:00:00Z"
+        },
+        {
+          "title": "Vasco x Santos",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vasco-x-santos-1_l_m.jpg",
+          "startAt": "2026-08-19T07:00:00Z",
+          "endAt": "2026-08-19T07:30:00Z"
+        },
+        {
+          "title": "Internacional x Remo",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-internacional-x-remo_l_m.jpg",
+          "startAt": "2026-08-19T07:30:00Z",
+          "endAt": "2026-08-19T08:00:00Z"
+        },
+        {
+          "title": "Fluminense x Palmeiras",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-fluminense-x-palmeiras-2_l_m.jpg",
+          "startAt": "2026-08-19T08:00:00Z",
+          "endAt": "2026-08-19T08:30:00Z"
+        },
+        {
+          "title": "Athletico-PR x Bragantino",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
+          "categories": [
+            "Campeonato Brasileiro"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-athletico-pr-x-bragantino_l_m.jpg",
+          "startAt": "2026-08-19T08:30:00Z",
+          "endAt": "2026-08-19T09:00:00Z"
+        },
+        {
+          "title": "Náutico x Ceará",
+          "subtitle": null,
+          "description": "Vinte equipes disputam, em turno e returno, a segunda divisão do futebol brasileiro masculino.",
+          "categories": [
+            "Campeonato Brasileiro - Série B"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-nautico-x-ceara-1_l_m.jpg",
+          "startAt": "2026-08-19T09:00:00Z",
+          "endAt": "2026-08-19T10:00:00Z"
         }
       ]
     },
@@ -3046,58 +3332,20 @@
       "sources": [
         "data/normalized/guide-BR-mi.tv_br.xml"
       ],
-      "currentProgram": null,
+      "currentProgram": {
+        "title": "Décima Etapa - Mônaco",
+        "subtitle": null,
+        "description": "Os principais nomes do atletismo mundial se reúnem em uma série anual de competições disputada em diversas etapas pelo planeta.",
+        "categories": [
+          "Diamond League"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_track-field-decima-etapa-monaco_l_m.jpg",
+        "startAt": "2026-08-18T12:00:00Z",
+        "endAt": "2026-08-18T14:10:00Z"
+      },
       "programs": [
-        {
-          "title": "Décima Primeira Etapa - Londres, Inglaterra",
-          "subtitle": null,
-          "description": "Os principais nomes do atletismo mundial se reúnem em uma série anual de competições disputada em diversas etapas pelo planeta.",
-          "categories": [
-            "Diamond League"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_track-field-decima-primeira-etapa-londres-inglaterra_l_m.jpg",
-          "startAt": "2026-08-17T20:25:00Z",
-          "endAt": "2026-08-17T22:30:00Z"
-        },
-        {
-          "title": "Brasil x Holanda",
-          "subtitle": null,
-          "description": "Nona edição do mundial, realizado no Centro de Treinamento Paralímpico Brasileiro, em São Paulo.",
-          "categories": [
-            "Mundial de Rugby em Cadeira de Rodas 2026"
-          ],
-          "sportType": "Rugby",
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/fallback_sport_l_m.jpg",
-          "startAt": "2026-08-17T22:30:00Z",
-          "endAt": "2026-08-18T00:30:00Z"
-        },
-        {
-          "title": "Final",
-          "subtitle": null,
-          "description": "Edição número 42 do Mundial de Ginástica Rítmica. Do Festhalle, em Frankfurt, Alemanha.",
-          "categories": [
-            "Mundial de Ginástica Rítmica 2026"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_gymnastics-final-1_l_m.jpg",
-          "startAt": "2026-08-18T00:30:00Z",
-          "endAt": "2026-08-18T01:30:00Z"
-        },
-        {
-          "title": "Hello LA",
-          "subtitle": null,
-          "description": "Os principais acontecimentos do ciclo das modalidades olímpicas até os Jogos de Los Angeles, em 2028. Entrevistas, atualidades, termômetro de competições e informações de diversos esportes, com participação de atletas.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_olympics-hello-la_l_m.jpg",
-          "startAt": "2026-08-18T07:00:00Z",
-          "endAt": "2026-08-18T08:00:00Z"
-        },
         {
           "title": "Osasco x Pinheiros",
           "subtitle": null,
@@ -3223,6 +3471,104 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_skate-pra-sempre-s01e01-vertical_l_m.jpg",
           "startAt": "2026-08-18T21:50:00Z",
           "endAt": "2026-08-18T22:30:00Z"
+        },
+        {
+          "title": "Brasil x Canadá",
+          "subtitle": null,
+          "description": "Nona edição do mundial, realizado no Centro de Treinamento Paralímpico Brasileiro, em São Paulo.",
+          "categories": [
+            "Mundial de Rugby em Cadeira de Rodas 2026"
+          ],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/fallback_sport_l_m.jpg",
+          "startAt": "2026-08-18T22:30:00Z",
+          "endAt": "2026-08-19T00:30:00Z"
+        },
+        {
+          "title": "Especial Esportes Paralímpicos",
+          "subtitle": null,
+          "description": "Conheça as histórias de grandes lendas que marcam o mundo dos esportes paralímpicos pelo mundo. Enhamed Enhamed, da natação, e Ibrahim Hamadtou, do tênis de mesa, são dois exemplos de superação que venceram diversas batalhas por suas vidas.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_special-especial-esportes-paralimpicos_l_m.jpg",
+          "startAt": "2026-08-19T00:30:00Z",
+          "endAt": "2026-08-19T01:30:00Z"
+        },
+        {
+          "title": "Hello LA",
+          "subtitle": null,
+          "description": "Os principais acontecimentos do ciclo das modalidades olímpicas até os Jogos de Los Angeles, em 2028. Entrevistas, atualidades, termômetro de competições e informações de diversos esportes, com participação de atletas.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_olympics-hello-la_l_m.jpg",
+          "startAt": "2026-08-19T01:30:00Z",
+          "endAt": "2026-08-19T02:30:00Z"
+        },
+        {
+          "title": "Lendas Olímpicas",
+          "subtitle": null,
+          "description": "Após ganhar a primeira medalha de ouro feminina no vôlei de praia, Jackie Silva está concentrada em ajudar a próxima geração.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_none-lendas-olimpicas_l_m.jpg",
+          "startAt": "2026-08-19T02:30:00Z",
+          "endAt": "2026-08-19T03:00:00Z"
+        },
+        {
+          "title": "Malmö, Suécia: Segunda Fase - William Bergenblock (SUE) x Hugo Calderano (BRA)",
+          "subtitle": null,
+          "description": "Cobertura da maior competição de tênis de mesa da temporada, com prêmio de três milhões de dólares.",
+          "categories": [
+            "Grand Smash de Tênis de Mesa"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_table-tennis-malmo-suecia-segunda-fase-william-bergenblock-sue-x-hugo-calderano-bra_l_m.jpg",
+          "startAt": "2026-08-19T03:00:00Z",
+          "endAt": "2026-08-19T04:00:00Z"
+        },
+        {
+          "title": "Yokohama, Japão - Final",
+          "subtitle": null,
+          "description": "Circuito que reúne os 32 melhores mesa-tenistas do mundo em seis torneios pela Ásia e Europa.",
+          "categories": [
+            "WTT Champions de Tênis de Mesa"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_table-tennis-yokohama-jap-o-final_l_m.jpg",
+          "startAt": "2026-08-19T04:00:00Z",
+          "endAt": "2026-08-19T05:00:00Z"
+        },
+        {
+          "title": "Yokohama, Japão - Final",
+          "subtitle": null,
+          "description": "Circuito que reúne os 32 melhores mesa-tenistas do mundo em seis torneios pela Ásia e Europa.",
+          "categories": [
+            "WTT Champions de Tênis de Mesa"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_table-tennis-yokohama-jap-o-final_l_m.jpg",
+          "startAt": "2026-08-19T05:00:00Z",
+          "endAt": "2026-08-19T06:00:00Z"
+        },
+        {
+          "title": "Final",
+          "subtitle": null,
+          "description": "Edição número 42 do Mundial de Ginástica Rítmica. Do Festhalle, em Frankfurt, Alemanha.",
+          "categories": [
+            "Mundial de Ginástica Rítmica 2026"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_gymnastics-final-1_l_m.jpg",
+          "startAt": "2026-08-19T06:00:00Z",
+          "endAt": "2026-08-19T12:30:00Z"
         }
       ]
     }
