@@ -1,7 +1,7 @@
 {
   "country": "US",
   "countryName": "United States",
-  "generatedAt": "2026-09-03T04:22:39.546867Z",
+  "generatedAt": "2026-09-03T16:28:00.637784Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -10,68 +10,8 @@
     "data/normalized/guide-premium-US-tvguide.com.xml",
     "data/normalized/guide-premium-US-mls-apple.xml"
   ],
-  "channelCount": 10,
+  "channelCount": 9,
   "channels": [
-    {
-      "id": "MLSSeasonPass.us",
-      "name": "MLS Season Pass",
-      "logoUrl": "https://images.mlssoccer.com/image/private/w_250,h_250,c_thumb,g_auto,q_auto,f_png/mls/snffj82ru8ziiotyvipr",
-      "provider": "MLS Apple TV guide",
-      "providerKey": "premium-mls-apple",
-      "sources": [
-        "data/normalized/guide-premium-US-mls-apple.xml"
-      ],
-      "currentProgram": {
-        "title": "Club América vs Club de Fútbol Monterrey Rayados, A.C.",
-        "subtitle": "Leagues Cup 2026",
-        "description": "Leagues Cup 2026 · Dignity Health Sports Park, Carson, CA · Watch on Apple TV: https://tv.apple.com/us/sporting-event/tbd-vs-tbd/umc.cse.4ad10ziw9vfy6vtbdt4nhgt3p?ctx_brand=tvs.sbd.7000 · Broadcasters: Apple TV, UniMás, TUDN",
-        "categories": [
-          "Sports",
-          "Soccer",
-          "MLS",
-          "Apple TV"
-        ],
-        "sportType": "Football",
-        "competition": "MLS",
-        "imageUrl": "https://images.mlssoccer.com/image/upload/w_400,h_400,c_fit,q_auto,f_png/v1771948464/assets/lc/logos/clubs/liga-mx/Logo_ClubAmerica_Amarillo_4x_1_lyappg.png",
-        "startAt": "2026-09-03T03:30:00Z",
-        "endAt": "2026-09-03T06:00:00Z"
-      },
-      "programs": [
-        {
-          "title": "Toluca FC vs Club León",
-          "subtitle": "Leagues Cup 2026",
-          "description": "Leagues Cup 2026 · Shell Energy Stadium, Houston, TX · Watch on Apple TV: https://tv.apple.com/us/sporting-event/tbd-vs-tbd/umc.cse.6r48p9hr9sfrc9y4j2h9nkofn?ctx_brand=tvs.sbd.7000 · Broadcasters: Apple TV, ImagenTV",
-          "categories": [
-            "Sports",
-            "Soccer",
-            "MLS",
-            "Apple TV"
-          ],
-          "sportType": "Football",
-          "competition": "MLS",
-          "imageUrl": "https://images.mlssoccer.com/image/upload/w_400,h_400,c_fit,q_auto,f_png/v1631671179/assets/competitions/liga-mx/toluca-480.png",
-          "startAt": "2026-09-03T01:00:00Z",
-          "endAt": "2026-09-03T03:30:00Z"
-        },
-        {
-          "title": "Club América vs Club de Fútbol Monterrey Rayados, A.C.",
-          "subtitle": "Leagues Cup 2026",
-          "description": "Leagues Cup 2026 · Dignity Health Sports Park, Carson, CA · Watch on Apple TV: https://tv.apple.com/us/sporting-event/tbd-vs-tbd/umc.cse.4ad10ziw9vfy6vtbdt4nhgt3p?ctx_brand=tvs.sbd.7000 · Broadcasters: Apple TV, UniMás, TUDN",
-          "categories": [
-            "Sports",
-            "Soccer",
-            "MLS",
-            "Apple TV"
-          ],
-          "sportType": "Football",
-          "competition": "MLS",
-          "imageUrl": "https://images.mlssoccer.com/image/upload/w_400,h_400,c_fit,q_auto,f_png/v1771948464/assets/lc/logos/clubs/liga-mx/Logo_ClubAmerica_Amarillo_4x_1_lyappg.png",
-          "startAt": "2026-09-03T03:30:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        }
-      ]
-    },
     {
       "id": "FoxSports1.us",
       "name": "FOX Sports 1",
@@ -82,129 +22,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "Women's College Volleyball",
+        "title": "The Herd with Colin Cowherd",
         "subtitle": null,
-        "description": "Auburn Tigers at Minnesota Golden Gophers from Maturi Pavilion",
+        "description": "Breaking down the biggest sports news of the day along with various unique segments that help the host present his opinions on sports; players, coaches and celebrities are interviewed and discuss tren",
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T03:30:00Z",
-        "endAt": "2026-09-03T05:30:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T19:00:00Z"
       },
       "programs": [
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "Florida Gators at Wisconsin Badgers from Wisconsin Field House",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T00:00:00Z",
-          "endAt": "2026-09-03T02:00:00Z"
-        },
-        {
-          "title": "The Clay Travis Show",
-          "subtitle": null,
-          "description": "Clay Travis provides his unique perspective on a variety of topics, from sports to politics and entertainment, breaking down the latest stories making headlines, previewing upcoming marquee events and",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:00:00Z",
-          "endAt": "2026-09-03T02:30:00Z"
-        },
-        {
-          "title": "College Football",
-          "subtitle": null,
-          "description": "Memphis Tigers at UNLV Rebels from Allegiant Stadium",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:30:00Z",
-          "endAt": "2026-09-03T03:30:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "Auburn Tigers at Minnesota Golden Gophers from Maturi Pavilion",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:30:00Z",
-          "endAt": "2026-09-03T05:30:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "Florida Gators at Wisconsin Badgers from Wisconsin Field House",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:30:00Z",
-          "endAt": "2026-09-03T07:30:00Z"
-        },
-        {
-          "title": "The Clay Travis Show",
-          "subtitle": null,
-          "description": "Clay Travis provides his unique perspective on a variety of topics, from sports to politics and entertainment, breaking down the latest stories making headlines, previewing upcoming marquee events and",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:30:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "TMZ Sports",
-          "subtitle": null,
-          "description": "Covering gossip, scandal and the everyday lives of athletes in professional and college sports, the crew comically highlights exclusive footage of the superstars spotted around Hollywood, New York Cit",
-          "categories": [
-            "News"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T08:30:00Z"
-        },
-        {
-          "title": "Indycar NICS Racing",
-          "subtitle": null,
-          "description": "from Milwaukee Mile",
-          "categories": [],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:30:00Z",
-          "endAt": "2026-09-03T10:30:00Z"
-        },
-        {
-          "title": "The Clay Travis Show",
-          "subtitle": null,
-          "description": "Clay Travis provides his unique perspective on a variety of topics, from sports to politics and entertainment, breaking down the latest stories making headlines, previewing upcoming marquee events and",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:30:00Z",
-          "endAt": "2026-09-03T11:00:00Z"
-        },
-        {
-          "title": "First Things First",
-          "subtitle": null,
-          "description": "Media personalities offer their views and opinions on the day's most intriguing storylines across the world of sports, including debates on the latest issues, analysis of player performances, and disc",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T11:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "Wake Up Barstool",
           "subtitle": null,
@@ -314,6 +142,107 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T02:00:00Z"
+        },
+        {
+          "title": "The Joel Klatt Show: A College Football on FOX Podcast",
+          "subtitle": null,
+          "description": "Former Colorado quarterback Joel Klatt breaks down the latest around the college football landscape, including his thoughts on the stories making headlines, guest interviews with the biggest names in",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:00:00Z",
+          "endAt": "2026-09-04T02:30:00Z"
+        },
+        {
+          "title": "Big Noon Kickoff Presents Bear Bets",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:30:00Z",
+          "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "SPEED with Harvick and Buxton",
+          "subtitle": null,
+          "description": "Kevin Harvick and Will Buxton celebrate everything motorsports, recapping some of the recent races from around the world to focus on the drivers making a name for themselves and preview the upcoming s",
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T03:30:00Z"
+        },
+        {
+          "title": "NHRA Sportsman Series",
+          "subtitle": null,
+          "description": "The top drag racing teams in the country compete in different classifications; drivers accumulate points based on the results of each event and at the end of the season a champion is crowned in the va",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:30:00Z",
+          "endAt": "2026-09-04T04:30:00Z"
+        },
+        {
+          "title": "TMZ Sports",
+          "subtitle": null,
+          "description": "Covering gossip, scandal and the everyday lives of athletes in professional and college sports, the crew comically highlights exclusive footage of the superstars spotted around Hollywood, New York Cit",
+          "categories": [
+            "News"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:30:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "MLB Baseball",
+          "subtitle": null,
+          "description": "Milwaukee Brewers at Chicago Cubs from Wrigley Field",
+          "categories": [],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T08:00:00Z"
+        },
+        {
+          "title": "MLB Baseball",
+          "subtitle": null,
+          "description": "Boston Red Sox at Baltimore Orioles from Oriole Park at Camden Yards",
+          "categories": [],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T08:00:00Z",
+          "endAt": "2026-09-04T11:00:00Z"
+        },
+        {
+          "title": "First Things First",
+          "subtitle": null,
+          "description": "Media personalities offer their views and opinions on the day's most intriguing storylines across the world of sports, including debates on the latest issues, analysis of player performances, and disc",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T11:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "Wake Up Barstool",
+          "subtitle": null,
+          "description": "Dave Portnoy and the Barstool crew offer up their unfiltered takes on some of the biggest sports stories making headlines across the country, offering up their thoughts on the impact it has on those i",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T14:00:00Z"
         }
       ]
     },
@@ -327,109 +256,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "CPL Matchday Live",
+        "title": "Women's College Volleyball",
         "subtitle": null,
-        "description": "Analysts preview the day in Canadian Premier League action, looking at the key matchups throughout the day and key players that could determine the outcome in each match, along with the latest news an",
+        "description": "Florida Gators at Wisconsin Badgers from Wisconsin Field House",
         "categories": [],
-        "sportType": "Football",
-        "competition": "Premier League",
+        "sportType": null,
+        "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T04:30:00Z"
+        "startAt": "2026-09-03T15:00:00Z",
+        "endAt": "2026-09-03T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Indycar NICS Racing",
-          "subtitle": null,
-          "description": "from Milwaukee Mile",
-          "categories": [],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:30:00Z",
-          "endAt": "2026-09-03T01:30:00Z"
-        },
-        {
-          "title": "CPL Matchday Live",
-          "subtitle": null,
-          "description": "Analysts preview the day in Canadian Premier League action, looking at the key matchups throughout the day and key players that could determine the outcome in each match, along with the latest news an",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-03T01:30:00Z",
-          "endAt": "2026-09-03T02:00:00Z"
-        },
-        {
-          "title": "Canadian Championship Soccer",
-          "subtitle": null,
-          "description": "Montreal Impact at Vancouver Whitecaps FC from BC Place",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:00:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "CPL Matchday Live",
-          "subtitle": null,
-          "description": "Analysts preview the day in Canadian Premier League action, looking at the key matchups throughout the day and key players that could determine the outcome in each match, along with the latest news an",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T04:30:00Z"
-        },
-        {
-          "title": "ARCA Racing",
-          "subtitle": null,
-          "description": "from Madison International Speedway",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:30:00Z",
-          "endAt": "2026-09-03T06:30:00Z"
-        },
-        {
-          "title": "MotoGP",
-          "subtitle": "2026 Aragon Grand Prix",
-          "description": "from MotorLand Aragón located in Alcañiz, Spain",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:30:00Z",
-          "endAt": "2026-09-03T07:30:00Z"
-        },
-        {
-          "title": "MotoGP",
-          "subtitle": "2026 Aragon Grand Prix Sprint Race",
-          "description": "from MotorLand Aragón located in Alcañiz, Spain",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:30:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "Florida Gators at Minnesota Golden Gophers from Maturi Pavilion",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T09:54:00Z"
-        },
         {
           "title": "Australian Football League",
           "subtitle": null,
@@ -466,7 +303,7 @@
         {
           "title": "Saratoga Live",
           "subtitle": null,
-          "description": "Competitive horse racing action from the Saratoga Race Course in New York is featured, as expert analysts discuss the conditions of the racetrack, histories of the horses in recent performances and th",
+          "description": "from Saratoga Race Course in Saratoga Springs, N.Y.",
           "categories": [],
           "sportType": null,
           "competition": null,
@@ -506,6 +343,149 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T00:30:00Z"
+        },
+        {
+          "title": "NHRA Pro Mod Series",
+          "subtitle": null,
+          "description": "The top pro modified drivers compete against each other with three different engine setups in nitrous, blower and turbo, featuring detailed coverage of all the racing action, updates on track conditio",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T00:30:00Z",
+          "endAt": "2026-09-04T01:00:00Z"
+        },
+        {
+          "title": "NHRA Sportsman Series",
+          "subtitle": null,
+          "description": "The top drag racing teams in the country compete in different classifications; drivers accumulate points based on the results of each event and at the end of the season a champion is crowned in the va",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T01:00:00Z",
+          "endAt": "2026-09-04T02:00:00Z"
+        },
+        {
+          "title": "EWC Paris: Rise Above",
+          "subtitle": null,
+          "description": "All-access footage covers the 2026 Esports World Cup in Paris, showcasing some of the biggest rivalries across the multi-week event, highlights of the key moments from the finals of each game and the",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:00:00Z",
+          "endAt": "2026-09-04T02:30:00Z"
+        },
+        {
+          "title": "EWC Paris: Rise Above",
+          "subtitle": null,
+          "description": "All-access footage covers the 2026 Esports World Cup in Paris, showcasing some of the biggest rivalries across the multi-week event, highlights of the key moments from the finals of each game and the",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:30:00Z",
+          "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "The Joel Klatt Show: A College Football on FOX Podcast",
+          "subtitle": null,
+          "description": "Former Colorado quarterback Joel Klatt breaks down the latest around the college football landscape, including his thoughts on the stories making headlines, guest interviews with the biggest names in",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T03:30:00Z"
+        },
+        {
+          "title": "Big Noon Kickoff Presents Bear Bets",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:30:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "The Clay Travis Show",
+          "subtitle": null,
+          "description": "Clay Travis provides his unique perspective on a variety of topics, from sports to politics and entertainment, breaking down the latest stories making headlines, previewing upcoming marquee events and",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T04:30:00Z"
+        },
+        {
+          "title": "Women's College Volleyball",
+          "subtitle": null,
+          "description": "Auburn Tigers at Minnesota Golden Gophers from Maturi Pavilion",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:30:00Z",
+          "endAt": "2026-09-04T06:30:00Z"
+        },
+        {
+          "title": "Kevin Harvick's Happy Hour",
+          "subtitle": null,
+          "description": "Former NASCAR driver and 2014 Cup Series champion Kevin Harvick and his friends break down the latest news making headlines across NASCAR, going over the latest results and interview guests to gather",
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:30:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "SPEED with Harvick and Buxton",
+          "subtitle": null,
+          "description": "Kevin Harvick and Will Buxton celebrate everything motorsports, recapping some of the recent races from around the world to focus on the drivers making a name for themselves and preview the upcoming s",
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T07:30:00Z"
+        },
+        {
+          "title": "NHRA Sportsman Series",
+          "subtitle": null,
+          "description": "The top drag racing teams in the country compete in different classifications; drivers accumulate points based on the results of each event and at the end of the season a champion is crowned in the va",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:30:00Z",
+          "endAt": "2026-09-04T08:30:00Z"
+        },
+        {
+          "title": "NHRA Sportsman Series",
+          "subtitle": null,
+          "description": "The top drag racing teams in the country compete in different classifications; drivers accumulate points based on the results of each event and at the end of the season a champion is crowned in the va",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T08:30:00Z",
+          "endAt": "2026-09-04T09:24:00Z"
+        },
+        {
+          "title": "Australian Football League",
+          "subtitle": null,
+          "description": "Carlton Blues at Geelong Cats from GMHBA Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:24:00Z",
+          "endAt": "2026-09-04T12:30:00Z"
         }
       ]
     },
@@ -520,163 +500,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "SportsCenter",
+        "title": "2026 US Open Tennis",
         "subtitle": null,
-        "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-        "categories": [
-          "News",
-          "Sports",
-          "Talk & Interview"
-        ],
-        "sportType": "Sports",
+        "description": "from USTA Billie Jean King National Tennis Center",
+        "categories": [],
+        "sportType": "Tennis",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T05:00:00Z"
+        "startAt": "2026-09-03T15:30:00Z",
+        "endAt": "2026-09-03T22:00:00Z"
       },
       "programs": [
-        {
-          "title": "2026 US Open Tennis",
-          "subtitle": null,
-          "description": "from USTA Billie Jean King National Tennis Center",
-          "categories": [],
-          "sportType": "Tennis",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:00:00Z",
-          "endAt": "2026-09-03T03:00:00Z"
-        },
-        {
-          "title": "SportsCenter with Scott Van Pelt",
-          "subtitle": null,
-          "description": "Host Scott Van Pelt covers all of the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day reports",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:00:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T05:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:00:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:00:00Z",
-          "endAt": "2026-09-03T07:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:00:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T09:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T09:00:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T11:00:00Z"
-        },
-        {
-          "title": "SportsCenter",
-          "subtitle": null,
-          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T11:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "Get Up",
           "subtitle": null,
@@ -706,7 +540,7 @@
         {
           "title": "2026 US Open Tennis",
           "subtitle": null,
-          "description": "Alexander Zverev, Carlos Alcaraz, Felix Auger-Aliassime and Novak Djokovic are the top-seeded men in the draw; Aryna Sabalenka, Elena Rybakina, Jessica Pegula and Coco Gauff are the top four seeds in",
+          "description": "from USTA Billie Jean King National Tennis Center",
           "categories": [],
           "sportType": "Tennis",
           "competition": null,
@@ -750,6 +584,129 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "SportsCenter with Scott Van Pelt",
+          "subtitle": null,
+          "description": "Host Scott Van Pelt covers all of the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day reports",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T06:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:00:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "College Football",
+          "subtitle": null,
+          "description": "Colorado Buffaloes at Georgia Tech Yellow Jackets from Bobby Dodd Stadium at Historic Grant Field",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T09:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:00:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T11:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T11:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "Get Up",
+          "subtitle": null,
+          "description": "Mike Greenberg is joined by a rotating panel of analysts and special guests to cover the latest sports news making headlines, breaking down some of the recent marquee matchups across sports, the lates",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T14:00:00Z"
         }
       ]
     },
@@ -764,136 +721,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "College Football Live",
+        "title": "The Pat McAfee Show",
         "subtitle": null,
-        "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
-        "categories": [
-          "Sports"
-        ],
-        "sportType": "Football",
+        "description": "Former NFL punter Pat McAfee and his friends deliver one-of-a-kind opinions on the latest news making headlines in sports and entertainment, along with special segments and guest interviews with some",
+        "categories": [],
+        "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T04:30:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T18:00:00Z"
       },
       "programs": [
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "UCLA Bruins at Kentucky Wildcats from Memorial Coliseum",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:00:00Z",
-          "endAt": "2026-09-03T01:00:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "USC Trojans at Texas Longhorns from Gregory Gymnasium",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T01:00:00Z",
-          "endAt": "2026-09-03T03:00:00Z"
-        },
-        {
-          "title": "NFL2Night",
-          "subtitle": null,
-          "description": "The latest news and reports around the NFL are discussed in detail with a panel of expert analysts weighing in on the hottest issues, while veteran football reporters provide up-to-date information fr",
-          "categories": [
-            "News",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:00:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "College Football Live",
-          "subtitle": null,
-          "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T04:30:00Z"
-        },
-        {
-          "title": "Pardon the Interruption",
-          "subtitle": null,
-          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:30:00Z",
-          "endAt": "2026-09-03T05:00:00Z"
-        },
-        {
-          "title": "NFL2Night",
-          "subtitle": null,
-          "description": "The latest news and reports around the NFL are discussed in detail with a panel of expert analysts weighing in on the hottest issues, while veteran football reporters provide up-to-date information fr",
-          "categories": [
-            "News",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:00:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        },
-        {
-          "title": "30 for 30",
-          "subtitle": "The U",
-          "description": "The Miami Hurricanes football team rose to prominence during the 1980s when head coach Howard Schnellenberger changed the personality of the campus and the team by recruiting mostly black players to p",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:00:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "30 for 30",
-          "subtitle": "The U Part 2",
-          "description": "The U Part 2 picks up where the original film left off, with the program trying to recover from the devastation left behind by NCAA sanctions and scandals; the Hurricanes won a national championship",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "Unsportsmanlike with Evan, Canty and Michelle",
-          "subtitle": null,
-          "description": "Evan Cohen, Chris Canty and Michelle Smallmon discuss the latest stories from around the world of sports making headlines, previewing some of the biggest games in the coming days, and guest interviews",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "SportsCenter",
           "subtitle": null,
@@ -1041,13 +879,140 @@
         {
           "title": "2026 US Open Tennis",
           "subtitle": null,
-          "description": "Alexander Zverev, Carlos Alcaraz, Felix Auger-Aliassime and Novak Djokovic are the top-seeded men in the draw; Aryna Sabalenka, Elena Rybakina, Jessica Pegula and Coco Gauff are the top four seeds in",
+          "description": "from USTA Billie Jean King National Tennis Center",
           "categories": [],
           "sportType": "Tennis",
           "competition": null,
           "imageUrl": null,
           "startAt": "2026-09-03T23:00:00Z",
           "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "NFL2Night",
+          "subtitle": null,
+          "description": "The latest news and reports around the NFL are discussed in detail with a panel of expert analysts weighing in on the hottest issues, while veteran football reporters provide up-to-date information fr",
+          "categories": [
+            "News",
+            "Sports"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "SEC Storied",
+          "subtitle": null,
+          "description": "Archie Manning, who was a quarterback at Ole Miss for three seasons and named to the All-SEC team in 1969 and 1970, is the family patriarch, while Peyton Manning and Eli Manning followed in their fath",
+          "categories": [
+            "Documentary",
+            "Sports"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T05:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:30:00Z",
+          "endAt": "2026-09-04T06:00:00Z"
+        },
+        {
+          "title": "NFL2Night",
+          "subtitle": null,
+          "description": "The latest news and reports around the NFL are discussed in detail with a panel of expert analysts weighing in on the hottest issues, while veteran football reporters provide up-to-date information fr",
+          "categories": [
+            "News",
+            "Sports"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:00:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T08:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T08:00:00Z",
+          "endAt": "2026-09-04T09:00:00Z"
+        },
+        {
+          "title": "SEC Storied",
+          "subtitle": null,
+          "description": "Hines Ward travels back to South Korea to trace his past as the esteemed career of the two-time Super Bowl champion wide receiver is remembered, showcasing his highlights throughout his time at Georgi",
+          "categories": [
+            "Documentary",
+            "Sports"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:00:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "Unsportsmanlike with Evan, Canty and Michelle",
+          "subtitle": null,
+          "description": "Evan Cohen, Chris Canty and Michelle Smallmon discuss the latest stories from around the world of sports making headlines, previewing some of the biggest games in the coming days, and guest interviews",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "SportsCenter",
+          "subtitle": null,
+          "description": "The worldwide leader in sports covers all the important stories of the day, including game highlights, player interviews, and special segments; correspondents relay up-to-the-minute news and game-day",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T13:00:00Z"
         }
       ]
     },
@@ -1062,212 +1027,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "X Games Presents",
+        "title": "Get Up",
         "subtitle": null,
-        "description": "Highlights of the top moments from different events at the seasonal X Games event are featured, showcasing the best athletes from around the world competing in their respective disciplines as they hav",
+        "description": "Mike Greenberg is joined by a rotating panel of analysts and special guests to cover the latest sports news making headlines, breaking down some of the recent marquee matchups across sports, the lates",
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T05:00:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T19:30:00Z"
       },
       "programs": [
-        {
-          "title": "Podcast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T00:00:00Z",
-          "endAt": "2026-09-03T00:30:00Z"
-        },
-        {
-          "title": "Pardon the Interruption",
-          "subtitle": null,
-          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T00:30:00Z",
-          "endAt": "2026-09-03T01:00:00Z"
-        },
-        {
-          "title": "The Mina Kimes Show featuring Lenny",
-          "subtitle": null,
-          "description": "Mina Kimes brings her vast NFL knowledge and unique insight to the top stories making headlines across the league, breaking down the impact of the news, and is joined by guests to gather a different p",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T01:00:00Z",
-          "endAt": "2026-09-03T02:00:00Z"
-        },
-        {
-          "title": "Polo",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:00:00Z",
-          "endAt": "2026-09-03T03:30:00Z"
-        },
-        {
-          "title": "Pardon the Interruption",
-          "subtitle": null,
-          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:30:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "X Games Presents",
-          "subtitle": null,
-          "description": "Highlights of the top moments from different events at the seasonal X Games event are featured, showcasing the best athletes from around the world competing in their respective disciplines as they hav",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T05:00:00Z"
-        },
-        {
-          "title": "X Games Salt Lake City 2025",
-          "subtitle": null,
-          "description": "The world's best men's and women's action sports stars head to Utah to compete in the annual summer showcase, featuring skateboard, BMX, and Moto X events across three days with medals handed out to t",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:00:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        },
-        {
-          "title": "Podcast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:00:00Z",
-          "endAt": "2026-09-03T06:30:00Z"
-        },
-        {
-          "title": "Pardon the Interruption",
-          "subtitle": null,
-          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:30:00Z",
-          "endAt": "2026-09-03T07:00:00Z"
-        },
-        {
-          "title": "2025 Golden Tee Golf World Championships",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:00:00Z",
-          "endAt": "2026-09-03T07:30:00Z"
-        },
-        {
-          "title": "2019 Golden Tee World Championship",
-          "subtitle": null,
-          "description": "from The Orleans Hotel & Casino in Las Vegas",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:30:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "eSkootr Championship",
-          "subtitle": null,
-          "description": "The top drivers from around the world compete in the annual team electric scooter series, as the riders steer their scooters capable of going 100 km/hr through the course, looking to finish with the f",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T08:30:00Z"
-        },
-        {
-          "title": "Grass Drag Racing Season Opener",
-          "subtitle": null,
-          "description": "The top drivers compete in the season-opening event as they race vintage and outlaw sleds that can exceed 150 mph across the grass to see who can finish with the fastest time and advance to the next r",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:30:00Z",
-          "endAt": "2026-09-03T09:00:00Z"
-        },
-        {
-          "title": "Podcast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T09:00:00Z",
-          "endAt": "2026-09-03T09:30:00Z"
-        },
-        {
-          "title": "Pardon the Interruption",
-          "subtitle": null,
-          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T09:30:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "30 for 30",
-          "subtitle": "Vick (Part 1)",
-          "description": "Tracing Michael Vick's rise as a college football phenomenon and then No. 1 overall draft pick of the Atlanta Falcons, becoming the first African American quarterback selected with the top pick; Vick",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "30 for 30",
           "subtitle": "Vick (Part 2)",
@@ -1405,6 +1175,216 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T00:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T00:30:00Z",
+          "endAt": "2026-09-04T01:00:00Z"
+        },
+        {
+          "title": "Podcast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T01:00:00Z",
+          "endAt": "2026-09-04T02:00:00Z"
+        },
+        {
+          "title": "Podcast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:00:00Z",
+          "endAt": "2026-09-04T02:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:30:00Z",
+          "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "Podcast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T03:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:30:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "X Games Presents",
+          "subtitle": null,
+          "description": "Highlights of the top moments from different events at the seasonal X Games event are featured, showcasing the best athletes from around the world competing in their respective disciplines as they hav",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "National Putting Tour",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T06:00:00Z"
+        },
+        {
+          "title": "Podcast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:00:00Z",
+          "endAt": "2026-09-04T06:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:30:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "Roofball",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T08:00:00Z"
+        },
+        {
+          "title": "Roofball",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T08:00:00Z",
+          "endAt": "2026-09-04T09:00:00Z"
+        },
+        {
+          "title": "Podcast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:00:00Z",
+          "endAt": "2026-09-04T09:30:00Z"
+        },
+        {
+          "title": "Pardon the Interruption",
+          "subtitle": null,
+          "description": "Tony Kornheiser and Michael Wilbon, longtime colleagues and friends, engage in verbal sparring during a fast-paced and wide-ranging discussion about current events in the world of sports; Kornheiser a",
+          "categories": [
+            "News",
+            "Sports",
+            "Talk & Interview"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:30:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "Polo",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T10:30:00Z"
+        },
+        {
+          "title": "Pillow Fight Championship",
+          "subtitle": null,
+          "description": "The first professional international pillow fighting sports league, featuring accomplished MMA fighters competing in the men's and women's divisions using skill, strategy and agility to strike their o",
+          "categories": [],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:30:00Z",
+          "endAt": "2026-09-04T11:30:00Z"
+        },
+        {
+          "title": "30 for 30",
+          "subtitle": "The Two Bills",
+          "description": "The relationship between Bill Parcells and Bill Belichick is traced over four decades; Parcells and Belichick first worked together as assistants with the New York Giants and have forged a bond that f",
+          "categories": [
+            "Documentary",
+            "Sports"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T11:30:00Z",
+          "endAt": "2026-09-04T13:00:00Z"
         }
       ]
     },
@@ -1419,123 +1399,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "30 for 30",
-        "subtitle": "Brian and The Boz",
-        "description": "Brian Bosworth helped Oklahoma win 31 games, including two Orange Bowls, in his three seasons with the Sooners, but his alter ego, The Boz, took over, shaping the modern athlete, however Brian was los",
-        "categories": [
-          "Documentary",
-          "Sports"
-        ],
-        "sportType": "Sports",
+        "title": "College Football 150 - Football is US",
+        "subtitle": null,
+        "description": "In celebration of 150 years of college football, the documentary looks at how the sport has changed from the first game in 1869 with a focus on several subjects, including the rising tension between t",
+        "categories": [],
+        "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T05:30:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "30 for 30",
-          "subtitle": "Pony Excess",
-          "description": "Coach Ron Meyer brought the SMU football program to prominence in the 1980s behind the \"Pony Express\" duo of Eric Dickerson and Craig James, but improprieties sent the Mustang football team to the NCA",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:00:00Z",
-          "endAt": "2026-09-03T01:00:00Z"
-        },
-        {
-          "title": "30 for 30",
-          "subtitle": "Catholics vs. Convicts",
-          "description": "On October 15, 1988, Notre Dame hosted Miami in what many consider one of the greatest college football games in history, as the matchup transcended play on the field and spilled into an insensitive t",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T01:00:00Z",
-          "endAt": "2026-09-03T03:00:00Z"
-        },
-        {
-          "title": "TrueSouth",
-          "subtitle": null,
-          "description": "John returns to his birthplace, the small Georgia town of Clinton, to eat at some of the memorable restaurants that bring him back to his youth, Nu Way Weiners and Fresh Air Bar-B-Que, and meet other",
-          "categories": [
-            "Documentary"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:00:00Z",
-          "endAt": "2026-09-03T03:30:00Z"
-        },
-        {
-          "title": "College Football Live",
-          "subtitle": null,
-          "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:30:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "30 for 30",
-          "subtitle": "Brian and The Boz",
-          "description": "Brian Bosworth helped Oklahoma win 31 games, including two Orange Bowls, in his three seasons with the Sooners, but his alter ego, The Boz, took over, shaping the modern athlete, however Brian was los",
-          "categories": [
-            "Documentary",
-            "Sports"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T05:30:00Z"
-        },
-        {
-          "title": "College Football Live",
-          "subtitle": null,
-          "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:30:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "UCLA Bruins at Kentucky Wildcats from Memorial Coliseum",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:00:00Z",
-          "endAt": "2026-09-03T08:00:00Z"
-        },
-        {
-          "title": "Women's College Volleyball",
-          "subtitle": null,
-          "description": "USC Trojans at Texas Longhorns from Gregory Gymnasium",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:00:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
         {
           "title": "Unsportsmanlike with Evan, Canty and Michelle",
           "subtitle": null,
@@ -1670,6 +1544,89 @@
           "imageUrl": null,
           "startAt": "2026-09-03T22:30:00Z",
           "endAt": "2026-09-04T00:30:00Z"
+        },
+        {
+          "title": "College Football Live",
+          "subtitle": null,
+          "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T00:30:00Z",
+          "endAt": "2026-09-04T01:00:00Z"
+        },
+        {
+          "title": "College Football",
+          "subtitle": null,
+          "description": "Idaho Vandals at Utah Utes from Rice Eccles Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T01:00:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "College Football Live",
+          "subtitle": null,
+          "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T04:30:00Z"
+        },
+        {
+          "title": "TrueSouth",
+          "subtitle": null,
+          "description": "Once the center of the Alabama coal mining industry, Jasper provided a unique opportunity as a lifestyle as guide Caleb Johnson gets to talk with his dad, Ronnie, who worked in the mines for 36 years,",
+          "categories": [
+            "Documentary"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:30:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "Women's College Soccer",
+          "subtitle": null,
+          "description": "Florida State Seminoles at Georgia Bulldogs from UGA Soccer Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "College Football",
+          "subtitle": null,
+          "description": "Idaho Vandals at Utah Utes from Rice Eccles Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "Unsportsmanlike with Evan, Canty and Michelle",
+          "subtitle": null,
+          "description": "Evan Cohen, Chris Canty and Michelle Smallmon discuss the latest stories from around the world of sports making headlines, previewing some of the biggest games in the coming days, and guest interviews",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T14:00:00Z"
         }
       ]
     },
@@ -1684,151 +1641,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "MLB Tonight",
+        "title": "MLB Now",
         "subtitle": null,
-        "description": "Game commentators and insiders provide in-depth analysis throughout the baseball season while also featuring live look-ins on some of the biggest matchups, highlights of game-changing plays, injury up",
-        "categories": [
-          "News",
-          "Sports",
-          "Talk & Interview"
-        ],
+        "description": "While taking an old school vs. new school approach to baseball, the hosts provide a detailed look at all the latest news and headlines around the league, including highlights of the day's top plays, d",
+        "categories": [],
         "sportType": "Baseball",
         "competition": "MLB",
         "imageUrl": null,
-        "startAt": "2026-09-03T02:30:00Z",
-        "endAt": "2026-09-03T04:30:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "MLB Baseball",
-          "subtitle": null,
-          "description": "Milwaukee Brewers at Chicago Cubs or Miami Marlins at Kansas City Royals",
-          "categories": [],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:30:00Z",
-          "endAt": "2026-09-03T02:30:00Z"
-        },
-        {
-          "title": "MLB Tonight",
-          "subtitle": null,
-          "description": "Game commentators and insiders provide in-depth analysis throughout the baseball season while also featuring live look-ins on some of the biggest matchups, highlights of game-changing plays, injury up",
-          "categories": [
-            "News",
-            "Sports",
-            "Talk & Interview"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:30:00Z",
-          "endAt": "2026-09-03T04:30:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:30:00Z",
-          "endAt": "2026-09-03T05:30:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:30:00Z",
-          "endAt": "2026-09-03T06:30:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:30:00Z",
-          "endAt": "2026-09-03T07:30:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:30:00Z",
-          "endAt": "2026-09-03T08:30:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:30:00Z",
-          "endAt": "2026-09-03T09:00:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T09:00:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T11:00:00Z"
-        },
-        {
-          "title": "Quick Pitch",
-          "subtitle": null,
-          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
-          "categories": [
-            "Sports"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-03T11:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "Quick Pitch",
           "subtitle": null,
@@ -1922,6 +1745,134 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T01:30:00Z"
+        },
+        {
+          "title": "MLB Baseball",
+          "subtitle": null,
+          "description": "The Athletics vs Seattle Mariners from USTA Billie Jean King National Tennis Center",
+          "categories": [],
+          "sportType": "Tennis",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T01:30:00Z",
+          "endAt": "2026-09-04T04:30:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:30:00Z",
+          "endAt": "2026-09-04T05:30:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:30:00Z",
+          "endAt": "2026-09-04T06:30:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T06:30:00Z",
+          "endAt": "2026-09-04T07:30:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:30:00Z",
+          "endAt": "2026-09-04T08:30:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T08:30:00Z",
+          "endAt": "2026-09-04T09:00:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:00:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T11:00:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T11:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "Quick Pitch",
+          "subtitle": null,
+          "description": "Host recaps the day in the MLB with highlights of each of the games on the slate, breaking down the key plays that determined the outcome, the top performers from each contest and a quick look at the",
+          "categories": [
+            "Sports"
+          ],
+          "sportType": "Baseball",
+          "competition": "MLB",
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T13:00:00Z"
         }
       ]
     },
@@ -1936,149 +1887,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "NBA Shot Clock",
+        "title": "Best of NBA",
         "subtitle": null,
         "description": null,
         "categories": [],
         "sportType": "Basketball",
         "competition": "NBA",
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T05:30:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-02T23:30:00Z",
-          "endAt": "2026-09-03T00:30:00Z"
-        },
-        {
-          "title": "NBA Stories",
-          "subtitle": null,
-          "description": "Highlights and interviews capture the climate of the modern Association, revealing the backgrounds and biographical information of some of the NBA's biggest superstars as they prepare for the enduranc",
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T00:30:00Z",
-          "endAt": "2026-09-03T01:00:00Z"
-        },
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T01:00:00Z",
-          "endAt": "2026-09-03T02:00:00Z"
-        },
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T02:00:00Z",
-          "endAt": "2026-09-03T03:00:00Z"
-        },
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:00:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "NBA Shot Clock",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T05:30:00Z"
-        },
-        {
-          "title": "A Rose to the Rafters",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:30:00Z",
-          "endAt": "2026-09-03T06:00:00Z"
-        },
-        {
-          "title": "NBA Stories",
-          "subtitle": null,
-          "description": "Highlights and interviews capture the climate of the modern Association, revealing the backgrounds and biographical information of some of the NBA's biggest superstars as they prepare for the enduranc",
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:00:00Z",
-          "endAt": "2026-09-03T06:30:00Z"
-        },
-        {
-          "title": "WNBA Shot Clock",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T06:30:00Z",
-          "endAt": "2026-09-03T08:30:00Z"
-        },
-        {
-          "title": "NBA Shot Clock",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T08:30:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T11:00:00Z"
-        },
-        {
-          "title": "Best of NBA",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": "Basketball",
-          "competition": "NBA",
-          "imageUrl": null,
-          "startAt": "2026-09-03T11:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "NBA Shot Clock",
           "subtitle": null,
@@ -2221,6 +2040,116 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T00:30:00Z"
+        },
+        {
+          "title": "The Association",
+          "subtitle": null,
+          "description": "Cameras give an all-access look at the top teams in the NBA throughout the season as they compete for a spot in the playoffs, showing the players and coaches on and off the court to show the amount of",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T00:30:00Z",
+          "endAt": "2026-09-04T02:30:00Z"
+        },
+        {
+          "title": "NBA Stories",
+          "subtitle": null,
+          "description": "Highlights and interviews capture the climate of the modern Association, revealing the backgrounds and biographical information of some of the NBA's biggest superstars as they prepare for the enduranc",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T02:30:00Z",
+          "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "NBA Stories",
+          "subtitle": null,
+          "description": "Highlights and interviews capture the climate of the modern Association, revealing the backgrounds and biographical information of some of the NBA's biggest superstars as they prepare for the enduranc",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T03:30:00Z"
+        },
+        {
+          "title": "Nash & Nowitzki: A Basketball Friendship",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:30:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "Best of NBA",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "The Association",
+          "subtitle": null,
+          "description": "Cameras give an all-access look at the top teams in the NBA throughout the season as they compete for a spot in the playoffs, showing the players and coaches on and off the court to show the amount of",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T07:00:00Z"
+        },
+        {
+          "title": "The Association",
+          "subtitle": null,
+          "description": "Cameras give an all-access look at the top teams in the NBA throughout the season as they compete for a spot in the playoffs, showing the players and coaches on and off the court to show the amount of",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:00:00Z",
+          "endAt": "2026-09-04T09:00:00Z"
+        },
+        {
+          "title": "Best of NBA",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T09:00:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "The Association",
+          "subtitle": null,
+          "description": "Cameras give an all-access look at the top teams in the NBA throughout the season as they compete for a spot in the playoffs, showing the players and coaches on and off the court to show the amount of",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "The Association",
+          "subtitle": null,
+          "description": "Cameras give an all-access look at the top teams in the NBA throughout the season as they compete for a spot in the playoffs, showing the players and coaches on and off the court to show the amount of",
+          "categories": [],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T14:00:00Z"
         }
       ]
     },
@@ -2235,94 +2164,17 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "NFL Fantasy Live",
+        "title": "NFL Preseason Football",
         "subtitle": null,
-        "description": "Expert analysts provide a detailed look at all the latest fantasy football topics that will help viewers take full control of their leagues with insider information, including injury reports, the late",
+        "description": "New Orleans Saints at Dallas Cowboys from AT&T Stadium",
         "categories": [],
         "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-03T04:00:00Z",
-        "endAt": "2026-09-03T05:00:00Z"
+        "startAt": "2026-09-03T16:00:00Z",
+        "endAt": "2026-09-03T19:00:00Z"
       },
       "programs": [
-        {
-          "title": "NFL Preseason Football",
-          "subtitle": null,
-          "description": "Arizona Cardinals at Green Bay Packers from Lambeau Field",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T00:00:00Z",
-          "endAt": "2026-09-03T03:00:00Z"
-        },
-        {
-          "title": "The Insiders",
-          "subtitle": null,
-          "description": "NFL insiders, including Ian Rapoport, Tom Pelissero and Mike Garafolo, break down the latest team news making headlines across the league, discussing the impact it will have on the team, along with th",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T03:00:00Z",
-          "endAt": "2026-09-03T04:00:00Z"
-        },
-        {
-          "title": "NFL Fantasy Live",
-          "subtitle": null,
-          "description": "Expert analysts provide a detailed look at all the latest fantasy football topics that will help viewers take full control of their leagues with insider information, including injury reports, the late",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T04:00:00Z",
-          "endAt": "2026-09-03T05:00:00Z"
-        },
-        {
-          "title": "NFL Preseason Football",
-          "subtitle": null,
-          "description": "Detroit Lions at Indianapolis Colts from Lucas Oil Stadium",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T05:00:00Z",
-          "endAt": "2026-09-03T07:30:00Z"
-        },
-        {
-          "title": "NFL Preseason Football",
-          "subtitle": null,
-          "description": "San Francisco 49ers at Las Vegas Raiders from Allegiant Stadium",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T07:30:00Z",
-          "endAt": "2026-09-03T10:00:00Z"
-        },
-        {
-          "title": "The Insiders",
-          "subtitle": null,
-          "description": "NFL insiders, including Ian Rapoport, Tom Pelissero and Mike Garafolo, break down the latest team news making headlines across the league, discussing the impact it will have on the team, along with th",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T10:00:00Z",
-          "endAt": "2026-09-03T11:00:00Z"
-        },
-        {
-          "title": "NFL Fantasy Live",
-          "subtitle": null,
-          "description": "Expert analysts provide a detailed look at all the latest fantasy football topics that will help viewers take full control of their leagues with insider information, including injury reports, the late",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-03T11:00:00Z",
-          "endAt": "2026-09-03T12:00:00Z"
-        },
         {
           "title": "Good Morning Football",
           "subtitle": null,
@@ -2399,6 +2251,83 @@
           "imageUrl": null,
           "startAt": "2026-09-04T00:00:00Z",
           "endAt": "2026-09-04T03:00:00Z"
+        },
+        {
+          "title": "The Insiders",
+          "subtitle": null,
+          "description": "NFL insiders, including Ian Rapoport, Tom Pelissero and Mike Garafolo, break down the latest team news making headlines across the league, discussing the impact it will have on the team, along with th",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T03:00:00Z",
+          "endAt": "2026-09-04T04:00:00Z"
+        },
+        {
+          "title": "NFL Fantasy Live",
+          "subtitle": null,
+          "description": "Expert analysts provide a detailed look at all the latest fantasy football topics that will help viewers take full control of their leagues with insider information, including injury reports, the late",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T04:00:00Z",
+          "endAt": "2026-09-04T05:00:00Z"
+        },
+        {
+          "title": "NFL Preseason Football",
+          "subtitle": null,
+          "description": "Seattle Seahawks at Kansas City Chiefs from GEHA Field at Arrowhead Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T05:00:00Z",
+          "endAt": "2026-09-04T07:30:00Z"
+        },
+        {
+          "title": "NFL Preseason Football",
+          "subtitle": null,
+          "description": "Atlanta Falcons at Miami Dolphins from Hard Rock Stadium",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T07:30:00Z",
+          "endAt": "2026-09-04T10:00:00Z"
+        },
+        {
+          "title": "The Insiders",
+          "subtitle": null,
+          "description": "NFL insiders, including Ian Rapoport, Tom Pelissero and Mike Garafolo, break down the latest team news making headlines across the league, discussing the impact it will have on the team, along with th",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T10:00:00Z",
+          "endAt": "2026-09-04T11:00:00Z"
+        },
+        {
+          "title": "NFL Fantasy Live",
+          "subtitle": null,
+          "description": "Expert analysts provide a detailed look at all the latest fantasy football topics that will help viewers take full control of their leagues with insider information, including injury reports, the late",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T11:00:00Z",
+          "endAt": "2026-09-04T12:00:00Z"
+        },
+        {
+          "title": "Good Morning Football",
+          "subtitle": null,
+          "description": "Hosts delve into the latest news from around the NFL to provide updates on the latest injury reports and other news stories, along with player features and interviews to cover the major storylines mak",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-04T12:00:00Z",
+          "endAt": "2026-09-04T14:00:00Z"
         }
       ]
     }
