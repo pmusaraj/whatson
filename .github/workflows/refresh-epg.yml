@@ -35,6 +35,8 @@ jobs:
           npm install --prefix .cache/epg
 
       - name: Refresh guide data
+        env:
+          LOGFARE_API_KEY: ${{ secrets.LOGFARE_API_KEY }}
         run: python3 scripts/refresh_epg.py
 
       - name: Commit refreshed data

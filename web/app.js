@@ -15,6 +15,7 @@ const state = {
   countries: [],
   generatedAt: null,
   countryDataByCode: new Map(),
+  editorPicks: [],
   selectedChannelKeys: loadSelection(),
   search: "",
   now: new Date(),
@@ -33,6 +34,8 @@ const els = {
   channelPicker: document.querySelector("#channel-picker"),
   searchResults: document.querySelector("#search-results"),
   guide: document.querySelector("#guide"),
+  editorPicks: document.querySelector("#editor-picks"),
+  editorPicksList: document.querySelector("#editor-picks-list"),
   programDialog: document.querySelector("#program-dialog"),
   programDialogContent: document.querySelector("#program-dialog-content"),
   clearSelection: document.querySelector("#clear-selection"),
@@ -232,9 +235,15 @@ async function loadJson(url) {
 }
 
 async function loadGuideData() {
-  const data = await loadJson("data/countries.json");
+  const [data, picks] = await Promise.all([
+    loadJson("data/countries.json"),
+    loadJson("data/editors-picks.json").catch(() => ({ picks: [] })),
+  ]);
   state.countries = data.countries;
   state.generatedAt = data.generatedAt;
+  state.editorPicks = Array.isArray(picks.picks)
+    ? picks.picks.filter((pick) => pick && typeof pick.country === "string" && typeof pick.title === "string" && typeof pick.startAt === "string")
+    : [];
   await loadCountryPayloads();
 }
 
@@ -891,6 +900,33 @@ function renderLiveSportsResults() {
   `;
 }
 
+function resolvedEditorPicks() {
+  return state.editorPicks.map((pick) => {
+    const countryData = state.countryDataByCode.get(pick.country);
+    const channelId = countryData?.duplicateChannelAliases?.[pick.channelId] || pick.channelId;
+    const channel = countryData?.channels.find((item) => item.id === channelId)
+      || countryData?.channels.find((item) => item.name === pick.channelName);
+    const index = channel?.programs.findIndex((program) =>
+      program.title === pick.title && program.startAt === pick.startAt
+    );
+    return countryData && channel && index >= 0
+      ? { pick, countryData, channel, index, key: channelKey(pick.country, channel.id) }
+      : null;
+  }).filter(Boolean);
+}
+
+function renderEditorPicks() {
+  const picks = resolvedEditorPicks();
+  els.editorPicks.hidden = picks.length === 0;
+  els.editorPicksList.innerHTML = picks.map(({ pick, countryData, channel, index, key }) => `
+    <button class="show-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
+      <span class="show-result-time">${formatTime(pick.startAt)}</span>
+      <span class="show-result-title">${escapeHtml(pick.title)}</span>
+      <span class="show-result-meta">${flagEmoji(countryData.country)} ${escapeHtml(pick.competition || channel.name)}</span>
+    </button>
+  `).join("");
+}
+
 function setLiveSportsOpen(open) {
   state.liveSportsOpen = open;
   if (open) {
@@ -1267,6 +1303,7 @@ function render() {
   document.body.dataset.guideEmpty = String(selectedChannels().length === 0);
   renderCountryFlags();
   renderChannelList();
+  renderEditorPicks();
   renderSearchResults();
   renderGuide();
   setMobileView(state.mobileView);
@@ -1394,6 +1431,13 @@ els.searchResults.addEventListener("click", (event) => {
     return;
   }
   openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
+});
+
+els.editorPicksList.addEventListener("click", (event) => {
+  const result = event.target.closest(".show-result");
+  if (result) {
+    openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
+  }
 });
 
 els.guide.addEventListener("click", (event) => {
