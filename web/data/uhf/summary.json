@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:22:58.722431Z",
+  "generatedAt": "2026-09-05T07:58:00.524009Z",
   "mappingCsv": "data/uhf-channel-mapping.csv",
   "sourceXmlFiles": [
     "data/normalized/guide-uhf-CA-tvhebdo.com.xml",
@@ -29,22 +29,22 @@
   "outputXml": "web/data/uhf/epg.xml",
   "outputGzip": "web/data/uhf/epg.xml.gz",
   "okMappingRows": 380,
-  "includedChannels": 189,
-  "programmes": 18583,
+  "includedChannels": 191,
+  "programmes": 19748,
   "missingCurrentSourceTargets": 0,
-  "missingProgrammeTargets": 154,
+  "missingProgrammeTargets": 152,
   "includedByCategory": {
     "Canada": 86,
     "Spain": 33,
     "French Sports": 3,
-    "French-HD": 29,
+    "French-HD": 31,
     "UK": 34,
     "USA": 4
   },
   "includedByCountry": {
     "CA": 86,
     "ES": 33,
-    "FR": 32,
+    "FR": 34,
     "UK": 34,
     "US": 4
   },
@@ -76,8 +76,6 @@
     "ES:BomCine.es",
     "ES:ETB1.es",
     "ES:LaLigaTV.es",
-    "FR:Action.fr",
-    "FR:Animaux.fr",
     "FR:Automotolachaine.fr",
     "FR:BFMBusiness.fr",
     "FR:BFMParisIledeFrance.fr",
@@ -115,6 +113,8 @@
     "FR:Gong.fr",
     "FR:GongMax.fr",
     "FR:Gulli.fr",
-    "FR:HistoireTV.fr"
+    "FR:HistoireTV.fr",
+    "FR:InfosportPlus.fr",
+    "FR:LCI.fr"
   ]
 }
