@@ -11,9 +11,3 @@ __pycache__/
 !.dev.vars.example
 .env*
 !.env.example
-
-# UHF guide data is generated only during Cloudflare builds.
-data/normalized/guide-uhf-*.xml
-data/sources/iptv-org/custom-uhf-*.channels.xml
-data/uhf/grab-plan.json
-web/data/uhf/

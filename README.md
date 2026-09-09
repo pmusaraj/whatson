@@ -35,7 +35,7 @@ The app is intentionally simple and static:
 
 - `web/` contains the browser app: `index.html`, `app.js`, CSS themes, and generated JSON data.
 - `data/sources/iptv-org/` contains curated XMLTV channel files and iptv-org metadata snapshots.
-- `data/normalized/` contains committed XMLTV snapshots fetched from validated public guide sources; UHF snapshots are generated only during Cloudflare builds.
+- `data/normalized/` contains XMLTV guide snapshots fetched from validated public guide sources.
 - `scripts/refresh_epg.py` refreshes all curated XMLTV snapshots and rebuilds the static JSON payloads.
 - `scripts/build_web_data.py` converts XMLTV snapshots into browser-friendly files under `web/data/`.
 - `tests/` covers the data-building and normalization logic.
@@ -46,9 +46,9 @@ Times are stored in UTC in the generated JSON. The browser renders the current g
 
 ## Data refresh and publishing
 
-Cloudflare Workers Builds serves the `web/` directory at https://heywhatson.tv.
+When deployed to Cloudflare Pages, the live app is served from the committed `web/` directory at https://heywhatson.tv.
 
-A GitHub Actions workflow runs every 12 hours (`5 */12 * * *`) and updates the regular guide data. It runs:
+A GitHub Actions workflow runs every 6 hours (`0 */6 * * *`) and updates the data. It runs:
 
 ```bash
 python3 scripts/refresh_epg.py
@@ -74,20 +74,12 @@ The project also publishes a custom XMLTV-style guide export for approved UHF/Xt
 - Preview data: https://heywhatson.tv/data/uhf/preview.json
 - Visual inspector: https://heywhatson.tv/uhf.html
 
-The export uses stable custom channel ids in the form `uhf:<uhf_pk>`, with display-name aliases copied from the UHF playlist row and the matched source guide channel. UHF source snapshots and exports are generated during each Cloudflare build and are not committed.
+The export uses stable custom channel ids in the form `uhf:<uhf_pk>`, with display-name aliases copied from the UHF playlist row and the matched source guide channel.
 
-Configure the connected Worker's build command as:
-
-```bash
-bash scripts/build_cloudflare.sh
-```
-
-The scheduled UHF workflow calls a Cloudflare deploy hook stored in the GitHub Actions secret `CLOUDFLARE_DEPLOY_HOOK_URL`.
-
-To generate and validate the export locally:
+To validate the committed export locally:
 
 ```bash
-bash scripts/build_cloudflare.sh
+python3 scripts/validate_uhf_xmltv.py
 ```
 
 Warnings in `validation.json` are useful for debugging downstream guide clients. Structural errors fail the command and the UHF refresh workflow.
@@ -106,7 +98,7 @@ Then open:
 http://localhost:8000
 ```
 
-The committed regular-guide files under `web/data/` are enough to run the main app locally without refreshing guide data. UHF pages require `bash scripts/build_cloudflare.sh` first.
+The committed `web/data/` files are enough to run the app locally without refreshing guide data.
 
 ## Rebuild local web data from existing XMLTV snapshots
 
