@@ -83,9 +83,9 @@ def main() -> int:
             failures.append(message)
 
     if failures:
-        print("UHF grab failures/timeouts; using previous snapshots where available:", flush=True)
         for failure in failures:
             print(f"- {failure}", flush=True)
+        raise SystemExit("UHF grab failed; refusing to build an incomplete export")
 
     run(["python3", "scripts/build_uhf_custom_xmltv.py"])
     run(["python3", "scripts/validate_uhf_xmltv.py"])

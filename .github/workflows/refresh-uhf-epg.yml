@@ -6,60 +6,13 @@ on:
     - cron: "35 3 */2 * *"
   workflow_dispatch:
 
-concurrency:
-  group: refresh-uhf-epg
-  cancel-in-progress: false
-
-permissions:
-  contents: write
-
 jobs:
   refresh-uhf:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.x"
-
-      - name: Set up Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: "24"
-
-      - name: Install iptv-org EPG grabber
+      - name: Trigger Cloudflare web build
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
         run: |
-          git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
-          npm install --prefix .cache/epg
-
-      - name: Refresh UHF guide data
-        run: python3 scripts/refresh_uhf_epg.py
-
-      - name: Validate UHF XMLTV export
-        run: python3 scripts/validate_uhf_xmltv.py
-
-      - name: Run tests and syntax checks
-        run: |
-          python3 -m unittest discover -s tests -v
-          node --check web/app.js
-          node --check web/uhf.js
-
-      - name: Commit refreshed UHF data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/normalized/guide-uhf-*.xml data/uhf/grab-plan.json data/sources/iptv-org/custom-uhf-*.channels.xml web/data/uhf
-          if git diff --cached --quiet; then
-            echo "No UHF guide data changes to commit."
-          else
-            git commit -m "chore: refresh UHF EPG data"
-            git push
-          fi
-
-      - name: Delete generated build artifacts
-        if: always()
-        run: |
-          rm -rf .cache node_modules __pycache__ scripts/__pycache__ tests/__pycache__
+          test -n "$DEPLOY_HOOK_URL"
+          curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL"
