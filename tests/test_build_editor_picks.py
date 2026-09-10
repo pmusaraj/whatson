@@ -1,9 +1,11 @@
 import importlib.util
+import io
 import json
 import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from unittest.mock import Mock
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "build_editor_picks.py"
 spec = importlib.util.spec_from_file_location("build_editor_picks", MODULE_PATH)
@@ -74,6 +76,27 @@ class BuildEditorPicksTest(unittest.TestCase):
         ):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
+
+    def test_logfare_request_retries_twice(self):
+        candidate = {
+            "id": "event-1",
+            "country": "US",
+            "channelName": "Sports One",
+            "title": "Team A vs Team B",
+            "startAt": "2026-09-04T18:00:00Z",
+        }
+        response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"pick_ids\\":[\\"event-1\\"]}"}}]}')
+        opener = Mock(side_effect=[TimeoutError(), TimeoutError(), response])
+
+        picks = build_editor_picks.select_with_logfare([candidate], "key", opener=opener)
+
+        self.assertEqual(picks, [candidate])
+        self.assertEqual(opener.call_count, 3)
+
+        exhausted = Mock(side_effect=[TimeoutError(), TimeoutError(), TimeoutError()])
+        with self.assertRaises(TimeoutError):
+            build_editor_picks.select_with_logfare([candidate], "key", opener=exhausted)
+        self.assertEqual(exhausted.call_count, 3)
 
     def program(self, title, start, end="2026-09-04T21:00:00Z"):
         return {

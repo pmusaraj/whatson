@@ -163,8 +163,15 @@ def select_with_logfare(candidates, api_key, opener=urllib.request.urlopen):
         headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "Accept": "application/json"},
         method="POST",
     )
-    with opener(request, timeout=45) as response:
-        raw_response = response.read(65_537)
+    raw_response = b""
+    for attempt in range(3):
+        try:
+            with opener(request, timeout=45) as response:
+                raw_response = response.read(65_537)
+            break
+        except OSError:
+            if attempt == 2:
+                raise
     if len(raw_response) > 65_536:
         raise ValueError("Logfare response was too large")
     envelope = json.loads(raw_response)
