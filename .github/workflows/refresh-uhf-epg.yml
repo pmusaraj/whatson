@@ -9,10 +9,25 @@ on:
 jobs:
   refresh-uhf:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Trigger Cloudflare web build
         env:
           DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
         run: |
           test -n "$DEPLOY_HOOK_URL"
-          curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL"
+          before=$(curl --fail --silent --show-error https://heywhatson.tv/data/uhf/summary.json | python3 -c 'import json,sys; print(json.load(sys.stdin)["generatedAt"])')
+          response=$(curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL")
+          python3 -c 'import json,sys; r=json.load(sys.stdin)["result"]; print({k:r.get(k) for k in ("build_uuid", "worker", "status", "already_exists")})' <<< "$response"
+          for attempt in {1..50}; do
+            sleep 30
+            if payload=$(curl --fail --silent --show-error "https://heywhatson.tv/data/uhf/summary.json?verify=$RANDOM-$attempt"); then
+              after=$(python3 -c 'import json,sys; print(json.load(sys.stdin)["generatedAt"])' <<< "$payload")
+              if [[ "$after" != "$before" ]]; then
+                echo "Production UHF data updated: $before -> $after"
+                exit 0
+              fi
+            fi
+          done
+          echo "::error::Production UHF data did not update within 25 minutes"
+          exit 1
