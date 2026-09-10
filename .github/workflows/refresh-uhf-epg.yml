@@ -9,7 +9,7 @@ on:
 jobs:
   refresh-uhf:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Trigger Cloudflare web build
         env:
@@ -19,7 +19,8 @@ jobs:
           before=$(curl --fail --silent --show-error https://heywhatson.tv/data/uhf/summary.json | python3 -c 'import json,sys; print(json.load(sys.stdin)["generatedAt"])')
           response=$(curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL")
           python3 -c 'import json,sys; r=json.load(sys.stdin)["result"]; print({k:r.get(k) for k in ("build_uuid", "worker", "status", "already_exists")})' <<< "$response"
-          for attempt in {1..50}; do
+          # ponytail: allows one 20-minute build to queue behind another; use the Builds API if this grows.
+          for attempt in {1..80}; do
             sleep 30
             if payload=$(curl --fail --silent --show-error "https://heywhatson.tv/data/uhf/summary.json?verify=$RANDOM-$attempt"); then
               after=$(python3 -c 'import json,sys; print(json.load(sys.stdin)["generatedAt"])' <<< "$payload")
