@@ -909,9 +909,16 @@ function resolvedEditorPicks() {
         const channelId = countryData?.duplicateChannelAliases?.[airing.channelId] || airing.channelId;
         const channel = countryData?.channels.find((item) => item.id === channelId)
           || countryData?.channels.find((item) => item.name === airing.channelName);
-        const index = channel?.programs.findIndex((program) =>
+        const exactIndex = channel?.programs.findIndex((program) =>
           program.title === (airing.sourceTitle || pick.title) && program.startAt === airing.startAt
         );
+        const matchingSlots = channel?.programs
+          .map((program, index) => ({ program, index }))
+          .filter(({ program }) =>
+            (program.startAt === airing.startAt && program.endAt === airing.endAt)
+            || isOverlappingDuplicate(program, airing)
+          ) || [];
+        const index = exactIndex >= 0 ? exactIndex : matchingSlots.length === 1 ? matchingSlots[0].index : -1;
         return countryData && channel && index >= 0
           ? { countryData, channel, index, key: channelKey(airing.country, channel.id) }
           : null;
