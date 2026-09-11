@@ -903,7 +903,6 @@ function renderLiveSportsResults() {
 function resolvedEditorPicks() {
   return state.editorPicks.map((pick) => {
     const airings = (Array.isArray(pick.channels) ? pick.channels : [pick])
-      .filter((airing) => new Date(airing.endAt).getTime() > state.now.getTime())
       .map((airing) => {
         const countryData = state.countryDataByCode.get(airing.country);
         const channelId = countryData?.duplicateChannelAliases?.[airing.channelId] || airing.channelId;
@@ -920,6 +919,7 @@ function resolvedEditorPicks() {
           ) || [];
         const index = exactIndex >= 0 ? exactIndex : matchingSlots.length === 1 ? matchingSlots[0].index : -1;
         return countryData && channel && index >= 0
+          && new Date(channel.programs[index].endAt).getTime() > state.now.getTime()
           ? { countryData, channel, index, key: channelKey(airing.country, channel.id) }
           : null;
       }).filter(Boolean).filter((airing, index, all) =>
