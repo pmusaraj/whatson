@@ -902,28 +902,43 @@ function renderLiveSportsResults() {
 
 function resolvedEditorPicks() {
   return state.editorPicks.map((pick) => {
-    const countryData = state.countryDataByCode.get(pick.country);
-    const channelId = countryData?.duplicateChannelAliases?.[pick.channelId] || pick.channelId;
-    const channel = countryData?.channels.find((item) => item.id === channelId)
-      || countryData?.channels.find((item) => item.name === pick.channelName);
-    const index = channel?.programs.findIndex((program) =>
-      program.title === pick.title && program.startAt === pick.startAt
-    );
-    return countryData && channel && index >= 0
-      ? { pick, countryData, channel, index, key: channelKey(pick.country, channel.id) }
-      : null;
+    const airings = (Array.isArray(pick.channels) ? pick.channels : [pick])
+      .filter((airing) => new Date(airing.endAt).getTime() > state.now.getTime())
+      .map((airing) => {
+        const countryData = state.countryDataByCode.get(airing.country);
+        const channelId = countryData?.duplicateChannelAliases?.[airing.channelId] || airing.channelId;
+        const channel = countryData?.channels.find((item) => item.id === channelId)
+          || countryData?.channels.find((item) => item.name === airing.channelName);
+        const index = channel?.programs.findIndex((program) =>
+          program.title === (airing.sourceTitle || pick.title) && program.startAt === airing.startAt
+        );
+        return countryData && channel && index >= 0
+          ? { countryData, channel, index, key: channelKey(airing.country, channel.id) }
+          : null;
+      }).filter(Boolean).filter((airing, index, all) =>
+        all.findIndex((item) => item.key === airing.key) === index
+      );
+    return airings.length ? { pick, airings } : null;
   }).filter(Boolean);
 }
 
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
   els.editorPicks.hidden = picks.length === 0;
-  els.editorPicksList.innerHTML = picks.map(({ pick, countryData, channel, index, key }) => `
-    <button class="show-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
-      <span class="show-result-time">${formatTime(pick.startAt)}</span>
-      <span class="show-result-title">${escapeHtml(pick.title)}</span>
-      <span class="show-result-meta">${flagEmoji(countryData.country)} ${escapeHtml(pick.competition || channel.name)}</span>
-    </button>
+  els.editorPicksList.innerHTML = picks.map(({ pick, airings }) => `
+    <article class="editor-pick-result">
+      <div class="editor-pick-heading">
+        <span class="show-result-time">${formatTime(pick.startAt)}</span>
+        <strong class="show-result-title">${escapeHtml(pick.title)}</strong>
+      </div>
+      <div class="editor-pick-channels" aria-label="Available channels">
+        ${airings.map(({ countryData, channel, index, key }) => `
+          <button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">
+            <span aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(channel.name)}
+          </button>
+        `).join("")}
+      </div>
+    </article>
   `).join("");
 }
 
@@ -1434,7 +1449,7 @@ els.searchResults.addEventListener("click", (event) => {
 });
 
 els.editorPicksList.addEventListener("click", (event) => {
-  const result = event.target.closest(".show-result");
+  const result = event.target.closest(".editor-pick-channel");
   if (result) {
     openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
   }
@@ -1483,6 +1498,7 @@ async function start() {
     window.setInterval(() => {
       state.now = new Date();
       renderGuide();
+      renderEditorPicks();
       if (state.liveSportsOpen) {
         renderLiveSportsResults();
       }

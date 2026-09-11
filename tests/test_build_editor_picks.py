@@ -23,59 +23,142 @@ class BuildEditorPicksTest(unittest.TestCase):
                 "id": "sports-one",
                 "name": "Sports One",
                 "programs": [
-                    self.program("Team A vs Team B", "2026-09-04T18:00:00Z"),
-                    self.program("Team A vs Team B", "2026-09-04T18:00:00Z"),
-                    self.program("Team A vs Team B", "2026-09-04T20:00:00Z"),
+                    self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"),
+                    self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"),
+                    self.program("Live: Team A vs Team B", "2026-09-04T20:00:00Z"),
                     self.program("Match highlights", "2026-09-04T19:00:00Z"),
                     self.program("Live: LaLiga", "2026-09-04T19:30:00Z"),
                     self.program("Yesterday's game", "2026-09-04T08:00:00Z", end="2026-09-04T10:00:00Z"),
                 ],
-            }
+            },
+            {
+                "id": "sports-two",
+                "name": "Sports Two",
+                "programs": [self.program("Live: Team A vs Team B", "2026-09-04T18:00:10Z")],
+            },
         ]
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)
             self.write_country(path, "US", channels)
-            self.write_country(path, "FR", [{"id": "sports-fr", "name": "Sport FR", "programs": [self.program("Paris vs Lyon", "2026-09-04T20:00:00Z")]}])
+            self.write_country(path, "FR", [{"id": "sports-fr", "name": "Sport FR", "programs": [self.program("Live: Paris vs Lyon", "2026-09-04T20:00:00Z")]}])
 
             candidates = build_editor_picks.collect_candidates(path, self.now)
 
         self.assertEqual({candidate["country"] for candidate in candidates}, {"US", "FR"})
-        self.assertEqual([candidate["title"] for candidate in candidates], ["Team A vs Team B", "Paris vs Lyon"])
-        self.assertEqual([candidate["id"] for candidate in candidates], ["event-1", "event-2"])
+        self.assertEqual([candidate["title"] for candidate in candidates], ["Live: Team A vs Team B", "Live: Team A vs Team B", "Live: Paris vs Lyon"])
+        self.assertEqual(candidates[0]["startAt"], "2026-09-04T18:00:00Z")
+        self.assertEqual([candidate["channelName"] for candidate in candidates[:2]], ["Sports One", "Sports Two"])
+        self.assertEqual([candidate["id"] for candidate in candidates], ["event-1", "event-2", "event-3"])
 
     def test_candidate_cap_keeps_every_country_in_the_global_pool(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)
             programs = [
                 self.program(
-                    f"Team {index} vs Team X",
+                    f"Live: Team {index} vs Team X",
                     (self.now + timedelta(minutes=index)).isoformat().replace("+00:00", "Z"),
                     end="2026-09-05T09:00:00Z",
                 )
                 for index in range(81)
             ]
+            programs.append({
+                **self.program("New nature documentary", "2026-09-05T06:00:00Z", end="2026-09-05T07:00:00Z"),
+                "categories": ["Documentary"],
+                "originalDate": "2026",
+            })
+            programs.append({
+                **self.program("Festival film premiere", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z"),
+                "categories": ["Film"],
+                "sportType": None,
+                "competition": None,
+                "isPremiere": True,
+            })
             self.write_country(path, "ES", [{"id": "sports-es", "name": "Sport ES", "programs": programs}])
             self.write_country(path, "DE", [{"id": "sports-de", "name": "Sport DE", "programs": [
-                self.program("Berlin vs Munich", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z")
+                self.program("Live: Berlin vs Munich", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z")
             ]}])
 
             candidates = build_editor_picks.collect_candidates(path, self.now)
 
         self.assertEqual({candidate["country"] for candidate in candidates}, {"DE", "ES"})
+        self.assertIn("New nature documentary", [candidate["title"] for candidate in candidates])
+        self.assertEqual(
+            next(candidate for candidate in candidates if candidate["title"] == "Festival film premiere")["highlightType"],
+            "freshProgramme",
+        )
+
+    def test_candidate_cap_keeps_all_channels_for_the_same_event(self):
+        channels = [
+            {
+                "id": f"sports-{index}",
+                "name": f"Sports {index}",
+                "programs": [self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z")],
+            }
+            for index in range(12)
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            self.write_country(path, "US", channels)
+
+            candidates = build_editor_picks.collect_candidates(path, self.now)
+
+        self.assertEqual(len(candidates), 12)
 
     def test_selection_accepts_only_unique_supplied_ids_within_limit(self):
-        candidates = [{"id": f"event-{index}"} for index in range(1, 8)]
+        candidates = [
+            {
+                "id": f"event-{index}",
+                "country": "US",
+                "countryName": "United States",
+                "channelId": f"channel-{index}",
+                "channelName": f"Channel {index}",
+                "title": f"Local title {index}",
+                "startAt": "2026-09-04T18:00:00Z",
+                "endAt": "2026-09-04T20:00:00Z",
+            }
+            for index in range(1, 8)
+        ]
+        candidates[-1]["startAt"] = "2026-09-05T18:00:00Z"
+        candidates[-2]["highlightType"] = "freshProgramme"
+        for candidate in candidates[:-2]:
+            candidate["highlightType"] = "liveSport"
 
-        selected = build_editor_picks.validate_selection(json.dumps({"pick_ids": ["event-2", "event-1"]}), candidates)
+        selected = build_editor_picks.validate_selection(json.dumps({
+            "picks": [{"title": "Translated event", "pick_ids": ["event-2", "event-1"]}],
+        }), candidates)
 
-        self.assertEqual([candidate["id"] for candidate in selected], ["event-2", "event-1"])
+        self.assertEqual(selected[0]["title"], "Translated event")
+        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-2", "channel-1"])
+        self.assertEqual([channel["sourceTitle"] for channel in selected[0]["channels"]], ["Local title 2", "Local title 1"])
         for invalid in (
-            '{"pick_ids":["invented"]}',
-            '{"pick_ids":["event-1","event-1"]}',
-            '{"pick_ids":["event-1","event-2","event-3","event-4","event-5","event-6"]}',
+            '{"picks":[{"title":"Event","pick_ids":["invented"]}]}',
+            '{"picks":[{"title":"Event","pick_ids":["event-1","event-1"]}]}',
+            '{"picks":[{"title":"One","pick_ids":["event-1"]},{"title":"Two","pick_ids":["event-1"]}]}',
+            '{"picks":[{"title":"Wrongly grouped","pick_ids":["event-1","event-7"]}]}',
+            '{"picks":[{"title":"Mixed types","pick_ids":["event-1","event-6"]}]}',
+            '{"picks":[{"title":"1","pick_ids":["event-1"]},{"title":"2","pick_ids":["event-2"]},{"title":"3","pick_ids":["event-3"]},{"title":"4","pick_ids":["event-4"]},{"title":"5","pick_ids":["event-5"]},{"title":"6","pick_ids":["event-6"]}]}',
         ):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
+
+    def test_candidates_require_live_sports_or_fresh_quality_programming(self):
+        base = {
+            "title": "Programme",
+            "startAt": "2026-09-04T18:00:00Z",
+            "endAt": "2026-09-04T20:00:00Z",
+        }
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Live: Team A vs Team B", "categories": ["Sports"]}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Team A vs Team B", "subtitle": "Live", "categories": ["Sports"]}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Team A x Team B (Direto)", "categories": ["Sports"]}, self.now))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Team A vs Team B", "categories": ["Sports"]}, self.now))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Live: Team A vs Team B", "categories": ["Sports"]}, self.now, aired_earlier=True))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Live: Team A vs Team B", "categories": ["Sports"], "previouslyShown": True}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "New nature series", "categories": ["Documentary"], "originalDate": "2026"}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "New sports documentary", "categories": ["Documentary", "Sports"], "originalDate": "2026"}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Drama pilot", "categories": ["Drama"], "episode": "S01E01"}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Festival film premiere", "categories": ["Film"], "isPremiere": True}, self.now))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Routine drama episode", "categories": ["Drama"], "originalDate": "2026"}, self.now))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Old documentary", "categories": ["Documentary"], "originalDate": "2021"}, self.now))
 
     def test_opencode_go_request_uses_deepseek_and_retries_twice(self):
         candidate = {
@@ -85,12 +168,13 @@ class BuildEditorPicksTest(unittest.TestCase):
             "title": "Team A vs Team B",
             "startAt": "2026-09-04T18:00:00Z",
         }
-        response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"pick_ids\\":[\\"event-1\\"]}"}}]}')
+        response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"picks\\":[{\\"title\\":\\"Team A vs Team B\\",\\"pick_ids\\":[\\"event-1\\"]}]}"}}]}')
         opener = Mock(side_effect=[TimeoutError(), TimeoutError(), response])
 
         picks = build_editor_picks.select_with_opencode_go([candidate], "key", opener=opener)
 
-        self.assertEqual(picks, [candidate])
+        self.assertEqual(picks[0]["title"], "Team A vs Team B")
+        self.assertEqual(picks[0]["channels"][0]["channelName"], "Sports One")
         self.assertEqual(opener.call_count, 3)
         request = opener.call_args.args[0]
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")

@@ -317,7 +317,7 @@ def program_window(
 def metadata_score(program: dict) -> int:
     return sum(
         1
-        for key in ("subtitle", "description", "imageUrl", "sportType", "competition")
+        for key in ("subtitle", "description", "imageUrl", "sportType", "competition", "originalDate", "episode", "isNew", "isPremiere")
         if program.get(key)
     ) + len(program.get("categories") or [])
 
@@ -338,6 +338,8 @@ def add_program(programs_by_channel: dict, channel_id: str, program: dict) -> No
         if same_slot or overlapping_duplicate:
             if metadata_score(program) > metadata_score(existing):
                 programs[index] = program
+            if existing.get("previouslyShown") or program.get("previouslyShown"):
+                programs[index]["previouslyShown"] = True
             return
     programs.append(program)
 
@@ -410,6 +412,15 @@ def ingest_xmltv_root(
             "startAt": isoformat(parse_xmltv_time(programme.attrib["start"])),
             "endAt": isoformat(parse_xmltv_time(programme.attrib["stop"])),
         }
+        for key, value in (
+            ("originalDate", text(programme, "date")),
+            ("episode", text(programme, "episode-num[@system='onscreen']") or text(programme, "episode-num")),
+            ("previouslyShown", programme.find("previously-shown") is not None),
+            ("isPremiere", programme.find("premiere") is not None),
+            ("isNew", programme.find("new") is not None),
+        ):
+            if value:
+                program[key] = value
         add_program(programs_by_channel, channel_id, program)
 
 

@@ -11,6 +11,27 @@ spec.loader.exec_module(build_web_data)
 
 
 class BuildWebDataTest(unittest.TestCase):
+    def test_duplicate_merge_preserves_previously_shown(self):
+        programs = {}
+        rerun = {
+            "title": "Rerun",
+            "startAt": "2026-05-02T12:00:00Z",
+            "endAt": "2026-05-02T13:00:00Z",
+            "previouslyShown": True,
+        }
+        richer = {
+            "title": "Rerun",
+            "startAt": "2026-05-02T12:00:00Z",
+            "endAt": "2026-05-02T13:00:00Z",
+            "description": "Richer duplicate",
+            "categories": ["Documentary"],
+        }
+
+        build_web_data.add_program(programs, "A.fr", rerun)
+        build_web_data.add_program(programs, "A.fr", richer)
+
+        self.assertTrue(programs["A.fr"][0]["previouslyShown"])
+
     def test_program_window_collects_24_hours_starting_4_hours_before_now(self):
         now = datetime(2026, 5, 2, 12, 30, tzinfo=timezone.utc)
         programs = [
@@ -38,11 +59,11 @@ class BuildWebDataTest(unittest.TestCase):
                 """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <tv>
   <channel id=\"A.fr\"><display-name>Alpha</display-name><icon src=\"https://example.com/a.png\" /></channel>
-  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Midday news</desc><category>Sports</category><category>Hockey</category><icon src="https://example.com/news.jpg" /></programme>
+  <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Midday news</desc><date>20260502</date><category>Sports</category><category>Hockey</category><episode-num system="onscreen">S01E01</episode-num><new/><premiere/><icon src="https://example.com/news.jpg" /></programme>
   <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>News</title><desc>Duplicate from another source</desc></programme>
   <programme start="20260502120000 +0000" stop="20260502130000 +0000" channel="A.fr"><title>Alternate same-slot source</title></programme>
   <programme start="20260502121500 +0000" stop="20260502124500 +0000" channel="A.fr"><title>Overlapping duplicate source</title></programme>
-  <programme start="20260502130000 +0000" stop="20260502140000 +0000" channel="A.fr"><title>Movie</title></programme>
+  <programme start="20260502130000 +0000" stop="20260502140000 +0000" channel="A.fr"><title>Movie</title><previously-shown/></programme>
 </tv>
 """,
                 encoding="utf-8",
@@ -64,8 +85,13 @@ class BuildWebDataTest(unittest.TestCase):
         self.assertEqual(payload["channels"][0]["programs"][0]["categories"], ["Sports", "Hockey"])
         self.assertEqual(payload["channels"][0]["programs"][0]["sportType"], "Hockey")
         self.assertEqual(payload["channels"][0]["programs"][0]["imageUrl"], "https://example.com/news.jpg")
+        self.assertEqual(payload["channels"][0]["programs"][0]["originalDate"], "20260502")
+        self.assertEqual(payload["channels"][0]["programs"][0]["episode"], "S01E01")
+        self.assertTrue(payload["channels"][0]["programs"][0]["isNew"])
+        self.assertTrue(payload["channels"][0]["programs"][0]["isPremiere"])
         self.assertEqual(len(payload["channels"][0]["programs"]), 2)
         self.assertEqual(payload["channels"][0]["programs"][1]["title"], "Movie")
+        self.assertTrue(payload["channels"][0]["programs"][1]["previouslyShown"])
 
     def test_is_premium_sports_channel_uses_keywords_and_ids(self):
         self.assertTrue(build_web_data.is_premium_sports_channel("TSN1.ca", "Movie Channel", set()))

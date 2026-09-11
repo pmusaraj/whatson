@@ -248,6 +248,39 @@ h2 {
   padding: 0.45rem;
 }
 
+.editor-pick-result {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+}
+
+.editor-pick-heading {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: baseline;
+}
+
+.editor-pick-heading .show-result-title {
+  overflow: visible;
+  white-space: normal;
+}
+
+.editor-pick-channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding-left: 5.7rem;
+}
+
+.editor-pick-channel {
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
 body[data-live-sports-open="true"] .search-results {
   flex-basis: 56%;
   max-height: 56%;
