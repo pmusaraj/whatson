@@ -141,7 +141,10 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
     country_events = {}
     for candidate in ordered:
         bucket = (candidate["country"], candidate["highlightType"])
-        event_key = normalized_title(f"{candidate['title']} {candidate.get('subtitle') or ''}")
+        event_key = normalized_title(
+            candidate["title"] if candidate["highlightType"] == "liveSport"
+            else f"{candidate['title']} {candidate.get('subtitle') or ''}"
+        )
         seen_events = country_events.setdefault(bucket, set())
         if event_key not in seen_events:
             if len(seen_events) >= CANDIDATES_PER_COUNTRY:

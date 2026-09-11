@@ -104,6 +104,32 @@ class BuildEditorPicksTest(unittest.TestCase):
 
         self.assertEqual(len(candidates), 12)
 
+    def test_candidate_cap_keeps_same_live_event_with_translated_subtitles(self):
+        strong_events = [
+            self.program(f"Live: Champions Team {index} vs Team X", "2026-09-04T18:00:00Z")
+            for index in range(9)
+        ]
+        channels = [
+            {"id": "strong", "name": "Strong", "programs": strong_events},
+            {
+                "id": "english",
+                "name": "English",
+                "programs": [{**self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"), "subtitle": "English coverage"}],
+            },
+            {
+                "id": "spanish",
+                "name": "Spanish",
+                "programs": [{**self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"), "subtitle": "Cobertura en español"}],
+            },
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            self.write_country(path, "US", channels)
+
+            candidates = build_editor_picks.collect_candidates(path, self.now)
+
+        self.assertEqual(len(candidates), 11)
+
     def test_selection_accepts_only_unique_supplied_ids_within_limit(self):
         candidates = [
             {

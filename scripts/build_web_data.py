@@ -338,8 +338,9 @@ def add_program(programs_by_channel: dict, channel_id: str, program: dict) -> No
         if same_slot or overlapping_duplicate:
             if metadata_score(program) > metadata_score(existing):
                 programs[index] = program
-            if existing.get("previouslyShown") or program.get("previouslyShown"):
-                programs[index]["previouslyShown"] = True
+            for key in ("previouslyShown", "isNew", "isPremiere"):
+                if existing.get(key) or program.get(key):
+                    programs[index][key] = True
             return
     programs.append(program)
 

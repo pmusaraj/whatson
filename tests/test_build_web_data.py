@@ -18,12 +18,16 @@ class BuildWebDataTest(unittest.TestCase):
             "startAt": "2026-05-02T12:00:00Z",
             "endAt": "2026-05-02T13:00:00Z",
             "previouslyShown": True,
+            "isNew": True,
+            "isPremiere": True,
         }
         richer = {
             "title": "Rerun",
             "startAt": "2026-05-02T12:00:00Z",
             "endAt": "2026-05-02T13:00:00Z",
             "description": "Richer duplicate",
+            "subtitle": "Extra details",
+            "imageUrl": "https://example.com/rerun.jpg",
             "categories": ["Documentary"],
         }
 
@@ -31,6 +35,8 @@ class BuildWebDataTest(unittest.TestCase):
         build_web_data.add_program(programs, "A.fr", richer)
 
         self.assertTrue(programs["A.fr"][0]["previouslyShown"])
+        self.assertTrue(programs["A.fr"][0]["isNew"])
+        self.assertTrue(programs["A.fr"][0]["isPremiere"])
 
     def test_program_window_collects_24_hours_starting_4_hours_before_now(self):
         now = datetime(2026, 5, 2, 12, 30, tzinfo=timezone.utc)
