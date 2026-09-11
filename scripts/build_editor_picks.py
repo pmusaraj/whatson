@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
-LOGFARE_URL = "https://logfare.ai/v1/chat/completions"
+OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
 PICK_LIMIT = 5
 CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 20
@@ -109,23 +109,23 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
 
 def validate_selection(content, candidates):
     if not isinstance(content, str):
-        raise ValueError("Logfare response content was not text")
+        raise ValueError("OpenCode Go response content was not text")
     start, end = content.find("{"), content.rfind("}")
     if start < 0 or end < start:
-        raise ValueError("Logfare response did not contain JSON")
+        raise ValueError("OpenCode Go response did not contain JSON")
     result = json.loads(content[start : end + 1])
     pick_ids = result.get("pick_ids") if isinstance(result, dict) else None
     if not isinstance(pick_ids, list) or len(pick_ids) > PICK_LIMIT:
-        raise ValueError("Logfare response had invalid pick_ids")
+        raise ValueError("OpenCode Go response had invalid pick_ids")
     if any(not isinstance(value, str) for value in pick_ids) or len(set(pick_ids)) != len(pick_ids):
-        raise ValueError("Logfare response had duplicate or invalid IDs")
+        raise ValueError("OpenCode Go response had duplicate or invalid IDs")
     by_id = {candidate["id"]: candidate for candidate in candidates}
     if any(value not in by_id for value in pick_ids):
-        raise ValueError("Logfare response invented an event ID")
+        raise ValueError("OpenCode Go response invented an event ID")
     return [by_id[value] for value in pick_ids]
 
 
-def select_with_logfare(candidates, api_key, opener=urllib.request.urlopen):
+def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen):
     public_candidates = []
     for candidate in candidates:
         public_candidates.append({
@@ -149,7 +149,7 @@ def select_with_logfare(candidates, api_key, opener=urllib.request.urlopen):
         json.dumps(public_candidates, ensure_ascii=False, separators=(",", ":"))
     )
     body = json.dumps({
-        "model": "logfare/auto",
+        "model": "deepseek-v4.1-flash",
         "messages": [
             {"role": "system", "content": "You are a conservative television sports editor."},
             {"role": "user", "content": prompt},
@@ -158,9 +158,15 @@ def select_with_logfare(candidates, api_key, opener=urllib.request.urlopen):
         "temperature": 0,
     }).encode("utf-8")
     request = urllib.request.Request(
-        LOGFARE_URL,
+        OPENCODE_GO_URL,
         data=body,
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "Accept": "application/json"},
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "whatson-editor-picks/1.0",
+            "x-opencode-session": "whatson-editor-picks",
+        },
         method="POST",
     )
     raw_response = b""
@@ -173,7 +179,7 @@ def select_with_logfare(candidates, api_key, opener=urllib.request.urlopen):
             if attempt == 2:
                 raise
     if len(raw_response) > 65_536:
-        raise ValueError("Logfare response was too large")
+        raise ValueError("OpenCode Go response was too large")
     envelope = json.loads(raw_response)
     content = envelope["choices"][0]["message"]["content"]
     return validate_selection(content, candidates)
@@ -193,10 +199,10 @@ def main():
     picks = []
     try:
         candidates = collect_candidates(now=now)
-        api_key = os.environ.get("LOGFARE_API_KEY", "").strip()
+        api_key = os.environ.get("OPENCODE_GO_API_KEY", "").strip()
         if not api_key:
-            raise ValueError("LOGFARE_API_KEY is not configured")
-        picks = select_with_logfare(candidates, api_key) if candidates else []
+            raise ValueError("OPENCODE_GO_API_KEY is not configured")
+        picks = select_with_opencode_go(candidates, api_key) if candidates else []
     except Exception as error:
         print(f"warning: editor picks unavailable: {error}", file=sys.stderr)
     write_output(picks, now=now)

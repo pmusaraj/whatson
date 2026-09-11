@@ -77,7 +77,7 @@ class BuildEditorPicksTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
 
-    def test_logfare_request_retries_twice(self):
+    def test_opencode_go_request_uses_deepseek_and_retries_twice(self):
         candidate = {
             "id": "event-1",
             "country": "US",
@@ -88,14 +88,20 @@ class BuildEditorPicksTest(unittest.TestCase):
         response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"pick_ids\\":[\\"event-1\\"]}"}}]}')
         opener = Mock(side_effect=[TimeoutError(), TimeoutError(), response])
 
-        picks = build_editor_picks.select_with_logfare([candidate], "key", opener=opener)
+        picks = build_editor_picks.select_with_opencode_go([candidate], "key", opener=opener)
 
         self.assertEqual(picks, [candidate])
         self.assertEqual(opener.call_count, 3)
+        request = opener.call_args.args[0]
+        self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
+        self.assertEqual(json.loads(request.data)["model"], "deepseek-v4.1-flash")
+        self.assertEqual(request.get_header("Authorization"), "Bearer key")
+        self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
+        self.assertEqual(request.get_header("X-opencode-session"), "whatson-editor-picks")
 
         exhausted = Mock(side_effect=[TimeoutError(), TimeoutError(), TimeoutError()])
         with self.assertRaises(TimeoutError):
-            build_editor_picks.select_with_logfare([candidate], "key", opener=exhausted)
+            build_editor_picks.select_with_opencode_go([candidate], "key", opener=exhausted)
         self.assertEqual(exhausted.call_count, 3)
 
     def program(self, title, start, end="2026-09-04T21:00:00Z"):
