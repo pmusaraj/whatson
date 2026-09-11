@@ -1,7 +1,7 @@
 {
   "country": "FR",
   "countryName": "France",
-  "generatedAt": "2026-09-11T17:26:07.901227Z",
+  "generatedAt": "2026-09-11T17:40:21.661316Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -32,17 +32,6 @@
         "endAt": "2026-09-11T17:53:00Z"
       },
       "programs": [
-        {
-          "title": "Running Man",
-          "subtitle": null,
-          "description": "Dans un présent alternatif, The Running Man est l'émission numéro un sur la chaîne américaine Network : un jeu de survie impitoyable où des candidats doivent échapper à des tueurs professionnels. Ben, un ouvrier prêt à tout pour sauver sa fille gravement malade, accepte l'impensable : participer à ce show mortel...",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/30626537/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-ZCpg",
-          "startAt": "2026-09-11T11:25:00Z",
-          "endAt": "2026-09-11T13:34:00Z"
-        },
         {
           "title": "The Prosecutor",
           "subtitle": null,
@@ -317,6 +306,17 @@
           "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321871/9/1321871_9-e6e5821b-395c-44b2-a339-835da869c0dc.jpg",
           "startAt": "2026-09-12T11:25:00Z",
           "endAt": "2026-09-12T13:32:00Z"
+        },
+        {
+          "title": "Journal du foot",
+          "subtitle": null,
+          "description": "Les derniers résultats et des informations en provenance des clubs et des sélections nationales, pour tout savoir sur les compétitions de football.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/120859892",
+          "startAt": "2026-09-12T13:32:00Z",
+          "endAt": "2026-09-12T13:53:00Z"
         }
       ]
     },
@@ -735,13 +735,11 @@
         {
           "title": "UEFA : Ce que vous n'avez pas vu",
           "subtitle": null,
-          "description": null,
-          "categories": [
-            "Magazine sportif"
-          ],
-          "sportType": "Sports",
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/6/0/8/15414806.jpg",
+          "description": "L'émission décortique à la loupe les matches d'UEFA Champions League à travers surtout les échanges qui ont lieu entre les joueurs sur le terrain.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/32167206/canal-ouah/STD169/myCANAL_16x9_MEA_1920x1080-2026-02-27T154026.788-_0vX",
           "startAt": "2026-09-11T22:01:00Z",
           "endAt": "2026-09-11T22:12:00Z"
         },
@@ -800,15 +798,13 @@
         {
           "title": "Fin des programmes",
           "subtitle": null,
-          "description": null,
-          "categories": [
-            "Fin"
-          ],
+          "description": "Fermeture de l'antenne à la fin des diffusions de la journée.",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/9/6/15179699.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/122299056",
           "startAt": "2026-09-12T01:38:00Z",
-          "endAt": "2026-09-12T04:57:00Z"
+          "endAt": "2026-09-12T02:38:00Z"
         },
         {
           "title": "Football : Arkema Première Ligue",
@@ -900,6 +896,17 @@
           "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/3/0/15233031.jpg",
           "startAt": "2026-09-12T11:25:00Z",
           "endAt": "2026-09-12T13:32:00Z"
+        },
+        {
+          "title": "Match of ze Day",
+          "subtitle": null,
+          "description": "Magazine sur le football anglais. Rendez-vous avec Joris Sabi pour une immersion dans l'actualité de la Premier League avec des reportages made by CANAL+.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/14141998/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x108011-WcQe",
+          "startAt": "2026-09-12T13:32:00Z",
+          "endAt": "2026-09-12T13:55:00Z"
         }
       ]
     },
@@ -914,17 +921,17 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "Babysitting 2",
+        "title": "L'hermine",
         "subtitle": null,
-        "description": "Sonia souhaite présenter Franck à son père, Jean-Pierre, directeur d'un hôtel au Brésil. Avec leurs amis, les deux jeunes amoureux espèrent y passer des vacances de rêve. Un matin, les garçons décident de partir en excursion dans la forêt amazonienne. Jean-Pierre profite de l'occasion pour leur confier Yolande, sa vieille mère acariâtre. Mais, le lendemain, Sonia n'a pas de nouvelles des garçons et de sa grand-mère. Après des recherches infructueuses, Jean-Pierre découvre par hasard la petite caméra GoPro avec laquelle ils étaient partis. En regardant la vidéo, Sonia et son père découvrent les tribulations de Franck et de ses incorrigibles amis...",
+        "description": "Bougon et droit dans ses bottes, Michel Racine, président de cour d'assises à Saint-Omer dans le nord de la France, ne fait pas de sentiment. Il a même un surnom : \"le président à deux chiffres\" car ses sentences dépassent les dix ans. Il a raté sa vie personnelle en épousant une femme plus riche que lui qui vient de le quitter. Lors d'un procès, des jurés doivent être choisis et il est très surpris et ému de découvrir que parmi eux figure Birgit Lorensen-Coteret, qui lui a brisé le coeur. Un chagrin d'amour qui l'a rendu amer. Alors que leur relation n'existait pas, il lui a en effet écrit une lettre dans laquelle il lui déclarait sa flamme...",
         "categories": [
-          "Comédie"
+          "Comédie dramatique"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/4/0/15219042.jpg",
-        "startAt": "2026-09-11T15:59:00Z",
-        "endAt": "2026-09-11T17:29:00Z"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/0/8/15512801.jpg",
+        "startAt": "2026-09-11T17:29:00Z",
+        "endAt": "2026-09-11T19:04:00Z"
       },
       "programs": [
         {
@@ -1108,6 +1115,19 @@
           "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/7/0/15390079.jpg",
           "startAt": "2026-09-12T11:30:00Z",
           "endAt": "2026-09-12T13:28:00Z"
+        },
+        {
+          "title": "Munich",
+          "subtitle": null,
+          "description": "A Munich, en 1972, un commando de terroristes palestiniens affilié au groupe \"Septembre noir\" prend en otages des athlètes israéliens. L'opération tourne au carnage. Aussitôt, Golda Meir, Premier ministre israélien, prend la décision de répliquer. Avner, un jeune agent du Mossad, reçoit l'ordre de retrouver et d'éliminer les membres de \"Septembre noir\" qui sont considérés comme les commanditaires de l'attentat. Il change d'identité et quitte Tel Aviv en laissant sa femme enceinte. Arrivé en Europe avec un commando de quatre hommes, il tente d'entrer en contact avec le mystérieux \"Papa\", qui devrait lui permettre de localiser les terroristes...",
+          "categories": [
+            "Film de suspense"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/2/3/15215322.jpg",
+          "startAt": "2026-09-12T13:28:00Z",
+          "endAt": "2026-09-12T16:06:00Z"
         }
       ]
     },
@@ -1122,45 +1142,19 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "La méthode Flore",
-        "subtitle": "Journal intime",
-        "description": "Quand Irma surprend Chris en train de lire le journal intime de Flore, elle lui suggère de tenir son propre journal plutôt que de s'inquiéter de ce qu'il y a dans le sien. Mais lorsque Chris semble y compiler chaque petit moment à la maison, la curiosité submerge le reste de la famille.",
+        "title": "Au tableau !",
+        "subtitle": "Louane",
+        "description": "Louane répond aux questions des enfants sur son métier de chanteuse, son rôle de maman, ses doutes, ses rêves et son hypersensibilité.",
         "categories": [
-          "Série"
+          "Magazine jeunesse"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/2/7/15193727.jpg",
-        "startAt": "2026-09-11T17:19:00Z",
-        "endAt": "2026-09-11T17:28:00Z"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/6/9/15194961.jpg",
+        "startAt": "2026-09-11T17:32:00Z",
+        "endAt": "2026-09-11T18:02:00Z"
       },
       "programs": [
-        {
-          "title": "Miffy et ses amis *2026",
-          "subtitle": "Le nouveau jeu",
-          "description": "Miffy est de retour ! Prête à vous entraîner dans ses nouvelles aventures, la petite lapine est plus chaleureuse, spontanée et enthousiaste que jamais. Son monde a été réimaginé pour refléter la vie des tout-petits d'aujourd'hui. \"Miffy, désormais grande sœur, a rencontré de nouveaux supers copains ! Et elle a toujours des choses à apprendre, des petits problèmes à surmonter et de nouvelles façons de jouer à inventer. À chaque journée sa façon de s'amuser !",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/2/5/15193522.jpg",
-          "startAt": "2026-09-11T13:20:00Z",
-          "endAt": "2026-09-11T13:28:00Z"
-        },
-        {
-          "title": "Les aventures de Paddington",
-          "subtitle": "Paddington et le héros malgré lui",
-          "description": "Jonathan est proclamé héros après avoir sauvé un bébé gnome, mais son histoire d'héroïsme tient-elle vraiment la route ?",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/3/8/6/15193683.jpg",
-          "startAt": "2026-09-11T13:28:00Z",
-          "endAt": "2026-09-11T13:38:00Z"
-        },
         {
           "title": "Les aventures de Paddington",
           "subtitle": "Paddington et la course contre la tempête",
@@ -2980,6 +2974,19 @@
           "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/2/5/15193522.jpg",
           "startAt": "2026-09-12T13:23:00Z",
           "endAt": "2026-09-12T13:30:00Z"
+        },
+        {
+          "title": "Les aventures de Paddington",
+          "subtitle": "Paddington et Padding Tron, héros du jour",
+          "description": "Paddington et son robot Padding Tron sont les héros de Windsor Gardens, mais quelles sont ces curieuses émotions que le robot ressent ?",
+          "categories": [
+            "Série d'animation"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/3/8/6/15193683.jpg",
+          "startAt": "2026-09-12T13:30:00Z",
+          "endAt": "2026-09-12T13:41:00Z"
         }
       ]
     },
@@ -3332,17 +3339,17 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "Judo : Grand Chelem à Budapest",
-        "subtitle": "Grand Slam in Budapest",
+        "title": "Baba Versus",
+        "subtitle": "Christian Mbilli",
         "description": null,
         "categories": [
-          "Arts martiaux"
+          "Magazine sportif"
         ],
-        "sportType": "Combat sports",
+        "sportType": "Sports",
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/4/7/15187740.jpg",
-        "startAt": "2026-09-11T15:00:00Z",
-        "endAt": "2026-09-11T17:30:00Z"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/6/0/6/15187606.jpg",
+        "startAt": "2026-09-11T17:30:00Z",
+        "endAt": "2026-09-11T18:30:00Z"
       },
       "programs": [
         {
@@ -3540,19 +3547,6 @@
         "endAt": "2026-09-11T19:00:00Z"
       },
       "programs": [
-        {
-          "title": "Chaîne événementielle pour suivre tous les matches en direct",
-          "subtitle": null,
-          "description": null,
-          "categories": [
-            "Programme indéterminé"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/6/7/15187761.jpg",
-          "startAt": "2026-09-11T13:00:00Z",
-          "endAt": "2026-09-11T13:30:00Z"
-        },
         {
           "title": "Kickboxing : ONE Friday Fights",
           "subtitle": null,
@@ -3928,17 +3922,17 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "Judo : Grand Chelem à Budapest",
-        "subtitle": "Grand Slam in Budapest",
+        "title": "Baba Versus",
+        "subtitle": "Christian Mbilli",
         "description": null,
         "categories": [
-          "Arts martiaux"
+          "Magazine sportif"
         ],
-        "sportType": "Combat sports",
+        "sportType": "Sports",
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/4/7/15187740.jpg",
-        "startAt": "2026-09-11T15:00:00Z",
-        "endAt": "2026-09-11T17:30:00Z"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/6/0/6/15187606.jpg",
+        "startAt": "2026-09-11T17:30:00Z",
+        "endAt": "2026-09-11T18:30:00Z"
       },
       "programs": [
         {
