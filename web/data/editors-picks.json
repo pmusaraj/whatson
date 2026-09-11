@@ -1,84 +1,175 @@
 {
-  "generatedAt": "2026-09-11T17:49:35.315048Z",
+  "generatedAt": "2026-09-11T19:20:26.860462Z",
   "picks": [
     {
-      "country": "BR",
-      "countryName": "Brazil",
-      "channelId": "ESPN.us",
-      "channelName": "ESPN",
-      "title": "Semifinal Masculina",
-      "subtitle": null,
-      "description": "Do USTA Billie Jean King National Tennis Center, em Nova York, EUA.",
-      "categories": [
-        "US Open de Tênis 2026"
-      ],
-      "sportType": "Tennis",
-      "competition": null,
-      "startAt": "2026-09-11T19:00:00Z",
-      "endAt": "2026-09-11T22:00:00Z",
-      "id": "event-86"
-    },
-    {
-      "country": "DE",
-      "countryName": "Germany",
-      "channelId": "SportdigitalFUSSBALL.de",
-      "channelName": "SPORTDIGITAL FUSSBALL",
-      "title": "LFC TV - Champions League (Ligaphase, 1. Spieltag), Liverpool FC - Atletico Madrid",
-      "subtitle": null,
-      "description": "LFC TV - Champions League (Ligaphase, 1. Spieltag)",
-      "categories": [
-        "Fußball"
-      ],
-      "sportType": "Football",
-      "competition": "Champions League",
-      "startAt": "2026-09-11T15:45:00Z",
-      "endAt": "2026-09-11T18:40:00Z",
-      "id": "event-24"
-    },
-    {
       "country": "PT",
       "countryName": "Portugal",
-      "channelId": "DAZN1.uk",
+      "channelId": "nos-pt:DAZN1.uk",
       "channelName": "DAZN 1",
-      "title": "UEFA Champions League 26/27 - FC Porto x Man. City",
+      "title": "Premier League 2026-27: Liverpool vs Fulham",
       "subtitle": "2627",
-      "description": "Assiste ao jogo da Uefa Champions League entre FC Porto x Manchester City.",
+      "description": "Assiste ao jogo da Premier League entre Liverpool x Fulham.",
+      "originalDate": null,
+      "episode": null,
+      "isPremiere": null,
+      "isNew": null,
       "categories": [],
       "sportType": "Football",
-      "competition": "Champions League",
-      "startAt": "2026-09-11T20:45:00Z",
-      "endAt": "2026-09-11T22:45:00Z",
-      "id": "event-5"
-    },
-    {
-      "country": "PT",
-      "countryName": "Portugal",
-      "channelId": "DAZN1.uk",
-      "channelName": "DAZN 1",
-      "title": "UEFA Champions League 26/27 - B. Munique x Bodø / Glimt",
-      "subtitle": "2627",
-      "description": "Assiste ao jogo da Uefa Champions League entre Bayern x Bodø / Glimt.",
-      "categories": [],
-      "sportType": "Football",
-      "competition": "Champions League",
-      "startAt": "2026-09-12T02:00:00Z",
-      "endAt": "2026-09-12T04:00:00Z",
-      "id": "event-9"
+      "competition": "Premier League",
+      "highlightType": "liveSport",
+      "startAt": "2026-09-12T14:01:00Z",
+      "endAt": "2026-09-12T16:00:00Z",
+      "id": "event-4",
+      "channels": [
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "nos-pt:DAZN1.uk",
+          "channelName": "DAZN 1",
+          "sourceTitle": "Premier League 26/27 - Liverpool x Fulham (Direto)",
+          "startAt": "2026-09-12T14:01:00Z",
+          "endAt": "2026-09-12T16:00:00Z"
+        },
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "DAZN1.uk",
+          "channelName": "DAZN 1",
+          "sourceTitle": "Premier League 26/27 - Liverpool x Fulham (Direto)",
+          "startAt": "2026-09-12T14:01:00Z",
+          "endAt": "2026-09-12T16:00:00Z"
+        }
+      ]
     },
     {
       "country": "PT",
       "countryName": "Portugal",
       "channelId": "DAZN2.uk",
       "channelName": "DAZN 2",
-      "title": "La Liga EA Sports 2026-27 - Valência x Barcelona",
+      "title": "Premier League 2026-27: Chelsea vs Hull City",
       "subtitle": "2627",
-      "description": "Assiste ao jogo da LALIGA entre Valencia x Barcelona.",
+      "description": "Assiste ao jogo da Premier League entre Chelsea x Hull City.",
+      "originalDate": null,
+      "episode": null,
+      "isPremiere": null,
+      "isNew": null,
+      "categories": [],
+      "sportType": "Football",
+      "competition": "Premier League",
+      "highlightType": "liveSport",
+      "startAt": "2026-09-12T13:50:00Z",
+      "endAt": "2026-09-12T16:00:00Z",
+      "id": "event-3",
+      "channels": [
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "DAZN2.uk",
+          "channelName": "DAZN 2",
+          "sourceTitle": "Premier League 26/27 - Chelsea x Hull City (Direto)",
+          "startAt": "2026-09-12T13:50:00Z",
+          "endAt": "2026-09-12T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "country": "PT",
+      "countryName": "Portugal",
+      "channelId": "DAZN2.uk",
+      "channelName": "DAZN 2",
+      "title": "La Liga 2026-27: Sevilla vs Valencia",
+      "subtitle": "2627",
+      "description": "Assiste ao jogo da LALIGA entre Sevilla x Valencia.",
+      "originalDate": null,
+      "episode": null,
+      "isPremiere": null,
+      "isNew": null,
       "categories": [],
       "sportType": "Football",
       "competition": "LaLiga",
-      "startAt": "2026-09-11T16:30:00Z",
-      "endAt": "2026-09-11T18:30:00Z",
-      "id": "event-2"
+      "highlightType": "liveSport",
+      "startAt": "2026-09-11T18:50:00Z",
+      "endAt": "2026-09-11T21:00:00Z",
+      "id": "event-1",
+      "channels": [
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "DAZN2.uk",
+          "channelName": "DAZN 2",
+          "sourceTitle": "La Liga EA Sports 2026-27 - Sevilha x Valência (Direto)",
+          "startAt": "2026-09-11T18:50:00Z",
+          "endAt": "2026-09-11T21:00:00Z"
+        }
+      ]
+    },
+    {
+      "country": "UK",
+      "countryName": "United Kingdom",
+      "channelId": "TNTSports2.uk",
+      "channelName": "TNT Sports 2 HD",
+      "title": "UCI WorldTour Cycling: Grand Prix de Québec",
+      "subtitle": "Grand Prix de Québec",
+      "description": "Action from the 15th edition of the Grand Prix Quebec, featuring the signature steep ascent of the Cote de la Montagne.",
+      "originalDate": "20260101",
+      "episode": "S47820000E2026091128",
+      "isPremiere": null,
+      "isNew": null,
+      "categories": [
+        "Sports Show",
+        "Cycling"
+      ],
+      "sportType": "Formula 1",
+      "competition": null,
+      "highlightType": "liveSport",
+      "startAt": "2026-09-11T14:45:00Z",
+      "endAt": "2026-09-11T20:30:00Z",
+      "id": "event-13",
+      "channels": [
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "TNTSports2.uk",
+          "channelName": "TNT Sports 2 HD",
+          "sourceTitle": "Live: UCI WorldTour Cycling",
+          "startAt": "2026-09-11T14:45:00Z",
+          "endAt": "2026-09-11T20:30:00Z"
+        }
+      ]
+    },
+    {
+      "country": "UK",
+      "countryName": "United Kingdom",
+      "channelId": "TNTSports1.uk",
+      "channelName": "TNT Sports 1 HD",
+      "title": "FIA World Rally Championship: Rally Chile Bio Bío – SS4 to 6",
+      "subtitle": "Rally Chile Bio Bío: SS4 to 6",
+      "description": "Action from stages four, five and six of the 2026 World Rally Championship in Chile.",
+      "originalDate": "20260101",
+      "episode": "S56810000E2026091156",
+      "isPremiere": null,
+      "isNew": null,
+      "categories": [
+        "Sports Show",
+        "Motorsport"
+      ],
+      "sportType": "Motorsport",
+      "competition": null,
+      "highlightType": "liveSport",
+      "startAt": "2026-09-11T17:45:00Z",
+      "endAt": "2026-09-11T20:45:00Z",
+      "id": "event-8",
+      "channels": [
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "TNTSports1.uk",
+          "channelName": "TNT Sports 1 HD",
+          "sourceTitle": "Live: FIA World Rally Championship",
+          "startAt": "2026-09-11T17:45:00Z",
+          "endAt": "2026-09-11T20:45:00Z"
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "country": "BR",
   "countryName": "Brazil",
-  "generatedAt": "2026-09-11T17:49:28.653469Z",
+  "generatedAt": "2026-09-11T19:20:20.066241Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -33,28 +33,6 @@
         "endAt": "2026-09-11T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Esporte Total",
-          "subtitle": null,
-          "description": "Confira as notícias locais do mundo esportivo e os destaques do futebol goiano.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-esporte-total_l_m.jpg",
-          "startAt": "2026-09-11T13:45:00Z",
-          "endAt": "2026-09-11T14:15:00Z"
-        },
-        {
-          "title": "Oléé S.A.",
-          "subtitle": null,
-          "description": "Acompanhe uma discussão sobre o que acontece fora das disputas esportivas. Veja tudo sobre as modalidades por meio da ótica dos negócios e do nicho econômico.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_bus-financial-olee-s-a_l_m.jpg",
-          "startAt": "2026-09-11T14:15:00Z",
-          "endAt": "2026-09-11T14:30:00Z"
-        },
         {
           "title": "G4",
           "subtitle": null,
@@ -320,6 +298,17 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-zenit-x-lokomotiv-moscou_l_m.jpg",
           "startAt": "2026-09-12T13:15:00Z",
           "endAt": "2026-09-12T15:15:00Z"
+        },
+        {
+          "title": "Pré-Jogo",
+          "subtitle": null,
+          "description": "Especialistas fazem prévias de transmissões esportivas, com informações, entrevistas e destaques.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-pre-jogo_l_m.jpg",
+          "startAt": "2026-09-12T15:15:00Z",
+          "endAt": "2026-09-12T15:30:00Z"
         }
       ]
     },
@@ -333,15 +322,17 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "SportsCenter",
+        "title": "Semifinal Masculina",
         "subtitle": null,
-        "description": "Os principais fatos do mundo esportivo, com as imagens que marcaram o dia, temas fundamentais e polêmicos. Informação apurada e opinião transparente, sem abdicar do bom humor.",
-        "categories": [],
-        "sportType": null,
+        "description": "Do USTA Billie Jean King National Tennis Center, em Nova York, EUA.",
+        "categories": [
+          "US Open de Tênis 2026"
+        ],
+        "sportType": "Tennis",
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-sportscenter_l_m.jpg",
-        "startAt": "2026-09-11T16:30:00Z",
-        "endAt": "2026-09-11T18:30:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_tennis-semifinal-masculina-68_l_m.jpg",
+        "startAt": "2026-09-11T19:00:00Z",
+        "endAt": "2026-09-11T22:00:00Z"
       },
       "programs": [
         {
@@ -544,30 +535,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "F Show",
+        "title": "West Ham x Wrexham",
         "subtitle": null,
-        "description": "O programa debate os principais acontecimentos do mundo do futebol de forma acalorada, porém inteligente, mesclando jornalismo, opinião e entretenimento.",
-        "categories": [],
+        "description": "Do London Stadium, em Londres, Inglaterra.",
+        "categories": [
+          "Campeonato Inglês - Segunda Divisão"
+        ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-f-show_l_m.jpg",
-        "startAt": "2026-09-11T16:00:00Z",
-        "endAt": "2026-09-11T18:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-west-ham-x-wrexham_l_m.jpg",
+        "startAt": "2026-09-11T18:55:00Z",
+        "endAt": "2026-09-11T21:00:00Z"
       },
       "programs": [
-        {
-          "title": "Copa Libertadores da América",
-          "subtitle": null,
-          "description": "Todas as emoções da principal competição de futebol masculino disputada entre clubes da América do Sul, e garante ao campeão vaga no Mundial de Clubes da FIFA.",
-          "categories": [
-            "Copa Libertadores da América"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-libertadores-da-america_l_m.jpg",
-          "startAt": "2026-09-11T12:00:00Z",
-          "endAt": "2026-09-11T14:00:00Z"
-        },
         {
           "title": "SportsCenter",
           "subtitle": null,
@@ -785,6 +765,19 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-campeonato-ingles-1_l_m.jpg",
           "startAt": "2026-09-12T12:20:00Z",
           "endAt": "2026-09-12T15:00:00Z"
+        },
+        {
+          "title": "Campeonato Inglês",
+          "subtitle": null,
+          "description": "Todas as emoções da Premier League, a divisão de elite do futebol masculino de clubes na Inglaterra. Disputada por 20 clubes, a competição é uma das principais ligas do futebol mundial, reunindo grandes atletas e técnicos.",
+          "categories": [
+            "Campeonato Inglês"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-campeonato-ingles-1_l_m.jpg",
+          "startAt": "2026-09-12T15:00:00Z",
+          "endAt": "2026-09-12T17:30:00Z"
         }
       ]
     },
@@ -798,43 +791,17 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Besiktas x Erzurumspor",
+        "title": "Aquece NFL 2026",
         "subtitle": null,
-        "description": "Todas as emoções da Süper Lig, a principal competição de futebol masculino entre clubes da Turquia.",
-        "categories": [
-          "Campeonato Turco de Futebol"
-        ],
+        "description": "Uma prévia da temporada 2026 da principal liga de futebol americano do planeta.",
+        "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-besiktas-x-erzurumspor_l_m.jpg",
-        "startAt": "2026-09-11T16:55:00Z",
-        "endAt": "2026-09-11T19:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_football-aquece-nfl-2026_l_m.jpg",
+        "startAt": "2026-09-11T19:00:00Z",
+        "endAt": "2026-09-11T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "GP de San Marino - Treinos Livres",
-          "subtitle": null,
-          "description": "Acompanhe as emoções da principal categoria de motovelocidade do planeta.",
-          "categories": [
-            "Moto GP"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorcycle-racing-gp-de-san-marino-treinos-livres-1_l_m.jpg",
-          "startAt": "2026-09-11T12:50:00Z",
-          "endAt": "2026-09-11T14:00:00Z"
-        },
-        {
-          "title": "F1: The Inside Line",
-          "subtitle": null,
-          "description": "Veja a cobertura completa da Fórmula 1, a maior e mais badalada categoria do automobilismo mundial. Acompanhe as principais notícias da semana, os bastidores, entrevistas exclusivas e reportagens especiais.",
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-f1-the-inside-line_l_m.jpg",
-          "startAt": "2026-09-11T14:00:00Z",
-          "endAt": "2026-09-11T14:30:00Z"
-        },
         {
           "title": "Santos x Atlético-MG",
           "subtitle": null,
@@ -1126,6 +1093,30 @@
           "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-da-inglaterra_l_m.jpg",
           "startAt": "2026-09-12T12:25:00Z",
           "endAt": "2026-09-12T14:30:00Z"
+        },
+        {
+          "title": "SportsCenter Abre o Jogo",
+          "subtitle": null,
+          "description": "Os preparativos para os principais eventos esportivos do Brasil e do mundo.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_sports-talk-sportscenter-abre-o-jogo_l_m.jpg",
+          "startAt": "2026-09-12T14:30:00Z",
+          "endAt": "2026-09-12T14:55:00Z"
+        },
+        {
+          "title": "Copa do Rei",
+          "subtitle": null,
+          "description": "Disputada desde 1903, envolve os maiores times de Espanha. Entre os anos de 1931 e 1938, o torneio mudou de nome para Copa Presidente da República e, entre 1939 a 1976, se tornou Copa do Generalíssimo. Em 1977, antigo nome retornou para ficar.",
+          "categories": [
+            "Copa do Rei"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-copa-do-rei-1_l_m.jpg",
+          "startAt": "2026-09-12T14:55:00Z",
+          "endAt": "2026-09-12T16:55:00Z"
         }
       ]
     },
@@ -1152,19 +1143,6 @@
         "endAt": "2026-09-11T19:30:00Z"
       },
       "programs": [
-        {
-          "title": "Gimnasia Mendoza x Boca Juniors",
-          "subtitle": null,
-          "description": "Acompanhe as grandes partidas do torneio de elite do futebol argentino.",
-          "categories": [
-            "Campeonato Argentino"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gimnasia-mendoza-x-boca-juniors_l_m.jpg",
-          "startAt": "2026-09-11T12:30:00Z",
-          "endAt": "2026-09-11T14:30:00Z"
-        },
         {
           "title": "Porto x Moreirense",
           "subtitle": null,
@@ -1331,7 +1309,7 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Flamengo x Botafogo",
+        "title": "Grêmio x Chapecoense",
         "subtitle": null,
         "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
         "categories": [
@@ -1339,50 +1317,11 @@
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-flamengo-x-botafogo-3_l_m.jpg",
-        "startAt": "2026-09-11T17:30:00Z",
-        "endAt": "2026-09-11T18:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-gremio-x-chapecoense-1_l_m.jpg",
+        "startAt": "2026-09-11T19:00:00Z",
+        "endAt": "2026-09-11T19:30:00Z"
       },
       "programs": [
-        {
-          "title": "Vitória x Grêmio",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-vitoria-x-gremio-1_l_m.jpg",
-          "startAt": "2026-09-11T13:30:00Z",
-          "endAt": "2026-09-11T14:00:00Z"
-        },
-        {
-          "title": "Coritiba x Mirassol",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-coritiba-x-mirassol-1_l_m.jpg",
-          "startAt": "2026-09-11T14:00:00Z",
-          "endAt": "2026-09-11T14:30:00Z"
-        },
-        {
-          "title": "Bragantino x Bahia",
-          "subtitle": null,
-          "description": "Vinte equipes disputam, em pontos corridos e 38 rodadas, a Série A do futebol masculino brasileiro.",
-          "categories": [
-            "Campeonato Brasileiro"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-bragantino-x-bahia-1_l_m.jpg",
-          "startAt": "2026-09-11T14:30:00Z",
-          "endAt": "2026-09-11T15:00:00Z"
-        },
         {
           "title": "São Paulo x Atlético-MG",
           "subtitle": null,
@@ -1790,28 +1729,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "Seleção Sportv",
+        "title": "Union Berlin x Schalke 04",
         "subtitle": null,
-        "description": "O programa analisa, logo depois dos jogos de futebol do dia, todos os lances e as imagens das melhores jogadas, além de trazer notícias envolvendo os bastidores dos clubes e entrevistas com atletas e treinadores.",
-        "categories": [],
+        "description": "Todas as emoções das partidas da Bundesliga, primeira divisão de futebol masculino da Alemanha.",
+        "categories": [
+          "Campeonato Alemão"
+        ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-selec-o-sportv_l_m.jpg",
-        "startAt": "2026-09-11T15:55:00Z",
-        "endAt": "2026-09-11T18:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-union-berlin-x-schalke-04_l_m.jpg",
+        "startAt": "2026-09-11T18:00:00Z",
+        "endAt": "2026-09-11T20:45:00Z"
       },
       "programs": [
-        {
-          "title": "Redação SporTV",
-          "subtitle": null,
-          "description": "Um programa de debate sobre as notícias esportivas com alguns dos principais cronistas do esporte brasileiro.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_news-redac-o-sportv_l_m.jpg",
-          "startAt": "2026-09-11T13:00:00Z",
-          "endAt": "2026-09-11T15:15:00Z"
-        },
         {
           "title": "Tá On",
           "subtitle": null,
@@ -2101,19 +2031,6 @@
       },
       "programs": [
         {
-          "title": "Brasil x Inglaterra",
-          "subtitle": null,
-          "description": "Cobertura completa do evento bianual de futebol, com sede em quatro cidades da Polônia.",
-          "categories": [
-            "Copa do Mundo de Futebol Feminino Sub-20 FIFA 2026"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_soccer-brasil-x-inglaterra-4_l_m.jpg",
-          "startAt": "2026-09-11T12:45:00Z",
-          "endAt": "2026-09-11T15:00:00Z"
-        },
-        {
           "title": "Al Qadsiah x Al Ettifaq",
           "subtitle": null,
           "description": "Todas as emoções da principal competição de futebol masculino profissional da Arábia Saudita.",
@@ -2251,30 +2168,19 @@
         "data/normalized/guide-premium-BR-mi.tv_br.xml"
       ],
       "currentProgram": {
-        "title": "GP da Espanha - Treino Livre 2",
+        "title": "Vitória x Goiás",
         "subtitle": null,
-        "description": "Todas as emoções da mais prestigiada competição de automobilismo do planeta, a Fórmula 1.",
+        "description": "Fique por dentro da disputa do torneio de futevôlei, com sua nova etapa realizada no Rio de Janeiro.",
         "categories": [
-          "Fórmula 1"
+          "Liga Nacional de Futevôlei"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://cdn.mitvstatic.com/programs/br_auto-racing-gp-da-espanha-treino-livre-2_l_m.jpg",
-        "startAt": "2026-09-11T17:00:00Z",
-        "endAt": "2026-09-11T18:00:00Z"
+        "imageUrl": "https://cdn.mitvstatic.com/programs/br_action-sports-vitoria-x-goias_l_m.jpg",
+        "startAt": "2026-09-11T19:00:00Z",
+        "endAt": "2026-09-11T20:00:00Z"
       },
       "programs": [
-        {
-          "title": "Fórmula 1",
-          "subtitle": null,
-          "description": "Compactos, reprises e destaques da principal competição de velocidade entre monopostos do planeta.",
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://cdn.mitvstatic.com/programs/br_motorsports-formula-1_l_m.jpg",
-          "startAt": "2026-09-11T13:30:00Z",
-          "endAt": "2026-09-11T14:30:00Z"
-        },
         {
           "title": "GP da Espanha - Treino Livre 2",
           "subtitle": null,
