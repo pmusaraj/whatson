@@ -227,25 +227,36 @@ h2 {
 
 .editor-picks {
   flex: 0 0 auto;
-  max-height: min(18rem, 34vh);
-  margin-bottom: 0.85rem;
-  overflow: auto;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  margin-bottom: 0.6rem;
 }
 
 .editor-picks summary {
-  padding: 0.65rem 0.8rem;
+  display: block;
+  width: fit-content;
+  list-style: none;
   cursor: pointer;
-  font-weight: 760;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
-.editor-picks[open] summary {
-  border-bottom: 1px solid var(--border);
+.editor-picks summary::-webkit-details-marker {
+  display: none;
+}
+
+.editor-picks[open] {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.editor-picks[open] ~ .search-results,
+.editor-picks[open] ~ .guide {
+  display: none;
 }
 
 .editor-picks .show-results-list {
-  padding: 0.45rem;
+  padding-top: 0.65rem;
 }
 
 .editor-pick-result {

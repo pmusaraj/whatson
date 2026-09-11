@@ -167,6 +167,11 @@ def validate_selection(content, candidates):
     if not isinstance(groups, list) or len(groups) > PICK_LIMIT:
         raise ValueError("OpenCode Go response had invalid picks")
     by_id = {candidate["id"]: candidate for candidate in candidates}
+    requested_ids = {
+        value
+        for group in groups if isinstance(group, dict)
+        for value in group.get("pick_ids", []) if isinstance(value, str)
+    }
     used_ids = set()
     selected = []
     for group in groups:
@@ -184,7 +189,19 @@ def validate_selection(content, candidates):
         starts = [parse_time(candidate["startAt"]) for candidate in group_candidates]
         if max(starts) - min(starts) > timedelta(minutes=30):
             raise ValueError("OpenCode Go grouped broadcasts with different start times")
-        used_ids.update(pick_ids)
+        selected_titles = {normalized_title(candidate["title"]) for candidate in group_candidates}
+        for candidate in candidates:
+            if candidate["id"] in requested_ids or candidate["id"] in used_ids:
+                continue
+            if candidate.get("highlightType") != group_candidates[0].get("highlightType"):
+                continue
+            if normalized_title(candidate["title"]) not in selected_titles:
+                continue
+            candidate_start = parse_time(candidate["startAt"])
+            if min(abs(candidate_start - start) for start in starts) <= timedelta(minutes=30):
+                group_candidates.append(candidate)
+                starts.append(candidate_start)
+        used_ids.update(candidate["id"] for candidate in group_candidates)
         representative = dict(group_candidates[0])
         representative["title"] = title
         representative["channels"] = [

@@ -167,6 +167,27 @@ class BuildEditorPicksTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
 
+    def test_selection_adds_same_event_channels_the_model_omits(self):
+        candidates = [
+            {
+                "id": f"event-{index}",
+                "channelId": f"channel-{index}",
+                "channelName": f"Channel {index}",
+                "title": "Live: Team A vs Team B",
+                "highlightType": "liveSport",
+                "startAt": "2026-09-04T18:00:00Z",
+                "endAt": "2026-09-04T20:00:00Z",
+            }
+            for index in (1, 2)
+        ]
+
+        selected = build_editor_picks.validate_selection(
+            '{"picks":[{"title":"Team A vs Team B","pick_ids":["event-1"]}]}',
+            candidates,
+        )
+
+        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-1", "channel-2"])
+
     def test_candidates_require_live_sports_or_fresh_quality_programming(self):
         base = {
             "title": "Programme",
