@@ -156,6 +156,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen):
         ],
         "response_format": {"type": "json_object"},
         "temperature": 0,
+        "max_tokens": 256,
     }).encode("utf-8")
     request = urllib.request.Request(
         OPENCODE_GO_URL,
@@ -172,7 +173,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen):
     raw_response = b""
     for attempt in range(3):
         try:
-            with opener(request, timeout=45) as response:
+            with opener(request, timeout=180) as response:
                 raw_response = response.read(65_537)
             break
         except OSError:

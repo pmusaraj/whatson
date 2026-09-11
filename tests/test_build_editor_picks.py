@@ -94,10 +94,13 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(opener.call_count, 3)
         request = opener.call_args.args[0]
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
-        self.assertEqual(json.loads(request.data)["model"], "deepseek-v4.1-flash")
+        body = json.loads(request.data)
+        self.assertEqual(body["model"], "deepseek-v4.1-flash")
+        self.assertEqual(body["max_tokens"], 256)
         self.assertEqual(request.get_header("Authorization"), "Bearer key")
         self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
         self.assertEqual(request.get_header("X-opencode-session"), "whatson-editor-picks")
+        self.assertTrue(all(call.kwargs["timeout"] == 180 for call in opener.call_args_list))
 
         exhausted = Mock(side_effect=[TimeoutError(), TimeoutError(), TimeoutError()])
         with self.assertRaises(TimeoutError):
