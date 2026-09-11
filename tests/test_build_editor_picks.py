@@ -178,8 +178,10 @@ class BuildEditorPicksTest(unittest.TestCase):
                 "startAt": "2026-09-04T18:00:00Z",
                 "endAt": "2026-09-04T20:00:00Z",
             }
-            for index in (1, 2)
+            for index in (1, 2, 3)
         ]
+        candidates[1]["startAt"] = "2026-09-04T18:25:00Z"
+        candidates[2]["startAt"] = "2026-09-04T18:50:00Z"
 
         selected = build_editor_picks.validate_selection(
             '{"picks":[{"title":"Team A vs Team B","pick_ids":["event-1"]}]}',
@@ -187,6 +189,16 @@ class BuildEditorPicksTest(unittest.TestCase):
         )
 
         self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-1", "channel-2"])
+
+        chinese = [
+            {**candidates[0], "id": "football", "title": "足球赛事直播"},
+            {**candidates[0], "id": "basketball", "channelId": "basketball", "title": "篮球赛事直播"},
+        ]
+        selected = build_editor_picks.validate_selection(
+            '{"picks":[{"title":"Live football","pick_ids":["football"]}]}',
+            chinese,
+        )
+        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-1"])
 
     def test_candidates_require_live_sports_or_fresh_quality_programming(self):
         base = {

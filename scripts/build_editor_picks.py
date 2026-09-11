@@ -39,7 +39,7 @@ def parse_time(value):
 
 
 def normalized_title(value):
-    return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
+    return " ".join("".join(char.lower() if char.isalnum() else " " for char in str(value)).split())
 
 
 def is_candidate(program, now, aired_earlier=False):
@@ -200,7 +200,6 @@ def validate_selection(content, candidates):
             candidate_start = parse_time(candidate["startAt"])
             if min(abs(candidate_start - start) for start in starts) <= timedelta(minutes=30):
                 group_candidates.append(candidate)
-                starts.append(candidate_start)
         used_ids.update(candidate["id"] for candidate in group_candidates)
         representative = dict(group_candidates[0])
         representative["title"] = title
