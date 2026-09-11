@@ -156,7 +156,6 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen):
         ],
         "response_format": {"type": "json_object"},
         "temperature": 0,
-        "max_tokens": 256,
     }).encode("utf-8")
     request = urllib.request.Request(
         OPENCODE_GO_URL,

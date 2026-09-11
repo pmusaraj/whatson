@@ -96,7 +96,6 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
         body = json.loads(request.data)
         self.assertEqual(body["model"], "deepseek-v4.1-flash")
-        self.assertEqual(body["max_tokens"], 256)
         self.assertEqual(request.get_header("Authorization"), "Bearer key")
         self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
         self.assertEqual(request.get_header("X-opencode-session"), "whatson-editor-picks")
