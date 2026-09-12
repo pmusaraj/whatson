@@ -1,7 +1,7 @@
 {
   "country": "FR",
   "countryName": "France",
-  "generatedAt": "2026-09-12T16:22:45.979704Z",
+  "generatedAt": "2026-09-12T16:53:31.221376Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -21,16 +21,15 @@
         "data/normalized/guide-premium-FR-canalplus.com.xml"
       ],
       "currentProgram": {
-        "title": "Multiplex",
+        "title": "Samedi sport",
         "subtitle": null,
-        "description": "Retransmission d'un match du Top 14, championnat de France de rugby qui, chaque journée, voit s'affronter quatorze clubs professionnels.",
+        "description": "Samedi sport présente toutes les compétitions en lice du week-end et revient sur les dernières actualités les plus chaudes du moment dans un format dynamique.",
         "categories": [],
-        "sportType": "Rugby",
+        "sportType": null,
         "competition": null,
-        "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/32086062/canal-ouah/STD169/top14multiplex-5JU1",
-        "startAt": "2026-09-12T14:27:00Z",
-        "endAt": "2026-09-12T16:35:00Z",
-        "originalDate": "20260101"
+        "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/109458581",
+        "startAt": "2026-09-12T16:51:00Z",
+        "endAt": "2026-09-12T16:57:00Z"
       },
       "programs": [
         {
@@ -352,6 +351,28 @@
           "startAt": "2026-09-13T11:57:00Z",
           "endAt": "2026-09-13T12:46:00Z",
           "originalDate": "20260101"
+        },
+        {
+          "title": "Super Sunday Premier League",
+          "subtitle": null,
+          "description": "Toute l'actualité des rencontres de Premier League du Super Sunday, lors d'un week-end où les rencontres du championnat d'Angleterre sont intenses.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/32143912/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-2026-09-11T163812.402-fE4b",
+          "startAt": "2026-09-13T12:46:00Z",
+          "endAt": "2026-09-13T12:50:00Z"
+        },
+        {
+          "title": "Plateau sports mécaniques",
+          "subtitle": null,
+          "description": "Les dernières informations et ultimes actualités avant la course dans les différents sports mécaniques comme la F1 ou la Moto.",
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/123083533",
+          "startAt": "2026-09-13T12:50:00Z",
+          "endAt": "2026-09-13T13:00:00Z"
         }
       ]
     },
@@ -380,20 +401,6 @@
         "episode": "S01E03"
       },
       "programs": [
-        {
-          "title": "Une tonne cinq",
-          "subtitle": "Le grand saut",
-          "description": "Quatre jours après son arrestation, le 22 juillet 2018, Martin Lepage passe aux aveux. Il savait que le navire transportait une importante cargaison de cocaïne.",
-          "categories": [
-            "Documentaire de société"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/5/9/9/15453995.jpg",
-          "startAt": "2026-09-12T11:44:00Z",
-          "endAt": "2026-09-12T12:35:00Z",
-          "episode": "S01E02"
-        },
         {
           "title": "Girls Can't Surf : une révolution sur les vagues",
           "subtitle": null,
@@ -688,6 +695,18 @@
           "startAt": "2026-09-13T11:47:00Z",
           "endAt": "2026-09-13T12:36:00Z",
           "episode": "S01E04"
+        },
+        {
+          "title": "Aucun signe de faiblesse",
+          "subtitle": null,
+          "description": "Au sous-sol d'un complexe sportif des Mureaux les futurs champions français de la boxe s'entraînent sans relâche. Chaque soir, la fureur de l'effort est ponctuée par les consignes martiales du coach : Abadila Hallab. Fin 2015, auréolé du titre de meilleur entraîneur de France, il est renvoyé du club par la direction. Une décision incompréhensible pour les boxeurs.",
+          "categories": [],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/32076174/canal-ouah_50001/STD169/Aucun16x9-89x0",
+          "startAt": "2026-09-13T12:36:00Z",
+          "endAt": "2026-09-13T14:10:00Z",
+          "originalDate": "20260101"
         }
       ]
     },
@@ -702,28 +721,30 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "Match of ze Day",
+        "title": "Tottenham / Everton",
         "subtitle": null,
-        "description": "Magazine sur le football anglais. Rendez-vous avec Joris Sabi pour une immersion dans l'actualité de la Premier League avec des reportages made by CANAL+.",
+        "description": "CANAL+, diffuseur de la Premier League dans plus de 50 pays en Europe, en Afrique et en Asie, offre aux fans de football un accès immersif complet aux clubs légendaires de Premier League et ses stars internationales. Pour enrichir cette expérience de visionnage, CANAL+ propose cette saison une diffusion en multiplex, avec quatre matchs simultanément chaque samedi.",
         "categories": [],
         "sportType": "Football",
         "competition": "Premier League",
-        "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/14141998/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x108011-WcQe",
-        "startAt": "2026-09-12T16:02:00Z",
-        "endAt": "2026-09-12T16:25:00Z"
+        "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/31/1321225_31-16ee05e2-8c20-4c60-ad0f-b6487eec5412.jpg",
+        "startAt": "2026-09-12T16:25:00Z",
+        "endAt": "2026-09-12T18:31:00Z",
+        "originalDate": "20260101"
       },
       "programs": [
         {
-          "title": "Lyon / Paris FC",
+          "title": "Football : Arkema Première Ligue",
           "subtitle": null,
           "description": "Retransmission d'un match d'Arkema Première Ligue, la première division féminine de football. Tout d'abord créée en 1919, elle réapparait en 1974 avant de devenir la 1ère division composée d'un seul groupe national que l'on connait aujourd'hui. L'Olympique Lyonnais domine largement ce championnat depuis des années. En 2024, la compétition se renomme Arkema Première Ligue.",
-          "categories": [],
+          "categories": [
+            "Football"
+          ],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321871/9/1321871_9-e6e5821b-395c-44b2-a339-835da869c0dc.jpg",
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/3/0/15233031.jpg",
           "startAt": "2026-09-12T11:25:00Z",
-          "endAt": "2026-09-12T13:32:00Z",
-          "originalDate": "20260101"
+          "endAt": "2026-09-12T13:32:00Z"
         },
         {
           "title": "Match of ze Day",
@@ -751,13 +772,16 @@
         {
           "title": "Match of ze Day",
           "subtitle": null,
-          "description": "Magazine sur le football anglais. Rendez-vous avec Joris Sabi pour une immersion dans l'actualité de la Premier League avec des reportages made by CANAL+.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/14141998/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x108011-WcQe",
+          "description": null,
+          "categories": [
+            "Magazine sportif"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/4/7/15689748.jpg",
           "startAt": "2026-09-12T16:02:00Z",
-          "endAt": "2026-09-12T16:25:00Z"
+          "endAt": "2026-09-12T16:25:00Z",
+          "episode": "S01E11"
         },
         {
           "title": "Tottenham / Everton",
@@ -774,13 +798,16 @@
         {
           "title": "Match of ze Day",
           "subtitle": null,
-          "description": "Magazine sur le football anglais. Rendez-vous avec Joris Sabi pour une immersion dans l'actualité de la Premier League avec des reportages made by CANAL+.",
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/14141998/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x108011-WcQe",
+          "description": null,
+          "categories": [
+            "Magazine sportif"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/4/7/15689748.jpg",
           "startAt": "2026-09-12T18:31:00Z",
-          "endAt": "2026-09-12T18:55:00Z"
+          "endAt": "2026-09-12T18:55:00Z",
+          "episode": "S01E12"
         },
         {
           "title": "Football : Premier League",
@@ -837,52 +864,51 @@
         {
           "title": "Fin des programmes",
           "subtitle": null,
-          "description": "Fermeture de l'antenne à la fin des diffusions de la journée.",
-          "categories": [],
+          "description": null,
+          "categories": [
+            "Fin"
+          ],
           "sportType": null,
           "competition": null,
-          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/122299056",
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/9/6/15179699.jpg",
           "startAt": "2026-09-13T00:50:00Z",
-          "endAt": "2026-09-13T01:50:00Z"
+          "endAt": "2026-09-13T05:20:00Z"
         },
         {
-          "title": "Football : Premier League",
+          "title": "Bournemouth / Brentford",
           "subtitle": null,
-          "description": "CANAL+, diffuseur de la Premier League dans plus de 50 pays en Europe, en Afrique et en Asie, offre aux fans de football un accès immersif complet aux clubs légendaires de Premier League et ses stars internationales. Pour enrichir cette expérience de visionnage, CANAL+ propose cette saison une diffusion en multiplex, avec quatre matchs simultanément chaque samedi.",
-          "categories": [
-            "Football"
-          ],
+          "description": "A découvrir les plus belles affiches de la prestigieuse Premier League, le championnat d'Angleterre de football. C'est le championnat le plus regardé dans le monde. Cette compétition professionnelle, placée sous la supervision de la Fédération anglaise de football, a été fondée en 1888, et connait son format actuel depuis 1992.",
+          "categories": [],
           "sportType": "Football",
           "competition": "Premier League",
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/9/4/15760499.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/40/1321225_40-7a549e55-725e-464e-9c29-d4433d8d1ec5.jpg",
           "startAt": "2026-09-13T05:20:00Z",
-          "endAt": "2026-09-13T07:05:00Z"
+          "endAt": "2026-09-13T07:05:00Z",
+          "originalDate": "20260101"
         },
         {
-          "title": "Football : Arkema Première Ligue",
+          "title": "Lyon / Paris FC",
           "subtitle": null,
           "description": "Retransmission d'un match d'Arkema Première Ligue, la première division féminine de football. Tout d'abord créée en 1919, elle réapparait en 1974 avant de devenir la 1ère division composée d'un seul groupe national que l'on connait aujourd'hui. L'Olympique Lyonnais domine largement ce championnat depuis des années. En 2024, la compétition se renomme Arkema Première Ligue.",
-          "categories": [
-            "Football"
-          ],
+          "categories": [],
           "sportType": "Football",
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/3/0/15233031.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321871/9/1321871_9-e6e5821b-395c-44b2-a339-835da869c0dc.jpg",
           "startAt": "2026-09-13T07:05:00Z",
-          "endAt": "2026-09-13T08:49:00Z"
+          "endAt": "2026-09-13T08:49:00Z",
+          "originalDate": "20260101"
         },
         {
-          "title": "Football : Premier League",
+          "title": "Crystal Palace / Ipswich Town",
           "subtitle": null,
           "description": "CANAL+, diffuseur de la Premier League dans plus de 50 pays en Europe, en Afrique et en Asie, offre aux fans de football un accès immersif complet aux clubs légendaires de Premier League et ses stars internationales. Pour enrichir cette expérience de visionnage, CANAL+ propose cette saison une diffusion en multiplex, avec quatre matchs simultanément chaque samedi.",
-          "categories": [
-            "Football"
-          ],
+          "categories": [],
           "sportType": "Football",
           "competition": "Premier League",
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/0/5/15760501.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/mht.images.prod.siec.canal.aws.io-cplus.net/program/1321225/36/1321225_36-c76862e1-1108-44da-9ee4-2ea05ae80ce7.jpg",
           "startAt": "2026-09-13T08:49:00Z",
-          "endAt": "2026-09-13T10:33:00Z"
+          "endAt": "2026-09-13T10:33:00Z",
+          "originalDate": "20260101"
         },
         {
           "title": "Football : Premier League",
@@ -896,6 +922,31 @@
           "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/1/1/15830119.jpg",
           "startAt": "2026-09-13T10:33:00Z",
           "endAt": "2026-09-13T12:23:00Z"
+        },
+        {
+          "title": "05/06/2027 En route pour Madrid",
+          "subtitle": "Episode 2 : Lille - Betis Séville",
+          "description": "Le 5 juin 2027, Madrid sera le théâtre de la finale de la Ligue des champions de l'UEFA. Cette finale marquera la fin de la saison et sera un événement majeur pour les fans !",
+          "categories": [
+            "Magazine sportif"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/3/1/15830130.jpg",
+          "startAt": "2026-09-13T12:23:00Z",
+          "endAt": "2026-09-13T12:40:00Z",
+          "episode": "S01E02"
+        },
+        {
+          "title": "Match of ze Day",
+          "subtitle": null,
+          "description": "Magazine sur le football anglais. Rendez-vous avec Joris Sabi pour une immersion dans l'actualité de la Premier League avec des reportages made by CANAL+.",
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/season/14141998/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x108011-WcQe",
+          "startAt": "2026-09-13T12:40:00Z",
+          "endAt": "2026-09-13T12:55:00Z"
         }
       ]
     },
@@ -912,68 +963,63 @@
       "currentProgram": {
         "title": "5 septembre",
         "subtitle": null,
-        "description": "Lors des Jeux olympiques de Munich de 1972, l'équipe de la chaîne de télévision américaine ABC Sports se voit contrainte d'interrompre subitement la diffusion des compétitions, pour couvrir en direct la prise d'otage d'athlètes israéliens. L'événement est suivi par un milliard de personnes dans le monde. Geoffrey Mason, un jeune producteur ambitieux, veut profiter de cette occasion pour faire ses preuves auprès de Roone Arledge, son patron. Avec sa collègue et interprète allemande Marianne, son mentor Marvin Bader, Geoffrey se retrouve confronté aux dilemmes de l'information en continu et de la moralité...",
-        "categories": [
-          "Drame"
-        ],
+        "description": "Lors des Jeux olympiques de Munich de 1972, l'équipe de la chaîne américaine ABC Sports se voit contrainte d'interrompre la diffusion des compétitions pour couvrir en direct la prise d'otage d'athlètes israéliens. Geoffrey, un jeune producteur, veut profiter de cette occasion pour faire ses preuves...",
+        "categories": [],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/1/3/15215318.jpg",
+        "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/27823149/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-rrrM",
         "startAt": "2026-09-12T16:06:00Z",
-        "endAt": "2026-09-12T17:39:00Z"
+        "endAt": "2026-09-12T17:39:00Z",
+        "originalDate": "20240101"
       },
       "programs": [
         {
           "title": "Goliath",
           "subtitle": null,
-          "description": "Après le suicide par immolation d'une jeune militante écologiste, une prise de conscience collective entraîne d'importantes manifestations. La cible de ces citoyens révoltés ? Un géant intouchable de l'agrochimie, attaqué pour son plus célèbre désherbant dont il nie fermement la toxicité. Face à un acte qui a ému l'opinion publique, la justice doit trancher. France, spécialiste du droit environnemental, entame un bras de fer judiciaire à l'issue incertaine face à un mastodonte réputé pour broyer moralement ses adversaires. Menaces, intimidations, elle subit une pression de tous les instants, mais refuse courageusement de rompre...",
-          "categories": [
-            "Film de suspense"
-          ],
+          "description": "Après le suicide par immolation d'une jeune militante écologiste, une prise de conscience collective entraîne d'importantes manifestations. La cible de ces citoyens révoltés ? Un géant intouchable du secteur de l'agrochimie, attaqué pour son plus célèbre désherbant dont il nie fermement la toxicité...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/9/7/0/15390079.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/117504034",
           "startAt": "2026-09-12T11:30:00Z",
-          "endAt": "2026-09-12T13:28:00Z"
+          "endAt": "2026-09-12T13:28:00Z",
+          "originalDate": "20220101"
         },
         {
           "title": "Munich",
           "subtitle": null,
-          "description": "A Munich, en 1972, un commando de terroristes palestiniens affilié au groupe \"Septembre noir\" prend en otages des athlètes israéliens. L'opération tourne au carnage. Aussitôt, Golda Meir, Premier ministre israélien, prend la décision de répliquer. Avner, un jeune agent du Mossad, reçoit l'ordre de retrouver et d'éliminer les membres de \"Septembre noir\" qui sont considérés comme les commanditaires de l'attentat. Il change d'identité et quitte Tel Aviv en laissant sa femme enceinte. Arrivé en Europe avec un commando de quatre hommes, il tente d'entrer en contact avec le mystérieux \"Papa\", qui devrait lui permettre de localiser les terroristes...",
-          "categories": [
-            "Film de suspense"
-          ],
+          "description": "A Munich, en 1972, des terroristes palestiniens prennent en otages des athlètes israéliens. L'opération tourne au carnage. Avner, agent du Mossad, reçoit l'ordre de retrouver et d'éliminer les commanditaires de l'attentat. Il change d'identité et quitte Tel Aviv avec un commando de quatre hommes...",
+          "categories": [],
           "sportType": "Combat sports",
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/2/3/15215322.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/3682103/canal-ouah_50001/STD169/image-ACP0",
           "startAt": "2026-09-12T13:28:00Z",
-          "endAt": "2026-09-12T16:06:00Z"
+          "endAt": "2026-09-12T16:06:00Z",
+          "originalDate": "20050101"
         },
         {
           "title": "5 septembre",
           "subtitle": null,
-          "description": "Lors des Jeux olympiques de Munich de 1972, l'équipe de la chaîne de télévision américaine ABC Sports se voit contrainte d'interrompre subitement la diffusion des compétitions, pour couvrir en direct la prise d'otage d'athlètes israéliens. L'événement est suivi par un milliard de personnes dans le monde. Geoffrey Mason, un jeune producteur ambitieux, veut profiter de cette occasion pour faire ses preuves auprès de Roone Arledge, son patron. Avec sa collègue et interprète allemande Marianne, son mentor Marvin Bader, Geoffrey se retrouve confronté aux dilemmes de l'information en continu et de la moralité...",
-          "categories": [
-            "Drame"
-          ],
+          "description": "Lors des Jeux olympiques de Munich de 1972, l'équipe de la chaîne américaine ABC Sports se voit contrainte d'interrompre la diffusion des compétitions pour couvrir en direct la prise d'otage d'athlètes israéliens. Geoffrey, un jeune producteur, veut profiter de cette occasion pour faire ses preuves...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/1/3/15215318.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/27823149/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-rrrM",
           "startAt": "2026-09-12T16:06:00Z",
-          "endAt": "2026-09-12T17:39:00Z"
+          "endAt": "2026-09-12T17:39:00Z",
+          "originalDate": "20240101"
         },
         {
           "title": "Adieu les cons",
           "subtitle": null,
-          "description": "Agée de 43 ans, Suze Trappet vient d'apprendre qu'elle était atteinte d'une grave maladie. Elle veut retrouver le fils qu'elle a eu à 15 ans et qu'elle a dû abandonner. A l'agence de santé, personne ne veut l'aider dans sa recherche. Pendant ce temps et dans le bureau d'à côté, JB, un quinquagénaire n'en peut plus et a décidé d'en finir. Armé d'un fusil, il fait un trou énorme dans le mur et blesse l'agent qui recevait Suze. C'est le début d'une course poursuite pour Suze et JB. Ensemble et avec monsieur Blin, un archiviste aveugle, ils vont tenter d'échapper à la police et de retrouver l'enfant de Suze...",
-          "categories": [
-            "Comédie dramatique"
-          ],
+          "description": "Agée de 43 ans, Suze Trappet vient d'apprendre qu'elle était atteinte d'une grave maladie. Elle veut retrouver le fils qu'elle a eu à 15 ans et qu'elle a dû abandonner. A l'agence de santé, personne ne veut l'aider dans sa recherche. Pendant ce temps et dans le bureau d'à côté, JB, un quinquagénaire n'en peut plus et a décidé d'en finir...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/7/7/15269777.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/14910517/canal-ouah_50001/STD169/image3-53Rb",
           "startAt": "2026-09-12T17:39:00Z",
-          "endAt": "2026-09-12T19:04:00Z"
+          "endAt": "2026-09-12T19:04:00Z",
+          "originalDate": "20200101"
         },
         {
           "title": "Point Break, extrême limite",
@@ -1068,69 +1114,64 @@
           "episode": "S01E01"
         },
         {
-          "title": "La plus précieuse des marchandises",
+          "title": "La plus Précieuse des Marchandises",
           "subtitle": null,
-          "description": "Durant la Seconde Guerre mondiale, en Pologne. Un couple de pauvres bûcherons survit tant bien que mal à proximité d'un bois isolé. Le froid, la faim, la misère et, partout autour d'eux, le conflit qui fait rage, font de leur existence une bataille quotidienne. Un jour, l'épouse se rend dans la forêt afin de préparer des fagots et de tenter de mettre la main sur un peu de nourriture quand elle aperçoit un bébé enveloppé dans un châle, visiblement jeté depuis l'un des nombreux trains qui traversent sans cesse le bois. Cette petite \"marchandise\" va bouleverser la vie de cette femme, de son mari, et de tous ceux qui vont croiser son destin...",
-          "categories": [
-            "Film d'animation"
-          ],
+          "description": "Durant la Seconde Guerre mondiale, en Pologne. Un couple de pauvres bûcherons survit tant bien que mal à proximité d'un bois isolé. Un jour, alors qu'elle ramasse des fagots, l'épouse aperçoit un bébé enveloppé dans un châle, visiblement jeté depuis l'un des innombrables trains qui traversent la forêt...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/6/2/1/15359126.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/27047645/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-1vMZ",
           "startAt": "2026-09-13T04:56:00Z",
-          "endAt": "2026-09-13T06:15:00Z"
+          "endAt": "2026-09-13T06:15:00Z",
+          "originalDate": "20240101"
         },
         {
           "title": "OSS 117 : Le Caire nid d'espions",
           "subtitle": null,
-          "description": "En 1955, la ville du Caire est un véritable carrefour stratégique où grouillent les espions du monde entier. Jack, l'agent secret français en poste, a disparu. Le président René Coty décide d'envoyer un remplaçant enquêter sur sa disparition. Hubert Bonisseur de La Bath, nom de code OSS 117, part alors pour l'Egypte. Hubert connaît bien Jack et pour cause : dix ans plus tôt, ils se sont emparés ensemble des secrets de la fusée V2 en éliminant un colonel nazi. Au Caire, il reprend la même couverture que son collègue et se fait passer pour un éleveur de poulets. Aussi beau parleur que sexiste et maladroit, OSS 117 doit mener de front plusieurs enquêtes...",
-          "categories": [
-            "Comédie"
-          ],
+          "description": "1955. Le Caire est un véritable carrefour stratégique où grouillent les espions du monde entier. L'agent secret français en poste a disparu. Le président de la République décide d'envoyer un remplaçant enquêter sur sa disparition. Hubert Bonisseur de La Bath, nom de code OSS 117, part alors pour l'Egypte...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/5/1/15182150.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/2556542/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-5kgs",
           "startAt": "2026-09-13T06:15:00Z",
-          "endAt": "2026-09-13T07:51:00Z"
+          "endAt": "2026-09-13T07:51:00Z",
+          "originalDate": "20060101"
         },
         {
           "title": "Insaisissables",
           "subtitle": null,
-          "description": "Merritt McKinney, J. Daniel Atlas, Henley Reeves et Jack Wilder sont des as dans leur domaine. Ils forment un groupe de brillants magiciens et illusionnistes, surnommé les Quatre Cavaliers. Lors d'un de leurs numéros à Las Vegas, ils ont réussi à dévaliser une banque située à Paris. Un banquier véreux a également fait les frais de leur génie : sa fortune a été distribuée au public. Tant de prouesses attirent l'attention du FBI, qui compte bien les empêcher de continuer leur petit business. Expert en tours de magie sophistiqués, un certain Thaddeus est appelé en renfort par les forces de l'ordre. S'engage alors un jeu du chat et de la souris entre ces Robins des bois des temps modernes et la police...",
-          "categories": [
-            "Film de suspense"
-          ],
+          "description": "Le FBI enquête sur un gang d'illusionnistes composé de J Daniel Atlas, Merritt McKinney, Henley Reeves et Jack Wilder. Surnommés les Quatre Cavaliers, ils braquent des banques tout en réalisant des \"performances\". Ces Robin des bois des temps modernes donnent l'argent aux spectateurs présents...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/1/1/1/15183111.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/2814057/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-CTPG",
           "startAt": "2026-09-13T07:51:00Z",
-          "endAt": "2026-09-13T09:43:00Z"
+          "endAt": "2026-09-13T09:43:00Z",
+          "originalDate": "20130101"
         },
         {
           "title": "Insaisissables 2",
           "subtitle": null,
-          "description": "Il y a un an, les quatre Cavaliers avaient gagné l'admiration du public avec un spectacle grandiose lors duquel ils avaient volé les riches pour redonner aux pauvres. Poursuivis par le FBI, les magiciens, rejoints par une nouvelle complice du nom de Lula, après le départ de Henley, se cachent pour échapper à la police. L'agent spécial Dylan Rhodes, obéissant aux ordres de l'Oeil, les prépare à leur grand retour sur scène. Le jour J, les choses tournent mal et les quatre illusionnistes se retrouvent entre les mains d'un ennemi dangereux, appelé Walter Mabry, qui les force à commettre un braquage impossible. Il s'agit de dérober une clef permettant de s'introduire dans tous les systèmes informatiques du monde...",
-          "categories": [
-            "Film de suspense"
-          ],
+          "description": "Il y a un an, les quatre Cavaliers avaient gagné l'admiration du public avec un spectacle grandiose, lors duquel ils avaient volé les riches pour redonner aux pauvres. Poursuivis par le FBI, les audacieux magiciens, rejoints par une nouvelle complice, Lula, se cachent pour échapper à la police...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/1/1/15183110.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/7151373/canal-ouah_50001/STD169/myCANAL_16x9_MEA_1920x1080-EoX_",
           "startAt": "2026-09-13T09:43:00Z",
-          "endAt": "2026-09-13T11:48:00Z"
+          "endAt": "2026-09-13T11:48:00Z",
+          "originalDate": "20160101"
         },
         {
           "title": "Point Break, extrême limite",
           "subtitle": null,
-          "description": "Depuis plusieurs années, un gang de braqueurs de banques tient la police en échec. Ses membres opèrent à l'abri de masques à l'effigie des présidents des Etats-Unis. Johnny Utah, un jeune et ambitieux agent du FBI, étudie le dossier et acquiert la certitude que les membres de la bande sont des surfeurs. Grâce à la belle Tyler, rencontrée sur la plage, il apprend à tenir debout sur une planche et parvient à s'introduire dans le milieu très fermé des lécheurs de vagues. Il se laisse rapidement fasciner par Bodhi, un gourou charismatique qui pratique le surf comme une religion. Sa première piste se révèle fausse, mais il ne se décourage pas pour autant...",
-          "categories": [
-            "Film d'aventures"
-          ],
+          "description": "Depuis plusieurs années, un gang de braqueurs de banques tient la police en échec. Ses membres opèrent à l'abri de masques à l'effigie des présidents des Etats-Unis. Johnny Utah, un jeune et ambitieux agent du FBI, étudie le dossier et acquiert la certitude que les membres de la bande sont des surfeurs...",
+          "categories": [],
           "sportType": null,
           "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/9/7/15752798.jpg",
+          "imageUrl": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/canalplus-cdn.canal-plus.io/p1/unit/361726/canal-ouah_50001/STD169/424584-0021-f6Hk",
           "startAt": "2026-09-13T11:48:00Z",
-          "endAt": "2026-09-13T13:47:00Z"
+          "endAt": "2026-09-13T13:47:00Z",
+          "originalDate": "19910101"
         }
       ]
     },
@@ -1145,76 +1186,20 @@
         "data/normalized/guide-premium-FR-tv.sfr.fr.xml"
       ],
       "currentProgram": {
-        "title": "Kaeloo",
-        "subtitle": "Si on jouait avec... Lavanade",
-        "description": "Moignon sollicite l'aide de Coin-Coin pour aider sa soeur, Lavanade, à maîtriser ses pouvoirs, mais il lui reproche ensuite de les rendre encore plus dangereux.",
+        "title": "Antoine l'Aventure",
+        "subtitle": "Un safari en Camargue",
+        "description": "Antoine part en safari dans le Sud de la France. La Camargue va lui faire découvrir les merveilles qu'elle abrite : des étendues de sable et des marais à perte de vue, mais également une multitude d'animaux.",
         "categories": [
-          "Série d'animation"
+          "Magazine jeunesse"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/3/6/6/15207663.jpg",
-        "startAt": "2026-09-12T16:21:00Z",
-        "endAt": "2026-09-12T16:27:00Z",
-        "episode": "S05E12"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/9/8/15193890.jpg",
+        "startAt": "2026-09-12T16:50:00Z",
+        "endAt": "2026-09-12T17:02:00Z",
+        "episode": "S01E06"
       },
       "programs": [
-        {
-          "title": "Grisù",
-          "subtitle": "Le vase dragon",
-          "description": "Grisù, petit dragon qui rêve de devenir pompier, est toujours prêt à donner un coup de main à ceux qui en ont besoin. Son père, Fumé, ne comprend pas la vocation de son fils. Les dragons sont censés cracher du feu ! Pourquoi ne renonce-t-il pas à cette folle ambition ? La réponse est très claire pour Grisù, et comme il dit toujours : \"les pompiers n'abandonnent jamais !\" .",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/2/2/8/15193822.jpg",
-          "startAt": "2026-09-12T12:19:00Z",
-          "endAt": "2026-09-12T12:31:00Z",
-          "episode": "S01E33"
-        },
-        {
-          "title": "Odo",
-          "subtitle": "Escargot de compagnie",
-          "description": "Odo passe la journée à courir après l'escargot de compagnie de Aiglon.",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/0/8/15193807.jpg",
-          "startAt": "2026-09-12T12:31:00Z",
-          "endAt": "2026-09-12T12:37:00Z",
-          "episode": "S01E21"
-        },
-        {
-          "title": "Odo",
-          "subtitle": "Le renard et les pommes",
-          "description": "Odo et Doodle attendent avec impatience le Festival de la Pomme, mais quand les choses tournent mal, tout le monde accuse Reggie le renard.",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/0/8/15193807.jpg",
-          "startAt": "2026-09-12T12:37:00Z",
-          "endAt": "2026-09-12T12:44:00Z",
-          "episode": "S01E22"
-        },
-        {
-          "title": "Max et Lapin",
-          "subtitle": "Pirouettes et pot de peinture",
-          "description": "Max se sent nul en gymnastique face à la souplesse de Lapin et perd confiance. Quand ses parents proposent qu'il aide à repeindre sa chambre, il se braque, persuadé de ne rien savoir faire. Heureusement, Lapin encourage Max à se lancer révélant son vrai talent : sa créativité !",
-          "categories": [
-            "Série d'animation"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/2/5/15193520.jpg",
-          "startAt": "2026-09-12T12:44:00Z",
-          "endAt": "2026-09-12T12:49:00Z",
-          "episode": "S01E15"
-        },
         {
           "title": "Max et Lapin",
           "subtitle": "Comme des grands",
@@ -3202,6 +3187,62 @@
           "startAt": "2026-09-13T12:21:00Z",
           "endAt": "2026-09-13T12:32:00Z",
           "episode": "S01E36"
+        },
+        {
+          "title": "Odo",
+          "subtitle": "Fini de rire",
+          "description": "Contrairement à ses congénères et à ses parents, Odo est un jeune hibou qui ne dort pas le jour. Il peut ainsi vivre des aventures diurnes trépidantes avec sa meilleure copine Doodle et ses amis de l'école de la forêt. Volontaire, enthousiaste et un peu casse-cou, il enchaîne les catastrophes... qu'il arrive toujours à réparer de façon surprenante.",
+          "categories": [
+            "Série d'animation"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/0/8/15193807.jpg",
+          "startAt": "2026-09-13T12:32:00Z",
+          "endAt": "2026-09-13T12:39:00Z",
+          "episode": "S01E23"
+        },
+        {
+          "title": "Odo",
+          "subtitle": "Dans le sud",
+          "description": "Contrairement à ses congénères et à ses parents, Odo est un jeune hibou qui ne dort pas le jour. Il peut ainsi vivre des aventures diurnes trépidantes avec sa meilleure copine Doodle et ses amis de l'école de la forêt. Volontaire, enthousiaste et un peu casse-cou, il enchaîne les catastrophes... qu'il arrive toujours à réparer de façon surprenante.",
+          "categories": [
+            "Série d'animation"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/0/8/15193807.jpg",
+          "startAt": "2026-09-13T12:39:00Z",
+          "endAt": "2026-09-13T12:46:00Z",
+          "episode": "S01E24"
+        },
+        {
+          "title": "Max et Lapin",
+          "subtitle": "Aventure avec Alaska",
+          "description": "Max est content d'accueillir Alaska, la peluche de la classe, mais il s'inquiète de ne rien avoir d'aussi excitant à lui offrir que ses camarades. Grâce aux conseils de Lapin, Max apprend que les activités simples et ordinaires sont parfois les meilleures !",
+          "categories": [
+            "Série d'animation"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/2/5/15193520.jpg",
+          "startAt": "2026-09-13T12:46:00Z",
+          "endAt": "2026-09-13T12:51:00Z",
+          "episode": "S01E19"
+        },
+        {
+          "title": "Max et Lapin",
+          "subtitle": "Mal de brouette",
+          "description": "Max et Ginger jouent au bus avec une brouette pleine de peluches. Mais, Lapin subit les secousses de la conduite brutale de Ginger qui provoque un accident et la disparition de Lapin. Max doit vite le tirer d'affaire.",
+          "categories": [
+            "Série d'animation"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/0/2/5/15193520.jpg",
+          "startAt": "2026-09-13T12:51:00Z",
+          "endAt": "2026-09-13T12:55:00Z",
+          "episode": "S01E20"
         }
       ]
     },
@@ -3224,24 +3265,11 @@
         ],
         "sportType": "Formula 1",
         "competition": null,
-        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/7/9/8/15733897.jpg",
-        "startAt": "2026-09-12T16:03:00Z",
-        "endAt": "2026-09-12T16:30:00Z"
+        "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/8/0/6/15825608.jpg",
+        "startAt": "2026-09-12T16:30:00Z",
+        "endAt": "2026-09-12T16:58:00Z"
       },
       "programs": [
-        {
-          "title": "Moto 2 : Grand Prix de San Marin",
-          "subtitle": null,
-          "description": "Manuel Gonzalez était toujours leader du classement après le Grand Prix d'Aragon, mais Izan Guevara a considérablement réduit l'écart après sa deuxième place à Alcaniz. Le duel se poursuivra-t-il à Misano ?",
-          "categories": [
-            "Moto 2"
-          ],
-          "sportType": "Formula 1",
-          "competition": null,
-          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/3/0/7/15744703.jpg",
-          "startAt": "2026-09-12T11:35:00Z",
-          "endAt": "2026-09-12T12:26:00Z"
-        },
         {
           "title": "La grille Moto",
           "subtitle": "Grand Prix de San Marin : Sprint des Moto GP",
@@ -3669,6 +3697,20 @@
           "startAt": "2026-09-13T11:54:00Z",
           "endAt": "2026-09-13T12:45:00Z",
           "episode": "S01E16"
+        },
+        {
+          "title": "Moto : Le podium",
+          "subtitle": "Moto GP : Grand Prix de San Marin",
+          "description": null,
+          "categories": [
+            "Magazine sportif"
+          ],
+          "sportType": "Sports",
+          "competition": null,
+          "imageUrl": "http://static-cdn.tv.sfr.net/data/img/pl/4/9/7/15208794.jpg",
+          "startAt": "2026-09-13T12:45:00Z",
+          "endAt": "2026-09-13T13:01:00Z",
+          "episode": "S01E15"
         }
       ]
     },

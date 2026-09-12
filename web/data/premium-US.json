@@ -1,7 +1,7 @@
 {
   "country": "US",
   "countryName": "United States",
-  "generatedAt": "2026-09-12T16:22:45.979704Z",
+  "generatedAt": "2026-09-12T16:53:31.221376Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -33,17 +33,6 @@
         "endAt": "2026-09-12T19:30:00Z"
       },
       "programs": [
-        {
-          "title": "Australian Football League",
-          "subtitle": null,
-          "description": "Adelaide Crows at Brisbane Lions from The Gabba",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-12T09:33:00Z",
-          "endAt": "2026-09-12T12:30:00Z"
-        },
         {
           "title": "TMZ Sports",
           "subtitle": null,
@@ -182,17 +171,6 @@
         "endAt": "2026-09-12T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "The Joel Klatt Show: A College Football on FOX Podcast",
-          "subtitle": null,
-          "description": "Former Colorado quarterback Joel Klatt breaks down the latest around the college football landscape, including his thoughts on the stories making headlines, guest interviews with the biggest names in",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-12T12:00:00Z",
-          "endAt": "2026-09-12T12:30:00Z"
-        },
         {
           "title": "Big Noon Kickoff Presents Bear Bets",
           "subtitle": null,
@@ -418,6 +396,17 @@
           "imageUrl": null,
           "startAt": "2026-09-13T12:00:00Z",
           "endAt": "2026-09-13T12:48:00Z"
+        },
+        {
+          "title": "2026 FIFA U-20 Women's World Cup",
+          "subtitle": null,
+          "description": "Spain at China",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-13T12:48:00Z",
+          "endAt": "2026-09-13T15:00:00Z"
         }
       ]
     },
@@ -669,20 +658,6 @@
         "endAt": "2026-09-12T19:00:00Z"
       },
       "programs": [
-        {
-          "title": "NFL2Night",
-          "subtitle": null,
-          "description": "The latest news and reports around the NFL are discussed in detail with a panel of expert analysts weighing in on the hottest issues, while veteran football reporters provide up-to-date information fr",
-          "categories": [
-            "News",
-            "Sports"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-12T11:30:00Z",
-          "endAt": "2026-09-12T12:30:00Z"
-        },
         {
           "title": "NFL Matchup",
           "subtitle": null,
@@ -947,15 +922,15 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "Microsoft Excel World Championship",
+        "title": "2025 NESSBIC Finals",
         "subtitle": null,
-        "description": "Typists and computer wizards compete in a variety of logical challenges in Microsoft Excel to see who can complete each task in the quickest time, judging on the accuracy of the final answer to see wh",
+        "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-12T16:00:00Z",
-        "endAt": "2026-09-12T16:30:00Z"
+        "startAt": "2026-09-12T16:30:00Z",
+        "endAt": "2026-09-12T17:00:00Z"
       },
       "programs": [
         {
@@ -1317,17 +1292,6 @@
       },
       "programs": [
         {
-          "title": "The Path: LSU Football",
-          "subtitle": null,
-          "description": "A behind-the-scenes docuseries follows the LSU football team during the 2022 season, the first year under new head coach Brian Kelly, showing how the new coach brings his coaching style and methods as",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-12T12:00:00Z",
-          "endAt": "2026-09-12T12:30:00Z"
-        },
-        {
           "title": "College Football Live",
           "subtitle": null,
           "description": "An update on all the top stories in college football, featuring interviews with players and coaches, analysis of the strongest teams in the country, evaluations of each major conference, and discussio",
@@ -1564,15 +1528,19 @@
         "data/normalized/guide-premium-US-tvguide.com.xml"
       ],
       "currentProgram": {
-        "title": "Play Ball",
+        "title": "MLB Tonight",
         "subtitle": null,
-        "description": "The host joins analysts to perform one-on-one demonstrations and show the intricacies of the game, along with interviews with some of the top players in the game and discussions on how kids can furthe",
-        "categories": [],
-        "sportType": null,
-        "competition": null,
+        "description": "Game commentators and insiders provide in-depth analysis throughout the baseball season while also featuring live look-ins on some of the biggest matchups, highlights of game-changing plays, injury up",
+        "categories": [
+          "News",
+          "Sports",
+          "Talk & Interview"
+        ],
+        "sportType": "Baseball",
+        "competition": "MLB",
         "imageUrl": null,
-        "startAt": "2026-09-12T16:00:00Z",
-        "endAt": "2026-09-12T16:30:00Z"
+        "startAt": "2026-09-12T16:30:00Z",
+        "endAt": "2026-09-12T17:30:00Z"
       },
       "programs": [
         {
@@ -2079,17 +2047,6 @@
         {
           "title": "NFL Football",
           "subtitle": null,
-          "description": "New England Patriots at Seattle Seahawks from Lumen Field",
-          "categories": [],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-12T10:00:00Z",
-          "endAt": "2026-09-12T12:30:00Z"
-        },
-        {
-          "title": "NFL Football",
-          "subtitle": null,
           "description": "San Francisco 49ers vs Los Angeles Rams from Melbourne Cricket Ground in Victoria, Australia",
           "categories": [],
           "sportType": "Football",
@@ -2196,6 +2153,17 @@
           "imageUrl": null,
           "startAt": "2026-09-13T10:00:00Z",
           "endAt": "2026-09-13T12:30:00Z"
+        },
+        {
+          "title": "NFL Matchup",
+          "subtitle": null,
+          "description": "Detailed analysis of coaching strategies for upcoming games in the National Football League; experts use the coaches' film to illustrate effective and ineffective strategies for the various matchups a",
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-13T12:30:00Z",
+          "endAt": "2026-09-13T13:00:00Z"
         }
       ]
     },
