@@ -54,11 +54,16 @@ class BuildEditorPicksTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp)
             programs = [
-                self.program(
-                    f"Live: Team {index} vs Team X",
-                    (self.now + timedelta(minutes=index)).isoformat().replace("+00:00", "Z"),
-                    end="2026-09-05T09:00:00Z",
-                )
+                {
+                    **self.program(
+                        f"Live: Champions Team {index} vs Team X",
+                        (self.now + timedelta(minutes=index)).isoformat().replace("+00:00", "Z"),
+                        end="2026-09-05T09:00:00Z",
+                    ),
+                    "isNew": True,
+                    "subtitle": "Championship match",
+                    "originalDate": "2026",
+                }
                 for index in range(81)
             ]
             programs.append({

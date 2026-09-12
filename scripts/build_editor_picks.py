@@ -102,7 +102,6 @@ def candidate_score(candidate):
         + sum(bool(candidate.get(key)) for key in ("competition", "sportType", "subtitle", "description", "originalDate"))
         + 2 * bool(re.search(r"\b(vs?\.?|x)\b", title, re.I))
         + bool(re.search(r"world cup|champions|premier league|la ?liga|formula 1|\b(nfl|nba|nhl|mlb|mls)\b", title, re.I))
-        + 5 * is_us_open_program(candidate)
     )
 
 
@@ -160,7 +159,7 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
 
     ordered = sorted(
         deduped.values(),
-        key=lambda item: (-candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
+        key=lambda item: (-is_us_open_program(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
     )
     candidates = []
     country_events = {}
