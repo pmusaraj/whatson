@@ -56,15 +56,16 @@ class BuildEditorPicksTest(unittest.TestCase):
             programs = [
                 {
                     **self.program(
-                        f"Live: Champions Team {index} vs Team X",
+                        f"U.S. Open - Men’s Singles Round {index}",
                         (self.now + timedelta(minutes=index)).isoformat().replace("+00:00", "Z"),
                         end="2026-09-05T09:00:00Z",
                     ),
                     "isNew": True,
                     "subtitle": "Championship match",
                     "originalDate": "2026",
+                    "sportType": "Tennis",
                 }
-                for index in range(81)
+                for index in range(10)
             ]
             programs.append({
                 **self.program("New nature documentary", "2026-09-05T06:00:00Z", end="2026-09-05T07:00:00Z"),
@@ -84,7 +85,8 @@ class BuildEditorPicksTest(unittest.TestCase):
             })
             self.write_country(path, "ES", [{"id": "sports-es", "name": "Sport ES", "programs": programs}])
             self.write_country(path, "DE", [{"id": "sports-de", "name": "Sport DE", "programs": [
-                self.program("Live: Berlin vs Munich", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z")
+                self.program("Live: Champions Berlin vs Munich", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z"),
+                {**self.program("U.S. Open Tennis", "2026-09-05T06:00:00Z", end="2026-09-05T07:00:00Z"), "competition": None, "sportType": "Tennis"},
             ]}])
 
             candidates = build_editor_picks.collect_candidates(path, self.now)
@@ -92,6 +94,8 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual({candidate["country"] for candidate in candidates}, {"DE", "ES"})
         self.assertIn("New nature documentary", [candidate["title"] for candidate in candidates])
         self.assertIn("U.S. Open - Women’s Singles Final", [candidate["title"] for candidate in candidates])
+        titles = [candidate["title"] for candidate in candidates]
+        self.assertLess(titles.index("Live: Champions Berlin vs Munich"), titles.index("U.S. Open Tennis"))
         self.assertEqual(
             next(candidate for candidate in candidates if candidate["title"] == "Festival film premiere")["highlightType"],
             "freshProgramme",

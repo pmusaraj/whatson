@@ -45,10 +45,15 @@ def normalized_title(value):
     return " ".join("".join(char.lower() if char.isalnum() else " " for char in str(value)).split())
 
 
-def is_us_open_program(program):
+def is_us_open_final(program):
     text = " ".join(str(program.get(key) or "") for key in ("title", "subtitle", "description"))
     normalized = normalized_title(text)
-    return bool(US_OPEN.search(text) and (str(program.get("sportType") or "").lower() == "tennis" or (FINAL.search(normalized) and not SEMIFINAL.search(normalized))))
+    return bool(US_OPEN.search(text) and FINAL.search(normalized) and not SEMIFINAL.search(normalized))
+
+
+def is_us_open_program(program):
+    text = " ".join(str(program.get(key) or "") for key in ("title", "subtitle", "description"))
+    return bool(US_OPEN.search(text) and (str(program.get("sportType") or "").lower() == "tennis" or is_us_open_final(program)))
 
 
 def is_sport_program(program):
@@ -159,7 +164,7 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
 
     ordered = sorted(
         deduped.values(),
-        key=lambda item: (-is_us_open_program(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
+        key=lambda item: (-is_us_open_final(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
     )
     candidates = []
     country_events = {}
