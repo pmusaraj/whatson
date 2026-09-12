@@ -26,6 +26,8 @@ EXCLUDED = re.compile(
 GENERIC = re.compile(r"^(live[: -]*)?(la ?liga|premier league|nba|mlb baseball|sports?|football|soccer)$", re.I)
 LIVE = re.compile(r"(?:^live\b|\blive (?:from|vom)\b|\b(?:en direct|en directo|en vivo|ao vivo|em direto|directo|direto|diretta|canlı|canli)\b)", re.I)
 US_OPEN = re.compile(r"\bu\.?s\.? open\b|amerika açık", re.I)
+FINAL = re.compile(r"\b(final|finals|finali|finais)\b", re.I)
+SEMIFINAL = re.compile(r"\b(?:semi finals?|semifinals?|meias finais)\b", re.I)
 DOCUMENTARY_CATEGORY = re.compile(r"documentary|documentaire|documental|dokument", re.I)
 SERIES_CATEGORY = re.compile(r"series|série|serie|drama", re.I)
 FIRST_EPISODE = re.compile(r"\bS0?1E0?1\b|^0\.0(?:\.|$)", re.I)
@@ -43,10 +45,22 @@ def normalized_title(value):
     return " ".join("".join(char.lower() if char.isalnum() else " " for char in str(value)).split())
 
 
+def is_us_open_program(program):
+    text = " ".join(str(program.get(key) or "") for key in ("title", "subtitle", "description"))
+    normalized = normalized_title(text)
+    return bool(US_OPEN.search(text) and (str(program.get("sportType") or "").lower() == "tennis" or (FINAL.search(normalized) and not SEMIFINAL.search(normalized))))
+
+
 def is_sport_program(program):
     categories = {str(value).lower() for value in program.get("categories") or []}
-    text = " ".join(str(program.get(key) or "") for key in ("title", "subtitle", "description"))
-    return bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES or US_OPEN.search(text))
+    return bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES or is_us_open_program(program))
+
+
+def repetition_key(program):
+    parts = [program.get("title") or "", program.get("subtitle") or ""]
+    if US_OPEN.search(" ".join(str(value) for value in parts + [program.get("description") or ""])):
+        parts.append(program.get("description") or "")
+    return normalized_title(" ".join(parts))
 
 
 def is_candidate(program, now, aired_earlier=False):
@@ -75,7 +89,7 @@ def is_candidate(program, now, aired_earlier=False):
         return bool(explicitly_new or (first_episode and (not original_date or original_date.startswith(str(now.year)))))
     if not is_sport and explicitly_new:
         return True
-    is_us_open = US_OPEN.search(text) and (str(program.get("sportType") or "").lower() == "tennis" or re.search(r"\bfinal", text, re.I))
+    is_us_open = is_us_open_program(program)
     is_live = any(LIVE.search(str(program.get(key) or "")) for key in ("title", "subtitle", "description"))
     return bool((is_sport and (is_live or {"mls", "apple tv"} <= categories)) or is_us_open)
 
@@ -88,6 +102,7 @@ def candidate_score(candidate):
         + sum(bool(candidate.get(key)) for key in ("competition", "sportType", "subtitle", "description", "originalDate"))
         + 2 * bool(re.search(r"\b(vs?\.?|x)\b", title, re.I))
         + bool(re.search(r"world cup|champions|premier league|la ?liga|formula 1|\b(nfl|nba|nhl|mlb|mls)\b", title, re.I))
+        + 5 * is_us_open_program(candidate)
     )
 
 
@@ -102,13 +117,13 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
                 entries.append((payload, channel, program))
     earliest = {}
     for payload, _, program in entries:
-        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''} {program.get('description') or ''}"))
+        key = (payload.get("country"), repetition_key(program))
         try:
             earliest[key] = min(earliest.get(key, parse_time(program["startAt"])), parse_time(program["startAt"]))
         except (KeyError, TypeError, ValueError):
             pass
     for payload, channel, program in entries:
-        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''} {program.get('description') or ''}"))
+        key = (payload.get("country"), repetition_key(program))
         try:
             aired_earlier = parse_time(program["startAt"]) > earliest[key] + timedelta(minutes=30)
         except (KeyError, TypeError, ValueError):

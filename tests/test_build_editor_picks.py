@@ -25,7 +25,7 @@ class BuildEditorPicksTest(unittest.TestCase):
                 "programs": [
                     self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"),
                     self.program("Live: Team A vs Team B", "2026-09-04T18:00:00Z"),
-                    self.program("Live: Team A vs Team B", "2026-09-04T20:00:00Z"),
+                    {**self.program("Live: Team A vs Team B", "2026-09-04T20:00:00Z"), "description": "Alternate coverage"},
                     self.program("Match highlights", "2026-09-04T19:00:00Z"),
                     self.program("Live: LaLiga", "2026-09-04T19:30:00Z"),
                     self.program("Yesterday's game", "2026-09-04T08:00:00Z", end="2026-09-04T10:00:00Z"),
@@ -73,6 +73,10 @@ class BuildEditorPicksTest(unittest.TestCase):
                 "competition": None,
                 "isPremiere": True,
             })
+            programs.append({
+                **self.program("U.S. Open - Women’s Singles Final", "2026-09-04T20:00:00Z"),
+                "categories": [], "sportType": "Tennis", "competition": None,
+            })
             self.write_country(path, "ES", [{"id": "sports-es", "name": "Sport ES", "programs": programs}])
             self.write_country(path, "DE", [{"id": "sports-de", "name": "Sport DE", "programs": [
                 self.program("Live: Berlin vs Munich", "2026-09-05T07:00:00Z", end="2026-09-05T08:00:00Z")
@@ -82,6 +86,7 @@ class BuildEditorPicksTest(unittest.TestCase):
 
         self.assertEqual({candidate["country"] for candidate in candidates}, {"DE", "ES"})
         self.assertIn("New nature documentary", [candidate["title"] for candidate in candidates])
+        self.assertIn("U.S. Open - Women’s Singles Final", [candidate["title"] for candidate in candidates])
         self.assertEqual(
             next(candidate for candidate in candidates if candidate["title"] == "Festival film premiere")["highlightType"],
             "freshProgramme",
