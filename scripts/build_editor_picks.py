@@ -20,11 +20,12 @@ CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 20
 EXCLUDED = re.compile(
     r"\b(replay|reprise|replica|repeticion|highlights?|resumen|magazine|news|noticias|"
-    r"classic|archive|studio|preview|postgame|pregame|interview)\b",
+    r"classic|archive|studio|preview|postgame|pregame|interview|tekrar)\b",
     re.I,
 )
 GENERIC = re.compile(r"^(live[: -]*)?(la ?liga|premier league|nba|mlb baseball|sports?|football|soccer)$", re.I)
 LIVE = re.compile(r"(?:^live\b|\blive (?:from|vom)\b|\b(?:en direct|en directo|en vivo|ao vivo|em direto|directo|direto|diretta|canlı|canli)\b)", re.I)
+US_OPEN = re.compile(r"\bu\.?s\.? open\b|\bus open\b|amerika açık", re.I)
 DOCUMENTARY_CATEGORY = re.compile(r"documentary|documentaire|documental|dokument", re.I)
 SERIES_CATEGORY = re.compile(r"series|série|serie|drama", re.I)
 FIRST_EPISODE = re.compile(r"\bS0?1E0?1\b|^0\.0(?:\.|$)", re.I)
@@ -44,7 +45,8 @@ def normalized_title(value):
 
 def is_candidate(program, now, aired_earlier=False):
     title = str(program.get("title") or "").strip()
-    if len(title) < 5 or GENERIC.match(title) or EXCLUDED.search(" ".join([title, str(program.get("subtitle") or ""), str(program.get("description") or "")])):
+    text = " ".join([title, str(program.get("subtitle") or ""), str(program.get("description") or "")])
+    if len(title) < 5 or GENERIC.match(title) or EXCLUDED.search(text):
         return False
     try:
         start = parse_time(program["startAt"])
@@ -67,7 +69,9 @@ def is_candidate(program, now, aired_earlier=False):
         return bool(explicitly_new or (first_episode and (not original_date or original_date.startswith(str(now.year)))))
     if not is_sport and explicitly_new:
         return True
-    return is_sport and bool(LIVE.search(title) or LIVE.search(str(program.get("subtitle") or "")) or {"mls", "apple tv"} <= categories)
+    is_us_open = US_OPEN.search(text) and (str(program.get("sportType") or "").lower() == "tennis" or re.search(r"\bfinal", text, re.I))
+    is_live = any(LIVE.search(str(program.get(key) or "")) for key in ("title", "subtitle", "description"))
+    return bool((is_sport and (is_live or {"mls", "apple tv"} <= categories)) or is_us_open)
 
 
 def candidate_score(candidate):
@@ -187,8 +191,10 @@ def validate_selection(content, candidates):
         if len({candidate.get("highlightType") for candidate in group_candidates}) > 1:
             raise ValueError("OpenCode Go grouped different highlight types")
         starts = [parse_time(candidate["startAt"]) for candidate in group_candidates]
-        if max(starts) - min(starts) > timedelta(minutes=30):
-            raise ValueError("OpenCode Go grouped broadcasts with different start times")
+        ends = [parse_time(candidate["endAt"]) for candidate in group_candidates]
+        if max(starts) >= min(ends):
+            raise ValueError("OpenCode Go grouped non-overlapping broadcasts")
+        group_windows = list(zip(starts, ends))
         selected_titles = {normalized_title(candidate["title"]) for candidate in group_candidates}
         for candidate in candidates:
             if candidate["id"] in requested_ids or candidate["id"] in used_ids:
@@ -197,8 +203,8 @@ def validate_selection(content, candidates):
                 continue
             if normalized_title(candidate["title"]) not in selected_titles:
                 continue
-            candidate_start = parse_time(candidate["startAt"])
-            if min(abs(candidate_start - start) for start in starts) <= timedelta(minutes=30):
+            candidate_start, candidate_end = parse_time(candidate["startAt"]), parse_time(candidate["endAt"])
+            if any(candidate_start < end and start < candidate_end for start, end in group_windows):
                 group_candidates.append(candidate)
         used_ids.update(candidate["id"] for candidate in group_candidates)
         representative = dict(group_candidates[0])

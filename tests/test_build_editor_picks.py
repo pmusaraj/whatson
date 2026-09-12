@@ -180,15 +180,15 @@ class BuildEditorPicksTest(unittest.TestCase):
             }
             for index in (1, 2, 3)
         ]
-        candidates[1]["startAt"] = "2026-09-04T18:25:00Z"
-        candidates[2]["startAt"] = "2026-09-04T18:50:00Z"
+        candidates[1]["startAt"] = "2026-09-04T18:50:00Z"
+        candidates[2]["startAt"] = "2026-09-04T19:10:00Z"
 
         selected = build_editor_picks.validate_selection(
             '{"picks":[{"title":"Team A vs Team B","pick_ids":["event-1"]}]}',
             candidates,
         )
 
-        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-1", "channel-2"])
+        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-1", "channel-2", "channel-3"])
 
         chinese = [
             {**candidates[0], "id": "football", "title": "足球赛事直播"},
@@ -216,6 +216,9 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertTrue(build_editor_picks.is_candidate({**base, "title": "New sports documentary", "categories": ["Documentary", "Sports"], "originalDate": "2026"}, self.now))
         self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Drama pilot", "categories": ["Drama"], "episode": "S01E01"}, self.now))
         self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Festival film premiere", "categories": ["Film"], "isPremiere": True}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "2026 US Open Tennis", "sportType": "Tennis", "categories": []}, self.now))
+        self.assertTrue(build_editor_picks.is_candidate({**base, "title": "Amerika Açık", "description": "Tek Kadınlar Finali (Canlı)", "categories": ["Spor"]}, self.now))
+        self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Amerika Açık", "description": "Tek Kadınlar Finali (Tekrar)", "categories": ["Spor"]}, self.now))
         self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Routine drama episode", "categories": ["Drama"], "originalDate": "2026"}, self.now))
         self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Old documentary", "categories": ["Documentary"], "originalDate": "2021"}, self.now))
 
@@ -226,6 +229,7 @@ class BuildEditorPicksTest(unittest.TestCase):
             "channelName": "Sports One",
             "title": "Team A vs Team B",
             "startAt": "2026-09-04T18:00:00Z",
+            "endAt": "2026-09-04T20:00:00Z",
         }
         response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"picks\\":[{\\"title\\":\\"Team A vs Team B\\",\\"pick_ids\\":[\\"event-1\\"]}]}"}}]}')
         opener = Mock(side_effect=[TimeoutError(), TimeoutError(), response])
