@@ -25,7 +25,7 @@ EXCLUDED = re.compile(
 )
 GENERIC = re.compile(r"^(live[: -]*)?(la ?liga|premier league|nba|mlb baseball|sports?|football|soccer)$", re.I)
 LIVE = re.compile(r"(?:^live\b|\blive (?:from|vom)\b|\b(?:en direct|en directo|en vivo|ao vivo|em direto|directo|direto|diretta|canlı|canli)\b)", re.I)
-US_OPEN = re.compile(r"\bu\.?s\.? open\b|\bus open\b|amerika açık", re.I)
+US_OPEN = re.compile(r"\bu\.?s\.? open\b|amerika açık", re.I)
 DOCUMENTARY_CATEGORY = re.compile(r"documentary|documentaire|documental|dokument", re.I)
 SERIES_CATEGORY = re.compile(r"series|série|serie|drama", re.I)
 FIRST_EPISODE = re.compile(r"\bS0?1E0?1\b|^0\.0(?:\.|$)", re.I)
@@ -41,6 +41,12 @@ def parse_time(value):
 
 def normalized_title(value):
     return " ".join("".join(char.lower() if char.isalnum() else " " for char in str(value)).split())
+
+
+def is_sport_program(program):
+    categories = {str(value).lower() for value in program.get("categories") or []}
+    text = " ".join(str(program.get(key) or "") for key in ("title", "subtitle", "description"))
+    return bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES or US_OPEN.search(text))
 
 
 def is_candidate(program, now, aired_earlier=False):
@@ -59,7 +65,7 @@ def is_candidate(program, now, aired_earlier=False):
         return False
     categories = {str(value).lower() for value in program.get("categories") or []}
     category_text = " ".join(categories)
-    is_sport = bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES)
+    is_sport = is_sport_program(program)
     original_date = str(program.get("originalDate") or "")
     explicitly_new = program.get("isNew") or program.get("isPremiere")
     if DOCUMENTARY_CATEGORY.search(category_text):
@@ -96,13 +102,13 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
                 entries.append((payload, channel, program))
     earliest = {}
     for payload, _, program in entries:
-        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''}"))
+        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''} {program.get('description') or ''}"))
         try:
             earliest[key] = min(earliest.get(key, parse_time(program["startAt"])), parse_time(program["startAt"]))
         except (KeyError, TypeError, ValueError):
             pass
     for payload, channel, program in entries:
-        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''}"))
+        key = (payload.get("country"), normalized_title(f"{program.get('title') or ''} {program.get('subtitle') or ''} {program.get('description') or ''}"))
         try:
             aired_earlier = parse_time(program["startAt"]) > earliest[key] + timedelta(minutes=30)
         except (KeyError, TypeError, ValueError):
@@ -111,7 +117,7 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None):
             continue
         categories = {str(value).lower() for value in program.get("categories") or []}
         category_text = " ".join(categories)
-        is_sport = bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES)
+        is_sport = is_sport_program(program)
         is_quality_programme = bool(DOCUMENTARY_CATEGORY.search(category_text) or SERIES_CATEGORY.search(category_text))
         candidate = {
             "country": payload.get("country"),

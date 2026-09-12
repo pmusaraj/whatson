@@ -222,6 +222,29 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Routine drama episode", "categories": ["Drama"], "originalDate": "2026"}, self.now))
         self.assertFalse(build_editor_picks.is_candidate({**base, "title": "Old documentary", "categories": ["Documentary"], "originalDate": "2021"}, self.now))
 
+    def test_localized_us_open_finals_are_distinct_live_sport_airings(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            self.write_country(path, "US", [{"id": "espn", "name": "ESPN", "programs": [{
+                **self.program("2026 US Open Tennis", "2026-09-04T20:00:00Z", end="2026-09-04T23:00:00Z"),
+                "categories": [], "sportType": "Tennis",
+            }]}])
+            self.write_country(path, "TR", [{"id": "eurosport", "name": "Eurosport", "programs": [
+                {**self.program("Amerika Açık", "2026-09-04T16:00:00Z", end="2026-09-04T18:30:00Z"), "description": "Çift Erkekler Finali (Canlı)", "categories": ["Spor"], "sportType": None, "competition": None},
+                {**self.program("Amerika Açık", "2026-09-04T18:50:00Z"), "description": "Tek Kadınlar Finali (Canlı)", "categories": ["Spor"], "sportType": None, "competition": None},
+            ]}])
+
+            candidates = build_editor_picks.collect_candidates(path, self.now)
+
+        us = next(candidate for candidate in candidates if candidate["country"] == "US")
+        women = next(candidate for candidate in candidates if "Kadınlar" in candidate.get("description", ""))
+        self.assertEqual({us["highlightType"], women["highlightType"]}, {"liveSport"})
+        selected = build_editor_picks.validate_selection(
+            json.dumps({"picks": [{"title": "US Open Women’s Final", "pick_ids": [us["id"], women["id"]]}]}),
+            candidates,
+        )
+        self.assertEqual([channel["channelName"] for channel in selected[0]["channels"]], ["ESPN", "Eurosport"])
+
     def test_opencode_go_request_uses_deepseek_and_retries_twice(self):
         candidate = {
             "id": "event-1",
