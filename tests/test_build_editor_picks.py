@@ -290,6 +290,28 @@ class BuildEditorPicksTest(unittest.TestCase):
             build_editor_picks.select_with_opencode_go([candidate], "key", opener=exhausted)
         self.assertEqual(exhausted.call_count, 3)
 
+    def test_bad_group_does_not_erase_valid_picks_and_failure_preserves_output(self):
+        candidates = [
+            {**self.program(f"Live: Match {index}", "2026-09-04T18:00:00Z"),
+             "id": f"event-{index}", "highlightType": "liveSport"}
+            for index in range(3)
+        ]
+        candidates[2].update(startAt="2026-09-05T18:00:00Z", endAt="2026-09-05T21:00:00Z")
+        good = {"title": "Match zero", "pick_ids": ["event-0"]}
+        bad = {"title": "Different broadcasts", "pick_ids": ["event-1", "event-2"]}
+        for groups in ([bad, good], [good, bad]):
+            selected = build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
+            self.assertEqual([pick["title"] for pick in selected], ["Match zero"])
+        with self.assertRaises(ValueError):
+            build_editor_picks.validate_selection(json.dumps({"picks": [bad]}), candidates)
+        self.assertEqual(build_editor_picks.validate_selection('{"picks":[]}', candidates), [])
+
+        from unittest.mock import patch
+        with patch.object(build_editor_picks, "collect_candidates", side_effect=ValueError("invalid selection")), \
+             patch.object(build_editor_picks, "write_output") as write:
+            self.assertEqual(build_editor_picks.main(), 1)
+            write.assert_not_called()
+
     def program(self, title, start, end="2026-09-04T21:00:00Z"):
         return {
             "title": title,
