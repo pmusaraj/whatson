@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "5 */12 * * *"
   workflow_dispatch:
+    inputs:
+      editors_only:
+        description: Rebuild only editor picks from the checked-in guide data
+        type: boolean
+        default: false
 
 concurrency:
   group: refresh-epg
@@ -25,19 +30,28 @@ jobs:
           python-version: "3.x"
 
       - name: Set up Node
+        if: ${{ !inputs.editors_only }}
         uses: actions/setup-node@v6
         with:
           node-version: "24"
 
       - name: Install iptv-org EPG grabber
+        if: ${{ !inputs.editors_only }}
         run: |
           git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
           npm install --prefix .cache/epg
 
       - name: Refresh guide data
+        if: ${{ !inputs.editors_only }}
         env:
           OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
         run: python3 scripts/refresh_epg.py
+
+      - name: Rebuild editor picks
+        if: ${{ inputs.editors_only }}
+        env:
+          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
+        run: python3 scripts/build_editor_picks.py
 
       - name: Commit refreshed data
         run: |

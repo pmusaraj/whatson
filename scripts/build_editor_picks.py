@@ -332,6 +332,10 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         "Use each supplied ID at most once and order events most noteworthy first."
     )
     if selected_groups is not None:
+        # Editorial guesses (especially freshProgramme) must not bias identity matching.
+        public_candidates = [{key: value for key, value in candidate.items()
+                              if key in {"id", "country", "channel", "title", "subtitle", "description", "startAt", "endAt"}}
+                             for candidate in public_candidates]
         prompt = (
             "Expand the already selected events below with every matching supplied broadcast ID. "
             "Do not select new events, merge selected events, or drop any selected ID. Return one group per selected event. "
@@ -401,11 +405,21 @@ def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, ope
                     and max([*starts, start]) < min([*ends, end])):
                 eligible_ids.append(candidate["id"])
         groups.append({"title": pick["title"], "pick_ids": [c["id"] for c in seeds], "eligible_ids": eligible_ids})
-    eligible = {value for group in groups for value in group["eligible_ids"]}
-    expanded = select_with_opencode_go([c for c in pool if c["id"] in eligible], api_key, opener, selected_groups=groups)
-    # Preserve editorial ranking and seed metadata, not the broad pool's inferred type.
-    by_id = {pick["id"]: pick for pick in expanded}
-    return [{**pick, "channels": by_id[group["pick_ids"][0]]["channels"]} for pick, group in zip(picks, groups)]
+    expanded = []
+    used_ids = set()
+    for pick, group in zip(picks, groups):
+        eligible = set(group["eligible_ids"])
+        # One fixture per request avoids a global all-events matching task.
+        result = select_with_opencode_go([c for c in pool if c["id"] in eligible], api_key, opener, selected_groups=[group])[0]
+        slots = [(c["country"], c["channelId"], c["startAt"], c["endAt"], c["sourceTitle"]) for c in result["channels"]]
+        ids = {by_slot[slot]["id"] for slot in slots}
+        if ids & used_ids:
+            raise ValueError("Expansion reused broadcasts across selected events")
+        used_ids.update(ids)
+        # Preserve editorial ranking and seed metadata, not the broad pool's inferred type.
+        expanded.append({**pick, "channels": result["channels"]})
+        print(f"Expanded {pick['title']}: {len(group['pick_ids'])} -> {len(result['channels'])} broadcasts from {len(eligible)} candidates", flush=True)
+    return expanded
 
 
 def write_output(picks, now=None, output_path=OUTPUT_PATH):

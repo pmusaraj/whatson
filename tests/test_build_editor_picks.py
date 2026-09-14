@@ -381,12 +381,17 @@ class BuildEditorPicksTest(unittest.TestCase):
                 self.assertTrue({"replay", "previously-shown", "late", "expired"}.isdisjoint(supplied))
                 self.assertIn("Leeds et Newcastle", supplied["CanalPlusFoot.fr"]["description"])
                 self.assertIn("Villarreal v Real Betis", supplied["1638/premier-sports-1-hd"]["subtitle"])
-                groups = [{"title": "Same event", "pick_ids": [supplied[channel]["id"] for channel in sorted(channels)]} for channels in expected]
+                selected = json.loads(prompt.split("Selected events:\n")[1].split("\n\nCandidates:\n")[0])
+                self.assertEqual(len(selected), 1)
+                self.assertTrue(all("highlightType" not in c for c in public))
+                channels = next(channels for channels in expected
+                                if any(supplied[channel]["id"] in selected[0]["pick_ids"] for channel in channels))
+                groups = [{"title": "Same event", "pick_ids": [supplied[channel]["id"] for channel in sorted(channels)]}]
                 return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps({"picks": groups})}}]}).encode())
 
             opener = Mock(side_effect=respond)
             expanded = build_editor_picks.expand_with_opencode_go(seeds, "key", path, now, opener=opener)
-            self.assertEqual(opener.call_count, 1)
+            self.assertEqual(opener.call_count, 2)
             self.assertEqual({frozenset(c["channelId"] for c in p["channels"]) for p in expanded}, {frozenset(s) for s in expected})
             self.assertTrue(all(p["highlightType"] == "liveSport" for p in expanded))
 
