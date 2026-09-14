@@ -9,13 +9,18 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+try:
+    from refresh_epg import run
+except ModuleNotFoundError:
+    from scripts.refresh_epg import run
+
 ROOT = Path(__file__).resolve().parents[1]
 EPG_DIR = ROOT / ".cache" / "epg"
 SOURCES_DIR = ROOT / "data" / "sources" / "iptv-org"
 NORMALIZED_DIR = ROOT / "data" / "normalized"
 DAYS_TO_GRAB = 3
 START_DATE_OFFSET_DAYS = 1
-GRAB_TIMEOUT_SECONDS = 240
+GRAB_TIMEOUT_SECONDS = 120
 
 
 def guide_output_for_channels_file(channels_file: Path) -> Path:
@@ -23,11 +28,6 @@ def guide_output_for_channels_file(channels_file: Path) -> Path:
     if not stem.startswith("custom-"):
         raise ValueError(f"Unexpected channels file name: {channels_file.name}")
     return NORMALIZED_DIR / f"guide-{stem.removeprefix('custom-')}.xml"
-
-
-def run(command: list[str], *, env: dict[str, str] | None = None, timeout: int | None = None) -> None:
-    print("$", " ".join(command), flush=True)
-    subprocess.run(command, cwd=ROOT, env=env, check=True, timeout=timeout)
 
 
 def main() -> int:
@@ -77,15 +77,17 @@ def main() -> int:
             message = f"TIMEOUT after {GRAB_TIMEOUT_SECONDS}s: {channels_file.name}"
             print(message, flush=True)
             failures.append(message)
+            output_file.unlink(missing_ok=True)
         except subprocess.CalledProcessError as error:
             message = f"FAILED exit {error.returncode}: {channels_file.name}"
             print(message, flush=True)
             failures.append(message)
+            output_file.unlink(missing_ok=True)
 
     if failures:
         for failure in failures:
             print(f"- {failure}", flush=True)
-        raise SystemExit("UHF grab failed; refusing to build an incomplete export")
+        print("Skipping failed sources; building from successful snapshots", flush=True)
 
     run(["python3", "scripts/build_uhf_custom_xmltv.py"])
     run(["python3", "scripts/validate_uhf_xmltv.py"])

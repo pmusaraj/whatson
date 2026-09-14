@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import signal
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
@@ -22,7 +23,7 @@ NORMALIZED_DIR = ROOT / "data" / "normalized"
 WEB_DATA_DIR = ROOT / "web" / "data"
 DAYS_TO_GRAB = 3
 START_DATE_OFFSET_DAYS = 1
-GRAB_TIMEOUT_SECONDS = 180
+GRAB_TIMEOUT_SECONDS = 120
 
 
 def guide_output_for_channels_file(channels_file: Path) -> Path:
@@ -35,7 +36,18 @@ def guide_output_for_channels_file(channels_file: Path) -> Path:
 
 def run(command: list[str], *, cwd: Path = ROOT, env: dict[str, str] | None = None, timeout: int | None = None) -> None:
     print("$", " ".join(command), flush=True)
-    subprocess.run(command, cwd=cwd, env=env, check=True, timeout=timeout)
+    with subprocess.Popen(command, cwd=cwd, env=env, start_new_session=True) as process:
+        try:
+            returncode = process.wait(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            try:
+                os.killpg(process.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            process.wait()
+            raise
+        if returncode:
+            raise subprocess.CalledProcessError(returncode, command)
 
 
 def main() -> int:
