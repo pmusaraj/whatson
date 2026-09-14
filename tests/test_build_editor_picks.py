@@ -457,6 +457,16 @@ class BuildEditorPicksTest(unittest.TestCase):
             for pick in expanded:
                 self.assertEqual([c["sourceTitle"] for c in pick["channels"]], [pick["title"]])
 
+            # Independent requests must still reject one broadcast used by two events.
+            def reuse_broadcast(request, **kwargs):
+                prompt = json.loads(request.data)["messages"][1]["content"]
+                public = json.loads(prompt.split("Candidates:\n")[1])
+                group = {"title": "Merged fixtures", "pick_ids": [c["id"] for c in public]}
+                return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps({"picks": [group]})}}]}).encode())
+
+            with self.assertRaisesRegex(ValueError, "reused broadcasts"):
+                build_editor_picks.expand_with_opencode_go(seeds, "key", path, now, opener=reuse_broadcast)
+
     def test_output_replacement_is_atomic_on_failure(self):
         with tempfile.TemporaryDirectory() as tmp:
             output = Path(tmp) / "editors-picks.json"
