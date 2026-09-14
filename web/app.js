@@ -1424,6 +1424,16 @@ els.channelPicker.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("click", (event) => {
+  if (
+    isMobileLayout() && state.mobileView === "picker" &&
+    !els.channelPicker.contains(event.target) &&
+    !event.target.closest('a, button, input, select, textarea, label, summary, dialog, [role="button"], [contenteditable="true"]')
+  ) {
+    setMobileView("guide");
+  }
+});
+
 els.clearSelection.addEventListener("click", () => {
   state.selectedChannelKeys = [];
   saveSelection();

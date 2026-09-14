@@ -864,9 +864,14 @@ body[data-searching="true"] .guide-panel {
 }
 
 .guide-panel {
+  padding-inline: 0;
   right: 0.4rem;
   opacity: 1;
   pointer-events: auto;
+}
+
+.empty-state {
+  padding-inline: 0;
 }
 
 body[data-mobile-view="guide"] .picker-panel {

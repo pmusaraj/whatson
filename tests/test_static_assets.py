@@ -55,6 +55,38 @@ assert.equal(context.els.editorPicksList.innerHTML, '');
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
 
+    def test_mobile_sidebar_dismisses_only_on_noninteractive_outside_clicks(self):
+        script = r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const app = fs.readFileSync('web/app.js', 'utf8');
+let click, mobile = true, inside = false, interactive = false;
+const context = {
+  document: { addEventListener: (type, handler) => { click = handler; } },
+  state: { mobileView: 'picker' },
+  els: { channelPicker: { contains: () => inside } },
+  isMobileLayout: () => mobile,
+  setMobileView: view => { context.state.mobileView = view; },
+};
+vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('document.addEventListener("click"'), app.indexOf('els.clearSelection.addEventListener("click"')), context);
+assert.equal(typeof click, 'function');
+const event = { target: { closest: () => interactive } };
+for (const scenario of [
+  [true, false, false, 'guide'],
+  [true, true, false, 'picker'],
+  [true, false, true, 'picker'],
+  [false, false, false, 'picker'],
+]) {
+  [mobile, inside, interactive] = scenario;
+  context.state.mobileView = 'picker';
+  click(event);
+  assert.equal(context.state.mobileView, scenario[3]);
+}
+"""
+        subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
+
     def test_editor_picks_expire_without_reload(self):
         app = (Path(__file__).resolve().parents[1] / "web" / "app.js").read_text(encoding="utf-8")
 
