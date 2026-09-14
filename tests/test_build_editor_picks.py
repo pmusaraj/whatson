@@ -176,10 +176,23 @@ class BuildEditorPicksTest(unittest.TestCase):
             '{"picks":[{"title":"One","pick_ids":["event-1"]},{"title":"Two","pick_ids":["event-1"]}]}',
             '{"picks":[{"title":"Wrongly grouped","pick_ids":["event-1","event-7"]}]}',
             '{"picks":[{"title":"Mixed types","pick_ids":["event-1","event-6"]}]}',
-            '{"picks":[{"title":"1","pick_ids":["event-1"]},{"title":"2","pick_ids":["event-2"]},{"title":"3","pick_ids":["event-3"]},{"title":"4","pick_ids":["event-4"]},{"title":"5","pick_ids":["event-5"]},{"title":"6","pick_ids":["event-6"]}]}',
+            json.dumps({"picks": [{"title": str(index), "pick_ids": [f"event-{index}"]} for index in range(13)]}),
         ):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
+
+    def test_selection_accepts_twelve_picks_and_keeps_all_channels(self):
+        candidates = [
+            {"id": f"event-{index}", "title": f"Live event {index}",
+             "channelId": f"channel-{index}", "highlightType": "liveSport",
+             "startAt": "2026-09-04T18:00:00Z", "endAt": "2026-09-04T20:00:00Z"}
+            for index in range(12)
+        ]
+        candidates.append({**candidates[0], "id": "simulcast", "channelId": "other-channel"})
+        groups = [{"title": item["title"], "pick_ids": [item["id"]]} for item in candidates[:12]]
+        selected = build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
+        self.assertEqual(len(selected), 12)
+        self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-0", "other-channel"])
 
     def test_selection_adds_same_event_channels_the_model_omits(self):
         candidates = [

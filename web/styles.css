@@ -250,9 +250,23 @@ h2 {
   overflow: auto;
 }
 
-.editor-picks[open] ~ .search-results,
-.editor-picks[open] ~ .guide {
+.guide-panel > .editor-picks[open] {
+  flex: 0 1 auto;
+  max-height: 40%;
+}
+
+body[data-searching="true"] .editor-picks,
+body[data-live-sports-open="true"] .editor-picks {
   display: none;
+}
+
+.empty-state .editor-picks {
+  flex: 0 0 auto;
+  overflow: visible;
+  width: 100%;
+  max-width: 48rem;
+  margin: 1.5rem auto;
+  text-align: left;
 }
 
 .editor-picks .show-results-list {
@@ -290,6 +304,13 @@ h2 {
   border-radius: 999px;
   cursor: pointer;
   font-size: 0.75rem;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.editor-pick-channel:hover,
+.editor-pick-channel:focus-visible {
+  border-color: currentColor;
 }
 
 body[data-live-sports-open="true"] .search-results {
@@ -490,13 +511,15 @@ body[data-live-sports-open="true"][data-guide-empty="true"] .search-results {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 0;
+  overflow: auto;
   padding: 2rem;
   text-align: center;
 }
 
 .empty-state p {
+  flex-shrink: 0;
   max-width: 34rem;
   margin: 0 auto;
 }

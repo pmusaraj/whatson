@@ -4,7 +4,7 @@ const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
 const SPORTS_NOW_UPCOMING_MINUTES = 60;
-const THEME_VERSION = "mobile-sports-full-height";
+const THEME_VERSION = "editor-picks-pills";
 const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
@@ -1155,15 +1155,24 @@ function renderGuide() {
   const channels = selectedChannels();
   document.body.dataset.guideEmpty = String(!channels.length);
 
+  const picksWereInGuide = els.guide.contains(els.editorPicks);
   if (!channels.length) {
+    if (!picksWereInGuide) els.editorPicks.open = true;
+    const scrollTop = els.guide.querySelector(".empty-state")?.scrollTop || 0;
     els.guide.innerHTML = `
       <div class="empty-state">
         <p>This is a simple app to find what's on TV. Pick channels from the left column, or search above for a show, channel, or live event.</p>
         <p class="empty-state-notes">Data last updated ${escapeHtml(formatRelativeTime(state.generatedAt))} · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
       </div>`;
+    els.guide.querySelector(".empty-state-notes").before(els.editorPicks);
+    els.guide.querySelector(".empty-state").scrollTop = scrollTop;
     return;
   }
 
+  if (picksWereInGuide) {
+    els.guide.parentElement.prepend(els.editorPicks);
+    els.editorPicks.open = false;
+  }
   const { start, end } = timelineBounds();
   const totalMinutes = VISIBLE_HOURS * 60;
   const totalHeight = totalMinutes * PIXELS_PER_MINUTE;

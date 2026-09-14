@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-PICK_LIMIT = 5
+PICK_LIMIT = 12
 CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 20
 EXCLUDED = re.compile(
@@ -275,7 +275,8 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen):
             "endAt": candidate.get("endAt"),
         })
     prompt = (
-        "Select up to five timely, globally noteworthy television highlights airing now or in the next 20 hours. "
+        f"Select up to {PICK_LIMIT} timely, globally noteworthy television highlights airing now or in the next 20 hours. "
+        "Include more worthwhile events when available, without padding the list with weak picks. "
         "Consider the supplied global list across all countries; do not enforce country quotas. "
         "Prefer genuinely live major sports, confirmed premieres, strong new series, and new or important documentaries. "
         "Treat S01E01 as only a hint, not proof that a show is new; reject known older titles. "
