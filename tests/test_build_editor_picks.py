@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "scripts" / "build_editor_picks.py"
 spec = importlib.util.spec_from_file_location("build_editor_picks", MODULE_PATH)
@@ -209,6 +209,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         ]
         candidates[1]["startAt"] = "2026-09-04T18:50:00Z"
         candidates[2]["startAt"] = "2026-09-04T19:10:00Z"
+        candidates.append({**candidates[0], "id": "distant", "channelId": "distant", "startAt": "2026-09-04T19:40:00Z"})
 
         selected = build_editor_picks.validate_selection(
             '{"picks":[{"title":"Team A vs Team B","pick_ids":["event-1"]}]}',
@@ -324,6 +325,143 @@ class BuildEditorPicksTest(unittest.TestCase):
              patch.object(build_editor_picks, "write_output") as write:
             self.assertEqual(build_editor_picks.main(), 1)
             write.assert_not_called()
+
+    def test_semantic_expansion_reaches_sparse_cross_language_simulcasts(self):
+        # Source-shaped September 14 listings; model responses below are test doubles.
+        now = datetime(2026, 9, 14, 16, tzinfo=timezone.utc)
+        rows = [
+            ("PT", "DAZN2.uk", "La Liga EA Sports 2026-27 - Villarreal x Bétis (Direto)", "2627", "Assiste ao jogo da LALIGA entre Villarreal x Real Betis.", "18:50", ["Football"]),
+            ("UK", "PremierSports1.ie", "Live: LaLiga", "Villarreal CF v Real Betis", "The Ceramica is the setting for this Monday night LALIGA fixture.", "18:55", ["Football"]),
+            ("UK", "1638/premier-sports-1-hd", "Live LaLiga", "Villarreal v Real Betis", None, "18:55", []),
+            ("TR", "SSport.tr", "Villareal - Real Betis", None, "La Liga 5. Hafta Maçı", "19:00", ["Spor"]),
+            ("MX", "SkySports24.mx", "Villarreal vs. Real Betis", None, None, "19:00", []),
+            ("PT", "DAZN1.uk", "Premier League 26/27 - Leeds x Newcastle (Direto)", "2627", "Assiste ao jogo da Premier League entre Leeds x Newcastle.", "18:50", ["Football"]),
+            ("BR", "ESPN.br", "Leeds United x Newcastle United", None, "Todas as emoções da Premier League", "18:50", ["Campeonato Inglês"]),
+            ("FR", "CanalPlusFoot.fr", "Football : Premier League", None, "Cette affiche du lundi soir présente des enjeux importants pour Leeds et Newcastle.", "18:55", ["Football"]),
+            ("DE", "magenta-de:5555", "Live PL: Leeds United - Newcastle United, 4. Spieltag", None, "Aus dem Elland Road Stadium", "18:55", ["Fußball"]),
+            ("UK", "SkySportsMainEvent.uk", "Live MNF", "Leeds United v Newcastle United 14.09", None, "17:30", []),
+            ("UK", "SkySportsPremierLeague.uk", "Live MNF", "Leeds United v Newcastle United 14.09", None, "17:30", []),
+            ("UK", "different", "Live LaLiga", "Barcelona v Real Madrid", None, "19:00", []),
+            ("UK", "replay", "Live LaLiga", "Villarreal v Real Betis", "Replay", "19:00", []),
+            ("UK", "previously-shown", "Live LaLiga", "Villarreal v Real Betis", None, "19:00", []),
+            ("UK", "late", "Live LaLiga", "Villarreal v Real Betis", None, "23:00", []),
+            ("UK", "expired", "Live LaLiga", "Earlier fixture", None, "12:00", []),
+            ("FR", "earlier-generic", "Football : Premier League", None, "Arsenal contre Liverpool", "12:00", ["Football"]),
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            countries = {}
+            for country, channel, title, subtitle, description, start, categories in rows:
+                program: dict = dict(title=title, subtitle=subtitle, description=description, categories=categories,
+                               startAt=f"2026-09-14T{start}:00Z", endAt="2026-09-14T21:00:00Z")
+                if channel == "SSport.tr":
+                    program["endAt"] = "2026-09-15T20:59:00Z"  # Bad source duration must not widen matching.
+                if channel == "late":
+                    program["endAt"] = "2026-09-15T01:00:00Z"
+                if channel == "expired":
+                    program["endAt"] = "2026-09-14T14:00:00Z"
+                if channel == "previously-shown":
+                    program["previouslyShown"] = True
+                countries.setdefault(country, []).append(dict(id=channel, name=channel, programs=[program]))
+            for country, channels in countries.items():
+                self.write_country(path, country, channels)
+            candidates = build_editor_picks.collect_candidates(path, now)
+            self.assertEqual({c["channelId"] for c in candidates}, {"DAZN1.uk", "DAZN2.uk"})
+            seeds = build_editor_picks.validate_selection(json.dumps({"picks": [
+                {"title": c["title"], "pick_ids": [c["id"]]} for c in candidates
+            ]}), candidates)
+            expected = [set(row[1] for row in rows[:5]), set(row[1] for row in rows[5:11])]
+
+            def respond(request, **kwargs):
+                prompt = json.loads(request.data)["messages"][1]["content"]
+                public = json.loads(prompt.split("Candidates:\n")[1])
+                supplied = {c["channel"]: c for c in public}
+                self.assertTrue(set.union(*expected) <= supplied.keys())
+                self.assertIn("different", supplied)
+                self.assertTrue({"replay", "previously-shown", "late", "expired"}.isdisjoint(supplied))
+                self.assertIn("Leeds et Newcastle", supplied["CanalPlusFoot.fr"]["description"])
+                self.assertIn("Villarreal v Real Betis", supplied["1638/premier-sports-1-hd"]["subtitle"])
+                groups = [{"title": "Same event", "pick_ids": [supplied[channel]["id"] for channel in sorted(channels)]} for channels in expected]
+                return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps({"picks": groups})}}]}).encode())
+
+            opener = Mock(side_effect=respond)
+            expanded = build_editor_picks.expand_with_opencode_go(seeds, "key", path, now, opener=opener)
+            self.assertEqual(opener.call_count, 1)
+            self.assertEqual({frozenset(c["channelId"] for c in p["channels"]) for p in expanded}, {frozenset(s) for s in expected})
+            self.assertTrue(all(p["highlightType"] == "liveSport" for p in expanded))
+
+    def test_expansion_validation_and_failure_preserve_selected_events(self):
+        candidates = [{**self.program("Live MNF", "2026-09-04T18:00:00Z"),
+                       "subtitle": f"Fixture {index}", "id": f"event-{index}", "channelId": str(index),
+                       "highlightType": "liveSport"} for index in range(4)]
+        groups = [{"title": "Fixture zero", "pick_ids": ["event-0"], "eligible_ids": ["event-0", "event-2"]},
+                  {"title": "Fixture one", "pick_ids": ["event-1"], "eligible_ids": ["event-1", "event-3"]}]
+        good = [{"title": g["title"], "pick_ids": g["pick_ids"]} for g in groups]
+        result = build_editor_picks.validate_selection(json.dumps({"picks": good}), candidates, groups)
+        self.assertEqual([len(p["channels"]) for p in result], [1, 1])  # No exact-title expansion.
+        for invalid in ([], good[:1],
+                        [{"title": "Merged", "pick_ids": ["event-0", "event-1"]}],
+                        [good[0], {"title": "Wrong window", "pick_ids": ["event-1", "event-2"]}],
+                        [good[0], {"title": "Omitted seed", "pick_ids": ["event-3"]}],
+                        [good[0], {"title": "Invented", "pick_ids": ["event-1", "invented"]}],
+                        [good[0], {"title": "Duplicate", "pick_ids": ["event-1", "event-1"]}],
+                        [{"title": "Malformed", "pick_ids": 42}]):
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                build_editor_picks.validate_selection(json.dumps({"picks": invalid}), candidates, groups)
+        with self.assertRaises(ValueError):
+            build_editor_picks.validate_selection(json.dumps({"picks": good}), [*candidates, candidates[0]], groups)
+        candidates[2].update(startAt="2026-09-04T20:00:00Z", endAt="2026-09-05T23:00:00Z")
+        with self.assertRaises(ValueError):
+            build_editor_picks.validate_selection(json.dumps({"picks": [
+                {"title": "Too late", "pick_ids": ["event-0", "event-2"]}, good[1]]}), candidates, groups)
+        with patch.dict("os.environ", {"OPENCODE_GO_API_KEY": "test-key"}), \
+             patch.object(build_editor_picks, "collect_candidates", return_value=candidates), \
+             patch.object(build_editor_picks, "select_with_opencode_go", return_value=result), \
+             patch.object(build_editor_picks, "expand_with_opencode_go", side_effect=ValueError("invalid expansion")), \
+             patch.object(build_editor_picks, "write_output") as write:
+            self.assertEqual(build_editor_picks.main(), 1)
+            write.assert_not_called()
+
+    def test_exact_title_fallback_does_not_merge_different_fixtures(self):
+        candidates = [{**self.program("Live football", "2026-09-04T18:00:00Z"),
+                       "id": str(index), "subtitle": f"Fixture {index}"} for index in range(2)]
+        result = build_editor_picks.validate_selection('{"picks":[{"title":"Fixture zero","pick_ids":["0"]}]}', candidates)
+        self.assertEqual(len(result[0]["channels"]), 1)
+
+    def test_expansion_preserves_simultaneous_event_feed_matches(self):
+        now = datetime(2026, 9, 4, 16, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            programs = [self.program(title, "2026-09-04T18:00:00Z")
+                        for title in ("Live: Team A vs Team B", "Live: Team C vs Team D")]
+            for program in programs:
+                program["categories"] = ["Sports", "MLS", "Apple TV"]
+            self.write_country(path, "US", [{"id": "MLSSeasonPass.us", "name": "MLS", "programs": programs}])
+            candidates = build_editor_picks.collect_candidates(path, now)
+            seeds = build_editor_picks.validate_selection(json.dumps({"picks": [
+                {"title": c["title"], "pick_ids": [c["id"]]} for c in candidates
+            ]}), candidates)
+
+            def respond(request, **kwargs):
+                prompt = json.loads(request.data)["messages"][1]["content"]
+                groups = json.loads(prompt.split("Selected events:\n")[1].split("\n\nCandidates:\n")[0])
+                return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps({"picks": groups})}}]}).encode())
+
+            expanded = build_editor_picks.expand_with_opencode_go(seeds, "key", path, now, opener=respond)
+            self.assertEqual(len(expanded), 2)
+            for pick in expanded:
+                self.assertEqual([c["sourceTitle"] for c in pick["channels"]], [pick["title"]])
+
+    def test_output_replacement_is_atomic_on_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / "editors-picks.json"
+            output.write_text("previous output", encoding="utf-8")
+            with patch.object(Path, "replace", side_effect=OSError("disk error")), self.assertRaises(OSError):
+                build_editor_picks.write_output([], self.now, output)
+            self.assertEqual(output.read_text(), "previous output")
+            self.assertEqual(list(Path(tmp).iterdir()), [output])
+            build_editor_picks.write_output([], self.now, output)
+            self.assertEqual(json.loads(output.read_text())["picks"], [])
 
     def program(self, title, start, end="2026-09-04T21:00:00Z"):
         return {

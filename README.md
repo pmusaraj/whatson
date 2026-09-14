@@ -116,6 +116,18 @@ python3 scripts/build_web_data.py
 
 This reads `data/normalized/*.xml` and rewrites `web/data/*.json`.
 
+## Regenerate editor picks
+
+With `OPENCODE_GO_API_KEY` available in the environment, regenerate picks from the current browser payloads:
+
+```bash
+python3 scripts/build_editor_picks.py
+```
+
+The existing OpenCode Go model first selects quality highlights, then makes one semantic grouping pass over nearby broadcasts across all public country feeds. That second pass includes full descriptions and sparse/generic listings, allows up to 90 minutes of start-time variation with overlapping airtime, and cannot add new editorial events. Explicit replays, previously shown and expired entries stay excluded. Both passes must validate before the output is atomically replaced; failures exit nonzero and preserve the previous file.
+
+The regular refresh workflow already supplies the GitHub Actions secret `OPENCODE_GO_API_KEY` and runs this builder. After publishing code changes, run **Refresh EPG data** manually (or wait for its schedule) to regenerate and publish picks with fresh guide data.
+
 ## Refresh EPG snapshots locally
 
 Refreshing source guide data requires the upstream iptv-org EPG grabber checkout and Node dependencies:
