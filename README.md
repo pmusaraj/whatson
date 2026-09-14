@@ -124,6 +124,8 @@ With `OPENCODE_GO_API_KEY` available in the environment, regenerate picks from t
 python3 scripts/build_editor_picks.py
 ```
 
+Each Cloudflare build also renders the current sports picks into `web/index.html`, so event titles, UTC times, and channel names are available without JavaScript. The browser replaces that snapshot with local times and interactive channel buttons, and removes expired events. To rebuild just the HTML locally, run `python3 scripts/build_editor_picks_html.py`.
+
 The existing OpenCode Go model first selects quality highlights, then makes one semantic grouping pass over nearby broadcasts across all public country feeds. That second pass includes full descriptions and sparse/generic listings, allows up to 90 minutes of start-time variation with overlapping airtime, and cannot add new editorial events. Explicit replays, previously shown and expired entries stay excluded. Both passes must validate before the output is atomically replaced; failures exit nonzero and preserve the previous file.
 
 The regular refresh workflow already supplies the GitHub Actions secret `OPENCODE_GO_API_KEY` and runs this builder. After publishing code changes, run **Refresh EPG data** manually (or wait for its schedule) to regenerate and publish picks with fresh guide data.

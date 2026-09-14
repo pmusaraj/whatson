@@ -7,9 +7,9 @@
     <meta name="description"
       content="A static app for seeing what's on TV right now and in the next few hours. Stores data in your browser session, gets updated every 6 hours. Easy, quick, no authentication needed. Can be easily run locally. ">
     <link id="theme-link" rel="stylesheet" href="sense-theme.css?v=editor-picks-pills" />
-    <link rel="stylesheet" href="styles.css?v=mobile-picks-spacing" />
+    <link rel="stylesheet" href="styles.css?v=prerendered-picks" />
   </head>
-  <body>
+  <body data-mobile-view="guide">
     <header class="app-header">
       <div>
         <h1 class="brand-logo" aria-label="Hey Whatson.tv">
@@ -38,12 +38,84 @@
       </section>
 
       <section class="panel guide-panel" aria-label="TV guide">
-        <details id="editor-picks" class="editor-picks" hidden>
-          <summary>Today's editors picks for sports</summary>
-          <div id="editor-picks-list" class="show-results-list"></div>
-        </details>
         <div id="search-results" class="search-results" hidden></div>
-        <div id="guide" class="guide"></div>
+        <div id="guide" class="guide"><div class="empty-state">
+        <!-- editor-picks:start -->
+<details id="editor-picks" class="editor-picks" open>
+  <summary>Today's editors picks for sports</summary>
+  <div id="editor-picks-list" class="show-results-list"><article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T18:30:00+00:00">Sep 14, 18:30 UTC</time>
+    <strong class="show-result-title">Serie A: Internazionale vs Udinese</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 1 HD · Sport TV3 · FOX Sports · Canal ESPN 3 (México) · TNT Sports 1 · Sky Sport Calcio · S SPORT 2</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T18:50:00+00:00">Sep 14, 18:50 UTC</time>
+    <strong class="show-result-title">Premier League: Leeds United vs Newcastle United</strong>
+  </div>
+  <div class="editor-pick-channels">DAZN 1 · ESPN Brasil · CANAL+FOOT · Sky Sport Premier League · Sky Sports Main Event · Sky Sports Premier League</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T18:50:00+00:00">Sep 14, 18:50 UTC</time>
+    <strong class="show-result-title">LaLiga: Villarreal vs Real Betis</strong>
+  </div>
+  <div class="editor-pick-channels">DAZN 2 · Premier Sports 1 · Premier Sports 1 HD · Canal Sky Sports 16 · S SPORT</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T22:30:00+00:00">Sep 14, 22:30 UTC</time>
+    <strong class="show-result-title">MLB: Chicago White Sox at Cleveland Guardians</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 1 · TNT Sports 1 HD · RDS 2</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T23:00:00+00:00">Sep 14, 23:00 UTC</time>
+    <strong class="show-result-title">UFC Fight Night: Preliminary Card</strong>
+  </div>
+  <div class="editor-pick-channels">TVA Sports 2</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-14T23:30:00+00:00">Sep 14, 23:30 UTC</time>
+    <strong class="show-result-title">MLB: Atlanta Braves at Chicago Cubs</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 1 · MLB Network · Canal ESPN 3 (México)</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-15T01:00:00+00:00">Sep 15, 01:00 UTC</time>
+    <strong class="show-result-title">UFC Fight Night: Main Card</strong>
+  </div>
+  <div class="editor-pick-channels">TVA Sports 2</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-15T09:00:00+00:00">Sep 15, 09:00 UTC</time>
+    <strong class="show-result-title">European T20 Premier League: Amsterdam Flames vs Dublin Guardians</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 2 HD</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-15T11:30:00+00:00">Sep 15, 11:30 UTC</time>
+    <strong class="show-result-title">Giro d&#x27;Abruzzo: Stage 1</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 1 HD · Eurosport 1 · TNT Sports 1 · RAI Sport · EUROSPORT 1</div>
+</article>
+<article class="editor-pick-result">
+  <div class="editor-pick-heading">
+    <time class="show-result-time" datetime="2026-09-15T12:45:00+00:00">Sep 15, 12:45 UTC</time>
+    <strong class="show-result-title">European T20 Premier League: Edinburgh Castle Rockers vs Rotterdam Dockers</strong>
+  </div>
+  <div class="editor-pick-channels">TNT Sports 2 HD</div>
+</article></div>
+</details>
+<!-- editor-picks:end -->
+        </div></div>
       </section>
     </main>
 
