@@ -231,17 +231,14 @@ h2 {
 }
 
 .editor-picks summary {
-  display: block;
+  display: list-item;
   width: fit-content;
-  list-style: none;
+  margin-inline: auto;
+  list-style-position: inside;
   cursor: pointer;
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 0.15em;
-}
-
-.editor-picks summary::-webkit-details-marker {
-  display: none;
 }
 
 .editor-picks[open] {
