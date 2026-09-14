@@ -24,6 +24,11 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 import re
 
+try:
+    from xmltv_utils import is_short_programme
+except ModuleNotFoundError:
+    from scripts.xmltv_utils import is_short_programme
+
 ROOT = Path(__file__).resolve().parents[1]
 MAPPING_CSV = ROOT / "data" / "uhf-channel-mapping.csv"
 NORMALIZED_DIR = ROOT / "data" / "normalized"
@@ -139,6 +144,8 @@ def source_epg_indexes() -> tuple[dict[str, ET.Element], dict[str, list[ET.Eleme
                 copied.attrib["id"] = target_id
                 channels[target_id] = copied
         for programme in root.findall("programme"):
+            if is_short_programme(programme):
+                continue
             raw_channel_id = programme.attrib["channel"]
             target_id = target_id_for_source_channel(source_file, raw_channel_id)
             key = (

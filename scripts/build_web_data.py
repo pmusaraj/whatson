@@ -12,6 +12,11 @@ from pathlib import Path
 from typing import NamedTuple
 from xml.etree import ElementTree as ET
 
+try:
+    from xmltv_utils import is_short_programme
+except ModuleNotFoundError:
+    from scripts.xmltv_utils import is_short_programme
+
 ROOT = Path(__file__).resolve().parents[1]
 NORMALIZED_DIR = ROOT / "data" / "normalized"
 WEB_DATA_DIR = ROOT / "web" / "data"
@@ -395,6 +400,8 @@ def ingest_xmltv_root(
         included_ids.add(raw_id)
 
     for programme in root.findall("programme"):
+        if is_short_programme(programme):
+            continue
         raw_channel_id = programme.attrib["channel"]
         if raw_channel_id not in included_ids:
             continue

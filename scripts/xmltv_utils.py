@@ -15,6 +15,12 @@ def parse_xmltv_time(value: str) -> datetime:
     return datetime.strptime(value, XMLTV_TIME_FORMAT).astimezone(timezone.utc)
 
 
+def is_short_programme(programme) -> bool:
+    start = parse_xmltv_time(programme.attrib["start"])
+    stop = parse_xmltv_time(programme.attrib["stop"])
+    return (stop - start).total_seconds() < 300
+
+
 def iso_z(value: datetime) -> str:
     """Format a datetime as second-precision UTC ISO-8601 with a Z suffix."""
     return value.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
