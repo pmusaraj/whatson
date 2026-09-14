@@ -167,6 +167,8 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False):
             "startAt": program.get("startAt"),
             "endAt": program.get("endAt"),
         }
+        if not broad and candidate["highlightType"] != "liveSport":
+            continue
         key = (candidate["country"], candidate["channelId"], normalized_title(candidate["title"]), candidate["startAt"])
         existing = deduped.get(key)
         if existing is None or candidate_score(candidate) > candidate_score(existing):
@@ -319,8 +321,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         f"Select up to {PICK_LIMIT} timely, globally noteworthy television highlights airing now or in the next 20 hours. "
         "Include more worthwhile events when available, without padding the list with weak picks. "
         "Consider the supplied global list across all countries; do not enforce country quotas. "
-        "Prefer genuinely live major sports, confirmed premieres, strong new series, and new or important documentaries. "
-        "Treat S01E01 as only a hint, not proof that a show is new; reject known older titles. "
+        "Select only genuinely live sports events; exclude series, films, and documentaries for now. "
         "Reject reruns, highlights, studio shows, generic listings, routine episodes, and uncertain entries. "
         "Group different channels and language translations of the same broadcast into one event. "
         "Include every supplied ID for a selected event when it is the same broadcast. "

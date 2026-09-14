@@ -518,6 +518,18 @@ const SPORT_BUCKETS = [
     terms: ["american football", "nfl", "ufl", "college football", "ncaa football", "ncaaf", "cfl"],
   },
   {
+    id: "cricket",
+    label: "Cricket",
+    emoji: "🏏",
+    terms: ["cricket", "t20"],
+  },
+  {
+    id: "combat-sports",
+    label: "Combat sports",
+    emoji: "🥊",
+    terms: ["combat sports", "boxing", "mma", "ufc"],
+  },
+  {
     id: "soccer",
     label: "Soccer",
     emoji: "⚽",
@@ -901,7 +913,7 @@ function renderLiveSportsResults() {
 }
 
 function resolvedEditorPicks() {
-  return state.editorPicks.map((pick) => {
+  return state.editorPicks.filter((pick) => pick.highlightType === "liveSport").map((pick) => {
     const airings = (Array.isArray(pick.channels) ? pick.channels : [pick])
       .map((airing) => {
         const countryData = state.countryDataByCode.get(airing.country);
@@ -926,7 +938,7 @@ function resolvedEditorPicks() {
         all.findIndex((item) => item.key === airing.key) === index
       );
     return airings.length ? { pick, airings } : null;
-  }).filter(Boolean);
+  }).filter(Boolean).sort((a, b) => new Date(a.pick.startAt) - new Date(b.pick.startAt));
 }
 
 function renderEditorPicks() {
@@ -936,7 +948,7 @@ function renderEditorPicks() {
     <article class="editor-pick-result">
       <div class="editor-pick-heading">
         <span class="show-result-time">${formatTime(pick.startAt)}</span>
-        <strong class="show-result-title">${escapeHtml(pick.title)}</strong>
+        <strong class="show-result-title"><span aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span> ${escapeHtml(pick.title)}</strong>
       </div>
       <div class="editor-pick-channels" aria-label="Available channels">
         ${airings.map(({ countryData, channel, index, key }) => `

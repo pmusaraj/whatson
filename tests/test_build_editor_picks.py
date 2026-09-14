@@ -92,14 +92,12 @@ class BuildEditorPicksTest(unittest.TestCase):
             candidates = build_editor_picks.collect_candidates(path, self.now)
 
         self.assertEqual({candidate["country"] for candidate in candidates}, {"DE", "ES"})
-        self.assertIn("New nature documentary", [candidate["title"] for candidate in candidates])
+        self.assertNotIn("New nature documentary", [candidate["title"] for candidate in candidates])
         self.assertIn("U.S. Open - Women’s Singles Final", [candidate["title"] for candidate in candidates])
         titles = [candidate["title"] for candidate in candidates]
         self.assertLess(titles.index("Live: Champions Berlin vs Munich"), titles.index("U.S. Open Tennis"))
-        self.assertEqual(
-            next(candidate for candidate in candidates if candidate["title"] == "Festival film premiere")["highlightType"],
-            "freshProgramme",
-        )
+        self.assertNotIn("Festival film premiere", titles)
+        self.assertTrue(all(candidate["highlightType"] == "liveSport" for candidate in candidates))
 
     def test_candidate_cap_keeps_all_channels_for_the_same_event(self):
         channels = [
