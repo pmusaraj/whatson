@@ -252,6 +252,7 @@ h2 {
   max-height: 40%;
 }
 
+body[data-guide-empty="false"] .editor-picks,
 body[data-searching="true"] .editor-picks,
 body[data-live-sports-open="true"] .editor-picks {
   display: none;
