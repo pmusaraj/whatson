@@ -1,0 +1,201 @@
+import copy
+import io
+import json
+import sys
+import tempfile
+import unittest
+import urllib.error
+from datetime import date, datetime, timezone
+from pathlib import Path
+from unittest.mock import Mock, patch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import build_series_report as series
+
+
+class SeriesReportTest(unittest.TestCase):
+    def setUp(self):
+        self.now = datetime(2026, 9, 15, 12, tzinfo=timezone.utc)
+        self.catalogue = json.loads(series.CATALOGUE.read_text())
+        self.by_id = series.validate_catalogue(self.catalogue, self.now.date())
+        self.selection = {code: [p["id"] for p in self.by_id.values() if p["country"] == code][:5]
+                          for code in series.COUNTRIES}
+        self.report = series.make_report(self.catalogue, self.selection, date(2026, 9, 14),
+                                         {"method": "test"}, self.now)
+
+    def test_catalogue_has_verified_origins_and_both_canadian_languages(self):
+        languages = {lang for p in self.by_id.values() if p["country"] == "CA" for lang in p["originalLanguages"]}
+        self.assertTrue({"en", "fr"} <= languages)
+        self.assertEqual(sum(len(c["picks"]) for c in self.report["countries"]), 25)
+        series.validate_report(self.report)
+
+    def test_rejects_us_unknown_and_unreviewed_origins(self):
+        for change in ({"productionCountries": ["FR", "US"]}, {"productionCountries": []},
+                       {"productionCountries": None}, {"originVerified": False},
+                       {"productionCountries": ["CA"]}):
+            with self.subTest(change=change):
+                catalogue = copy.deepcopy(self.catalogue)
+                catalogue["series"][0].update(change)
+                with self.assertRaises(ValueError):
+                    series.validate_catalogue(catalogue, self.now.date())
+
+    def test_canadian_dub_does_not_establish_original_language(self):
+        catalogue = copy.deepcopy(self.catalogue)
+        next(p for p in catalogue["series"] if p["country"] == "CA")["originalLanguages"] = ["es"]
+        with self.assertRaisesRegex(ValueError, "original language"):
+            series.validate_catalogue(catalogue, self.now.date())
+
+    def test_rejects_us_editorial_sources_and_missing_origin_evidence(self):
+        catalogue = copy.deepcopy(self.catalogue)
+        catalogue["series"][0]["sources"][0]["country"] = "US"
+        with self.assertRaisesRegex(ValueError, "non-US"):
+            series.validate_catalogue(catalogue, self.now.date())
+        catalogue = copy.deepcopy(self.catalogue)
+        catalogue["series"][0]["sources"] = catalogue["series"][0]["sources"][:1]
+        with self.assertRaisesRegex(ValueError, "origin evidence"):
+            series.validate_catalogue(catalogue, self.now.date())
+
+    def test_rejects_missing_countries_invented_duplicate_and_misclassified_ids(self):
+        variants = []
+        value = copy.deepcopy(self.selection)
+        del value["CA"]
+        variants.append(value)
+        for replacement in ("made-up-show", self.selection["FR"][1], self.selection["CA"][0]):
+            value = copy.deepcopy(self.selection)
+            value["FR"][0] = replacement
+            variants.append(value)
+        value = copy.deepcopy(self.selection)
+        value["FR"].pop()
+        variants.append(value)
+        for selection in variants:
+            with self.subTest(selection=selection), self.assertRaises(ValueError):
+                series.validate_selection(selection, self.by_id)
+
+    def test_html_escapes_copy_and_rejects_script_links(self):
+        report = copy.deepcopy(self.report)
+        report["countries"][0]["picks"][0]["title"] = '<script>alert("x")</script>'
+        html = series.render_html(report)
+        self.assertIn('&lt;script&gt;', html)
+        self.assertNotIn('<script>alert', html)
+        for url in ('javascript:alert(1)', 'https://user:pass@example.com/', '//example.com', 'https://localhost/'):
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                series.source_url(url)
+
+    def test_html_is_complete_unindexed_and_not_linked_from_main_site(self):
+        html = series.render_html(self.report)
+        self.assertEqual(html.count('<li class="pick">'), 25)
+        self.assertEqual(html.count('<ul class="sources"'), 25)
+        self.assertIn('content="noindex, nofollow"', html)
+        self.assertIn('Canadian originals in English and French', html)
+        self.assertIn('2026-09-14', html)
+        for file in ('index.html', 'app.js', 'uhf.html'):
+            self.assertNotIn('href="/series', (series.ROOT / 'web' / file).read_text())
+
+    def test_week_boundaries_and_invalid_dates(self):
+        self.assertEqual(series.week_start(date(2027, 1, 3)), date(2026, 12, 28))
+        self.assertEqual(series.week_start(date(2027, 1, 4)), date(2027, 1, 4))
+        report = copy.deepcopy(self.report)
+        report['weekEnd'] = '2026-09-21'
+        with self.assertRaises(ValueError):
+            series.validate_report(report)
+
+    def temporary_paths(self, root):
+        return dict(catalogue_path=series.CATALOGUE, report_path=root / 'series.json',
+                    page_path=root / 'series/index.html', archive_dir=root / 'archives')
+
+    def test_bootstrap_weekly_idempotence_and_archive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = self.temporary_paths(root)
+            result = series.build(**paths, now=self.now, bootstrap=True)
+            self.assertEqual(result['selection']['method'], 'researched-bootstrap')
+            self.assertTrue((root / 'archives/2026-09-14.json').exists())
+            selector = Mock(side_effect=AssertionError('must not call model'))
+            series.build(**paths, now=self.now, selector=selector)
+            selector.assert_not_called()
+            self.assertEqual(json.loads(paths['report_path'].read_text()), result)
+
+    def test_next_week_uses_model_preserves_previous_archive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = self.temporary_paths(root)
+            series.build(**paths, now=self.now, bootstrap=True)
+            original_archive = (root / 'archives/2026-09-14.json').read_bytes()
+            selector = Mock(return_value=(self.selection, {'method': 'llm', 'model': 'test'}))
+            result = series.build(**paths, now=datetime(2026, 9, 21, tzinfo=timezone.utc), api_key='test', selector=selector)
+            self.assertEqual(result['weekStart'], '2026-09-21')
+            self.assertEqual((root / 'archives/2026-09-14.json').read_bytes(), original_archive)
+            self.assertEqual(selector.call_args.kwargs['previous'], self.selection)
+
+    def test_failed_model_and_missing_key_preserve_all_outputs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = self.temporary_paths(root)
+            series.build(**paths, now=self.now, bootstrap=True)
+            original = {p: p.read_bytes() for p in root.rglob('*') if p.is_file()}
+            for key, selector in [('', Mock()), ('test', Mock(side_effect=ValueError('invalid JSON')))]:
+                with self.assertRaises(ValueError):
+                    series.build(**paths, now=self.now, force=True, api_key=key, selector=selector)
+                self.assertEqual({p: p.read_bytes() for p in root.rglob('*') if p.is_file()}, original)
+
+    def test_bad_model_selection_is_not_published(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = self.temporary_paths(root)
+            selector = Mock(return_value=({'FR': ['invented']}, {'method': 'llm'}))
+            with self.assertRaises(ValueError):
+                series.build(**paths, now=self.now, api_key='test', selector=selector)
+            self.assertFalse(paths['report_path'].exists())
+            self.assertFalse(paths['page_path'].exists())
+
+    def test_render_only_never_needs_model_or_relabels_old_week(self):
+        with tempfile.TemporaryDirectory() as directory:
+            paths = self.temporary_paths(Path(directory))
+            series.build(**paths, now=self.now, bootstrap=True)
+            selector = Mock(side_effect=AssertionError('no model'))
+            series.build(**paths, now=datetime(2026, 10, 1, tzinfo=timezone.utc), render_only=True, selector=selector)
+            self.assertIn('2026-09-14', paths['page_path'].read_text())
+            selector.assert_not_called()
+
+    def test_write_failure_rolls_back_report_and_archive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            paths = self.temporary_paths(root)
+            series.build(**paths, now=self.now, bootstrap=True)
+            original = {p: p.read_bytes() for p in root.rglob('*') if p.is_file()}
+            writer = series.atomic_write
+            def fail_on_page(path, content):
+                if path == paths['page_path']:
+                    raise OSError('disk full')
+                writer(path, content)
+            with patch.object(series, 'atomic_write', side_effect=fail_on_page), self.assertRaises(OSError):
+                series.build(**paths, now=datetime(2026, 9, 21, tzinfo=timezone.utc), api_key='test',
+                             selector=Mock(return_value=(self.selection, {'method': 'llm'})))
+            self.assertEqual({p: p.read_bytes() for p in root.rglob('*') if p.is_file()}, original)
+
+    def response(self, content=None):
+        return io.BytesIO(json.dumps({'choices': [{'message': {'content': json.dumps(content or self.selection)}}],
+                                     'usage': {'total_tokens': 100}}).encode())
+
+    def test_model_fallback_for_unavailable_model(self):
+        error = urllib.error.HTTPError(series.OPENCODE_GO_URL, 429, 'limited', {}, None)
+        opener = Mock(side_effect=[error, self.response()])
+        result, provenance = series.select_with_llm(self.by_id, date(2026, 9, 14), 'test', opener=opener)
+        self.assertEqual(result, self.selection)
+        self.assertEqual(provenance['model'], series.OPENCODE_GO_MODELS[1])
+        self.assertEqual(provenance['usage'], {'total_tokens': 100})
+
+    def test_authentication_and_bad_output_do_not_change_model(self):
+        for error in (urllib.error.HTTPError(series.OPENCODE_GO_URL, 401, 'unauthorized', {}, None),):
+            opener = Mock(side_effect=error)
+            with self.assertRaises(urllib.error.HTTPError):
+                series.select_with_llm(self.by_id, date(2026, 9, 14), 'test', opener=opener)
+            self.assertEqual(opener.call_count, 1)
+        opener = Mock(return_value=self.response({'FR': ['invented']}))
+        with self.assertRaises(ValueError):
+            series.select_with_llm(self.by_id, date(2026, 9, 14), 'test', opener=opener)
+        self.assertEqual(opener.call_count, 1)
+
+
+if __name__ == '__main__':
+    unittest.main()

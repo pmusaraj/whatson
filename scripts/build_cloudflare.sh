@@ -13,3 +13,4 @@ git -C .cache/epg clean -fdx
 npm ci --prefix .cache/epg
 python3 scripts/refresh_uhf_epg.py
 python3 scripts/build_editor_picks_html.py
+python3 scripts/build_series_report.py --render-only

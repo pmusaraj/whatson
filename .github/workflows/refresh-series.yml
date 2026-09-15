@@ -1,0 +1,68 @@
+name: Weekly series report
+
+on:
+  schedule:
+    - cron: "25 8 * * 1"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Regenerate this week's report even if it already exists
+        type: boolean
+        default: false
+
+# Share the guide writer's lock: neither data job should race the other's push.
+concurrency:
+  group: refresh-epg
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  series:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the latest branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Test report generation
+        run: python3 -m unittest discover -s tests -p 'test_build_series_report.py' -v
+
+      - name: Generate weekly report
+        env:
+          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
+          FORCE_REPORT: ${{ inputs.force }}
+        run: |
+          args=()
+          if [[ "$FORCE_REPORT" == "true" ]]; then args+=(--force); fi
+          python3 scripts/build_series_report.py "${args[@]}"
+
+      - name: Upload report for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-series-report
+          path: |
+            web/data/series.json
+            web/series/index.html
+          retention-days: 14
+
+      - name: Commit weekly report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/data/series.json web/series/index.html data/series/reports
+          if git diff --cached --quiet; then
+            echo "No weekly series changes."
+          else
+            git commit -m "chore: refresh weekly series report"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

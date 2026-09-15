@@ -148,6 +148,34 @@ This reads `data/normalized/*.xml` and rewrites `web/data/*.json`.
 
 ## Regenerate editor picks
 
+### Weekly series report
+
+The unlisted `/series` page contains five domestic series each from France, Italy,
+Spain, the UK and Canada, with editorial and production-source links. Canadian
+picks are originals in English or French. US productions/co-productions and
+unverified origins are excluded. The page has no navigation link and requests
+`noindex`; it is publicly accessible to anyone with the URL.
+
+The **Weekly series report** workflow runs Mondays at 08:25 UTC using the existing
+`OPENCODE_GO_API_KEY` secret. It ranks the reviewed catalogue with OpenCode Go,
+validates all 25 IDs, and commits the report and its dated archive. It preserves
+the previous edition if generation fails. The initial edition was researched and
+seeded without an LLM request. These are weekly watchlists, including older shows,
+not weekly premiere or streaming-availability claims.
+
+```bash
+python3 scripts/build_series_report.py              # Generate once per UTC week
+python3 scripts/build_series_report.py --force      # Re-rank the current week
+python3 scripts/build_series_report.py --render-only # Rebuild HTML, no API needed
+```
+
+The current report is `web/data/series.json`; HTML is `web/series/index.html`.
+Archives live in `data/series/reports/`. Cloudflare builds only render the saved
+edition; they do not call the LLM. See [series maintenance](docs/series-report.md)
+for the catalogue, scope, validation and how to introduce new titles.
+
+### Sports picks
+
 With `OPENCODE_GO_API_KEY` available in the environment, regenerate picks from the current browser payloads:
 
 ```bash
