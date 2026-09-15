@@ -43,6 +43,26 @@ CATEGORY_COUNTRY = {
 # Hand aliases for common IPTV naming variants that fuzzy matching either misses
 # or maps to a weaker duplicate.
 MANUAL_ALIASES = {
+    ("US", "USA- FXM"): "US:FXMovieChannel.us",
+    ('UK', 'UK-BBC 1'): 'UK:BBCOne.uk',
+    ('UK', 'UK-BBC 2'): 'UK:BBCTwo.uk',
+    ('UK', 'UK-BBC 4'): 'UK:BBCFour.uk',
+    ('UK', 'UK-COMEDY EXTRA'): 'UK:ComedyCentralExtra.uk',
+    ('UK', 'UK-Discovery Investigation'): 'UK:InvestigationDiscovery.uk',
+    ('UK', 'UK-Discovery Science'): 'UK:DiscoveryScienceEurope.uk',
+    ('UK', 'UK-NICK JUNIOR'): 'UK:NickJr.uk',
+    ('US', 'Disney JNR'): 'US:DisneyJunior.us',
+    ('US', 'USA- CINEMAX MOVIEMAX'): 'US:MovieMax.us',
+    ('US', 'USA- CINEMAX OUTER MAX'): 'US:OuterMax.us',
+    ('US', 'USA- CINEMAX THRILLERMAX HD'): 'US:ThrillerMax.us',
+    ('US', 'USA- CINEMAXX MORE MAXX'): 'US:MoreMax.us',
+    ('US', 'USA- Fox Fusiness'): 'US:FoxBusinessNetwork.us',
+    ('US', 'USA-FX_US'): 'US:FX.us',
+    ('US', 'USA-HBO_FAMILY'): 'US:HBOFamily.us',
+    ('US', 'USA-MTV-Live'): 'US:MTVLive.us',
+    ('US', 'USA-SYFY'): 'US:SYFY.us',
+    ('US', 'USA- MSNBC'): 'US:MSNBC.us',
+
     # France
     ("FR", "CANAL+FOOT"): "FR:CanalPlusFoot.fr",
     ("FR", "FR-SP:Canal+ Foot"): "FR:CanalPlusFoot.fr",
@@ -301,7 +321,14 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
             else:
                 notes = f"manual alias target not in target guide metadata: {candidate}"
 
-    if not target_id and clean_epg:
+    blocked = (source_country, name) in {
+        ("UK", "UK-Disney Channel"), ("UK", "UK-Disney Junior"),
+        ("US", "US-Russia Today USA"), ("US", "USA- UFC Fight Pass"),
+    }
+    if blocked and not target_id:
+        notes = "No verified domestic linear guide; unrelated fuzzy matches excluded"
+
+    if not target_id and clean_epg and not blocked:
         candidate = raw_to_target.get(clean_epg.lower())
         if candidate and (not source_country or candidate.startswith(source_country + ":")):
             target_id = candidate
@@ -315,7 +342,7 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
         else:
             notes = f"source EPG id present but no target-country guide channel: {clean_epg}"
 
-    if not target_id:
+    if not target_id and not blocked:
         if skip_fuzzy_name(name):
             notes = notes or "ambiguous/event channel; not mapped to a different parent/region EPG channel"
         else:

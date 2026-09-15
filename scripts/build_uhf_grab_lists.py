@@ -25,7 +25,7 @@ PREFERRED_SITES = {
     "ES": ["movistarplus.es", "orangetv.orange.es", "programacion-tv.elpais.com", "gatotv.com"],
     "UK": ["virgintvgo.virginmedia.com", "sky.com", "mytelly.co.uk", "freeview.co.uk"],
     "CA": ["tvpassport.com", "tvhebdo.com", "tvtv.us", "ontvtonight.com"],
-    "US": ["tvtv.us", "tvguide.com", "tvpassport.com"],
+    "US": ["tvpassport.com", "tvtv.us", "tvguide.com"],
 }
 
 
@@ -58,10 +58,24 @@ def choose_mapping(country: str, candidates: list[dict]) -> dict | None:
     if not candidates:
         return None
     preferred = PREFERRED_SITES.get(country, [])
-    by_site = {candidate.get("site"): candidate for candidate in candidates}
+    # Unqualified US channels use the Eastern feed. Keep regional BBC
+    # defaults explicit instead of selecting whichever row happens to be last.
+    preferred_feed = {"BBCOne.uk": "LondonHD", "BBCTwo.uk": "HD", "BBCFour.uk": "UKHD"}
+    by_site = {}
+    for candidate in candidates:
+        site = candidate.get("site")
+        wanted = preferred_feed.get(candidate.get("channel")) if country == "UK" else None
+        if country == "US":
+            wanted = "East"
+        previous = by_site.get(site)
+        if previous and wanted and previous.get("feed") == wanted and candidate.get("feed") != wanted:
+            continue
+        by_site[site] = candidate
     for site in preferred:
         if site in by_site:
             return by_site[site]
+    if country in {"US", "UK"}:
+        return None  # A foreign schedule is not a fallback for a domestic feed.
     return sorted(candidates, key=lambda item: (item.get("site") or "", item.get("site_name") or ""))[0]
 
 

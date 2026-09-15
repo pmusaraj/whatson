@@ -113,6 +113,14 @@ def load_ok_mappings() -> list[dict[str, str]]:
 
 def source_xml_files() -> list[Path]:
     files = sorted(NORMALIZED_DIR.glob("guide-uhf-*.xml"))
+    # Old snapshots remain available for debugging but must not override the
+    # source currently selected for US/UK channels after a source switch.
+    plan_path = ROOT / "data" / "uhf" / "grab-plan.json"
+    if plan_path.exists():
+        active = {"guide-" + Path(item["path"]).name.removeprefix("custom-").removesuffix(".channels.xml") + ".xml"
+                  for item in json.loads(plan_path.read_text())["writtenFiles"]}
+        files = [path for path in files if not path.name.startswith(("guide-uhf-US-", "guide-uhf-UK-"))
+                 or path.name in active]
     if not files:
         raise FileNotFoundError(f"Missing source XMLTV: no {NORMALIZED_DIR}/guide-uhf-*.xml")
     return files

@@ -49,3 +49,41 @@ The user has authorized switching the local UHF Estv playlist back to this servi
 This is a URL switch, not a restoration of the old database backup, which would undo the corrected channel assignments. Keep localhost configured until the deployed feed is verified.
 
 Coverage is not complete: some playlist rows lack approved mappings, and some approved sources return no programmes. The prioritized legacy labels `ESP-Movistar  Estrenos 2` and `ESP-Movistar Series 2` remain unmapped because no current equivalent was verified. Missing approved targets elsewhere include Cooking Channel, Family Channel, Moi et Cie, OLN, Vrak, Yoopa, À Punt, Bom Cine, and ETB1. TV Hebdo also returned gaps around the current time for several Canadian channels. Numbered LaLiga overflow feeds sometimes publish only a generic channel-name listing between events. These cases remain visible rather than being filled with another channel's schedule.
+
+## USA and UK follow-up
+
+The US grab plan prefers TV Passport, with Eastern schedules for unqualified
+East/West channels. BBC One defaults to London, BBC Two to the national HD feed,
+and BBC Four to UK HD. A playlist label without a region cannot establish which
+regional stream the provider carries; these defaults are explicit in
+`build_uhf_grab_lists.py`.
+
+The UK Virgin fetcher reads the public six-hour guide segments once each (12
+requests for three days), selects channels by provider ID, preserves UTC start
+and end times, and deduplicates events repeated across segment boundaries. It
+publishes only after all segments succeed. Episode descriptions are included
+only when present in the segment response; no per-programme detail requests are
+needed for schedules.
+
+US station corrections use the TV Passport station names and IDs from the
+pinned upstream channel list. They distinguish domestic SYFY, MSNBC, Disney
+Junior, MTV Live and Cinemax subchannels. The US/UK grab plan does not fall back
+to arbitrary foreign providers. Obsolete US/UK snapshots remain on disk but are
+excluded from the export using the current grab plan.
+
+Local validation on 2026-09-15: the candidate export contains 55 US playlist
+rows with schedules (previously 3) and 43 UK rows (previously 34). Canada remains
+at 86 and Spain at 48. All 98 supported US/UK rows have programmes in the next
+24 hours. HBO Family, MovieMax and OuterMax's selected legacy TV Passport pages
+return 404; they do not receive substituted schedules.
+
+UHF's automatic matcher still confuses some aliases even when its imported
+`resolvedNameIds` index is correct. Set the playlist item's guide selection to
+`!$!<Estv playlist UUID>!$!<country-qualified XMLTV ID>` and rebuild the imported
+guide cache. Merely changing the selection in the database without rebuilding
+the cache left ESPN displaying ESPN2's programme. After the rebuild, the app
+showed SportsCenter on ESPN and Spanish Primera Division Soccer on ESPN2.
+A database backup was saved before the local test and the 98 verified US/UK
+selections were assigned explicitly. Estv's production source remains
+`https://heywhatson.tv/data/uhf/epg-stable.xml`; the additional schedules require
+deployment of this change.

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import subprocess
 import sys
@@ -43,6 +44,10 @@ def main(argv: list[str] | None = None) -> int:
     run(["python3", "scripts/build_uhf_grab_lists.py"])
 
     channels_files = sorted(SOURCES_DIR.glob("custom-uhf-*.channels.xml"))
+    plan_path = ROOT / "data" / "uhf" / "grab-plan.json"
+    if SOURCES_DIR == ROOT / "data" / "sources" / "iptv-org" and plan_path.exists():
+        active = {Path(item["path"]).name for item in json.loads(plan_path.read_text())["writtenFiles"]}
+        channels_files = [path for path in channels_files if path.name in active]
     if args.countries:
         countries = {country.upper() for country in args.countries}
         channels_files = [path for path in channels_files if path.name.split("-")[2] in countries]
@@ -96,7 +101,14 @@ def main(argv: list[str] | None = None) -> int:
                 "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
             ]
             timeout = 900
-        elif channels_file.name.startswith("custom-uhf-CA-"):
+        elif channels_file.name.endswith("-virgintvgo.virginmedia.com.channels.xml"):
+            command = [
+                "python3", "scripts/grab_virgin_epg.py",
+                "--channels", str(channels_file), "--output", str(output_file),
+                "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
+            ]
+            timeout = 300
+        elif "-tvpassport.com.channels.xml" in channels_file.name or channels_file.name.startswith("custom-uhf-CA-"):
             # A source-wide two-minute limit can kill a healthy large batch
             # before the grabber writes any of its results.
             timeout = max(timeout, min(900, len(ET.parse(channels_file).getroot()) * DAYS_TO_GRAB * 10))

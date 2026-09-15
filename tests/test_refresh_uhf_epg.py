@@ -33,6 +33,20 @@ class RefreshUhfEpgTest(unittest.TestCase):
             self.assertEqual(grabs[2].kwargs["timeout"], 300)
             self.assertEqual(grabs[2].args[0][:2], ["python3", "scripts/grab_orange_epg.py"])
 
+    def test_us_timeout_and_uk_shared_fetcher(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            for name, count in [("US-tvpassport.com", 51), ("UK-virgintvgo.virginmedia.com", 39)]:
+                (root / f"custom-uhf-{name}.channels.xml").write_text(
+                    "<channels>" + '<channel xmltv_id="test"/>' * count + "</channels>")
+            with (patch.object(refresh, "EPG_DIR", root), patch.object(refresh, "SOURCES_DIR", root),
+                  patch.object(refresh, "NORMALIZED_DIR", root / "normalized"), patch.object(refresh, "run") as run):
+                refresh.main(["--countries", "US", "UK"])
+            grabs = [call for call in run.call_args_list if "timeout" in call.kwargs]
+            self.assertEqual(grabs[0].args[0][:2], ["python3", "scripts/grab_virgin_epg.py"])
+            self.assertEqual(grabs[0].kwargs["timeout"], 300)
+            self.assertEqual(grabs[1].kwargs["timeout"], 900)
+
     def test_timeout_kills_descendants_before_they_write(self):
         import sys
         import time
