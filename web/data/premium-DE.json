@@ -1,7 +1,7 @@
 {
   "country": "DE",
   "countryName": "Germany",
-  "generatedAt": "2026-09-15T16:50:59.953337Z",
+  "generatedAt": "2026-09-15T21:09:11.121518Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -9,7 +9,7 @@
     "data/normalized/guide-premium-DE-sky.de.xml",
     "data/normalized/guide-premium-DE-web.magentatv.de.xml"
   ],
-  "channelCount": 3,
+  "channelCount": 11,
   "channels": [
     {
       "id": "Eurosport1.fr",
@@ -21,90 +21,20 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "Polo",
-        "subtitle": "Eurosport News",
-        "description": null,
+        "title": "World Snooker Tour",
+        "subtitle": "English Open: Finale",
+        "description": "Die Übertragung der World Snooker Tour.",
         "categories": [
           "Sport"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/5/p859171_i_h9_aa_2019-03-08T11_00_23.jpg",
-        "startAt": "2026-09-15T16:30:00Z",
-        "endAt": "2026-09-15T17:00:00Z",
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
+        "startAt": "2026-09-15T20:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
         "originalDate": "20260101"
       },
       "programs": [
-        {
-          "title": "UCI Europe Tour Männer",
-          "subtitle": "Giro d'Aruzza: 1. Etappe",
-          "description": "Übertragungen der Serie von Straßenradrennen auf dem europäischen Kontinent.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26319497_i_h9_ac_2024-01-22T11_23_27.jpg",
-          "startAt": "2026-09-15T11:35:00Z",
-          "endAt": "2026-09-15T13:30:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "La Vuelta 2026",
-          "subtitle": "21. Etappe",
-          "description": "Die 21. Etappe der 81. Austragung der Vuelta a España führt vom Carrefour Granada nach Granada (112km).",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302294_i_h9_aa_2026-08-06T07_06_32.jpg",
-          "startAt": "2026-09-15T13:30:00Z",
-          "endAt": "2026-09-15T14:30:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "IFSC Sportklettern Weltcup",
-          "subtitle": "Guiyang: Finale: Mixed",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-09-15T14:30:00Z",
-          "endAt": "2026-09-15T15:30:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "World Snooker Tour",
-          "subtitle": "English Open: Finale",
-          "description": "Die Übertragung der World Snooker Tour.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
-          "startAt": "2026-09-15T15:30:00Z",
-          "endAt": "2026-09-15T16:30:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "Polo",
-          "subtitle": "Eurosport News",
-          "description": null,
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/5/p859171_i_h9_aa_2019-03-08T11_00_23.jpg",
-          "startAt": "2026-09-15T16:30:00Z",
-          "endAt": "2026-09-15T17:00:00Z",
-          "originalDate": "20260101"
-        },
         {
           "title": "Reitsport",
           "subtitle": "Grand Slam: Spruce Meadows",
@@ -268,6 +198,48 @@
           "startAt": "2026-09-16T11:35:00Z",
           "endAt": "2026-09-16T13:30:00Z",
           "originalDate": "20260101"
+        },
+        {
+          "title": "UCI ProSeries Männer",
+          "subtitle": "Grand Prix de Wallonie",
+          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
+          "startAt": "2026-09-16T13:30:00Z",
+          "endAt": "2026-09-16T15:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "UCI ProSeries Männer",
+          "subtitle": "Tour de Luxembourg: 1. Etappe",
+          "description": "Die Übertragung von Radsportrennen der UCI ProSeries Cycling.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26272749_i_h9_ab_2024-01-22T11_33_31.jpg",
+          "startAt": "2026-09-16T15:30:00Z",
+          "endAt": "2026-09-16T16:50:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "World Snooker Tour",
+          "subtitle": "China Open : Finale",
+          "description": "Live-Übertragung von den China Open 2026 im Riverside Sports Center in Taiyuan, China.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
+          "startAt": "2026-09-16T16:50:00Z",
+          "endAt": "2026-09-16T18:00:00Z",
+          "originalDate": "20260101"
         }
       ]
     },
@@ -281,91 +253,20 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "La Vuelta 2026",
-        "subtitle": "21. Etappe",
-        "description": "Die 21. Etappe der 81. Austragung der Vuelta a España führt vom Carrefour Granada nach Granada (112km).",
+        "title": "UCI Europe Tour Männer",
+        "subtitle": "Giro d'Aruzza: 1. Etappe",
+        "description": "Übertragungen der Serie von Straßenradrennen auf dem europäischen Kontinent.",
         "categories": [
           "Sport"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302294_i_h9_aa_2026-08-06T07_06_32.jpg",
-        "startAt": "2026-09-15T16:08:00Z",
-        "endAt": "2026-09-15T17:00:00Z",
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26319497_i_h9_ac_2024-01-22T11_23_27.jpg",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
         "originalDate": "20260101"
       },
       "programs": [
-        {
-          "title": "IFSC Sportklettern Weltcup",
-          "subtitle": "Guiyang: Speed: Finale",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-09-15T12:05:00Z",
-          "endAt": "2026-09-15T13:03:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "FIM EWC",
-          "subtitle": "8h von Suzuka: Rennen",
-          "description": "Übertragung des Rennens der dritten Station der FIM Endurance-WM 2026 auf dem Suzuka Circuit.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p8287667_i_h9_ab_2022-09-13T15_47_14.jpg",
-          "startAt": "2026-09-15T13:03:00Z",
-          "endAt": "2026-09-15T14:23:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "FIA WEC Highlights",
-          "subtitle": "Lone Star Le Mans",
-          "description": "FIA WEC 2026 - Highlights aus Austin.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9212762_i_h9_ac_2025-09-18T14_35_34.jpg",
-          "startAt": "2026-09-15T14:23:00Z",
-          "endAt": "2026-09-15T15:31:00Z",
-          "originalDate": "20260101",
-          "episode": "S01E143"
-        },
-        {
-          "title": "IFSC Sportklettern Weltcup",
-          "subtitle": "Guiyang: Finale: Mixed",
-          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
-          "startAt": "2026-09-15T15:31:00Z",
-          "endAt": "2026-09-15T16:08:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "La Vuelta 2026",
-          "subtitle": "21. Etappe",
-          "description": "Die 21. Etappe der 81. Austragung der Vuelta a España führt vom Carrefour Granada nach Granada (112km).",
-          "categories": [
-            "Sport"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32302294_i_h9_aa_2026-08-06T07_06_32.jpg",
-          "startAt": "2026-09-15T16:08:00Z",
-          "endAt": "2026-09-15T17:00:00Z",
-          "originalDate": "20260101"
-        },
         {
           "title": "UCI Europe Tour Männer",
           "subtitle": "Giro d'Aruzza: 1. Etappe",
@@ -632,6 +533,1954 @@
           "startAt": "2026-09-16T12:00:00Z",
           "endAt": "2026-09-16T13:00:00Z",
           "originalDate": "20260101"
+        },
+        {
+          "title": "World Snooker Tour",
+          "subtitle": "Wuhan Open : Finale",
+          "description": "Die Übertragung der World Snooker Tour.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24829502_i_h9_aa_2024-10-15T10_24_04.jpg",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T15:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "FIM Motocross-WM",
+          "subtitle": "China: MXGP: 1. Rennen",
+          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
+          "startAt": "2026-09-16T15:00:00Z",
+          "endAt": "2026-09-16T15:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "FIM Motocross-WM",
+          "subtitle": "China: MXGP: 2. Rennen",
+          "description": "Übertragungen der FIM Motocross Weltmeisterschaft.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10749155_i_h9_ab_2025-10-10T14_14_47.jpg",
+          "startAt": "2026-09-16T15:30:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Polo",
+          "subtitle": "Eurosport News",
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/5/p859171_i_h9_aa_2019-03-08T11_00_23.jpg",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T16:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "IFSC Sportklettern Weltcup",
+          "subtitle": "Guiyang: Speed: Finale",
+          "description": "Gezeigt werden die Wettkämpfe in verschiedenen Disziplinen der WM im Sportklettern.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15510280_i_h9_ac_2024-05-08T10_34_02.jpg",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T17:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "UCI Europe Tour Männer",
+          "subtitle": "Giro d'Aruzza: 2. Etappe",
+          "description": "Übertragungen der Serie von Straßenradrennen auf dem europäischen Kontinent.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/6/p26319497_i_h9_ac_2024-01-22T11_23_27.jpg",
+          "startAt": "2026-09-16T17:00:00Z",
+          "endAt": "2026-09-16T18:00:00Z",
+          "originalDate": "20260101"
+        }
+      ]
+    },
+    {
+      "id": "SkySport1.de",
+      "name": "Sky Sport 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Sendepause",
+        "subtitle": null,
+        "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+        "categories": [],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/01ad520a5da7ea991b3ae1250fd864d79187da8b.png",
+        "startAt": "2026-09-15T04:00:00Z",
+        "endAt": "2026-09-16T04:00:00Z",
+        "originalDate": "20050101"
+      },
+      "programs": [
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/01ad520a5da7ea991b3ae1250fd864d79187da8b.png",
+          "startAt": "2026-09-15T04:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20050101"
+        },
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/01ad520a5da7ea991b3ae1250fd864d79187da8b.png",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T16:15:00Z",
+          "originalDate": "20050101"
+        },
+        {
+          "title": "Es folgt: LIVE UEFA Europa League",
+          "subtitle": "LIVE UEFA EL",
+          "description": "Informationen zu diesem Programm folgen in Kürze!",
+          "categories": [
+            "Unterhaltung",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/5/p15302905_i_h9_aa_2021-02-22T22_26_09.jpg",
+          "startAt": "2026-09-16T16:15:00Z",
+          "endAt": "2026-09-16T16:35:00Z",
+          "originalDate": "20210101"
+        },
+        {
+          "title": "Live UEFA EL: FC Omonia - Celta Vigo , Ligaphase, 1. Spieltag, Mittwoch",
+          "subtitle": "Omonia Nikosia - Celta de Vigo",
+          "description": "Aus dem GSP-Stadion in Nikosia, Zypern.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/7/9/p7942039_i_h9_ag_2023-08-15T13_23_19.jpg",
+          "startAt": "2026-09-16T16:35:00Z",
+          "endAt": "2026-09-16T18:50:00Z",
+          "originalDate": "20260101"
+        }
+      ]
+    },
+    {
+      "id": "SkySport2.de",
+      "name": "Sky Sport 2 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sky_Sport_2_DE_Logo_2020.svg/960px-Sky_Sport_2_DE_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Sendepause",
+        "subtitle": null,
+        "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+        "categories": [],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/682c1ee7dd99970c1f08ff98d9807560dbd8036b.png",
+        "startAt": "2026-09-15T04:00:00Z",
+        "endAt": "2026-09-16T04:00:00Z",
+        "originalDate": "20050101"
+      },
+      "programs": [
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/682c1ee7dd99970c1f08ff98d9807560dbd8036b.png",
+          "startAt": "2026-09-15T04:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20050101"
+        },
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/682c1ee7dd99970c1f08ff98d9807560dbd8036b.png",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T18:30:00Z",
+          "originalDate": "20050101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportBundesliga1.de",
+      "name": "Sky Sport Bundesliga 1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/de/c/ca/Sky_Sport_Bundesliga_2020.svg",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Sendepause",
+        "subtitle": null,
+        "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+        "categories": [],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/c609ca6c3b5b4b85139242805507fe37c0174832.png",
+        "startAt": "2026-09-15T04:00:00Z",
+        "endAt": "2026-09-16T04:00:00Z",
+        "originalDate": "20050101"
+      },
+      "programs": [
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/c609ca6c3b5b4b85139242805507fe37c0174832.png",
+          "startAt": "2026-09-15T04:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20050101"
+        },
+        {
+          "title": "Sendepause",
+          "subtitle": null,
+          "description": "Aktuell liegt eine Sendepause vor und alle Übertragungen sind vorübergehend eingestellt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/c609ca6c3b5b4b85139242805507fe37c0174832.png",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-17T04:00:00Z",
+          "originalDate": "20050101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportF1.de",
+      "name": "Sky Sport F1 HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Sky_Sport_F1_-_Logo_2020.svg/960px-Sky_Sport_F1_-_Logo_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "F1: Rennen - GP Spanien",
+        "subtitle": "GP Spanien: Rennen",
+        "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+        "categories": [
+          "Sport"
+        ],
+        "sportType": "Formula 1",
+        "competition": "Formula 1",
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+        "startAt": "2026-09-15T20:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
+        "originalDate": "20260101"
+      },
+      "programs": [
+        {
+          "title": "F1: Rennen - GP Spanien",
+          "subtitle": "GP Spanien: Rennen",
+          "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-15T16:00:00Z",
+          "endAt": "2026-09-15T18:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F2: 1. Rennen - GP Spanien",
+          "subtitle": "Madrid: Sprint Rennen",
+          "description": "Motorsport pur: Sky zeigt sämtliche Sessions der Formel 2, der Formel 3 sowie die Rennen des Porsche Mobil 1 Supercup live. Diesmal stehen die F2-Rennen von Madrid auf dem Plan.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13929005_i_h9_ad_2024-03-04T05_43_06.jpg",
+          "startAt": "2026-09-15T18:00:00Z",
+          "endAt": "2026-09-15T19:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F2: 2. Rennen - GP Spanien",
+          "subtitle": "Madrid: Feature Rennen",
+          "description": "Motorsport pur: Sky zeigt sämtliche Sessions der Formel 2, der Formel 3 sowie die Rennen des Porsche Mobil 1 Supercup live. Diesmal stehen die F2-Rennen von Madrid auf dem Plan.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13929005_i_h9_ad_2024-03-04T05_43_06.jpg",
+          "startAt": "2026-09-15T19:00:00Z",
+          "endAt": "2026-09-15T20:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Rennen - GP Spanien",
+          "subtitle": "GP Spanien: Rennen",
+          "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-15T20:00:00Z",
+          "endAt": "2026-09-15T22:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Coppa Shell & Shell AM - 1. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-15T22:00:00Z",
+          "endAt": "2026-09-15T23:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Trofeo Pirelli & Pirelli AM - 1. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-15T23:00:00Z",
+          "endAt": "2026-09-16T00:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Coppa Shell & Shell AM - 2. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T00:00:00Z",
+          "endAt": "2026-09-16T01:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Trofeo Pirelli & Pirelli AM - 2. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T01:00:00Z",
+          "endAt": "2026-09-16T02:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Rennen - GP Spanien",
+          "subtitle": "GP Spanien: Rennen",
+          "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Rennen - GP Niederlande",
+          "subtitle": "GP Niederlande: Rennen",
+          "description": "Vom Circuit Park Zandvoort, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T06:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F2: 1. Rennen - GP Spanien",
+          "subtitle": "Madrid: Sprint Rennen",
+          "description": "Motorsport pur: Sky zeigt sämtliche Sessions der Formel 2, der Formel 3 sowie die Rennen des Porsche Mobil 1 Supercup live. Diesmal stehen die F2-Rennen von Madrid auf dem Plan.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13929005_i_h9_ad_2024-03-04T05_43_06.jpg",
+          "startAt": "2026-09-16T06:00:00Z",
+          "endAt": "2026-09-16T07:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F2: 2. Rennen - GP Spanien",
+          "subtitle": "Madrid: Feature Rennen",
+          "description": "Motorsport pur: Sky zeigt sämtliche Sessions der Formel 2, der Formel 3 sowie die Rennen des Porsche Mobil 1 Supercup live. Diesmal stehen die F2-Rennen von Madrid auf dem Plan.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13929005_i_h9_ad_2024-03-04T05_43_06.jpg",
+          "startAt": "2026-09-16T07:00:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Rennen - GP Spanien",
+          "subtitle": "GP Spanien: Rennen",
+          "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T10:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F3: 1. Rennen - GP Spanien",
+          "subtitle": "Madrid: 1. Rennen",
+          "description": "Übertragung der FIA Formel 3.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/1/p8181178_i_h9_ac_2025-04-07T09_25_33.jpg",
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T11:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F3: 2. Rennen - GP Spanien",
+          "subtitle": "Madrid: 2. Rennen",
+          "description": "Übertragung der FIA Formel 3.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/1/p8181178_i_h9_ac_2025-04-07T09_25_33.jpg",
+          "startAt": "2026-09-16T11:00:00Z",
+          "endAt": "2026-09-16T12:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F3: 3. Rennen - GP Spanien",
+          "subtitle": "Madrid: 3. Rennen",
+          "description": "Übertragung der FIA Formel 3.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/1/p8181178_i_h9_ac_2025-04-07T09_25_33.jpg",
+          "startAt": "2026-09-16T12:00:00Z",
+          "endAt": "2026-09-16T13:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Iconic Onboards: Lando Norris",
+          "subtitle": "Formel 1 Iconic Onboards: Lando Norris",
+          "description": "Wir präsentieren ikonische Momente des aktuellen Weltmeisters direkt aus der Cockpit-Perspektive.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g150_h9_aa.jpg",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T13:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Qualifying Kompakt - GP Spanien",
+          "subtitle": null,
+          "description": "Die besten Szenen des Qualifyings in kompakter Form.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g150_h9_aa.jpg",
+          "startAt": "2026-09-16T13:45:00Z",
+          "endAt": "2026-09-16T14:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Rennen - GP Spanien",
+          "subtitle": "GP Spanien: Rennen",
+          "description": "Gezeigt werden die aktuellen Formel-1-Rennen.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/6/9/p691060_i_h9_ac_2025-07-16T14_05_24.jpg",
+          "startAt": "2026-09-16T14:00:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "F1: Ted's Notebook: GP Spanien",
+          "subtitle": null,
+          "description": "Ted Kravitz liefert beim GP von Spanien exklusive F1-Insidereinblicke direkt aus dem Fahrerlager.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/7/p9739735_i_h9_aa_2021-03-17T07_49_17.jpg",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T16:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "WRC: Highlights: Rally Chile Bio Bío",
+          "subtitle": null,
+          "description": "Ob auf Asphalt, Schnee oder Schotter - die FIA Rallye-Weltmeisterschaft WRC steht für Motorsport-Abenteuer. Die Higlights der vergangenen Saison.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/2/p32080826_i_h9_aa_2026-01-15T12_06_20.jpg",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T17:30:00Z",
+          "originalDate": "20260101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportGolf.de",
+      "name": "Sky Sport Golf HD",
+      "logoUrl": "https://i.imgur.com/nhhbHvs.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Solheim Cup: 1. Tag in Cromvoirt (Niederlande)",
+        "subtitle": null,
+        "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+        "categories": [
+          "Sport"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+        "startAt": "2026-09-15T19:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
+        "originalDate": "20260101"
+      },
+      "programs": [
+        {
+          "title": "LIV Golf: Highlights Finaltag Andalusien 2026",
+          "subtitle": null,
+          "description": "Berichtet wird von den Golf-Highlights des Finaltags in Andalusien 2026.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24867782_i_h9_aa_2023-06-04T23_25_28.jpg",
+          "startAt": "2026-09-15T17:05:00Z",
+          "endAt": "2026-09-15T17:25:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "LIV Golf: Highlights Finaltag UK 2026",
+          "subtitle": null,
+          "description": "Golf der Extraklasse: Die Highlights der LIV Golf League im Vereinigten Königreich 2026.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24867782_i_h9_aa_2023-06-04T23_25_28.jpg",
+          "startAt": "2026-09-15T17:25:00Z",
+          "endAt": "2026-09-15T17:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "LIV Golf: Highlights Finaltag New York 2026",
+          "subtitle": null,
+          "description": "Golf der Extraklasse: Die Highlights der LIV Golf League in New York 2026.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24867782_i_h9_aa_2023-06-04T23_25_28.jpg",
+          "startAt": "2026-09-15T17:45:00Z",
+          "endAt": "2026-09-15T18:05:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "LIV Golf: Highlights Highlights Finaltag Indianapolis 2026",
+          "subtitle": null,
+          "description": "Golf der Extraklasse: die Highlights der LIV Golf League in Indianapolis 2026.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24867782_i_h9_aa_2023-06-04T23_25_28.jpg",
+          "startAt": "2026-09-15T18:05:00Z",
+          "endAt": "2026-09-15T18:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Golf: Greatest Holes (2)",
+          "subtitle": null,
+          "description": "Ep.2.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/0/p20773974_i_h9_ac_2022-05-26T16_26_37.jpg",
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T19:00:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Solheim Cup: 1. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-15T19:00:00Z",
+          "endAt": "2026-09-15T22:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Solheim Cup: 2. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-15T22:00:00Z",
+          "endAt": "2026-09-16T01:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Solheim Cup: 3. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-16T01:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Asian Tour: Highlights New Zealand Open",
+          "subtitle": null,
+          "description": "Golf der Extraklasse: die Highlights der New Zealand Open.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18013001_i_h9_aa_2022-10-06T14_37_31.jpg",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T05:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Asian Tour: Highlights International Series Japan",
+          "subtitle": null,
+          "description": "Erleben Sie noch einmal die besten Momente der Top-Spieler auf der International Series Japan 2026.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18013001_i_h9_aa_2022-10-06T14_37_31.jpg",
+          "startAt": "2026-09-16T05:00:00Z",
+          "endAt": "2026-09-16T06:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Asian Tour: Highlights Singapore Open",
+          "subtitle": null,
+          "description": "Berichtet wird über die Golf-Highlights der Singapore Open.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18013001_i_h9_aa_2022-10-06T14_37_31.jpg",
+          "startAt": "2026-09-16T06:00:00Z",
+          "endAt": "2026-09-16T07:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Asian Tour: Highlights Maekyung Open Golf Championship",
+          "subtitle": null,
+          "description": "Berichtet wird über die Golf-Highlights der Maekyung Open Golf Championship.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18013001_i_h9_aa_2022-10-06T14_37_31.jpg",
+          "startAt": "2026-09-16T07:00:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Asian Tour: Highlights International Series Marokko",
+          "subtitle": null,
+          "description": "Die Asian Tour gastiert in Rabat, Marokko. Auf dem legendären Platz Dar Es Salam kämpfen Top-Spieler und LIV-Golf-Stars um ein Preisgeld von zwei Millionen Dollar und wichtige Punkte in der International Series. Wer wird siegen?",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18013001_i_h9_aa_2022-10-06T14_37_31.jpg",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Golf: Highlights G4D Open 2026",
+          "subtitle": null,
+          "description": "Die Sendung präsentiert aktuelle Höhepunkte und Zusammenfassungen aus dem Golfsport.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/7/0/p706015_i_h9_ad_2025-04-03T19_44_22.jpg",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S01E324"
+        },
+        {
+          "title": "Solheim Cup: 1. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T13:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Solheim Cup: 2. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Solheim Cup: 3. Tag in Cromvoirt (Niederlande)",
+          "subtitle": null,
+          "description": "Vom Bernardus GC in Cromvoirt, Niederlande.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33713632_i_h9_aa_2026-08-05T21_08_37.jpg",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T19:00:00Z",
+          "originalDate": "20260101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportNews.de",
+      "name": "Sky Sport News HD",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/c/cc/Sky_Sport_News_2020.svg/960px-Sky_Sport_News_2020.svg.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Live Sky Sport News: Late Night News",
+        "subtitle": null,
+        "description": "Magazin.",
+        "categories": [
+          "Sport",
+          "Magazin"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/6/p16275005_i_h9_ab_2021-02-27T03_27_02.jpg",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T21:30:00Z",
+        "originalDate": "20180101"
+      },
+      "programs": [
+        {
+          "title": "Live Sky Sport News: Primetime",
+          "subtitle": null,
+          "description": "Vorhang auf zur Primetime: Hier blickt Sky Sport News auf die heißesten Themen und Neuigkeiten aus der Sportwelt.",
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/2df1eefe83d4be90b541f27ea8c5e642b08979d6.png",
+          "startAt": "2026-09-15T16:30:00Z",
+          "endAt": "2026-09-15T18:30:00Z"
+        },
+        {
+          "title": "Live Sky Sport News: Guten Abend Fans!",
+          "subtitle": null,
+          "description": "Sky präsentiert: Sky Sport News guten Abend Fans.",
+          "categories": [
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/7/p27438976_i_h9_aa_2024-11-26T04_23_33.jpg",
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T20:00:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "NFL: Aktuell",
+          "subtitle": null,
+          "description": "Sport-Spektakel aus den USA: Das ntv Magazin zeigt die Highlights des vergangenen NFL-Wochenendes. Die Moderatoren Alessa-Luisa Naujoks und Marcel Klein schauen dabei auf aktuelle Themen und nehmen die kommende Spieltag ins Visier.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g111_h9_aa.jpg",
+          "startAt": "2026-09-15T20:00:00Z",
+          "endAt": "2026-09-15T20:15:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Sky Sport News: Top News",
+          "subtitle": null,
+          "description": "Sky Sport News, Deutschlands einziger Sportnachrichtensender, serviert brandheiße News rund um die Uhr. Hier wird garantiert keine wichtige Sportnachricht mehr verpasst!",
+          "categories": [
+            "Sport",
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11070030_i_h9_ab_2025-08-22T11_04_25.jpg",
+          "startAt": "2026-09-15T20:15:00Z",
+          "endAt": "2026-09-15T20:30:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Meine Geschichte: Das Leben von Hans-Joachim Watzke (Teil 1)",
+          "subtitle": "Markus Krösche",
+          "description": "Ehrlich, privat und hautnah wie nie: Der Fernsehmoderator Riccardo Basile besucht prominente Persönlichkeiten aus der Welt des Sports und spricht mit ihnen eingehend über ihr bisheriges Leben und ihre besonderen Geschichten.",
+          "categories": [
+            "Talkshow",
+            "Biografie"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18813597_b_h9_ae_2025-09-11T09_15_03.jpg",
+          "startAt": "2026-09-15T20:30:00Z",
+          "endAt": "2026-09-15T21:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Live Sky Sport News: Late Night News",
+          "subtitle": null,
+          "description": "Magazin.",
+          "categories": [
+            "Sport",
+            "Magazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/6/p16275005_i_h9_ab_2021-02-27T03_27_02.jpg",
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T21:30:00Z",
+          "originalDate": "20180101"
+        },
+        {
+          "title": "NFL: Aktuell",
+          "subtitle": null,
+          "description": "Sport-Spektakel aus den USA: Das ntv Magazin zeigt die Highlights des vergangenen NFL-Wochenendes. Die Moderatoren Alessa-Luisa Naujoks und Marcel Klein schauen dabei auf aktuelle Themen und nehmen die kommende Spieltag ins Visier.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g111_h9_aa.jpg",
+          "startAt": "2026-09-15T21:30:00Z",
+          "endAt": "2026-09-15T21:45:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Sky Sport News: Late Night News",
+          "subtitle": null,
+          "description": "Magazin.",
+          "categories": [
+            "Sport",
+            "Magazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/6/p16275005_i_h9_ab_2021-02-27T03_27_02.jpg",
+          "startAt": "2026-09-15T21:45:00Z",
+          "endAt": "2026-09-15T22:00:00Z",
+          "originalDate": "20180101"
+        },
+        {
+          "title": "Sky Sport News: Nightline",
+          "subtitle": null,
+          "description": "Magazin.",
+          "categories": [
+            "Sport",
+            "Magazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/6/p16275070_i_h9_aa_2021-02-19T03_16_57.jpg",
+          "startAt": "2026-09-15T22:00:00Z",
+          "endAt": "2026-09-15T23:00:00Z",
+          "originalDate": "20180101"
+        },
+        {
+          "title": "Meine Geschichte: Das Leben von Hans-Joachim Watzke (Teil 1)",
+          "subtitle": "Markus Krösche",
+          "description": "Ehrlich, privat und hautnah wie nie: Der Fernsehmoderator Riccardo Basile besucht prominente Persönlichkeiten aus der Welt des Sports und spricht mit ihnen eingehend über ihr bisheriges Leben und ihre besonderen Geschichten.",
+          "categories": [
+            "Talkshow",
+            "Biografie"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/8/p18813597_b_h9_ae_2025-09-11T09_15_03.jpg",
+          "startAt": "2026-09-15T23:00:00Z",
+          "endAt": "2026-09-15T23:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Sky Sport News: Nightline",
+          "subtitle": null,
+          "description": "Magazin.",
+          "categories": [
+            "Sport",
+            "Magazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/6/p16275070_i_h9_aa_2021-02-19T03_16_57.jpg",
+          "startAt": "2026-09-15T23:30:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20180101"
+        },
+        {
+          "title": "Sky Sport News: Der Morgen",
+          "subtitle": null,
+          "description": "Hintergründig und emotional - wir machen Sie in 30 Minuten zum Sport-Insider. Wir geben Einblicke in verborgene Bereiche des Sports. Bei uns packen Stars aus, verraten ihr Geheimrezept, ihre Beweggründe und sprechen erstmals über ihre Zukunftspläne.",
+          "categories": [
+            "Sport",
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11070030_i_h9_ab_2025-08-22T11_04_25.jpg",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T10:00:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Sky Sport News: Der Mittag",
+          "subtitle": null,
+          "description": "Sky präsentiert: Sky Sport News der Mittag.",
+          "categories": [
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25753443_i_h9_aa_2023-10-04T09_14_20.jpg",
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T13:00:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Sky Sport News: Der Nachmittag",
+          "subtitle": null,
+          "description": "Hintergründig und emotional - wir machen Sie in 30 Minuten zum Sport-Insider. Wir geben Einblicke in verborgene Bereiche des Sports. Bei uns packen Stars aus, verraten ihr Geheimrezept, ihre Beweggründe und sprechen erstmals über ihre Zukunftspläne.",
+          "categories": [
+            "Sport",
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/1/p11070030_i_h9_ab_2025-08-22T11_04_25.jpg",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T15:00:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "2. BL: Dein Zweitligatalk - HvK & Tusche",
+          "subtitle": null,
+          "description": "Zum anstehenden Spieltag in der 2. Bundesliga wird vorab über die einzelnen Partien berichtet. Hartmut von Kameke und der Experte Torsten Mattuschka blicken dabei auf die wichtigsten Fragen des kommenden Spieltags und versuchen Antworten zu finden.",
+          "categories": [
+            "Fußball",
+            "Talkshow"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25224086_i_h9_aa_2023-07-18T14_22_05.jpg",
+          "startAt": "2026-09-16T15:00:00Z",
+          "endAt": "2026-09-16T15:30:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Gesagt. Gemeint: Mit Cramer und Köhler",
+          "subtitle": null,
+          "description": "Der Kommunikationsexperte Michael Cramer und die Reporterlegende Uli Köhler erklären, kommentieren und analysieren die wichtigsten Sportthemen der Woche. Das Ganze würzen sie mit einer ordentlichen Portion Witz, Charme und vor allem Expertise.",
+          "categories": [
+            "Fußball",
+            "Talkshow"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23902999_b_h6_ab_2026-01-02T10_26_19.jpg",
+          "startAt": "2026-09-16T15:30:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "originalDate": "20200101"
+        },
+        {
+          "title": "Live Sky Sport News: Primetime Spezial - Klopps Baustellen",
+          "subtitle": null,
+          "description": "Die Sendung präsentiert die aktuellsten und spannendsten Themen aus der Sportwelt.",
+          "categories": [
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25745445_i_h9_aa_2023-09-27T11_04_21.jpg",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T16:30:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "Live Sky Sport News: So denken die Fans.... Das Fußball-Barometer",
+          "subtitle": null,
+          "description": "Live Sky Sport News: So denken die Fans.... Das Fußball-Barometer.",
+          "categories": [
+            "Nachrichten",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/8/p28204708_i_h9_aa_2024-11-06T13_43_57.jpg",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T17:00:00Z",
+          "originalDate": "20240101"
+        },
+        {
+          "title": "Live Sky Sport News: Primetime",
+          "subtitle": null,
+          "description": "Die Sendung präsentiert die aktuellsten und spannendsten Themen aus der Sportwelt.",
+          "categories": [
+            "Nachrichten"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25745445_i_h9_aa_2023-09-27T11_04_21.jpg",
+          "startAt": "2026-09-16T17:00:00Z",
+          "endAt": "2026-09-16T18:30:00Z",
+          "originalDate": "20230101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportPremierLeague.de",
+      "name": "Sky Sport Premier League HD",
+      "logoUrl": "https://i.imgur.com/ChWdcRC.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "PL: PL Stories (The Ipswich Way)",
+        "subtitle": null,
+        "description": "Während mit Gary O'Neil nach der erfolgreichen Ära von Kieran McKenna ein neues Kapitel beginnt, wird untersucht, wie der Geist, die Identität und der Ehrgeiz von Ipswich Town weiterhin die Zukunft des Vereins stark prägen.",
+        "categories": [
+          "Dokumentation",
+          "Fußball"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33552583_e_h9_aa_2026-08-03T12_17_21.jpg",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T21:30:00Z",
+        "originalDate": "20260101",
+        "episode": "S06E10"
+      },
+      "programs": [
+        {
+          "title": "PL: 90in30: MUN - MCI, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-15T16:55:00Z",
+          "endAt": "2026-09-15T17:25:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: Netbusters, 4. Spieltag",
+          "subtitle": null,
+          "description": "Die Sendung befasst sich mit lustigen Zitaten, Missgeschicken, Toren und Paraden.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p822225_i_h9_aa_2023-08-16T11_13_26.jpg",
+          "startAt": "2026-09-15T17:25:00Z",
+          "endAt": "2026-09-15T17:55:00Z",
+          "originalDate": "20260101",
+          "episode": "S2026E04"
+        },
+        {
+          "title": "PL: Highlights XXL: Swansea City - FC Burnley, 7. Spieltag",
+          "subtitle": null,
+          "description": "Englischer Fußball in kompakter Form: Die Highlights aus den Partien der EFL.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/0/p30820574_i_h9_aa_2025-10-16T09_55_01.jpg",
+          "startAt": "2026-09-15T17:55:00Z",
+          "endAt": "2026-09-15T18:10:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: PL Stories (Soaring Seagulls)",
+          "subtitle": null,
+          "description": "Erzählt wird die unglaubliche Geschichte von Brighton und Hove Albion: vom drohenden Zusammenbruch und jahrelangem Verweilen in den unteren Ligen bis hin zum Aufstieg zu einem der klügsten und am meisten bewunderten Vereine der Premier League.",
+          "categories": [
+            "Dokumentation",
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33162482_b_h9_aa_2026-08-04T09_06_28.jpg",
+          "startAt": "2026-09-15T18:10:00Z",
+          "endAt": "2026-09-15T18:40:00Z",
+          "originalDate": "20260101",
+          "episode": "S06E04"
+        },
+        {
+          "title": "Carabao Cup: Highlights XXL: CHE - LEE, 3. Runde",
+          "subtitle": null,
+          "description": "Englischer Fußball in kompakter Form: Die Highlights aus den Partien des Carabao Cups.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g199_h9_aa.jpg",
+          "startAt": "2026-09-15T18:40:00Z",
+          "endAt": "2026-09-15T18:55:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Live Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-15T18:55:00Z",
+          "endAt": "2026-09-15T21:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: PL Stories (The Ipswich Way)",
+          "subtitle": null,
+          "description": "Während mit Gary O'Neil nach der erfolgreichen Ära von Kieran McKenna ein neues Kapitel beginnt, wird untersucht, wie der Geist, die Identität und der Ehrgeiz von Ipswich Town weiterhin die Zukunft des Vereins stark prägen.",
+          "categories": [
+            "Dokumentation",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33552583_e_h9_aa_2026-08-03T12_17_21.jpg",
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T21:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S06E10"
+        },
+        {
+          "title": "Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-15T21:30:00Z",
+          "endAt": "2026-09-15T23:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: Generation xG",
+          "subtitle": null,
+          "description": "Es wird ein tiefer Einblick in die taktischen Trends und statistischen Erkenntnisse des modernen Fußballs mit Beiträgen von Spielern, Managern und Datenexperten aus der Analytik-Community gewährt.",
+          "categories": [
+            "Sport",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22520095_i_h9_aa_2022-08-03T14_29_03.jpg",
+          "startAt": "2026-09-15T23:30:00Z",
+          "endAt": "2026-09-16T00:30:00Z",
+          "originalDate": "20220101"
+        },
+        {
+          "title": "PL: 1 to 11 (Thomas Hitzlsperger)",
+          "subtitle": "Thomas Hitzelsberger",
+          "description": "Wie sieht die perfekte Elf der Premier League aus? Thomas Hitzlsperger stellt seine Traumelf vor.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24892088_i_h9_aa_2023-06-05T10_46_17.jpg",
+          "startAt": "2026-09-16T00:30:00Z",
+          "endAt": "2026-09-16T01:30:00Z",
+          "originalDate": "20250101"
+        },
+        {
+          "title": "PL: 1 to 11 (Dwight Yorke)",
+          "subtitle": "Robert Huth",
+          "description": "Legendäre ehemalige Spieler der britischen Premier League sowie aktuelle Topspieler der Liga stellen ihr persönliches Dreamteam aus allen Vereinen zusammen. Dabei erläutern sie auskunftsreich die Gründe für ihre Auswahl.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24892088_i_h9_aa_2023-06-05T10_46_17.jpg",
+          "startAt": "2026-09-16T01:30:00Z",
+          "endAt": "2026-09-16T02:30:00Z",
+          "originalDate": "20240101"
+        },
+        {
+          "title": "PL: Tottenham Hotspur - FC Everton, 4. Spieltag",
+          "subtitle": null,
+          "description": "Aus dem Tottenham Hotspur Stadion in London.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605402_i_h9_am_2025-10-01T10_05_41.jpg",
+          "startAt": "2026-09-16T02:30:00Z",
+          "endAt": "2026-09-16T04:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: Club 100: Paul Scholes",
+          "subtitle": null,
+          "description": "Im Mittelpunkt steht diesmal der Mittelfeldspieler Paul Scholes, der ebenfalls über 100 Tore schoss.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10419299_i_h9_aa_2024-05-13T07_34_20.jpg",
+          "startAt": "2026-09-16T04:30:00Z",
+          "endAt": "2026-09-16T05:00:00Z",
+          "originalDate": "20220101"
+        },
+        {
+          "title": "PL: Netbusters, 4. Spieltag",
+          "subtitle": null,
+          "description": "Die Sendung befasst sich mit lustigen Zitaten, Missgeschicken, Toren und Paraden.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p822225_i_h9_aa_2023-08-16T11_13_26.jpg",
+          "startAt": "2026-09-16T05:00:00Z",
+          "endAt": "2026-09-16T05:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S2026E04"
+        },
+        {
+          "title": "Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-16T05:30:00Z",
+          "endAt": "2026-09-16T07:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: MUN - MCI, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T07:30:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: COV - BRI, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T08:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: SUN - ARS, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T08:30:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: Netbusters, 4. Spieltag",
+          "subtitle": null,
+          "description": "Die Sendung befasst sich mit lustigen Zitaten, Missgeschicken, Toren und Paraden.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p822225_i_h9_aa_2023-08-16T11_13_26.jpg",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T09:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S2026E04"
+        },
+        {
+          "title": "PL: Fergie - Rise of a Dynasty",
+          "subtitle": null,
+          "description": "Die Trainerlegende Sir Alex Ferguson feierte mit Manchester United etliche Erfolge.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22677998_e_h9_aa_2022-08-19T02_06_45.jpg",
+          "startAt": "2026-09-16T09:30:00Z",
+          "endAt": "2026-09-16T09:45:00Z",
+          "originalDate": "20220101"
+        },
+        {
+          "title": "PL: Bergkamp: Genius of Space",
+          "subtitle": "Fußball: England, Premier League Bergkamp: Genius of Space",
+          "description": "Dennis Bergkamp sorgte im Trikot der Gunners von 1995 bis 2006 in der Premier League für Furore und eine Menge Tore. Der Blick auf Arsenals niederländischen Ausnahmestürmer.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22747399_e_h9_aa_2022-08-19T02_07_20.jpg",
+          "startAt": "2026-09-16T09:45:00Z",
+          "endAt": "2026-09-16T10:00:00Z",
+          "originalDate": "20220101"
+        },
+        {
+          "title": "PL: 90in30: AVL - NFO, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T10:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: BOU - BRE, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T10:30:00Z",
+          "endAt": "2026-09-16T11:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: CRY - IPS, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T11:00:00Z",
+          "endAt": "2026-09-16T11:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: LIV - FUL, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T11:30:00Z",
+          "endAt": "2026-09-16T12:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: 90in30: LEE - NEW, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T12:00:00Z",
+          "endAt": "2026-09-16T12:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-16T12:30:00Z",
+          "endAt": "2026-09-16T14:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: PL Stories (The Ipswich Way)",
+          "subtitle": null,
+          "description": "Während mit Gary O'Neil nach der erfolgreichen Ära von Kieran McKenna ein neues Kapitel beginnt, wird untersucht, wie der Geist, die Identität und der Ehrgeiz von Ipswich Town weiterhin die Zukunft des Vereins stark prägen.",
+          "categories": [
+            "Dokumentation",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33552583_e_h9_aa_2026-08-03T12_17_21.jpg",
+          "startAt": "2026-09-16T14:30:00Z",
+          "endAt": "2026-09-16T15:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S06E10"
+        },
+        {
+          "title": "PL: Netbusters, 4. Spieltag",
+          "subtitle": null,
+          "description": "Die Sendung befasst sich mit lustigen Zitaten, Missgeschicken, Toren und Paraden.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/2/p822225_i_h9_aa_2023-08-16T11_13_26.jpg",
+          "startAt": "2026-09-16T15:00:00Z",
+          "endAt": "2026-09-16T15:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S2026E04"
+        },
+        {
+          "title": "PL: 90in30: LIV - FUL, 4. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Premier League in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22691452_i_h9_ab_2023-08-04T10_04_02.jpg",
+          "startAt": "2026-09-16T15:30:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PL: Generation xG",
+          "subtitle": null,
+          "description": "Es wird ein tiefer Einblick in die taktischen Trends und statistischen Erkenntnisse des modernen Fußballs mit Beiträgen von Spielern, Managern und Datenexperten aus der Analytik-Community gewährt.",
+          "categories": [
+            "Sport",
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/2/p22520095_i_h9_aa_2022-08-03T14_29_03.jpg",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T16:55:00Z",
+          "originalDate": "20220101"
+        },
+        {
+          "title": "Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-16T16:55:00Z",
+          "endAt": "2026-09-16T18:55:00Z",
+          "originalDate": "20260101"
+        }
+      ]
+    },
+    {
+      "id": "SkySportTopEvent.de",
+      "name": "Sky Sport Top Event HD",
+      "logoUrl": "https://i.imgur.com/kQ6cVNx.png",
+      "provider": "Sky Germany sports guide",
+      "providerKey": "premium-sky-de",
+      "sources": [
+        "data/normalized/guide-premium-DE-sky.de.xml",
+        "data/normalized/guide-premium-DE-web.magentatv.de.xml"
+      ],
+      "currentProgram": {
+        "title": "Live WTA 500: Guadalajara Open AKRON presented by Santander in Guadalajara (MEX), 3. Tag",
+        "subtitle": null,
+        "description": "Die WTA 500er-Serie: Sky zeigt die Guadalajara Open in Mexiko.",
+        "categories": [
+          "Sport"
+        ],
+        "sportType": "Tennis",
+        "competition": null,
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33379804_i_h9_aa_2026-08-27T12_48_01.jpg",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-16T03:00:00Z",
+        "originalDate": "20260101"
+      },
+      "programs": [
+        {
+          "title": "NFL: Sideline - Das Highlight Magazin",
+          "subtitle": null,
+          "description": "Knallharte Hits, unglaubliche Pässe, faszinierende Läufe und jede Menge Spektakel - auch abseits des Feldes: NFL Sideline - Das Football Magazin blickt auf die größte Sportliga der Welt.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g111_h9_aa.jpg",
+          "startAt": "2026-09-15T17:00:00Z",
+          "endAt": "2026-09-15T17:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "BL: Dein Spieltags-Sprint (3)",
+          "subtitle": null,
+          "description": "Der Spieltags-Sprint: Alles Wissenswerte zum vergangenen Spieltag in kompakten 15 Minuten.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/0/p20426547_i_h9_aa_2021-08-09T03_26_42.jpg",
+          "startAt": "2026-09-15T17:45:00Z",
+          "endAt": "2026-09-15T18:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S01E03"
+        },
+        {
+          "title": "PL: Review, 4. Spieltag",
+          "subtitle": null,
+          "description": "Die Zusammenfassung aller Matches des 4. Spieltags der Premier League.",
+          "categories": [
+            "Fußball",
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/9/p19312384_i_h9_ab_2023-12-29T10_23_17.jpg",
+          "startAt": "2026-09-15T18:00:00Z",
+          "endAt": "2026-09-15T18:55:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Live Carabao Cup: FC Liverpool - Tottenham Hotspur, 3. Runde",
+          "subtitle": null,
+          "description": "Aus dem Anfield in Liverpool, Merseyside, England",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223162_i_h9_ae_2026-09-08T07_45_47.jpg",
+          "startAt": "2026-09-15T18:55:00Z",
+          "endAt": "2026-09-15T21:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Live WTA 500: Guadalajara Open AKRON presented by Santander in Guadalajara (MEX), 3. Tag",
+          "subtitle": null,
+          "description": "Die WTA 500er-Serie: Sky zeigt die Guadalajara Open in Mexiko.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33379804_i_h9_aa_2026-08-27T12_48_01.jpg",
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-16T03:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "US Open: Highlights Show, Finaltag Damen",
+          "subtitle": null,
+          "description": "Großes Tennis in Flushing Meadows! Bei den US Open kämpft die Tennis-Elite um den letzten Grand Slam des Jahres. Wer triumphiert? Die Highlights des Turniertages.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33804537_i_h9_aa_2026-08-10T10_16_30.jpg",
+          "startAt": "2026-09-16T03:00:00Z",
+          "endAt": "2026-09-16T03:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "US Open: Highlights Show, Finaltag Herren",
+          "subtitle": null,
+          "description": "Großes Tennis in Flushing Meadows! Bei den US Open kämpft die Tennis-Elite um den letzten Grand Slam des Jahres. Wer triumphiert? Die Highlights des Turniertages.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/3/p33804537_i_h9_aa_2026-08-10T10_16_30.jpg",
+          "startAt": "2026-09-16T03:30:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Coppa Shell & Shell AM - 1. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T05:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Coppa Shell & Shell AM - 2. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T05:00:00Z",
+          "endAt": "2026-09-16T06:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "MotoGP: Highlights: GP San Marino",
+          "subtitle": null,
+          "description": "Die Highlights aller Klassen vom vergangenen Rennwochenende.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/8/6/p8629380_i_h9_aa_2019-05-13T09_00_34.jpg",
+          "startAt": "2026-09-16T06:00:00Z",
+          "endAt": "2026-09-16T07:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Trofeo Pirelli & Pirelli AM - 1. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T07:00:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Ferrari Challenge Europe: Trofeo Pirelli & Pirelli AM - 2. Rennen in Budapest",
+          "subtitle": null,
+          "description": "Vom Hungaroring in Budapest, Ungarn.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10681348_i_h9_ac_2026-06-23T19_16_01.jpg",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "NFL: Aktuell",
+          "subtitle": null,
+          "description": "Sport-Spektakel aus den USA: Das ntv Magazin zeigt die Highlights des vergangenen NFL-Wochenendes. Die Moderatoren Alessa-Luisa Naujoks und Marcel Klein schauen dabei auf aktuelle Themen und nehmen die kommende Spieltag ins Visier.",
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote_genres/g111_h9_aa.jpg",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T09:15:00Z",
+          "originalDate": "20230101"
+        },
+        {
+          "title": "3. Liga: Alle Spiele, alle Tore, 6. Spieltag, Dienstag",
+          "subtitle": null,
+          "description": "Das Beste vom Spieltag: Sky zeigt alle Spiele und alle Tore vom Spieltag der 3. Liga.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25281504_i_h9_aa_2023-07-26T12_33_55.jpg",
+          "startAt": "2026-09-16T09:15:00Z",
+          "endAt": "2026-09-16T09:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "2. BL: Torparade 5. Spieltag",
+          "subtitle": null,
+          "description": "Tore, Tore und nochmals Tore: Sky zeigt dir die Treffer des Spieltags.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/0/p20431267_i_h9_ac_2025-05-02T13_04_14.jpg",
+          "startAt": "2026-09-16T09:45:00Z",
+          "endAt": "2026-09-16T10:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "BL: 1. FC Union Berlin - FC Schalke 04, Flutlicht-Freitag, 3. Spieltag",
+          "subtitle": null,
+          "description": "Aus dem Stadion An der Alten Försterei in Berlin, Deutschland.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/5/p3589962_i_h9_af_2024-08-01T08_23_54.jpg",
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T12:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "BL: Borussia Dortmund - SC Paderborn 07, 3. Spieltag",
+          "subtitle": null,
+          "description": "Aus dem Signal Iduna Park, Dortmund, Deutschland",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/5/p3589962_i_h9_af_2024-08-01T08_23_54.jpg",
+          "startAt": "2026-09-16T12:00:00Z",
+          "endAt": "2026-09-16T14:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "BL: 90in30: KOE - SVW, 3. Spieltag",
+          "subtitle": null,
+          "description": "90 Minuten in 30 Minuten: Das Topspiel der Bundesliga in komprimierter Form.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/1/p21512452_i_h9_aa_2022-02-11T08_58_30.jpg",
+          "startAt": "2026-09-16T14:00:00Z",
+          "endAt": "2026-09-16T14:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "BL: SV Elversberg - FC Bayern München, 3. Spieltag",
+          "subtitle": null,
+          "description": "Aus der Ursapharm-Arena an der Kaiserlinde in Spiesen-Elversberg, Deutschland.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/5/p3589962_i_h9_af_2024-08-01T08_23_54.jpg",
+          "startAt": "2026-09-16T14:30:00Z",
+          "endAt": "2026-09-16T16:35:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "Live UEFA EL: FC Omonia - Celta Vigo , Ligaphase, 1. Spieltag, Mittwoch",
+          "subtitle": "Omonia Nikosia - Celta de Vigo",
+          "description": "Aus dem GSP-Stadion in Nikosia, Zypern.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/7/9/p7942039_i_h9_ag_2023-08-15T13_23_19.jpg",
+          "startAt": "2026-09-16T16:35:00Z",
+          "endAt": "2026-09-16T18:50:00Z",
+          "originalDate": "20260101"
         }
       ]
     },
@@ -646,62 +2495,20 @@
         "data/normalized/guide-premium-DE-web.magentatv.de.xml"
       ],
       "currentProgram": {
-        "title": "scooore Portugal! Alle Tore, Highlights Primeira Liga (6. Spieltag)",
+        "title": "LFC TV - 4. Spieltag, Liverpool FC - FC Fulham",
         "subtitle": null,
-        "description": "Präsentiert werden die Fußball-Highlights der höchsten portugiesischen Spielklasse Primeira Liga.",
+        "description": "Erleben Sie den FC Liverpool so nah wie nie zuvor! Exklusive Interviews mit Stars und Verantwortlichen bieten faszinierende Einblicke hinter die Kulissen. Begleiten Sie die Reds beim Training und lernen Sie das Herz von Anfield kennen!",
         "categories": [
           "Fußball"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23894837_i_h9_aa_2023-01-24T14_46_22.jpg",
-        "startAt": "2026-09-15T16:50:00Z",
-        "endAt": "2026-09-15T17:20:00Z",
+        "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/1/3/p13777297_i_h9_ab_2022-08-22T08_36_27.jpg",
+        "startAt": "2026-09-15T20:15:00Z",
+        "endAt": "2026-09-15T23:15:00Z",
         "originalDate": "20260101"
       },
       "programs": [
-        {
-          "title": "Al-Khaleej - Al-Nassr, Saudi Pro League (7. Spieltag)",
-          "subtitle": "Al-Khaleej - Al-Nassr FC",
-          "description": "From Prince Mohamed bin Fahd Stadium in Ad Dammam, Ash Sharqiyah, Saudi Arabia.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": "Combat sports",
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/7/9/p7900100_i_h9_ab_2024-12-27T20_03_26.jpg",
-          "startAt": "2026-09-15T12:20:00Z",
-          "endAt": "2026-09-15T14:20:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "Fortuna Sittard - Ajax Amsterdam, Eredivisie (6. Spieltag)",
-          "subtitle": null,
-          "description": "Aus dem Fortuna Sittard Stadion in Sittard, Niederlande.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605388_i_h9_ak_2025-11-18T07_26_40.jpg",
-          "startAt": "2026-09-15T14:20:00Z",
-          "endAt": "2026-09-15T16:20:00Z",
-          "originalDate": "20260101"
-        },
-        {
-          "title": "scooore Polen! Alle Tore, Highlights Ekstraklasa (8. Spieltag)",
-          "subtitle": null,
-          "description": "Präsentiert werden die Fußball-Highlights der höchsten polnischen Spielklasse Ekstraklasa.",
-          "categories": [
-            "Fußball"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23895149_i_h9_aa_2023-02-03T09_27_30.jpg",
-          "startAt": "2026-09-15T16:20:00Z",
-          "endAt": "2026-09-15T16:50:00Z",
-          "originalDate": "20260101"
-        },
         {
           "title": "scooore Portugal! Alle Tore, Highlights Primeira Liga (6. Spieltag)",
           "subtitle": null,
@@ -908,6 +2715,63 @@
           "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/9/2/p9223539_i_h9_ae_2022-11-11T11_27_24.jpg",
           "startAt": "2026-09-16T12:45:00Z",
           "endAt": "2026-09-16T13:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "PSV Eindhoven - Sparta Rotterdam, Eredivisie (6. Spieltag)",
+          "subtitle": null,
+          "description": "Aus dem Philips-Stadion in Eindhoven, Niederlande.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/6/p3605388_i_h9_ak_2025-11-18T07_26_40.jpg",
+          "startAt": "2026-09-16T13:45:00Z",
+          "endAt": "2026-09-16T15:45:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "scooore! Das internationale Fußballmagazin, Tore und Ergebnisse international",
+          "subtitle": null,
+          "description": "Das Magazin zeigt die Highlights aus der internationalen Fußballwelt kompakt zusammengefasst.",
+          "categories": [
+            "Fußball",
+            "Magazin"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/3/0/p30820723_i_h9_aa_2026-06-12T11_26_32.jpg",
+          "startAt": "2026-09-16T15:45:00Z",
+          "endAt": "2026-09-16T16:30:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "scooore Saudi-Arabien! Alle Tore, Highlights Saudi Pro League (7. Spieltag)",
+          "subtitle": null,
+          "description": "Alle Tore, alle Highlights des aktuellen Spieltags der Saudi Pro League.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/5/p25396119_i_h9_aa_2023-08-14T11_33_43.jpg",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T17:00:00Z",
+          "originalDate": "20260101"
+        },
+        {
+          "title": "scooore Brasilien! Alle Tore, Highlights Campeonato Brasileiro (27. Spieltag)",
+          "subtitle": null,
+          "description": "Alle Tore und Highlights der Campeonato Brasileiro.",
+          "categories": [
+            "Fußball"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "http://ngiss.t-online.de/cm1s/media/gracenote/2/3/p23895289_i_h9_aa_2023-05-17T09_06_42.jpg",
+          "startAt": "2026-09-16T17:00:00Z",
+          "endAt": "2026-09-16T17:30:00Z",
           "originalDate": "20260101"
         }
       ]

@@ -15,6 +15,7 @@ import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 EPG_DIR = ROOT / ".cache" / "epg"
@@ -57,6 +58,8 @@ def main() -> int:
         action="store_true",
         help="Print the planned grab commands without running them.",
     )
+    parser.add_argument("--skip-editor-picks", action="store_true", help="Rebuild guides without requesting editorial selections")
+    parser.add_argument("--countries", nargs="+", help="Refresh only these country codes")
     args = parser.parse_args()
 
     if not EPG_DIR.exists():
@@ -70,6 +73,11 @@ def main() -> int:
         for path in SOURCES_DIR.glob("custom-*.channels.xml")
         if not path.name.startswith("custom-uhf-")
     )
+    if args.countries:
+        countries = {country.upper() for country in args.countries}
+        channels_files = [path for path in channels_files
+                          if path.name.removeprefix("custom-").removeprefix("premium-").split("-")[0] in countries]
+    channels_files = [path for path in channels_files if len(ET.parse(path).getroot())]
     if not channels_files:
         raise SystemExit(f"No custom channel XML files found under {SOURCES_DIR}")
 
@@ -104,13 +112,25 @@ def main() -> int:
             "--timeout",
             "30000",
         ]
+        source_env = env.copy()
+        if channels_file.name.endswith("-guidatv.sky.it.channels.xml"):
+            source_env["CURR_DATE"] = datetime.now(timezone.utc).date().isoformat()
+        timeout = max(GRAB_TIMEOUT_SECONDS, min(900, len(ET.parse(channels_file).getroot()) * DAYS_TO_GRAB * 10))
+        if channels_file.name.endswith("-tv.sfr.fr.channels.xml"):
+            command = ["python3", "scripts/grab_sfr_epg.py", "--channels", str(channels_file),
+                       "--output", str(output_file), "--start-date", start_date, "--days", str(DAYS_TO_GRAB)]
+            timeout = 300
+        if channels_file.name.endswith("-superguidatv.it.channels.xml"):
+            command = ["python3", "scripts/grab_superguida_epg.py", "--channels", str(channels_file),
+                       "--output", str(output_file), "--days", str(DAYS_TO_GRAB)]
+            timeout = 900
         if args.dry_run:
             print("$", " ".join(command), flush=True)
             continue
         try:
-            run(command, env=env, timeout=GRAB_TIMEOUT_SECONDS)
+            run(command, env=source_env, timeout=timeout)
         except subprocess.TimeoutExpired:
-            message = f"TIMEOUT after {GRAB_TIMEOUT_SECONDS}s: {channels_file.name}"
+            message = f"TIMEOUT after {timeout}s: {channels_file.name}"
             print(message, flush=True)
             failures.append(message)
         except subprocess.CalledProcessError as error:
@@ -124,22 +144,26 @@ def main() -> int:
             print(f"- {failure}", flush=True)
 
     if args.dry_run:
-        print("$ python3 scripts/build_mls_apple_xmltv.py")
+        if not args.countries:
+            print("$ python3 scripts/build_mls_apple_xmltv.py")
         print("$ python3 scripts/build_web_data.py")
-        print("$ python3 scripts/build_editor_picks.py")
+        if not args.skip_editor_picks:
+            print("$ python3 scripts/build_editor_picks.py")
         print("$ python3 -m unittest discover -s tests -v")
         print("$ node --check web/app.js")
         return 0
 
-    try:
-        run(["python3", "scripts/build_mls_apple_xmltv.py"])
-    except subprocess.CalledProcessError as error:
-        print(f"FAILED exit {error.returncode}: build_mls_apple_xmltv.py; using previous MLS Apple snapshot if present", flush=True)
-    except Exception as error:
-        print(f"FAILED: build_mls_apple_xmltv.py: {error}; using previous MLS Apple snapshot if present", flush=True)
+    if not args.countries:
+        try:
+            run(["python3", "scripts/build_mls_apple_xmltv.py"])
+        except subprocess.CalledProcessError as error:
+            print(f"FAILED exit {error.returncode}: build_mls_apple_xmltv.py; using previous MLS Apple snapshot if present", flush=True)
+        except Exception as error:
+            print(f"FAILED: build_mls_apple_xmltv.py: {error}; using previous MLS Apple snapshot if present", flush=True)
 
     run(["python3", "scripts/build_web_data.py"])
-    run(["python3", "scripts/build_editor_picks.py"])
+    if not args.skip_editor_picks:
+        run(["python3", "scripts/build_editor_picks.py"])
     run(["python3", "-m", "unittest", "discover", "-s", "tests", "-v"])
     run(["node", "--check", "web/app.js"])
 

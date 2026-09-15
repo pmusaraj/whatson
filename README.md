@@ -192,3 +192,16 @@ python3 scripts/validate_uhf_xmltv.py
 ## Notes
 
 This is a schedule/metadata guide only. It does not stream or store video.
+
+### France, Italy and Germany source validation
+
+Country feeds can be refreshed independently without requesting editor picks:
+
+```sh
+python3 scripts/refresh_epg.py --countries FR IT DE --skip-editor-picks
+```
+
+SFR uses shared daily downloads, Super Guida TV uses its current HTML schedule,
+and German sports have MagentaTV mappings. See
+[the source validation notes](docs/country-guide-verification.md) for coverage,
+channel corrections and remaining unavailable sources.

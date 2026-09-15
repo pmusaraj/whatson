@@ -66,7 +66,7 @@ MANUAL_ALIASES = {
     # France
     ("FR", "CANAL+FOOT"): "FR:CanalPlusFoot.fr",
     ("FR", "FR-SP:Canal+ Foot"): "FR:CanalPlusFoot.fr",
-    ("FR", "FR-SP:Canal+Sport"): "FR:CanalPlusSport360.fr",
+    ("FR", "FR-SP:Canal+Sport"): "FR:CanalPlusSport.fr",
     ("FR", "FR-SP:Canal+ Sport 360"): "FR:CanalPlusSport360.fr",
     ("FR", "FR-SP:AutoMoto"): "FR:Automotolachaine.fr",
     ("FR", "FR-SP:EUROSPORT 1"): "FR:Eurosport1.fr",

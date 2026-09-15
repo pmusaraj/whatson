@@ -1,7 +1,7 @@
 {
   "country": "IT",
   "countryName": "Italy",
-  "generatedAt": "2026-09-15T16:50:59.953337Z",
+  "generatedAt": "2026-09-15T21:09:11.121518Z",
   "windowHours": 24,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -9,7 +9,7 @@
     "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
     "data/normalized/guide-premium-IT-superguidatv.it.xml"
   ],
-  "channelCount": 6,
+  "channelCount": 11,
   "channels": [
     {
       "id": "ZonaDAZN2.it",
@@ -34,19 +34,6 @@
         "endAt": "2026-09-15T22:00:00Z"
       },
       "programs": [
-        {
-          "title": "Nessun evento in onda",
-          "subtitle": null,
-          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
-          "categories": [
-            "Altri Programmi/Altri Canali"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
-          "startAt": "2026-09-15T10:00:00Z",
-          "endAt": "2026-09-15T16:00:00Z"
-        },
         {
           "title": "Nessun evento in onda",
           "subtitle": null,
@@ -98,6 +85,19 @@
           "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
           "startAt": "2026-09-16T10:00:00Z",
           "endAt": "2026-09-16T16:00:00Z"
+        },
+        {
+          "title": "Nessun evento in onda",
+          "subtitle": null,
+          "description": "DAZN 2 si attivera' in occasione di eventi di Serie A Enilive trasmessi in contemporanea.",
+          "categories": [
+            "Altri Programmi/Altri Canali"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/304fda0e-2bca-4e43-a450-0185e3091f91/cover?cgid=90&territory=IT&md5ChecksumParam=290baf03a80c7aec58d960086d34c9bc&sid=535",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T22:00:00Z"
         }
       ]
     },
@@ -112,45 +112,19 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Stag. 2026 - Basket: Mondiali femminili 2026",
+        "title": "Mondiale Motocross 2026",
         "subtitle": null,
-        "description": "St2026 Finale: USA - Francia - Atto conclusivo ai Mondiali femminili di basket di Germania. Stati Uniti e Francia si giocano il gradino piu' alto del podio.",
+        "description": "St2026 GP di Shangai: MX2 (gara 2) - Seconda manche della classe MX2 nel Gran Premio di Shanghai, appuntamento del Mondiale Motocross 2026.",
         "categories": [
           "Intrattenimento/Intrattenimento"
         ],
         "sportType": null,
         "competition": null,
         "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-        "startAt": "2026-09-15T16:30:00Z",
-        "endAt": "2026-09-15T19:10:00Z"
+        "startAt": "2026-09-15T20:30:00Z",
+        "endAt": "2026-09-15T21:30:00Z"
       },
       "programs": [
-        {
-          "title": "Ciclismo 2026",
-          "subtitle": null,
-          "description": "St2026 1a tappa: Cupello - Casalincontrada - Il Giro d'Abruzzo 2026 prende il via con la prima tappa da Cupello a Casalincontrada. Una frazione inaugurale sulle strade abruzzesi che apre la corsa e da' il via alla sfida per la classifica gene...",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-09-15T11:35:00Z",
-          "endAt": "2026-09-15T13:50:00Z"
-        },
-        {
-          "title": "Europei di Pallavolo maschile 2026",
-          "subtitle": null,
-          "description": "St2026 Gruppo A: Grecia- Svezia - Nel Gruppo A degli Europei maschili di pallavolo 2026, Grecia e Svezia si affrontano in una sfida importante per la classifica e per il cammino verso la fase a eliminazione diretta.",
-          "categories": [
-            "Intrattenimento/Intrattenimento"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
-          "startAt": "2026-09-15T13:50:00Z",
-          "endAt": "2026-09-15T16:30:00Z"
-        },
         {
           "title": "Stag. 2026 - Basket: Mondiali femminili 2026",
           "subtitle": null,
@@ -345,6 +319,753 @@
           "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
           "startAt": "2026-09-16T11:35:00Z",
           "endAt": "2026-09-16T13:35:00Z"
+        },
+        {
+          "title": "Ciclismo",
+          "subtitle": null,
+          "description": "Ciclismo. GP de Wallonie",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-09-16T13:35:00Z",
+          "endAt": "2026-09-16T15:15:00Z"
+        },
+        {
+          "title": "Pattinaggio a rotelle",
+          "subtitle": null,
+          "description": "Pattinaggio Corsa Campionati Italiani 2026 Velocita' su strada",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-09-16T15:15:00Z",
+          "endAt": "2026-09-16T16:30:00Z"
+        },
+        {
+          "title": "Europei di Pallavolo maschile",
+          "subtitle": null,
+          "description": "Campionati Europei Pallavolo Maschile Rep. Ceca - Italia",
+          "categories": [
+            "Intrattenimento/Intrattenimento"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/SportCalcio_Cover_JgZRMKTlp.png",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T18:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": "SkySportArena.it",
+      "name": "Sky Sport Arena",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sky_Sport_Arena_-_Logo_2020.svg/960px-Sky_Sport_Arena_-_Logo_2020.svg.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
+        "data/normalized/guide-premium-IT-superguidatv.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Studio Eurovolley Post 15/09/2026",
+        "subtitle": null,
+        "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "categories": [
+          "Sport/Altri"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/fc6cdb4c-2a84-4473-846a-dc7207c203e4/cover?territory=IT&md5ChecksumParam=9a597263d9c44de483c7d0d0ab62d922",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T21:30:00Z",
+        "episode": "S01E126"
+      },
+      "programs": [
+        {
+          "title": "Polonia - Ucraina",
+          "subtitle": null,
+          "description": "... Campionati Europei di pallavolo maschile. - E' una delle sfide piu' attese del Gruppo B, la Polonia sfida l'Ucraina. Tc Palermo-Vullo",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/297fc6c5-f8e5-4511-bcd5-27d1bf7f3d7e/cover?territory=IT&md5ChecksumParam=a6e8f1e3b268e02541bd5e38e1c66db0",
+          "startAt": "2026-09-15T15:50:00Z",
+          "endAt": "2026-09-15T17:55:00Z",
+          "episode": "S01E12"
+        },
+        {
+          "title": "Icarus Ultra 2025 Ep.46 14/09/2026",
+          "subtitle": null,
+          "description": "... Icarus Ultra. - A Reggio Calabria, i Tesori del Mediterraneo porta in scena un grande evento che unisce sport, cultura e spettacolo. Protagonista e' la Regata del Mediterraneo, competizione che celebra il rapporto tra la citta' e il mare.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c2c3a072-e3c1-468d-b494-5dc0336dc820/cover?territory=IT&md5ChecksumParam=3dd64dcd3922fa326514e22bcfaa0414",
+          "startAt": "2026-09-15T17:55:00Z",
+          "endAt": "2026-09-15T18:30:00Z",
+          "episode": "S01E46"
+        },
+        {
+          "title": "Studio Eurovolley Pre 15/09/2026",
+          "subtitle": null,
+          "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/5e1c3a17-f086-4161-a038-b2ec1f6147d9/cover?territory=IT&md5ChecksumParam=5a38189993b8e25c75dfb354bb58109e",
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T18:50:00Z",
+          "episode": "S01E124"
+        },
+        {
+          "title": "Italia - Cechia",
+          "subtitle": null,
+          "description": "... Europei di pallavolo maschile. - Fase a Gironi di Eurovolley, la nuova avversaria degli azzurri e' la Cechia. Tc Locatelli-Zorzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7e4a9291-af37-4501-8fa7-ac121247c1f5/cover?territory=IT&md5ChecksumParam=f9e3549ddd68d974768bc45115ce94dc",
+          "startAt": "2026-09-15T18:50:00Z",
+          "endAt": "2026-09-15T21:00:00Z",
+          "episode": "S01E13"
+        },
+        {
+          "title": "Studio Eurovolley Post 15/09/2026",
+          "subtitle": null,
+          "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/fc6cdb4c-2a84-4473-846a-dc7207c203e4/cover?territory=IT&md5ChecksumParam=9a597263d9c44de483c7d0d0ab62d922",
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T21:30:00Z",
+          "episode": "S01E126"
+        },
+        {
+          "title": "Milito",
+          "subtitle": null,
+          "description": "Calcio.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
+          "startAt": "2026-09-15T21:30:00Z",
+          "endAt": "2026-09-15T21:55:00Z",
+          "episode": "S02E01"
+        },
+        {
+          "title": "Inter - Udinese",
+          "subtitle": null,
+          "description": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/08cb506c-aabd-4112-afc0-4d763f125337/cover?territory=IT&md5ChecksumParam=5bd57a77099dc0750c2b0d6cdaee2499",
+          "startAt": "2026-09-15T21:55:00Z",
+          "endAt": "2026-09-15T22:15:00Z",
+          "episode": "S01E40"
+        },
+        {
+          "title": "Italia - Cechia",
+          "subtitle": null,
+          "description": "... di pallavolo maschile. - Fase a Gironi di Eurovolley, la nuova avversaria degli azzurri e' la Cechia. Tc Locatelli-Zorzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7e4a9291-af37-4501-8fa7-ac121247c1f5/cover?territory=IT&md5ChecksumParam=f9e3549ddd68d974768bc45115ce94dc",
+          "startAt": "2026-09-15T22:15:00Z",
+          "endAt": "2026-09-16T00:15:00Z",
+          "episode": "S01E13"
+        },
+        {
+          "title": "Motonautica On Board 2026 Ep.4 29/08/2026",
+          "subtitle": null,
+          "description": "... 29/08/2026 Motonautica On Board. - Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/5b482b08-1a3b-48bd-8ead-204179c6a978/cover?territory=IT&md5ChecksumParam=90131610f599ea01d61cd43c20b7272d",
+          "startAt": "2026-09-16T00:15:00Z",
+          "endAt": "2026-09-16T00:30:00Z",
+          "episode": "S01E04"
+        },
+        {
+          "title": "Valencia Day 1",
+          "subtitle": null,
+          "description": "Le gare del SailGP.",
+          "categories": [
+            "Sport/Vela"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/256a44b0-204d-46e9-b17a-41742146f93c/cover?territory=IT&md5ChecksumParam=3ded74edb8514e0c4c241e0b13b55924",
+          "startAt": "2026-09-16T00:30:00Z",
+          "endAt": "2026-09-16T02:00:00Z",
+          "episode": "S01E19"
+        },
+        {
+          "title": "Ep.27",
+          "subtitle": null,
+          "description": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3ddb8740-9053-4bc8-98ac-a77ee7855d37/cover?territory=IT&md5ChecksumParam=ed0bd2bb0a75c5d5c9267fe2062fb2fb",
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T02:25:00Z",
+          "episode": "S01E27"
+        },
+        {
+          "title": "Women's 5km Final",
+          "subtitle": null,
+          "description": "... Parigi 2026 Nuoto Acque Libere. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia.",
+          "categories": [
+            "Sport/Nuoto"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/42cf8dcb-86c2-45a8-8e6d-31f8472d4e98/cover?territory=IT&md5ChecksumParam=96f2ffd4821ca806c5c84daaecf42105",
+          "startAt": "2026-09-16T02:25:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "episode": "S01E07"
+        },
+        {
+          "title": "Ep.27",
+          "subtitle": null,
+          "description": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3ddb8740-9053-4bc8-98ac-a77ee7855d37/cover?territory=IT&md5ChecksumParam=ed0bd2bb0a75c5d5c9267fe2062fb2fb",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T04:30:00Z",
+          "episode": "S01E27"
+        },
+        {
+          "title": "Civitanova Marche: Queen Of The Beach",
+          "subtitle": null,
+          "description": "... Beach Beach Volley. - Segui in esclusiva i campioni del beachvolley.",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7972e562-4a66-45ad-bb4f-e6b041eb0378/cover?territory=IT&md5ChecksumParam=940cfcc07ead7c4e20ecc77ad903a43d",
+          "startAt": "2026-09-16T04:30:00Z",
+          "endAt": "2026-09-16T05:30:00Z",
+          "episode": "S01E04"
+        },
+        {
+          "title": "Icarus Ultra 2025 Ep.46 14/09/2026",
+          "subtitle": null,
+          "description": "... Icarus Ultra. - A Reggio Calabria, i Tesori del Mediterraneo porta in scena un grande evento che unisce sport, cultura e spettacolo. Protagonista e' la Regata del Mediterraneo, competizione che celebra il rapporto tra la citta' e il mare.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c2c3a072-e3c1-468d-b494-5dc0336dc820/cover?territory=IT&md5ChecksumParam=3dd64dcd3922fa326514e22bcfaa0414",
+          "startAt": "2026-09-16T05:30:00Z",
+          "endAt": "2026-09-16T06:00:00Z",
+          "episode": "S01E46"
+        },
+        {
+          "title": "3a Giornata",
+          "subtitle": null,
+          "description": "... Championship. - Da Budapest, Ungheria.",
+          "categories": [
+            "Sport/Atletica"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/dabb2b35-a145-42f6-9300-5ccd48326457/cover?territory=IT&md5ChecksumParam=ac0b42468dce6fc41a4538fc5fd12b75",
+          "startAt": "2026-09-16T06:00:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "episode": "S01E03"
+        },
+        {
+          "title": "Ep.27",
+          "subtitle": null,
+          "description": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3ddb8740-9053-4bc8-98ac-a77ee7855d37/cover?territory=IT&md5ChecksumParam=ed0bd2bb0a75c5d5c9267fe2062fb2fb",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T09:30:00Z",
+          "episode": "S01E27"
+        },
+        {
+          "title": "Polonia - Ucraina",
+          "subtitle": null,
+          "description": "... di pallavolo maschile. - E' una delle sfide piu' attese del Gruppo B, la Polonia sfida l'Ucraina. Tc Palermo-Vullo",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/297fc6c5-f8e5-4511-bcd5-27d1bf7f3d7e/cover?territory=IT&md5ChecksumParam=a6e8f1e3b268e02541bd5e38e1c66db0",
+          "startAt": "2026-09-16T09:30:00Z",
+          "endAt": "2026-09-16T11:00:00Z",
+          "episode": "S01E12"
+        },
+        {
+          "title": "Italia - Cechia",
+          "subtitle": null,
+          "description": "... di pallavolo maschile. - Fase a Gironi di Eurovolley, la nuova avversaria degli azzurri e' la Cechia. Tc Locatelli-Zorzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7e4a9291-af37-4501-8fa7-ac121247c1f5/cover?territory=IT&md5ChecksumParam=f9e3549ddd68d974768bc45115ce94dc",
+          "startAt": "2026-09-16T11:00:00Z",
+          "endAt": "2026-09-16T13:00:00Z",
+          "episode": "S01E13"
+        },
+        {
+          "title": "Inside The Team - Un Gp con Kimi",
+          "subtitle": null,
+          "description": "Inside The Team - Un Gp con Kimi",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/59bb332e-1c30-4f19-bc9b-dd78dabec831/cover?territory=IT&md5ChecksumParam=5db02b54c11f97f1bcd02ae4c38c687a",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T13:50:00Z",
+          "episode": "S01E51"
+        },
+        {
+          "title": "Danimarca - Serbia",
+          "subtitle": null,
+          "description": "... Campionati Europei di pallavolo maschile. - Nel Gruppo C la rivelazione Danimarca incrocia la Serbia. Tc Maurizio Trezzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/541f6c47-0f5c-4e05-b30a-4bf1e394126d/cover?territory=IT&md5ChecksumParam=67dda1f66a98fca9cb0c0a9d0352733c",
+          "startAt": "2026-09-16T13:50:00Z",
+          "endAt": "2026-09-16T15:50:00Z",
+          "episode": "S01E14"
+        },
+        {
+          "title": "Icarus Ultra 2025 Ep.46 14/09/2026",
+          "subtitle": null,
+          "description": "... Icarus Ultra. - A Reggio Calabria, i Tesori del Mediterraneo porta in scena un grande evento che unisce sport, cultura e spettacolo. Protagonista e' la Regata del Mediterraneo, competizione che celebra il rapporto tra la citta' e il mare.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c2c3a072-e3c1-468d-b494-5dc0336dc820/cover?territory=IT&md5ChecksumParam=3dd64dcd3922fa326514e22bcfaa0414",
+          "startAt": "2026-09-16T15:50:00Z",
+          "endAt": "2026-09-16T16:20:00Z",
+          "episode": "S01E46"
+        },
+        {
+          "title": "Milito",
+          "subtitle": null,
+          "description": "Calcio.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
+          "startAt": "2026-09-16T16:20:00Z",
+          "endAt": "2026-09-16T16:50:00Z",
+          "episode": "S02E01"
+        },
+        {
+          "title": "Francia - Romania",
+          "subtitle": null,
+          "description": "... Campionati Europei di pallavolo maschile. - Nel Gruppo D i campioni olimpici della Francia sfidano la Romania. Tc Rudi Palermo",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/563a56e8-ff26-4304-a177-c48b53bb7f24/cover?territory=IT&md5ChecksumParam=f4f7428775cf323fe4064ebd46bab3d4",
+          "startAt": "2026-09-16T16:50:00Z",
+          "endAt": "2026-09-16T19:00:00Z",
+          "episode": "S01E15"
+        }
+      ]
+    },
+    {
+      "id": "SkySportBasket.it",
+      "name": "Sky Sport Basket",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Sky_Sport_Basket_-_Logo_2025.svg/960px-Sky_Sport_Basket_-_Logo_2025.svg.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Teo Soragna Incontra Simone Fontecchio",
+        "subtitle": null,
+        "description": "Teo Soragna Incontra Simone Fontecchio",
+        "categories": [
+          "Sport/Basket"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/4b30747e-d6e8-4e18-9c72-307bda393a9a/cover?territory=IT&md5ChecksumParam=eb161bd38f04ec9abb68d3d54acf468e",
+        "startAt": "2026-09-15T20:55:00Z",
+        "endAt": "2026-09-15T21:30:00Z",
+        "episode": "S01E42"
+      },
+      "programs": [
+        {
+          "title": "Quarto di finale: Australia - Spagna",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - Sopravvissuta allo spareggio contro una commovente Italia, neanche 24 ore dopo l'Australia sfida le vice campionesse d'Europa della Spagna. In palio un posto in semifinale. TC: Andrea Solaini.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/39251d52-e209-417f-bdb0-290f39768323/COVER_TITLE_TALL?territory=IT&version=2990501f-f738-3082-9a7c-b7a491edba33&w=600&h=800&md5ChecksumParam=0cddeacb1e9c6b2e697cfd28d3a67f0c",
+          "startAt": "2026-09-15T16:45:00Z",
+          "endAt": "2026-09-15T18:30:00Z",
+          "episode": "S01E17"
+        },
+        {
+          "title": "Beli Vs USA A 20 Anni Dalla Partita...",
+          "subtitle": null,
+          "description": "Sapporo, 2006: Marco Belinelli sfida la squadra statunitense al Mondiale e lascia il suo biglietto da visita all'NBA. A 20 anni dai fatti, Belinelli ci racconta quella notte indimenticabile.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": "https://guidatv.sky.it/uuid/68a69135-8913-47ec-9cf4-6cb8b28ee9bd/cover?territory=IT&md5ChecksumParam=3edeeb791020c12d7e2a1730840cfb35",
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T19:00:00Z"
+        },
+        {
+          "title": "Finale: Stati Uniti - Francia",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - Stati Uniti-Francia: e' la finale annunciata di un torneo in cui pero' Team USA non e' stato cosi' dominante come in passato. In campo 20 giocatrici WNBA. Telecronaca di Geri De Rosa e Chicca Macchi.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/0de91a16-3743-43ae-9302-bc85d93cf741/COVER_TITLE_TALL?territory=IT&version=2990501f-f738-3082-9a7c-b7a491edba33&w=600&h=800&md5ChecksumParam=0cddeacb1e9c6b2e697cfd28d3a67f0c",
+          "startAt": "2026-09-15T19:00:00Z",
+          "endAt": "2026-09-15T20:55:00Z",
+          "episode": "S01E21"
+        },
+        {
+          "title": "Teo Soragna Incontra Simone Fontecchio",
+          "subtitle": null,
+          "description": "Teo Soragna Incontra Simone Fontecchio",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/4b30747e-d6e8-4e18-9c72-307bda393a9a/cover?territory=IT&md5ChecksumParam=eb161bd38f04ec9abb68d3d54acf468e",
+          "startAt": "2026-09-15T20:55:00Z",
+          "endAt": "2026-09-15T21:30:00Z",
+          "episode": "S01E42"
+        },
+        {
+          "title": "Finale terzo posto: Spagna - Germania",
+          "subtitle": null,
+          "description": "... Germania Campionati Mondiali femminili FIBA 2026. - La Spagna si gioca la medaglia di bronzo contro le padrone di casa della Germania in una partita gia' vista nella fase preliminare e vinta largamente da Torrens e compagne. TC: Fumagalli-Tava.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/736c6b3a-2d44-4d5b-8d52-2314368deff7/COVER_TITLE_TALL?territory=IT&version=2990501f-f738-3082-9a7c-b7a491edba33&w=600&h=800&md5ChecksumParam=0cddeacb1e9c6b2e697cfd28d3a67f0c",
+          "startAt": "2026-09-15T21:30:00Z",
+          "endAt": "2026-09-15T23:25:00Z",
+          "episode": "S01E20"
+        },
+        {
+          "title": "Il Maestro, La Pallacanestro Di Zelimir Obradovic",
+          "subtitle": null,
+          "description": "... Zelimir Obradovic. - L'allenatore piu' vincente nella storia dell'Eurolega racconta se' stesso e la sua pallacanestro a margine di un clinic tenutosi a Roma. Intervista di Geri De Rosa, montaggio di Andrea Rappazzo.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/f8fb280a-9bda-43fa-b257-661331cc4abc/cover?territory=IT&md5ChecksumParam=6aa5268e774eb8be5484a558cd5f1e9e",
+          "startAt": "2026-09-15T23:25:00Z",
+          "endAt": "2026-09-15T23:40:00Z"
+        },
+        {
+          "title": "Besiktas Gain - Bourg-en-Bresse",
+          "subtitle": null,
+          "description": "Eurocup-2025: Besiktas Gain - Bourg-en-Bresse",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/da7b0e78-ab22-4609-b2e4-2e39f7ac3348/cover?territory=IT&md5ChecksumParam=922cf38d4fe2864797991c987f85d518",
+          "startAt": "2026-09-15T23:40:00Z",
+          "endAt": "2026-09-16T01:45:00Z",
+          "episode": "S01E42"
+        },
+        {
+          "title": "Speciale Vj Edgecombe",
+          "subtitle": null,
+          "description": "La vita e' bella\" - Intervista esclusiva di Davide Fumagalli a VJ Edgecombe, giovane talento dei Philadelphia 76ers. L'infanzia alle Bahamas, la famiglia, la Nazionale, il Draft e lo sbarco in NBA.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": "https://guidatv.sky.it/uuid/64b1d392-56bd-4f6e-8e0e-77af21e7ae1d/cover?territory=IT&md5ChecksumParam=d2c15b8bc8251e5d1668d4e2a3d3d0b6",
+          "startAt": "2026-09-16T01:45:00Z",
+          "endAt": "2026-09-16T02:00:00Z",
+          "episode": "S01E39"
+        },
+        {
+          "title": "San Antonio Spurs - Minnesota Timberwolves",
+          "subtitle": null,
+          "description": "... Timberwolves NBA. - Segnata dall'espulsione di Wembanyama, gara-4 ha visto Minnesota impattare la serie sul 2-2, grazie a un grande Edwards: ora gara-5. Telecronaca di Flavio Tranquillo e Mauro Bevacqua",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": "https://guidatv.sky.it/uuid/3e8678e5-81fd-44a5-b0e5-aebf45348ae5/cover?territory=IT&md5ChecksumParam=89058b9b1f110e13e1f8fab0f1b2e8d6",
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T03:45:00Z",
+          "episode": "S01E137"
+        },
+        {
+          "title": "Argento vivo - Vent'anni da Atene 2004",
+          "subtitle": null,
+          "description": "28 agosto 2004. L'Italia del basket affronta l'Argentina nella finale dei Giochi olimpici di Atene. A vent'anni di distanza i protagonisti ci raccontano la storia di quella indimenticabile avventura.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7870f4fe-8917-4e6d-ac21-eb292ed748f9/cover?territory=IT&md5ChecksumParam=594bd9cba87748d8e4d9416c72624515",
+          "startAt": "2026-09-16T03:45:00Z",
+          "endAt": "2026-09-16T04:00:00Z"
+        },
+        {
+          "title": "Valencia Basket - Real Madrid",
+          "subtitle": null,
+          "description": "Sergio Scariolo e il suo Real cercano la finale sfidando la grande rivelazione della stagione, il Valencia del coach dell'anno, Pedro Martinez. Telecronaca di Geri De Rosa e Matteo Soragna.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/e02a5495-532f-421f-abc1-118cc423daea/cover?territory=IT&md5ChecksumParam=7803f382ad32f8cac536ae9aa978b23c",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T06:15:00Z",
+          "episode": "S01E166"
+        },
+        {
+          "title": "Finale, Gara 2: Milano - Venezia",
+          "subtitle": null,
+          "description": "... Serie A Basket. - A 48 ore dalla vittoria milanese in gara 1 si torna in campo sempre al Forum: l'Olimpia per avvicinarsi allo scudetto, la Reyer per ribaltare il vantaggio del campo. Telecronaca: De Rosa-Meneghin.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/547cebd1-32c3-4c75-9000-080996a7e6ee/cover?territory=IT&md5ChecksumParam=dcc9946adf440a5253284ee488a4c0cf",
+          "startAt": "2026-09-16T06:15:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "episode": "S01E92"
+        },
+        {
+          "title": "Knicks campioni: Un'attesa lunga 53 anni",
+          "subtitle": null,
+          "description": "A New York la pallacanestro e' \"the city game\": la vittoria del titolo NBA 2026 da parte dei Knicks e' solo l'ultimo capitolo di una lunga storia d'amore tra la citta' e i suoi eroi",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": "https://guidatv.sky.it/uuid/045ecd32-c5bb-4ae5-a1d2-e605f3370975/cover?territory=IT&md5ChecksumParam=c3253bc0fbb8a234c340cbfdf6008708",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "episode": "S01E43"
+        },
+        {
+          "title": "Quarto di finale: Belgio - Germania",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - Le padrone di casa si giocano l'accesso in semifinale contro le campionesse d'Europa in carica guidate da sua maesta' Emma Meesseman. Telecronaca di Davide Fumagalli e Alessandra Tava.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/78094e22-a07c-402d-87b9-54bc97691dae/cover?territory=IT&md5ChecksumParam=fc53c15ad18152b73dd2caf15db394b6",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T10:40:00Z",
+          "episode": "S01E16"
+        },
+        {
+          "title": "When Basketball Meets Business: Ettore Messina A New York",
+          "subtitle": null,
+          "description": "... Ettore Messina A New York. - Ettore Messina A New York 03/06/2026.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Basketball",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/791791a2-e0eb-41ed-89eb-3d2d2a4a36d2/cover?territory=IT&md5ChecksumParam=9d259baf2ebd7385eeb94b82523a0c74",
+          "startAt": "2026-09-16T10:40:00Z",
+          "endAt": "2026-09-16T11:00:00Z",
+          "episode": "S01E37"
+        },
+        {
+          "title": "Speciale Basket Mondiale Femminile: Andrea Capobianco",
+          "subtitle": null,
+          "description": "... Andrea Capobianco. - Scopriamo insieme il percorso della Nazionale Italiana di Pallacanestro Femminile e la figura del Commissario Tecnico Andrea Capobianco, in vista del Mondiale di pallacanestro femminile.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3248cab5-d6f5-4634-b24d-c5b4036890fc/cover?territory=IT&md5ChecksumParam=b0c5b7e9b5438b60ea04c42f82075b92",
+          "startAt": "2026-09-16T11:00:00Z",
+          "endAt": "2026-09-16T11:30:00Z",
+          "episode": "S01E44"
+        },
+        {
+          "title": "Quarto di finale: Australia - Spagna",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - Sopravvissuta allo spareggio contro una commovente Italia, neanche 24 ore dopo l'Australia sfida le vice campionesse d'Europa della Spagna. In palio un posto in semifinale. TC: Andrea Solaini.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/39251d52-e209-417f-bdb0-290f39768323/COVER_TITLE_TALL?territory=IT&version=2990501f-f738-3082-9a7c-b7a491edba33&w=600&h=800&md5ChecksumParam=0cddeacb1e9c6b2e697cfd28d3a67f0c",
+          "startAt": "2026-09-16T11:30:00Z",
+          "endAt": "2026-09-16T13:10:00Z",
+          "episode": "S01E17"
+        },
+        {
+          "title": "Alla Scoperta Del Mubit - Museo Del... - Ep. 33 - Alla Scoperta Del Mubit - Museo Del Basket Italiano 18/05/2026",
+          "subtitle": null,
+          "description": "... Basket Italiano. - Alla Scoperta Del Mubit: Museo Del Basket Italiano",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b9168427-a4bf-493d-8164-c47a207269d7/cover?territory=IT&md5ChecksumParam=4aeaf3b9787cebdd1fa8a8c6d9bb5c62",
+          "startAt": "2026-09-16T13:10:00Z",
+          "endAt": "2026-09-16T13:30:00Z",
+          "episode": "S01E33"
+        },
+        {
+          "title": "Speciale Olimpia Milano",
+          "subtitle": null,
+          "description": "Attraverso immagini, ricordi e testimonianze, l'Olimpia Milano festeggia novant'anni di storia, passione, sacrifici e successi, dando voce a chi questa maglio l'ha indossata con orgoglio.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/36e9bf18-654f-4d8a-8f82-480a003363f0/cover?territory=IT&md5ChecksumParam=e46a61c38a45106a790c6dc4246be7b2",
+          "startAt": "2026-09-16T13:30:00Z",
+          "endAt": "2026-09-16T13:45:00Z",
+          "episode": "S01E26"
+        },
+        {
+          "title": "Semifinale: Francia - Germania",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - Dall'Uber Arena di Berlino, Germania.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3e8cd5a9-edee-4424-9607-7800d5921fab/COVER_TITLE_TALL?territory=IT&version=2990501f-f738-3082-9a7c-b7a491edba33&w=600&h=800&md5ChecksumParam=0cddeacb1e9c6b2e697cfd28d3a67f0c",
+          "startAt": "2026-09-16T13:45:00Z",
+          "endAt": "2026-09-16T15:30:00Z",
+          "episode": "S01E18"
+        },
+        {
+          "title": "Messina 2a Parte",
+          "subtitle": null,
+          "description": "Dall'NBA alla lezione di Popovich: Ettore Messina racconta la cultura del \"team first\" e guarda avanti. Tra ambizioni, progetti in corso e sirene oltreoceano. Sempre con coerenza.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": "Basketball",
+          "competition": "NBA",
+          "imageUrl": "https://guidatv.sky.it/uuid/7a9de7e0-d6b2-49a9-8554-55ba332bfb84/cover?territory=IT&md5ChecksumParam=d866bd2e1b3db48db3402fc7c8cbe0e2",
+          "startAt": "2026-09-16T15:30:00Z",
+          "endAt": "2026-09-16T16:30:00Z",
+          "episode": "S01E33"
+        },
+        {
+          "title": "LBA Talk: Speciale Coppa Italia",
+          "subtitle": null,
+          "description": "LBA Talk: Speciale Coppa Italia",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/a53db121-6ffa-4503-8511-7d98cda21991/cover?territory=IT&md5ChecksumParam=0ef65c88d62174261e5373a7f6f4fd64",
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T16:45:00Z",
+          "episode": "S01E20"
+        },
+        {
+          "title": "Quarto di finale: Cina - Francia",
+          "subtitle": null,
+          "description": "... Campionati Mondiali femminili FIBA 2026. - La Cina della stella Han Xu, battuta l'Italia ed eliminato Portorico, prova a mettersi sulla strada di una Francia finora dominatrice. In palio un posto in semifinale. Telecronaca: Poggi-Maiorano.",
+          "categories": [
+            "Sport/Basket"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/dee0ac8c-396e-4efc-b812-5859dbc2f79e/cover?territory=IT&md5ChecksumParam=5861e25990afe8dfe55031e578b4b4b3",
+          "startAt": "2026-09-16T16:45:00Z",
+          "endAt": "2026-09-16T18:25:00Z",
+          "episode": "S01E15"
         }
       ]
     },
@@ -359,62 +1080,20 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Picerno - Catania",
+        "title": "Bari - Potenza",
         "subtitle": null,
-        "description": "Tutte le partite del campionato di Serie C italiano.",
+        "description": "Dallo Stadio San Nicola di Bari, Italia.",
         "categories": [
           "Sport/Calcio"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/555b7b22-c420-4c72-98f4-47250bb2ff50/cover?territory=IT&md5ChecksumParam=fc6b1b492add69fa42b634ada04c6c78",
-        "startAt": "2026-09-15T16:20:00Z",
-        "endAt": "2026-09-15T18:20:00Z",
-        "episode": "S01E49"
+        "imageUrl": "https://guidatv.sky.it/uuid/dfc8ace0-2bd3-4e86-be6d-e0a573b47f79/cover?territory=IT&md5ChecksumParam=0bfa4b148b4b48614d5537cab5692cfe",
+        "startAt": "2026-09-15T18:50:00Z",
+        "endAt": "2026-09-15T21:10:00Z",
+        "episode": "S01E41"
       },
       "programs": [
-        {
-          "title": "Inter - Udinese",
-          "subtitle": null,
-          "description": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/08cb506c-aabd-4112-afc0-4d763f125337/cover?territory=IT&md5ChecksumParam=5bd57a77099dc0750c2b0d6cdaee2499",
-          "startAt": "2026-09-15T12:20:00Z",
-          "endAt": "2026-09-15T14:05:00Z",
-          "episode": "S01E40"
-        },
-        {
-          "title": "Tottenham - Everton",
-          "subtitle": null,
-          "description": "Segui la partita di Premier League in programma.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": "https://guidatv.sky.it/uuid/3be034ca-eb4f-4be7-9d61-03a24aa8f513/cover?territory=IT&md5ChecksumParam=a635cb76a72ffba80533eebf42fd64a9",
-          "startAt": "2026-09-15T14:05:00Z",
-          "endAt": "2026-09-15T15:55:00Z",
-          "episode": "S01E36"
-        },
-        {
-          "title": "Milito",
-          "subtitle": null,
-          "description": "Calcio.",
-          "categories": [
-            "Sport/Calcio"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
-          "startAt": "2026-09-15T15:55:00Z",
-          "endAt": "2026-09-15T16:20:00Z",
-          "episode": "S02E01"
-        },
         {
           "title": "Picerno - Catania",
           "subtitle": null,
@@ -426,7 +1105,7 @@
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/555b7b22-c420-4c72-98f4-47250bb2ff50/cover?territory=IT&md5ChecksumParam=fc6b1b492add69fa42b634ada04c6c78",
           "startAt": "2026-09-15T16:20:00Z",
-          "endAt": "2026-09-15T18:20:00Z",
+          "endAt": "2026-09-15T18:30:00Z",
           "episode": "S01E49"
         },
         {
@@ -439,8 +1118,8 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/08cb506c-aabd-4112-afc0-4d763f125337/cover?territory=IT&md5ChecksumParam=5bd57a77099dc0750c2b0d6cdaee2499",
-          "startAt": "2026-09-15T18:20:00Z",
-          "endAt": "2026-09-15T18:35:00Z",
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T18:40:00Z",
           "episode": "S01E40"
         },
         {
@@ -453,7 +1132,7 @@
           "sportType": "Combat sports",
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/a66dc379-a517-48cd-8e58-587794b0f617/cover?territory=IT&md5ChecksumParam=352072f7c196c6542a1e97073a0f0508",
-          "startAt": "2026-09-15T18:35:00Z",
+          "startAt": "2026-09-15T18:40:00Z",
           "endAt": "2026-09-15T18:50:00Z",
           "episode": "S01E07"
         },
@@ -468,7 +1147,7 @@
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/dfc8ace0-2bd3-4e86-be6d-e0a573b47f79/cover?territory=IT&md5ChecksumParam=0bfa4b148b4b48614d5537cab5692cfe",
           "startAt": "2026-09-15T18:50:00Z",
-          "endAt": "2026-09-15T20:55:00Z",
+          "endAt": "2026-09-15T21:10:00Z",
           "episode": "S01E41"
         },
         {
@@ -481,7 +1160,7 @@
           "sportType": null,
           "competition": null,
           "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
-          "startAt": "2026-09-15T20:55:00Z",
+          "startAt": "2026-09-15T21:10:00Z",
           "endAt": "2026-09-15T21:30:00Z",
           "episode": "S02E01"
         },
@@ -637,6 +1316,48 @@
           "startAt": "2026-09-16T12:15:00Z",
           "endAt": "2026-09-16T14:10:00Z",
           "episode": "S01E39"
+        },
+        {
+          "title": "Inter - Udinese",
+          "subtitle": null,
+          "description": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/08cb506c-aabd-4112-afc0-4d763f125337/cover?territory=IT&md5ChecksumParam=5bd57a77099dc0750c2b0d6cdaee2499",
+          "startAt": "2026-09-16T14:10:00Z",
+          "endAt": "2026-09-16T15:55:00Z",
+          "episode": "S01E40"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "... Magazine. - Notizie, interviste e analisi delle squadre di Europa League e Conference League.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c826a6c7-c7b7-4ee2-9893-b51198d254de/cover?territory=IT&md5ChecksumParam=720dfd11b3eb2b5738c9186fdc042f4e",
+          "startAt": "2026-09-16T15:55:00Z",
+          "endAt": "2026-09-16T16:20:00Z",
+          "episode": "S01E16"
+        },
+        {
+          "title": "Ostiamare - Ravenna",
+          "subtitle": null,
+          "description": "Tutte le partite del campionato di Serie C italiano.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/6bb6fb91-1b41-477c-b659-6392d5bf5e17/cover?territory=IT&md5ChecksumParam=58d85079a7be4d32975cfcd73ef1d43b",
+          "startAt": "2026-09-16T16:20:00Z",
+          "endAt": "2026-09-16T18:25:00Z",
+          "episode": "S01E44"
         }
       ]
     },
@@ -651,90 +1372,20 @@
         "data/normalized/guide-premium-IT-superguidatv.it.xml"
       ],
       "currentProgram": {
-        "title": "Nashville",
+        "title": "GP Madrid: Gara",
         "subtitle": null,
-        "description": "Alex Palou e' ancora la davanti in classifca e adesso arriva l'ovale di Nashville per cercare di limare quei 56 punti di vantaggio",
+        "description": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "categories": [
           "Sport/Motori"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/e9d2127b-9102-46c5-89fa-cfa3b3ea0ebe/cover?territory=IT&md5ChecksumParam=bcd466a6c0ed2dc2c392e520d6b951ec",
-        "startAt": "2026-09-15T16:00:00Z",
-        "endAt": "2026-09-15T18:00:00Z",
-        "episode": "S01E12"
+        "imageUrl": "https://guidatv.sky.it/uuid/1373d8e8-2a1a-42d3-9a24-0df14c528af8/cover?territory=IT&md5ChecksumParam=7c37298340be6874c0ffc7d5fa6480fb",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
+        "episode": "S01E80"
       },
       "programs": [
-        {
-          "title": "Monza",
-          "subtitle": null,
-          "description": "Decimo round del Campionato FIA di Formula 2 2026 a Monza. Nikola Tsolov guida la classifica a punti davanti a Gabriele Mini' e Rafael Camara.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/6fad1b2f-569b-44b3-89a8-59d6ea50b85f/cover?territory=IT&md5ChecksumParam=cfbd4277e4bcbcc3d49e619926bcd472",
-          "startAt": "2026-09-15T12:45:00Z",
-          "endAt": "2026-09-15T13:00:00Z",
-          "episode": "S08E10"
-        },
-        {
-          "title": "GP Madrid: Gara",
-          "subtitle": null,
-          "description": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/1373d8e8-2a1a-42d3-9a24-0df14c528af8/cover?territory=IT&md5ChecksumParam=7c37298340be6874c0ffc7d5fa6480fb",
-          "startAt": "2026-09-15T13:00:00Z",
-          "endAt": "2026-09-15T14:00:00Z",
-          "episode": "S01E80"
-        },
-        {
-          "title": "Inside The Team - Un Gp con Kimi",
-          "subtitle": null,
-          "description": "Inside The Team - Un Gp con Kimi",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/59bb332e-1c30-4f19-bc9b-dd78dabec831/cover?territory=IT&md5ChecksumParam=5db02b54c11f97f1bcd02ae4c38c687a",
-          "startAt": "2026-09-15T14:00:00Z",
-          "endAt": "2026-09-15T14:45:00Z",
-          "episode": "S01E51"
-        },
-        {
-          "title": "Crazy Race",
-          "subtitle": null,
-          "description": "Crazy Race",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/4ceafeef-905d-4d80-8229-f4e57d0b9746/cover?territory=IT&md5ChecksumParam=2250a073328c1667bac17743dfb93959",
-          "startAt": "2026-09-15T14:45:00Z",
-          "endAt": "2026-09-15T15:00:00Z",
-          "episode": "S01E50"
-        },
-        {
-          "title": "Madrid",
-          "subtitle": null,
-          "description": "Il nuovissimo circuito di F1 di Madrid, il Madring, viene utilizzato per la prima volta in occasione del Gran Premio di Spagna nel settembre 2026, con un tracciato ibrido di 5.414 km e 22 curve.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/5ab80eca-3624-4c06-910e-fcccb403ad92/cover?territory=IT&md5ChecksumParam=65fe65b794e88b7426b23208bbdf1b08",
-          "startAt": "2026-09-15T15:00:00Z",
-          "endAt": "2026-09-15T16:00:00Z",
-          "episode": "S01E14"
-        },
         {
           "title": "Nashville",
           "subtitle": null,
@@ -1105,6 +1756,89 @@
           "imageUrl": "https://guidatv.sky.it/uuid/99037b82-cc19-4906-bfdc-6db680da098f/cover?territory=IT&md5ChecksumParam=5a9a246d1009fa66ea3e313809861239",
           "startAt": "2026-09-16T12:40:00Z",
           "endAt": "2026-09-16T13:00:00Z"
+        },
+        {
+          "title": "Madrid",
+          "subtitle": null,
+          "description": "Il nuovissimo circuito di F1 di Madrid, il Madring, viene utilizzato per la prima volta in occasione del Gran Premio di Spagna nel settembre 2026, con un tracciato ibrido di 5.414 km e 22 curve.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/5ab80eca-3624-4c06-910e-fcccb403ad92/cover?territory=IT&md5ChecksumParam=65fe65b794e88b7426b23208bbdf1b08",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T14:00:00Z",
+          "episode": "S01E14"
+        },
+        {
+          "title": "Little Italy: La Mercedes di Kimi",
+          "subtitle": null,
+          "description": "La Mercedes di Kimi Antonelli.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/2eb35e6e-1e77-4610-b6f3-1ca1a5f922db/cover?territory=IT&md5ChecksumParam=51ddbbb7bbabb71ee0266175f2be145e",
+          "startAt": "2026-09-16T14:00:00Z",
+          "endAt": "2026-09-16T14:30:00Z",
+          "episode": "S01E49"
+        },
+        {
+          "title": "Il nuovo Max",
+          "subtitle": null,
+          "description": "Il nuovo Max",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/8f452145-5a16-4268-85d1-566b9b4552fb/cover?territory=IT&md5ChecksumParam=6b6d3c5b5d36c58c3a22f8aa6beec719",
+          "startAt": "2026-09-16T14:30:00Z",
+          "endAt": "2026-09-16T14:45:00Z",
+          "episode": "S01E53"
+        },
+        {
+          "title": "Reparto Corse F1",
+          "subtitle": null,
+          "description": "Davide Camicioli e Matteo Bobbi presentano e analizzano i week end di gara di Formula 1. I momenti principali, le parole dei protagonisti e le prospettive mondiali dei contendenti.",
+          "categories": [
+            "Altro/Altro"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/99037b82-cc19-4906-bfdc-6db680da098f/cover?territory=IT&md5ChecksumParam=5a9a246d1009fa66ea3e313809861239",
+          "startAt": "2026-09-16T14:45:00Z",
+          "endAt": "2026-09-16T15:00:00Z"
+        },
+        {
+          "title": "GP Madrid: Gara",
+          "subtitle": null,
+          "description": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/1373d8e8-2a1a-42d3-9a24-0df14c528af8/cover?territory=IT&md5ChecksumParam=7c37298340be6874c0ffc7d5fa6480fb",
+          "startAt": "2026-09-16T15:00:00Z",
+          "endAt": "2026-09-16T16:00:00Z",
+          "episode": "S01E80"
+        },
+        {
+          "title": "Portland International Raceway",
+          "subtitle": null,
+          "description": "... Indycar Series. - prima delle quattro gare del mese di agosto, Portland si propone come il circuito di apertura della serrata lotta al titolo tra tre piloti",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/79751264-64b4-4f7b-9695-2f506d109120/cover?territory=IT&md5ChecksumParam=ad8fde80c33781e5ff125b3d5ca50a22",
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T18:00:00Z",
+          "episode": "S01E13"
         }
       ]
     },
@@ -1118,48 +1852,20 @@
         "data/normalized/guide-premium-IT-guidatv.sky.it.xml"
       ],
       "currentProgram": {
-        "title": "Amgen Irish Open: Giorno 4",
+        "title": "Nexo Championship: Giorno 4",
         "subtitle": null,
-        "description": "... World Tour. - From Trump International Golf Links & Hotel in Doonbeg, Ireland.",
+        "description": "... Tour. - From Trump International Golf Links in Scotland.",
         "categories": [
           "Sport/Golf"
         ],
         "sportType": "Golf",
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/b3277313-4411-4513-ae9b-6e9e63213c16/cover?territory=IT&md5ChecksumParam=7cc98626edbc1d07da7f674d5835d8c8",
-        "startAt": "2026-09-15T15:00:00Z",
-        "endAt": "2026-09-15T18:00:00Z",
-        "episode": "S01E116"
+        "imageUrl": "https://guidatv.sky.it/uuid/8f64bc13-7db0-4083-9fb7-0807d738fc2c/cover?territory=IT&md5ChecksumParam=e50e254151c688372d8f67afb9b1f824",
+        "startAt": "2026-09-15T19:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
+        "episode": "S01E104"
       },
       "programs": [
-        {
-          "title": "Husqvarna British Masters: Giorno 4",
-          "subtitle": null,
-          "description": "... DP World Tour. - Dal The Belfry di Sutton Coldfield, Inghilterra.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/0698b2f6-ea76-497a-9fda-3f83a90bdb33/cover?territory=IT&md5ChecksumParam=c7f8b67d7a5298e2f2ea4f4d98d6fdce",
-          "startAt": "2026-09-15T11:30:00Z",
-          "endAt": "2026-09-15T14:30:00Z",
-          "episode": "S01E108"
-        },
-        {
-          "title": "Open d'Italia",
-          "subtitle": null,
-          "description": "Open d'italia del 16 luglio: Golf Italian Pro Tour.",
-          "categories": [
-            "Sport/Golf"
-          ],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/e0fe6a7a-b583-4d23-ae66-8e99ab22ef91/cover?territory=IT&md5ChecksumParam=563a6cfeee5e6aa708b7812bba0005e2",
-          "startAt": "2026-09-15T14:30:00Z",
-          "endAt": "2026-09-15T15:00:00Z",
-          "episode": "S01E04"
-        },
         {
           "title": "Amgen Irish Open: Giorno 4",
           "subtitle": null,
@@ -1326,6 +2032,34 @@
           "startAt": "2026-09-16T11:35:00Z",
           "endAt": "2026-09-16T14:35:00Z",
           "episode": "S01E116"
+        },
+        {
+          "title": "Speciale Golf Pgai Championship 2026 03/08/2026",
+          "subtitle": null,
+          "description": "... 03/08/2026. - - - Speciale Golf Pgai Championship 2026...",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/256dd6e2-20a4-4560-95be-4c68d2ae85b6/cover?territory=IT&md5ChecksumParam=e010c1f4b3254620ca744bb90f78d5fb",
+          "startAt": "2026-09-16T14:35:00Z",
+          "endAt": "2026-09-16T15:00:00Z",
+          "episode": "S01E01"
+        },
+        {
+          "title": "Nexo Championship: Giorno 4",
+          "subtitle": null,
+          "description": "... Tour. - From Trump International Golf Links in Scotland.",
+          "categories": [
+            "Sport/Golf"
+          ],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/8f64bc13-7db0-4083-9fb7-0807d738fc2c/cover?territory=IT&md5ChecksumParam=e50e254151c688372d8f67afb9b1f824",
+          "startAt": "2026-09-16T15:00:00Z",
+          "endAt": "2026-09-16T18:00:00Z",
+          "episode": "S01E104"
         }
       ]
     },
@@ -1342,102 +2076,18 @@
       "currentProgram": {
         "title": "GP San Marino e Riviera di Rimini: Gara",
         "subtitle": null,
-        "description": "... Gara Moto3. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la gara della Moto3. Telecronaca Triolo-Pasini",
+        "description": "... Gara MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "categories": [
           "Sport/Motori"
         ],
         "sportType": null,
         "competition": null,
-        "imageUrl": "https://guidatv.sky.it/uuid/70ed5f75-4ebc-4ed6-bc90-29fede646b93/cover?territory=IT&md5ChecksumParam=e2417832de4ebf9cf8b40969f4a38faa",
-        "startAt": "2026-09-15T16:45:00Z",
-        "endAt": "2026-09-15T17:25:00Z",
-        "episode": "S01E253"
+        "imageUrl": "https://guidatv.sky.it/uuid/3bb6c796-c876-40d5-b3d1-331f57a2714a/cover?territory=IT&md5ChecksumParam=d9c8a12a3a455e1ca3cf594c1e5ac7af",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z",
+        "episode": "S01E255"
       },
       "programs": [
-        {
-          "title": "Bastianini Riflettori Accesi",
-          "subtitle": null,
-          "description": "Bastianini Riflettori Accesi 29/08/2026",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/67185dd7-3575-4fa7-9439-b87fb6c96b5f/cover?territory=IT&md5ChecksumParam=ec38e3b0939ad9b2c67601189bff925a",
-          "startAt": "2026-09-15T12:45:00Z",
-          "endAt": "2026-09-15T13:00:00Z",
-          "episode": "S01E33"
-        },
-        {
-          "title": "GP San Marino e Riviera di Rimini: Sprint Race",
-          "subtitle": null,
-          "description": "... Sprint Race MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la Sprint della MotoGP. Telecronaca Meda- Sanchini",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/b63c1c35-5e36-4cb0-be7f-308d32c0bfd4/cover?territory=IT&md5ChecksumParam=85664215792ecef89dec9fa611742d36",
-          "startAt": "2026-09-15T13:00:00Z",
-          "endAt": "2026-09-15T13:45:00Z",
-          "episode": "S01E252"
-        },
-        {
-          "title": "GP San Marino e Riviera di Rimini: Gara",
-          "subtitle": null,
-          "description": "... Gara MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/3bb6c796-c876-40d5-b3d1-331f57a2714a/cover?territory=IT&md5ChecksumParam=d9c8a12a3a455e1ca3cf594c1e5ac7af",
-          "startAt": "2026-09-15T13:45:00Z",
-          "endAt": "2026-09-15T14:40:00Z",
-          "episode": "S01E255"
-        },
-        {
-          "title": "Fernandez: Il mio riscatto",
-          "subtitle": null,
-          "description": "Raul Fernandez, pilota spagnolo del team Trackhouse, si sta dimostrando uno dei piu' competitivi in questa stagione dove la Aprilia sta raccogliendo ottimi risultati in MotoGP.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/0762dfc6-ef38-4e55-bb0e-5e98479ae370/cover?territory=IT&md5ChecksumParam=4e18a793b0685a25e88a008240ed1239",
-          "startAt": "2026-09-15T14:40:00Z",
-          "endAt": "2026-09-15T14:55:00Z",
-          "episode": "S01E30"
-        },
-        {
-          "title": "San Marino",
-          "subtitle": null,
-          "description": "Collegamenti dal paddock, i commenti dei nostri ospiti in studio, le emozioni delle feste nei box. Questi gli ingredienti della puntata di Race Anatomy condotta da Cristiana Buonamano",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": "https://guidatv.sky.it/uuid/b5e6159f-75fd-4a70-9371-8be2dd71b09a/cover?territory=IT&md5ChecksumParam=a97b17959246b3aff421142ac0b4be32",
-          "startAt": "2026-09-15T14:55:00Z",
-          "endAt": "2026-09-15T15:55:00Z",
-          "episode": "S01E14"
-        },
-        {
-          "title": "Austria. Spielberg 2019. MotoGP - MOTOGP",
-          "subtitle": null,
-          "description": "... Storie di GP F1. - Undicesimo appuntamento del mondiale 2019: da Spielberg, la gara della MotoGP. In prima fila Marquez, Quartararo e Dovizioso. TC: Meda-Sanchini.",
-          "categories": [
-            "Sport/Motori"
-          ],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": "https://guidatv.sky.it/uuid/133ad185-53a1-4616-8ec4-9ca1fb9c07e4/cover?territory=IT&md5ChecksumParam=7aeda3d5c7f7c74b26ebd8c41836942e",
-          "startAt": "2026-09-15T15:55:00Z",
-          "endAt": "2026-09-15T16:45:00Z",
-          "episode": "S01E108"
-        },
         {
           "title": "GP San Marino e Riviera di Rimini: Gara",
           "subtitle": null,
@@ -1916,6 +2566,1151 @@
           "imageUrl": "https://guidatv.sky.it/uuid/185c1e47-47bf-4e09-b063-45f5c471fb2b/COVER_TITLE_TALL?territory=IT&version=6e21a822-60cf-3a27-bfbc-b3c77c2f3c1a&w=600&h=800&md5ChecksumParam=85f511af8e15cad54ed0649022d0286e",
           "startAt": "2026-09-16T12:40:00Z",
           "endAt": "2026-09-16T13:00:00Z"
+        },
+        {
+          "title": "San Marino",
+          "subtitle": null,
+          "description": "Collegamenti dal paddock, i commenti dei nostri ospiti in studio, le emozioni delle feste nei box. Questi gli ingredienti della puntata di Race Anatomy condotta da Cristiana Buonamano",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b5e6159f-75fd-4a70-9371-8be2dd71b09a/cover?territory=IT&md5ChecksumParam=a97b17959246b3aff421142ac0b4be32",
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T14:00:00Z",
+          "episode": "S01E14"
+        },
+        {
+          "title": "Reparto Corse Moto GP",
+          "subtitle": null,
+          "description": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/744532bc-0789-45a8-bfd8-4aa4505f533a/cover?territory=IT&md5ChecksumParam=d4dcdb96a5e745fd678fa3c8243d7348",
+          "startAt": "2026-09-16T14:00:00Z",
+          "endAt": "2026-09-16T14:15:00Z"
+        },
+        {
+          "title": "GP San Marino e Riviera di Rimini: Sprint Race",
+          "subtitle": null,
+          "description": "... Sprint Race MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la Sprint della MotoGP. Telecronaca Meda- Sanchini",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/b63c1c35-5e36-4cb0-be7f-308d32c0bfd4/cover?territory=IT&md5ChecksumParam=85664215792ecef89dec9fa611742d36",
+          "startAt": "2026-09-16T14:15:00Z",
+          "endAt": "2026-09-16T14:55:00Z",
+          "episode": "S01E252"
+        },
+        {
+          "title": "GP San Marino e Riviera di Rimini: Gara",
+          "subtitle": null,
+          "description": "... Gara MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3bb6c796-c876-40d5-b3d1-331f57a2714a/cover?territory=IT&md5ChecksumParam=d9c8a12a3a455e1ca3cf594c1e5ac7af",
+          "startAt": "2026-09-16T14:55:00Z",
+          "endAt": "2026-09-16T15:55:00Z",
+          "episode": "S01E255"
+        },
+        {
+          "title": "Austria, Salzburgring 1993. Classe 250 - MOTOGP",
+          "subtitle": null,
+          "description": "... 250 Storie di GP F1. - Le piu' belle gare del passato con i tantissimi campioni italiani che ne hanno fatto la storia. Sfida serrata e entusiasmante tra due piloti italiani: Loris Capirossi e Doriano Romboni.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": "https://guidatv.sky.it/uuid/2aae95a1-768f-4569-84e1-be980ed2726a/cover?territory=IT&md5ChecksumParam=7aeda3d5c7f7c74b26ebd8c41836942e",
+          "startAt": "2026-09-16T15:55:00Z",
+          "endAt": "2026-09-16T17:00:00Z",
+          "episode": "S01E117"
+        },
+        {
+          "title": "Speciale Sterlacchini",
+          "subtitle": null,
+          "description": "Fabiano Sterlacchini, Technical Director di Aprilia Racing, ci racconta l'atmosfera del box Aprilia e il lavoro che ha portato i piloti al vertice della classifica del mondiale 2026 di MotoGP.",
+          "categories": [
+            "Sport/Motori"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/f09c780e-4aed-4c4c-94e8-d11ed5ffaf15/cover?territory=IT&md5ChecksumParam=a4dbab7982eeaa70e801de73692e11e0",
+          "startAt": "2026-09-16T17:00:00Z",
+          "endAt": "2026-09-16T17:30:00Z",
+          "episode": "S01E30"
+        }
+      ]
+    },
+    {
+      "id": "SkySportUno.it",
+      "name": "Sky Sport Uno",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Sky_Sport_Uno_-_Logo_2020.svg/960px-Sky_Sport_Uno_-_Logo_2020.svg.png",
+      "provider": "Sky Italia sports guide",
+      "providerKey": "premium-sky-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-guidatv.sky.it.xml",
+        "data/normalized/guide-premium-IT-superguidatv.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Studio Eurovolley Post 15/09/2026",
+        "subtitle": null,
+        "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "categories": [
+          "Sport/Altri"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": "https://guidatv.sky.it/uuid/fc6cdb4c-2a84-4473-846a-dc7207c203e4/cover?territory=IT&md5ChecksumParam=9a597263d9c44de483c7d0d0ab62d922",
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T21:30:00Z",
+        "episode": "S01E126"
+      },
+      "programs": [
+        {
+          "title": "Crotone - Inter U23",
+          "subtitle": null,
+          "description": "Dallo Stadio Ezio Scida di Crotone, Italia.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/a8cedd8c-69b8-402d-8f39-6c67eff48fd8/cover?territory=IT&md5ChecksumParam=a268675802c6848dcc690a2d6a63b8f1",
+          "startAt": "2026-09-15T16:20:00Z",
+          "endAt": "2026-09-15T18:40:00Z",
+          "episode": "S01E46"
+        },
+        {
+          "title": "Studio Eurovolley Pre 15/09/2026",
+          "subtitle": null,
+          "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/5e1c3a17-f086-4161-a038-b2ec1f6147d9/cover?territory=IT&md5ChecksumParam=5a38189993b8e25c75dfb354bb58109e",
+          "startAt": "2026-09-15T18:40:00Z",
+          "endAt": "2026-09-15T18:50:00Z",
+          "episode": "S01E124"
+        },
+        {
+          "title": "Italia - Cechia",
+          "subtitle": null,
+          "description": "... Europei di pallavolo maschile. - Fase a Gironi di Eurovolley, la nuova avversaria degli azzurri e' la Cechia. Tc Locatelli-Zorzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7e4a9291-af37-4501-8fa7-ac121247c1f5/cover?territory=IT&md5ChecksumParam=f9e3549ddd68d974768bc45115ce94dc",
+          "startAt": "2026-09-15T18:50:00Z",
+          "endAt": "2026-09-15T21:00:00Z",
+          "episode": "S01E13"
+        },
+        {
+          "title": "Studio Eurovolley Post 15/09/2026",
+          "subtitle": null,
+          "description": "... 15/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+          "categories": [
+            "Sport/Altri"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/fc6cdb4c-2a84-4473-846a-dc7207c203e4/cover?territory=IT&md5ChecksumParam=9a597263d9c44de483c7d0d0ab62d922",
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T21:30:00Z",
+          "episode": "S01E126"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-15T21:30:00Z",
+          "endAt": "2026-09-15T22:15:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Zverev - Shelton Finale Maschile",
+          "subtitle": null,
+          "description": "... Tennis Us Open. - Il tedesco Alexander Zverev cerca il suo secondo titolo Slam contro l'americano Ben Shelton, alla sua prima finale. Tc: Boschetto-Bertolucci",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/bad692c8-0e52-403e-8946-65b4af3c4cc7/cover?territory=IT&md5ChecksumParam=b0459a3ab9f2cb12b2b695f44a085f07",
+          "startAt": "2026-09-15T22:15:00Z",
+          "endAt": "2026-09-16T01:10:00Z",
+          "episode": "S01E87"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-16T01:10:00Z",
+          "endAt": "2026-09-16T02:00:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Napoli - Bologna",
+          "subtitle": null,
+          "description": "Azzurri reduci dai ko con Como e Inter. Il Bologna ha conquistato il primo punto con il 2-2 contro il Sassuolo. A Napoli ha vinto 2 delle ultime 3 sfide, un ko. TC: Gentile-Serena",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/4838af4a-a67f-4f20-a280-c05bdbcff28f/cover?territory=IT&md5ChecksumParam=cb962d4b8065ef424d010ab67fe6a6da",
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z",
+          "episode": "S01E37"
+        },
+        {
+          "title": "Inter - Udinese",
+          "subtitle": null,
+          "description": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/08cb506c-aabd-4112-afc0-4d763f125337/cover?territory=IT&md5ChecksumParam=5bd57a77099dc0750c2b0d6cdaee2499",
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T05:45:00Z",
+          "episode": "S01E40"
+        },
+        {
+          "title": "Ep.4",
+          "subtitle": null,
+          "description": "La trasmissione dedicata ai gol della Serie A, con la \"Gol Collection\" e gli \"SkyLights\" delle partite giocate. Inoltre, interviste e collegamenti con gli inviati.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/9d7a6397-6424-4acc-9847-09d3c73a5b07/cover?territory=IT&md5ChecksumParam=fc7f6b5495062314690a96e9e5f82949",
+          "startAt": "2026-09-16T05:45:00Z",
+          "endAt": "2026-09-16T06:45:00Z",
+          "episode": "S01E04"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-16T06:45:00Z",
+          "endAt": "2026-09-16T07:30:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Uefa Champions League Magazine 2026/2027 Ep.3 14/09/2026",
+          "subtitle": null,
+          "description": "... 2026/2027 Ep.3 14/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/6b43ce88-b7a9-4806-8a53-f717b75621d3/cover?territory=IT&md5ChecksumParam=5defb16fb61758e2d47197132534116d",
+          "startAt": "2026-09-16T07:30:00Z",
+          "endAt": "2026-09-16T08:00:00Z",
+          "episode": "S01E03"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "... Magazine. - Notizie, interviste e analisi delle squadre di Europa League e Conference League.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c826a6c7-c7b7-4ee2-9893-b51198d254de/cover?territory=IT&md5ChecksumParam=720dfd11b3eb2b5738c9186fdc042f4e",
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T08:30:00Z",
+          "episode": "S01E16"
+        },
+        {
+          "title": "Milito",
+          "subtitle": null,
+          "description": "Calcio.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
+          "startAt": "2026-09-16T08:30:00Z",
+          "endAt": "2026-09-16T09:00:00Z",
+          "episode": "S02E01"
+        },
+        {
+          "title": "Italia - Cechia",
+          "subtitle": null,
+          "description": "... di pallavolo maschile. - Fase a Gironi di Eurovolley, la nuova avversaria degli azzurri e' la Cechia. Tc Locatelli-Zorzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/7e4a9291-af37-4501-8fa7-ac121247c1f5/cover?territory=IT&md5ChecksumParam=f9e3549ddd68d974768bc45115ce94dc",
+          "startAt": "2026-09-16T09:00:00Z",
+          "endAt": "2026-09-16T10:50:00Z",
+          "episode": "S01E13"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-16T10:50:00Z",
+          "endAt": "2026-09-16T11:35:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Milito",
+          "subtitle": null,
+          "description": "Calcio.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/10265735-6fe3-4a96-a031-494b990861c7/cover?territory=IT&md5ChecksumParam=5af9db9e1774dd177d08e8704f715ad0",
+          "startAt": "2026-09-16T11:35:00Z",
+          "endAt": "2026-09-16T12:05:00Z",
+          "episode": "S02E01"
+        },
+        {
+          "title": "Uefa Champions League Magazine 2026/2027 Ep.3 14/09/2026",
+          "subtitle": null,
+          "description": "... 2026/2027 Ep.3 14/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": "https://guidatv.sky.it/uuid/6b43ce88-b7a9-4806-8a53-f717b75621d3/cover?territory=IT&md5ChecksumParam=5defb16fb61758e2d47197132534116d",
+          "startAt": "2026-09-16T12:05:00Z",
+          "endAt": "2026-09-16T12:35:00Z",
+          "episode": "S01E03"
+        },
+        {
+          "title": "Ep.1",
+          "subtitle": null,
+          "description": "... Magazine. - Notizie, interviste e analisi delle squadre di Europa League e Conference League.",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/c826a6c7-c7b7-4ee2-9893-b51198d254de/cover?territory=IT&md5ChecksumParam=720dfd11b3eb2b5738c9186fdc042f4e",
+          "startAt": "2026-09-16T12:35:00Z",
+          "endAt": "2026-09-16T13:05:00Z",
+          "episode": "S01E16"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-16T13:05:00Z",
+          "endAt": "2026-09-16T13:50:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Danimarca - Serbia",
+          "subtitle": null,
+          "description": "... Campionati Europei di pallavolo maschile. - Nel Gruppo C la rivelazione Danimarca incrocia la Serbia. Tc Maurizio Trezzi",
+          "categories": [
+            "Sport/Volley"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/541f6c47-0f5c-4e05-b30a-4bf1e394126d/cover?territory=IT&md5ChecksumParam=67dda1f66a98fca9cb0c0a9d0352733c",
+          "startAt": "2026-09-16T13:50:00Z",
+          "endAt": "2026-09-16T15:50:00Z",
+          "episode": "S01E14"
+        },
+        {
+          "title": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+          "subtitle": null,
+          "description": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
+          "categories": [
+            "Sport/Tennis"
+          ],
+          "sportType": "Tennis",
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/3fedfff3-5b38-4520-9e3f-821a4dfa6c33/cover?territory=IT&md5ChecksumParam=f13b842bf13254f9f7c2ae7c8ec4b7c3",
+          "startAt": "2026-09-16T15:50:00Z",
+          "endAt": "2026-09-16T16:40:00Z",
+          "episode": "S01E08"
+        },
+        {
+          "title": "Omonia Nicosia - Celta Vigo",
+          "subtitle": null,
+          "description": "... Vigo UEFA Europa League. - Nei 4 precedenti europei contro formazioni spagnole (Granada e Real Sociedad), l'Omonia Nicosia ha sempre perso con appena 2 gol fatti e 8 reti subite. TC: Fabrizio Redaelli",
+          "categories": [
+            "Sport/Calcio"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": "https://guidatv.sky.it/uuid/5b496e5e-7284-440d-a02f-12c0940048c8/cover?territory=IT&md5ChecksumParam=afc3287c0dec1a29e68002b8c72cea19",
+          "startAt": "2026-09-16T16:40:00Z",
+          "endAt": "2026-09-16T18:45:00Z",
+          "episode": "S01E11"
+        }
+      ]
+    },
+    {
+      "id": "SkySportFootball.it",
+      "name": "Sky Sport Football HD",
+      "logoUrl": null,
+      "provider": "Super Guida TV sports guide",
+      "providerKey": "premium-superguidatv-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-superguidatv.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Serie A (St. 2026 - Ep. 37)",
+        "subtitle": null,
+        "description": null,
+        "categories": [
+          "Sport"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": null,
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T22:50:00Z"
+      },
+      "programs": [
+        {
+          "title": "Serie C (St. 2026 - Ep. 48)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T16:20:00Z",
+          "endAt": "2026-09-15T18:20:00Z"
+        },
+        {
+          "title": "Champions League Remix (St. 1 - Ep. 1)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-09-15T18:20:00Z",
+          "endAt": "2026-09-15T18:50:00Z"
+        },
+        {
+          "title": "Serie C (St. 2026 - Ep. 42)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T18:50:00Z",
+          "endAt": "2026-09-15T21:00:00Z"
+        },
+        {
+          "title": "Serie A (St. 2026 - Ep. 37)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T22:50:00Z"
+        },
+        {
+          "title": "UEFA Champions League (St. 2026 - Ep. 3)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-09-15T22:50:00Z",
+          "endAt": "2026-09-15T23:05:00Z"
+        },
+        {
+          "title": "Race Anatomy F1 (St. 2026 - Ep. 14)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-15T23:05:00Z",
+          "endAt": "2026-09-16T00:05:00Z"
+        },
+        {
+          "title": "Premier League (St. 2026 - Ep. 31)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-16T00:05:00Z",
+          "endAt": "2026-09-16T02:00:00Z"
+        },
+        {
+          "title": "F1 (St. 2026 - Ep. 80)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T03:00:00Z"
+        },
+        {
+          "title": "Race Anatomy F1 (St. 2026 - Ep. 14)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-16T03:00:00Z",
+          "endAt": "2026-09-16T04:00:00Z"
+        },
+        {
+          "title": "FIA World Rally Championship (St. 2026 - Ep. 60)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T05:00:00Z"
+        },
+        {
+          "title": "The Boat Show (St. 2026 - Ep. 27)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T05:00:00Z",
+          "endAt": "2026-09-16T05:30:00Z"
+        },
+        {
+          "title": "Diamond League (St. 2026 - Ep. 16)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T05:30:00Z",
+          "endAt": "2026-09-16T07:30:00Z"
+        },
+        {
+          "title": "Serie A (St. 2026 - Ep. 37)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T07:30:00Z",
+          "endAt": "2026-09-16T09:15:00Z"
+        },
+        {
+          "title": "Tutti i gol di Van Nistelrooy in Champions League",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-09-16T09:15:00Z",
+          "endAt": "2026-09-16T09:35:00Z"
+        },
+        {
+          "title": "Laureus Spirit of Sports (St. 2026 - Ep. 19)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T09:35:00Z",
+          "endAt": "2026-09-16T10:05:00Z"
+        },
+        {
+          "title": "Premier Padel (St. 2026 - Ep. 114)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T10:05:00Z",
+          "endAt": "2026-09-16T12:10:00Z"
+        },
+        {
+          "title": "Highlights Sail GP (St. 2026 - Ep. 13)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T12:10:00Z",
+          "endAt": "2026-09-16T13:05:00Z"
+        },
+        {
+          "title": "Cile: Stage 4 (St. 2026 - Ep. 62)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T13:05:00Z",
+          "endAt": "2026-09-16T14:35:00Z"
+        },
+        {
+          "title": "Premier League (St. 2026 - Ep. 39)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-16T14:35:00Z",
+          "endAt": "2026-09-16T16:20:00Z"
+        },
+        {
+          "title": "Serie A (St. 2026 - Ep. 40)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T16:20:00Z",
+          "endAt": "2026-09-16T16:40:00Z"
+        },
+        {
+          "title": "UEFA Europa League (St. 2026 - Ep. 3)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T16:40:00Z",
+          "endAt": "2026-09-16T18:40:00Z"
+        }
+      ]
+    },
+    {
+      "id": "Sportitalia.it",
+      "name": "Sportitalia",
+      "logoUrl": null,
+      "provider": "Super Guida TV sports guide",
+      "providerKey": "premium-superguidatv-it",
+      "sources": [
+        "data/normalized/guide-premium-IT-superguidatv.it.xml"
+      ],
+      "currentProgram": {
+        "title": "Sportitaliamercato (diretta)",
+        "subtitle": null,
+        "description": null,
+        "categories": [
+          "Sport"
+        ],
+        "sportType": null,
+        "competition": null,
+        "imageUrl": null,
+        "startAt": "2026-09-15T21:00:00Z",
+        "endAt": "2026-09-15T22:00:00Z"
+      },
+      "programs": [
+        {
+          "title": "Speciale Serie B (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T16:30:00Z",
+          "endAt": "2026-09-15T18:00:00Z"
+        },
+        {
+          "title": "Blue Sport",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T18:00:00Z",
+          "endAt": "2026-09-15T18:30:00Z"
+        },
+        {
+          "title": "Champions League Live (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": "Football",
+          "competition": "Champions League",
+          "imageUrl": null,
+          "startAt": "2026-09-15T18:30:00Z",
+          "endAt": "2026-09-15T19:00:00Z"
+        },
+        {
+          "title": "Calcio Tonight (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T19:00:00Z",
+          "endAt": "2026-09-15T21:00:00Z"
+        },
+        {
+          "title": "Sportitaliamercato (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T21:00:00Z",
+          "endAt": "2026-09-15T22:00:00Z"
+        },
+        {
+          "title": "Si Live 24 (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T22:00:00Z",
+          "endAt": "2026-09-15T22:30:00Z"
+        },
+        {
+          "title": "Sportitaliamercato",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T22:30:00Z",
+          "endAt": "2026-09-15T23:30:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-15T23:30:00Z",
+          "endAt": "2026-09-16T00:00:00Z"
+        },
+        {
+          "title": "Campionato Primavera Roma-Como",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T00:00:00Z",
+          "endAt": "2026-09-16T02:00:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T02:00:00Z",
+          "endAt": "2026-09-16T02:30:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T02:30:00Z",
+          "endAt": "2026-09-16T03:00:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T03:00:00Z",
+          "endAt": "2026-09-16T03:30:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T03:30:00Z",
+          "endAt": "2026-09-16T04:00:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T04:00:00Z",
+          "endAt": "2026-09-16T04:30:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T04:30:00Z",
+          "endAt": "2026-09-16T05:00:00Z"
+        },
+        {
+          "title": "Sportitaliamercato",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T05:00:00Z",
+          "endAt": "2026-09-16T06:00:00Z"
+        },
+        {
+          "title": "Otto In Punto (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T06:00:00Z",
+          "endAt": "2026-09-16T06:30:00Z"
+        },
+        {
+          "title": "Otto In Punto",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T06:30:00Z",
+          "endAt": "2026-09-16T07:00:00Z"
+        },
+        {
+          "title": "Tutti in campo (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T07:00:00Z",
+          "endAt": "2026-09-16T08:00:00Z"
+        },
+        {
+          "title": "Speciale Serie B",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T08:00:00Z",
+          "endAt": "2026-09-16T09:30:00Z"
+        },
+        {
+          "title": "Si Live 24 (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T09:30:00Z",
+          "endAt": "2026-09-16T10:00:00Z"
+        },
+        {
+          "title": "Sportitaliamercato",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T10:00:00Z",
+          "endAt": "2026-09-16T11:00:00Z"
+        },
+        {
+          "title": "Si Live 24 (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T11:00:00Z",
+          "endAt": "2026-09-16T11:30:00Z"
+        },
+        {
+          "title": "Si Live 24",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T11:30:00Z",
+          "endAt": "2026-09-16T12:00:00Z"
+        },
+        {
+          "title": "Blab Live (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T12:00:00Z",
+          "endAt": "2026-09-16T13:00:00Z"
+        },
+        {
+          "title": "Si Cafe' (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T13:00:00Z",
+          "endAt": "2026-09-16T14:00:00Z"
+        },
+        {
+          "title": "Si Live 24 (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T14:00:00Z",
+          "endAt": "2026-09-16T14:30:00Z"
+        },
+        {
+          "title": "Calcio Today (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T14:30:00Z",
+          "endAt": "2026-09-16T16:00:00Z"
+        },
+        {
+          "title": "Magazine Campionato Argentino",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T16:00:00Z",
+          "endAt": "2026-09-16T16:30:00Z"
+        },
+        {
+          "title": "Speciale Serie C (diretta)",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sport"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-16T16:30:00Z",
+          "endAt": "2026-09-16T18:00:00Z"
         }
       ]
     }

@@ -94,6 +94,13 @@ def main(argv: list[str] | None = None) -> int:
                 "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
             ]
             timeout = 300
+        elif channels_file.name.endswith("-tv.sfr.fr.channels.xml"):
+            command = [
+                "python3", "scripts/grab_sfr_epg.py",
+                "--channels", str(channels_file), "--output", str(output_file),
+                "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
+            ]
+            timeout = 300
         elif channels_file.name.endswith("-movistarplus.es.channels.xml"):
             command = [
                 "python3", "scripts/grab_movistar_epg.py",
@@ -108,7 +115,7 @@ def main(argv: list[str] | None = None) -> int:
                 "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
             ]
             timeout = 300
-        elif "-tvpassport.com.channels.xml" in channels_file.name or channels_file.name.startswith("custom-uhf-CA-"):
+        elif "-tvpassport.com.channels.xml" in channels_file.name or channels_file.name.startswith(("custom-uhf-CA-", "custom-uhf-FR-")):
             # A source-wide two-minute limit can kill a healthy large batch
             # before the grabber writes any of its results.
             timeout = max(timeout, min(900, len(ET.parse(channels_file).getroot()) * DAYS_TO_GRAB * 10))
