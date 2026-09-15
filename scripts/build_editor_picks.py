@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
+OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "glm-5.3-flash", "kimi-k2.6")
 PICK_LIMIT = 12
 CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 20
@@ -353,36 +354,47 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
             + json.dumps(selected_groups, ensure_ascii=False, separators=(",", ":"))
         )
     prompt += "\n\nCandidates:\n" + json.dumps(public_candidates, ensure_ascii=False, separators=(",", ":"))
-    body = json.dumps({
-        "model": "deepseek-v4.1-flash",
-        "messages": [
-            {"role": "system", "content": "You are a conservative international television editor."},
-            {"role": "user", "content": prompt},
-        ],
-        "response_format": {"type": "json_object"},
-        "temperature": 0,
-    }).encode("utf-8")
-    request = urllib.request.Request(
-        OPENCODE_GO_URL,
-        data=body,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "User-Agent": "whatson-editor-picks/1.0",
-            "x-opencode-session": "whatson-editor-picks",
-        },
-        method="POST",
-    )
     raw_response = b""
-    for attempt in range(3):
+    for model in OPENCODE_GO_MODELS:
+        body = json.dumps({
+            "model": model,
+            "messages": [
+                {"role": "system", "content": "You are a conservative international television editor."},
+                {"role": "user", "content": prompt},
+            ],
+            "response_format": {"type": "json_object"},
+            "temperature": 0,
+        }).encode("utf-8")
+        request = urllib.request.Request(
+            OPENCODE_GO_URL,
+            data=body,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "User-Agent": "whatson-editor-picks/1.0",
+                "x-opencode-session": "whatson-editor-picks",
+            },
+            method="POST",
+        )
         try:
-            with opener(request, timeout=180) as response:
-                raw_response = response.read(65_537)
+            for attempt in range(3):
+                try:
+                    with opener(request, timeout=180) as response:
+                        raw_response = response.read(65_537)
+                    break
+                except urllib.error.HTTPError:
+                    raise
+                except OSError:
+                    if attempt == 2:
+                        raise
             break
-        except OSError:
-            if attempt == 2:
+        except OSError as error:
+            if isinstance(error, urllib.error.HTTPError) and error.code not in (403, 404, 429) and not 500 <= error.code < 600:
                 raise
+            if model == OPENCODE_GO_MODELS[-1]:
+                raise
+            print(f"warning: editor-pick model {model} unavailable; trying next model: {error}", file=sys.stderr)
     if len(raw_response) > 65_536:
         raise ValueError("OpenCode Go response was too large")
     envelope = json.loads(raw_response)

@@ -297,10 +297,32 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(request.get_header("X-opencode-session"), "whatson-editor-picks")
         self.assertTrue(all(call.kwargs["timeout"] == 180 for call in opener.call_args_list))
 
-        exhausted = Mock(side_effect=[TimeoutError(), TimeoutError(), TimeoutError()])
+        exhausted = Mock(side_effect=TimeoutError())
         with self.assertRaises(TimeoutError):
             build_editor_picks.select_with_opencode_go([candidate], "key", opener=exhausted)
-        self.assertEqual(exhausted.call_count, 3)
+        self.assertEqual(exhausted.call_count, 3 * len(build_editor_picks.OPENCODE_GO_MODELS))
+
+    def test_model_fallback_is_ordered_and_only_for_unavailability(self):
+        from email.message import Message
+        from urllib.error import HTTPError
+
+        response = b'{"choices":[{"message":{"content":"{\\"picks\\":[]}"}}]}'
+        for code in (403, 404, 429, 503, 401, 400):
+            with self.subTest(code=code):
+                opener = Mock(side_effect=[HTTPError("https://example.com", code, "Unavailable", Message(), None), io.BytesIO(response)])
+                if code in (401, 400):
+                    with self.assertRaises(HTTPError):
+                        build_editor_picks.select_with_opencode_go([], "key", opener=opener)
+                    self.assertEqual(opener.call_count, 1)
+                else:
+                    self.assertEqual(build_editor_picks.select_with_opencode_go([], "key", opener=opener), [])
+                    self.assertEqual([json.loads(c.args[0].data)["model"] for c in opener.call_args_list],
+                                     list(build_editor_picks.OPENCODE_GO_MODELS[:2]))
+        opener = Mock(side_effect=HTTPError("https://example.com", 403, "Unavailable", Message(), None))
+        with self.assertRaises(HTTPError):
+            build_editor_picks.select_with_opencode_go([], "key", opener=opener)
+        self.assertEqual([json.loads(c.args[0].data)["model"] for c in opener.call_args_list],
+                         list(build_editor_picks.OPENCODE_GO_MODELS))
 
     def test_bad_group_does_not_erase_valid_picks_and_failure_preserves_output(self):
         candidates = [
