@@ -76,6 +76,23 @@ MANUAL_ALIASES = {
     ("CA", "Canada- TVA SPORTS QC"): "CA:TVASports.ca",
     ("CA", "Canada- BEIN SPORTS CANADA"): "CA:beINSportsCanada.ca",
     ("CA", "Canada- beIN Sports HD CA"): "CA:beINSportsCanada.ca",
+    # Spain: the Movistar match feeds are distinct from LaLiga's studio channel.
+    ("ES", "ESP-Movistar Accion"): "ES:AccionporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Cine Ñ"): "ES:CineEspanolporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Cocina"): "ES:CanalCocina.es",
+    ("ES", "ESP-Movistar Comedia"): "ES:ComediaporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Decasa"): "ES:Decasa.es",
+    ("ES", "ESP-Movistar Deportes"): "ES:DeportesporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Drama"): "ES:DramaporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Estrenos"): "ES:CineporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Golf"): "ES:GolfporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Liga de Campeones"): "ES:LigadeCampeonesporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar Series"): "ES:SeriesporMovistarPlusPlus.es",
+    ("ES", "Movistar LaLiga"): "ES:LaLigaTVporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar LaLiga"): "ES:LaLigaTVporMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar LaLiga 1"): "ES:LaLiga1porMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar LaLiga 2"): "ES:LaLigaTV2porMovistarPlusPlus.es",
+    ("ES", "ESP-Movistar LaLiga 3"): "ES:LaLigaTV3porMovistarPlusPlus.es",
     # UK
     ("UK", "UK| Sky Sports Main Event"): "UK:SkySportsMainEvent.uk",
     ("UK", "UK| Sky Sports Premier League"): "UK:SkySportsPremierLeague.uk",
@@ -260,9 +277,20 @@ def map_row(row: dict, targets: dict[str, dict], raw_to_target: dict[str, str]) 
     confidence = 0.0
     notes = ""
 
+    # A qualified UHF selection is an explicit user choice. In particular,
+    # an old original-name alias must not change a selected regional feed.
+    if "!$!" in (row.get("epg_channel_id") or ""):
+        candidate = raw_to_target.get(clean_epg.lower())
+        if candidate and (not source_country or candidate.startswith(source_country + ":")):
+            target_id = candidate
+            method = "source_epg_id_exact"
+            confidence = 1.0
+
     manual_key = (source_country or "", name)
     original_manual_key = (source_country or "", row.get("original_name") or "")
     for candidate_key in (manual_key, original_manual_key):
+        if target_id:
+            break
         if candidate_key in MANUAL_ALIASES:
             candidate = MANUAL_ALIASES[candidate_key]
             if candidate in targets:
@@ -340,7 +368,7 @@ def main() -> int:
 
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with OUT_CSV.open("w", newline="", encoding="utf-8") as outfile:
-        writer = csv.DictWriter(outfile, fieldnames=FIELDNAMES)
+        writer = csv.DictWriter(outfile, fieldnames=FIELDNAMES, lineterminator="\n")
         writer.writeheader()
         writer.writerows(mapped_rows)
 

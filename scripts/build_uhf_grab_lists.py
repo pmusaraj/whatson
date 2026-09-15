@@ -22,7 +22,7 @@ OUT_PLAN = ROOT / "data" / "uhf" / "grab-plan.json"
 
 PREFERRED_SITES = {
     "FR": ["canalplus.com", "tv.sfr.fr", "programme-tv.net", "chaines-tv.orange.fr"],
-    "ES": ["orangetv.orange.es", "programacion-tv.elpais.com", "gatotv.com"],
+    "ES": ["movistarplus.es", "orangetv.orange.es", "programacion-tv.elpais.com", "gatotv.com"],
     "UK": ["virgintvgo.virginmedia.com", "sky.com", "mytelly.co.uk", "freeview.co.uk"],
     "CA": ["tvpassport.com", "tvhebdo.com", "tvtv.us", "ontvtonight.com"],
     "US": ["tvtv.us", "tvguide.com", "tvpassport.com"],

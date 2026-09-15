@@ -259,6 +259,46 @@ def write_outputs(tree: ET.ElementTree, rows: list[dict[str, str]], summary: dic
     OUT_CHANNELS_JSON.write_text(json.dumps(included_rows, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     OUT_SUMMARY_JSON.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    # Stable IDs are independent of UHF's database primary keys, which change
+    # after a playlist is imported again. Keep the original feed for old clients.
+    stable = build_stable_xmltv(tree, included_rows)
+    stable.write(OUT_DIR / "epg-stable.xml", encoding="utf-8", xml_declaration=True)
+    with (OUT_DIR / "epg-stable.xml.gz").open("wb") as raw_file:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=raw_file, mtime=0) as gzip_file:
+            stable.write(gzip_file, encoding="utf-8", xml_declaration=True)
+    # Older UHF manual selections still refer to this provider URL.
+    stable.write(OUT_DIR.parent / "epg.xml", encoding="utf-8", xml_declaration=True)
+
+
+def build_stable_xmltv(tree: ET.ElementTree, rows: list[dict[str, str]]) -> ET.ElementTree:
+    source = tree.getroot()
+    tv = ET.Element("tv", dict(source.attrib))
+    mappings = {row["custom_xmltv_id"]: row for row in rows}
+    channels: dict[str, ET.Element] = {}
+    names: dict[str, set[str]] = defaultdict(set)
+    selected_source: dict[str, str] = {}
+    for channel in source.findall("channel"):
+        row = mappings[channel.attrib["id"]]
+        target = row["target_xmltv_id"]
+        if target not in channels:
+            channels[target] = ET.SubElement(tv, "channel", {"id": target})
+            selected_source[target] = channel.attrib["id"]
+        for alias in channel.findall("display-name"):
+            # A country code is not a channel name and creates ambiguous aliases.
+            if alias.text != row["target_country"]:
+                add_display_name(channels[target], alias.text, names[target])
+    source_channels = {channel.attrib["id"]: channel for channel in source.findall("channel")}
+    for target, channel in channels.items():
+        for icon in source_channels[selected_source[target]].findall("icon"):
+            channel.append(copy_element(icon))
+    for programme in source.findall("programme"):
+        source_id = programme.attrib["channel"]
+        target = mappings[source_id]["target_xmltv_id"]
+        if selected_source[target] == source_id:
+            tv.append(copy_programme(programme, target))
+    ET.indent(tv, space="  ")
+    return ET.ElementTree(tv)
+
 
 def main() -> int:
     rows = load_ok_mappings()

@@ -2,8 +2,9 @@ name: Refresh UHF EPG data
 
 on:
   schedule:
-    # Every two days at 03:35 UTC.
-    - cron: "35 3 */2 * *"
+    # Refresh twice daily: a yesterday/today/tomorrow grab cannot safely
+    # cover a 48-hour refresh interval.
+    - cron: "35 */12 * * *"
   workflow_dispatch:
 
 jobs:

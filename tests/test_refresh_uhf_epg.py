@@ -13,6 +13,26 @@ spec.loader.exec_module(refresh)
 
 
 class RefreshUhfEpgTest(unittest.TestCase):
+    def test_country_filter_uses_shared_orange_fetcher_and_scales_canada_timeout(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            sources = root / "sources"
+            sources.mkdir()
+            for name, count in [("CA-tvpassport.com", 50), ("ES-movistarplus.es", 12),
+                                ("ES-orangetv.orange.es", 35), ("FR-test", 1)]:
+                (sources / f"custom-uhf-{name}.channels.xml").write_text(
+                    "<channels>" + '<channel xmltv_id="test"/>' * count + "</channels>")
+            with (patch.object(refresh, "EPG_DIR", root), patch.object(refresh, "SOURCES_DIR", sources),
+                  patch.object(refresh, "NORMALIZED_DIR", root / "normalized"), patch.object(refresh, "run") as run):
+                self.assertEqual(refresh.main(["--countries", "CA", "ES"]), 0)
+            grabs = [call for call in run.call_args_list if "timeout" in call.kwargs]
+            self.assertEqual(len(grabs), 3)
+            self.assertEqual(grabs[0].kwargs["timeout"], 900)
+            self.assertEqual(grabs[1].kwargs["timeout"], 900)
+            self.assertEqual(grabs[1].args[0][:2], ["python3", "scripts/grab_movistar_epg.py"])
+            self.assertEqual(grabs[2].kwargs["timeout"], 300)
+            self.assertEqual(grabs[2].args[0][:2], ["python3", "scripts/grab_orange_epg.py"])
+
     def test_timeout_kills_descendants_before_they_write(self):
         import sys
         import time
@@ -43,7 +63,7 @@ class RefreshUhfEpgTest(unittest.TestCase):
                     None, subprocess.TimeoutExpired("grab", 120),
                     subprocess.CalledProcessError(1, "grab"), None, None, None,
                 ]) as run:
-                    self.assertEqual(refresh.main(), 0)
+                    self.assertEqual(refresh.main([]), 0)
                 self.assertEqual(run.call_count, 6)
                 self.assertEqual([call.kwargs["timeout"] for call in run.call_args_list[1:4]], [120] * 3)
                 self.assertEqual([p.name for p in refresh.NORMALIZED_DIR.glob("*.xml")], ["guide-uhf-c.xml"])

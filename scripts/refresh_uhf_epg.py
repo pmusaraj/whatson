@@ -3,11 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import os
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 try:
     from refresh_epg import run
@@ -30,7 +32,10 @@ def guide_output_for_channels_file(channels_file: Path) -> Path:
     return NORMALIZED_DIR / f"guide-{stem.removeprefix('custom-')}.xml"
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--countries", nargs="+", help="Refresh only these country codes, e.g. CA ES")
+    args = parser.parse_args(argv)
     if not EPG_DIR.exists():
         raise SystemExit(f"Missing iptv-org EPG checkout: {EPG_DIR}")
     NORMALIZED_DIR.mkdir(parents=True, exist_ok=True)
@@ -38,6 +43,9 @@ def main() -> int:
     run(["python3", "scripts/build_uhf_grab_lists.py"])
 
     channels_files = sorted(SOURCES_DIR.glob("custom-uhf-*.channels.xml"))
+    if args.countries:
+        countries = {country.upper() for country in args.countries}
+        channels_files = [path for path in channels_files if path.name.split("-")[2] in countries]
     if not channels_files:
         raise SystemExit(f"No custom-uhf channel XML files found under {SOURCES_DIR}")
 
@@ -71,10 +79,31 @@ def main() -> int:
             "--timeout",
             "30000",
         ]
+        # Orange returns every channel in each 8-hour segment. Fetch each
+        # segment once instead of repeating nested requests for every channel.
+        timeout = GRAB_TIMEOUT_SECONDS
+        if channels_file.name.endswith("-orangetv.orange.es.channels.xml"):
+            command = [
+                "python3", "scripts/grab_orange_epg.py",
+                "--channels", str(channels_file), "--output", str(output_file),
+                "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
+            ]
+            timeout = 300
+        elif channels_file.name.endswith("-movistarplus.es.channels.xml"):
+            command = [
+                "python3", "scripts/grab_movistar_epg.py",
+                "--channels", str(channels_file), "--output", str(output_file),
+                "--start-date", start_date, "--days", str(DAYS_TO_GRAB),
+            ]
+            timeout = 900
+        elif channels_file.name.startswith("custom-uhf-CA-"):
+            # A source-wide two-minute limit can kill a healthy large batch
+            # before the grabber writes any of its results.
+            timeout = max(timeout, min(900, len(ET.parse(channels_file).getroot()) * DAYS_TO_GRAB * 10))
         try:
-            run(command, env=env, timeout=GRAB_TIMEOUT_SECONDS)
+            run(command, env=env, timeout=timeout)
         except subprocess.TimeoutExpired:
-            message = f"TIMEOUT after {GRAB_TIMEOUT_SECONDS}s: {channels_file.name}"
+            message = f"TIMEOUT after {timeout}s: {channels_file.name}"
             print(message, flush=True)
             failures.append(message)
             output_file.unlink(missing_ok=True)

@@ -68,13 +68,21 @@ The project also publishes a custom XMLTV-style guide export for approved UHF/Xt
 
 - XMLTV: https://heywhatson.tv/data/uhf/epg.xml
 - Gzipped XMLTV: https://heywhatson.tv/data/uhf/epg.xml.gz
+- Stable-ID XMLTV (recommended for new UHF configurations): https://heywhatson.tv/data/uhf/epg-stable.xml
+- Gzipped stable-ID XMLTV: https://heywhatson.tv/data/uhf/epg-stable.xml.gz
 - Channel mapping index: https://heywhatson.tv/data/uhf/channels.json
 - Build summary: https://heywhatson.tv/data/uhf/summary.json
 - Validation report: https://heywhatson.tv/data/uhf/validation.json
 - Preview data: https://heywhatson.tv/data/uhf/preview.json
 - Visual inspector: https://heywhatson.tv/uhf.html
 
-The export uses stable custom channel ids in the form `uhf:<uhf_pk>`, with display-name aliases copied from the UHF playlist row and the matched source guide channel. UHF source snapshots and exports are generated during each Cloudflare build and are not committed.
+The export includes display-name aliases copied from the UHF playlist row and the matched source guide channel. UHF source snapshots and exports are generated during each Cloudflare build and are not committed.
+
+The original export retains its historical `uhf:<uhf_pk>` IDs for compatibility. These IDs refer to the original playlist export; UHF's database row IDs can change after a playlist is reimported. The new `epg-stable.xml` uses source IDs such as `CA:TSN1.ca` and `ES:La1.es`, groups duplicate playlist variants into one schedule, and keeps their display-name aliases. The same stable feed is also generated at `/data/epg.xml` for older saved provider references. These new URLs become available after deploying this change.
+
+Orange Spain is fetched by `scripts/grab_orange_epg.py`: each of the three daily eight-hour segments contains all channels, so it downloads each segment once rather than repeatedly fetching it for every channel. Downloads retry transient failures and publish the snapshot only after all segments succeed. Canadian grab timeouts scale with the selected channel count.
+
+Prioritized Movistar feeds use `scripts/grab_movistar_epg.py`, which reads the official public daily schedules. Programme times are interpreted in `Europe/Madrid`, including midnight and daylight-saving transitions; the following listing supplies each end time. An extra day provides the final boundary. This avoids the unreliable legacy API and its optional per-programme detail requests. Legacy playlist labels such as Estrenos 2 and Series 2 remain unmapped until a current equivalent is verified.
 
 Configure the connected Worker's build command as:
 
@@ -82,7 +90,7 @@ Configure the connected Worker's build command as:
 bash scripts/build_cloudflare.sh
 ```
 
-The scheduled UHF workflow calls a Cloudflare deploy hook stored in the GitHub Actions secret `CLOUDFLARE_DEPLOY_HOOK_URL`.
+The scheduled UHF workflow runs every 12 hours and calls a Cloudflare deploy hook stored in the GitHub Actions secret `CLOUDFLARE_DEPLOY_HOOK_URL`. This keeps the yesterday/today/tomorrow guide window from expiring between refreshes.
 
 To generate and validate the export locally:
 
@@ -91,6 +99,28 @@ bash scripts/build_cloudflare.sh
 ```
 
 Warnings in `validation.json` are useful for debugging downstream guide clients. Structural errors fail the command and the UHF refresh workflow.
+
+### Test Canada and Spain in local UHF
+
+With the pinned grabber installed, refresh just these countries and serve the result:
+
+```bash
+python3 scripts/refresh_uhf_epg.py --countries CA ES
+python3 -m http.server 8765 --bind 127.0.0.1 --directory web
+```
+
+Set Estv's EPG URL to `http://127.0.0.1:8765/data/uhf/epg-stable.xml` and refresh its EPG in UHF. This address works only on the Mac running the server. Manually assigned channels must refer to the same provider and a channel ID present in the feed; a saved assignment to a removed provider overrides automatic name matching. A country-only refresh exports the available local snapshots, so use a full refresh to include other countries on a fresh checkout.
+
+For similarly named numbered feeds, explicitly assign the EPG channel in UHF. Local UI testing found that automatic matching could show a LaLiga overflow schedule on the main LaLiga row even though the parsed cache contained an exact name alias. TSN uses `CA:TSN1.ca` through `CA:TSN5.ca`; the main LaLiga feed uses `ES:LaLigaTVporMovistarPlusPlus.es`. The target IDs for the other rows are in `data/uhf-channel-mapping.csv`.
+
+To check the actual imported schedules without UI automation, use UHF's local database and its JSON cache under the app container's `Data/Library/Caches/CachedEPGs/` directory:
+
+```bash
+python3 scripts/audit_uhf_epg.py --database /path/to/Data/Documents/.uhf.sqlite \
+  --cache /path/to/Data/Library/Caches/CachedEPGs/cache-file --playlist Estv
+```
+
+The audit is read-only and reports matched rows, current programmes, and next-24-hour coverage for Canada and Spain. It does not print stream URLs or credentials. Missing or obsolete source channels are reported as unmatched rather than assigned fabricated schedules.
 
 ## Run locally
 
