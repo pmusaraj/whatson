@@ -2,13 +2,17 @@
   "schemaVersion": 1,
   "weekStart": "2026-09-14",
   "weekEnd": "2026-09-20",
-  "generatedAt": "2026-09-15T22:35:16.341387Z",
+  "generatedAt": "2026-09-15T23:01:21.871970Z",
   "catalogueHash": "58ea2f56fdfd50875fe53f77a7e482d9d9b4cbaf0d78873138f471f4cc0b04a5",
   "selection": {
-    "method": "researched-bootstrap",
-    "promptVersion": null,
-    "model": null,
-    "usage": {}
+    "method": "llm",
+    "model": "glm-5.3-flash",
+    "promptVersion": "series-weekly-v1",
+    "usage": {
+      "prompt_tokens": 2988,
+      "completion_tokens": 975,
+      "total_tokens": 3963
+    }
   },
   "countries": [
     {
@@ -52,6 +56,41 @@
           "rank": 1
         },
         {
+          "id": "fr-argent-sang",
+          "country": "FR",
+          "title": "D’argent et de sang",
+          "year": 2023,
+          "scope": "Miniseries",
+          "genre": "Financial thriller",
+          "originalLanguages": [
+            "fr"
+          ],
+          "summary": "A carbon-tax fraud becomes a sprawling drama of money and obsession. The French critics’ awards provide a reason to revisit this ambitious miniseries.",
+          "productionCountries": [
+            "FR"
+          ],
+          "originVerified": true,
+          "originNote": "French production by Curiosa Films; the Venice programme records France as its country.",
+          "checkedAt": "2026-09-15",
+          "sources": [
+            {
+              "publisher": "Le Parisien",
+              "country": "FR",
+              "role": "review",
+              "label": "Critics’ awards",
+              "url": "https://www.leparisien.fr/culture-loisirs/series/sambre-dargent-et-de-sang-samuel-voici-les-meilleures-series-francaises-selon-les-critiques-27-11-2024-U3DO6CX57RDX7GQUILW6NDIHVQ.php"
+            },
+            {
+              "publisher": "La Biennale di Venezia",
+              "country": "IT",
+              "role": "origin",
+              "label": "Production notes",
+              "url": "https://www.labiennale.org/en/cinema/2023/out-competition/d%E2%80%99argent-et-de-sang-money-and-blood-episodes-1-12"
+            }
+          ],
+          "rank": 2
+        },
+        {
           "id": "fr-bureau",
           "country": "FR",
           "title": "Le Bureau des légendes",
@@ -84,7 +123,43 @@
               "url": "https://federationstudios.com/wp-content/uploads/2025/10/FEDERATION_LINEUP_-DRAMACATALOGUE_1025_DEF_WEB.pdf"
             }
           ],
-          "rank": 2
+          "rank": 3
+        },
+        {
+          "id": "fr-samuel",
+          "country": "FR",
+          "title": "Samuel",
+          "year": 2024,
+          "scope": "Short-form series",
+          "genre": "Animation",
+          "originalLanguages": [
+            "fr"
+          ],
+          "summary": "Childhood crushes and small embarrassments become an intimate animated diary. French critics recognised this short-form series alongside major live-action productions.",
+          "productionCountries": [
+            "FR",
+            "ES"
+          ],
+          "originVerified": true,
+          "originNote": "French–Spanish animated original by Émilie Tronche, with Les Valseurs, ARTE France and Spanish partners.",
+          "checkedAt": "2026-09-15",
+          "sources": [
+            {
+              "publisher": "Le Parisien",
+              "country": "FR",
+              "role": "review",
+              "label": "Critics’ awards",
+              "url": "https://www.leparisien.fr/culture-loisirs/series/sambre-dargent-et-de-sang-samuel-voici-les-meilleures-series-francaises-selon-les-critiques-27-11-2024-U3DO6CX57RDX7GQUILW6NDIHVQ.php"
+            },
+            {
+              "publisher": "ARTE",
+              "country": "FR",
+              "role": "origin",
+              "label": "Production notes",
+              "url": "https://www.arte.tv/digitalproductions/samuel/"
+            }
+          ],
+          "rank": 4
         },
         {
           "id": "fr-dix-pour-cent",
@@ -117,76 +192,6 @@
               "role": "origin",
               "label": "Production notes",
               "url": "https://www.monvoisinproductions.com/fr/nos-productions/series/dix-pour-cent-saison-1"
-            }
-          ],
-          "rank": 3
-        },
-        {
-          "id": "fr-engrenages",
-          "country": "FR",
-          "title": "Engrenages",
-          "year": 2005,
-          "scope": "Season 7 · Earlier seasons first",
-          "genre": "Crime drama",
-          "originalLanguages": [
-            "fr"
-          ],
-          "summary": "Police work, legal manoeuvring and compromised loyalties collide in Paris. CinéSérie finds the long-running drama still has plenty to offer in its seventh season.",
-          "productionCountries": [
-            "FR"
-          ],
-          "originVerified": true,
-          "originNote": "French original created and produced by Son et Lumière for Canal+.",
-          "checkedAt": "2026-09-15",
-          "sources": [
-            {
-              "publisher": "CinéSérie",
-              "country": "FR",
-              "role": "review",
-              "label": "Read the review",
-              "url": "https://www.cineserie.com/critiques/series-tv/engrenages-lheure-nest-pas-du-tout-au-bilan-2312167/"
-            },
-            {
-              "publisher": "Son et Lumière",
-              "country": "FR",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://www.sonetlumiere.fr/"
-            }
-          ],
-          "rank": 4
-        },
-        {
-          "id": "fr-argent-sang",
-          "country": "FR",
-          "title": "D’argent et de sang",
-          "year": 2023,
-          "scope": "Miniseries",
-          "genre": "Financial thriller",
-          "originalLanguages": [
-            "fr"
-          ],
-          "summary": "A carbon-tax fraud becomes a sprawling drama of money and obsession. The French critics’ awards provide a reason to revisit this ambitious miniseries.",
-          "productionCountries": [
-            "FR"
-          ],
-          "originVerified": true,
-          "originNote": "French production by Curiosa Films; the Venice programme records France as its country.",
-          "checkedAt": "2026-09-15",
-          "sources": [
-            {
-              "publisher": "Le Parisien",
-              "country": "FR",
-              "role": "review",
-              "label": "Critics’ awards",
-              "url": "https://www.leparisien.fr/culture-loisirs/series/sambre-dargent-et-de-sang-samuel-voici-les-meilleures-series-francaises-selon-les-critiques-27-11-2024-U3DO6CX57RDX7GQUILW6NDIHVQ.php"
-            },
-            {
-              "publisher": "La Biennale di Venezia",
-              "country": "IT",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://www.labiennale.org/en/cinema/2023/out-competition/d%E2%80%99argent-et-de-sang-money-and-blood-episodes-1-12"
             }
           ],
           "rank": 5
@@ -234,41 +239,6 @@
           "rank": 1
         },
         {
-          "id": "it-strappare",
-          "country": "IT",
-          "title": "Strappare lungo i bordi",
-          "year": 2021,
-          "scope": "Limited animated series",
-          "genre": "Animation · Comedy-drama",
-          "originalLanguages": [
-            "it"
-          ],
-          "summary": "Zerocalcare’s rapid-fire interior monologue turns a journey with friends into a story of uncertainty and regret. Movieplayer warmly endorses its writing.",
-          "productionCountries": [
-            "IT"
-          ],
-          "originVerified": true,
-          "originNote": "Italian production by Movimenti with BAO; its technical director describes the independent production and Netflix’s publishing role.",
-          "checkedAt": "2026-09-15",
-          "sources": [
-            {
-              "publisher": "Movieplayer",
-              "country": "IT",
-              "role": "review",
-              "label": "Read the review",
-              "url": "https://movieplayer.it/articoli/strappare-lungo-i-bordi-recensione_25857/"
-            },
-            {
-              "publisher": "Movieplayer · Producer interview",
-              "country": "IT",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://movieplayer.it/articoli/strappare-lungo-i-bordi-intervista-giorgio-scorza_25922/"
-            }
-          ],
-          "rank": 2
-        },
-        {
           "id": "it-gomorra-origini",
           "country": "IT",
           "title": "Gomorra – Le origini",
@@ -300,6 +270,41 @@
               "role": "origin",
               "label": "Production notes",
               "url": "https://www.cattleya.it/gomorra-le-origini/"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "id": "it-due-spicci",
+          "country": "IT",
+          "title": "Due spicci",
+          "year": 2026,
+          "scope": "Season 1",
+          "genre": "Animation · Comedy-drama",
+          "originalLanguages": [
+            "it"
+          ],
+          "summary": "Zerocalcare returns with a more disillusioned look at work and adulthood. Movieplayer finds a more mature perspective in this third animated series.",
+          "productionCountries": [
+            "IT"
+          ],
+          "originVerified": true,
+          "originNote": "Italian original by Zerocalcare; MYmovies records Italy as production country and 2026 as release year.",
+          "checkedAt": "2026-09-15",
+          "sources": [
+            {
+              "publisher": "Movieplayer",
+              "country": "IT",
+              "role": "review",
+              "label": "Read the review",
+              "url": "https://movieplayer.it/articoli/due-spicci-recensione-zerocalcare-serie-animata-netflix_37531/"
+            },
+            {
+              "publisher": "MYmovies",
+              "country": "IT",
+              "role": "origin",
+              "label": "Production notes",
+              "url": "https://www.mymovies.it/film/2026/due-spicci/"
             }
           ],
           "rank": 3
@@ -418,41 +423,6 @@
           "rank": 1
         },
         {
-          "id": "es-poquita-fe",
-          "country": "ES",
-          "title": "Poquita fe",
-          "year": 2023,
-          "scope": "Season 1",
-          "genre": "Comedy",
-          "originalLanguages": [
-            "es"
-          ],
-          "summary": "Tiny frustrations become the entire world for an unassuming couple. Vertele recommends this absurd, recognisable comedy of ordinary life.",
-          "productionCountries": [
-            "ES"
-          ],
-          "originVerified": true,
-          "originNote": "Spanish Movistar Plus+ original produced by Buendía Estudios.",
-          "checkedAt": "2026-09-15",
-          "sources": [
-            {
-              "publisher": "Vertele",
-              "country": "ES",
-              "role": "review",
-              "label": "Read the review",
-              "url": "https://www.eldiario.es/vertele/criticas/poquita-fe-movistar-plus-serie-absurda-reflejar-absurdo-vidas-que-vida-mas-triste-raul-cimas-esperanza-pedreno-montero-maidagan_1_10347013.html"
-            },
-            {
-              "publisher": "Buendía Estudios",
-              "country": "ES",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://buendiaestudios.com/producciones/series/poquita-fe/"
-            }
-          ],
-          "rank": 2
-        },
-        {
           "id": "es-antidisturbios",
           "country": "ES",
           "title": "Antidisturbios",
@@ -485,7 +455,7 @@
               "url": "https://caballofilms.com/producciones/antidisturbios/"
             }
           ],
-          "rank": 3
+          "rank": 2
         },
         {
           "id": "es-rapa",
@@ -520,40 +490,74 @@
               "url": "https://www.portocabo.com/rapa"
             }
           ],
-          "rank": 4
+          "rank": 3
         },
         {
-          "id": "es-hierro",
+          "id": "es-la-unidad",
           "country": "ES",
-          "title": "Hierro",
-          "year": 2019,
+          "title": "La Unidad",
+          "year": 2020,
           "scope": "Season 1",
-          "genre": "Island mystery",
+          "genre": "Thriller",
           "originalLanguages": [
             "es"
           ],
-          "summary": "A judge investigates a killing on El Hierro. Espinof finds the island’s landscape and enclosed community give the familiar mystery a distinctive atmosphere.",
+          "summary": "An anti-terrorism team balances an urgent investigation with fragile personal lives. Contraste praises the research, setting and attention to the people behind the operation.",
           "productionCountries": [
-            "ES",
-            "FR"
+            "ES"
           ],
           "originVerified": true,
-          "originNote": "Spanish–French co-production: Portocabo, Movistar+, Atlantique Productions and ARTE France.",
+          "originNote": "Spanish original produced by Movistar Plus+ and Vaca Films; Filmaffinity records the production and Spanish origin.",
           "checkedAt": "2026-09-15",
           "sources": [
             {
-              "publisher": "Espinof",
+              "publisher": "Contraste",
               "country": "ES",
               "role": "review",
               "label": "Read the review",
-              "url": "https://www.espinof.com/criticas/hierro-solvente-thriller-movistar-que-sabe-sacar-partido-al-entorno-canario/amp"
+              "url": "https://contraste.info/tv/critica-la-unidad/"
             },
             {
-              "publisher": "Portocabo",
+              "publisher": "Filmaffinity",
               "country": "ES",
               "role": "origin",
               "label": "Production notes",
-              "url": "https://www.portocabo.com/hierro"
+              "url": "https://www.filmaffinity.com/es/film350716.html"
+            }
+          ],
+          "rank": 4
+        },
+        {
+          "id": "es-poquita-fe",
+          "country": "ES",
+          "title": "Poquita fe",
+          "year": 2023,
+          "scope": "Season 1",
+          "genre": "Comedy",
+          "originalLanguages": [
+            "es"
+          ],
+          "summary": "Tiny frustrations become the entire world for an unassuming couple. Vertele recommends this absurd, recognisable comedy of ordinary life.",
+          "productionCountries": [
+            "ES"
+          ],
+          "originVerified": true,
+          "originNote": "Spanish Movistar Plus+ original produced by Buendía Estudios.",
+          "checkedAt": "2026-09-15",
+          "sources": [
+            {
+              "publisher": "Vertele",
+              "country": "ES",
+              "role": "review",
+              "label": "Read the review",
+              "url": "https://www.eldiario.es/vertele/criticas/poquita-fe-movistar-plus-serie-absurda-reflejar-absurdo-vidas-que-vida-mas-triste-raul-cimas-esperanza-pedreno-montero-maidagan_1_10347013.html"
+            },
+            {
+              "publisher": "Buendía Estudios",
+              "country": "ES",
+              "role": "origin",
+              "label": "Production notes",
+              "url": "https://buendiaestudios.com/producciones/series/poquita-fe/"
             }
           ],
           "rank": 5
@@ -600,21 +604,21 @@
           "rank": 1
         },
         {
-          "id": "uk-detectorists",
+          "id": "uk-sherwood",
           "country": "UK",
-          "title": "Detectorists",
-          "year": 2014,
+          "title": "Sherwood",
+          "year": 2022,
           "scope": "Season 1",
-          "genre": "Comedy",
+          "genre": "Crime drama",
           "originalLanguages": [
             "en"
           ],
-          "summary": "A gentle comedy with real bite, following two friends and their metal detectors. Recommended by The Guardian.",
+          "summary": "A murder investigation reopens a mining community’s old divisions. The Guardian praises James Graham’s writing and the ensemble.",
           "productionCountries": [
             "UK"
           ],
           "originVerified": true,
-          "originNote": "British comedy from Channel X for BBC Four, created by Mackenzie Crook.",
+          "originNote": "British original from House Productions for BBC One.",
           "checkedAt": "2026-09-15",
           "sources": [
             {
@@ -622,14 +626,14 @@
               "country": "UK",
               "role": "review",
               "label": "Read the review",
-              "url": "https://www.theguardian.com/tv-and-radio/2014/dec/04/detectorists-toby-jones-mackenzie-crook-box-set-review"
+              "url": "https://www.theguardian.com/tv-and-radio/2022/jun/13/sherwood-review-the-cleverest-most-compelling-show-ive-seen-in-years"
             },
             {
-              "publisher": "Channel X",
+              "publisher": "House Productions",
               "country": "UK",
               "role": "origin",
               "label": "Production notes",
-              "url": "https://channelx.co.uk/shows/detectorists/"
+              "url": "https://www.houseproductions.com/sherwood"
             }
           ],
           "rank": 2
@@ -670,21 +674,21 @@
           "rank": 3
         },
         {
-          "id": "uk-sherwood",
+          "id": "uk-detectorists",
           "country": "UK",
-          "title": "Sherwood",
-          "year": 2022,
+          "title": "Detectorists",
+          "year": 2014,
           "scope": "Season 1",
-          "genre": "Crime drama",
+          "genre": "Comedy",
           "originalLanguages": [
             "en"
           ],
-          "summary": "A murder investigation reopens a mining community’s old divisions. The Guardian praises James Graham’s writing and the ensemble.",
+          "summary": "A gentle comedy with real bite, following two friends and their metal detectors. Recommended by The Guardian.",
           "productionCountries": [
             "UK"
           ],
           "originVerified": true,
-          "originNote": "British original from House Productions for BBC One.",
+          "originNote": "British comedy from Channel X for BBC Four, created by Mackenzie Crook.",
           "checkedAt": "2026-09-15",
           "sources": [
             {
@@ -692,14 +696,14 @@
               "country": "UK",
               "role": "review",
               "label": "Read the review",
-              "url": "https://www.theguardian.com/tv-and-radio/2022/jun/13/sherwood-review-the-cleverest-most-compelling-show-ive-seen-in-years"
+              "url": "https://www.theguardian.com/tv-and-radio/2014/dec/04/detectorists-toby-jones-mackenzie-crook-box-set-review"
             },
             {
-              "publisher": "House Productions",
+              "publisher": "Channel X",
               "country": "UK",
               "role": "origin",
               "label": "Production notes",
-              "url": "https://www.houseproductions.com/sherwood"
+              "url": "https://channelx.co.uk/shows/detectorists/"
             }
           ],
           "rank": 4
@@ -781,41 +785,6 @@
           "rank": 1
         },
         {
-          "id": "ca-acting-good",
-          "country": "CA",
-          "title": "Acting Good",
-          "year": 2022,
-          "scope": "Season 1 · Opening episode reviewed",
-          "genre": "Comedy",
-          "originalLanguages": [
-            "en"
-          ],
-          "summary": "A return home to a remote First Nation brings family friction and sharp jokes. TV, eh?’s first-episode assessment praises the writing and warmth.",
-          "productionCountries": [
-            "CA"
-          ],
-          "originVerified": true,
-          "originNote": "Canadian original by Kistikan Pictures with CTV, APTN and Canadian funding; primarily English, with Indigenous language elements.",
-          "checkedAt": "2026-09-15",
-          "sources": [
-            {
-              "publisher": "TV, eh?",
-              "country": "CA",
-              "role": "review",
-              "label": "Read the review",
-              "url": "https://www.tv-eh.com/2022/10/15/preview-paul-rabliauskas-shines-in-ctv-comedy-channels-raucous-acting-good/"
-            },
-            {
-              "publisher": "TV, eh? · Production information",
-              "country": "CA",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://www.tv-eh.com/tag/acting-good/"
-            }
-          ],
-          "rank": 2
-        },
-        {
           "id": "ca-serie-noire",
           "country": "CA",
           "title": "Série noire",
@@ -846,6 +815,41 @@
               "role": "origin",
               "label": "Production notes",
               "url": "https://productionscasablanca.com/productions.php"
+            }
+          ],
+          "rank": 2
+        },
+        {
+          "id": "ca-bete-noire",
+          "country": "CA",
+          "title": "Bête noire",
+          "year": 2021,
+          "scope": "Season 1",
+          "genre": "Psychological drama",
+          "originalLanguages": [
+            "fr"
+          ],
+          "summary": "A family faces the aftermath of a teenager’s horrific act. Le Journal de Montréal praises the humanity of Sophie Deraspe’s direction.",
+          "productionCountries": [
+            "CA"
+          ],
+          "originVerified": true,
+          "originNote": "Canadian French-language original produced by Encore Télévision for Séries Plus; this entry covers the first story.",
+          "checkedAt": "2026-09-15",
+          "sources": [
+            {
+              "publisher": "Le Journal de Montréal",
+              "country": "CA",
+              "role": "review",
+              "label": "Read the review",
+              "url": "https://www.journaldemontreal.com/2021/03/23/bouleversant-cauchemar"
+            },
+            {
+              "publisher": "Corus Entertainment",
+              "country": "CA",
+              "role": "origin",
+              "label": "Production notes",
+              "url": "https://www.corusent.com/news/bete-noire-des-le-31-mars-a-series-plus/"
             }
           ],
           "rank": 3
@@ -886,36 +890,36 @@
           "rank": 4
         },
         {
-          "id": "ca-beaux-malaises",
+          "id": "ca-acting-good",
           "country": "CA",
-          "title": "Les beaux malaises 2.0",
-          "year": 2021,
-          "scope": "2021 revival",
+          "title": "Acting Good",
+          "year": 2022,
+          "scope": "Season 1 · Opening episode reviewed",
           "genre": "Comedy",
           "originalLanguages": [
-            "fr"
+            "en"
           ],
-          "summary": "Martin Matte returns to uncomfortable everyday encounters and family upheaval. Le Journal de Québec finds the revival’s comic formula working well.",
+          "summary": "A return home to a remote First Nation brings family friction and sharp jokes. TV, eh?’s first-episode assessment praises the writing and warmth.",
           "productionCountries": [
             "CA"
           ],
           "originVerified": true,
-          "originNote": "Canadian French-language original from Martin Matte and François Avard for TVA; not the French remake with Franck Dubosc.",
+          "originNote": "Canadian original by Kistikan Pictures with CTV, APTN and Canadian funding; primarily English, with Indigenous language elements.",
           "checkedAt": "2026-09-15",
           "sources": [
             {
-              "publisher": "Le Journal de Québec",
+              "publisher": "TV, eh?",
               "country": "CA",
               "role": "review",
               "label": "Read the review",
-              "url": "https://www.journaldequebec.com/2021/01/25/retour-reussi-pour-les-beaux-malaises"
+              "url": "https://www.tv-eh.com/2022/10/15/preview-paul-rabliauskas-shines-in-ctv-comedy-channels-raucous-acting-good/"
             },
             {
-              "publisher": "Groupe TVA",
+              "publisher": "TV, eh? · Production information",
               "country": "CA",
               "role": "origin",
               "label": "Production notes",
-              "url": "https://www.groupetva.ca/presse/communiques/martin-matte-retour-cet-hiver-dans-beaux-malaises-20"
+              "url": "https://www.tv-eh.com/tag/acting-good/"
             }
           ],
           "rank": 5
