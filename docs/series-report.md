@@ -40,6 +40,10 @@ particular streaming provider. It is independent of the short EPG window.
   report tests, generates, uploads an artifact and commits only series outputs.
   A normal repeated run in the same week makes no model request. Use the `force`
   dispatch input to re-rank after editing the catalogue.
+  After a changed report is pushed, the workflow calls the existing
+  `CLOUDFLARE_DEPLOY_HOOK_URL` secret: bot pushes do not trigger Workers Builds
+  automatically in this setup. A failed hook is a failed workflow, with the
+  generated report still committed for a deploy retry.
 - `scripts/build_cloudflare.sh`: renders the committed edition without calling
   the API. The initial report is checked in, so the page works before the first
   scheduled run.

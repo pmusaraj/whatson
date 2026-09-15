@@ -55,14 +55,26 @@ jobs:
           retention-days: 14
 
       - name: Commit weekly report
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/data/series.json web/series/index.html data/series/reports
           if git diff --cached --quiet; then
             echo "No weekly series changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: refresh weekly series report"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Deploy updated report
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
+        run: |
+          test -n "$DEPLOY_HOOK_URL"
+          response=$(curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL")
+          python3 -c 'import json,sys; r=json.load(sys.stdin)["result"]; print({k:r.get(k) for k in ("build_uuid", "worker", "status", "already_exists")})' <<< "$response"
