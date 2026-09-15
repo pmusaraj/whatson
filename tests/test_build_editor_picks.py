@@ -465,6 +465,24 @@ class BuildEditorPicksTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "reused broadcasts"):
                 build_editor_picks.expand_with_opencode_go(seeds, "key", path, now, opener=reuse_broadcast)
 
+    def test_http_403_skips_picks_but_other_http_errors_still_fail(self):
+        from email.message import Message
+        from urllib.error import HTTPError
+
+        for stage in ("select_with_opencode_go", "expand_with_opencode_go"):
+            for code in (403, 401, 500):
+                with self.subTest(stage=stage, code=code), \
+                     patch.dict("os.environ", {"OPENCODE_GO_API_KEY": "test-key"}), \
+                     patch.object(build_editor_picks, "collect_candidates", return_value=[{}]), \
+                     patch.object(build_editor_picks, "select_with_opencode_go", return_value=[{}]), \
+                     patch.object(build_editor_picks, stage, side_effect=HTTPError("https://example.com", code, "Denied", Message(), None)), \
+                     patch.object(build_editor_picks, "write_output") as write, \
+                     patch("sys.stderr", new_callable=io.StringIO) as stderr:
+                    self.assertEqual(build_editor_picks.main(), 0 if code == 403 else 1)
+                    write.assert_not_called()
+                    self.assertIn("previous output preserved", stderr.getvalue())
+                    self.assertIn("warning:" if code == 403 else "error:", stderr.getvalue())
+
     def test_output_replacement_is_atomic_on_failure(self):
         with tempfile.TemporaryDirectory() as tmp:
             output = Path(tmp) / "editors-picks.json"

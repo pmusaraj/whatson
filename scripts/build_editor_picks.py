@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import tempfile
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -453,6 +454,9 @@ def main():
         picks = expand_with_opencode_go(picks, api_key, now=now)
         write_output(picks, now=now)
     except Exception as error:
+        if isinstance(error, urllib.error.HTTPError) and error.code == 403:
+            print(f"warning: skipping editor picks; previous output preserved: {error}", file=sys.stderr)
+            return 0
         print(f"error: editor picks unavailable; previous output preserved: {error}", file=sys.stderr)
         return 1
     print(f"Wrote {len(picks)} editor picks to {OUTPUT_PATH.relative_to(ROOT)}")
