@@ -15,6 +15,9 @@ spec.loader.exec_module(build_editor_picks)
 
 class BuildEditorPicksTest(unittest.TestCase):
     def setUp(self):
+        calendar = patch.object(build_editor_picks, "fetch_f1_sessions", return_value=[])
+        calendar.start()
+        self.addCleanup(calendar.stop)
         self.now = datetime(2026, 9, 4, 12, tzinfo=timezone.utc)
 
     def test_candidates_are_global_deduplicated_and_exclude_non_events(self):
