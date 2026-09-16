@@ -3,7 +3,7 @@
 ## Scope
 
 `/series` redirects to the static `/series/` page. The report is fully readable
-without JavaScript, contains five ranked series per country, and links each pick
+without JavaScript, contains up to five ranked series per country, and links each pick
 to editorial coverage and production information. France, Italy, Spain, the UK,
 and Canada are **production-country sections**, not the critics' locations.
 Canada is limited to Canadian originals with English or French as an original
@@ -13,16 +13,24 @@ The page is unlisted, not private. It has no incoming link from the guide UI;
 the HTML robots meta tag and Cloudflare `_headers` request `noindex, nofollow`.
 Do not put confidential material in the page, JSON or CI artifacts.
 
-The first edition contains researched recommendations and explicitly scoped
-season reviews. Older series are intentional rediscoveries. The report does not
-claim that a title is premiering, airing this week, or currently available from a
-particular streaming provider. It is independent of the short EPG window.
+Only series first released in the current calendar year qualify (2026 for the
+September 2026 edition). A new season or rerun does not make a pre-2026 series
+eligible. Season numbers must be verified: seasons 6 and above are excluded,
+and seasons 1–2 are selected and ranked before seasons 3–5. All picks must be
+produced in their country section; imported shows cannot fill empty slots.
+Countries with fewer than five eligible candidates show fewer picks, and empty
+countries show an empty state. Rendering suppresses prior-year picks at rollover.
+
+Cards include the broadcaster/platform or production company, plus source-linked
+airing information where verified. Past broadcast runs are explicitly labelled;
+streaming release dates do not imply a recurring linear-TV slot. Times use the
+broadcaster's local country time. The compact heading has no introductory copy.
 
 ## Data and generation
 
 - `data/series/catalogue.json`: reviewed titles, original languages, production
   countries, origin notes, review scope, original short copy and source links.
-  The initial catalogue has 30 candidates, six per country. It is intentionally small; expand it
+  The revised catalogue has six verified 2026 candidates across the five countries. It is intentionally small; expand it
   through research rather than asking a model to invent new recommendations.
 - `scripts/build_series_report.py`: validates the catalogue, calls the same
   OpenCode Go endpoint/model order as sports picks, accepts only ranked catalogue
@@ -48,9 +56,9 @@ particular streaming provider. It is independent of the short EPG window.
   the API. The initial report is checked in, so the page works before the first
   scheduled run.
 
-The initial edition has `selection.method = researched-bootstrap`. Subsequent
+The revised September 2026 edition has `selection.method = researched-update`. Subsequent
 successful LLM runs use `llm` and record the actual model. Missing credentials,
-authentication errors, invalid model output or insufficient country coverage fail
+authentication errors or invalid model output fail
 the command without replacing the previous report. Availability errors use the
 configured model fallback. There are at most nine requests (three network-error
 attempts per configured model), each with a 120-second timeout; output is bounded
@@ -58,7 +66,9 @@ to 2,000 tokens and 64 KiB. CI has a 20-minute timeout.
 
 ## Add or update a candidate
 
-1. Confirm the original series identity, release year and season being reviewed.
+1. Confirm the original series identity, first television/streaming release year
+   (`year`) and numeric `season` being reviewed. Only the current year and seasons
+   1–5 qualify. Festival previews do not set the television release year.
    Distinguish remakes and similarly named series. Use one catalogue ID per series,
    even if several reviews discuss it. Use `scope` to narrow an endorsement to the
    season/episodes actually covered, rather than extending it to all seasons.
@@ -80,7 +90,10 @@ to 2,000 tokens and 64 KiB. CI has a 20-minute timeout.
    source-check dates when generating a new weekly edition.
 6. Include original-language codes (English `en`, French `fr`, etc.). For Canadian
    picks, at least English or French must be an original language.
-7. Run `python3 -m unittest discover -s tests -p 'test_build_series_report.py' -v`.
+7. Add `broadcaster` and/or `productionCompany`. When verified, add `airing`
+   with local day/time and dated run or streaming release, plus an HTTPS
+   `airingSource`. Never imply a past run is airing this week.
+8. Run `python3 -m unittest discover -s tests -p 'test_build_series_report.py' -v`.
    Then regenerate with `--force` locally with the key, or dispatch the workflow
    after publishing the catalogue change.
 
@@ -107,5 +120,5 @@ and [static asset headers](https://developers.cloudflare.com/workers/static-asse
 Tests exercise country/origin/language restrictions, missing evidence, invented
 or repeated model IDs, date boundaries, HTML escaping, unsafe links, preserved
 outputs on failure, weekly idempotence, archives, network fallback and rendering
-without the model. Browser checks cover desktop/mobile overflow, all 25 picks and
-50 links, country anchors and the page with JavaScript disabled.
+without the model. Browser checks cover desktop/mobile overflow, the rendered picks and
+source links, country anchors and the page with JavaScript disabled.

@@ -150,7 +150,7 @@ This reads `data/normalized/*.xml` and rewrites `web/data/*.json`.
 
 ### Weekly series report
 
-The unlisted `/series` page contains five domestic series each from France, Italy,
+The unlisted `/series` page contains up to five current-year domestic series each from France, Italy,
 Spain, the UK and Canada, with editorial and production-source links. Canadian
 picks are originals in English or French. US productions/co-productions and
 unverified origins are excluded. The page has no navigation link and requests
@@ -158,10 +158,13 @@ unverified origins are excluded. The page has no navigation link and requests
 
 The **Weekly series report** workflow runs Mondays at 08:25 UTC using the existing
 `OPENCODE_GO_API_KEY` secret. It ranks the reviewed catalogue with OpenCode Go,
-validates all 25 IDs, and commits the report and its dated archive. It preserves
+validates all selected IDs, and commits the report and its dated archive. It preserves
 the previous edition if generation fails. The initial edition was researched and
-seeded without an LLM request. These are weekly watchlists, including older shows,
-not weekly premiere or streaming-availability claims.
+seeded without an LLM request. Only series first released in the current calendar year qualify; season 6 and
+above is excluded, and seasons 1–2 take precedence over seasons 3–5. Cards show
+broadcaster/platform, production company and sourced airing details. Original
+broadcast runs are labelled separately from streaming release dates. Countries
+with fewer eligible candidates show fewer picks, without older backfill.
 
 ```bash
 python3 scripts/build_series_report.py              # Generate once per UTC week
