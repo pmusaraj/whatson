@@ -30,7 +30,7 @@ broadcaster's local country time. The compact heading has no introductory copy.
 
 - `data/series/catalogue.json`: reviewed titles, original languages, production
   countries, origin notes, review scope, original short copy and source links.
-  The revised catalogue has six verified 2026 candidates across the five countries. It is intentionally small; expand it
+  The published catalogue contains the four approved picks from the expanded-source discovery pass: three recent broadcasts and one older fallback. Streaming-only, pending and unfavorable candidates are omitted. It is intentionally small; expand it
   through research rather than asking a model to invent new recommendations.
 - `scripts/build_series_report.py`: validates the catalogue, calls the same
   OpenCode Go endpoint/model order as sports picks, accepts only ranked catalogue
@@ -56,7 +56,7 @@ broadcaster's local country time. The compact heading has no introductory copy.
   the API. The initial report is checked in, so the page works before the first
   scheduled run.
 
-The revised September 2026 edition has `selection.method = researched-update`. Subsequent
+The revised September 2026 edition has `selection.method = reviewed-discovery`. Subsequent
 successful LLM runs use `llm` and record the actual model. Missing credentials,
 authentication errors or invalid model output fail
 the command without replacing the previous report. Availability errors use the
@@ -99,8 +99,8 @@ to 2,000 tokens and 64 KiB. CI has a 20-minute timeout.
 
 The initial British review summaries are particularly short; links point to the
 original articles. No automated Guardian API or Télérama RSS ingestion is enabled.
-Source discovery/extraction remains a separate future integration subject to the
-access findings in the [research proposal](plans/2026-09-15-series-editor-picks-research.md).
+A local discovery prototype now collects approved-source links and evaluates
+reviewed candidates; see [discovery v1](series-discovery.md). It is not wired into CI.
 Weekly CI currently refreshes selections from the reviewed catalogue; **new titles
 and fresh reviews require a catalogue update**. It does not claim to crawl the
 latest reviews or compute a comprehensive critics' consensus.

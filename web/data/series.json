@@ -2,13 +2,15 @@
   "schemaVersion": 1,
   "weekStart": "2026-09-14",
   "weekEnd": "2026-09-20",
-  "generatedAt": "2026-09-16T22:40:55.826228Z",
-  "catalogueHash": "4c0f605258c9432860709f4cd2538d0d9c5e7e27c11870982722a30d5bdfd375",
+  "generatedAt": "2026-09-17T03:31:28.241652Z",
+  "catalogueHash": "5653b8c27196c58236bf806b616448f540a15619d26a74d3ffa4cb1d9db115a1",
   "selection": {
-    "method": "researched-update",
+    "method": "reviewed-discovery",
     "promptVersion": "series-weekly-v2",
     "model": null,
-    "usage": {}
+    "usage": {},
+    "sourcesReviewed": 47,
+    "researchAsOf": "2026-09-16"
   },
   "countries": [
     {
@@ -21,9 +23,9 @@
           "title": "L’Affaire Laura Stern",
           "year": 2026,
           "season": 1,
-          "scope": "Miniseries · Season 1",
+          "scope": "Season 1",
           "genre": "Social thriller",
-          "summary": "A pharmacist helping women escape abuse turns to violence herself. Valérie Bonneton anchors a provocative drama about justice and its failures.",
+          "summary": "Télérama highlights Bonneton’s performance and the drama’s provocative approach.",
           "productionCountries": [
             "FR"
           ],
@@ -31,26 +33,26 @@
             "fr"
           ],
           "originVerified": true,
-          "originNote": "FR original produced by Tetra Media Fiction / Torcello Productions.",
+          "originNote": "Domestic production by Tetra Media Fiction / Torcello Productions; reviewed broadcaster evidence in discovery dataset.",
           "checkedAt": "2026-09-16",
           "productionCompany": "Tetra Media Fiction / Torcello Productions",
-          "broadcaster": "France 2 / france.tv",
-          "airing": "Original broadcast: Wednesdays 11 and 18 March 2026, 21:10 (France).",
-          "airingSource": "https://ftvpro.francetv.fr/contenu-de-presse/75774062",
+          "broadcaster": "France 2",
+          "airing": "Original run: Wednesdays 11 and 18 March, 21:10 (France). Verified broadcast: 2026-03-18.",
+          "airingSource": "https://www.francetelevisions.fr/et-vous/notre-tele/les-programmes-a-ne-pas-rater/laffaire-laura-stern-51815",
           "sources": [
             {
               "url": "https://www.telerama.fr/series-tv/l-affaire-laura-stern-valerie-bonneton-surprenante-justiciere-en-colere-dans-une-serie-osee-5926_cri-7042466.php",
               "publisher": "Télérama",
-              "label": "Review",
               "country": "FR",
-              "role": "review"
+              "role": "review",
+              "label": "Review"
             },
             {
               "url": "https://www.francetelevisions.fr/et-vous/notre-tele/les-programmes-a-ne-pas-rater/laffaire-laura-stern-51815",
-              "publisher": "Tetra Media Fiction / Torcello Productions",
-              "label": "Production and release information",
+              "publisher": "France TV Pro",
               "country": "FR",
-              "role": "origin"
+              "role": "origin",
+              "label": "Production information"
             }
           ],
           "rank": 1
@@ -62,180 +64,56 @@
       "name": "Italy",
       "picks": [
         {
-          "id": "it-gomorra-origini",
+          "id": "it-erica",
           "country": "IT",
-          "title": "Gomorra – Le origini",
+          "title": "Erica – Una detective per caso",
           "year": 2026,
+          "season": 1,
           "scope": "Season 1",
-          "genre": "Crime drama",
-          "originalLanguages": [
-            "it",
-            "nap"
-          ],
-          "summary": "A return to 1970s Naples with younger characters and a different rhythm from Gomorra. Movieplayer highlights the period reconstruction and supporting ensemble.",
+          "genre": "Drama",
+          "summary": "Movieplayer praises Incontrada but finds the storytelling rushed.",
           "productionCountries": [
             "IT"
           ],
-          "originVerified": true,
-          "originNote": "Italian Sky original produced by Sky Studios and Cattleya; this is the 2026 prequel, not the 2014 series.",
-          "checkedAt": "2026-09-16",
-          "sources": [
-            {
-              "publisher": "Movieplayer",
-              "country": "IT",
-              "role": "review",
-              "label": "Read the review",
-              "url": "https://movieplayer.it/articoli/gomorra-le-origini-recensione-prequel-serie-sky_36897/"
-            },
-            {
-              "publisher": "Cattleya",
-              "country": "IT",
-              "role": "origin",
-              "label": "Production notes",
-              "url": "https://www.cattleya.it/gomorra-le-origini/"
-            }
-          ],
-          "season": 1,
-          "broadcaster": "Sky Atlantic / NOW",
-          "productionCompany": "Sky Studios / Cattleya",
-          "airing": "Original run: Fridays, 9 January–6 February 2026 (Italy).",
-          "airingSource": "https://tg24.sky.it/spettacolo/serie-tv/2026/01/02/gomorra-le-origini-nuova-serie-tv",
-          "rank": 1
-        },
-        {
-          "id": "it-due-spicci",
-          "country": "IT",
-          "title": "Due spicci",
-          "year": 2026,
-          "scope": "Season 1",
-          "genre": "Animation · Comedy-drama",
           "originalLanguages": [
             "it"
           ],
-          "summary": "Zerocalcare returns with a more disillusioned look at work and adulthood. Movieplayer finds a more mature perspective in this third animated series.",
-          "productionCountries": [
-            "IT"
-          ],
           "originVerified": true,
-          "originNote": "Italian original by Zerocalcare; MYmovies records Italy as production country and 2026 as release year.",
+          "originNote": "Domestic production by 7Verticale / RTI; reviewed broadcaster evidence in discovery dataset.",
           "checkedAt": "2026-09-16",
+          "broadcaster": "Canale 5",
+          "productionCompany": "7Verticale / RTI",
+          "airing": "Wednesdays, prime time (Italy); began 2 September. Verified broadcast: 2026-09-02.",
+          "airingSource": "https://mediasetinfinity.mediaset.it/news/mediasetinfinity/ericaunadetectivepercaso/erica-una-detective-per-caso-nuova-serie-vanessa-incontrada-2-settembre-canale-5_SE000000002721_t5ydfIXq8iL0tHk0rGCWLcg",
           "sources": [
             {
+              "url": "https://movieplayer.it/articoli/erica-una-detective-per-caso-recensione-giallo-vanessa-incontrada_37950/",
               "publisher": "Movieplayer",
               "country": "IT",
               "role": "review",
-              "label": "Read the review",
-              "url": "https://movieplayer.it/articoli/due-spicci-recensione-zerocalcare-serie-animata-netflix_37531/"
+              "label": "Review"
             },
             {
-              "publisher": "MYmovies",
+              "url": "https://mediasetinfinity.mediaset.it/news/mediasetinfinity/ericaunadetectivepercaso/erica-una-detective-per-caso-nuova-serie-vanessa-incontrada-2-settembre-canale-5_SE000000002721_t5ydfIXq8iL0tHk0rGCWLcg",
+              "publisher": "Mediaset",
               "country": "IT",
               "role": "origin",
-              "label": "Production notes",
-              "url": "https://www.mymovies.it/film/2026/due-spicci/"
+              "label": "Production information"
             }
           ],
-          "season": 1,
-          "broadcaster": "Netflix",
-          "productionCompany": "Movimenti Production / BAO Publishing",
-          "airing": "Streaming release: 27 May 2026.",
-          "airingSource": "https://about.netflix.com/it/news/official-poster-revealed-for-my-two-cents-the-new-animated-series-created",
-          "rank": 2
+          "rank": 1
         }
       ]
     },
     {
       "code": "ES",
       "name": "Spain",
-      "picks": [
-        {
-          "id": "es-por-cien-millones",
-          "country": "ES",
-          "title": "Por cien millones",
-          "year": 2026,
-          "season": 1,
-          "scope": "Miniseries · Season 1",
-          "genre": "Crime comedy",
-          "summary": "Three cash-strapped mechanics kidnap footballer Quini. An unlikely true crime becomes a compact comedy about class and desperation.",
-          "productionCountries": [
-            "ES"
-          ],
-          "originalLanguages": [
-            "es"
-          ],
-          "originVerified": true,
-          "originNote": "ES original produced by Felicitas Media.",
-          "checkedAt": "2026-09-16",
-          "productionCompany": "Felicitas Media",
-          "broadcaster": "Movistar Plus+",
-          "airing": "Streaming release: all episodes on 26 March 2026.",
-          "airingSource": "https://www.movistarplus.es/comunicacion/notas-de-prensa/movistar-plus-desvela-el-trailer-y-el-cartel-de-su-serie-original-por-cien-millones-tras-su-paso-por-el-festival-de-malaga/",
-          "sources": [
-            {
-              "url": "https://cineconn.es/critica-de-por-cien-millones-serie-quini/",
-              "publisher": "Cine con Ñ",
-              "label": "Review",
-              "country": "ES",
-              "role": "review"
-            },
-            {
-              "url": "https://www.movistarplus.es/comunicacion/notas-de-prensa/movistar-plus-desvela-el-trailer-y-el-cartel-de-su-serie-original-por-cien-millones-tras-su-paso-por-el-festival-de-malaga/",
-              "publisher": "Felicitas Media",
-              "label": "Production and release information",
-              "country": "ES",
-              "role": "origin"
-            }
-          ],
-          "rank": 1
-        }
-      ]
+      "picks": []
     },
     {
       "code": "UK",
       "name": "United Kingdom",
-      "picks": [
-        {
-          "id": "uk-lord-of-the-flies",
-          "country": "UK",
-          "title": "Lord of the Flies",
-          "year": 2026,
-          "season": 1,
-          "scope": "Miniseries · Season 1",
-          "genre": "Drama",
-          "summary": "Jack Thorne adapts Golding. A visually distinctive miniseries, though the Guardian finds it less powerful than the novel.",
-          "productionCountries": [
-            "UK",
-            "AU"
-          ],
-          "originalLanguages": [
-            "en"
-          ],
-          "originVerified": true,
-          "originNote": "UK original produced by Eleven / One Shoe Films.",
-          "checkedAt": "2026-09-16",
-          "productionCompany": "Eleven / One Shoe Films",
-          "broadcaster": "BBC One / BBC iPlayer",
-          "airing": "Original run: Sundays at 21:00 (UK), from 8 February 2026; four episodes.",
-          "airingSource": "https://www.elevenfilm.com/lord-of-the-flies-release-date-announced/",
-          "sources": [
-            {
-              "url": "https://www.theguardian.com/tv-and-radio/2026/feb/08/lord-of-the-flies-review-jack-thornes-take-on-the-classic-is-nowhere-near-the-originals-power",
-              "publisher": "The Guardian",
-              "label": "Review",
-              "country": "UK",
-              "role": "review"
-            },
-            {
-              "url": "https://www.elevenfilm.com/lord-of-the-flies-release-date-announced/",
-              "publisher": "Eleven / One Shoe Films",
-              "label": "Production and release information",
-              "country": "UK",
-              "role": "origin"
-            }
-          ],
-          "rank": 1
-        }
-      ]
+      "picks": []
     },
     {
       "code": "CA",
@@ -247,9 +125,9 @@
           "title": "Bienvenue à Kingston-Falls",
           "year": 2026,
           "season": 1,
-          "scope": "Miniseries · Season 1",
+          "scope": "Season 1",
           "genre": "Crime comedy",
-          "summary": "An outlandish murder interrupts a small-town detective’s holiday. Robin Aubert mixes a macabre mystery with offbeat Québec humour.",
+          "summary": "Nouveau Projet recommends its inventive blend of crime and dark comedy.",
           "productionCountries": [
             "CA"
           ],
@@ -257,29 +135,69 @@
             "fr"
           ],
           "originVerified": true,
-          "originNote": "CA original produced by Encore Télévision / Lynx Films.",
+          "originNote": "Domestic production by Encore Télévision / Lynx Films; reviewed broadcaster evidence in discovery dataset.",
           "checkedAt": "2026-09-16",
           "productionCompany": "Encore Télévision / Lynx Films",
-          "broadcaster": "ICI TÉLÉ / ICI TOU.TV EXTRA",
-          "airing": "Autumn 2026 run: Tuesdays at 21:00 (Québec), from 15 September.",
+          "broadcaster": "ICI TÉLÉ",
+          "airing": "Tuesdays, 21:00 (Québec). Verified broadcast: 2026-09-15.",
           "airingSource": "https://www.tvanouvelles.ca/2026/08/29/25-fictions-a-ne-pas-manquer-cet-automne-a-la-tele-quebecoise",
           "sources": [
             {
               "url": "https://atelier10.ca/nouveauprojet/article/choix-redaction-ce-qu-on-vu-juin-2026",
               "publisher": "Nouveau Projet",
-              "label": "Review",
               "country": "CA",
-              "role": "review"
+              "role": "review",
+              "label": "Review"
             },
             {
               "url": "https://presse.radio-canada.ca/internet/14604/bienvenue-a-kingston-falls-le-thriller-singulier-de-robin-aubert-avec-maxime-le-flaguais-disponible-des-demain/",
-              "publisher": "Encore Télévision / Lynx Films",
-              "label": "Production and release information",
+              "publisher": "Radio-Canada Presse",
               "country": "CA",
-              "role": "origin"
+              "role": "origin",
+              "label": "Production information"
             }
           ],
           "rank": 1
+        },
+        {
+          "id": "ca-sur-le-fil",
+          "country": "CA",
+          "title": "Sur le fil",
+          "year": 2026,
+          "season": 1,
+          "scope": "Season 1",
+          "genre": "Drama",
+          "summary": "Showbizz.net praises the writing, performances and balance of drama and humor.",
+          "productionCountries": [
+            "CA"
+          ],
+          "originalLanguages": [
+            "fr"
+          ],
+          "originVerified": true,
+          "originNote": "Domestic production by A Média / KOTV; reviewed broadcaster evidence in discovery dataset.",
+          "checkedAt": "2026-09-16",
+          "broadcaster": "ICI TÉLÉ",
+          "productionCompany": "A Média / KOTV",
+          "airing": "Mondays, 21:00 (Québec). Verified broadcast: 2026-09-14.",
+          "airingSource": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
+          "sources": [
+            {
+              "url": "https://showbizz.net/tele/sur-le-fil-surprend-et-emeut-pascale-renaud-hebert-frappe-encore-dans-le-mille",
+              "publisher": "Showbizz.net",
+              "country": "CA",
+              "role": "review",
+              "label": "Review"
+            },
+            {
+              "url": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
+              "publisher": "Radio-Canada Presse",
+              "country": "CA",
+              "role": "origin",
+              "label": "Production information"
+            }
+          ],
+          "rank": 2
         }
       ]
     }
