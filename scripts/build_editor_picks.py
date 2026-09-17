@@ -537,7 +537,10 @@ def main():
         if not api_key:
             raise ValueError("OPENCODE_GO_API_KEY is not configured")
         picks = select_with_opencode_go(candidates, api_key) if candidates else []
-        picks = expand_with_opencode_go(picks, api_key, now=now, f1_sessions=f1_sessions)
+        try:
+            picks = expand_with_opencode_go(picks, api_key, now=now, f1_sessions=f1_sessions)
+        except ValueError as error:
+            print(f"warning: expansion rejected; keeping validated selections: {error}", file=sys.stderr)
         write_output(picks, now=now)
     except Exception as error:
         if isinstance(error, urllib.error.HTTPError) and error.code == 403:

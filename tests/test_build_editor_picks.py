@@ -445,10 +445,13 @@ class BuildEditorPicksTest(unittest.TestCase):
         with patch.dict("os.environ", {"OPENCODE_GO_API_KEY": "test-key"}), \
              patch.object(build_editor_picks, "collect_candidates", return_value=candidates), \
              patch.object(build_editor_picks, "select_with_opencode_go", return_value=result), \
-             patch.object(build_editor_picks, "expand_with_opencode_go", side_effect=ValueError("invalid expansion")), \
-             patch.object(build_editor_picks, "write_output") as write:
-            self.assertEqual(build_editor_picks.main(), 1)
-            write.assert_not_called()
+             patch.object(build_editor_picks, "expand_with_opencode_go", side_effect=ValueError("Expansion grouped non-overlapping broadcasts")), \
+             patch.object(build_editor_picks, "write_output") as write, \
+             patch("sys.stderr", new_callable=io.StringIO) as stderr:
+            self.assertEqual(build_editor_picks.main(), 0)
+            self.assertEqual(write.call_args.args, (result,))
+            self.assertIn("keeping validated selections", stderr.getvalue())
+            self.assertIn("non-overlapping broadcasts", stderr.getvalue())
 
     def test_exact_title_fallback_does_not_merge_different_fixtures(self):
         candidates = [{**self.program("Live football", "2026-09-04T18:00:00Z"),
