@@ -30,6 +30,16 @@ vm.runInContext(app.slice(app.indexOf('const SPORT_BUCKETS ='), app.indexOf('fun
 vm.runInContext(app.slice(app.indexOf('function resolvedEditorPicks()'), app.indexOf('function setLiveSportsOpen(')), context);
 assert.equal(vm.runInContext("detectSportBucket({ sportType: 'Football', competition: 'Premier League', categories: ['Cricket'] }).emoji", context), '🏏');
 assert.equal(vm.runInContext("detectSportBucket({ title: 'UFC Fight Night', sportType: 'Combat sports' }).emoji", context), '🥊');
+for (const [title, emoji] of [
+  ['NFL: Detroit Lions at Buffalo Bills', '🏈'],
+  ['AFL Preliminary Final: Sydney Swans vs Fremantle', '🏉'],
+  ['Arena Football League', '🏈'],
+  ['Premier League: Arsenal vs Chelsea', '⚽'],
+]) {
+  context.footballProgram = { title, sportType: 'Football', categories: ['Sport'] };
+  assert.equal(vm.runInContext('detectSportBucket(footballProgram).emoji', context), emoji);
+}
+assert.equal(vm.runInContext("detectSportBucket({ title: 'NFL documentary', categories: ['Documentary'] })", context), null);
 vm.runInContext('renderEditorPicks()', context);
 const html = context.els.editorPicksList.innerHTML;
 assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 12);

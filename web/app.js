@@ -515,7 +515,13 @@ const SPORT_BUCKETS = [
     id: "american-football",
     label: "American football",
     emoji: "🏈",
-    terms: ["american football", "nfl", "ufl", "college football", "ncaa football", "ncaaf", "cfl"],
+    terms: ["american football", "national football league", "arena football", "nfl", "ufl", "college football", "ncaa football", "ncaaf", "cfl"],
+  },
+  {
+    id: "australian-football",
+    label: "Australian football",
+    emoji: "🏉",
+    terms: ["australian football", "australian rules", "afl"],
   },
   {
     id: "cricket",
@@ -679,6 +685,13 @@ function detectSportBucket(program) {
 
   if (includesTerm(parts.all, "rugby")) {
     return genericSportsBucket();
+  }
+
+  // Specific football codes beat generic Football metadata from guide providers.
+  for (const bucket of SPORT_BUCKETS.filter((bucket) => ["american-football", "australian-football"].includes(bucket.id))) {
+    if ((!nonSportCategory || sportsCategory) && bucket.terms.some((term) => includesTerm(parts.all, term))) {
+      return bucket;
+    }
   }
 
   for (const bucket of SPORT_BUCKETS) {
