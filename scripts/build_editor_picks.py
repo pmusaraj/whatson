@@ -63,7 +63,8 @@ def is_us_open_program(program):
 
 def is_sport_program(program):
     categories = {str(value).lower() for value in program.get("categories") or []}
-    return bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES or is_us_open_program(program))
+    return bool(program.get("sportType") or program.get("competition") or categories & SPORT_CATEGORIES or is_us_open_program(program)
+                or 0 <= league_rank(program) < len(LEAGUES))
 
 
 def repetition_key(program):
@@ -90,9 +91,29 @@ def is_current_original(program, now, aired_earlier=False):
     return True
 
 
+SECOND_TIER = re.compile(
+    r"\b(?:2\s*bundesliga|bundesliga\s*2|ligue\s*2|serie\s*b|la\s*liga\s*2|"
+    r"segunda\s*(?:division|divisao|liga)|liga\s*(?:portugal\s*)?2|(?:la\s*)?liga\s*hypermotion|"
+    r"(?:efl|sky\s*bet|english)\s*championship|tff\s*1|1\s*lig|eerste\s*divisie|"
+    r"challenger\s*pro\s*league|usl\s*championship|second\s*(?:tier|division))\b", re.I,
+)
+LEAGUES = [r"\bpremier league\b", r"\bla\s*liga\b", r"\bserie a\b", r"\bligue 1\b", r"\bbundesliga\b"]
+
+
+def league_rank(program):
+    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle", "competition", "description")))
+    if SECOND_TIER.search(text):
+        return -1
+    # Source headings beat inferred competition and incidental description mentions.
+    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle")))
+    if re.search(r"cricket|\bt20\b", text + " " + " ".join(program.get("categories") or []) + " " + str(program.get("sportType") or ""), re.I):
+        return len(LEAGUES)
+    return next((rank for rank, pattern in enumerate(LEAGUES) if re.search(pattern, text)), len(LEAGUES))
+
+
 def is_candidate(program, now, aired_earlier=False):
     title = str(program.get("title") or "").strip()
-    if len(title) < 5 or GENERIC.match(title) or not is_current_original(program, now, aired_earlier):
+    if len(title) < 5 or GENERIC.match(title) or league_rank(program) < 0 or not is_current_original(program, now, aired_earlier):
         return False
     categories = {str(value).lower() for value in program.get("categories") or []}
     category_text = " ".join(categories)
@@ -246,7 +267,7 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessi
 
     ordered = sorted(
         deduped.values(),
-        key=lambda item: (-is_us_open_final(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
+        key=lambda item: (league_rank(item), -is_us_open_final(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
     )
     candidates = []
     country_events = {}
@@ -392,6 +413,9 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         "Include more worthwhile events when available, without padding the list with weak picks. "
         "Consider the supplied global list across all countries; do not enforce country quotas. "
         "Select only genuinely live sports events; exclude series, films, and documentaries for now. "
+        "Exclude second-tier and lower-division leagues in every country. "
+        "Include worthwhile Serie A, Ligue 1 and Bundesliga fixtures, not just English and Spanish football. "
+        "Prioritize leagues in this order: Premier League, La Liga, Serie A, Ligue 1, Bundesliga. "
         "Reject reruns, highlights, studio shows, generic listings, routine episodes, and uncertain entries. "
         "Group different channels and language translations of the same broadcast into one event. "
         "Include every supplied ID for a selected event when it is the same broadcast. "
@@ -510,7 +534,7 @@ def write_output(picks, now=None, output_path=OUTPUT_PATH):
     now = now or datetime.now(timezone.utc)
     output = {
         "generatedAt": now.isoformat().replace("+00:00", "Z"),
-        "picks": picks,
+        "picks": sorted((pick for pick in picks if league_rank(pick) >= 0), key=lambda pick: (league_rank(pick), parse_time(pick["startAt"]))),
     }
     output_path = Path(output_path)
     temporary = None

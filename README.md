@@ -179,6 +179,11 @@ for the catalogue, scope, validation and how to introduce new titles.
 
 ### Sports picks
 
+Sports picks exclude second-tier leagues. Football league priority is Premier League,
+La Liga, Serie A, Ligue 1, then Bundesliga; events within each priority sort by time.
+Each event shows at most three channels per country, with six initially visible and
+any remaining channels behind a small **more** disclosure.
+
 With `OPENCODE_GO_API_KEY` available in the environment, regenerate picks from the current browser payloads:
 
 ```bash

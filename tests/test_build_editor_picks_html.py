@@ -32,6 +32,16 @@ class EditorPicksHtmlTest(unittest.TestCase):
         self.assertEqual(result.count('class="editor-pick-result"'), 2)
         self.assertIn('class="editor-picks" open', result)
         self.assertEqual(picks_html.build_html(result, picks, now), result)
+        channels = [{"country": country, "channelName": f"{country}{i}", "endAt": "2026-09-14T18:00:00Z"}
+                    for country in ["US", "FR", "DE"] for i in range(4)]
+        ranked = picks_html.render_picks([{**pick, "title": league, "channels": channels}
+                                         for league in ["Bundesliga", "Ligue 1", "Serie A", "La Liga", "Premier League", "LaLiga Hypermotion"]], now)
+        self.assertLess(ranked.index(">Premier League</strong>"), ranked.index(">La Liga</strong>"))
+        self.assertLess(ranked.index(">Serie A</strong>"), ranked.index(">Ligue 1</strong>"))
+        self.assertNotIn("Hypermotion", ranked)
+        self.assertEqual(ranked.count('class="editor-pick-channel"'), 45)
+        self.assertEqual(ranked.count('>more</summary>'), 5)
+        self.assertNotIn("US3", ranked)
         empty = picks_html.build_html(result, [], now)
         self.assertNotIn('class="editor-pick-result"', empty)
         self.assertIn('class="editor-picks" hidden', empty)

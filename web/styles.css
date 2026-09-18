@@ -273,19 +273,36 @@ body[data-live-sports-open="true"] .editor-picks {
 
 .editor-pick-result {
   display: grid;
-  gap: 0.45rem;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.45rem 0.7rem;
   padding: 0.65rem;
   border: 1px solid var(--border);
 }
 
 .editor-pick-heading {
-  display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
-  gap: 0.7rem;
-  align-items: baseline;
+  display: contents;
 }
 
-.editor-pick-heading time,
+.editor-pick-heading .show-result-time {
+  grid-row: span 2;
+}
+
+.editor-pick-sport {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.editor-pick-more > summary {
+  margin: 0;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.75rem;
+}
+
+.editor-pick-more[open] {
+  flex-basis: 100%;
+}
+
+.editor-pick-heading .show-result-time,
 .editor-pick-heading .show-result-title {
   overflow: visible;
   white-space: normal;
@@ -295,7 +312,7 @@ body[data-live-sports-open="true"] .editor-picks {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  padding-left: 5.7rem;
+  grid-column: 2;
 }
 
 .editor-pick-channel {

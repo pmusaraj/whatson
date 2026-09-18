@@ -926,7 +926,7 @@ function renderLiveSportsResults() {
 }
 
 function resolvedEditorPicks() {
-  return state.editorPicks.filter((pick) => pick.highlightType === "liveSport").map((pick) => {
+  return state.editorPicks.filter((pick) => pick.highlightType === "liveSport" && editorPickLeagueRank(pick) >= 0).map((pick) => {
     const airings = (Array.isArray(pick.channels) ? pick.channels : [pick])
       .map((airing) => {
         const countryData = state.countryDataByCode.get(airing.country);
@@ -950,8 +950,31 @@ function resolvedEditorPicks() {
       }).filter(Boolean).filter((airing, index, all) =>
         all.findIndex((item) => item.key === airing.key) === index
       );
-    return airings.length ? { pick, airings } : null;
-  }).filter(Boolean).sort((a, b) => new Date(a.pick.startAt) - new Date(b.pick.startAt));
+    const countries = new Map();
+    const limited = airings.filter(({ countryData }) => {
+      const count = (countries.get(countryData.country) || 0) + 1;
+      countries.set(countryData.country, count);
+      return count <= 3;
+    });
+    return limited.length ? { pick, airings: limited } : null;
+  }).filter(Boolean).sort((a, b) => editorPickLeagueRank(a.pick) - editorPickLeagueRank(b.pick)
+    || new Date(a.pick.startAt) - new Date(b.pick.startAt));
+}
+
+function editorPickLeagueRank(pick) {
+  const text = [pick.title, pick.subtitle, pick.competition, pick.description].filter(Boolean).join(" ")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ");
+  if (/\b(?:2\s*bundesliga|bundesliga\s*2|ligue\s*2|serie\s*b|la\s*liga\s*2|segunda\s*(?:division|divisao|liga)|liga\s*(?:portugal\s*)?2|(?:la\s*)?liga\s*hypermotion|(?:efl|sky\s*bet|english)\s*championship|tff\s*1|1\s*lig|eerste\s*divisie|challenger\s*pro\s*league|usl\s*championship|second\s*(?:tier|division))\b/.test(text)) return -1;
+  const heading = [pick.title, pick.subtitle].filter(Boolean).join(" ").toLowerCase();
+  if (/cricket|\bt20\b/i.test([heading, pick.sportType, ...(pick.categories || [])].join(" "))) return 5;
+  const rank = [/\bpremier league\b/, /\bla\s*liga\b/, /\bserie a\b/, /\bligue 1\b/, /\bbundesliga\b/].findIndex(pattern => pattern.test(heading));
+  return rank < 0 ? 5 : rank;
+}
+
+function editorPickChannel({ countryData, channel, index, key }) {
+  return `<button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">
+    <span aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(channel.name)}
+  </button>`;
 }
 
 function renderEditorPicks() {
@@ -960,15 +983,14 @@ function renderEditorPicks() {
   els.editorPicksList.innerHTML = picks.map(({ pick, airings }) => `
     <article class="editor-pick-result">
       <div class="editor-pick-heading">
-        <span class="show-result-time">${formatTime(pick.startAt)}</span>
-        <strong class="show-result-title"><span aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span> ${escapeHtml(pick.title)}</strong>
+        <span class="show-result-time">${formatTime(pick.startAt)}<span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span></span>
+        <strong class="show-result-title">${escapeHtml(pick.title)}</strong>
       </div>
       <div class="editor-pick-channels" aria-label="Available channels">
-        ${airings.map(({ countryData, channel, index, key }) => `
-          <button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">
-            <span aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(channel.name)}
-          </button>
-        `).join("")}
+        ${airings.slice(0, 6).map(editorPickChannel).join("")}
+        ${airings.length > 6 ? `<details class="editor-pick-more"><summary aria-label="More channels for ${escapeHtml(pick.title)}">more</summary>
+          <div class="editor-pick-channels">${airings.slice(6).map(editorPickChannel).join("")}</div>
+        </details>` : ""}
       </div>
     </article>
   `).join("");

@@ -20,6 +20,24 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.addCleanup(calendar.stop)
         self.now = datetime(2026, 9, 4, 12, tzinfo=timezone.utc)
 
+    def test_league_priority_and_second_tiers(self):
+        leagues = ["Premier League", "La Liga", "Serie A", "Ligue 1", "Bundesliga"]
+        programs = [{**self.program(f"{league}: A vs B (Direto)", "2026-09-04T18:00:00Z"),
+                     "categories": [], "sportType": None, "competition": None} for league in leagues]
+        for league in ["2. Bundesliga", "Bundesliga 2", "Ligue 2", "Serie B", "LaLiga 2", "LaLiga Hypermotion", "EFL Championship", "Liga Portugal 2", "Série B", "Segunda División"]:
+            program = self.program(f"Live: {league}: C vs D", "2026-09-04T18:00:00Z")
+            self.assertFalse(build_editor_picks.is_candidate(program, self.now), league)
+        for program in [
+            {"title": "Caribbean Premier League", "categories": ["Cricket"], "competition": "Premier League"},
+            {"title": "Argentine Primera División", "competition": "Premier League", "description": "The premier league in Argentina"},
+            {"title": "World Championship Final"},
+        ]:
+            self.assertEqual(build_editor_picks.league_rank(program), 5)
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write_country(Path(tmp), "US", [{"id": "sports", "name": "Sports", "programs": programs[::-1]}])
+            candidates = build_editor_picks.collect_candidates(Path(tmp), self.now)
+        self.assertEqual([c["title"] for c in candidates], [p["title"] for p in programs])
+
     def test_candidates_are_global_deduplicated_and_exclude_non_events(self):
         channels = [
             {

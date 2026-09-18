@@ -2,11 +2,14 @@
 """Prerender editor picks for readers that have not run JavaScript."""
 
 import json
+import sys
 from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from build_editor_picks import league_rank
 START = "<!-- editor-picks:start -->"
 END = "<!-- editor-picks:end -->"
 
@@ -18,20 +21,34 @@ def parse_time(value):
 def render_picks(picks, now):
     events = []
     for pick in picks:
-        if pick.get("highlightType") != "liveSport":
+        if pick.get("highlightType") != "liveSport" or league_rank(pick) < 0:
             continue
         airings = [airing for airing in pick.get("channels", [pick]) if parse_time(airing["endAt"]) > now]
         if not airings:
             continue
         start = parse_time(pick["startAt"])
-        channels = dict.fromkeys(airing["channelName"] for airing in airings)
-        events.append((start, (
+        channels = []
+        countries = {}
+        seen = set()
+        for airing in airings:
+            country = airing.get("country", "")
+            key = (country, airing["channelName"])
+            if key in seen or countries.get(country, 0) >= 3:
+                continue
+            seen.add(key)
+            countries[country] = countries.get(country, 0) + 1
+            channels.append(f'<span class="editor-pick-channel">{escape(airing["channelName"])}</span>')
+        channel_html = "".join(channels[:6])
+        if len(channels) > 6:
+            channel_html += ('<details class="editor-pick-more"><summary>more</summary>'
+                             '<div class="editor-pick-channels">' + "".join(channels[6:]) + '</div></details>')
+        events.append(((league_rank(pick), start), (
             '<article class="editor-pick-result">\n'
             '  <div class="editor-pick-heading">\n'
             f'    <time class="show-result-time" datetime="{escape(start.isoformat(), quote=True)}">{start:%b %d, %H:%M} UTC</time>\n'
             f'    <strong class="show-result-title">{escape(pick["title"])}</strong>\n'
             '  </div>\n'
-            f'  <div class="editor-pick-channels">{escape(" · ".join(channels))}</div>\n'
+            f'  <div class="editor-pick-channels">{channel_html}</div>\n'
             '</article>'
         )))
     rows = "\n".join(html for _, html in sorted(events, key=lambda event: event[0]))
