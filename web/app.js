@@ -1318,7 +1318,7 @@ function renderGuide() {
 
   els.guideTitle.textContent = state.search.trim() ? "Search Results"
     : state.liveSportsOpen ? "On Today"
-    : state.editorPicksOpen ? "Editor's Picks" : "Channels";
+    : state.editorPicksOpen ? "Today's Editors Picks in Sports" : "Channels";
   els.sportFilters.hidden = !state.liveSportsOpen;
   els.dataUpdated.textContent = `Data last updated ${formatRelativeTime(state.generatedAt)}`;
 

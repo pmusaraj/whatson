@@ -72,7 +72,7 @@ assert.equal((manyHtml.split('<details')[0].match(/class="editor-pick-channel"/g
 assert.ok(manyHtml.includes('>more</summary>'));
 for (const country of ['US', 'FR', 'DE']) assert.ok(!manyHtml.includes(`data-channel-key="${country}:${country}3"`));
 assert.ok(sportsHtml.includes('<span class="editor-pick-sport" aria-hidden="true">🎾</span>'));
-assert.ok(fs.readFileSync('web/index.html', 'utf8').includes("<h2 id=\"guide-title\" class=\"guide-title\">Editor's Picks</h2>"));
+assert.ok(fs.readFileSync('web/index.html', 'utf8').includes("<h2 id=\"guide-title\" class=\"guide-title\">Today's Editors Picks in Sports</h2>"));
 context.state.now = new Date(endAt);
 vm.runInContext('renderEditorPicks()', context);
 assert.equal(context.els.editorPicks.hidden, false);
