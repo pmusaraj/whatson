@@ -1283,3 +1283,10 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   .editor-picks .event-now-indicator { margin-block: 0.35rem; }
   .editor-picks .event-now-indicator time { padding: 0.2rem 0.45rem; }
 }
+
+@media (min-width: 861px) {
+  html[data-theme="classic-v1"] body .picker-panel { padding: 1rem; }
+}
+@media (max-width: 860px) {
+  html[data-theme="classic-v1"] body[data-mobile-view="picker"] .picker-panel { padding: 1rem; }
+}

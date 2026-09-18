@@ -11,9 +11,12 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const app = fs.readFileSync('web/app.js', 'utf8');
-for (const preference of ['default', 'sense', null]) {
-for (const query of ['', '?theme=soft-studio', '?theme=open-air', '?theme=quiet-guide', '?theme=paper', '?theme=pop', '?theme=broadcast', '?theme=constructor', '?theme=__proto__', '?theme=', '?theme=https://example.com']) {
-  const saved = new Map(preference ? [['whatsontv.theme', preference], ['whatsontv.themeDefault', 'editor-picks-pills']] : []);
+const canonical = name => name === 'sense' ? 'classic-v1' : name === 'default' ? 'quiet-guide' : name;
+const valid = ['default', 'sense', 'classic-v1', 'quiet-guide', 'soft-studio', 'open-air'];
+for (const version of ['editor-picks-pills', 'quiet-guide-default-v1']) {
+for (const preference of [...valid, null, 'missing']) {
+for (const query of ['', ...valid.map(name => '?theme=' + name), '?theme=constructor', '?theme=__proto__', '?theme=', '?theme=https://example.com']) {
+  const saved = new Map(preference ? [['whatsontv.theme', preference], ['whatsontv.themeDefault', version]] : []);
   const before = JSON.stringify([...saved]);
   const context = { URLSearchParams, window: { location: { search: query } },
     localStorage: { getItem: k => saved.get(k), setItem: (k, v) => saved.set(k, v) },
@@ -22,17 +25,23 @@ for (const query of ['', '?theme=soft-studio', '?theme=open-air', '?theme=quiet-
   vm.runInContext(app.slice(0, app.indexOf('const state =')), context);
   vm.runInContext(app.slice(app.indexOf('function loadTheme()'), app.indexOf('function channelKey(')), context);
   vm.runInContext('setTheme(loadTheme())', context);
-  const expected = ['soft-studio', 'open-air', 'quiet-guide'].find(t => query === '?theme=' + t) || preference || 'sense';
+  const fallback = version === 'quiet-guide-default-v1' && valid.includes(preference) ? canonical(preference) : 'quiet-guide';
+  const requested = new URLSearchParams(query).get('theme');
+  const expected = valid.includes(requested) ? canonical(requested) : fallback;
   assert.equal(context.document.documentElement.dataset.theme, expected);
-  if (query || preference) assert.equal(JSON.stringify([...saved]), before);
+  if (query) assert.equal(JSON.stringify([...saved]), before);
+  else assert.equal(saved.get('whatsontv.themeDefault'), 'quiet-guide-default-v1');
   assert.ok(fs.existsSync('web/' + context.els.themeLink.href.split('?')[0]));
+  assert.ok(context.els.themeLink.href.startsWith(expected === 'classic-v1' ? 'sense-theme.css' : expected + '-theme.css'));
   if (query) {
     context.window.location.search = '';
     vm.runInContext('setTheme(loadTheme())', context);
-    assert.equal(context.document.documentElement.dataset.theme, preference || 'sense');
+    assert.equal(context.document.documentElement.dataset.theme, fallback);
   }
 }
 }
+}
+assert.ok(fs.readFileSync('web/index.html', 'utf8').includes('href="quiet-guide-theme.css?v=quiet-guide-default-v1"'));
 '''], cwd=Path(__file__).resolve().parents[1], check=True)
 
 

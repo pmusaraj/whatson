@@ -29,17 +29,19 @@ Countries currently included:
 | Mexico         |               10 |                             10 |
 | Brazil         |               12 |                              9 |
 
-## Theme previews (design branch only)
+## Themes
 
 Serve `web/` locally: `python3 -m http.server 8765 --directory web`.
-Open these temporary previews; removing `?theme=…` restores the saved theme/default:
+Quiet Guide is the default. Open these theme previews; removing `?theme=…` restores the saved theme/default:
 
 - [Soft studio — warm rose and berry](http://localhost:8765/?theme=soft-studio)
 - [Open air — pale mint, teal and yellow picks](http://localhost:8765/?theme=open-air)
-- [Quiet guide — neutral green grays and fine dividers](http://localhost:8765/?theme=quiet-guide)
+- [Quiet Guide (default) — neutral green grays and fine dividers](http://localhost:8765/?theme=quiet-guide)
+- [Classic v1 — the former Sense default](http://localhost:8765/?theme=classic-v1)
 
-Previews do not persist a theme preference. The production default remains Sense;
-channel selections still use the existing local storage. No theme picker or new dependency.
+Previews do not persist a theme preference. Existing default preferences migrate to Quiet Guide;
+channel selections still use the existing local storage. The old `?theme=sense` URL opens Classic v1,
+and `?theme=default` opens Quiet Guide. No theme picker or new dependency.
 These are surface-only previews: the existing logo, guide/sidebar/picks structure,
 controls and mobile interactions remain. Committed schedules may be stale; previews
 do not refresh or invent listings.

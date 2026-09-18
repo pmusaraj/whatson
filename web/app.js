@@ -4,10 +4,11 @@ const PIXELS_PER_MINUTE = 2;
 const SLOT_MINUTES = 30;
 const TIMELINE_LOOKBACK_MINUTES = 60;
 const SPORTS_NOW_UPCOMING_MINUTES = 60;
-const THEME_VERSION = "editor-picks-pills";
-const DEFAULT_THEME = "sense";
+const THEME_VERSION = "quiet-guide-default-v1";
+const DEFAULT_THEME = "quiet-guide";
 const THEMES = {
-  default: `theme.css?v=${THEME_VERSION}`,
+  default: `quiet-guide-theme.css?v=${THEME_VERSION}`,
+  "classic-v1": `sense-theme.css?v=${THEME_VERSION}`,
   sense: `sense-theme.css?v=${THEME_VERSION}`,
   "soft-studio": "soft-studio-theme.css?v=applied-1",
   "open-air": "open-air-theme.css?v=applied-1",
@@ -88,17 +89,20 @@ function saveSelection() {
 function loadTheme() {
   const preview = new URLSearchParams(window.location.search).get("theme");
   if (Object.hasOwn(THEMES, preview)) return preview;
-  const migratedToSenseDefault =
+  const migratedToCurrentDefault =
     localStorage.getItem("whatsontv.themeDefault") === THEME_VERSION;
   const saved = localStorage.getItem("whatsontv.theme");
-  if (!migratedToSenseDefault) {
+  if (!migratedToCurrentDefault) {
     return DEFAULT_THEME;
   }
   return Object.hasOwn(THEMES, saved) ? saved : DEFAULT_THEME;
 }
 
 function setTheme(themeName) {
-  const theme = Object.hasOwn(THEMES, themeName) ? themeName : DEFAULT_THEME;
+  // Preserve old theme URLs while exposing the new names.
+  const canonicalName = themeName === "default" ? DEFAULT_THEME
+    : themeName === "sense" ? "classic-v1" : themeName;
+  const theme = Object.hasOwn(THEMES, canonicalName) ? canonicalName : DEFAULT_THEME;
   els.themeLink.href = THEMES[theme];
   if (els.themeSelect) {
     els.themeSelect.value = theme;
