@@ -1,4 +1,4 @@
-/* Sense-inspired visual theme: soft glassmorphism, pastel wellness palette. */
+/* Classic v1 (formerly the Sense default): soft glassmorphism, pastel wellness palette. */
 :root {
   color-scheme: light;
   --background: #e9e8e8;
@@ -68,7 +68,7 @@ h2 {
   background: rgb(255 255 255 / 68%);
   color: var(--text);
   font-size: 1.28rem;
-  font-weight: 760;
+  font-weight: 600;
   line-height: 1;
   box-shadow: 0 10px 24px rgb(95 85 110 / 10%), inset 0 1px 0 rgb(255 255 255 / 72%);
   backdrop-filter: blur(18px);
@@ -90,7 +90,7 @@ h2 {
 .theme-switcher {
   color: var(--muted);
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .theme-select {
@@ -99,7 +99,7 @@ h2 {
   background: rgb(255 255 255 / 68%);
   color: var(--text);
   font-size: 0.84rem;
-  font-weight: 680;
+  font-weight: 600;
   box-shadow: 0 10px 24px rgb(95 85 110 / 8%), inset 0 1px 0 rgb(255 255 255 / 72%);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -134,17 +134,17 @@ h2 {
   outline-offset: 1px;
 }
 
-.live-sports-toggle {
+.program-button {
   border: 1px solid var(--border);
   background: rgb(255 255 255 / 54%);
   color: var(--text);
   font-size: 0.84rem;
-  font-weight: 760;
+  font-weight: 600;
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 72%);
 }
 
-.live-sports-toggle:hover,
-.live-sports-toggle:focus-visible {
+.program-button:hover,
+.program-button:focus-visible {
   border-color: rgb(255 255 255 / 92%);
   background: rgb(255 255 255 / 72%);
   color: var(--accent);
@@ -152,7 +152,7 @@ h2 {
   outline-offset: 1px;
 }
 
-.live-sports-toggle[aria-expanded="true"] {
+.program-button:is([aria-expanded="true"], [aria-pressed="true"]) {
   border-color: rgb(255 127 111 / 42%);
   background: rgb(255 127 111 / 16%);
   color: var(--accent);
@@ -164,7 +164,7 @@ h2 {
   background: rgb(255 255 255 / 58%);
   color: var(--muted);
   font-size: 0.72rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .sport-filter-button {
@@ -224,7 +224,7 @@ h2 {
 .show-result-meta {
   color: var(--muted);
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .show-result {
@@ -245,7 +245,7 @@ h2 {
 
 .show-result-title {
   font-size: 0.87rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .country-group h3 {
@@ -253,7 +253,7 @@ h2 {
   background: rgb(255 255 255 / 52%);
   color: var(--muted);
   font-size: 0.76rem;
-  font-weight: 720;
+  font-weight: 600;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
@@ -273,7 +273,7 @@ h2 {
 
 .channel-name {
   font-size: 0.87rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .logo {
@@ -286,7 +286,7 @@ h2 {
   border-radius: 999px !important;
   background: rgb(255 255 255 / 64%);
   color: var(--muted);
-  font-weight: 680;
+  font-weight: 600;
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 72%);
 }
 
@@ -309,7 +309,7 @@ h2 {
 .guide-meta {
   color: var(--muted);
   font-size: 0.86rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .schedule-wrap {
@@ -339,7 +339,7 @@ h2 {
 }
 
 .guide-channel-heading {
-  font-weight: 820;
+  font-weight: 600;
 }
 
 .guide-channel-flag {
@@ -358,7 +358,7 @@ h2 {
   background: rgb(255 255 255 / 62%);
   color: var(--muted);
   font-size: 1.05rem;
-  font-weight: 760;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -385,7 +385,7 @@ h2 {
 .time-label {
   color: var(--muted);
   font-size: 0.76rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .time-grid span {
@@ -409,7 +409,7 @@ h2 {
   background: linear-gradient(135deg, #ff7f6f, #f5a1c3);
   color: white;
   font-size: 0.68rem;
-  font-weight: 850;
+  font-weight: 600;
   box-shadow: 0 8px 18px rgb(255 127 111 / 24%);
 }
 
@@ -440,18 +440,18 @@ h2 {
 .program-time {
   color: var(--accent);
   font-size: 0.73rem;
-  font-weight: 850;
+  font-weight: 600;
 }
 
 .program-title {
-  font-weight: 820;
+  font-weight: 600;
   line-height: 1.18;
 }
 
 .program-subtitle {
   color: var(--muted);
   font-size: 0.78rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .program-tags span,
@@ -461,7 +461,7 @@ h2 {
   background: rgb(255 255 255 / 62%);
   color: #d86660;
   font-size: 0.66rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .program-description {
@@ -473,7 +473,7 @@ h2 {
 .program-description summary {
   color: var(--accent);
   font-size: 0.72rem;
-  font-weight: 780;
+  font-weight: 600;
 }
 
 .program-dialog {
@@ -507,7 +507,7 @@ h2 {
 
 .program-dialog-kicker {
   font-size: 0.82rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .program-dialog h2 {
@@ -516,16 +516,16 @@ h2 {
 }
 
 .program-dialog-subtitle {
-  font-weight: 680;
+  font-weight: 600;
 }
 
 .program-detail-row dt {
   font-size: 0.78rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .program-detail-row dd {
-  font-weight: 680;
+  font-weight: 600;
 }
 
 .program-dialog-description {

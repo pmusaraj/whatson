@@ -30,7 +30,8 @@ class EditorPicksHtmlTest(unittest.TestCase):
         self.assertNotIn(">Series</strong>", result)
         self.assertNotIn(">Expired</strong>", result)
         self.assertEqual(result.count('class="editor-pick-result"'), 2)
-        self.assertIn('class="editor-picks" open', result)
+        self.assertIn("<section id=\"editor-picks\" class=\"editor-picks\" aria-label=\"Editor's Picks\">", result)
+        self.assertNotIn('<summary>', result)
         self.assertEqual(picks_html.build_html(result, picks, now), result)
         channels = [{"country": country, "channelName": f"{country}{i}", "endAt": "2026-09-14T18:00:00Z"}
                     for country in ["US", "FR", "DE"] for i in range(4)]
@@ -44,4 +45,4 @@ class EditorPicksHtmlTest(unittest.TestCase):
         self.assertNotIn("US3", ranked)
         empty = picks_html.build_html(result, [], now)
         self.assertNotIn('class="editor-pick-result"', empty)
-        self.assertIn('class="editor-picks" hidden', empty)
+        self.assertIn("aria-label=\"Editor's Picks\" hidden", empty)

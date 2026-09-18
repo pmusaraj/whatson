@@ -1,0 +1,20 @@
+/* quiet-guide: opt-in surfaces only; layout stays in styles.css. */
+@import url("exploration-theme.css?v=applied-1");
+:root {
+  --background: #e5e7e3;
+  --surface: #f5f6f3;
+  --surface-strong: #fcfcfa;
+  --text: #252b26;
+  --muted: #606a61;
+  --border: #dce0d9;
+  --accent: #435b49;
+  --accent-soft: #e8ede5;
+  --hover: #dce5d8;
+  --on-accent: #ffffff;
+  --panel-radius: 6px;
+  --card-radius: 3px;
+  --shadow: none;
+}
+.editor-picks .editor-pick-result, .live-sports-list .editor-pick-result { border-color: transparent; border-bottom-color: var(--border); }
+.program-title, .show-result-title, .guide-channel-heading { font-weight: 600; }
+.channel-name { font-weight: 500; }
