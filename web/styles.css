@@ -1,4 +1,28 @@
 /* Layout and interaction rules only. Swap theme.css to try colors, fonts, borders, and corners. */
+#preview-actions:not([hidden]) {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 1.25rem 0.8rem;
+}
+#preview-actions button { width: auto; margin: 0; min-height: 2.75rem; }
+details.country-group { display: block; }
+details.country-group > summary { padding: 0.65rem 0.5rem; cursor: pointer; list-style: none; }
+details.country-group > summary::-webkit-details-marker { display: none; }
+html body .country-flag-pill { display: inline-block; padding: 0.15rem 0.5rem; margin-right: 0.35rem; border-radius: 999px !important; background: var(--surface-strong); }
+details.country-group[open] .country-flag-pill { background: var(--accent-soft); }
+details.country-group .country-channels { padding-left: 0.65rem; }
+body[data-editor-picks-open="true"][data-guide-empty="false"] .editor-picks { display: block; }
+@media (max-width: 860px) {
+  #preview-actions:not([hidden]) { padding: 0 0.55rem 0.4rem; }
+  html:is([data-theme="soft-studio"], [data-theme="open-air"], [data-theme="quiet-guide"]) .mobile-menu-button { display: inline-flex !important; }
+  html:is([data-theme="soft-studio"], [data-theme="open-air"], [data-theme="quiet-guide"]) body[data-mobile-view="guide"] .picker-panel { display: none; }
+  html:is([data-theme="soft-studio"], [data-theme="open-air"], [data-theme="quiet-guide"]) body[data-mobile-view="guide"] .guide-panel { left: 0.4rem; }
+}
 :root {
   --time-column: 4.75rem;
 }

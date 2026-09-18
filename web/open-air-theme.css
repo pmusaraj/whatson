@@ -1,0 +1,20 @@
+/* open-air: opt-in surfaces only; layout stays in styles.css. */
+@import url("exploration-theme.css?v=applied-1");
+:root {
+  --background: #eaf5f3;
+  --surface: #f3faf8;
+  --surface-strong: #ffffff;
+  --text: #173c38;
+  --muted: #546d67;
+  --border: #d6e7e2;
+  --accent: #11655f;
+  --accent-soft: #e0f1ec;
+  --hover: #d1e9e3;
+  --on-accent: #ffffff;
+  --panel-radius: 20px;
+  --card-radius: 10px;
+  --shadow: none;
+}
+.picker-panel { background: var(--surface); }
+.editor-picks .editor-pick-result { background: #fff9e0; border-color: #e8db9d; }
+.editor-pick-result:first-child { background: #fff0b0; }

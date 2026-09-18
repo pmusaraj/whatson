@@ -23,6 +23,7 @@ const context = {
   normalizeSearchText: value => String(value || '').toLowerCase(),
   channelKey: (country, id) => `${country}:${id}`,
   isOverlappingDuplicate: () => false,
+  isPreviewTheme: () => false,
   escapeHtml: value => value, formatTime: value => value, flagEmoji: value => value,
 };
 vm.createContext(context);

@@ -9,9 +9,9 @@ const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
   sense: `sense-theme.css?v=${THEME_VERSION}`,
-  paper: "paper-theme.css?v=exploration-1",
-  pop: "pop-theme.css?v=exploration-1",
-  broadcast: "broadcast-theme.css?v=exploration-1",
+  "soft-studio": "soft-studio-theme.css?v=applied-1",
+  "open-air": "open-air-theme.css?v=applied-1",
+  "quiet-guide": "quiet-guide-theme.css?v=applied-1",
 };
 
 const state = {
@@ -25,6 +25,8 @@ const state = {
   mobileView: "guide",
   searchOpen: false,
   liveSportsOpen: false,
+  editorPicksOpen: false,
+  expandedCountries: new Set(),
   disabledSportFilters: new Set(),
 };
 
@@ -32,6 +34,7 @@ const els = {
   status: document.querySelector("#status"),
   countryFlags: document.querySelector("#country-flags"),
   liveSportsToggle: document.querySelector("#live-sports-toggle"),
+  editorPicksToggle: document.querySelector("#editor-picks-toggle"),
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   channelPicker: document.querySelector("#channel-picker"),
@@ -102,6 +105,10 @@ function setTheme(themeName) {
     localStorage.setItem("whatsontv.theme", theme);
     localStorage.setItem("whatsontv.themeDefault", THEME_VERSION);
   }
+}
+
+function isPreviewTheme() {
+  return ["soft-studio", "open-air", "quiet-guide"].includes(document.documentElement.dataset.theme);
 }
 
 function channelKey(countryCode, channelId) {
@@ -964,7 +971,7 @@ function resolvedEditorPicks() {
 
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
-  els.editorPicks.hidden = picks.length === 0;
+  els.editorPicks.hidden = picks.length === 0 && !isPreviewTheme();
   els.editorPicksList.innerHTML = picks.map(({ pick, airings }) => `
     <article class="editor-pick-result">
       <div class="editor-pick-heading">
@@ -979,12 +986,13 @@ function renderEditorPicks() {
         `).join("")}
       </div>
     </article>
-  `).join("");
+  `).join("") || (isPreviewTheme() ? '<p class="empty-program">No upcoming editor’s picks in the current data.</p>' : "");
 }
 
 function setLiveSportsOpen(open) {
   state.liveSportsOpen = open;
   if (open) {
+    state.editorPicksOpen = false;
     state.search = "";
     els.channelSearch.value = "";
     setMobileSearchOpen(false);
@@ -998,9 +1006,12 @@ function setLiveSportsOpen(open) {
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
+  if (isPreviewTheme()) renderGuide();
 }
 
 function renderChannelList() {
+  // Country disclosures use native keyboard and screen-reader behavior.
+  // Expansion is independent of channel selection and survives rerenders.
   const selected = selectedSet();
   const query = normalizeSearchText(state.search.trim());
 
@@ -1057,6 +1068,13 @@ function renderChannelList() {
         })
         .join("");
 
+      if (isPreviewTheme()) {
+        return `
+          <details class="country-group" data-country-code="${escapeHtml(countryData.country)}"${state.expandedCountries.has(countryData.country) ? " open" : ""}>
+            <summary><span class="country-flag-pill" aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(countryData.countryName)}</summary>
+            <div class="country-channels">${choices}</div>
+          </details>`;
+      }
       return `
         <section class="country-group" data-country-code="${escapeHtml(countryData.country)}">
           <h3>${escapeHtml(countryData.countryName)}</h3>
@@ -1069,7 +1087,7 @@ function renderChannelList() {
 
 function renderCountryFlags() {
   const query = normalizeSearchText(state.search.trim());
-  if (query) {
+  if (query || isPreviewTheme()) {
     els.countryFlags.innerHTML = "";
     els.countryFlags.hidden = true;
     return;
@@ -1187,9 +1205,11 @@ function timelineLabels(start, totalMinutes) {
 function renderGuide() {
   const channels = selectedChannels();
   document.body.dataset.guideEmpty = String(!channels.length);
+  document.body.dataset.editorPicksOpen = String(state.editorPicksOpen);
+  els.editorPicksToggle?.setAttribute("aria-pressed", String((!channels.length || state.editorPicksOpen) && !state.liveSportsOpen && !state.search.trim()));
 
   const picksWereInGuide = els.guide.contains(els.editorPicks);
-  if (!channels.length) {
+  if (!channels.length || state.editorPicksOpen) {
     if (!picksWereInGuide) els.editorPicks.open = true;
     const scrollTop = els.guide.querySelector(".empty-state")?.scrollTop || 0;
     els.guide.innerHTML = `
@@ -1380,6 +1400,7 @@ function render() {
 }
 
 els.channelSearch.addEventListener("input", (event) => {
+  state.editorPicksOpen = false;
   state.liveSportsOpen = false;
   document.body.dataset.liveSportsOpen = "false";
   els.liveSportsToggle?.setAttribute("aria-expanded", "false");
@@ -1388,11 +1409,30 @@ els.channelSearch.addEventListener("input", (event) => {
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
+  if (isPreviewTheme()) renderGuide();
 });
 
 els.liveSportsToggle?.addEventListener("click", () => {
   setLiveSportsOpen(!state.liveSportsOpen);
 });
+
+els.editorPicksToggle?.addEventListener("click", () => {
+  state.editorPicksOpen = !state.editorPicksOpen;
+  state.search = "";
+  els.channelSearch.value = "";
+  setMobileSearchOpen(false);
+  setLiveSportsOpen(false);
+  els.editorPicks.open = true;
+  setMobileView("guide");
+  render();
+});
+
+els.channelList.addEventListener("toggle", (event) => {
+  const group = event.target;
+  if (!group.matches("details.country-group") || !group.isConnected) return;
+  if (group.open) state.expandedCountries.add(group.dataset.countryCode);
+  else state.expandedCountries.delete(group.dataset.countryCode);
+}, true);
 
 els.countryFlags.addEventListener("click", (event) => {
   const button = event.target.closest(".flag-button");
@@ -1413,6 +1453,7 @@ els.channelList.addEventListener("click", (event) => {
   }
 
   const key = choice.dataset.channelKey;
+  state.editorPicksOpen = false;
   const selected = selectedSet();
   const isSelected = selected.has(key);
 
@@ -1552,6 +1593,11 @@ window.addEventListener("resize", () => setMobileView(state.mobileView));
 
 async function start() {
   try {
+    if (isPreviewTheme()) {
+      const actions = document.querySelector("#preview-actions");
+      actions.hidden = false;
+      actions.prepend(els.liveSportsToggle);
+    }
     await loadGuideData();
     render();
     window.setInterval(() => {

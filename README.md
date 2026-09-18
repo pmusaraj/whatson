@@ -34,12 +34,15 @@ Countries currently included:
 Serve `web/` locally: `python3 -m http.server 8765 --directory web`.
 Open these temporary previews; removing `?theme=…` restores the saved theme/default:
 
-- [Paper — minimal editorial](http://localhost:8765/?theme=paper)
-- [Pop — playful flat colour](http://localhost:8765/?theme=pop)
-- [Broadcast — restrained dark](http://localhost:8765/?theme=broadcast)
+- [Soft studio — warm rose and berry](http://localhost:8765/?theme=soft-studio)
+- [Open air — pale mint, teal and yellow picks](http://localhost:8765/?theme=open-air)
+- [Quiet guide — neutral green grays and fine dividers](http://localhost:8765/?theme=quiet-guide)
 
 Previews do not persist a theme preference. The production default remains Sense;
 channel selections still use the existing local storage. No theme picker or new dependency.
+These are surface-only previews: the existing logo, guide/sidebar/picks structure,
+controls and mobile interactions remain. Committed schedules may be stale; previews
+do not refresh or invent listings.
 
 ## Architecture
 

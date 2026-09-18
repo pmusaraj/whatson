@@ -1,0 +1,19 @@
+/* soft-studio: opt-in surfaces only; layout stays in styles.css. */
+@import url("exploration-theme.css?v=applied-1");
+:root {
+  --background: #e7e0e1;
+  --surface: #f4eff0;
+  --surface-strong: #ffffff;
+  --text: #292429;
+  --muted: #70636a;
+  --border: #e3d9dd;
+  --accent: #b62459;
+  --accent-soft: #f8eaf0;
+  --hover: #f2dce5;
+  --on-accent: #ffffff;
+  --panel-radius: 22px;
+  --card-radius: 10px;
+  --shadow: none;
+}
+.picker-panel { background: var(--surface); }
+.editor-pick-result { background: #faf2f5; }
