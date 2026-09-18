@@ -25,9 +25,9 @@ const state = {
   mobileView: "guide",
   searchOpen: false,
   liveSportsOpen: false,
-  editorPicksOpen: false,
+  editorPicksOpen: true,
   expandedCountries: new Set(),
-  disabledSportFilters: new Set(),
+  selectedSportFilter: null,
 };
 
 const els = {
@@ -38,8 +38,12 @@ const els = {
   channelSearch: document.querySelector("#channel-search"),
   channelList: document.querySelector("#channel-list"),
   channelPicker: document.querySelector("#channel-picker"),
+  channelsView: document.querySelector("#channels-view"),
   searchResults: document.querySelector("#search-results"),
   guide: document.querySelector("#guide"),
+  guideTitle: document.querySelector("#guide-title"),
+  sportFilters: document.querySelector("#sport-filters"),
+  dataUpdated: document.querySelector("#data-updated"),
   editorPicks: document.querySelector("#editor-picks"),
   editorPicksList: document.querySelector("#editor-picks-list"),
   programDialog: document.querySelector("#program-dialog"),
@@ -744,7 +748,7 @@ function isLiveSportsProgram(program) {
   return Boolean(detectSportBucket(program));
 }
 
-function currentLiveSportsResults(limit = 100) {
+function currentLiveSportsResults(limit = Infinity) {
   const results = [];
   const seen = new Set();
   for (const country of state.countries) {
@@ -787,6 +791,45 @@ function currentLiveSportsResults(limit = 100) {
 }
 
 
+function sportsEventText(value) {
+  return normalizeSearchText(value)
+    .replace(/^live\s*[:–-]?\s+/, "")
+    .replace(/\b(vs?\.?|versus)\b/g, " ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
+function groupLiveSportsResults(results) {
+  const groups = [];
+  for (const result of results) {
+    const title = sportsEventText(result.program.title);
+    const subtitle = sportsEventText(result.program.subtitle);
+    // Generic sport labels alone cannot identify a shared event.
+    const specific = title.split(" ").length > 1 && title !== sportsEventText(result.sport.label);
+    const group = specific && groups.find((candidate) =>
+      candidate.sport.id === result.sport.id &&
+      sportsEventText(candidate.program.title) === title &&
+      candidate.airings.every((airing) => {
+        const otherSubtitle = sportsEventText(airing.program.subtitle);
+        const competition = sportsEventText(result.program.competition);
+        const otherCompetition = sportsEventText(airing.program.competition);
+        return (!subtitle || !otherSubtitle || subtitle === otherSubtitle) &&
+          (!competition || !otherCompetition || competition === otherCompetition) &&
+          Math.abs(new Date(airing.program.startAt) - new Date(result.program.startAt)) <= 90 * 60000 &&
+          isOverlappingDuplicate(airing.program, result.program);
+      })
+    );
+    if (group) {
+      if (!group.airings.some((airing) => airing.key === result.key && airing.index === result.index)) {
+        group.airings.push(result);
+      }
+    } else {
+      groups.push({ ...result, airings: [result] });
+    }
+  }
+  return groups;
+}
+
 function availableSportFilters(results) {
   const filters = [];
   const seen = new Set();
@@ -801,7 +844,7 @@ function availableSportFilters(results) {
 }
 
 function visibleLiveSportsResults(results) {
-  return results.filter((result) => !state.disabledSportFilters.has(result.sport.id));
+  return results.filter((result) => !state.selectedSportFilter || result.sport.id === state.selectedSportFilter);
 }
 
 function renderSportFilters(filters) {
@@ -812,9 +855,11 @@ function renderSportFilters(filters) {
     <div class="sport-filter-bar" aria-label="Filter sports">
       ${filters
         .map((sport) => {
-          const enabled = !state.disabledSportFilters.has(sport.id);
+          const selected = state.selectedSportFilter === sport.id;
+          const enabled = !state.selectedSportFilter || selected;
+          const action = selected ? "Show all sports" : `Show only ${sport.label}`;
           return `
-            <button class="sport-filter-button ${enabled ? "enabled" : ""}" type="button" data-sport-filter="${escapeHtml(sport.id)}" aria-pressed="${enabled}" title="${escapeHtml(sport.label)}" aria-label="${enabled ? "Hide" : "Show"} ${escapeHtml(sport.label)}">
+            <button class="sport-filter-button ${enabled ? "enabled" : ""}" type="button" data-sport-filter="${escapeHtml(sport.id)}" aria-pressed="${selected}" title="${escapeHtml(action)}" aria-label="${escapeHtml(action)}">
               <span aria-hidden="true">${sport.emoji}</span>
             </button>
           `;
@@ -903,40 +948,62 @@ function renderSearchResults() {
   `;
 }
 
+function renderConcurrentEvents(events, renderEvent, emptyMessage) {
+  const byStart = new Map();
+  for (const event of events) {
+    // Match the minute shown in the UI, including equivalent time zones.
+    const minute = Math.floor(new Date(event.program.startAt).getTime() / 60000);
+    if (!byStart.has(minute)) byStart.set(minute, []);
+    byStart.get(minute).push(event);
+  }
+  const groups = [...byStart.entries()].sort(([a], [b]) => a - b);
+  return renderTimedEvents(groups, ([minute]) => minute * 60000,
+    ([minute, simultaneous]) => `<section class="event-time-slot">
+      <h3 class="event-time-heading"><time datetime="${new Date(minute * 60000).toISOString()}">${formatTime(new Date(minute * 60000))}</time><span class="event-time-sports" aria-hidden="true">${[...new Set(simultaneous.map((event) => event.sport?.emoji).filter(Boolean))].map(escapeHtml).join(" ")}</span></h3>
+      <div class="event-time-group">${simultaneous.map(renderEvent).join("")}</div>
+    </section>`,
+    emptyMessage);
+}
+
+function onTodayChannelAirings(airings) {
+  const counts = new Map();
+  const seen = new Set();
+  return airings.filter((airing) => {
+    const country = airing.countryData.country;
+    const count = counts.get(country) || 0;
+    if (count >= 3 || seen.has(airing.key)) return false;
+    counts.set(country, count + 1);
+    seen.add(airing.key);
+    return true;
+  });
+}
+
 function renderLiveSportsResults() {
-  const allResults = currentLiveSportsResults();
+  const allResults = groupLiveSportsResults(currentLiveSportsResults());
   const filters = availableSportFilters(allResults);
   const results = visibleLiveSportsResults(allResults);
-  const countText = results.length === allResults.length
-    ? `${results.length} event${results.length === 1 ? "" : "s"} now or starting soon`
-    : `${results.length} of ${allResults.length} event${allResults.length === 1 ? "" : "s"} now or starting soon`;
+  els.sportFilters.innerHTML = renderSportFilters(filters);
+  els.sportFilters.hidden = false;
   els.searchResults.hidden = false;
   els.searchResults.innerHTML = `
-    <div class="search-results-heading live-sports-heading">
-      ${renderSportFilters(filters)}
-      <span>${allResults.length ? countText : "No sports now or starting soon"}</span>
-      <button class="secondary-button live-sports-close" type="button" data-close-live-sports aria-label="Close sports on now">×</button>
-    </div>
-    ${
-      results.length
-        ? `
-      <div class="show-results-list live-sports-list">
-        ${results
-          .map(
-            ({ channel, countryData, key, program, index, sport, current }) => `
-              <button class="show-result ${current ? "current" : ""} live-sport-result" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}">
-                <span class="show-result-time">${formatTime(program.startAt)} – ${formatTime(program.endAt)}</span>
-                <span class="sport-chip">${sport.emoji} ${escapeHtml(sport.label)}</span>
-                <span class="show-result-title">${escapeHtml(program.title)}</span>
-                <span class="show-result-meta">${flagEmoji(countryData.country)} ${escapeHtml(channel.name)}</span>
-              </button>
+    <div class="show-results-list live-sports-list">
+      ${renderConcurrentEvents(results,
+            ({ program, sport, airings }) => `
+              <article class="editor-pick-result">
+                <div class="editor-pick-heading">
+                  <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"><span class="event-sport-icon" aria-hidden="true">${sport.emoji}</span> ${escapeHtml(program.title)}</button>
+                </div>
+                <div class="editor-pick-channels" aria-label="Available channels">
+                  ${onTodayChannelAirings(airings).map(({ channel, countryData, key, index, program: airing }) => `
+                    <button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)} · ${formatTime(airing.startAt)} – ${formatTime(airing.endAt)}">
+                      <span aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(channel.name)}
+                    </button>
+                  `).join("")}
+                </div>
+              </article>
             `,
-          )
-          .join("")}
-      </div>
-    `
-        : `<div class="empty-program">No sports match the active filters.</div>`
-    }
+        "No sports match the active filters.")}
+    </div>
   `;
 }
 
@@ -969,14 +1036,27 @@ function resolvedEditorPicks() {
   }).filter(Boolean).sort((a, b) => new Date(a.pick.startAt) - new Date(b.pick.startAt));
 }
 
+function renderTimedEvents(events, startAt, renderEvent, emptyMessage) {
+  const marker = `<div class="event-now-indicator"><time datetime="${state.now.toISOString()}">Now · ${formatTime(state.now)}</time></div>`;
+  if (!events.length) {
+    return marker + `<p class="empty-program">${escapeHtml(emptyMessage)}</p>`;
+  }
+  const upcomingIndex = events.findIndex((event) => new Date(startAt(event)) > state.now);
+  const markerIndex = upcomingIndex < 0 ? events.length : upcomingIndex;
+  const rows = events.map(renderEvent);
+  rows.splice(markerIndex, 0, marker);
+  return rows.join("");
+}
+
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
-  els.editorPicks.hidden = picks.length === 0 && !isPreviewTheme();
-  els.editorPicksList.innerHTML = picks.map(({ pick, airings }) => `
+  els.editorPicks.hidden = false;
+  els.editorPicksList.innerHTML = renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => `
     <article class="editor-pick-result">
       <div class="editor-pick-heading">
         <span class="show-result-time">${formatTime(pick.startAt)}</span>
-        <strong class="show-result-title"><span aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span> ${escapeHtml(pick.title)}</strong>
+        <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
+        <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}">${escapeHtml(pick.title)}</button>
       </div>
       <div class="editor-pick-channels" aria-label="Available channels">
         ${airings.map(({ countryData, channel, index, key }) => `
@@ -986,7 +1066,7 @@ function renderEditorPicks() {
         `).join("")}
       </div>
     </article>
-  `).join("") || (isPreviewTheme() ? '<p class="empty-program">No upcoming editor’s picks in the current data.</p>' : "");
+  `, "No upcoming editor’s picks in the current data.");
 }
 
 function setLiveSportsOpen(open) {
@@ -1002,11 +1082,11 @@ function setLiveSportsOpen(open) {
   }
   document.body.dataset.liveSportsOpen = String(open);
   document.body.dataset.guideEmpty = String(selectedChannels().length === 0);
-  els.liveSportsToggle?.setAttribute("aria-expanded", String(open));
+  els.liveSportsToggle?.setAttribute("aria-pressed", String(open));
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
-  if (isPreviewTheme()) renderGuide();
+  renderGuide();
 }
 
 function renderChannelList() {
@@ -1070,7 +1150,7 @@ function renderChannelList() {
 
       if (isPreviewTheme()) {
         return `
-          <details class="country-group" data-country-code="${escapeHtml(countryData.country)}"${state.expandedCountries.has(countryData.country) ? " open" : ""}>
+          <details class="country-group" name="countries" data-country-code="${escapeHtml(countryData.country)}"${state.expandedCountries.has(countryData.country) ? " open" : ""}>
             <summary><span class="country-flag-pill" aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(countryData.countryName)}</summary>
             <div class="country-channels">${choices}</div>
           </details>`;
@@ -1206,25 +1286,29 @@ function renderGuide() {
   const channels = selectedChannels();
   document.body.dataset.guideEmpty = String(!channels.length);
   document.body.dataset.editorPicksOpen = String(state.editorPicksOpen);
-  els.editorPicksToggle?.setAttribute("aria-pressed", String((!channels.length || state.editorPicksOpen) && !state.liveSportsOpen && !state.search.trim()));
+  els.editorPicksToggle?.setAttribute("aria-pressed", String(state.editorPicksOpen && !state.liveSportsOpen && !state.search.trim()));
+
+  els.guideTitle.textContent = state.search.trim() ? "Search Results"
+    : state.liveSportsOpen ? "On Today"
+    : state.editorPicksOpen ? "Editor's Picks" : "Channels";
+  els.sportFilters.hidden = !state.liveSportsOpen;
+  els.dataUpdated.textContent = `Data last updated ${formatRelativeTime(state.generatedAt)}`;
 
   const picksWereInGuide = els.guide.contains(els.editorPicks);
-  if (!channels.length || state.editorPicksOpen) {
-    if (!picksWereInGuide) els.editorPicks.open = true;
+  if (state.editorPicksOpen) {
     const scrollTop = els.guide.querySelector(".empty-state")?.scrollTop || 0;
-    els.guide.innerHTML = `
-      <div class="empty-state">
-        <p>This is a simple app to find what's on TV. Pick channels from the left column, or search above for a show, channel, or live event.</p>
-        <p class="empty-state-notes">Data last updated ${escapeHtml(formatRelativeTime(state.generatedAt))} · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</p>
-      </div>`;
-    els.guide.querySelector(".empty-state-notes").before(els.editorPicks);
+    els.guide.innerHTML = '<div class="empty-state"></div>';
+    els.guide.querySelector(".empty-state").append(els.editorPicks);
     els.guide.querySelector(".empty-state").scrollTop = scrollTop;
     return;
   }
 
   if (picksWereInGuide) {
     els.guide.parentElement.prepend(els.editorPicks);
-    els.editorPicks.open = false;
+  }
+  if (!channels.length) {
+    els.guide.innerHTML = '<div class="empty-state"><p>Choose a channel from the sidebar to see its schedule.</p></div>';
+    return;
   }
   const { start, end } = timelineBounds();
   const totalMinutes = VISIBLE_HOURS * 60;
@@ -1237,10 +1321,14 @@ function renderGuide() {
     .map(
       (channel) => `
         <div class="guide-channel-heading">
-          ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
-          <span class="guide-channel-flag" aria-hidden="true">${flagEmoji(channel.countryCode)}</span>
-          <div class="guide-channel-name">${escapeHtml(channel.name)}</div>
-          <button class="remove-channel-button" type="button" data-channel-key="${escapeHtml(channel.key)}" aria-label="Remove ${escapeHtml(channel.name)} from guide">×</button>
+          <div class="guide-channel-logo" aria-hidden="true">
+            ${channel.logoUrl ? `<img class="logo" src="${escapeHtml(channel.logoUrl)}" alt="" loading="lazy" />` : ""}
+          </div>
+          <div class="guide-channel-label">
+            <span class="guide-channel-flag" aria-hidden="true">${flagEmoji(channel.countryCode)}</span>
+            <div class="guide-channel-name">${escapeHtml(channel.name)}</div>
+            <button class="remove-channel-button" type="button" data-channel-key="${escapeHtml(channel.key)}" aria-label="Remove ${escapeHtml(channel.name)} from guide">×</button>
+          </div>
         </div>
       `,
     )
@@ -1393,7 +1481,7 @@ function render() {
   setMobileView(state.mobileView);
   setMobileSearchOpen(state.searchOpen);
   document.body.dataset.liveSportsOpen = String(state.liveSportsOpen);
-  els.liveSportsToggle?.setAttribute("aria-expanded", String(state.liveSportsOpen));
+  els.liveSportsToggle?.setAttribute("aria-pressed", String(state.liveSportsOpen));
   if (els.clearSelection) {
     els.clearSelection.hidden = state.selectedChannelKeys.length === 0;
   }
@@ -1403,26 +1491,25 @@ els.channelSearch.addEventListener("input", (event) => {
   state.editorPicksOpen = false;
   state.liveSportsOpen = false;
   document.body.dataset.liveSportsOpen = "false";
-  els.liveSportsToggle?.setAttribute("aria-expanded", "false");
+  els.liveSportsToggle?.setAttribute("aria-pressed", "false");
   state.search = event.target.value;
   document.body.dataset.searching = String(Boolean(state.search.trim()));
   renderCountryFlags();
   renderChannelList();
   renderSearchResults();
-  if (isPreviewTheme()) renderGuide();
+  renderGuide();
 });
 
 els.liveSportsToggle?.addEventListener("click", () => {
-  setLiveSportsOpen(!state.liveSportsOpen);
+  setLiveSportsOpen(true);
 });
 
 els.editorPicksToggle?.addEventListener("click", () => {
-  state.editorPicksOpen = !state.editorPicksOpen;
+  state.editorPicksOpen = true;
   state.search = "";
   els.channelSearch.value = "";
   setMobileSearchOpen(false);
   setLiveSportsOpen(false);
-  els.editorPicks.open = true;
   setMobileView("guide");
   render();
 });
@@ -1430,8 +1517,15 @@ els.editorPicksToggle?.addEventListener("click", () => {
 els.channelList.addEventListener("toggle", (event) => {
   const group = event.target;
   if (!group.matches("details.country-group") || !group.isConnected) return;
-  if (group.open) state.expandedCountries.add(group.dataset.countryCode);
-  else state.expandedCountries.delete(group.dataset.countryCode);
+  if (group.open) {
+    state.expandedCountries.clear();
+    state.expandedCountries.add(group.dataset.countryCode);
+    for (const other of els.channelList.querySelectorAll("details.country-group[open]")) {
+      if (other !== group) other.open = false;
+    }
+  } else {
+    state.expandedCountries.delete(group.dataset.countryCode);
+  }
 }, true);
 
 els.countryFlags.addEventListener("click", (event) => {
@@ -1446,6 +1540,30 @@ els.countryFlags.addEventListener("click", (event) => {
   countryGroup?.scrollIntoView({ block: "start", behavior: "smooth" });
 });
 
+function activateChannelView() {
+  state.editorPicksOpen = false;
+  state.liveSportsOpen = false;
+  state.search = "";
+  els.channelSearch.value = "";
+  setMobileSearchOpen(false);
+  setMobileView("guide");
+}
+
+els.channelsView.addEventListener("click", () => {
+  activateChannelView();
+  render();
+});
+
+function showChannel(key) {
+  if (!getChannelByKey(key)) return;
+  if (!state.selectedChannelKeys.includes(key)) {
+    state.selectedChannelKeys = [...state.selectedChannelKeys.slice(0, MAX_SELECTIONS - 1), key];
+    saveSelection();
+  }
+  activateChannelView();
+  render();
+}
+
 els.channelList.addEventListener("click", (event) => {
   const choice = event.target.closest(".channel-choice");
   if (!choice || choice.disabled) {
@@ -1453,7 +1571,7 @@ els.channelList.addEventListener("click", (event) => {
   }
 
   const key = choice.dataset.channelKey;
-  state.editorPicksOpen = false;
+  const switchingView = state.editorPicksOpen || state.liveSportsOpen || Boolean(state.search.trim());
   const selected = selectedSet();
   const isSelected = selected.has(key);
 
@@ -1461,12 +1579,13 @@ els.channelList.addEventListener("click", (event) => {
     return;
   }
 
-  if (isSelected) {
+  if (isSelected && !switchingView) {
     selected.delete(key);
   } else {
     selected.add(key);
   }
 
+  activateChannelView();
   state.selectedChannelKeys = Array.from(selected).slice(0, MAX_SELECTIONS);
   saveSelection();
   render();
@@ -1525,33 +1644,36 @@ if (els.themeSelect) {
   });
 }
 
-els.searchResults.addEventListener("click", (event) => {
+els.sportFilters.addEventListener("click", (event) => {
   const filterButton = event.target.closest("[data-sport-filter]");
   if (filterButton) {
     const sportId = filterButton.dataset.sportFilter;
-    if (state.disabledSportFilters.has(sportId)) {
-      state.disabledSportFilters.delete(sportId);
-    } else {
-      state.disabledSportFilters.add(sportId);
-    }
+    state.selectedSportFilter = state.selectedSportFilter === sportId ? null : sportId;
     renderLiveSportsResults();
-    return;
   }
-  if (event.target.closest("[data-close-live-sports]")) {
-    setLiveSportsOpen(false);
-    return;
-  }
-  const result = event.target.closest(".show-result");
+});
+
+els.searchResults.addEventListener("click", (event) => {
+  const result = event.target.closest(".show-result, .editor-pick-channel, .event-title");
   if (!result) {
     return;
   }
-  openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
+  if (result.matches(".editor-pick-channel")) {
+    showChannel(result.dataset.channelKey);
+  } else {
+    openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
+  }
 });
 
 els.editorPicksList.addEventListener("click", (event) => {
+  const title = event.target.closest(".event-title");
+  if (title) {
+    openProgramDetails(title.dataset.channelKey, title.dataset.programIndex);
+    return;
+  }
   const result = event.target.closest(".editor-pick-channel");
   if (result) {
-    openProgramDetails(result.dataset.channelKey, result.dataset.programIndex);
+    showChannel(result.dataset.channelKey);
   }
 });
 
@@ -1593,11 +1715,6 @@ window.addEventListener("resize", () => setMobileView(state.mobileView));
 
 async function start() {
   try {
-    if (isPreviewTheme()) {
-      const actions = document.querySelector("#preview-actions");
-      actions.hidden = false;
-      actions.prepend(els.liveSportsToggle);
-    }
     await loadGuideData();
     render();
     window.setInterval(() => {

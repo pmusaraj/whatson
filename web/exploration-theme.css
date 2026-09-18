@@ -12,9 +12,9 @@ body { background: var(--background); }
 .brand-logo, .brand-logo-part { border-radius: 28px !important; }
 .panel, .schedule-wrap, .program-dialog { border-radius: var(--panel-radius) !important; }
 .program-block, .editor-pick-result, .search-results { border-radius: var(--card-radius) !important; }
-.search, .secondary-button, .live-sports-toggle, .remove-channel-button,
+.search, .secondary-button, .program-button, .remove-channel-button,
 .program-tags span, .editor-pick-channel { border-radius: var(--card-radius) !important; }
-.program-title, .show-result-title, .guide-channel-heading { font-weight: 700; }
+.program-title, .show-result-title, .guide-channel-heading { font-weight: 600; }
 .program-time, .time-label, .show-result-time { font-variant-numeric: tabular-nums; }
 @media (max-width: 860px) {
   .brand-logo, .brand-logo-part { border-radius: 16px !important; }
@@ -38,7 +38,7 @@ html body .program-block {
   border-radius: 5px !important;
   box-shadow: none;
 }
-html body .program-block .program-title { font-weight: 700; color: inherit; }
+html body .program-block .program-title { font-weight: 600; color: inherit; }
 html body .program-block :is(.program-time, .program-subtitle, .program-tags span) { color: #626a64; }
 html body .program-block .program-tags span { background: transparent; border-color: transparent; }
 html body .program-block :is(.program-time, .program-subtitle) { font-weight: 400; }
@@ -55,11 +55,11 @@ html body .current-time-line span { background: #43594a; color: #ffffff; }
 .current-time-line span { background: var(--accent); color: var(--on-accent); }
 .channel-choice:hover, .show-result:hover, .program-block:hover,
 .secondary-button:hover, .editor-pick-channel:hover,
-.live-sports-toggle:hover, .sport-filter-button:hover, .sport-filter-button.enabled:hover {
+.program-button:hover, .sport-filter-button:hover, .sport-filter-button.enabled:hover {
   background: var(--hover); color: var(--text); border-color: var(--accent);
 }
 .program-block.current:hover { background: var(--accent); color: var(--on-accent); border-color: var(--text); }
-.live-sports-toggle[aria-expanded="true"], .sport-filter-button.enabled {
+.program-button:is([aria-expanded="true"], [aria-pressed="true"]), .sport-filter-button.enabled {
   background: var(--accent); color: var(--on-accent);
 }
 .search::placeholder { color: var(--muted); opacity: 1; }
@@ -74,7 +74,8 @@ html body :is(button, input, select, summary, a, [role="button"]):focus-visible 
 html body .picker-panel,
 html body .country-group summary,
 html body .channel-choice:not(.selected),
-html body .editor-picks .editor-pick-result {
+html body .editor-picks .editor-pick-result,
+html body .live-sports-list .editor-pick-result {
   background: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -85,7 +86,7 @@ html body .editor-pick-channel, html body .program-tags span {
   border-color: transparent;
 }
 html body .channel-choice:hover { background: var(--hover); }
-#preview-actions button { background: transparent; border-color: transparent; }
-#preview-actions button:hover { background: var(--hover); }
-#preview-actions button[aria-expanded="true"],
-#preview-actions button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+.programs-section .program-button { background: transparent; border-color: transparent; }
+.programs-section .program-button:hover { background: var(--hover); }
+.programs-section .program-button[aria-expanded="true"],
+.programs-section .program-button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }

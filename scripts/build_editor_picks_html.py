@@ -35,12 +35,11 @@ def render_picks(picks, now):
             '</article>'
         )))
     rows = "\n".join(html for _, html in sorted(events, key=lambda event: event[0]))
-    visibility = "open" if rows else "hidden"
+    visibility = "" if rows else " hidden"
     return (
-        f'<details id="editor-picks" class="editor-picks" {visibility}>\n'
-        "  <summary>Today's editors picks for sports</summary>\n"
+        f'<section id="editor-picks" class="editor-picks" aria-label="Editor\'s Picks"{visibility}>\n'
         f'  <div id="editor-picks-list" class="show-results-list">{rows}</div>\n'
-        '</details>'
+        '</section>'
     )
 
 

@@ -16,5 +16,5 @@
   --shadow: none;
 }
 .picker-panel { background: var(--surface); }
-.editor-picks .editor-pick-result { background: #fff9e0; border-color: #e8db9d; }
+.editor-picks .editor-pick-result, .live-sports-list .editor-pick-result { background: #fff9e0; border-color: #e8db9d; }
 .editor-pick-result:first-child { background: #fff0b0; }

@@ -6,12 +6,14 @@
     <title>heywhatson.tv -- easy, simple TV guide application to help you find what's on your favourite TV channels</title>
     <meta name="description"
       content="A static app for seeing what's on TV right now and in the next few hours. Stores data in your browser session, gets updated every 6 hours. Easy, quick, no authentication needed. Can be easily run locally. ">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
     <link id="theme-link" rel="stylesheet" href="sense-theme.css?v=editor-picks-pills" />
-    <link rel="stylesheet" href="styles.css?v=empty-guide-picks" />
+    <link rel="stylesheet" href="styles.css?v=inter-typography" />
   </head>
   <body data-mobile-view="guide">
     <header class="app-header">
-      <div>
+      <button id="mobile-menu" class="mobile-menu-button" type="button" aria-controls="channel-picker" aria-expanded="true" aria-label="Hide channels">☰</button>
+      <div class="brand-container">
         <h1 class="brand-logo" aria-label="Hey Whatson.tv">
           <span class="brand-logo-part brand-logo-hey">hey</span>
           <span class="brand-logo-part brand-logo-main">whatson</span><span class="brand-logo-part brand-logo-domain">.tv</span>
@@ -20,32 +22,39 @@
       <div class="header-controls">
         <input id="channel-search" class="search header-search" type="search" placeholder="Search" autocomplete="off" />
         <button id="mobile-search" class="mobile-search-button" type="button" aria-controls="channel-search" aria-expanded="false" aria-label="Search">⌕</button>
-        <button id="mobile-menu" class="mobile-menu-button" type="button" aria-controls="channel-picker" aria-expanded="true" aria-label="Hide channels">☰</button>
       </div>
       <div class="status" id="status">Loading guide data…</div>
     </header>
 
-    <nav id="preview-actions" aria-label="Discover" hidden>
-      <button id="editor-picks-toggle" class="secondary-button" type="button" aria-pressed="true" aria-controls="editor-picks">Editor's picks</button>
-    </nav>
     <main class="layout">
       <section id="channel-picker" class="panel picker-panel" aria-labelledby="picker-title">
-        <div class="panel-heading compact-heading">
-          <h2 id="picker-title">Channels</h2>
+        <nav class="programs-section" aria-labelledby="programs-title">
+          <div class="panel-heading compact-heading">
+            <h2 id="programs-title">Sports</h2>
+          </div>
+          <button id="editor-picks-toggle" class="program-button" type="button" aria-pressed="true" aria-controls="editor-picks"><span class="program-avatar" aria-hidden="true">EP</span> Editor's picks</button>
+          <button id="live-sports-toggle" class="program-button" type="button" aria-pressed="false" aria-controls="search-results"><span class="program-avatar" aria-hidden="true">ON</span> On Today</button>
+        </nav>
+
+        <div class="panel-heading compact-heading channels-heading">
+          <h2 id="picker-title"><button id="channels-view" type="button" aria-controls="guide">Channels</button></h2>
           <button id="clear-selection" class="secondary-button" type="button">Clear</button>
         </div>
 
         <div id="country-flags" class="country-flags" aria-label="Countries"></div>
-        <button id="live-sports-toggle" class="live-sports-toggle" type="button" aria-expanded="false" aria-controls="search-results">Sports On Now</button>
         <div id="channel-list" class="channel-list"></div>
+        <p class="sidebar-description">This is a simple app to find what's on TV. Pick channels from the sidebar, or search above for a show, channel, or live event.</p>
       </section>
 
-      <section class="panel guide-panel" aria-label="TV guide">
+      <section class="panel guide-panel" aria-labelledby="guide-title">
+        <div class="guide-heading">
+          <h2 id="guide-title" class="guide-title">Editor's Picks</h2>
+          <div id="sport-filters" hidden></div>
+        </div>
         <div id="search-results" class="search-results" hidden></div>
         <div id="guide" class="guide"><div class="empty-state">
         <!-- editor-picks:start -->
-<details id="editor-picks" class="editor-picks" open>
-  <summary>Today's editors picks for sports</summary>
+<section id="editor-picks" class="editor-picks" aria-label="Editor's Picks">
   <div id="editor-picks-list" class="show-results-list"><article class="editor-pick-result">
   <div class="editor-pick-heading">
     <time class="show-result-time" datetime="2026-09-14T18:30:00+00:00">Sep 14, 18:30 UTC</time>
@@ -116,11 +125,13 @@
   </div>
   <div class="editor-pick-channels">TNT Sports 2 HD</div>
 </article></div>
-</details>
+</section>
 <!-- editor-picks:end -->
         </div></div>
       </section>
     </main>
+
+    <footer class="app-footer"><span id="data-updated">Loading guide data…</span> · <a href="https://github.com/pmusaraj/whatson" target="_blank" rel="noreferrer">GitHub</a> for questions, issues, and requests.</footer>
 
     <dialog id="program-dialog" class="program-dialog" aria-labelledby="program-dialog-title">
       <div id="program-dialog-content" class="program-dialog-content"></div>
@@ -129,6 +140,6 @@
       </form>
     </dialog>
 
-    <script src="app.js?v=applied-styles-1"></script>
+    <script src="app.js?v=viewport-layout"></script>
   </body>
 </html>

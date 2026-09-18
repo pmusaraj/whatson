@@ -56,15 +56,43 @@ const sportsHtml = context.els.editorPicksList.innerHTML;
 assert.equal((sportsHtml.match(/class="editor-pick-result"/g) || []).length, 2);
 assert.ok(!sportsHtml.includes('Series premiere'));
 assert.ok(sportsHtml.indexOf('Early soccer') < sportsHtml.indexOf('Late tennis'));
-assert.ok(sportsHtml.includes('<span aria-hidden="true">⚽</span> Early soccer'));
-assert.ok(sportsHtml.includes('<span aria-hidden="true">🎾</span> Late tennis'));
-assert.ok(fs.readFileSync('web/index.html', 'utf8').includes("<summary>Today's editors picks for sports</summary>"));
+assert.ok(sportsHtml.includes('<span class="editor-pick-sport" aria-hidden="true">⚽</span>'));
+assert.ok(sportsHtml.includes('<span class="editor-pick-sport" aria-hidden="true">🎾</span>'));
+assert.ok(fs.readFileSync('web/index.html', 'utf8').includes("<h2 id=\"guide-title\" class=\"guide-title\">Editor's Picks</h2>"));
 context.state.now = new Date(endAt);
 vm.runInContext('renderEditorPicks()', context);
-assert.equal(context.els.editorPicks.hidden, true);
-assert.equal(context.els.editorPicksList.innerHTML, '');
+assert.equal(context.els.editorPicks.hidden, false);
+assert.ok(context.els.editorPicksList.innerHTML.includes('No upcoming editor’s picks'));
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
+
+    def test_event_time_marker_tracks_now_and_handles_empty_lists(self):
+        subprocess.run(['node', '-e', r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const app = fs.readFileSync('web/app.js', 'utf8');
+const context = {state: {now: new Date('2026-09-18T18:00:00Z')},
+  formatTime: value => value.toISOString(), escapeHtml: value => value};
+vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('function renderTimedEvents('), app.indexOf('function renderEditorPicks(')), context);
+const render = starts => {
+  context.events = starts.map(hour => ({start: `2026-09-18T${hour}:00:00Z`, title: `Event ${hour}`}));
+  return vm.runInContext('renderTimedEvents(events, e => e.start, e => `<article>${e.title}</article>`, "No events")', context);
+};
+let html = render(['17', '18', '19']);
+assert.equal((html.match(/class="event-now-indicator"/g) || []).length, 1);
+assert.ok(html.indexOf('Event 18') < html.indexOf('Now ·'));
+assert.ok(html.indexOf('Now ·') < html.indexOf('Event 19'));
+assert.ok(render(['19']).indexOf('Now ·') < render(['19']).indexOf('Event 19'));
+context.state.now = new Date('2026-09-18T19:01:00Z');
+html = render(['17', '18', '19']);
+assert.ok(html.indexOf('Now ·') > html.indexOf('Event 19'));
+assert.ok(html.includes('datetime="2026-09-18T19:01:00.000Z"'));
+html = render([]);
+assert.ok(html.includes('Now ·'));
+assert.ok(html.includes('No events'));
+"""], cwd=Path(__file__).resolve().parents[1], check=True)
 
     def test_mobile_sidebar_dismisses_only_on_noninteractive_outside_clicks(self):
         script = r"""
