@@ -1,0 +1,13 @@
+/* Broadcast: matte charcoal, mint signal, tabular timing. */
+@import url("exploration-theme.css?v=exploration-1");
+:root {
+  color-scheme: dark;
+  --background: #111719; --surface: #1a2225; --surface-strong: #222d31;
+  --text: #eff4f2; --muted: #b0c1c3; --border: #4a6065;
+  --accent: #92e5b4; --accent-soft: #263e34; --hover: #34474f; --on-accent: #13271b;
+  --shadow: none;
+}
+.program-time, .time-label, .show-result-time { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-variant-numeric: tabular-nums; }
+.program-block.current { border-left-color: var(--accent); }
+.editor-pick-result { border-color: transparent; border-bottom-color: var(--border); }
+.sport-filter-button { opacity: 1; }

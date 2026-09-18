@@ -1,0 +1,29 @@
+/* Shared flat surfaces for the three opt-in previews; geometry stays in styles.css. */
+@import url("theme.css?v=editor-picks-pills");
+
+body { background: var(--background); }
+a { color: var(--accent); }
+.panel, .empty-state, .search-results { background: var(--surface); box-shadow: none; }
+.empty-state { border-color: transparent; }
+.schedule-wrap, .schedule-header, .program-block, .program-dialog { background: var(--surface-strong); }
+.program-block.current, .channel-choice.selected, .show-result.current { background: var(--accent-soft); border-color: var(--accent); }
+.program-block, .program-block:hover, .program-block:focus-visible { box-shadow: none; }
+.program-tags span, .editor-pick-channel { background: var(--accent-soft); color: var(--accent); border-color: var(--border); }
+.country-group h3 { background: var(--surface-strong); color: var(--muted); }
+.current-time-line { border-color: var(--accent); }
+.current-time-line span { background: var(--accent); color: var(--on-accent); }
+.channel-choice:hover, .show-result:hover, .program-block:hover,
+.secondary-button:hover, .editor-pick-channel:hover,
+.live-sports-toggle:hover, .sport-filter-button:hover, .sport-filter-button.enabled:hover {
+  background: var(--hover); color: var(--text); border-color: var(--accent);
+}
+.live-sports-toggle[aria-expanded="true"], .sport-filter-button.enabled {
+  background: var(--accent); color: var(--on-accent);
+}
+.search::placeholder { color: var(--muted); opacity: 1; }
+.empty-state-notes { opacity: 1; }
+/* Specificity intentionally beats the mobile search reset without changing its geometry. */
+html body :is(button, input, select, summary, a, [role="button"]):focus-visible {
+  outline: 2px solid var(--accent) !important; outline-offset: -2px;
+}
+.program-dialog::backdrop { background: rgb(0 0 0 / 60%); backdrop-filter: none; }

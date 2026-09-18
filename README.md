@@ -29,6 +29,18 @@ Countries currently included:
 | Mexico         |               10 |                             10 |
 | Brazil         |               12 |                              9 |
 
+## Theme previews (design branch only)
+
+Serve `web/` locally: `python3 -m http.server 8765 --directory web`.
+Open these temporary previews; removing `?theme=…` restores the saved theme/default:
+
+- [Paper — minimal editorial](http://localhost:8765/?theme=paper)
+- [Pop — playful flat colour](http://localhost:8765/?theme=pop)
+- [Broadcast — restrained dark](http://localhost:8765/?theme=broadcast)
+
+Previews do not persist a theme preference. The production default remains Sense;
+channel selections still use the existing local storage. No theme picker or new dependency.
+
 ## Architecture
 
 The app is intentionally simple and static:

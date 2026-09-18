@@ -9,6 +9,9 @@ const DEFAULT_THEME = "sense";
 const THEMES = {
   default: `theme.css?v=${THEME_VERSION}`,
   sense: `sense-theme.css?v=${THEME_VERSION}`,
+  paper: "paper-theme.css?v=exploration-1",
+  pop: "pop-theme.css?v=exploration-1",
+  broadcast: "broadcast-theme.css?v=exploration-1",
 };
 
 const state = {
@@ -76,6 +79,8 @@ function saveSelection() {
 }
 
 function loadTheme() {
+  const preview = new URLSearchParams(window.location.search).get("theme");
+  if (Object.hasOwn(THEMES, preview)) return preview;
   const migratedToSenseDefault =
     localStorage.getItem("whatsontv.themeDefault") === THEME_VERSION;
   const saved = localStorage.getItem("whatsontv.theme");
@@ -92,8 +97,11 @@ function setTheme(themeName) {
     els.themeSelect.value = theme;
   }
   document.documentElement.dataset.theme = theme;
-  localStorage.setItem("whatsontv.theme", theme);
-  localStorage.setItem("whatsontv.themeDefault", THEME_VERSION);
+  // URL previews never replace the user's saved theme or migration marker.
+  if (!new URLSearchParams(window.location.search).has("theme")) {
+    localStorage.setItem("whatsontv.theme", theme);
+    localStorage.setItem("whatsontv.themeDefault", THEME_VERSION);
+  }
 }
 
 function channelKey(countryCode, channelId) {

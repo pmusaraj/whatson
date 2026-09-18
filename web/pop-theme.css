@@ -1,0 +1,18 @@
+/* Pop: butter yellow, grape ink, lilac cards; flat, not glass. */
+@import url("exploration-theme.css?v=exploration-1");
+:root {
+  color-scheme: light;
+  --background: #f5dd61; --surface: #fffbea; --surface-strong: #ffffff;
+  --text: #33264a; --muted: #685875; --border: #c7b9d3;
+  --accent: #63309b; --accent-soft: #eee1ff; --hover: #f9edb4; --on-accent: #ffffff;
+  --shadow: none;
+}
+body { font-family: "Avenir Next", Avenir, ui-rounded, system-ui, sans-serif; }
+.panel { border-color: var(--text); }
+.panel, .schedule-wrap, .program-dialog { border-radius: 16px !important; }
+.program-block, .editor-pick-result, .search { border-radius: 10px !important; }
+.editor-pick-result:nth-child(3n + 1) { background: #eee1ff; }
+.editor-pick-result:nth-child(3n + 2) { background: #e3f2e1; }
+.editor-pick-result:nth-child(3n) { background: #fff0d5; }
+.program-tags span, .editor-pick-channel { border-radius: 999px !important; }
+.brand-logo-domain { color: var(--accent); opacity: 1; }
