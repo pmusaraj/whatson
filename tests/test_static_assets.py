@@ -80,6 +80,31 @@ assert.ok(context.els.editorPicksList.innerHTML.includes('No upcoming editor’s
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
 
+    def test_times_on_other_local_dates_include_the_date(self):
+        subprocess.run(['node', '-e', r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+process.env.TZ = 'America/Toronto';
+const app = fs.readFileSync('web/app.js', 'utf8');
+const context = {state: {now: new Date('2026-09-19T17:53:00Z')}};
+vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('function formatTime('), app.indexOf('function formatCurrentTime(')), context);
+const format = value => { context.value = value; return vm.runInContext('formatTime(value)', context); };
+const expected = (value, otherDay) => new Intl.DateTimeFormat(undefined, {
+  ...(otherDay ? {month: 'short', day: 'numeric'} : {}), hour: 'numeric', minute: '2-digit',
+}).format(new Date(value));
+for (const [value, otherDay] of [
+  ['2026-09-19T16:20:00Z', false],
+  ['2026-09-20T12:50:00Z', true], // Live picks: tomorrow's 8:50 AM is below Now.
+  ['2026-09-20T01:00:00Z', false], // UTC tomorrow is still today locally.
+  ['2026-09-19T01:00:00Z', true],
+]) assert.equal(format(value), expected(value, otherDay));
+context.state.now = new Date('2026-09-20T04:00:00Z');
+assert.equal(format('2026-09-20T12:50:00Z'), expected('2026-09-20T12:50:00Z', false));
+assert.equal(format('2026-09-19T16:20:00Z'), expected('2026-09-19T16:20:00Z', true));
+"""], cwd=Path(__file__).resolve().parents[1], check=True)
+
     def test_event_time_marker_tracks_now_and_handles_empty_lists(self):
         subprocess.run(['node', '-e', r"""
 const assert = require('node:assert/strict');

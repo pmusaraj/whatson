@@ -155,10 +155,12 @@ function selectedChannels() {
 }
 
 function formatTime(value) {
+  const date = new Date(value);
   return new Intl.DateTimeFormat(undefined, {
+    ...(date.toDateString() !== state.now.toDateString() ? { month: "short", day: "numeric" } : {}),
     hour: "numeric",
     minute: "2-digit",
-  }).format(new Date(value));
+  }).format(date);
 }
 
 function formatCurrentTime(value) {
