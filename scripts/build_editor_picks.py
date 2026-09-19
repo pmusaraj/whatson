@@ -19,7 +19,7 @@ WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
 OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "glm-5.3-flash", "kimi-k2.6")
-PICK_LIMIT = 12
+PICK_LIMIT = 20
 CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 48
 SIMULCAST_WINDOW = timedelta(minutes=90)
@@ -208,6 +208,21 @@ def f1_session_matches(program, sessions):
     return False
 
 
+def candidate_event_key(candidate):
+    title = f1_text(candidate["title"])
+    rank = league_rank(candidate)
+    # ponytail: exact team names, only known league wrappers; leave aliases to expansion.
+    if 0 <= rank < len(LEAGUES):
+        league = LEAGUES[rank] + (r"(?: ea sports)?" if rank == 1 else "")
+        title = re.sub(r"^(?:live )?" + league + r"(?: \d{2,4} \d{2,4})? ", "", title)
+        title = re.sub(r" (?:direto|live)$", "", title)
+        title = re.sub(r" " + league + r"$", "", title)
+    if re.fullmatch(r".+? (?:x|vs?|vs\.) .+", title):
+        return (rank, title)
+    # Generic headings need their fixture/edition evidence, not just a shared timeslot.
+    return tuple(normalized_title(candidate.get(key) or "") for key in ("title", "subtitle", "description"))
+
+
 def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessions=()):
     now = now or datetime.now(timezone.utc)
     deduped = {}
@@ -267,21 +282,29 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessi
 
     ordered = sorted(
         deduped.values(),
-        key=lambda item: (league_rank(item), -is_us_open_final(item), -candidate_score(item), item["startAt"], item["country"] or "", item["title"]),
+        key=lambda item: (league_rank(item), -is_us_open_final(item), -candidate_score(item), parse_time(item["startAt"]), item["country"] or "", item["title"]),
     )
     candidates = []
     country_events = {}
     for candidate in ordered:
-        bucket = (candidate["country"], candidate["highlightType"])
-        event_key = normalized_title(
-            candidate["title"] if candidate["highlightType"] == "liveSport"
-            else f"{candidate['title']} {candidate.get('subtitle') or ''}"
-        )
-        seen_events = country_events.setdefault(bucket, set())
-        if not broad and event_key not in seen_events:
-            if len(seen_events) >= CANDIDATES_PER_COUNTRY:
-                continue
-            seen_events.add(event_key)
+        if not broad:
+            start, end = parse_time(candidate["startAt"]), parse_time(candidate["endAt"])
+            # UTC calendar days, including any partial third day in the rolling 48h.
+            # An in-progress broadcast that began yesterday uses today's allowance.
+            day = max(start.date(), now.astimezone(timezone.utc).date())
+            bucket = (candidate["country"], day)
+            event_key = candidate_event_key(candidate)
+            seen_events = country_events.setdefault(bucket, [])
+            for group in seen_events:
+                key, first, last, finish = group
+                if (key == event_key and max(last, start) - min(first, start) <= SIMULCAST_WINDOW
+                        and max(last, start) < min(finish, end)):
+                    group[1:] = [min(first, start), max(last, start), min(finish, end)]
+                    break
+            else:
+                if len(seen_events) >= CANDIDATES_PER_COUNTRY:
+                    continue
+                seen_events.append([event_key, start, start, end])
         candidates.append(candidate)
     for index, candidate in enumerate(candidates, 1):
         candidate["id"] = f"event-{index}"

@@ -17,7 +17,7 @@ const pick = { title: program.title, highlightType: 'liveSport', sportType: 'Ten
   country: 'US', channelId, sourceTitle: program.title, startAt, endAt
 })) };
 const context = {
-  state: { now: new Date('2026-09-14T19:00:00Z'), editorPicks: Array(12).fill(pick),
+  state: { now: new Date('2026-09-14T19:00:00Z'), editorPicks: Array(20).fill(pick),
     countryDataByCode: new Map([['US', { country: 'US', channels, duplicateChannelAliases: { alias: 'one' } }]]) },
   els: { editorPicks: {}, editorPicksList: {} },
   normalizeSearchText: value => String(value || '').toLowerCase(),
@@ -43,8 +43,8 @@ for (const [title, emoji] of [
 assert.equal(vm.runInContext("detectSportBucket({ title: 'NFL documentary', categories: ['Documentary'] })", context), null);
 vm.runInContext('renderEditorPicks()', context);
 const html = context.els.editorPicksList.innerHTML;
-assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 12);
-assert.equal((html.match(/class="editor-pick-channel"/g) || []).length, 24);
+assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 20);
+assert.equal((html.match(/class="editor-pick-channel"/g) || []).length, 40);
 assert.ok(html.includes('data-channel-key="US:two" data-program-index="0"'));
 context.state.editorPicks = [
   { ...pick, title: 'Late tennis', startAt: '2026-09-14T21:00:00+02:00' },

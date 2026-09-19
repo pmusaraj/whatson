@@ -206,23 +206,85 @@ class BuildEditorPicksTest(unittest.TestCase):
             '{"picks":[{"title":"One","pick_ids":["event-1"]},{"title":"Two","pick_ids":["event-1"]}]}',
             '{"picks":[{"title":"Wrongly grouped","pick_ids":["event-1","event-7"]}]}',
             '{"picks":[{"title":"Mixed types","pick_ids":["event-1","event-6"]}]}',
-            json.dumps({"picks": [{"title": str(index), "pick_ids": [f"event-{index}"]} for index in range(13)]}),
+            json.dumps({"picks": [{"title": str(index), "pick_ids": [f"event-{index}"]} for index in range(21)]}),
         ):
             with self.assertRaises(ValueError):
                 build_editor_picks.validate_selection(invalid, candidates)
 
-    def test_selection_accepts_twelve_picks_and_keeps_all_channels(self):
+    def test_today_survives_tomorrow_and_duplicate_feeds(self):
+        now = build_editor_picks.parse_time("2026-09-19T12:00:00Z")
+        channels = []
+        for day, count in [(19, 9), (20, 10)]:
+            for index in range(count):
+                for feed, title in [
+                    ("nos", f"Team {day}{index} x Opponent {index} - Premier League (Direto)"),
+                    ("meo", f"Premier League 26/27 - Team {day}{index} x Opponent {index} (Direto)"),
+                ]:
+                    channels.append({"id": f"{feed}-{day}-{index}", "name": feed, "programs": [
+                        self.program(title, f"2026-09-{day}T16:00:00Z", f"2026-09-{day}T18:00:00Z")]})
+        title = "La Liga EA Sports 2026-27 - Sevilha x Barcelona (Direto)"
+        channels.append({"id": "sevilla", "name": "DAZN", "programs": [
+            self.program(title, "2026-09-19T18:46:00Z", "2026-09-19T21:00:00Z")]})
+        with tempfile.TemporaryDirectory() as tmp:
+            self.write_country(Path(tmp), "PT", channels)
+            candidates = build_editor_picks.collect_candidates(Path(tmp), now)
+        self.assertIn(title, [c["title"] for c in candidates])
+        self.assertEqual({c["channelId"] for c in candidates}, {c["id"] for c in channels})
+
+    def test_candidate_buckets_use_utc_dates_and_keep_the_full_horizon(self):
+        now = build_editor_picks.parse_time("2026-09-19T12:00:00Z")
+        rows = [
+            ("ongoing", "2026-09-18T23:00:00Z", "2026-09-19T13:00:00Z"),
+            ("today", "2026-09-20T00:30:00+02:00", "2026-09-20T01:30:00+02:00"),
+            ("tomorrow", "2026-09-19T23:30:00-02:00", "2026-09-20T01:30:00-02:00"),
+            ("third", "2026-09-21T11:00:00Z", "2026-09-21T13:00:00Z"),
+            ("outside", "2026-09-21T12:00:00Z", "2026-09-21T14:00:00Z"),
+        ]
+        channels = [{"id": name, "name": name, "programs": [
+            self.program(f"Live: Premier League: {name} vs Opponent", start, end)]}
+            for name, start, end in rows]
+        with tempfile.TemporaryDirectory() as tmp, patch.object(build_editor_picks, "CANDIDATES_PER_COUNTRY", 1):
+            self.write_country(Path(tmp), "PT", channels)
+            candidates = build_editor_picks.collect_candidates(Path(tmp), now)
+        self.assertEqual({c["channelId"] for c in candidates}, {"ongoing", "tomorrow", "third"})
+
+    def test_candidate_slot_grouping_requires_identity_and_bounded_overlap(self):
+        primary = self.program("Premier League 26/27 - Alpha x Beta (Direto)", "2026-09-04T16:00:00Z", "2026-09-04T17:00:00Z")
+        duplicate = self.program("Alpha x Beta - Premier League (Direto)", "2026-09-04T16:30:00Z")
+        for second, shares_slot in [
+            (duplicate, True),
+            ({**duplicate, "title": "Alpha x Gamma - Premier League (Direto)"}, False),
+            ({**duplicate, "startAt": "2026-09-04T18:00:00Z"}, False),
+            ({**duplicate, "startAt": "2026-09-04T17:00:00Z"}, False),
+            ({**duplicate, "previouslyShown": True}, False),
+            ({**duplicate, "description": "Replay"}, False),
+        ]:
+            with self.subTest(second=second), tempfile.TemporaryDirectory() as tmp, patch.object(build_editor_picks, "CANDIDATES_PER_COUNTRY", 1):
+                self.write_country(Path(tmp), "PT", [
+                    {"id": "one", "name": "one", "programs": [primary]},
+                    {"id": "two", "name": "two", "programs": [second]},
+                ])
+                candidates = build_editor_picks.collect_candidates(Path(tmp), self.now)
+                self.assertEqual(len(candidates), 2 if shares_slot else 1)
+        generic = {**primary, "title": "Live football", "subtitle": "Alpha vs Beta"}
+        self.assertNotEqual(build_editor_picks.candidate_event_key(generic),
+                            build_editor_picks.candidate_event_key({**generic, "subtitle": "Gamma vs Delta"}))
+
+    def test_selection_accepts_twenty_picks_and_rejects_twenty_one(self):
         candidates = [
             {"id": f"event-{index}", "title": f"Live event {index}",
              "channelId": f"channel-{index}", "highlightType": "liveSport",
              "startAt": "2026-09-04T18:00:00Z", "endAt": "2026-09-04T20:00:00Z"}
-            for index in range(12)
+            for index in range(21)
         ]
         candidates.append({**candidates[0], "id": "simulcast", "channelId": "other-channel"})
-        groups = [{"title": item["title"], "pick_ids": [item["id"]]} for item in candidates[:12]]
+        groups = [{"title": item["title"], "pick_ids": [item["id"]]} for item in candidates[:20]]
         selected = build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
-        self.assertEqual(len(selected), 12)
+        self.assertEqual(len(selected), 20)
         self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-0", "other-channel"])
+        groups.append({"title": "Event 20", "pick_ids": ["event-20"]})
+        with self.assertRaisesRegex(ValueError, "invalid picks"):
+            build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
 
     def test_selection_adds_same_event_channels_the_model_omits(self):
         candidates = [
@@ -324,6 +386,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
         body = json.loads(request.data)
         self.assertEqual(body["model"], "deepseek-v4.1-flash")
+        self.assertIn("Select up to 20", body["messages"][1]["content"])
         self.assertEqual(request.get_header("Authorization"), "Bearer key")
         self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
         self.assertEqual(request.get_header("X-opencode-session"), "whatson-editor-picks")

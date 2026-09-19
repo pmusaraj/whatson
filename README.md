@@ -196,6 +196,15 @@ for the catalogue, scope, validation and how to introduce new titles.
 
 ### Sports picks
 
+Select up to **20** worthwhile sports picks, without padding. The candidate pool allows
+10 distinct events per country per UTC calendar day within the rolling 48-hour horizon
+(including a partial third day); in-progress events that started yesterday count today.
+Same-match broadcasts with exact team names and known league-wrapper variations share
+a slot only when airtime overlaps and all starts are within 90 minutes. All candidate
+channels remain available to selection; ambiguous names stay separate for semantic expansion.
+Today and tomorrow have independent allowances, with league priority within each day.
+Browser dates remain viewer-local; these selection buckets are UTC, not country timezones.
+
 Sports picks exclude second-tier leagues. Football league priority is Premier League,
 La Liga, Serie A, Ligue 1, then Bundesliga; events within each priority sort by time.
 Each event shows at most three channels per country, with six initially visible and
