@@ -21,7 +21,7 @@ OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
 OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "glm-5.3-flash", "kimi-k2.6")
 PICK_LIMIT = 12
 CANDIDATES_PER_COUNTRY = 10
-LOOKAHEAD_HOURS = 20
+LOOKAHEAD_HOURS = 48
 SIMULCAST_WINDOW = timedelta(minutes=90)
 EXCLUDED = re.compile(
     r"\b(replay|reprise|replica|repeticion|highlights?|resumen|magazine|news|noticias|"
@@ -409,7 +409,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
             "endAt": candidate.get("endAt"),
         })
     prompt = (
-        f"Select up to {PICK_LIMIT} timely, globally noteworthy television highlights airing now or in the next 20 hours. "
+        f"Select up to {PICK_LIMIT} timely, globally noteworthy television highlights airing now or in the next {LOOKAHEAD_HOURS} hours. "
         "Include more worthwhile events when available, without padding the list with weak picks. "
         "Consider the supplied global list across all countries; do not enforce country quotas. "
         "Select only genuinely live sports events; exclude series, films, and documentaries for now. "

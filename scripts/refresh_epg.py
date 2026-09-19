@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Refresh curated iptv-org EPG snapshots and rebuild static web data.
 
-The grabber is run with CURR_DATE set to yesterday and --days 3 so each
-snapshot spans yesterday/today/tomorrow. build_web_data.py then emits a
-smaller browser payload window: now - 4h through now + 20h.
+The grabber is run with CURR_DATE set to yesterday and --days 4 so each
+snapshot covers the four-hour lookback and full 48-hour lookahead.
+build_web_data.py emits a browser payload window: now - 4h through now + 48h.
 """
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ EPG_DIR = ROOT / ".cache" / "epg"
 SOURCES_DIR = ROOT / "data" / "sources" / "iptv-org"
 NORMALIZED_DIR = ROOT / "data" / "normalized"
 WEB_DATA_DIR = ROOT / "web" / "data"
-DAYS_TO_GRAB = 3
+DAYS_TO_GRAB = 4
 START_DATE_OFFSET_DAYS = 1
 GRAB_TIMEOUT_SECONDS = 120
 

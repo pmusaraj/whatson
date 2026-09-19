@@ -74,9 +74,9 @@ python3 scripts/refresh_epg.py
 That script:
 
 1. Runs the iptv-org EPG grabber for each curated channel file.
-2. Sets `CURR_DATE` to yesterday and grabs 3 days of guide data.
+2. Sets `CURR_DATE` to yesterday and grabs 4 days of guide data.
 3. Writes refreshed XMLTV snapshots to `data/normalized/`.
-4. Rebuilds `web/data/*.json` with a 24-hour browser payload window: now - 4h through now + 20h.
+4. Rebuilds `web/data/*.json` with a 52-hour browser payload window: now - 4h through now + 48h. Editor’s Picks also considers the next 48 hours.
 5. Runs the unit tests and `node --check web/app.js`.
 
 ## UHF / Xtream XMLTV export

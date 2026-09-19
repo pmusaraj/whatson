@@ -44,6 +44,9 @@ class CountryFeedFixesTest(unittest.TestCase):
             grabs = [call for call in run.call_args_list if 'timeout' in call.kwargs]
             self.assertEqual(len(grabs), 3)
             self.assertEqual(grabs[0].args[0][:2], ['python3', 'scripts/grab_sfr_epg.py'])
-            self.assertEqual(grabs[1].kwargs['timeout'], 360)
+            self.assertEqual(grabs[1].kwargs['timeout'], 480)
+            for grab in grabs:
+                command = grab.args[0]
+                self.assertEqual(command[command.index('--days') + 1], '4')
             self.assertEqual(grabs[2].args[0][:2], ['python3', 'scripts/grab_superguida_epg.py'])
             self.assertFalse(any('scripts/build_editor_picks.py' in call.args[0] for call in run.call_args_list))

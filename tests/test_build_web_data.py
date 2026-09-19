@@ -38,7 +38,7 @@ class BuildWebDataTest(unittest.TestCase):
         self.assertTrue(programs["A.fr"][0]["isNew"])
         self.assertTrue(programs["A.fr"][0]["isPremiere"])
 
-    def test_program_window_collects_24_hours_starting_4_hours_before_now(self):
+    def test_program_window_keeps_4_hour_lookback_and_48_hour_lookahead(self):
         now = datetime(2026, 5, 2, 12, 30, tzinfo=timezone.utc)
         programs = [
             {"title": "Too old", "startAt": "2026-05-02T07:00:00Z", "endAt": "2026-05-02T08:30:00Z"},
@@ -47,14 +47,16 @@ class BuildWebDataTest(unittest.TestCase):
             {"title": "Current", "startAt": "2026-05-02T12:00:00Z", "endAt": "2026-05-02T13:00:00Z"},
             {"title": "Next", "startAt": "2026-05-02T13:00:00Z", "endAt": "2026-05-02T14:00:00Z"},
             {"title": "Tomorrow", "startAt": "2026-05-03T01:00:00Z", "endAt": "2026-05-03T02:00:00Z"},
-            {"title": "Outside", "startAt": "2026-05-03T08:30:00Z", "endAt": "2026-05-03T09:00:00Z"},
+            {"title": "Tomorrow evening", "startAt": "2026-05-03T20:00:00Z", "endAt": "2026-05-03T22:00:00Z"},
+            {"title": "Just inside", "startAt": "2026-05-04T12:29:59Z", "endAt": "2026-05-04T14:00:00Z"},
+            {"title": "Outside", "startAt": "2026-05-04T12:30:00Z", "endAt": "2026-05-04T14:00:00Z"},
         ]
 
         window = build_web_data.program_window(programs, now)
 
         self.assertEqual(
             [program["title"] for program in window],
-            ["Long-running before window", "Before now", "Current", "Next", "Tomorrow"],
+            ["Long-running before window", "Before now", "Current", "Next", "Tomorrow", "Tomorrow evening", "Just inside"],
         )
 
     def test_build_country_payload_contains_channel_schedules(self):
@@ -83,7 +85,7 @@ class BuildWebDataTest(unittest.TestCase):
             )
 
         self.assertEqual(payload["country"], "FR")
-        self.assertEqual(payload["windowHours"], 24)
+        self.assertEqual(payload["windowHours"], 52)
         self.assertEqual(payload["windowStartOffsetHours"], 4)
         self.assertEqual(payload["channels"][0]["name"], "Alpha")
         self.assertEqual(payload["channels"][0]["provider"], "Validated grabber")

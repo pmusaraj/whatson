@@ -37,7 +37,8 @@ COUNTRY_NAMES = {
 
 IPTV_CHANNELS_API = "https://iptv-org.github.io/api/channels.json"
 PROGRAM_WINDOW_START_OFFSET_HOURS = 4
-PROGRAM_WINDOW_HOURS = 24
+PROGRAM_LOOKAHEAD_HOURS = 48
+PROGRAM_WINDOW_HOURS = PROGRAM_WINDOW_START_OFFSET_HOURS + PROGRAM_LOOKAHEAD_HOURS
 
 PREMIUM_SPORTS_TERMS = re.compile(
     r"(canal\+|canal plus|bein|dazn|rmc sport|eurosport|multisports|infosport|"

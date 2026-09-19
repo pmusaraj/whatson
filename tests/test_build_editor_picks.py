@@ -20,6 +20,17 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.addCleanup(calendar.stop)
         self.now = datetime(2026, 9, 4, 12, tzinfo=timezone.utc)
 
+    def test_48_hour_lookahead_boundary(self):
+        for offset, expected in [(timedelta(hours=32), True),
+                                 (timedelta(hours=48, seconds=-1), True),
+                                 (timedelta(hours=48), False),
+                                 (timedelta(hours=49), False)]:
+            with self.subTest(offset=offset):
+                start = self.now + offset
+                program = self.program("Live: Team A vs Team B", start.isoformat(),
+                                       end=(start + timedelta(hours=2)).isoformat())
+                self.assertEqual(build_editor_picks.is_current_original(program, self.now), expected)
+
     def test_league_priority_and_second_tiers(self):
         leagues = ["Premier League", "La Liga", "Serie A", "Ligue 1", "Bundesliga"]
         programs = [{**self.program(f"{league}: A vs B (Direto)", "2026-09-04T18:00:00Z"),
