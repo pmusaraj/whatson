@@ -1,7 +1,7 @@
 {
   "country": "UK",
   "countryName": "United Kingdom",
-  "generatedAt": "2026-09-19T04:36:54.407572Z",
+  "generatedAt": "2026-09-19T13:12:15.865868Z",
   "windowHours": 52,
   "windowStartOffsetHours": 4,
   "premiumSportsOnly": true,
@@ -10,7 +10,7 @@
     "data/normalized/guide-premium-UK-sky.com.xml",
     "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
   ],
-  "channelCount": 15,
+  "channelCount": 16,
   "channels": [
     {
       "id": "1638/premier-sports-1-hd",
@@ -22,116 +22,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "DTM Motorsport Highlights",
-        "subtitle": "Sachsenring",
+        "title": "Live LaLiga",
+        "subtitle": "Osasuna v Rayo Vallecano",
         "description": null,
         "categories": [],
-        "sportType": "Motorsport",
-        "competition": null,
+        "sportType": "Football",
+        "competition": "LaLiga",
         "imageUrl": null,
-        "startAt": "2026-09-19T04:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T11:55:00Z",
+        "endAt": "2026-09-19T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "LaLiga",
-          "subtitle": "Real Betis v Getafe",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "Sporting Greats",
-          "subtitle": "Sporting Greats 2",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T03:30:00Z"
-        },
-        {
-          "title": "Sporting Greats",
-          "subtitle": "Sporting Greats 4",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:30:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "DTM Motorsport Highlights",
-          "subtitle": "Sachsenring",
-          "description": null,
-          "categories": [],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "NASCAR",
-          "subtitle": "World Wide Technology Raceway",
-          "description": null,
-          "categories": [],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "FIM Sidecarcross Championship",
-          "subtitle": "GP Netherlands",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "Michelin Le Mans Cup",
-          "subtitle": "Silverstone",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:30:00Z"
-        },
-        {
-          "title": "Coppa Italia Show",
-          "subtitle": "Round 2 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
-        {
-          "title": "World Surf League",
-          "subtitle": "Tahiti Pro",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z"
-        },
         {
           "title": "European Le Mans Series",
           "subtitle": "Silverstone Highlights",
@@ -604,6 +505,524 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:00:00Z",
           "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "DTM Motorsport Highlights",
+          "subtitle": "Sachsenring",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "SPFL",
+          "subtitle": "Kilmarnock v Hearts",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "Villarreal v Levante",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "Michelin Le Mans Cup",
+          "subtitle": "Silverstone",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:30:00Z"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "Osasuna v Rayo Vallecano",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T12:30:00Z"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "Athletic Club v Alaves",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:30:00Z",
+          "endAt": "2026-09-21T14:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "2270/premier-sports-2-hd",
+      "name": "Premier Sports 2 HD",
+      "logoUrl": null,
+      "provider": "MyTelly UK sports guide",
+      "providerKey": "premium-mytelly-uk",
+      "sources": [
+        "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
+      ],
+      "currentProgram": {
+        "title": "Live Top 14 Rugby Union",
+        "subtitle": "Castres v Toulon",
+        "description": null,
+        "categories": [],
+        "sportType": "Rugby",
+        "competition": null,
+        "imageUrl": null,
+        "startAt": "2026-09-19T12:25:00Z",
+        "endAt": "2026-09-19T14:30:00Z"
+      },
+      "programs": [
+        {
+          "title": "Top 14 Rugby Union",
+          "subtitle": "Vannes v Montpellier",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T07:30:00Z",
+          "endAt": "2026-09-19T09:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 10",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T09:30:00Z",
+          "endAt": "2026-09-19T10:00:00Z"
+        },
+        {
+          "title": "Top 14 Rugby Union",
+          "subtitle": "Clermont v Stade Francais",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T10:00:00Z",
+          "endAt": "2026-09-19T11:55:00Z"
+        },
+        {
+          "title": "Top 14 Rugby Union Highlights",
+          "subtitle": "Round 2",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T11:55:00Z",
+          "endAt": "2026-09-19T12:25:00Z"
+        },
+        {
+          "title": "Live Top 14 Rugby Union",
+          "subtitle": "Castres v Toulon",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T12:25:00Z",
+          "endAt": "2026-09-19T14:30:00Z"
+        },
+        {
+          "title": "Live Top 14 Rugby Union",
+          "subtitle": "La Rochelle v Racing",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T14:30:00Z",
+          "endAt": "2026-09-19T16:25:00Z"
+        },
+        {
+          "title": "Live LaLiga",
+          "subtitle": "Celta Vigo v Racing",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-19T16:25:00Z",
+          "endAt": "2026-09-19T18:30:00Z"
+        },
+        {
+          "title": "LaLiga Match Highlights",
+          "subtitle": "Alaves v Valencia",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-19T18:30:00Z",
+          "endAt": "2026-09-19T18:40:00Z"
+        },
+        {
+          "title": "LaLiga Match Highlights",
+          "subtitle": "Rayo Vallecano v Espanyol",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-19T18:40:00Z",
+          "endAt": "2026-09-19T18:55:00Z"
+        },
+        {
+          "title": "Live Top 14 Rugby Union",
+          "subtitle": "Vannes v Toulouse",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T18:55:00Z",
+          "endAt": "2026-09-19T21:00:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T21:00:00Z",
+          "endAt": "2026-09-19T21:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 3",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T21:30:00Z",
+          "endAt": "2026-09-19T22:00:00Z"
+        },
+        {
+          "title": "NASCAR",
+          "subtitle": "World Wide Technology Raceway",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-19T22:00:00Z",
+          "endAt": "2026-09-19T22:30:00Z"
+        },
+        {
+          "title": "Bike World",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T03:30:00Z",
+          "endAt": "2026-09-20T04:00:00Z"
+        },
+        {
+          "title": "MotorSport",
+          "subtitle": "Drew Gibson in Focus",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T04:00:00Z",
+          "endAt": "2026-09-20T05:00:00Z"
+        },
+        {
+          "title": "Top 14 Rugby Union",
+          "subtitle": "Castres v Toulon",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T05:00:00Z",
+          "endAt": "2026-09-20T07:00:00Z"
+        },
+        {
+          "title": "NASCAR",
+          "subtitle": "Bristol Motor Speedway",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T07:00:00Z",
+          "endAt": "2026-09-20T11:00:00Z"
+        },
+        {
+          "title": "Bike World",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T11:00:00Z",
+          "endAt": "2026-09-20T11:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T11:30:00Z",
+          "endAt": "2026-09-20T12:00:00Z"
+        },
+        {
+          "title": "Brasileiro Serie A",
+          "subtitle": "Santos v Cruzeiro",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T12:00:00Z",
+          "endAt": "2026-09-20T13:55:00Z"
+        },
+        {
+          "title": "Live Brasileiro Serie A",
+          "subtitle": "Gremio v Palmeiras",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T13:55:00Z",
+          "endAt": "2026-09-20T16:00:00Z"
+        },
+        {
+          "title": "Football's Greatest",
+          "subtitle": "Football's Greatest 6",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T16:00:00Z",
+          "endAt": "2026-09-20T16:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 2",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T16:30:00Z",
+          "endAt": "2026-09-20T17:00:00Z"
+        },
+        {
+          "title": "Top 14 Rugby Union",
+          "subtitle": "Castres v Toulon",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T17:00:00Z",
+          "endAt": "2026-09-20T19:00:00Z"
+        },
+        {
+          "title": "Live Top 14 Rugby Union",
+          "subtitle": "Bordeaux Begles v Stade Francais",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T19:00:00Z",
+          "endAt": "2026-09-20T21:00:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 6",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T21:00:00Z",
+          "endAt": "2026-09-20T21:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 7",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T21:30:00Z",
+          "endAt": "2026-09-20T22:00:00Z"
+        },
+        {
+          "title": "Brasileiro Serie A",
+          "subtitle": "Corinthians v Fluminense",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T22:00:00Z",
+          "endAt": "2026-09-20T22:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 1",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T23:00:00Z",
+          "endAt": "2026-09-20T23:30:00Z"
+        },
+        {
+          "title": "NASCAR",
+          "subtitle": "Bristol Motor Speedway",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-20T23:30:00Z",
+          "endAt": "2026-09-21T00:00:00Z"
+        },
+        {
+          "title": "Top 14 Rugby Union",
+          "subtitle": "Castres v Toulon",
+          "description": null,
+          "categories": [],
+          "sportType": "Rugby",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T00:00:00Z",
+          "endAt": "2026-09-21T02:00:00Z"
+        },
+        {
+          "title": "Argentine Primera",
+          "subtitle": "Boca Juniors vs Central Cordoba",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T02:00:00Z",
+          "endAt": "2026-09-21T04:00:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 9",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T04:00:00Z",
+          "endAt": "2026-09-21T04:30:00Z"
+        },
+        {
+          "title": "Temples of Sport",
+          "subtitle": "Temples of Sport 10",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T04:30:00Z",
+          "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "MotorSport",
+          "subtitle": "The Valentino Rossi Story",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T05:30:00Z"
+        },
+        {
+          "title": "NASCAR",
+          "subtitle": "Bristol Motor Speedway",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:30:00Z",
+          "endAt": "2026-09-21T09:30:00Z"
+        },
+        {
+          "title": "Bike World",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "NASCAR O'Reilly Series",
+          "subtitle": "Bristol 2",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z"
+        },
+        {
+          "title": "MotorSport",
+          "subtitle": "The Valentino Rossi Story",
+          "description": null,
+          "categories": [],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T13:30:00Z"
         }
       ]
     },
@@ -617,116 +1036,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "The Hundred Bitesize",
-        "subtitle": "Trent Rockets v Sunrisers Leeds 16.08.26 Highlights",
+        "title": "Live International T20 Cricket",
+        "subtitle": "England v Sri Lanka 3rd T20 19.09",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T04:45:00Z"
+        "startAt": "2026-09-19T13:00:00Z",
+        "endAt": "2026-09-19T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "The Hundred",
-          "subtitle": "Men's Final 16.08.26",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:30:00Z",
-          "endAt": "2026-09-19T04:30:00Z"
-        },
-        {
-          "title": "The Hundred Bitesize",
-          "subtitle": "Trent Rockets v Sunrisers Leeds 16.08.26 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T04:45:00Z"
-        },
-        {
-          "title": "The Hundred Bitesize",
-          "subtitle": "Trent Rockets v Manchester Super Giants 16.08.26 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:45:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "Women's ICC World T20 Cricket",
-          "subtitle": "England v Australia 05.07.26 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T05:30:00Z"
-        },
-        {
-          "title": "Women's ICC World T20 Cricket",
-          "subtitle": "England v Australia 05.07.26 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:30:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "International T20 Cricket",
-          "subtitle": "England v India 2nd T20 Highlights 04.07.26",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T06:30:00Z"
-        },
-        {
-          "title": "International T20 Cricket",
-          "subtitle": "England v India 07.07 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:30:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "International T20 Cricket",
-          "subtitle": "2nd T20 Men's: England V Sri Lanka, 17th Sep, Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:30:00Z"
-        },
-        {
-          "title": "International T20 Cricket",
-          "subtitle": "1st T20 Men's: England V Sri Lanka, 15th Sep, Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
         {
           "title": "International T20 Cricket",
           "subtitle": "England v Sri Lanka 2nd T20 17.09",
@@ -1155,6 +1475,94 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:30:00Z",
           "endAt": "2026-09-21T04:45:00Z"
+        },
+        {
+          "title": "The Hundred Bitesize",
+          "subtitle": "Trent Rockets v Manchester Super Giants 16.08.26 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T04:45:00Z",
+          "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "Women's International One-Day Cricket",
+          "subtitle": "England v Ireland 1st ODI 01.09.26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "Women's International One-Day Cricket",
+          "subtitle": "England v Ireland 2nd ODI 03.09.26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "Women's International One-Day Cricket",
+          "subtitle": "England v Ireland 3rd ODI 06.09.26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "One-Day International Cricket",
+          "subtitle": "England v India 14.07.26 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "One-Day International Cricket",
+          "subtitle": "England v India 16.07.26 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "One-Day International Cricket",
+          "subtitle": "England v India 3rd ODI 19.07.26 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T11:00:00Z"
+        },
+        {
+          "title": "International T20 Cricket",
+          "subtitle": "England v Sri Lanka 3rd T20 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T15:30:00Z"
         }
       ]
     },
@@ -1168,160 +1576,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "The Best of Sky Sports F1",
-        "subtitle": "The Best of China 2026",
+        "title": "Live Goodwood Revival",
+        "subtitle": "2026 Goodwood Revival D2",
         "description": null,
         "categories": [],
-        "sportType": "Formula 1",
-        "competition": "Formula 1",
+        "sportType": null,
+        "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:25:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T07:35:00Z",
+        "endAt": "2026-09-19T17:30:00Z"
       },
       "programs": [
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Italy 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:25:00Z",
-          "endAt": "2026-09-19T01:00:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Japan 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T01:15:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Miami 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:15:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Canada 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T02:30:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Monaco 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:30:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Japan 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T03:15:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Miami 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:15:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of Australia 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T04:25:00Z"
-        },
-        {
-          "title": "The Best of Sky Sports F1",
-          "subtitle": "The Best of China 2026",
-          "description": null,
-          "categories": [],
-          "sportType": "Formula 1",
-          "competition": "Formula 1",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:25:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "Ferrari Challenge UK Highlights",
-          "subtitle": "Ferrari Challenge UK: Brands Hatch Highlights 2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T05:30:00Z"
-        },
-        {
-          "title": "Ferrari Challenge Europe",
-          "subtitle": "Ferrari Challenge: Budapest Highlights 2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:30:00Z",
-          "endAt": "2026-09-19T06:30:00Z"
-        },
-        {
-          "title": "Ginetta Juniors Highlights",
-          "subtitle": "Ginetta Juniors 2026: R7 Donington Park",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:30:00Z",
-          "endAt": "2026-09-19T07:30:00Z"
-        },
-        {
-          "title": "McLaren's 1000th GP",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T07:35:00Z"
-        },
         {
           "title": "Live Goodwood Revival",
           "subtitle": "2026 Goodwood Revival D2",
@@ -1805,6 +2070,105 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:25:00Z",
           "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "2017 Azerbaijan Grand Prix: Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "2018 Azerbaijan Grand Prix: Race Replay",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "2019 Azerbaijan Grand Prix: Race Replay",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "Azerbaijan F1 Grand Prix 06.06 Highlight 06.06",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "Spain F1 Gp: Stand Alone Race 2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T11:20:00Z"
+        },
+        {
+          "title": "Ted's Notebook",
+          "subtitle": "Ted's Notebook: Spain 2026",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:20:00Z",
+          "endAt": "2026-09-21T11:50:00Z"
+        },
+        {
+          "title": "Naomi with Alex & Carlos",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:50:00Z",
+          "endAt": "2026-09-21T12:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "2017 Azerbaijan Grand Prix: Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z"
+        },
+        {
+          "title": "Formula 1",
+          "subtitle": "2018 Azerbaijan Grand Prix: Race Replay",
+          "description": null,
+          "categories": [],
+          "sportType": "Formula 1",
+          "competition": "Formula 1",
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z"
         }
       ]
     },
@@ -1818,226 +2182,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "EFL Greatest Games",
-        "subtitle": "Sheff U/Bristol '17",
+        "title": "Live EFL",
+        "subtitle": "Millwall v West Ham United 19.09",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T04:45:00Z"
+        "startAt": "2026-09-19T10:30:00Z",
+        "endAt": "2026-09-19T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "EFL Highlights",
-          "subtitle": "Bristol City v Watford 18.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-18T23:45:00Z",
-          "endAt": "2026-09-19T01:00:00Z"
-        },
-        {
-          "title": "Henrik Larsson: 20 Years On",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Rangers V Celtic 12.05 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T02:30:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "Ipswich/Sheff W 2017",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:30:00Z",
-          "endAt": "2026-09-19T02:45:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "QPR/Brentford 2017",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:45:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Carling Cup Final 2012-Cardiff City V Liverpool 26.02 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Hibernian v Hearts 07.08",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T04:15:00Z"
-        },
-        {
-          "title": "SPFL Highlights",
-          "subtitle": "Hibernian v Hearts 2023",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:15:00Z",
-          "endAt": "2026-09-19T04:30:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "Sheff U/Bristol '17",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T04:45:00Z"
-        },
-        {
-          "title": "EFL Greatest Games",
-          "subtitle": "Reading/Cardiff '17",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:45:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "EFL Highlights",
-          "subtitle": "Bristol City v Watford 18.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T05:15:00Z"
-        },
-        {
-          "title": "EFL Highlights",
-          "subtitle": "AFC Wimbledon v Milton Keynes Dons 17.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:15:00Z",
-          "endAt": "2026-09-19T05:30:00Z"
-        },
-        {
-          "title": "WSL",
-          "subtitle": "Manchester City v Liverpool 18.09 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:30:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Liverpool v Tottenham Hotspur 15.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T06:30:00Z"
-        },
-        {
-          "title": "EFL Cup Highlights",
-          "subtitle": "Manchester United v Brighton & Hove Albion 16.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:30:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "EFL Highlights",
-          "subtitle": "AFC Wimbledon v Milton Keynes Dons 17.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:15:00Z"
-        },
-        {
-          "title": "EFL Highlights",
-          "subtitle": "Bristol City v Watford 18.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:15:00Z",
-          "endAt": "2026-09-19T07:30:00Z"
-        },
-        {
-          "title": "WSL",
-          "subtitle": "Manchester City v Liverpool 18.09 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
-        {
-          "title": "Saturday Social",
-          "subtitle": "19/09/2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z"
-        },
         {
           "title": "EFL Cup Highlights",
           "subtitle": "Liverpool v Tottenham Hotspur 15.09",
@@ -2785,6 +2940,259 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:30:00Z",
           "endAt": "2026-09-21T04:45:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "A. Villa/Forest 2018",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T04:45:00Z",
+          "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "EFL League One Goals",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T05:30:00Z"
+        },
+        {
+          "title": "EFL League Two Goals",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:30:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Burnley v Derby County 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T06:15:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Lincoln City v Swansea City 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:15:00Z",
+          "endAt": "2026-09-21T06:30:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Bristol City v Watford 18.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:30:00Z",
+          "endAt": "2026-09-21T06:45:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Portsmouth v Blackburn Rovers 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:45:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Queens Park Rangers v Preston North End 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T07:15:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Wrexham v Southampton 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:15:00Z",
+          "endAt": "2026-09-21T07:30:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Bristol City v Watford 18.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:30:00Z",
+          "endAt": "2026-09-21T07:45:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Millwall v West Ham United 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:45:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "SPFL Round-Up",
+          "subtitle": "Rd7 21.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T08:15:00Z"
+        },
+        {
+          "title": "SPFL Highlights",
+          "subtitle": "Highlights: Celtic V Rangers 20.09.26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:15:00Z",
+          "endAt": "2026-09-21T08:45:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Cardiff City v Charlton Athletic 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:45:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "EFL League One Goals",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T09:30:00Z"
+        },
+        {
+          "title": "EFL League Two Goals",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "SPFL",
+          "subtitle": "Celtic v Rangers 20.09.26",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": "Exeter/Carlisle 2017",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T12:10:00Z"
+        },
+        {
+          "title": "EFL Greatest Games",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:10:00Z",
+          "endAt": "2026-09-21T12:15:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Birmingham City v Middlesbrough 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:15:00Z",
+          "endAt": "2026-09-21T12:30:00Z"
+        },
+        {
+          "title": "SPFL Round-Up",
+          "subtitle": "Rd7 21.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:30:00Z",
+          "endAt": "2026-09-21T12:45:00Z"
+        },
+        {
+          "title": "EFL Highlights",
+          "subtitle": "Burnley v Derby County 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:45:00Z",
+          "endAt": "2026-09-21T13:00:00Z"
+        },
+        {
+          "title": "The EFL Show",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z"
         }
       ]
     },
@@ -2798,105 +3206,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "School of Golf",
-        "subtitle": "Chapter 8: Majors Unclassified",
+        "title": "Live DP World Tour Golf",
+        "subtitle": "2026 BMW PGA Championship Day 3",
         "description": null,
         "categories": [],
         "sportType": "Golf",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T08:00:00Z",
+        "endAt": "2026-09-19T17:00:00Z"
       },
       "programs": [
-        {
-          "title": "DP World Tour Golf",
-          "subtitle": "2017 BMW PGA Championship: Day Four",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T01:00:00Z"
-        },
-        {
-          "title": "DP World Tour Golf",
-          "subtitle": "2019 BMW PGA Championship: Day Four",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "DP World Tour Golf",
-          "subtitle": "2020 BMW PGA Championship: Day Four",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "DP World Tour Golf",
-          "subtitle": "2021 BMW PGA Championship: Day Four",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "School of Golf",
-          "subtitle": "Chapter 14: The Open",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T04:30:00Z"
-        },
-        {
-          "title": "School of Golf",
-          "subtitle": "Chapter 8: Majors Unclassified",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "Solheim Cup Golf",
-          "subtitle": "2026 Day 3 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "DP World Tour Golf",
-          "subtitle": "2026 BMW PGA Championship Day 2 Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": "Golf",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
         {
           "title": "Live DP World Tour Golf",
           "subtitle": "2026 BMW PGA Championship Day 3",
@@ -3237,6 +3557,50 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:00:00Z",
           "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "DP World Tour Golf",
+          "subtitle": "2026 BMW PGA Championship Day 1 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "DP World Tour Golf",
+          "subtitle": "2026 BMW PGA Championship Day 2 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "DP World Tour Golf",
+          "subtitle": "2026 BMW PGA Championship Day 3 Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "DP World Tour Golf",
+          "subtitle": "2026 Bmw Pga Championship Day 4",
+          "description": null,
+          "categories": [],
+          "sportType": "Golf",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z"
         }
       ]
     },
@@ -3250,105 +3614,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Sky Sports News",
-        "subtitle": "Generic Sky Sports News",
+        "title": "Live EFL",
+        "subtitle": "Millwall v West Ham United 19.09",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T10:30:00Z",
+        "endAt": "2026-09-19T13:30:00Z"
       },
       "programs": [
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T01:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": "Generic Sky Sports News",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
         {
           "title": "Live DP World Tour Golf",
           "subtitle": "2026 BMW PGA Championship Day 3",
@@ -3634,6 +3910,116 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:00:00Z",
           "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "Sky Sports Catch Up",
+          "subtitle": "Generic Sky Sports Catch Up",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "Sky Sports FC",
+          "subtitle": "Generic Sky Sports FC",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:30:00Z"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T11:00:00Z"
+        },
+        {
+          "title": "Lunchtime Live",
+          "subtitle": "Generic Lunchtime Live",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z"
+        },
+        {
+          "title": "Lunchtime Live",
+          "subtitle": "Generic Lunchtime Live",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z"
+        },
+        {
+          "title": "The EFL Show",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z"
         }
       ]
     },
@@ -3648,115 +4034,16 @@
       ],
       "currentProgram": {
         "title": "NFL Highlights",
-        "subtitle": "Seattle Seahawks v New England Patriots 08.02",
+        "subtitle": "Detroit Lions @ Buffalo Bills 17.09 60mins",
         "description": null,
         "categories": [],
         "sportType": null,
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T13:00:00Z",
+        "endAt": "2026-09-19T14:00:00Z"
       },
       "programs": [
-        {
-          "title": "NFL Highlights",
-          "subtitle": "New England Patriots @ Seattle Seahawks 10.09 60mins Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T01:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Buffalo Bills @ Houston Texans 13.09 60mins Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Washington Commanders @ Philadelphia Eagles 13.09 60mins Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "New England Patriots @ Seattle Seahawks 10.09 60mins Highlights",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Seattle Seahawks v New England Patriots 08.02",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Denver Broncos @ Kansas City Chiefs 14.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Detroit Lions @ Buffalo Bills 17.09 60mins",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Dallas Cowboys @ New York Giants 13.09 1hr",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
-        {
-          "title": "NFL Highlights",
-          "subtitle": "Detroit Lions @ Buffalo Bills 17.09 60mins",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z"
-        },
         {
           "title": "Kansas City Chiefs: The Franchise",
           "subtitle": "Tba 002",
@@ -4295,6 +4582,171 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:30:00Z",
           "endAt": "2026-09-21T04:45:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Chicago Bears @ Houston Texans 15.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T04:45:00Z",
+          "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Denver Broncos @ Kansas City Chiefs 14.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Minnesota Vikings @ Chicago Bears 20.09 60mins",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Jacksonville Jaguars @ Denver Broncos 20.09 60mins",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Detroit Lions @ Buffalo Bills 17.09 60mins",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "Minnesota Vikings @ Chicago Bears 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T09:15:00Z"
+        },
+        {
+          "title": "Live NFL",
+          "subtitle": "Jacksonville Jaguars @ Denver Broncos 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:15:00Z",
+          "endAt": "2026-09-21T09:30:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "Dallas Cowboys @ New York Giants 13.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T09:45:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "New England Patriots @ Seattle Seahawks 10.09 15mins Highlights",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:45:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "NFL Highlights",
+          "subtitle": "Indianapolis Colts @ Kansas City Chiefs 20.09 60mins",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T11:00:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "Minnesota Vikings @ Chicago Bears 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T11:15:00Z"
+        },
+        {
+          "title": "Live NFL",
+          "subtitle": "Jacksonville Jaguars @ Denver Broncos 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:15:00Z",
+          "endAt": "2026-09-21T11:30:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "Indianapolis Colts @ Kansas City Chiefs 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:30:00Z",
+          "endAt": "2026-09-21T11:45:00Z"
+        },
+        {
+          "title": "NFL Bitesize Highlights",
+          "subtitle": "Denver Broncos @ Kansas City Chiefs 14.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:45:00Z",
+          "endAt": "2026-09-21T12:00:00Z"
+        },
+        {
+          "title": "Good Morning Football",
+          "subtitle": "21/09/2026",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z"
         }
       ]
     },
@@ -4308,193 +4760,17 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Premier League Legends",
-        "subtitle": "PL Legends: Michael Owen",
+        "title": "Live WSL",
+        "subtitle": "Chelsea v Birmingham City 19.09",
         "description": null,
         "categories": [],
-        "sportType": "Football",
-        "competition": "Premier League",
+        "sportType": null,
+        "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T05:00:00Z"
+        "startAt": "2026-09-19T11:30:00Z",
+        "endAt": "2026-09-19T13:45:00Z"
       },
       "programs": [
-        {
-          "title": "PL Retro",
-          "subtitle": "Manchester City v Tottenham 2010",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Man City V Liverpool 2015 (1-4)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T02:15:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Man City V Liverpool 2013 (2-2)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:15:00Z",
-          "endAt": "2026-09-19T02:30:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Man Utd V Liverpool 1995 (2-2)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:30:00Z",
-          "endAt": "2026-09-19T02:45:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Liverpool V Man Utd 1997 (1-3)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:45:00Z",
-          "endAt": "2026-09-19T03:00:00Z"
-        },
-        {
-          "title": "Premier League Best Goals",
-          "subtitle": "PL Best Goals 95/96",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z"
-        },
-        {
-          "title": "Premier League Legends",
-          "subtitle": "PL Legends: Alan Shearer",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T04:30:00Z"
-        },
-        {
-          "title": "Premier League Legends",
-          "subtitle": "PL Legends: Michael Owen",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T05:00:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Man Utd v Chelsea 2014 (1-1)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T05:15:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Chelsea v Man Utd 2016 (4-0)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:15:00Z",
-          "endAt": "2026-09-19T05:30:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Tottenham V Man Utd 1996 (4-1)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:30:00Z",
-          "endAt": "2026-09-19T05:45:00Z"
-        },
-        {
-          "title": "PL Greatest Games",
-          "subtitle": "Tottenham V Man United 2001 (3-5)",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:45:00Z",
-          "endAt": "2026-09-19T06:00:00Z"
-        },
-        {
-          "title": "Premier League Best Goals",
-          "subtitle": "PL Best Goals 96/97",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z"
-        },
-        {
-          "title": "Premier League Stories",
-          "subtitle": "Premier League Stories: John Stones",
-          "description": null,
-          "categories": [],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:30:00Z"
-        },
-        {
-          "title": "FNF",
-          "subtitle": "Brentford v Chelsea Highlights 18.09",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z"
-        },
-        {
-          "title": "Saturday Social",
-          "subtitle": "19/09/2026",
-          "description": null,
-          "categories": [],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z"
-        },
         {
           "title": "Premier League Weekend",
           "subtitle": null,
@@ -5121,6 +5397,182 @@
           "imageUrl": null,
           "startAt": "2026-09-21T04:30:00Z",
           "endAt": "2026-09-21T05:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Manchester City v Sunderland Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T05:30:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Leeds v Crystal Palace Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:30:00Z",
+          "endAt": "2026-09-21T06:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Bournemouth v Liverpool Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T06:30:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Fulham v Manchester United Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:30:00Z",
+          "endAt": "2026-09-21T07:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Manchester City v Sunderland Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T07:30:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Leeds v Crystal Palace Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:30:00Z",
+          "endAt": "2026-09-21T08:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Bournemouth v Liverpool Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T08:30:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Fulham v Manchester United Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:30:00Z",
+          "endAt": "2026-09-21T09:00:00Z"
+        },
+        {
+          "title": "Sky Sports FC",
+          "subtitle": "Generic Sky Sports FC",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:30:00Z"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T11:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Everton v Ipswich Town Highlights 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T11:30:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Brighton v Arsenal Highlights 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:30:00Z",
+          "endAt": "2026-09-21T12:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Newcastle v Hull City Highlights 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T12:30:00Z"
+        },
+        {
+          "title": "SNF",
+          "subtitle": "Nottingham Forest v Coventry City Highlights 19.09",
+          "description": null,
+          "categories": [],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:30:00Z",
+          "endAt": "2026-09-21T13:00:00Z"
+        },
+        {
+          "title": "Premier League Highlights",
+          "subtitle": "Manchester City v Sunderland Highlights 20.09",
+          "description": null,
+          "categories": [],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T13:30:00Z"
         }
       ]
     },
@@ -5134,182 +5586,22 @@
         "data/normalized/guide-premium-UK-virgintvgo.virginmedia.com.xml"
       ],
       "currentProgram": {
-        "title": "DTM Series Motor Racing",
-        "subtitle": "Sachsenring",
-        "description": "DTM Motorsport Highlights from the latest race taking place around Europe.",
+        "title": "Live: LaLiga",
+        "subtitle": "CA Osasuna v Rayo Vallecano",
+        "description": "El Sadar is the venue for this LALIGA match as Osasuna take on Rayo Vallecano.",
         "categories": [
           "Sports Show",
-          "Motorsport"
+          "Football"
         ],
-        "sportType": "Motorsport",
-        "competition": null,
+        "sportType": "Football",
+        "competition": "LaLiga",
         "imageUrl": null,
-        "startAt": "2026-09-19T04:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z",
+        "startAt": "2026-09-19T11:55:00Z",
+        "endAt": "2026-09-19T14:00:00Z",
         "originalDate": "20260101",
-        "episode": "S62570000E2026091656"
+        "episode": "S69510000E2026091919"
       },
       "programs": [
-        {
-          "title": "LaLiga",
-          "subtitle": "RCD Espanyol v Elche CF",
-          "description": "Espanyol take on Elche in this LALIGA match from the RCDE Stadium.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": null,
-          "startAt": "2026-09-18T23:00:00Z",
-          "endAt": "2026-09-19T01:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S69440000E2026091824"
-        },
-        {
-          "title": "LaLiga",
-          "subtitle": "Real Betis v Getafe CF",
-          "description": "Troy Parrott and his Real Betis teammates go toe to toe with Getafe in this LALIGA fixture from La Cartuja.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S69440000E2026091713"
-        },
-        {
-          "title": "Sporting Greats",
-          "subtitle": "Episode 2",
-          "description": "Watch the very best Sports people look back over their careers.",
-          "categories": [
-            "Sports Show",
-            "Biography"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T03:30:00Z",
-          "originalDate": "20220101",
-          "episode": "S04E02"
-        },
-        {
-          "title": "Sporting Greats",
-          "subtitle": "Episode 4",
-          "description": "Watch the very best Sports people look back over their careers.",
-          "categories": [
-            "Sports Show",
-            "Biography"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:30:00Z",
-          "endAt": "2026-09-19T04:00:00Z",
-          "originalDate": "20220101",
-          "episode": "S04E04"
-        },
-        {
-          "title": "DTM Series Motor Racing",
-          "subtitle": "Sachsenring",
-          "description": "DTM Motorsport Highlights from the latest race taking place around Europe.",
-          "categories": [
-            "Sports Show",
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S62570000E2026091656"
-        },
-        {
-          "title": "NASCAR Cup Racing Series",
-          "subtitle": "World Wide Technology Raceway",
-          "description": "Highlights from the latest round of the 2026 NASCAR Cup Series.",
-          "categories": [
-            "Sports Show",
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S102026E77"
-        },
-        {
-          "title": "FIM World Championship SidecarCross Racing",
-          "subtitle": "GP Netherlands",
-          "description": "Watch the latest highlights of the FIM Sidecarcross World Championship.",
-          "categories": [
-            "Sports Show",
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S21440000E2026091942"
-        },
-        {
-          "title": "Le Mans Cup Motor Racing",
-          "subtitle": "Silverstone",
-          "description": "Highlights of the latest round of the Michelin Le Mans Series.",
-          "categories": [
-            "Sports Show",
-            "Motorsport"
-          ],
-          "sportType": "Motorsport",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S4660000E2026091920"
-        },
-        {
-          "title": "Coppa Italia Show",
-          "subtitle": "Round 2 Highlights",
-          "description": "Magazine show about the Coppa Italia 2026/27 season, featuring previews and highlights from each round.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S43210000E2026091926"
-        },
-        {
-          "title": "World Surf League Highlights",
-          "subtitle": "Tahiti Pro",
-          "description": "Watch all the highlights of the latest round of action from the World Surf League.",
-          "categories": [
-            "Sports Show",
-            "Surfing"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S102026E46"
-        },
         {
           "title": "European Le Mans Series Motor Racing",
           "subtitle": "Silverstone Highlights",
@@ -5995,6 +6287,102 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20260101",
           "episode": "S21440000E2026091942"
+        },
+        {
+          "title": "DTM Series Motor Racing",
+          "subtitle": "Sachsenring",
+          "description": "DTM Motorsport Highlights from the latest race taking place around Europe.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S62570000E2026091656"
+        },
+        {
+          "title": "Scottish Premiership Football",
+          "subtitle": "Kilmarnock v Heart of Midlothian",
+          "description": "Rugby Park is the venue for this Scottish Premiership fixture as Hearts travel to take on Kilmarnock.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S11790000E2026092088"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "Villarreal CF v Levante UD",
+          "description": "The Ceramica hosts this Valencian Community Derby as Villarreal take on Levante.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S69440000E2026091817"
+        },
+        {
+          "title": "Le Mans Cup Motor Racing",
+          "subtitle": "Silverstone",
+          "description": "Highlights of the latest round of the Michelin Le Mans Series.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S4660000E2026091920"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "CA Osasuna v Rayo Vallecano",
+          "description": "El Sadar is the venue for this LALIGA match as Osasuna take on Rayo Vallecano.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T12:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S69440000E2026091911"
+        },
+        {
+          "title": "LaLiga",
+          "subtitle": "Athletic Club v Deportivo Alavés",
+          "description": "San Mamés is the venue for this Basque derby as Athletic Club clash with Deportivo Alavés.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "LaLiga",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:30:00Z",
+          "endAt": "2026-09-21T14:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S69440000E2026091915"
         }
       ]
     },
@@ -6008,150 +6396,22 @@
         "data/normalized/guide-premium-UK-virgintvgo.virginmedia.com.xml"
       ],
       "currentProgram": {
-        "title": "Football's Greatest",
-        "subtitle": "Episode 10",
-        "description": "Watch the greatest players from past years talk about their careers.",
+        "title": "Live: Top 14",
+        "subtitle": "Castres Olympique v RC Toulon",
+        "description": "Castres and Toulon collide in this TOP 14 fixture from Stade Pierre-Fabre.",
         "categories": [
           "Sports Show",
-          "Football"
+          "Rugby Union"
         ],
-        "sportType": "Football",
+        "sportType": "Rugby",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T05:00:00Z",
-        "originalDate": "20220101",
-        "episode": "S01E10"
+        "startAt": "2026-09-19T12:25:00Z",
+        "endAt": "2026-09-19T14:30:00Z",
+        "originalDate": "20260101",
+        "episode": "S57030000E2026091999"
       },
       "programs": [
-        {
-          "title": "Live: Liga Profesional de Fútbol",
-          "subtitle": "Racing Club v Sarmiento",
-          "description": "Coverage of the Argentine Primera División, the premier league in Argentine football.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:10:00Z",
-          "endAt": "2026-09-19T02:15:00Z",
-          "originalDate": "20260101",
-          "episode": "S74110000E2026091908"
-        },
-        {
-          "title": "LaLiga Highlights",
-          "subtitle": "FC Barcelona v Racing Santander",
-          "description": "LALIGA match highlights.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "LaLiga",
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:15:00Z",
-          "endAt": "2026-09-19T02:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S46730000E2026091827"
-        },
-        {
-          "title": "Temples of Sport",
-          "subtitle": "Ascot Racecourse",
-          "description": "Temples of Sport is a series focusing on iconic sporting venues around the globe.",
-          "categories": [
-            "Sports Show",
-            "Documentary"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:30:00Z",
-          "endAt": "2026-09-19T03:00:00Z",
-          "originalDate": "20250101",
-          "episode": "S02E03"
-        },
-        {
-          "title": "TransWorld Sport",
-          "subtitle": "Sport Star Retirements in 2022",
-          "description": "The year 2022 featured the retirements of several notable athletes. We recap some of the big names who said goodbye to their sport in 2022, including the likes of Shaun White, Allyson Felix and Roger Federer.",
-          "categories": [
-            "Sports Show",
-            "Variety"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z",
-          "originalDate": "20220101",
-          "episode": "S102022E52"
-        },
-        {
-          "title": "Football's Greatest",
-          "subtitle": "Episode 9",
-          "description": "Watch the greatest players from past years talk about their careers.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T04:30:00Z",
-          "originalDate": "20220101",
-          "episode": "S01E09"
-        },
-        {
-          "title": "Football's Greatest",
-          "subtitle": "Episode 10",
-          "description": "Watch the greatest players from past years talk about their careers.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "originalDate": "20220101",
-          "episode": "S01E10"
-        },
-        {
-          "title": "Liga Profesional de Fútbol",
-          "subtitle": "Boca Juniors v Central Córdoba (SE)",
-          "description": "La Bombonera is the venue for this Liga Profesional de Fútbol contest between Boca Juniors and Club Atletico Central Córdoba.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S74120000E2026091440"
-        },
-        {
-          "title": "Bike World",
-          "subtitle": "Episode 150",
-          "description": "Bike World brings you the latest action from the high-octane world of two wheels, on-road, off-road or on track.",
-          "categories": [
-            "Sports Show",
-            "Motorcycle Racing"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T07:30:00Z",
-          "originalDate": "20240101",
-          "episode": "S09E150"
-        },
         {
           "title": "Top 14",
           "subtitle": "RC Vannes v Montpellier Hérault Rugby",
@@ -6677,6 +6937,82 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20250101",
           "episode": "S02E18"
+        },
+        {
+          "title": "The Valentino Rossi Story",
+          "subtitle": null,
+          "description": "The filmmaker sheds light on the life journey of Valentino Rossi, a prominent Italian professional motorcycle rider, while highlighting his achievements and triumphs.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T05:30:00Z"
+        },
+        {
+          "title": "NASCAR Cup Racing Series",
+          "subtitle": "Bristol Motor Speedway",
+          "description": "The NASCAR Cup series continues with a stop off at Bristol Motor Speedway for the Bass Pro Shops Night Race.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:30:00Z",
+          "endAt": "2026-09-21T09:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S102026E79"
+        },
+        {
+          "title": "Bike World",
+          "subtitle": "Episode 150",
+          "description": "Bike World brings you the latest action from the high-octane world of two wheels, on-road, off-road or on track.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20240101",
+          "episode": "S09E150"
+        },
+        {
+          "title": "NASCAR Grand National Series Motor Racing",
+          "subtitle": "Bristol 2",
+          "description": "NASCAR's O'Reilly Auto Parts Series continues with the Food City 300 from Bristol Motor Speedway.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Motorsport",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S47550000E2026092137"
+        },
+        {
+          "title": "The Valentino Rossi Story",
+          "subtitle": null,
+          "description": "The filmmaker sheds light on the life journey of Valentino Rossi, a prominent Italian professional motorcycle rider, while highlighting his achievements and triumphs.",
+          "categories": [
+            "Sports Show",
+            "Motorsport"
+          ],
+          "sportType": "Combat sports",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T13:30:00Z"
         }
       ]
     },
@@ -6691,159 +7027,22 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Sky Sports News",
+        "title": "Soccer Saturday",
         "subtitle": null,
-        "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
+        "description": null,
         "categories": [
           "Sports Show",
-          "Sports Talk"
+          "Football"
         ],
-        "sportType": null,
+        "sportType": "Football",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z",
-        "episode": "S53510000E538238239"
+        "startAt": "2026-09-19T11:00:00Z",
+        "endAt": "2026-09-19T14:00:00Z",
+        "originalDate": "20260101",
+        "episode": "S42110000E2026091926"
       },
       "programs": [
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T01:00:00Z",
-          "episode": "S53510000E538238235"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:00:00Z",
-          "endAt": "2026-09-19T02:00:00Z",
-          "episode": "S53510000E538238236"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z",
-          "episode": "S53510000E538238237"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T04:00:00Z",
-          "episode": "S53510000E538238238"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "episode": "S53510000E538238239"
-        },
-        {
-          "title": "Sky Sports News",
-          "subtitle": null,
-          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
-          "categories": [
-            "Sports Show",
-            "Sports Talk"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z",
-          "episode": "S53510000E538252786"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
-          "categories": [
-            "Sports Show",
-            "Multi-sport event"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S16660000E2026091960"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
-          "categories": [
-            "Sports Show",
-            "Multi-sport event"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T07:00:00Z",
-          "endAt": "2026-09-19T08:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S16660000E2026091960"
-        },
-        {
-          "title": "Sky Sports Breakfast",
-          "subtitle": null,
-          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
-          "categories": [
-            "Sports Show",
-            "Multi-sport event"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T08:00:00Z",
-          "endAt": "2026-09-19T09:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S16660000E2026091960"
-        },
         {
           "title": "Premier League Weekend",
           "subtitle": "Episode 5",
@@ -7484,6 +7683,163 @@
           "startAt": "2026-09-21T04:00:00Z",
           "endAt": "2026-09-21T05:00:00Z",
           "episode": "S53510000E538258753"
+        },
+        {
+          "title": "Sky Sports News",
+          "subtitle": null,
+          "description": "Round-up of the sports news with live analysis and comments, plus extended interviews with the headline makers.",
+          "categories": [
+            "Sports Show",
+            "Sports Talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z",
+          "episode": "S53510000E542725051"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
+          "categories": [
+            "Sports Show",
+            "Multi-sport event"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S16660000E2026092162"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
+          "categories": [
+            "Sports Show",
+            "Multi-sport event"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S16660000E2026092162"
+        },
+        {
+          "title": "Sky Sports Breakfast",
+          "subtitle": null,
+          "description": "Stay across the biggest sports stories this morning with a wrap-up of the headlines.",
+          "categories": [
+            "Sports Show",
+            "Multi-sport event"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T09:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S16660000E2026092162"
+        },
+        {
+          "title": "Sky Sports FC",
+          "subtitle": null,
+          "description": "Join Tom White for an interactive discussion spotlighting supporter views and pundit opinions. New technology bring fans closer to the debate. Tom White will be joined by a host of ex-Premier League player and guests.",
+          "categories": [
+            "Sports Show",
+            "Multi-sport event"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S16840000E2026092153"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": "The Sky Sports team look back over some of the big refereeing decisions from the weekend's games. Did the officials get it right?",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S21200000E2026092144"
+        },
+        {
+          "title": "Ref Watch",
+          "subtitle": null,
+          "description": "The Sky Sports team look back over some of the big refereeing decisions from the weekend's games. Did the officials get it right?",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T11:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S21200000E2026092144"
+        },
+        {
+          "title": "Lunchtime Live",
+          "subtitle": null,
+          "description": "Sit down with Sky Sports News as the team break down all the sports stories making the headlines this lunchtime.",
+          "categories": [
+            "Sports Show",
+            "Sports Talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z",
+          "episode": "S43220000E542725058"
+        },
+        {
+          "title": "Lunchtime Live",
+          "subtitle": null,
+          "description": "Sit down with Sky Sports News as the team break down all the sports stories making the headlines this lunchtime.",
+          "categories": [
+            "Sports Show",
+            "Sports Talk"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z",
+          "episode": "S43220000E542725059"
+        },
+        {
+          "title": "The EFL Show",
+          "subtitle": null,
+          "description": null,
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S55650000E2026092107"
         }
       ]
     },
@@ -7499,70 +7855,22 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Live: Women's Australian Rules",
-        "subtitle": "Melbourne Demons v Carlton Blues",
-        "description": "Action from the AFLW as Melbourne face Carlton.",
+        "title": "Live: Premier League",
+        "subtitle": "Tottenham Hotspur v Aston Villa",
+        "description": "Tottenham Hotspur and Aston Villa meet in a crucial clash, with both sides seeking their first Premier League win of the season ahead of the international break.",
         "categories": [
           "Sports Show",
-          "Australian Rules Football"
+          "Football"
         ],
         "sportType": "Football",
-        "competition": null,
+        "competition": "Premier League",
         "imageUrl": null,
-        "startAt": "2026-09-19T03:00:00Z",
-        "endAt": "2026-09-19T05:00:00Z",
+        "startAt": "2026-09-19T10:00:00Z",
+        "endAt": "2026-09-19T14:00:00Z",
         "originalDate": "20260101",
-        "episode": "S84910000E2026091988"
+        "episode": "S20160000E2026091978"
       },
       "programs": [
-        {
-          "title": "Live: Major League Baseball",
-          "subtitle": "Toronto Blue Jays at Texas Rangers",
-          "description": "Action from Major League Baseball as as Toronto Blue Jays face Texas Rangers at Globe Life Field.",
-          "categories": [
-            "Sports Show",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T03:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S36010000E2026091854"
-        },
-        {
-          "title": "Live: Women's Australian Rules",
-          "subtitle": "Melbourne Demons v Carlton Blues",
-          "description": "Action from the AFLW as Melbourne face Carlton.",
-          "categories": [
-            "Sports Show",
-            "Australian Rules Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T03:00:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S84910000E2026091988"
-        },
-        {
-          "title": "Live: Women's Australian Rules",
-          "subtitle": "Fremantle v Western Bulldogs",
-          "description": "Action from the AFLW as Fremantle face Western Bulldogs.",
-          "categories": [
-            "Sports Show",
-            "Australian Rules Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T07:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S84910000E2026091990"
-        },
         {
           "title": "Live: Australian Rules",
           "subtitle": "First Preliminary Final: Hawthorn v Brisbane Lions",
@@ -8042,6 +8350,166 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20260101",
           "episode": "S330000E2026091646"
+        },
+        {
+          "title": "Premier League Review",
+          "subtitle": "Episode 5",
+          "description": "A look back at the best of the recent action from the Premier League.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E05"
+        },
+        {
+          "title": "Premier League: The Big Interview",
+          "subtitle": "Episode 5",
+          "description": "An in-depth interview with players currently playing in the top-flight of English football.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T06:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E05"
+        },
+        {
+          "title": "Premier League Stories",
+          "subtitle": "John Stones",
+          "description": "John Stones has experienced almost everything the game can offer; from the pressure of the biggest stage to the injuries and setbacks that have tested him along the way. After more than a decade at the heart of the Premier League, winning its biggest honours and helping redefine the role of a modern defender, he now takes his career in a new direction.",
+          "categories": [
+            "Documentary",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:30:00Z",
+          "endAt": "2026-09-21T07:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S06E16"
+        },
+        {
+          "title": "Premier League",
+          "subtitle": "Tottenham Hotspur v Aston Villa",
+          "description": "Action from the Premier League.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S102026E295"
+        },
+        {
+          "title": "Serie A Football",
+          "subtitle": "Juventus v Atalanta",
+          "description": "Football from Italy's top division.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:30:00Z",
+          "endAt": "2026-09-21T09:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S34430000E2026092143"
+        },
+        {
+          "title": "Serie A Football",
+          "subtitle": "AC Milan v Lecce",
+          "description": "Football from Italy's top division.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S34430000E2026092144"
+        },
+        {
+          "title": "TNT Sports Original",
+          "subtitle": "Playing For Our Future: Football",
+          "description": "What does the future hold for football in the battle against global warming? Reshmin Chowdhury meets people at all levels to discuss how football can be a force for change.",
+          "categories": [
+            "Sports Show",
+            "Documentary"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:30:00Z",
+          "endAt": "2026-09-21T10:45:00Z",
+          "originalDate": "20230101",
+          "episode": "S02E55"
+        },
+        {
+          "title": "Vuelta a España",
+          "subtitle": "Review",
+          "description": "We review the best action and biggest stories from La Vuelta, one of the leading cycling races in the international calendar.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:45:00Z",
+          "endAt": "2026-09-21T11:45:00Z",
+          "originalDate": "20260101",
+          "episode": "S81670000E2026091825"
+        },
+        {
+          "title": "UCI Road World Championships",
+          "subtitle": "Montréal: Highlights",
+          "description": "Action from the UCI Road World Championships in Montreal.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:45:00Z",
+          "endAt": "2026-09-21T12:45:00Z",
+          "originalDate": "20260101",
+          "episode": "S8090000E2026092062"
+        },
+        {
+          "title": "Live: UCI Road World Championships",
+          "subtitle": "Montréal: Women's U23 Individual Time Trial",
+          "description": "Action from the women's U23 individual time trial at the 2026 UCI Road World Championships in Montreal.",
+          "categories": [
+            "Sports Show",
+            "Road cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:45:00Z",
+          "endAt": "2026-09-21T15:15:00Z",
+          "originalDate": "20260101",
+          "episode": "S8050000E2026092159"
         }
       ]
     },
@@ -8057,86 +8525,22 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "Live: Women's Australian Rules",
-        "subtitle": "Port Adelaide Power v Sydney Swans",
-        "description": "AFLW action as Port Adelaide meet Sydney.",
+        "title": "Live: MotoGP",
+        "subtitle": "Austrian Grand Prix: MotoGP Sprint",
+        "description": "Sprint race action from the 2026 MotoGP Grand Prix of Austria at Red Bull Ring.",
         "categories": [
           "Sports Show",
-          "Australian Rules Football"
+          "Motorcycle Racing"
         ],
-        "sportType": "Football",
+        "sportType": "Formula 1",
         "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T06:30:00Z",
+        "startAt": "2026-09-19T12:45:00Z",
+        "endAt": "2026-09-19T13:45:00Z",
         "originalDate": "20260101",
-        "episode": "S84910000E2026090189"
+        "episode": "S57800000E2026091910"
       },
       "programs": [
-        {
-          "title": "Live: CPL T20",
-          "subtitle": "Qualifier 2: Guyana Amazon Warriors v Jamaica Kingsmen",
-          "description": "Action from the Caribbean Premier League as Guyana Amazon Warriors take on Jamaica Kingsmen.",
-          "categories": [
-            "Sports Show",
-            "Cricket"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-18T22:30:00Z",
-          "endAt": "2026-09-19T02:45:00Z",
-          "originalDate": "20260101",
-          "episode": "S83680000E2026091849"
-        },
-        {
-          "title": "Live: Women's Australian Rules",
-          "subtitle": "Collingwood Magpies v Geelong Cats",
-          "description": "Action from the AFLW as Collingwood and Geelong go head-to-head.",
-          "categories": [
-            "Sports Show",
-            "Australian Rules Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:45:00Z",
-          "endAt": "2026-09-19T04:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S84910000E2026091987"
-        },
-        {
-          "title": "Live: Women's Australian Rules",
-          "subtitle": "Port Adelaide Power v Sydney Swans",
-          "description": "AFLW action as Port Adelaide meet Sydney.",
-          "categories": [
-            "Sports Show",
-            "Australian Rules Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T06:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S84910000E2026090189"
-        },
-        {
-          "title": "Live: MotoGP",
-          "subtitle": "Austrian Grand Prix: Moto3 and Moto2 Free Practice 2",
-          "description": "Action from the second free practice session ahead of the Moto2 and Moto3 Grand Prix of Austria at Red Bull Ring.",
-          "categories": [
-            "Sports Show",
-            "Motorcycle Racing"
-          ],
-          "sportType": "Formula 1",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:30:00Z",
-          "endAt": "2026-09-19T08:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S57800000E2026091907"
-        },
         {
           "title": "Live: MotoGP",
           "subtitle": "Austrian Grand Prix: MotoGP Free Practice 2 and Qualifying",
@@ -8250,7 +8654,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -8330,7 +8734,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -8554,7 +8958,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -8602,7 +9006,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -8694,6 +9098,182 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20260101",
           "episode": "S32410000E2026091904"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: Moto3 Race",
+          "description": "Action from MotoGP.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026092112"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: Moto2 Race",
+          "description": "Action from MotoGP.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026092113"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: MotoGP Sprint",
+          "description": "Sprint race action from the 2026 MotoGP Grand Prix of Austria at Red Bull Ring.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T07:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026091910"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: MotoGP Race",
+          "description": "Action from MotoGP.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:30:00Z",
+          "endAt": "2026-09-21T08:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026092011"
+        },
+        {
+          "title": "British Superbikes Motorcycle Racing",
+          "subtitle": "Round 9 Showdown: Assen GP, Race 1",
+          "description": "Action from the 2026 British Superbike Championship.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:30:00Z",
+          "endAt": "2026-09-21T09:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S10820000E2026091916"
+        },
+        {
+          "title": "British Superbikes Motorcycle Racing",
+          "subtitle": "Round 9 Showdown: Assen GP, Race 2",
+          "description": "Action from the 2026 British Superbike Championship.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T09:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S10820000E2026092017"
+        },
+        {
+          "title": "British Superbikes Motorcycle Racing",
+          "subtitle": "Round 9 Showdown: Assen GP, Race 3",
+          "description": "Action from the 2026 British Superbike Championship.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S10820000E2026092018"
+        },
+        {
+          "title": "Premier League Review",
+          "subtitle": "Episode 5",
+          "description": "A look back at the best of the recent action from the Premier League.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T11:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E05"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: Moto3 Race",
+          "description": "Action from MotoGP.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026092112"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: Moto2 Race",
+          "description": "Action from MotoGP.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026092113"
+        },
+        {
+          "title": "MotoGP",
+          "subtitle": "Austrian Grand Prix: MotoGP Sprint",
+          "description": "Sprint race action from the 2026 MotoGP Grand Prix of Austria at Red Bull Ring.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle Racing"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T13:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S75090000E2026091910"
         }
       ]
     },
@@ -8709,134 +9289,22 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "MLB Plays of the Week",
-        "subtitle": "Episode 24",
-        "description": "This weekly MLB highlights show showcases the most exciting plays from the past week's matches.",
+        "title": "Major League Baseball",
+        "subtitle": "Highlights",
+        "description": "Highlights from Major League Baseball.",
         "categories": [
           "Sports Show",
-          "Family"
+          "Baseball"
         ],
         "sportType": "Baseball",
-        "competition": "MLB",
+        "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:30:00Z",
-        "endAt": "2026-09-19T05:00:00Z",
+        "startAt": "2026-09-19T12:30:00Z",
+        "endAt": "2026-09-19T13:30:00Z",
         "originalDate": "20260101",
-        "episode": "S102026E24"
+        "episode": "S102026E184"
       },
       "programs": [
-        {
-          "title": "Australian Rules",
-          "subtitle": "First Preliminary Final",
-          "description": "Action from the Australian Football League.",
-          "categories": [
-            "Sports Show",
-            "Australian Rules Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:00:00Z",
-          "endAt": "2026-09-19T01:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S15330000E2026091842"
-        },
-        {
-          "title": "Live: Major League Baseball",
-          "subtitle": "New York Yankees at Arizona Diamondbacks",
-          "description": "Major League Baseball action as the Arizona Diamondbacks host the New York Yankees at Chase Field.",
-          "categories": [
-            "Sports Show",
-            "Baseball"
-          ],
-          "sportType": "Baseball",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:30:00Z",
-          "endAt": "2026-09-19T04:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S36010000E2026091955"
-        },
-        {
-          "title": "MLB Plays of the Week",
-          "subtitle": "Episode 24",
-          "description": "This weekly MLB highlights show showcases the most exciting plays from the past week's matches.",
-          "categories": [
-            "Sports Show",
-            "Family"
-          ],
-          "sportType": "Baseball",
-          "competition": "MLB",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:30:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S102026E24"
-        },
-        {
-          "title": "UEFA Europa League Football",
-          "subtitle": null,
-          "description": "Action from the UEFA Europa League.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T05:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S72330000E2026091737"
-        },
-        {
-          "title": "UEFA Europa League Football",
-          "subtitle": "Real Sociedad v Bournemouth",
-          "description": "Bournemouth embark on their first-ever European continental adventure as they visit Reale Arena for a showdown with Pellegrino Matarazzo's Real Sociedad.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:30:00Z",
-          "endAt": "2026-09-19T06:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S72330000E2026091845"
-        },
-        {
-          "title": "UEFA Europa League Football",
-          "subtitle": null,
-          "description": "Action from the UEFA Europa League.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:00:00Z",
-          "endAt": "2026-09-19T06:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S72330000E2026091736"
-        },
-        {
-          "title": "Premier League Preview",
-          "subtitle": "Episode 5",
-          "description": "A look ahead to matchday five of the Premier League, featuring Spurs v Aston Villa, Fulham v Man United, Brighton v Arsenal, and Man City v Sunderland.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T06:30:00Z",
-          "endAt": "2026-09-19T07:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S26E05"
-        },
         {
           "title": "Live: Australian Rules",
           "subtitle": "First Preliminary Final: Hawthorn v Brisbane Lions",
@@ -9127,7 +9595,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -9191,7 +9659,7 @@
         {
           "title": "TNT Sports Reload",
           "subtitle": "Episode 37",
-          "description": "The best bits from TNT Sports over the last week, including exclusive interviews, the best action and so much more.",
+          "description": "The best bits from TNT Sports over the last week, including interviews, top action, and more.",
           "categories": [
             "Sports Show",
             "Interview"
@@ -9409,6 +9877,149 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20260101",
           "episode": "S16830000E2026091809"
+        },
+        {
+          "title": "Australian Rules",
+          "subtitle": "First Preliminary Final",
+          "description": "Action from the Australian Football League.",
+          "categories": [
+            "Sports Show",
+            "Australian Rules Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S15330000E2026091842"
+        },
+        {
+          "title": "Australian Rules",
+          "subtitle": "Second Preliminary Final",
+          "description": "Action from the Australian Football League.",
+          "categories": [
+            "Sports Show",
+            "Australian Rules Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:30:00Z",
+          "endAt": "2026-09-21T08:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S15330000E2026091943"
+        },
+        {
+          "title": "Australia Championship Supercars",
+          "subtitle": "500 at The Bend",
+          "description": "Highlights from the Repco Supercars Championship and the 2026 AirTouch 500 at The Bend.",
+          "categories": [
+            "Sports Show",
+            "Motoring"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S16830000E2026091809"
+        },
+        {
+          "title": "Sign Up: Into Football",
+          "subtitle": "Episode 1",
+          "description": "Hull Special, featuring head coach Sergej Jakirovic, captain Lewie Coyle and Matt Crooks, who is fluent in BSL. Plus, England Deaf Captain Jamie Clarke at St George's Park.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T10:45:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E01"
+        },
+        {
+          "title": "Groundbreaking",
+          "subtitle": "Anfield",
+          "description": "The latest episode of Groundbreaking.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:45:00Z",
+          "endAt": "2026-09-21T11:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E01"
+        },
+        {
+          "title": "U20 Intercontinental Cup",
+          "subtitle": "Real Madrid U19 v Santiago Wanderers U20",
+          "description": "Action from the Under-20 Intercontinental Cup final as the champions of the Conmebol Libertadores, Santiago Wanderers, face UEFA Youth League winners Real Madrid.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S32410000E2026091904"
+        },
+        {
+          "title": "CPL T20",
+          "subtitle": "Final",
+          "description": "Highlights of the T20 cricket action from the Caribbean Premier League.",
+          "categories": [
+            "Cricket"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T12:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S83730000E2026092160"
+        },
+        {
+          "title": "ETPL",
+          "subtitle": "Final",
+          "description": "Action from the European T20 Premier League.",
+          "categories": [
+            "Sports Show",
+            "Cricket"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:30:00Z",
+          "endAt": "2026-09-21T13:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S17410000E2026092101"
+        },
+        {
+          "title": "Premier League Review",
+          "subtitle": "Episode 5",
+          "description": "A look back at the best of the recent action from the Premier League.",
+          "categories": [
+            "Sports Show",
+            "Football"
+          ],
+          "sportType": "Football",
+          "competition": "Premier League",
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S26E05"
         }
       ]
     },
@@ -9424,118 +10035,22 @@
         "data/normalized/guide-premium-UK-mytelly.co.uk.xml"
       ],
       "currentProgram": {
-        "title": "UEFA Champions League: Stories of the Finals",
-        "subtitle": "1997 and 2016",
-        "description": "We turn back the clock to 1997 and Borussia Dortmund's historic victory against Juventus. Plus, a look back at the 2016 final between Real Madrid and Atlético.",
+        "title": "Live: British Superbikes Motorcycle Racing",
+        "subtitle": "Round 9 Showdown: Assen GP, Day 1",
+        "description": "Action from day one and round nine of the 2026 British Superbike Championship, taking place at TT Circuit Assen in the Netherlands.",
         "categories": [
           "Sports Show",
-          "Football"
+          "Motorcycle Racing"
         ],
-        "sportType": "Football",
-        "competition": "Champions League",
+        "sportType": null,
+        "competition": null,
         "imageUrl": null,
-        "startAt": "2026-09-19T04:16:00Z",
-        "endAt": "2026-09-19T04:45:00Z",
-        "originalDate": "20180101",
-        "episode": "S01E06"
+        "startAt": "2026-09-19T11:00:00Z",
+        "endAt": "2026-09-19T14:30:00Z",
+        "originalDate": "20260101",
+        "episode": "S40040000E2026091902"
       },
       "programs": [
-        {
-          "title": "UCI Continental Circuits",
-          "subtitle": "Il Giro d'Abruzzo: Stage 4",
-          "description": "Action from the final stage of the 2026 Tour of Abruzzo. This brutal 182 km route begins along the Adriatic coastline in Silvia and ends in Controguerra.",
-          "categories": [
-            "Sports Show",
-            "Cycling"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T00:30:00Z",
-          "endAt": "2026-09-19T01:30:00Z",
-          "originalDate": "20260101",
-          "episode": "S94620000E2026091841"
-        },
-        {
-          "title": "Premier League Preview",
-          "subtitle": "Episode 5",
-          "description": "A look ahead to matchday five of the Premier League, featuring Spurs v Aston Villa, Fulham v Man United, Brighton v Arsenal, and Man City v Sunderland.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "Premier League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T01:30:00Z",
-          "endAt": "2026-09-19T02:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S26E05"
-        },
-        {
-          "title": "Live: NWSL",
-          "subtitle": "San Diego Wave FC v Kansas City Current",
-          "description": "Action from the National Women's Soccer League showdown between San Diego Wave FC and Kansas City Current.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T02:00:00Z",
-          "endAt": "2026-09-19T04:16:00Z",
-          "originalDate": "20260101",
-          "episode": "S40220000E2026091987"
-        },
-        {
-          "title": "UEFA Champions League: Stories of the Finals",
-          "subtitle": "1997 and 2016",
-          "description": "We turn back the clock to 1997 and Borussia Dortmund's historic victory against Juventus. Plus, a look back at the 2016 final between Real Madrid and Atlético.",
-          "categories": [
-            "Sports Show",
-            "Football"
-          ],
-          "sportType": "Football",
-          "competition": "Champions League",
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:16:00Z",
-          "endAt": "2026-09-19T04:45:00Z",
-          "originalDate": "20180101",
-          "episode": "S01E06"
-        },
-        {
-          "title": "Reframe the Game",
-          "subtitle": "No Rucks Given",
-          "description": "This is the story of the rise of top-flight Women's rugby. We uncover the untold struggles, relentless passion, and game-changing moments that built the Women's club level game.",
-          "categories": [
-            "Sports Show",
-            "Documentary"
-          ],
-          "sportType": "Rugby",
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T04:45:00Z",
-          "endAt": "2026-09-19T05:00:00Z",
-          "originalDate": "20250101",
-          "episode": "S25E03"
-        },
-        {
-          "title": "Vuelta a España",
-          "subtitle": "Review",
-          "description": "We review the best action and biggest stories from La Vuelta, one of the leading cycling races in the international calendar.",
-          "categories": [
-            "Sports Show",
-            "Cycling"
-          ],
-          "sportType": null,
-          "competition": null,
-          "imageUrl": null,
-          "startAt": "2026-09-19T05:00:00Z",
-          "endAt": "2026-09-19T06:00:00Z",
-          "originalDate": "20260101",
-          "episode": "S81670000E2026091825"
-        },
         {
           "title": "Live: T100 Triathlon World Tour",
           "subtitle": "French Riviera",
@@ -9854,6 +10369,182 @@
           "endAt": "2026-09-21T05:00:00Z",
           "originalDate": "20260101",
           "episode": "S77490000E2026091655"
+        },
+        {
+          "title": "Vuelta a España",
+          "subtitle": "Review",
+          "description": "We review the best action and biggest stories from La Vuelta, one of the leading cycling races in the international calendar.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T05:00:00Z",
+          "endAt": "2026-09-21T06:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S81670000E2026091825"
+        },
+        {
+          "title": "Tour de Luxembourg",
+          "subtitle": "Stage 5",
+          "description": "Action from stage five of the 2026 Tour of Luxembourg.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T06:00:00Z",
+          "endAt": "2026-09-21T07:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S37440000E2026092154"
+        },
+        {
+          "title": "UCI Road World Championships",
+          "subtitle": "Montréal: Highlights",
+          "description": "Action from the UCI Road World Championships in Montreal.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T07:00:00Z",
+          "endAt": "2026-09-21T08:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S8090000E2026092062"
+        },
+        {
+          "title": "UCI World Cup Mountain Biking",
+          "subtitle": "Soldier Hollow: Men's Cross-Country Short Track",
+          "description": "Action from the men's elite cross-country short track, part of the UCI Mountain Bike World Series at Soldier Hollow in Salt Lake City.",
+          "categories": [
+            "Sports Show",
+            "Mountain Biking"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:00:00Z",
+          "endAt": "2026-09-21T08:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S51990000E2026092016"
+        },
+        {
+          "title": "UCI World Cup Mountain Biking",
+          "subtitle": "Soldier Hollow: Women's Cross-Country Short Track",
+          "description": "Action from the women's elite cross-country short track, part of the UCI Mountain Bike World Series at Soldier Hollow in Salt Lake City.",
+          "categories": [
+            "Sports Show",
+            "Mountain Biking"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T08:30:00Z",
+          "endAt": "2026-09-21T09:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S51990000E2026092015"
+        },
+        {
+          "title": "UCI World Cup Mountain Biking",
+          "subtitle": "Soldier Hollow: Women's Cross-Country Olympic",
+          "description": "Action from the women's UCI Mountain Bike World Series.",
+          "categories": [
+            "Sports Show",
+            "Mountain Biking"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:00:00Z",
+          "endAt": "2026-09-21T09:30:00Z",
+          "originalDate": "20260101",
+          "episode": "S51990000E2026092117"
+        },
+        {
+          "title": "UCI World Cup Mountain Biking",
+          "subtitle": "Soldier Hollow: Men's Cross-Country Olympic",
+          "description": "Action from the men's UCI Mountain Bike World Series.",
+          "categories": [
+            "Sports Show",
+            "Mountain Biking"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T09:30:00Z",
+          "endAt": "2026-09-21T10:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S51990000E2026092118"
+        },
+        {
+          "title": "Tour de Luxembourg",
+          "subtitle": "Stage 5",
+          "description": "Action from stage five of the 2026 Tour of Luxembourg.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T10:00:00Z",
+          "endAt": "2026-09-21T11:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S37440000E2026092154"
+        },
+        {
+          "title": "UCI ProSeries Cycling",
+          "subtitle": "Flandrien 0.0 Classic",
+          "description": "Cycling action from the Men's UCI ProSeries.",
+          "categories": [
+            "Sports Show",
+            "Cycling"
+          ],
+          "sportType": null,
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T11:00:00Z",
+          "endAt": "2026-09-21T12:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S46430000E2026092079"
+        },
+        {
+          "title": "Major League Baseball",
+          "subtitle": "Highlights",
+          "description": "Highlights from Major League Baseball.",
+          "categories": [
+            "Sports Show",
+            "Baseball"
+          ],
+          "sportType": "Baseball",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T12:00:00Z",
+          "endAt": "2026-09-21T13:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S102026E186"
+        },
+        {
+          "title": "FIM Speedway Grand Prix",
+          "subtitle": "Round 9: Grand Prix of Denmark",
+          "description": "Highlights from round nine of the 2026 FIM Speedway Grand Prix at Vojens Speedway Center in Denmark.",
+          "categories": [
+            "Sports Show",
+            "Motorcycle"
+          ],
+          "sportType": "Formula 1",
+          "competition": null,
+          "imageUrl": null,
+          "startAt": "2026-09-21T13:00:00Z",
+          "endAt": "2026-09-21T14:00:00Z",
+          "originalDate": "20260101",
+          "episode": "S330000E2026091646"
         }
       ]
     }
