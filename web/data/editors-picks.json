@@ -1,62 +1,35 @@
 {
-  "generatedAt": "2026-09-30T05:33:15.833328Z",
+  "generatedAt": "2026-09-30T18:07:55.267786Z",
   "picks": [
-    {
-      "country": "DE",
-      "countryName": "Germany",
-      "channelId": "Eurosport2.fr",
-      "channelName": "Eurosport 2",
-      "title": "UCI Road World Championships: Men's Elite Road Race",
-      "subtitle": "Männer Elite",
-      "description": "Live-Übertragung der UCI Straßenrad-WM 2026 aus Montréal in Kanada.",
-      "originalDate": "20260101",
-      "episode": null,
-      "isPremiere": null,
-      "isNew": null,
-      "categories": [
-        "Sport"
-      ],
-      "sportType": null,
-      "competition": null,
-      "highlightType": "liveSport",
-      "startAt": "2026-09-30T06:30:00Z",
-      "endAt": "2026-09-30T08:00:00Z",
-      "id": "event-37",
-      "channels": [
-        {
-          "country": "DE",
-          "countryName": "Germany",
-          "channelId": "Eurosport2.fr",
-          "channelName": "Eurosport 2",
-          "sourceTitle": "UCI Straßenrad-WM",
-          "startAt": "2026-09-30T06:30:00Z",
-          "endAt": "2026-09-30T08:00:00Z"
-        }
-      ]
-    },
     {
       "country": "UK",
       "countryName": "United Kingdom",
-      "channelId": "TNTSports1.uk",
-      "channelName": "TNT Sports 1 HD",
-      "title": "MLB NL Wild Card Series Game 2: Philadelphia Phillies at Atlanta Braves",
-      "subtitle": "National League Wild Card Series, Game 2: Philadelphia Phillies at Atlanta Braves",
-      "description": "Game two of the MLB National League Wild Card Series as Atlanta Braves face Philadelphia Phillies at Truist Park.",
-      "originalDate": "20260101",
-      "episode": "S36010000E2026093063",
+      "channelId": "mytelly-uk:TNTSports1.uk",
+      "channelName": "TNT Sports 1",
+      "title": "MLB NL Wild Card Game 2: Philadelphia Phillies at Atlanta Braves",
+      "subtitle": "Phillies @ Braves-NL Wildcard Game 2",
+      "description": null,
+      "originalDate": null,
+      "episode": null,
       "isPremiere": null,
       "isNew": null,
-      "categories": [
-        "Sports Show",
-        "Baseball"
-      ],
+      "categories": [],
       "sportType": "Baseball",
       "competition": "MLB",
       "highlightType": "liveSport",
       "startAt": "2026-09-30T18:00:00Z",
       "endAt": "2026-09-30T21:00:00Z",
-      "id": "event-9",
+      "id": "event-23",
       "channels": [
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "mytelly-uk:TNTSports1.uk",
+          "channelName": "TNT Sports 1",
+          "sourceTitle": "Live MLB",
+          "startAt": "2026-09-30T18:00:00Z",
+          "endAt": "2026-09-30T21:00:00Z"
+        },
         {
           "country": "UK",
           "countryName": "United Kingdom",
@@ -67,11 +40,20 @@
           "endAt": "2026-09-30T21:00:00Z"
         },
         {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "mytelly-uk:TNTSports1.uk",
-          "channelName": "TNT Sports 1",
-          "sourceTitle": "Live MLB",
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "TVASports.ca",
+          "channelName": "TVA Sports",
+          "sourceTitle": "Baseball MLB",
+          "startAt": "2026-09-30T18:00:00Z",
+          "endAt": "2026-09-30T21:30:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "Sportsnet.ca",
+          "channelName": "Sportsnet (Ontario)",
+          "sourceTitle": "MLB Baseball",
           "startAt": "2026-09-30T18:00:00Z",
           "endAt": "2026-09-30T21:00:00Z"
         }
@@ -80,11 +62,51 @@
     {
       "country": "UK",
       "countryName": "United Kingdom",
+      "channelId": "mytelly-uk:SkySportsMainEvent.uk",
+      "channelName": "Sky Sports Main Event",
+      "title": "World Grand Prix Darts Day 3",
+      "subtitle": "World Grand Prix Darts D3 30.09 Leicester Mattioli Arena",
+      "description": null,
+      "originalDate": null,
+      "episode": null,
+      "isPremiere": null,
+      "isNew": null,
+      "categories": [],
+      "sportType": "Formula 1",
+      "competition": null,
+      "highlightType": "liveSport",
+      "startAt": "2026-09-30T18:00:00Z",
+      "endAt": "2026-09-30T22:00:00Z",
+      "id": "event-40",
+      "channels": [
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "mytelly-uk:SkySportsMainEvent.uk",
+          "channelName": "Sky Sports Main Event",
+          "sourceTitle": "Live World Grand Prix Darts",
+          "startAt": "2026-09-30T18:00:00Z",
+          "endAt": "2026-09-30T22:00:00Z"
+        },
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "SkySportsMainEvent.uk",
+          "channelName": "Sky Sports Main Event",
+          "sourceTitle": "Live World Grand Prix Darts",
+          "startAt": "2026-09-30T18:00:00Z",
+          "endAt": "2026-09-30T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "country": "UK",
+      "countryName": "United Kingdom",
       "channelId": "TNTSports1.uk",
       "channelName": "TNT Sports 1 HD",
-      "title": "MLB AL Wild Card Series Game 2: Chicago White Sox at Houston Astros",
+      "title": "MLB AL Wild Card Game 2: Chicago White Sox at Houston Astros",
       "subtitle": "American League Wild Card Series, Game 2: Chicago White Sox at Houston Astros",
-      "description": "Game two of the MLB American League Wild Card Series as Houston Astros face Chicago White Sox at Daikin Park.",
+      "description": "Game two of the MLB American League Wild Card Series at Daikin Park, where Houston Astros must beat Chicago White Sox to avoid elimination.",
       "originalDate": "20260101",
       "episode": "S36010000E2026093064",
       "isPremiere": null,
@@ -98,7 +120,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-09-30T21:00:00Z",
       "endAt": "2026-10-01T00:00:00Z",
-      "id": "event-10",
+      "id": "event-8",
       "channels": [
         {
           "country": "UK",
@@ -126,6 +148,33 @@
           "sourceTitle": "Live MLB",
           "startAt": "2026-09-30T21:00:00Z",
           "endAt": "2026-09-30T21:30:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "ESPN.us",
+          "channelName": "ESPN",
+          "sourceTitle": "Jogo 2: Houston Astros x Chicago White Sox",
+          "startAt": "2026-09-30T21:00:00Z",
+          "endAt": "2026-10-01T00:00:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "RDS2.ca",
+          "channelName": "RDS 2",
+          "sourceTitle": "Baseball MLB",
+          "startAt": "2026-09-30T21:00:00Z",
+          "endAt": "2026-10-01T00:00:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "SportsnetOne.ca",
+          "channelName": "Sportsnet One",
+          "sourceTitle": "MLB Baseball",
+          "startAt": "2026-09-30T21:00:00Z",
+          "endAt": "2026-10-01T00:00:00Z"
         }
       ]
     },
@@ -168,7 +217,7 @@
       "countryName": "United States",
       "channelId": "MLSSeasonPass.us",
       "channelName": "MLS Season Pass",
-      "title": "MLS: Red Bull New York vs St. Louis CITY SC",
+      "title": "MLS: Red Bull New York vs St. Louis City SC",
       "subtitle": "MLS Regular Season 2026",
       "description": "MLS Regular Season 2026 · Sports Illustrated Stadium, Harrison, NJ · Watch on Apple TV: https://tv.apple.com/us/sporting-event/red-bull-new-york-vs-st-louis-city-sc/umc.cse.32rrpgz3f7wi7hwjb3trlyi71?ctx_brand=tvs.sbd.4000%2Ctvs.sbd.7000 · Broadcasters: Apple TV",
       "originalDate": null,
@@ -220,7 +269,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-09-30T23:50:00Z",
       "endAt": "2026-10-01T02:00:00Z",
-      "id": "event-27",
+      "id": "event-28",
       "channels": [
         {
           "country": "UK",
@@ -228,6 +277,60 @@
           "channelId": "PremierSports2.ie",
           "channelName": "Premier Sports 2",
           "sourceTitle": "Live: International Friendly Football",
+          "startAt": "2026-09-30T23:50:00Z",
+          "endAt": "2026-10-01T02:00:00Z"
+        },
+        {
+          "country": "ES",
+          "countryName": "Spain",
+          "channelId": "LigadeCampeonesporMovistarPlusPlus.es",
+          "channelName": "M Liga de Campeones",
+          "sourceTitle": "Partido amistoso - T2026, E09: Argentina-Bolivia",
+          "startAt": "2026-09-30T23:50:00Z",
+          "endAt": "2026-10-01T02:10:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "mitv-br:SporTV.br",
+          "channelName": "SporTV",
+          "sourceTitle": "Argentina x Bolívia",
+          "startAt": "2026-09-30T23:30:00Z",
+          "endAt": "2026-10-01T02:00:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "SporTV.br",
+          "channelName": "SporTV",
+          "sourceTitle": "Argentina x Bolívia",
+          "startAt": "2026-09-30T23:30:00Z",
+          "endAt": "2026-10-01T02:00:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "sky-it:SkySportUno.it",
+          "channelName": "Sky Sport Uno",
+          "sourceTitle": "Argentina - Bolivia",
+          "startAt": "2026-09-30T23:50:00Z",
+          "endAt": "2026-10-01T02:00:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "SkySportCalcio.it",
+          "channelName": "Sky Sport Calcio",
+          "sourceTitle": "Argentina - Bolivia",
+          "startAt": "2026-09-30T23:50:00Z",
+          "endAt": "2026-10-01T02:10:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "SkySportUno.it",
+          "channelName": "Sky Sport Uno",
+          "sourceTitle": "Argentina - Bolivia",
           "startAt": "2026-09-30T23:50:00Z",
           "endAt": "2026-10-01T02:00:00Z"
         }
@@ -238,9 +341,9 @@
       "countryName": "United Kingdom",
       "channelId": "TNTSports1.uk",
       "channelName": "TNT Sports 1 HD",
-      "title": "MLB AL Wild Card Series Game 2: Boston Red Sox at New York Yankees",
+      "title": "MLB AL Wild Card Game 2: Boston Red Sox at New York Yankees",
       "subtitle": "American League Wild Card Series, Game 2: Boston Red Sox at New York Yankees",
-      "description": "Game two of the MLB National League Wild Card Series as San Diego Padres face Chicago Cubs at Petco Park.",
+      "description": "Boston Red Sox take on rivals New York Yankees in game two of the MLB National League Wild Card Series. The Yankees can complete the sweep after a 9-0 win in game one.",
       "originalDate": "20260101",
       "episode": "S36010000E2026093079",
       "isPremiere": null,
@@ -254,7 +357,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-10-01T00:00:00Z",
       "endAt": "2026-10-01T03:00:00Z",
-      "id": "event-12",
+      "id": "event-10",
       "channels": [
         {
           "country": "UK",
@@ -273,23 +376,82 @@
           "sourceTitle": "Live MLB",
           "startAt": "2026-10-01T00:00:00Z",
           "endAt": "2026-10-01T03:00:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "FoxSports.br",
+          "channelName": "FOX Sports",
+          "sourceTitle": "Jogo 2: New York Yankees x Boston Red Sox",
+          "startAt": "2026-10-01T00:00:00Z",
+          "endAt": "2026-10-01T03:00:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "RDS.ca",
+          "channelName": "RDS (Réseau des sports)",
+          "sourceTitle": "Baseball MLB",
+          "startAt": "2026-10-01T00:00:00Z",
+          "endAt": "2026-10-01T03:00:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "Sportsnet.ca",
+          "channelName": "Sportsnet (Ontario)",
+          "sourceTitle": "MLB Baseball",
+          "startAt": "2026-10-01T00:00:00Z",
+          "endAt": "2026-10-01T03:00:00Z"
         }
       ]
     },
     {
-      "country": "DE",
-      "countryName": "Germany",
-      "channelId": "SkySportTopEvent.de",
-      "channelName": "Sky Sport Top Event HD",
-      "title": "NHL: Los Angeles Kings at Colorado Avalanche",
-      "subtitle": "Colorado Avalanche - Los Angeles Kings",
-      "description": "Aus der Ball Arena in Denver, Colorado, USA.",
-      "originalDate": "20260101",
+      "country": "CA",
+      "countryName": "Canada",
+      "channelId": "TVASports2.ca",
+      "channelName": "TVA Sports 2",
+      "title": "UFC Fight Night",
+      "subtitle": null,
+      "description": null,
+      "originalDate": null,
       "episode": null,
       "isPremiere": null,
       "isNew": null,
+      "categories": [],
+      "sportType": "Combat sports",
+      "competition": null,
+      "highlightType": "liveSport",
+      "startAt": "2026-10-01T01:00:00Z",
+      "endAt": "2026-10-01T04:00:00Z",
+      "id": "event-49",
+      "channels": [
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "TVASports2.ca",
+          "channelName": "TVA Sports 2",
+          "sourceTitle": "UFC en direct - Fight night",
+          "startAt": "2026-10-01T01:00:00Z",
+          "endAt": "2026-10-01T04:00:00Z"
+        }
+      ]
+    },
+    {
+      "country": "UK",
+      "countryName": "United Kingdom",
+      "channelId": "PremierSports2.ie",
+      "channelName": "Premier Sports 2",
+      "title": "NHL: Los Angeles Kings at Colorado Avalanche",
+      "subtitle": "Los Angeles Kings at Colorado Avalanche",
+      "description": "The Colorado Avalanche and the Los Angeles Kings go head-to-head in this NHL regular season matchup from Ball Arena.",
+      "originalDate": "20260101",
+      "episode": "S20120000E2026100132",
+      "isPremiere": null,
+      "isNew": null,
       "categories": [
-        "Sport"
+        "Sports Show",
+        "Ice Hockey"
       ],
       "sportType": "Hockey",
       "competition": "NHL",
@@ -298,15 +460,6 @@
       "endAt": "2026-10-01T05:00:00Z",
       "id": "event-3",
       "channels": [
-        {
-          "country": "DE",
-          "countryName": "Germany",
-          "channelId": "SkySportTopEvent.de",
-          "channelName": "Sky Sport Top Event HD",
-          "sourceTitle": "Live NHL: Los Angeles Kings @ Colorado Avalanche",
-          "startAt": "2026-10-01T02:00:00Z",
-          "endAt": "2026-10-01T05:00:00Z"
-        },
         {
           "country": "UK",
           "countryName": "United Kingdom",
@@ -322,6 +475,15 @@
           "channelId": "2270/premier-sports-2-hd",
           "channelName": "Premier Sports 2 HD",
           "sourceTitle": "Live NHL Ice Hockey",
+          "startAt": "2026-10-01T02:00:00Z",
+          "endAt": "2026-10-01T05:00:00Z"
+        },
+        {
+          "country": "DE",
+          "countryName": "Germany",
+          "channelId": "SkySportTopEvent.de",
+          "channelName": "Sky Sport Top Event HD",
+          "sourceTitle": "NHL",
           "startAt": "2026-10-01T02:00:00Z",
           "endAt": "2026-10-01T05:00:00Z"
         }
@@ -348,7 +510,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-10-01T14:00:00Z",
       "endAt": "2026-10-01T15:30:00Z",
-      "id": "event-14",
+      "id": "event-12",
       "channels": [
         {
           "country": "UK",
@@ -367,160 +529,129 @@
           "sourceTitle": "Live: FIA World Rally Championship",
           "startAt": "2026-10-01T14:30:00Z",
           "endAt": "2026-10-01T15:30:00Z"
-        }
-      ]
-    },
-    {
-      "country": "UK",
-      "countryName": "United Kingdom",
-      "channelId": "TNTSports1.uk",
-      "channelName": "TNT Sports 1 HD",
-      "title": "MLB NL Wild Card Series Game 3: Philadelphia Phillies at Atlanta Braves",
-      "subtitle": "National League Wild Card Series, Game 3: Philadelphia Phillies at Atlanta Braves",
-      "description": "Coverage of MLB Postseason action as the race to the World Series intensifies.",
-      "originalDate": "20260101",
-      "episode": "S36010000E2026100165",
-      "isPremiere": null,
-      "isNew": null,
-      "categories": [
-        "Sports Show",
-        "Baseball"
-      ],
-      "sportType": "Baseball",
-      "competition": "MLB",
-      "highlightType": "liveSport",
-      "startAt": "2026-10-01T18:00:00Z",
-      "endAt": "2026-10-01T21:00:00Z",
-      "id": "event-16",
-      "channels": [
-        {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "TNTSports1.uk",
-          "channelName": "TNT Sports 1 HD",
-          "sourceTitle": "Live: Major League Baseball",
-          "startAt": "2026-10-01T18:00:00Z",
-          "endAt": "2026-10-01T21:00:00Z"
-        }
-      ]
-    },
-    {
-      "country": "UK",
-      "countryName": "United Kingdom",
-      "channelId": "TNTSports1.uk",
-      "channelName": "TNT Sports 1 HD",
-      "title": "MLB AL Wild Card Series Game 3: Chicago White Sox at Houston Astros",
-      "subtitle": "American League Wild Card Series, Game 3: Chicago White Sox at Houston Astros",
-      "description": "Coverage of MLB Postseason action as the race to the World Series intensifies.",
-      "originalDate": "20260101",
-      "episode": "S36010000E2026100166",
-      "isPremiere": null,
-      "isNew": null,
-      "categories": [
-        "Sports Show",
-        "Baseball"
-      ],
-      "sportType": "Baseball",
-      "competition": "MLB",
-      "highlightType": "liveSport",
-      "startAt": "2026-10-01T21:00:00Z",
-      "endAt": "2026-10-02T00:00:00Z",
-      "id": "event-17",
-      "channels": [
-        {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "TNTSports1.uk",
-          "channelName": "TNT Sports 1 HD",
-          "sourceTitle": "Live: Major League Baseball",
-          "startAt": "2026-10-01T21:00:00Z",
-          "endAt": "2026-10-02T00:00:00Z"
         },
         {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "TNTSports3.uk",
-          "channelName": "TNT Sports 3 HD",
-          "sourceTitle": "Live: Major League Baseball",
-          "startAt": "2026-10-01T21:00:00Z",
-          "endAt": "2026-10-02T00:00:00Z"
-        }
-      ]
-    },
-    {
-      "country": "UK",
-      "countryName": "United Kingdom",
-      "channelId": "TNTSports1.uk",
-      "channelName": "TNT Sports 1 HD",
-      "title": "MLB AL Wild Card Series Game 3: Boston Red Sox at New York Yankees",
-      "subtitle": "American League Wild Card Series, Game 3: Boston Red Sox at New York Yankees",
-      "description": "Coverage of MLB Postseason action as the race to the World Series intensifies.",
-      "originalDate": "20260101",
-      "episode": "S36010000E2026100281",
-      "isPremiere": null,
-      "isNew": null,
-      "categories": [
-        "Sports Show",
-        "Baseball"
-      ],
-      "sportType": "Baseball",
-      "competition": "MLB",
-      "highlightType": "liveSport",
-      "startAt": "2026-10-02T00:00:00Z",
-      "endAt": "2026-10-02T03:00:00Z",
-      "id": "event-19",
-      "channels": [
-        {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "TNTSports1.uk",
-          "channelName": "TNT Sports 1 HD",
-          "sourceTitle": "Live: Major League Baseball",
-          "startAt": "2026-10-02T00:00:00Z",
-          "endAt": "2026-10-02T03:00:00Z"
+          "country": "FR",
+          "countryName": "France",
+          "channelId": "CanalPlusSport360.fr",
+          "channelName": "CANAL+SPORT360",
+          "sourceTitle": "Rallye : WRC, Rallye Italie Sardaigne",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T15:01:00Z"
         },
         {
           "country": "UK",
           "countryName": "United Kingdom",
           "channelId": "mytelly-uk:TNTSports1.uk",
           "channelName": "TNT Sports 1",
-          "sourceTitle": "Live MLB",
-          "startAt": "2026-10-02T00:00:00Z",
-          "endAt": "2026-10-02T03:00:00Z"
+          "sourceTitle": "Live World Rally Championship",
+          "startAt": "2026-10-01T14:30:00Z",
+          "endAt": "2026-10-01T15:30:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "sky-it:SkySportUno.it",
+          "channelName": "Sky Sport Uno",
+          "sourceTitle": "Italia: Stage 1",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T14:50:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "SkySportArena.it",
+          "channelName": "Sky Sport Arena",
+          "sourceTitle": "Italia: Stage 1",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T15:00:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "SkySportUno.it",
+          "channelName": "Sky Sport Uno",
+          "sourceTitle": "Italia: Stage 1",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T14:50:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "sky-it:RaiSport.it",
+          "channelName": "RAI Sport",
+          "sourceTitle": "Rally",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T15:05:00Z"
+        },
+        {
+          "country": "IT",
+          "countryName": "Italy",
+          "channelId": "RaiSport.it",
+          "channelName": "RAI Sport",
+          "sourceTitle": "Rally",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T15:05:00Z"
+        },
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "meo-pt:SportTV2.pt",
+          "channelName": "Sport TV2",
+          "sourceTitle": "WRC: Rali da Sardenha Especial 1 (WRC2 e WRC3) (Direto)",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T14:32:00Z"
+        },
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "SportTV2.pt",
+          "channelName": "Sport TV2",
+          "sourceTitle": "WRC: Rali da Sardenha Especial 1 (WRC2 e WRC3) (Direto)",
+          "startAt": "2026-10-01T14:00:00Z",
+          "endAt": "2026-10-01T14:32:00Z"
         }
       ]
     },
     {
-      "country": "UK",
-      "countryName": "United Kingdom",
-      "channelId": "TNTSports2.uk",
-      "channelName": "TNT Sports 2 HD",
-      "title": "MotoGP Japanese Grand Prix: Free Practice 1",
-      "subtitle": "Japanese Grand Prix: Free Practice 1",
-      "description": "Action from the free practice session ahead of the 2026 MotoGP Grand Prix of Japan at Mobility Resort Motegi.",
+      "country": "DE",
+      "countryName": "Germany",
+      "channelId": "SkySportGolf.de",
+      "channelName": "Sky Sport Golf HD",
+      "title": "LPGA Lotte Championship Day 1",
+      "subtitle": null,
+      "description": "Umfassende Berichterstattung über alle spannenden Golfturniere der LPGA Tour.",
       "originalDate": "20260101",
-      "episode": "S57800000E2026100215",
+      "episode": null,
       "isPremiere": null,
       "isNew": null,
       "categories": [
-        "Sports Show",
-        "Motorcycle Racing"
+        "Sport"
       ],
-      "sportType": "Formula 1",
+      "sportType": null,
       "competition": null,
       "highlightType": "liveSport",
       "startAt": "2026-10-02T00:00:00Z",
-      "endAt": "2026-10-02T02:45:00Z",
-      "id": "event-32",
+      "endAt": "2026-10-02T03:00:00Z",
+      "id": "event-38",
       "channels": [
+        {
+          "country": "DE",
+          "countryName": "Germany",
+          "channelId": "SkySportGolf.de",
+          "channelName": "Sky Sport Golf HD",
+          "sourceTitle": "Live LPGA: Lotte Championship, 1. Tag in Oahu, HI (USA)",
+          "startAt": "2026-10-02T00:00:00Z",
+          "endAt": "2026-10-02T03:00:00Z"
+        },
         {
           "country": "UK",
           "countryName": "United Kingdom",
-          "channelId": "TNTSports2.uk",
-          "channelName": "TNT Sports 2 HD",
-          "sourceTitle": "Live: MotoGP",
+          "channelId": "SkySportsGolf.uk",
+          "channelName": "Sky Sports Golf",
+          "sourceTitle": "Live LPGA Tour Golf",
           "startAt": "2026-10-02T00:00:00Z",
-          "endAt": "2026-10-02T02:45:00Z"
+          "endAt": "2026-10-02T03:00:00Z"
         }
       ]
     },
@@ -529,7 +660,7 @@
       "countryName": "Germany",
       "channelId": "SkySportTopEvent.de",
       "channelName": "Sky Sport Top Event HD",
-      "title": "NFL Thursday Night Football Week 4: Pittsburgh Steelers at Cleveland Browns",
+      "title": "NFL Week 4 Thursday Night Football: Pittsburgh Steelers at Cleveland Browns",
       "subtitle": "Cleveland Browns - Pittsburgh Steelers",
       "description": "Aus dem Huntington Bank Field in Cleveland, Ohio, USA.",
       "originalDate": "20260101",
@@ -544,7 +675,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-10-02T00:10:00Z",
       "endAt": "2026-10-02T03:20:00Z",
-      "id": "event-20",
+      "id": "event-18",
       "channels": [
         {
           "country": "DE",
@@ -554,6 +685,78 @@
           "sourceTitle": "Live NFL: Pittsburgh Steelers @ Cleveland Browns, Week 4 (Thursday Night Football)",
           "startAt": "2026-10-02T00:10:00Z",
           "endAt": "2026-10-02T03:20:00Z"
+        },
+        {
+          "country": "DE",
+          "countryName": "Germany",
+          "channelId": "magenta-de:RTL.de",
+          "channelName": "RTL",
+          "sourceTitle": "NFL LIVE",
+          "startAt": "2026-10-02T00:10:00Z",
+          "endAt": "2026-10-02T03:20:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "mitv-br:SporTV2.br",
+          "channelName": "SporTV2",
+          "sourceTitle": "Cleveland Browns x Pittsburgh Steelers",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "BR",
+          "countryName": "Brazil",
+          "channelId": "SporTV2.br",
+          "channelName": "SporTV2",
+          "sourceTitle": "Cleveland Browns x Pittsburgh Steelers",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "RDS2.ca",
+          "channelName": "RDS 2",
+          "sourceTitle": "Football NFL",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "TSN1.ca",
+          "channelName": "TSN1",
+          "sourceTitle": "NFL Football",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "TSN3.ca",
+          "channelName": "TSN3",
+          "sourceTitle": "NFL Football",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "CA",
+          "countryName": "Canada",
+          "channelId": "TSN4.ca",
+          "channelName": "TSN4",
+          "sourceTitle": "NFL Football",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T03:30:00Z"
+        },
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "vodafone-pt:DAZN1.uk",
+          "channelName": "DAZN 1",
+          "sourceTitle": "Browns x Steelers: NFL",
+          "startAt": "2026-10-02T00:15:00Z",
+          "endAt": "2026-10-02T04:00:00Z"
         }
       ]
     },
@@ -580,7 +783,7 @@
       "highlightType": "liveSport",
       "startAt": "2026-10-02T01:30:00Z",
       "endAt": "2026-10-02T04:00:00Z",
-      "id": "event-6",
+      "id": "event-5",
       "channels": [
         {
           "country": "US",
@@ -612,8 +815,8 @@
       "competition": "NHL",
       "highlightType": "liveSport",
       "startAt": "2026-10-02T02:00:00Z",
-      "endAt": "2026-10-02T05:00:00Z",
-      "id": "event-7",
+      "endAt": "2026-10-02T08:00:00Z",
+      "id": "event-6",
       "channels": [
         {
           "country": "DE",
@@ -622,7 +825,7 @@
           "channelName": "Sky Sport 2 HD",
           "sourceTitle": "Live NHL: Edmonton Oilers @ Vancouver Canucks",
           "startAt": "2026-10-02T02:00:00Z",
-          "endAt": "2026-10-02T05:00:00Z"
+          "endAt": "2026-10-02T08:00:00Z"
         },
         {
           "country": "UK",
@@ -647,43 +850,43 @@
     {
       "country": "UK",
       "countryName": "United Kingdom",
-      "channelId": "TNTSports3.uk",
-      "channelName": "TNT Sports 3 HD",
-      "title": "MLB NL Wild Card Series Game 3: Chicago Cubs at San Diego Padres",
-      "subtitle": "National League Wild Card Series, Game 3: Chicago Cubs v San Diego Padres",
-      "description": "Coverage of MLB Postseason action as the race to the World Series intensifies.",
+      "channelId": "TNTSports4.uk",
+      "channelName": "TNT Sports 4 HD",
+      "title": "FIA World Rally Championship: Rally Italia Sardegna SS2-4",
+      "subtitle": "Rally Italia Sardegna: SS2 to 4",
+      "description": "Action from special stages two, three and four of the 2026 World Rally Championship in Italy.",
       "originalDate": "20260101",
-      "episode": "S36010000E2026100282",
+      "episode": "S56810000E2026100273",
       "isPremiere": null,
       "isNew": null,
       "categories": [
         "Sports Show",
-        "Baseball"
+        "Motorsport"
       ],
-      "sportType": "Baseball",
-      "competition": "MLB",
+      "sportType": "Motorsport",
+      "competition": null,
       "highlightType": "liveSport",
-      "startAt": "2026-10-02T02:00:00Z",
-      "endAt": "2026-10-02T05:00:00Z",
-      "id": "event-21",
+      "startAt": "2026-10-02T05:45:00Z",
+      "endAt": "2026-10-02T09:00:00Z",
+      "id": "event-20",
       "channels": [
         {
           "country": "UK",
           "countryName": "United Kingdom",
-          "channelId": "TNTSports3.uk",
-          "channelName": "TNT Sports 3 HD",
-          "sourceTitle": "Live: Major League Baseball",
-          "startAt": "2026-10-02T02:00:00Z",
-          "endAt": "2026-10-02T05:00:00Z"
+          "channelId": "TNTSports4.uk",
+          "channelName": "TNT Sports 4 HD",
+          "sourceTitle": "Live: FIA World Rally Championship",
+          "startAt": "2026-10-02T05:45:00Z",
+          "endAt": "2026-10-02T09:00:00Z"
         },
         {
-          "country": "UK",
-          "countryName": "United Kingdom",
-          "channelId": "mytelly-uk:TNTSports1.uk",
-          "channelName": "TNT Sports 1",
-          "sourceTitle": "Live MLB",
-          "startAt": "2026-10-02T03:00:00Z",
-          "endAt": "2026-10-02T05:00:00Z"
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "SportTV3.pt",
+          "channelName": "Sport TV3",
+          "sourceTitle": "WRC: Rali da Sardenha Especiais 2, 3 e 4 (Direto)",
+          "startAt": "2026-10-02T04:45:00Z",
+          "endAt": "2026-10-02T06:23:00Z"
         }
       ]
     },
@@ -692,32 +895,75 @@
       "countryName": "United Kingdom",
       "channelId": "TNTSports2.uk",
       "channelName": "TNT Sports 2 HD",
-      "title": "MotoGP Japanese Grand Prix: Practice",
-      "subtitle": "Japanese Grand Prix: Practice",
-      "description": "Action from the practice session ahead of the 2026 MotoGP Grand Prix of Japan at Mobility Resort Motegi.",
+      "title": "FIA World Rally Championship: Rally Italia Sardegna SS5-7",
+      "subtitle": "Rally Italia Sardegna: SS5 to 7",
+      "description": "Action from special stages five, six, and seven of the 2026 World Rally Championship in Italy.",
       "originalDate": "20260101",
-      "episode": "S57800000E2026100216",
+      "episode": "S56810000E2026100274",
       "isPremiere": null,
       "isNew": null,
       "categories": [
         "Sports Show",
-        "Motorcycle Racing"
+        "Motorsport"
       ],
-      "sportType": "Formula 1",
+      "sportType": "Motorsport",
       "competition": null,
       "highlightType": "liveSport",
-      "startAt": "2026-10-02T04:15:00Z",
-      "endAt": "2026-10-02T07:15:00Z",
-      "id": "event-35",
+      "startAt": "2026-10-02T12:00:00Z",
+      "endAt": "2026-10-02T15:30:00Z",
+      "id": "event-21",
       "channels": [
         {
           "country": "UK",
           "countryName": "United Kingdom",
           "channelId": "TNTSports2.uk",
           "channelName": "TNT Sports 2 HD",
-          "sourceTitle": "Live: MotoGP",
-          "startAt": "2026-10-02T04:15:00Z",
-          "endAt": "2026-10-02T07:15:00Z"
+          "sourceTitle": "Live: FIA World Rally Championship",
+          "startAt": "2026-10-02T12:00:00Z",
+          "endAt": "2026-10-02T15:30:00Z"
+        },
+        {
+          "country": "PT",
+          "countryName": "Portugal",
+          "channelId": "SportTV3.pt",
+          "channelName": "Sport TV3",
+          "sourceTitle": "WRC: Rali da Sardenha Especiais 5, 6 e 7 (Direto)",
+          "startAt": "2026-10-02T11:30:00Z",
+          "endAt": "2026-10-02T14:30:00Z"
+        }
+      ]
+    },
+    {
+      "country": "UK",
+      "countryName": "United Kingdom",
+      "channelId": "PremierSports2.ie",
+      "channelName": "Premier Sports 2",
+      "title": "United Rugby Championship: Edinburgh vs DHL Stormers",
+      "subtitle": "Edinburgh v DHL Stormers",
+      "description": "Hive Stadium is the setting for this Friday night URC encounter between Edinburgh and the DHL Stormers.",
+      "originalDate": "20260101",
+      "episode": "S69430000E2026100223",
+      "isPremiere": null,
+      "isNew": null,
+      "categories": [
+        "Sports Show",
+        "Rugby Union"
+      ],
+      "sportType": "Rugby",
+      "competition": null,
+      "highlightType": "liveSport",
+      "startAt": "2026-10-02T18:00:00Z",
+      "endAt": "2026-10-02T21:15:00Z",
+      "id": "event-22",
+      "channels": [
+        {
+          "country": "UK",
+          "countryName": "United Kingdom",
+          "channelId": "PremierSports2.ie",
+          "channelName": "Premier Sports 2",
+          "sourceTitle": "Live: United Rugby Championship",
+          "startAt": "2026-10-02T18:00:00Z",
+          "endAt": "2026-10-02T21:15:00Z"
         }
       ]
     }
