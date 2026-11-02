@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "weekStart": "2026-10-26",
-  "weekEnd": "2026-11-01",
-  "generatedAt": "2026-10-26T15:17:57.017702Z",
+  "weekStart": "2026-11-02",
+  "weekEnd": "2026-11-08",
+  "generatedAt": "2026-11-02T18:32:35.481416Z",
   "catalogueHash": "5653b8c27196c58236bf806b616448f540a15619d26a74d3ffa4cb1d9db115a1",
   "selection": {
     "method": "llm",
     "model": "deepseek-v4.1-flash",
     "promptVersion": "series-weekly-v2",
     "usage": {
-      "prompt_tokens": 677,
-      "completion_tokens": 309,
-      "total_tokens": 986
+      "prompt_tokens": 655,
+      "completion_tokens": 489,
+      "total_tokens": 1144
     }
   },
   "countries": [
@@ -122,46 +122,6 @@
       "name": "Canada",
       "picks": [
         {
-          "id": "ca-sur-le-fil",
-          "country": "CA",
-          "title": "Sur le fil",
-          "year": 2026,
-          "season": 1,
-          "scope": "Season 1",
-          "genre": "Drama",
-          "summary": "Showbizz.net praises the writing, performances and balance of drama and humor.",
-          "productionCountries": [
-            "CA"
-          ],
-          "originalLanguages": [
-            "fr"
-          ],
-          "originVerified": true,
-          "originNote": "Domestic production by A Média / KOTV; reviewed broadcaster evidence in discovery dataset.",
-          "checkedAt": "2026-09-16",
-          "broadcaster": "ICI TÉLÉ",
-          "productionCompany": "A Média / KOTV",
-          "airing": "Mondays, 21:00 (Québec). Verified broadcast: 2026-09-14.",
-          "airingSource": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
-          "sources": [
-            {
-              "url": "https://showbizz.net/tele/sur-le-fil-surprend-et-emeut-pascale-renaud-hebert-frappe-encore-dans-le-mille",
-              "publisher": "Showbizz.net",
-              "country": "CA",
-              "role": "review",
-              "label": "Review"
-            },
-            {
-              "url": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
-              "publisher": "Radio-Canada Presse",
-              "country": "CA",
-              "role": "origin",
-              "label": "Production information"
-            }
-          ],
-          "rank": 1
-        },
-        {
           "id": "ca-kingston-falls",
           "country": "CA",
           "title": "Bienvenue à Kingston-Falls",
@@ -193,6 +153,46 @@
             },
             {
               "url": "https://presse.radio-canada.ca/internet/14604/bienvenue-a-kingston-falls-le-thriller-singulier-de-robin-aubert-avec-maxime-le-flaguais-disponible-des-demain/",
+              "publisher": "Radio-Canada Presse",
+              "country": "CA",
+              "role": "origin",
+              "label": "Production information"
+            }
+          ],
+          "rank": 1
+        },
+        {
+          "id": "ca-sur-le-fil",
+          "country": "CA",
+          "title": "Sur le fil",
+          "year": 2026,
+          "season": 1,
+          "scope": "Season 1",
+          "genre": "Drama",
+          "summary": "Showbizz.net praises the writing, performances and balance of drama and humor.",
+          "productionCountries": [
+            "CA"
+          ],
+          "originalLanguages": [
+            "fr"
+          ],
+          "originVerified": true,
+          "originNote": "Domestic production by A Média / KOTV; reviewed broadcaster evidence in discovery dataset.",
+          "checkedAt": "2026-09-16",
+          "broadcaster": "ICI TÉLÉ",
+          "productionCompany": "A Média / KOTV",
+          "airing": "Mondays, 21:00 (Québec). Verified broadcast: 2026-09-14.",
+          "airingSource": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
+          "sources": [
+            {
+              "url": "https://showbizz.net/tele/sur-le-fil-surprend-et-emeut-pascale-renaud-hebert-frappe-encore-dans-le-mille",
+              "publisher": "Showbizz.net",
+              "country": "CA",
+              "role": "review",
+              "label": "Review"
+            },
+            {
+              "url": "https://presse.radio-canada.ca/television/14766/sur-le-fil-celine-bonnier-porte-une-serie-empreinte-d-espoir-et-d-humanite-sur-la-realite-de-la-rue/",
               "publisher": "Radio-Canada Presse",
               "country": "CA",
               "role": "origin",
