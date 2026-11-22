@@ -54,7 +54,7 @@ jobs:
             curl -sf --retry 3 --max-time 300 \
               "https://heywhatson.tv/data/uhf/${file}" -o "web/data/uhf/${file}"
           done
-          ls -la /tmp/live-data web/data/uhf
+          ls -la web/data web/data/uhf
 
       - name: Generate editor picks
         env:
