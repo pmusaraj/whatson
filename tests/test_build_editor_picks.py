@@ -575,6 +575,36 @@ class BuildEditorPicksTest(unittest.TestCase):
             self.assertIn("keeping validated selections", stderr.getvalue())
             self.assertIn("non-overlapping broadcasts", stderr.getvalue())
 
+    def test_expansion_failure_on_one_event_keeps_other_expansions(self):
+        now = datetime(2026, 9, 4, 16, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            programs = [self.program(title, "2026-09-04T18:00:00Z")
+                        for title in ("Live: Team A vs Team B", "Live: Team C vs Team D")]
+            self.write_country(path, "US", [{"id": "chan", "name": "Chan", "programs": programs}])
+            candidates = build_editor_picks.collect_candidates(path, now)
+            seeds = build_editor_picks.validate_selection(json.dumps({"picks": [
+                {"title": c["title"], "pick_ids": [c["id"]]} for c in candidates
+            ]}), candidates)
+            calls = []
+
+            def respond(eligible, api_key, opener=None, selected_groups=None):
+                (group,) = selected_groups
+                calls.append(group["title"])
+                if "Team A" in group["title"]:
+                    raise ValueError("Expansion grouped non-overlapping broadcasts")
+                pool = build_editor_picks.collect_candidates(path, now, broad=True)
+                return build_editor_picks.validate_selection(json.dumps({"picks": [{
+                    "title": group["title"], "pick_ids": group["pick_ids"]}]}), pool, [group])
+
+            with patch.object(build_editor_picks, "select_with_opencode_go", side_effect=respond):
+                expanded = build_editor_picks.expand_with_opencode_go(seeds, "key", path, now)
+            self.assertEqual(len(expanded), 2)
+            self.assertEqual(len(expanded[0]["channels"]), 1)  # unexpanded seed kept
+            self.assertEqual([c["sourceTitle"] for c in expanded[1]["channels"]],
+                             [c["sourceTitle"] for c in seeds[1]["channels"]])
+            self.assertEqual(calls, [s["title"] for s in seeds])
+
     def test_exact_title_fallback_does_not_merge_different_fixtures(self):
         candidates = [{**self.program("Live football", "2026-09-04T18:00:00Z"),
                        "id": str(index), "subtitle": f"Fixture {index}"} for index in range(2)]

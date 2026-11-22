@@ -565,7 +565,16 @@ def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, ope
     for pick, group in zip(picks, groups):
         eligible = set(group["eligible_ids"])
         # One fixture per request avoids a global all-events matching task.
-        result = select_with_opencode_go([c for c in pool if c["id"] in eligible], api_key, opener, selected_groups=[group])[0]
+        # A bad answer for one event must not discard the other events'
+        # expansions: keep the validated seed channels and move on.
+        try:
+            result = select_with_opencode_go([c for c in pool if c["id"] in eligible], api_key, opener, selected_groups=[group])[0]
+        except ValueError as error:
+            print(f"warning: expansion skipped for {pick['title']!r}: {error}", file=sys.stderr)
+            for channel in pick["channels"]:
+                used_ids.add(by_slot[(channel["country"], channel["channelId"], channel["startAt"], channel["endAt"], channel["sourceTitle"])]["id"])
+            expanded.append(pick)
+            continue
         slots = [(c["country"], c["channelId"], c["startAt"], c["endAt"], c["sourceTitle"]) for c in result["channels"]]
         ids = {by_slot[slot]["id"] for slot in slots}
         if ids & used_ids:
