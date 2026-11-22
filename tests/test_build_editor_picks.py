@@ -267,7 +267,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertNotEqual(build_editor_picks.candidate_event_key(generic),
                             build_editor_picks.candidate_event_key({**generic, "subtitle": "Gamma vs Delta"}))
 
-    def test_selection_accepts_twenty_picks_and_rejects_twenty_one(self):
+    def test_selection_accepts_twenty_picks_and_truncates_twenty_one(self):
         candidates = [
             {"id": f"event-{index}", "title": f"Live event {index}",
              "channelId": f"channel-{index}", "highlightType": "liveSport",
@@ -280,8 +280,9 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(len(selected), 20)
         self.assertEqual([channel["channelId"] for channel in selected[0]["channels"]], ["channel-0", "other-channel"])
         groups.append({"title": "Event 20", "pick_ids": ["event-20"]})
-        with self.assertRaisesRegex(ValueError, "invalid picks"):
-            build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
+        selected = build_editor_picks.validate_selection(json.dumps({"picks": groups}), candidates)
+        self.assertEqual(len(selected), 20)
+        self.assertNotIn("Event 20", [pick["title"] for pick in selected])
 
     def test_selection_adds_same_event_channels_the_model_omits(self):
         candidates = [

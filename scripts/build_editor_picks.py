@@ -305,8 +305,13 @@ def extract_json_object(content, model=None):
 def validate_selection(content, candidates, selected_groups=None, model=None):
     result = extract_json_object(content, model)
     groups = result.get("picks") if isinstance(result, dict) else None
-    if not isinstance(groups, list) or len(groups) > PICK_LIMIT:
+    if not isinstance(groups, list) or (selected_groups is not None and len(groups) > PICK_LIMIT):
         raise ValueError("OpenCode Go response had invalid picks")
+    if selected_groups is None and len(groups) > PICK_LIMIT:
+        # Groups arrive most noteworthy first: keep the best 20 rather than
+        # discarding an otherwise valid selection.
+        print(f"warning: keeping the first {PICK_LIMIT} of {len(groups)} editor-pick groups", file=sys.stderr)
+        groups = groups[:PICK_LIMIT]
     by_id = {candidate["id"]: candidate for candidate in candidates}
     if len(by_id) != len(candidates):
         raise ValueError("Candidate IDs must be unique")
