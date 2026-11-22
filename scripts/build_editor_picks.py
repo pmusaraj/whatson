@@ -18,7 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-OPENCODE_GO_MODELS = ("muse-spark-1.3-contributor", "deepseek-v4.1-flash", "gpt-6-luna", "hy3")
+OPENCODE_GO_MODELS = ("muse-spark-1.3-contributor", "deepseek-v4.1-flash", "gpt-6-luna", "claude-haiku-5-5")
+# Models whose chat-completions API rejects the temperature parameter.
+OPENCODE_GO_NO_TEMPERATURE = frozenset({"claude-haiku-5-5"})
 PICK_LIMIT = 20
 CANDIDATES_PER_COUNTRY = 10
 LOOKAHEAD_HOURS = 48
@@ -471,15 +473,17 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
     prompt += "\n\nCandidates:\n" + json.dumps(public_candidates, ensure_ascii=False, separators=(",", ":"))
     raw_response = b""
     for model in OPENCODE_GO_MODELS:
-        body = json.dumps({
+        payload = {
             "model": model,
             "messages": [
                 {"role": "system", "content": "You are a conservative international television editor."},
                 {"role": "user", "content": prompt},
             ],
             "response_format": {"type": "json_object"},
-            "temperature": 0,
-        }).encode("utf-8")
+        }
+        if model not in OPENCODE_GO_NO_TEMPERATURE:
+            payload["temperature"] = 0
+        body = json.dumps(payload).encode("utf-8")
         request = urllib.request.Request(
             OPENCODE_GO_URL,
             data=body,

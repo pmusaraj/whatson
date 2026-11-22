@@ -397,6 +397,26 @@ class BuildEditorPicksTest(unittest.TestCase):
             build_editor_picks.select_with_opencode_go([candidate], "key", opener=exhausted)
         self.assertEqual(exhausted.call_count, 3 * len(build_editor_picks.OPENCODE_GO_MODELS))
 
+    def test_temperature_omitted_for_models_without_support(self):
+        candidate = {
+            "id": "event-1",
+            "country": "US",
+            "channelName": "Sports One",
+            "title": "Team A vs Team B",
+            "startAt": "2026-09-04T18:00:00Z",
+            "endAt": "2026-09-04T20:00:00Z",
+        }
+
+        def body_for(model):
+            response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"picks\\":[]}"}}]}')
+            opener = Mock(return_value=response)
+            with patch.object(build_editor_picks, "OPENCODE_GO_MODELS", (model,)):
+                build_editor_picks.select_with_opencode_go([candidate], "key", opener=opener)
+            return json.loads(opener.call_args.args[0].data)
+
+        self.assertNotIn("temperature", body_for("claude-haiku-5-5"))
+        self.assertEqual(body_for("deepseek-v4.1-flash")["temperature"], 0)
+
     def test_model_fallback_is_ordered_and_only_for_unavailability(self):
         from email.message import Message
         from urllib.error import HTTPError

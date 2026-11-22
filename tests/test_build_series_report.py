@@ -278,6 +278,14 @@ class SeriesReportTest(unittest.TestCase):
         self.assertEqual(provenance['model'], series.OPENCODE_GO_MODELS[1])
         self.assertEqual(provenance['usage'], {'total_tokens': 100})
 
+    def test_temperature_omitted_for_models_without_support(self):
+        for model, expected in (("claude-haiku-5-5", False), ("deepseek-v4.1-flash", True)):
+            opener = Mock(return_value=self.response())
+            with patch.object(series, "OPENCODE_GO_MODELS", (model,)):
+                series.select_with_llm(self.by_id, date(2026, 9, 14), 'test', opener=opener)
+            body = json.loads(opener.call_args.args[0].data)
+            self.assertEqual("temperature" in body, expected)
+
     def test_authentication_and_bad_output_do_not_change_model(self):
         for error in (urllib.error.HTTPError(series.OPENCODE_GO_URL, 401, 'unauthorized', {}, None),):
             opener = Mock(side_effect=error)

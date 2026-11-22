@@ -21,7 +21,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from build_editor_picks import OPENCODE_GO_MODELS, OPENCODE_GO_URL
+from build_editor_picks import OPENCODE_GO_MODELS, OPENCODE_GO_NO_TEMPERATURE, OPENCODE_GO_URL
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "data/series/catalogue.json"
@@ -158,10 +158,13 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
         + json.dumps({"candidates": candidates, "previous": previous or {}}, ensure_ascii=False)
     )
     for index, model in enumerate(OPENCODE_GO_MODELS):
-        body = json.dumps({"model": model, "messages": [
+        payload = {"model": model, "messages": [
             {"role": "system", "content": "You are a careful international television editor. Rank only supplied IDs."},
-            {"role": "user", "content": prompt}], "temperature": 0,
-            "max_tokens": 2000, "response_format": {"type": "json_object"}}).encode()
+            {"role": "user", "content": prompt}],
+            "max_tokens": 2000, "response_format": {"type": "json_object"}}
+        if model not in OPENCODE_GO_NO_TEMPERATURE:
+            payload["temperature"] = 0
+        body = json.dumps(payload).encode()
         request = urllib.request.Request(OPENCODE_GO_URL, data=body, headers={
             "Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
             "Accept": "application/json", "User-Agent": "whatson-series/1.0",
