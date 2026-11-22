@@ -1,0 +1,114 @@
+name: Editor picks
+
+on:
+  schedule:
+    # Refresh highlights from the deployed guide four times daily. Uses the
+    # public Cloudflare payloads as input, so this never runs the heavy grab.
+    # Serialized with the main refresh via the shared concurrency group.
+    - cron: "17 1,7,13,19 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Generate and validate picks but skip the deploy
+        type: boolean
+        default: false
+
+concurrency:
+  group: refresh-epg
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  picks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Restore previous picks
+        uses: actions/cache/restore@v4
+        with:
+          path: web/data/editors-picks.json
+          key: guide-data-${{ github.run_id }}
+          restore-keys: guide-data-
+
+      - name: Fetch live guide payloads
+        run: |
+          mkdir -p web/data/uhf
+          # Mirror the deployed payloads into web/data so the later deploy
+          # ships the current guide, not the stale copies in git.
+          python3 scripts/build_editor_picks.py \
+            --from-url https://heywhatson.tv/data \
+            --data-dir web/data \
+            --dump-candidates /tmp/candidates.json
+          for file in summary.json channels.json preview.json validation.json \
+              epg.xml epg-stable.xml epg.xml.gz epg-stable.xml.gz; do
+            curl -sf --retry 3 --max-time 300 \
+              "https://heywhatson.tv/data/uhf/${file}" -o "web/data/uhf/${file}"
+          done
+          ls -la /tmp/live-data web/data/uhf
+
+      - name: Generate editor picks
+        env:
+          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
+        run: |
+          python3 scripts/build_editor_picks.py \
+            --data-dir web/data \
+            --output web/data/editors-picks.json
+
+      - name: Render picks and series pages
+        run: |
+          python3 scripts/build_editor_picks_html.py
+          python3 scripts/build_series_report.py --render-only
+
+      - name: Validate picks
+        run: |
+          python3 - <<'EOF'
+          import json
+          from pathlib import Path
+          picks = json.loads(Path("web/data/editors-picks.json").read_text())
+          assert isinstance(picks.get("picks"), list), "picks must be a list"
+          assert len(picks["picks"]) <= 20, "too many picks"
+          for pick in picks["picks"]:
+              assert pick.get("title"), "pick without title"
+              assert pick.get("channels"), "pick without channels"
+          print(f"picks={len(picks['picks'])} ok")
+          html = Path("web/index.html").read_text()
+          assert "editor-picks:start" in html, "picks not rendered into index.html"
+          print("index.html ok")
+          EOF
+
+      - name: Upload picks artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editors-picks-${{ github.run_id }}
+          path: |
+            web/data/editors-picks.json
+            /tmp/candidates.json
+
+      - name: Save picks to cache
+        if: ${{ !inputs.dry_run }}
+        uses: actions/cache/save@v4
+        with:
+          path: web/data/editors-picks.json
+          key: guide-data-${{ github.run_id }}
+
+      - name: Deploy to Cloudflare Workers
+        if: ${{ !inputs.dry_run }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler deploy
+
+      - name: Delete generated build artifacts
+        if: always()
+        run: rm -rf __pycache__ scripts/__pycache__ tests/__pycache__

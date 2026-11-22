@@ -467,7 +467,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         from unittest.mock import patch
         with patch.object(build_editor_picks, "collect_candidates", side_effect=ValueError("invalid selection")), \
              patch.object(build_editor_picks, "write_output") as write:
-            self.assertEqual(build_editor_picks.main(), 1)
+            self.assertEqual(build_editor_picks.main([]), 1)
             write.assert_not_called()
 
     def test_semantic_expansion_reaches_sparse_cross_language_simulcasts(self):
@@ -518,7 +518,7 @@ class BuildEditorPicksTest(unittest.TestCase):
 
             def respond(request, **kwargs):
                 prompt = json.loads(request.data)["messages"][1]["content"]
-                public = json.loads(prompt.split("Candidates:\n")[1])
+                public = json.loads(prompt.split("Candidates:\n")[1].split("\n\nReturn JSON only")[0])
                 supplied = {c["channel"]: c for c in public}
                 self.assertTrue(set.union(*expected) <= supplied.keys())
                 self.assertIn("different", supplied)
@@ -569,7 +569,7 @@ class BuildEditorPicksTest(unittest.TestCase):
              patch.object(build_editor_picks, "expand_with_opencode_go", side_effect=ValueError("Expansion grouped non-overlapping broadcasts")), \
              patch.object(build_editor_picks, "write_output") as write, \
              patch("sys.stderr", new_callable=io.StringIO) as stderr:
-            self.assertEqual(build_editor_picks.main(), 0)
+            self.assertEqual(build_editor_picks.main([]), 0)
             self.assertEqual(write.call_args.args, (result,))
             self.assertIn("keeping validated selections", stderr.getvalue())
             self.assertIn("non-overlapping broadcasts", stderr.getvalue())
@@ -607,7 +607,7 @@ class BuildEditorPicksTest(unittest.TestCase):
             # Independent requests must still reject one broadcast used by two events.
             def reuse_broadcast(request, **kwargs):
                 prompt = json.loads(request.data)["messages"][1]["content"]
-                public = json.loads(prompt.split("Candidates:\n")[1])
+                public = json.loads(prompt.split("Candidates:\n")[1].split("\n\nReturn JSON only")[0])
                 group = {"title": "Merged fixtures", "pick_ids": [c["id"] for c in public]}
                 return io.BytesIO(json.dumps({"choices": [{"message": {"content": json.dumps({"picks": [group]})}}]}).encode())
 
@@ -627,7 +627,7 @@ class BuildEditorPicksTest(unittest.TestCase):
                      patch.object(build_editor_picks, stage, side_effect=HTTPError("https://example.com", code, "Denied", Message(), None)), \
                      patch.object(build_editor_picks, "write_output") as write, \
                      patch("sys.stderr", new_callable=io.StringIO) as stderr:
-                    self.assertEqual(build_editor_picks.main(), 0 if code == 403 else 1)
+                    self.assertEqual(build_editor_picks.main([]), 0 if code == 403 else 1)
                     write.assert_not_called()
                     self.assertIn("previous output preserved", stderr.getvalue())
                     self.assertIn("warning:" if code == 403 else "error:", stderr.getvalue())
@@ -642,6 +642,86 @@ class BuildEditorPicksTest(unittest.TestCase):
             self.assertEqual(list(Path(tmp).iterdir()), [output])
             build_editor_picks.write_output([], self.now, output)
             self.assertEqual(json.loads(output.read_text())["picks"], [])
+
+    def test_json_extraction_survives_thinking_traces_and_trailing_prose(self):
+        good = json.dumps({"picks": [{"title": "Derby", "pick_ids": ["event-1"]}]})
+        cases = [
+            f"Analysis done.\n{good}",
+            f"{good}\nHope that helps! Let me know.",
+            f"```json\n{good}\n```",
+            f"Thinking {{\"scratch\": 1}} then answer: {good} trailing {{oops",
+            f"{json.dumps({'notes': 'no picks here'})}\n{good}",
+        ]
+        for content in cases:
+            with self.subTest(content=content[:60]):
+                result = build_editor_picks.extract_json_object(content, "test-model")
+                self.assertEqual(result["picks"][0]["title"], "Derby")
+        with self.assertRaises(ValueError):
+            build_editor_picks.extract_json_object("no braces at all", "test-model")
+        with self.assertRaises(ValueError):
+            build_editor_picks.extract_json_object("just {oops", "test-model")
+
+    def test_production_malformed_answers_validate_after_extraction(self):
+        candidates = [
+            {
+                "id": "event-62", "country": "ES", "countryName": "Spain",
+                "channelId": "dazn", "channelName": "DAZN 1", "title": "Liverpool vs Man Utd",
+                "startAt": "2026-11-22T16:00:00Z", "endAt": "2026-11-22T18:00:00Z",
+                "highlightType": "liveSport",
+            },
+        ]
+        good = json.dumps({"picks": [{"title": "Liverpool vs Manchester United", "pick_ids": ["event-62"]}]})
+        # qwen-style: valid JSON followed by commentary reusing braces.
+        selected = build_editor_picks.validate_selection(good + ' (same fixture, DAZN 1 {simulcast})', candidates)
+        self.assertEqual(selected[0]["title"], "Liverpool vs Manchester United")
+        # glm-style: prose analysis naming candidate IDs before the answer.
+        selected = build_editor_picks.validate_selection(
+            "Selected: event-62. Grouping DAZN 1 event-62 (same fixture).\n" + good, candidates)
+        self.assertEqual([channel["sourceTitle"] for channel in selected[0]["channels"]], ["Liverpool vs Man Utd"])
+
+    def test_prompt_repeats_json_contract_after_candidates(self):
+        seen = {}
+
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self, *args):
+                inner = json.dumps({"picks": []})
+                return json.dumps({"choices": [{"message": {"content": inner}}]}).encode()
+
+        def opener(request, timeout=None):
+            seen["body"] = json.loads(request.data.decode())
+            return FakeResponse()
+
+        candidates = [{"id": "event-1", "country": "US", "channel": "ESPN",
+                       "title": "Match", "subtitle": "", "description": "Live",
+                       "categories": [], "sport": "", "competition": "", "highlightType": "liveSport",
+                       "originalDate": "", "episode": "", "isPremiere": False, "isNew": False,
+                       "startAt": "2026-09-04T18:00:00Z", "endAt": "2026-09-04T20:00:00Z"}]
+        build_editor_picks.select_with_opencode_go(candidates, "key", opener)
+        prompt = seen["body"]["messages"][-1]["content"]
+        closing = prompt.rsplit("Candidates:", 1)[1]
+        self.assertIn("Return JSON only", closing)
+        self.assertLess(prompt.rfind("Return JSON only"), len(prompt))
+        self.assertGreater(prompt.rfind("Return JSON only"), prompt.find("Candidates:"))
+
+    def test_fetch_live_data_mirrors_deployed_payloads(self):
+        with tempfile.TemporaryDirectory() as source:
+            payload = {"country": "US", "countryName": "U", "channels": []}
+            (Path(source) / "premium-US.json").write_text(json.dumps(payload), encoding="utf-8")
+            (Path(source) / "US.json").write_text(json.dumps(payload), encoding="utf-8")
+            (Path(source) / "countries.json").write_text(json.dumps({"countries": [
+                {"country": "US", "dataUrl": "data/US.json", "premiumDataUrl": "data/premium-US.json"},
+            ]}), encoding="utf-8")
+            with tempfile.TemporaryDirectory() as dest:
+                out = build_editor_picks.fetch_live_data(Path(source).as_uri(), Path(dest))
+                self.assertEqual(json.loads((out / "countries.json").read_text())["countries"][0]["country"], "US")
+                self.assertTrue((out / "US.json").exists())
+                self.assertTrue((out / "premium-US.json").exists())
 
     def program(self, title, start, end="2026-09-04T21:00:00Z"):
         return {

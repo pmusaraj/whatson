@@ -270,14 +270,40 @@ def message_texts(message):
     return texts
 
 
-def validate_selection(content, candidates, selected_groups=None, model=None):
+def extract_json_object(content, model=None):
+    """Return the most plausible JSON object from a model answer.
+
+    Thinking models wrap the answer in chain-of-thought prose, markdown
+    fences, or trailing commentary, so a first-`{`..last-`}` span usually
+    fails with `Extra data`. Scan every `{` with `raw_decode` and prefer
+    a dict holding a `picks` list.
+    """
     tag = f"[{model}] " if model else ""
     if not isinstance(content, str):
         raise ValueError(f"OpenCode Go response content was not text {tag}{type(content).__name__}")
-    start, end = content.find("{"), content.rfind("}")
-    if start < 0 or end < start:
-        raise ValueError(f"OpenCode Go response did not contain JSON {tag}{content[:300]!r}")
-    result = json.loads(content[start : end + 1])
+    text = content
+    fenced = re.findall(r"```(?:json)?\s*([\s\S]*?)```", text, re.I)
+    if fenced:
+        text = "\n".join(fenced)
+    decoder = json.JSONDecoder()
+    fallback = None
+    for match in re.finditer(r"\{", text):
+        try:
+            result, _ = decoder.raw_decode(text[match.start():])
+        except ValueError:
+            continue
+        if isinstance(result, dict):
+            if isinstance(result.get("picks"), list):
+                return result
+            if fallback is None:
+                fallback = result
+    if fallback is not None:
+        return fallback
+    raise ValueError(f"OpenCode Go response did not contain JSON {tag}{content[:300]!r}")
+
+
+def validate_selection(content, candidates, selected_groups=None, model=None):
+    result = extract_json_object(content, model)
     groups = result.get("picks") if isinstance(result, dict) else None
     if not isinstance(groups, list) or len(groups) > PICK_LIMIT:
         raise ValueError("OpenCode Go response had invalid picks")
@@ -428,7 +454,15 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
             '{"picks":[{"title":"Selected title","pick_ids":["event-1","event-2"]}]}.\nSelected events:\n'
             + json.dumps(selected_groups, ensure_ascii=False, separators=(",", ":"))
         )
-    prompt += "\n\nCandidates:\n" + json.dumps(public_candidates, ensure_ascii=False, separators=(",", ":"))
+    closing = (
+        '{"picks":[{"title":"Selected title","pick_ids":["event-1","event-2"]}]}'
+        if selected_groups is not None
+        else '{"picks":[{"title":"Canonical English title","pick_ids":["event-1","event-2"]}]}'
+    )
+    # The instruction precedes a large candidate dump that buries it; repeat
+    # the output contract after the data so the final tokens constrain format.
+    prompt += ("\n\nCandidates:\n" + json.dumps(public_candidates, ensure_ascii=False, separators=(",", ":"))
+               + "\n\nReturn JSON only, no prose, no fences: " + closing)
     raw_response = b""
     for model in OPENCODE_GO_MODELS:
         payload = {
@@ -550,27 +584,81 @@ def write_output(picks, now=None, output_path=OUTPUT_PATH):
             temporary.unlink(missing_ok=True)
 
 
-def main():
+def fetch_live_data(base_url, data_dir, timeout=60):
+    """Mirror the deployed guide payloads into `data_dir` for picks input."""
+    data_dir = Path(data_dir)
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    def get(name):
+        url = f"{base_url.rstrip('/')}/{name}"
+        request = urllib.request.Request(url, headers={"User-Agent": "whatson-editor-picks/1.0"})
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(request, timeout=timeout) as response:
+                    body = response.read()
+                break
+            except OSError:
+                if attempt == 2:
+                    raise
+        path = data_dir / name
+        path.write_bytes(body)
+        json.loads(body)  # Fail loudly on truncated downloads.
+        return path
+
+    index = json.loads(get("countries.json").read_text(encoding="utf-8"))
+    names = ["countries.json"]
+    for entry in index.get("countries") or []:
+        for key in ("dataUrl", "premiumDataUrl"):
+            name = (entry.get(key) or "").split("/")[-1]
+            if name.endswith(".json") and name not in names:
+                names.append(name)
+                get(name)
+    print(f"Fetched {len(names)} live payloads from {base_url}", flush=True)
+    return data_dir
+
+
+def main(argv=None):
+    import argparse
+    parser = argparse.ArgumentParser(description="Select timely highlights from guide payloads.")
+    parser.add_argument("--data-dir", type=Path, default=WEB_DATA_DIR,
+                        help="Guide JSON directory (default: web/data).")
+    parser.add_argument("--from-url", default="",
+                        help="Download live payloads from this base URL (e.g. https://heywhatson.tv/data) into --data-dir first.")
+    parser.add_argument("--output", type=Path, default=OUTPUT_PATH, help="Picks JSON destination.")
+    parser.add_argument("--dump-candidates", type=Path, default=None,
+                        help="Write the candidate pool to this path and exit before any model request.")
+    args = parser.parse_args(argv)
     now = datetime.now(timezone.utc)
     picks = []
     try:
-        candidates = collect_candidates(now=now)
+        data_dir = args.data_dir
+        if args.from_url:
+            data_dir = fetch_live_data(args.from_url, data_dir)
+        candidates = collect_candidates(data_dir, now=now)
+        if args.dump_candidates is not None:
+            args.dump_candidates.write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(f"Wrote {len(candidates)} candidates to {args.dump_candidates}", flush=True)
+            return 0
         api_key = os.environ.get("OPENCODE_GO_API_KEY", "").strip()
         if not api_key:
             raise ValueError("OPENCODE_GO_API_KEY is not configured")
         picks = select_with_opencode_go(candidates, api_key) if candidates else []
         try:
-            picks = expand_with_opencode_go(picks, api_key, now=now)
+            picks = expand_with_opencode_go(picks, api_key, data_dir=data_dir, now=now)
         except ValueError as error:
             print(f"warning: expansion rejected; keeping validated selections: {error}", file=sys.stderr)
-        write_output(picks, now=now)
+        write_output(picks, now=now, output_path=args.output)
     except Exception as error:
         if isinstance(error, urllib.error.HTTPError) and error.code == 403:
             print(f"warning: skipping editor picks; previous output preserved: {error}", file=sys.stderr)
             return 0
         print(f"error: editor picks unavailable; previous output preserved: {error}", file=sys.stderr)
         return 1
-    print(f"Wrote {len(picks)} editor picks to {OUTPUT_PATH.relative_to(ROOT)}")
+    try:
+        display = args.output.relative_to(ROOT)
+    except ValueError:
+        display = args.output
+    print(f"Wrote {len(picks)} editor picks to {display}")
     return 0
 
 

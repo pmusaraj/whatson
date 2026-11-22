@@ -6,10 +6,6 @@ on:
     - cron: "5 5 * * *"
   workflow_dispatch:
     inputs:
-      editors_only:
-        description: Rebuild only editor picks from the cached guide data
-        type: boolean
-        default: false
       countries:
         description: Limit the grab to these country codes, e.g. "BR CA"
         type: string
@@ -65,26 +61,20 @@ jobs:
           restore-keys: guide-data-
 
       - name: Install iptv-org EPG grabber
-        if: ${{ !inputs.editors_only }}
         run: |
           git clone --depth 1 https://github.com/iptv-org/epg.git .cache/epg
           npm install --prefix .cache/epg
 
       - name: Refresh guide data
-        env:
-          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
         run: |
-          args=()
-          if [[ "${{ inputs.editors_only }}" == "true" ]]; then args+=(--skip-editor-picks); fi
+          # Editor picks are owned by the separate Editor picks workflow,
+          # which reads the deployed payloads; the cached picks restored
+          # above still ship with this deploy.
+          args=(--skip-editor-picks)
           if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi
-          if [[ "${{ inputs.editors_only }}" == "true" ]]; then
-            python3 scripts/build_editor_picks.py
-          else
-            python3 scripts/refresh_epg.py "${args[@]}"
-          fi
+          python3 scripts/refresh_epg.py "${args[@]}"
 
       - name: Refresh UHF EPG data
-        if: ${{ !inputs.editors_only }}
         run: |
           args=()
           if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi

@@ -210,10 +210,14 @@ La Liga, Serie A, Ligue 1, then Bundesliga; events within each priority sort by 
 Each event shows at most three channels per country, with six initially visible and
 any remaining channels behind a small **more** disclosure.
 
-With `OPENCODE_GO_API_KEY` available in the environment, regenerate picks from the current browser payloads:
+Sports picks run in the separate **Editor picks** workflow (four times daily),
+reading the deployed payloads rather than local grab output, so guide refreshes
+and highlight selection iterate independently. With `OPENCODE_GO_API_KEY`
+available in the environment, regenerate picks from the live site or local payloads:
 
 ```bash
-python3 scripts/build_editor_picks.py
+python3 scripts/build_editor_picks.py --from-url https://heywhatson.tv/data --data-dir web/data
+python3 scripts/build_editor_picks.py --data-dir web/data --dump-candidates /tmp/candidates.json  # no model call
 ```
 
 Each Cloudflare build also renders the current sports picks into `web/index.html`, so event titles, UTC times, and channel names are available without JavaScript. The browser replaces that snapshot with local times and interactive channel buttons, and removes expired events. To rebuild just the HTML locally, run `python3 scripts/build_editor_picks_html.py`.
@@ -222,7 +226,16 @@ OpenCode Go tries `glm-5.3-flash`, `longcat-2.5-free`, `muse-spark-1.3-contribut
 
 The model first selects quality highlights, then makes one semantic grouping pass over nearby broadcasts across all public country feeds. That second pass includes full descriptions and sparse/generic listings, allows up to 90 minutes of start-time variation with overlapping airtime, and cannot add new editorial events. Explicit replays, previously shown and expired entries stay excluded. Selection must validate before the output is atomically replaced. If expansion fails validation, the freshly validated selections are published without expanded channels, with a warning; overlap and identity checks remain strict. Selection failures preserve the previous file. If the last model returns HTTP 403, generation is skipped with a warning so the guide refresh can continue; other failures exit nonzero.
 
-The regular refresh workflow already supplies the GitHub Actions secret `OPENCODE_GO_API_KEY` and runs this builder. After publishing code changes, run **Refresh EPG data** manually (or wait for its schedule) to regenerate and publish picks with fresh guide data.
+The Editor picks workflow supplies the GitHub Actions secret `OPENCODE_GO_API_KEY`.
+After publishing code changes, run **Editor picks** manually (or wait for its
+schedule) to regenerate and publish picks from fresh guide data; the main
+**Refresh EPG data** workflow skips picks and ships the cached edition.
+
+Model answers are parsed leniently: markdown fences are stripped, every `{...}`
+span is tried as JSON, and the object holding a `picks` list wins, so thinking
+traces and trailing commentary no longer burn the model fallback chain. The
+output contract is also repeated after the candidate dump, where the model
+actually sees it last.
 
 ## Refresh EPG snapshots locally
 
