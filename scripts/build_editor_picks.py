@@ -529,29 +529,36 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
                 except OSError:
                     if attempt == 2:
                         raise
-            break
         except OSError as error:
             if isinstance(error, urllib.error.HTTPError) and error.code not in (403, 404, 429) and not 500 <= error.code < 600:
                 raise
-            if model == OPENCODE_GO_MODELS[-1]:
-                raise
-            print(f"warning: editor-pick model {model} unavailable; trying next model: {error}", file=sys.stderr)
-    if len(raw_response) > MAX_RESPONSE_BYTES:
-        raise ValueError("OpenCode Go response was too large")
-    try:
-        envelope = json.loads(raw_response)
-    except ValueError:
-        raise ValueError("OpenCode Go response was not complete JSON")
-    message = envelope["choices"][0]["message"]
-    errors = []
-    for text in message_texts(message):
-        try:
-            return validate_selection(text, candidates, selected_groups, model)
-        except ValueError as error:
-            errors.append(error)
-    if errors:
-        raise errors[-1]
-    raise ValueError(f"OpenCode Go response had no text [{model}]")
+            model_error = error
+        else:
+            model_error = None
+            if len(raw_response) > MAX_RESPONSE_BYTES:
+                model_error = ValueError("OpenCode Go response was too large")
+            else:
+                try:
+                    envelope = json.loads(raw_response)
+                except ValueError:
+                    model_error = ValueError("OpenCode Go response was not complete JSON")
+                else:
+                    message = envelope["choices"][0]["message"]
+                    errors = []
+                    for text in message_texts(message):
+                        try:
+                            return validate_selection(text, candidates, selected_groups, model)
+                        except ValueError as error:
+                            errors.append(error)
+                    if errors:
+                        model_error = errors[-1]
+                    else:
+                        model_error = ValueError(f"OpenCode Go response had no text [{model}]")
+        if model_error is None:
+            break
+        if model == OPENCODE_GO_MODELS[-1]:
+            raise model_error
+        print(f"warning: editor-pick model {model} unusable; trying next model: {model_error}", file=sys.stderr)
 
 
 def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, opener=urllib.request.urlopen, *, f1_sessions=()):
