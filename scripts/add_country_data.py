@@ -34,11 +34,11 @@ COUNTRIES = {
 }
 
 CANDIDATE_SITES = {
-    "US": ["tvtv.us", "tvguide.com"],
+    "US": ["tvguide.com"],
     "UK": ["mytelly.co.uk", "sky.com", "virgintvgo.virginmedia.com"],
     "IT": ["guidatv.sky.it", "superguidatv.it"],
-    "DE": ["web.magentatv.de", "sky.de"],
-    "TR": ["tvplus.com.tr", "digiturk.com.tr"],
+    "DE": ["web.magentatv.de"],
+    "TR": ["tvplus.com.tr"],
     "PT": ["meo.pt", "nostv.pt", "vodafone.pt"],
     "MX": ["gatotv.com"],
     "BR": ["mi.tv_br"],

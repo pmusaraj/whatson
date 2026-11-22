@@ -17,8 +17,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
-OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "glm-5.3-flash", "qwen3.8-flash", "claude-haiku-5-5")
+OPENCODE_GO_URL = "https://opencode.ai/go/v1/chat/completions"
+OPENCODE_GO_MODELS = ("glm-5.3-flash", "longcat-2.5-free", "muse-spark-1.3-contributor", "qwen3.8-flash", "claude-haiku-5-5")
 # Thinking models can emit long chain-of-thought traces before the final
 # JSON; allow room so the answer is not truncated away. Cost is negligible
 # at flash-tier output pricing.
@@ -107,11 +107,11 @@ LEAGUES = [r"\bpremier league\b", r"\bla\s*liga\b", r"\bserie a\b", r"\bligue 1\
 
 
 def league_rank(program):
-    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle", "competition", "description")))
+    text = plain_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle", "competition", "description")))
     if SECOND_TIER.search(text):
         return -1
     # Source headings beat inferred competition and incidental description mentions.
-    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle")))
+    text = plain_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle")))
     if re.search(r"cricket|\bt20\b", text + " " + " ".join(program.get("categories") or []) + " " + str(program.get("sportType") or ""), re.I):
         return len(LEAGUES)
     return next((rank for rank, pattern in enumerate(LEAGUES) if re.search(pattern, text)), len(LEAGUES))
@@ -149,73 +149,12 @@ def candidate_score(candidate):
     )
 
 
-def f1_text(value):
+def plain_text(value):
     return normalized_title("".join(c for c in unicodedata.normalize("NFKD", str(value)) if not unicodedata.combining(c)))
 
 
-def is_f1(program):
-    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle", "description")))
-    return bool(re.search(r"\b(?:f1|formula 1|formule 1|formel 1)\b", text))
-
-
-def fetch_f1_sessions(now):
-    sessions = []
-    try:
-        for year in sorted({now.year, (now + timedelta(hours=LOOKAHEAD_HOURS)).year}):
-            request = urllib.request.Request(f"https://api.openf1.org/v1/sessions?year={year}",
-                                             headers={"User-Agent": "whatson-editor-picks/1.0"})
-            with urllib.request.urlopen(request, timeout=20) as response:
-                raw = response.read(1_000_001)
-            if len(raw) > 1_000_000:
-                raise ValueError("F1 calendar too large")
-            rows = json.loads(raw)
-            if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
-                raise ValueError("Invalid F1 calendar")
-            sessions.extend(rows)
-    except (OSError, ValueError) as error:
-        print(f"warning: F1 calendar unavailable; excluding unverified F1 picks: {error}", file=sys.stderr)
-        return []
-    return sessions
-
-
-def f1_session_matches(program, sessions):
-    title = f1_text(program.get("title") or "")
-    text = f1_text(" ".join(str(program.get(k) or "") for k in ("title", "subtitle", "description")))
-    # ponytail: explicit session + circuit/city names only; add aliases for verified false negatives.
-    qualifying = bool(re.search(r"\b(?:qualifying|qualification|qualificacao|qualifica|qualifikation|clasificacion|siralama)\b", title))
-    if "sprint" in title:
-        name = "Sprint Qualifying" if qualifying or "shootout" in title else "Sprint"
-    elif qualifying:
-        name = "Qualifying"
-    elif re.search(r"\b(?:practice|treinos livres|essais libres|training|prove libere|entrenamientos libres)\b", title):
-        number = re.search(r"\b([123])\b", re.sub(r"\b(?:formula|formule|formel) 1\b", "", title))
-        name = f"Practice {number[1]}" if number else ""
-    elif re.search(r"\b(?:race|corrida|course|rennen|gara|carrera|yaris)\b", title):
-        name = "Race"
-    else:
-        return False
-    years = set(re.findall(r"\b20\d{2}\b", text))
-    for session in sessions:
-        try:
-            if session.get("is_cancelled") is not False or session["session_name"] != name:
-                continue
-            if years and years != {str(session["year"])}:
-                continue
-            if not any(f" {f1_text(session.get(k) or '')} " in f" {text} "
-                       for k in ("location", "circuit_short_name") if session.get(k)):
-                continue
-            start, end = parse_time(program["startAt"]), parse_time(program["endAt"])
-            event_start, event_end = parse_time(session["date_start"]), parse_time(session["date_end"])
-            if (event_start - timedelta(minutes=90) <= start <= event_start + timedelta(minutes=30)
-                    and max(start, event_start) < min(end, event_end)):
-                return True
-        except (KeyError, TypeError, ValueError, AttributeError):
-            continue
-    return False
-
-
 def candidate_event_key(candidate):
-    title = f1_text(candidate["title"])
+    title = plain_text(candidate["title"])
     rank = league_rank(candidate)
     # ponytail: exact team names, only known league wrappers; leave aliases to expansion.
     if 0 <= rank < len(LEAGUES):
@@ -229,7 +168,7 @@ def candidate_event_key(candidate):
     return tuple(normalized_title(candidate.get(key) or "") for key in ("title", "subtitle", "description"))
 
 
-def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessions=()):
+def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False):
     now = now or datetime.now(timezone.utc)
     deduped = {}
     entries = []
@@ -253,8 +192,6 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessi
             aired_earlier = False
         eligible = is_current_original if broad else is_candidate
         if not eligible(program, now, aired_earlier):
-            continue
-        if f1_sessions is not None and is_f1(program) and not f1_session_matches(program, f1_sessions):
             continue
         categories = {str(value).lower() for value in program.get("categories") or []}
         category_text = " ".join(categories)
@@ -561,10 +498,10 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         print(f"warning: editor-pick model {model} unusable; trying next model: {model_error}", file=sys.stderr)
 
 
-def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, opener=urllib.request.urlopen, *, f1_sessions=()):
+def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, opener=urllib.request.urlopen):
     if not picks:
         return []
-    pool = collect_candidates(data_dir, now, broad=True, f1_sessions=f1_sessions)
+    pool = collect_candidates(data_dir, now, broad=True)
     by_slot = {(c["country"], c["channelId"], c["startAt"], c["endAt"], c["title"]): c for c in pool}
     groups = []
     for pick in picks:
@@ -573,8 +510,6 @@ def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, ope
         ends = [parse_time(c["endAt"]) for c in seeds]
         eligible_ids = []
         for candidate in pool:
-            if any(is_f1(seed) for seed in seeds) and not f1_session_matches(candidate, f1_sessions):
-                continue
             start, end = parse_time(candidate["startAt"]), parse_time(candidate["endAt"])
             if (max([*starts, start]) - min([*starts, start]) <= SIMULCAST_WINDOW
                     and max([*starts, start]) < min([*ends, end])):
@@ -619,17 +554,13 @@ def main():
     now = datetime.now(timezone.utc)
     picks = []
     try:
-        candidates = collect_candidates(now=now, f1_sessions=None)
-        f1_sessions = []
-        if any(is_f1(candidate) for candidate in candidates):
-            f1_sessions = fetch_f1_sessions(now)
-            candidates = collect_candidates(now=now, f1_sessions=f1_sessions)
+        candidates = collect_candidates(now=now)
         api_key = os.environ.get("OPENCODE_GO_API_KEY", "").strip()
         if not api_key:
             raise ValueError("OPENCODE_GO_API_KEY is not configured")
         picks = select_with_opencode_go(candidates, api_key) if candidates else []
         try:
-            picks = expand_with_opencode_go(picks, api_key, now=now, f1_sessions=f1_sessions)
+            picks = expand_with_opencode_go(picks, api_key, now=now)
         except ValueError as error:
             print(f"warning: expansion rejected; keeping validated selections: {error}", file=sys.stderr)
         write_output(picks, now=now)

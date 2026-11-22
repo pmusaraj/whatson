@@ -121,8 +121,9 @@ def main() -> int:
                        "--output", str(output_file), "--start-date", start_date, "--days", str(DAYS_TO_GRAB)]
             timeout = 300
         if channels_file.name.endswith("-superguidatv.it.channels.xml"):
+            # Super Guida TV only serves today plus the next two days.
             command = ["python3", "scripts/grab_superguida_epg.py", "--channels", str(channels_file),
-                       "--output", str(output_file), "--days", str(DAYS_TO_GRAB)]
+                       "--output", str(output_file), "--days", str(min(DAYS_TO_GRAB, 3))]
             timeout = 900
         if args.dry_run:
             print("$", " ".join(command), flush=True)

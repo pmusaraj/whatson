@@ -84,7 +84,6 @@ GUIDES = {
         LocalGuide(NORMALIZED_DIR / "guide-CA-tvhebdo.com.xml", "Validated grabber", "validated"),
     ],
     "US": [
-        LocalGuide(NORMALIZED_DIR / "guide-US-tvtv.us.xml", "TVTV US guide", "tvtv-us"),
         LocalGuide(NORMALIZED_DIR / "guide-US-tvguide.com.xml", "TV Guide US guide", "tvguide-us"),
     ],
     "UK": [
@@ -101,7 +100,6 @@ GUIDES = {
     ],
     "TR": [
         LocalGuide(NORMALIZED_DIR / "guide-TR-tvplus.com.tr.xml", "TV+ Turkiye guide", "tvplus-tr"),
-        LocalGuide(NORMALIZED_DIR / "guide-TR-digiturk.com.tr.xml", "Digiturk guide", "digiturk-tr"),
     ],
     "PT": [
         LocalGuide(NORMALIZED_DIR / "guide-PT-meo.pt.xml", "MEO Portugal guide", "meo-pt"),
@@ -118,7 +116,6 @@ GUIDES = {
 
 PREMIUM_SPORTS_GUIDES = {
     "FR": [
-        LocalGuide(NORMALIZED_DIR / "guide-premium-FR-canalplus.com.xml", "Canal+ guide", "premium-canalplus"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-FR-tv.sfr.fr.xml", "SFR guide", "premium-sfr"),
     ],
     "ES": [
@@ -131,7 +128,6 @@ PREMIUM_SPORTS_GUIDES = {
         LocalGuide(NORMALIZED_DIR / "guide-premium-CA-tvhebdo.com.xml", "TV Hebdo guide", "premium-tvhebdo"),
     ],
     "US": [
-        LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvtv.us.xml", "TVTV US sports guide", "premium-tvtv-us"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-US-tvguide.com.xml", "TV Guide US sports guide", "premium-tvguide-us"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-US-mls-apple.xml", "MLS Apple TV guide", "premium-mls-apple"),
     ],
@@ -145,11 +141,9 @@ PREMIUM_SPORTS_GUIDES = {
         LocalGuide(NORMALIZED_DIR / "guide-premium-IT-superguidatv.it.xml", "Super Guida TV sports guide", "premium-superguidatv-it"),
     ],
     "DE": [
-        LocalGuide(NORMALIZED_DIR / "guide-premium-DE-sky.de.xml", "Sky Germany sports guide", "premium-sky-de"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-DE-web.magentatv.de.xml", "MagentaTV Germany sports guide", "premium-magenta-de"),
     ],
     "TR": [
-        LocalGuide(NORMALIZED_DIR / "guide-premium-TR-digiturk.com.tr.xml", "Digiturk sports guide", "premium-digiturk-tr"),
         LocalGuide(NORMALIZED_DIR / "guide-premium-TR-tvplus.com.tr.xml", "TV+ Turkiye sports guide", "premium-tvplus-tr"),
     ],
     "PT": [

@@ -15,9 +15,6 @@ spec.loader.exec_module(build_editor_picks)
 
 class BuildEditorPicksTest(unittest.TestCase):
     def setUp(self):
-        calendar = patch.object(build_editor_picks, "fetch_f1_sessions", return_value=[])
-        calendar.start()
-        self.addCleanup(calendar.stop)
         self.now = datetime(2026, 9, 4, 12, tzinfo=timezone.utc)
 
     def test_48_hour_lookahead_boundary(self):
@@ -383,7 +380,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertEqual(picks[0]["channels"][0]["channelName"], "Sports One")
         self.assertEqual(opener.call_count, 3)
         request = opener.call_args.args[0]
-        self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
+        self.assertEqual(request.full_url, "https://opencode.ai/go/v1/chat/completions")
         body = json.loads(request.data)
         self.assertEqual(body["model"], build_editor_picks.OPENCODE_GO_MODELS[0])
         self.assertIn("Select up to 20", body["messages"][1]["content"])
