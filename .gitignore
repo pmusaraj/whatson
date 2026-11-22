@@ -12,9 +12,11 @@ __pycache__/
 .env*
 !.env.example
 
-# UHF guide data is generated only during Cloudflare builds.
-data/normalized/guide-uhf-*.xml
+# Guide snapshots are generated, never committed (option B history cleanup).
+# CI grabs them on schedule, rebuilds web/data offline, and deploys with
+# `wrangler deploy`. Only the reviewed weekly series report stays tracked.
+data/normalized/
 data/sources/iptv-org/custom-uhf-*.channels.xml
-data/uhf/grab-plan.json
-web/data/uhf/
-web/data/epg.xml
+data/uhf/
+web/data/*
+!web/data/series.json

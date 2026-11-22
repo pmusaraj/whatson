@@ -2,24 +2,40 @@ name: Refresh EPG data
 
 on:
   schedule:
-    - cron: "5 */12 * * *"
+    # Main + UHF guide refresh. Once daily; UHF grabs 4 days to keep 24h+ ahead.
+    - cron: "5 5 * * *"
   workflow_dispatch:
     inputs:
       editors_only:
-        description: Rebuild only editor picks from the checked-in guide data
+        description: Rebuild only editor picks from the cached guide data
+        type: boolean
+        default: false
+      countries:
+        description: Limit the grab to these country codes, e.g. "BR CA"
+        type: string
+        default: ""
+      dry_run:
+        description: Generate and validate everything but skip the deploy
         type: boolean
         default: false
 
+# History cleanup (option B): guide snapshots are generated, never committed.
+# This workflow grabs both feeds, rebuilds web/data offline, and deploys the
+# site directly with wrangler. Requires secrets CLOUDFLARE_API_TOKEN and
+# CLOUDFLARE_ACCOUNT_ID. Cloudflare dashboard auto-builds from git must stay
+# OFF: a git checkout has no guide data, so a dashboard build would ship an
+# empty guide.
 concurrency:
   group: refresh-epg
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -30,10 +46,23 @@ jobs:
           python-version: "3.x"
 
       - name: Set up Node
-        if: ${{ !inputs.editors_only }}
         uses: actions/setup-node@v6
         with:
           node-version: "24"
+
+      - name: Restore cached guide snapshots
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          # Previous grab output: fallback when a source grab fails, and the
+          # inputs for the offline web/data rebuild. web/data/series.json is
+          # tracked in git and intentionally not cached.
+          path: |
+            data/normalized
+            web/data/uhf
+            web/data/editors-picks.json
+          key: guide-data-${{ github.run_id }}
+          restore-keys: guide-data-
 
       - name: Install iptv-org EPG grabber
         if: ${{ !inputs.editors_only }}
@@ -42,28 +71,75 @@ jobs:
           npm install --prefix .cache/epg
 
       - name: Refresh guide data
-        if: ${{ !inputs.editors_only }}
         env:
           OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
-        run: python3 scripts/refresh_epg.py
-
-      - name: Rebuild editor picks
-        if: ${{ inputs.editors_only }}
-        env:
-          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
-        run: python3 scripts/build_editor_picks.py
-
-      - name: Commit refreshed data
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/normalized web/data
-          if git diff --cached --quiet; then
-            echo "No guide data changes to commit."
+          args=()
+          if [[ "${{ inputs.editors_only }}" == "true" ]]; then args+=(--skip-editor-picks); fi
+          if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi
+          if [[ "${{ inputs.editors_only }}" == "true" ]]; then
+            python3 scripts/build_editor_picks.py
           else
-            git commit -m "chore: refresh EPG data"
-            git push
+            python3 scripts/refresh_epg.py "${args[@]}"
           fi
+
+      - name: Refresh UHF EPG data
+        if: ${{ !inputs.editors_only }}
+        run: |
+          args=()
+          if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi
+          python3 scripts/refresh_uhf_epg.py "${args[@]}"
+
+      - name: Render picks and series pages
+        run: |
+          python3 scripts/build_editor_picks_html.py
+          python3 scripts/build_series_report.py --render-only
+
+      - name: Validate deployable guide data
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          from pathlib import Path
+
+          web_data = Path("web/data")
+          countries = json.loads((web_data / "countries.json").read_text())["countries"]
+          assert countries, "countries.json has no countries"
+          total = 0
+          for entry in countries:
+              for key in ("dataUrl", "premiumDataUrl"):
+                  path = Path("web") / entry[key]
+                  assert path.exists(), f"missing {path}"
+                  payload = json.loads(path.read_text())
+                  total += payload.get("channelCount", 0)
+          print(f"countries={len(countries)} totalChannels={total}")
+          assert total > 100, f"suspiciously few channels: {total}"
+
+          for name in ("editors-picks.json", "series.json"):
+              json.loads((web_data / name).read_text())
+              print(f"{name} ok")
+
+          summary = web_data / "uhf" / "summary.json"
+          if summary.exists():
+              print("uhf summary ok:", json.loads(summary.read_text()).get("generatedAt"))
+          else:
+              print("::warning::web/data/uhf/summary.json missing (no UHF output this run)")
+          EOF
+
+      - name: Save guide snapshots to cache
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/normalized
+            web/data/uhf
+            web/data/editors-picks.json
+          key: guide-data-${{ github.run_id }}
+
+      - name: Deploy to Cloudflare Workers
+        if: ${{ !inputs.dry_run }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler deploy
 
       - name: Delete generated build artifacts
         if: always()

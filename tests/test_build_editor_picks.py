@@ -365,7 +365,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         )
         self.assertEqual([channel["channelName"] for channel in selected[0]["channels"]], ["ESPN", "Eurosport"])
 
-    def test_opencode_go_request_uses_deepseek_and_retries_twice(self):
+    def test_opencode_go_request_uses_first_model_and_retries_twice(self):
         candidate = {
             "id": "event-1",
             "country": "US",
@@ -385,7 +385,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         request = opener.call_args.args[0]
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
         body = json.loads(request.data)
-        self.assertEqual(body["model"], "deepseek-v4.1-flash")
+        self.assertEqual(body["model"], build_editor_picks.OPENCODE_GO_MODELS[0])
         self.assertIn("Select up to 20", body["messages"][1]["content"])
         self.assertEqual(request.get_header("Authorization"), "Bearer key")
         self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
@@ -396,6 +396,38 @@ class BuildEditorPicksTest(unittest.TestCase):
         with self.assertRaises(TimeoutError):
             build_editor_picks.select_with_opencode_go([candidate], "key", opener=exhausted)
         self.assertEqual(exhausted.call_count, 3 * len(build_editor_picks.OPENCODE_GO_MODELS))
+
+    def test_temperature_omitted_for_models_without_support(self):
+        candidate = {
+            "id": "event-1",
+            "country": "US",
+            "channelName": "Sports One",
+            "title": "Team A vs Team B",
+            "startAt": "2026-09-04T18:00:00Z",
+            "endAt": "2026-09-04T20:00:00Z",
+        }
+
+        def body_for(model):
+            response = io.BytesIO(b'{"choices":[{"message":{"content":"{\\"picks\\":[]}"}}]}')
+            opener = Mock(return_value=response)
+            with patch.object(build_editor_picks, "OPENCODE_GO_MODELS", (model,)):
+                build_editor_picks.select_with_opencode_go([candidate], "key", opener=opener)
+            return json.loads(opener.call_args.args[0].data)
+
+        self.assertNotIn("temperature", body_for("claude-haiku-5-5"))
+        self.assertEqual(body_for("deepseek-v4.1-flash")["temperature"], 0)
+
+    def test_answer_extracted_from_reasoning_content(self):
+        thinking = "We need answer JSON only. Considering all candidates carefully..."
+        answer = '{"picks":[]}'
+        bodies = [
+            {"choices": [{"message": {"content": thinking, "reasoning_content": answer}}]},
+            {"choices": [{"message": {"content": answer, "reasoning_content": thinking}}]},
+            {"choices": [{"message": {"content": "", "reasoning_content": answer}}]},
+        ]
+        for body in bodies:
+            opener = Mock(return_value=io.BytesIO(json.dumps(body).encode()))
+            self.assertEqual(build_editor_picks.select_with_opencode_go([], "key", opener=opener), [])
 
     def test_model_fallback_is_ordered_and_only_for_unavailability(self):
         from email.message import Message

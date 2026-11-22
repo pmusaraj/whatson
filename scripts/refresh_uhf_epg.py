@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EPG_DIR = ROOT / ".cache" / "epg"
 SOURCES_DIR = ROOT / "data" / "sources" / "iptv-org"
 NORMALIZED_DIR = ROOT / "data" / "normalized"
-DAYS_TO_GRAB = 3
+DAYS_TO_GRAB = 4
 START_DATE_OFFSET_DAYS = 1
 GRAB_TIMEOUT_SECONDS = 120
 

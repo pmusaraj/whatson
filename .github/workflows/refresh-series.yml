@@ -9,8 +9,12 @@ on:
         description: Regenerate this week's report even if it already exists
         type: boolean
         default: false
+      dry_run:
+        description: Generate and validate everything but skip the deploy
+        type: boolean
+        default: false
 
-# Share the guide writer's lock: neither data job should race the other's push.
+# Share the guide writer's lock: neither data job should race the other's deploy.
 concurrency:
   group: refresh-epg
   cancel-in-progress: false
@@ -21,7 +25,7 @@ permissions:
 jobs:
   series:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Check out the latest branch
         uses: actions/checkout@v6
@@ -32,6 +36,23 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.x"
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Restore cached guide snapshots
+        # Guide data is generated, not committed (option B history cleanup).
+        # Rebuild the deployable web tree offline from the latest snapshots.
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/normalized
+            web/data/uhf
+            web/data/editors-picks.json
+          key: guide-data-${{ github.run_id }}
+          restore-keys: guide-data-
 
       - name: Test report generation
         run: python3 -m unittest discover -s tests -p 'test_build_series_report.py' -v
@@ -44,6 +65,16 @@ jobs:
           args=()
           if [[ "$FORCE_REPORT" == "true" ]]; then args+=(--force); fi
           python3 scripts/build_series_report.py "${args[@]}"
+
+      - name: Rebuild deployable web data from cache
+        run: |
+          python3 scripts/build_web_data.py
+          if [[ -f web/data/editors-picks.json ]]; then
+            python3 scripts/build_editor_picks_html.py
+          else
+            echo "::warning::editors-picks.json not in cache; shipping index without refreshed pick embeds"
+          fi
+          python3 scripts/build_series_report.py --render-only
 
       - name: Upload report for inspection
         uses: actions/upload-artifact@v4
@@ -70,11 +101,9 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Deploy updated report
-        if: steps.commit.outputs.changed == 'true'
+      - name: Deploy to Cloudflare Workers
+        if: steps.commit.outputs.changed == 'true' && !inputs.dry_run
         env:
-          DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK_URL }}
-        run: |
-          test -n "$DEPLOY_HOOK_URL"
-          response=$(curl --fail --silent --show-error --request POST "$DEPLOY_HOOK_URL")
-          python3 -c 'import json,sys; r=json.load(sys.stdin)["result"]; print({k:r.get(k) for k in ("build_uuid", "worker", "status", "already_exists")})' <<< "$response"
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler deploy

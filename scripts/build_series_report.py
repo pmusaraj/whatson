@@ -21,7 +21,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from build_editor_picks import OPENCODE_GO_MODELS, OPENCODE_GO_URL
+from build_editor_picks import MAX_RESPONSE_BYTES, OPENCODE_GO_MODELS, OPENCODE_GO_NO_TEMPERATURE, OPENCODE_GO_URL, message_texts
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "data/series/catalogue.json"
@@ -158,10 +158,13 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
         + json.dumps({"candidates": candidates, "previous": previous or {}}, ensure_ascii=False)
     )
     for index, model in enumerate(OPENCODE_GO_MODELS):
-        body = json.dumps({"model": model, "messages": [
+        payload = {"model": model, "messages": [
             {"role": "system", "content": "You are a careful international television editor. Rank only supplied IDs."},
-            {"role": "user", "content": prompt}], "temperature": 0,
-            "max_tokens": 2000, "response_format": {"type": "json_object"}}).encode()
+            {"role": "user", "content": prompt}],
+            "max_tokens": 16000, "response_format": {"type": "json_object"}}
+        if model not in OPENCODE_GO_NO_TEMPERATURE:
+            payload["temperature"] = 0
+        body = json.dumps(payload).encode()
         request = urllib.request.Request(OPENCODE_GO_URL, data=body, headers={
             "Authorization": f"Bearer {api_key}", "Content-Type": "application/json",
             "Accept": "application/json", "User-Agent": "whatson-series/1.0",
@@ -171,7 +174,7 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
             for attempt in range(3):
                 try:
                     with opener(request, timeout=120) as response:
-                        raw = response.read(65_537)
+                        raw = response.read(MAX_RESPONSE_BYTES + 1)
                     break
                 except urllib.error.HTTPError:
                     raise
@@ -184,11 +187,24 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
                 raise
             print(f"warning: {model} unavailable; trying next configured model", file=sys.stderr)
             continue
-        if len(raw) > 65_536:
+        if len(raw) > MAX_RESPONSE_BYTES:
             raise ValueError("LLM response exceeded size limit")
-        envelope = json.loads(raw)
-        selection = json.loads(envelope["choices"][0]["message"]["content"])
-        validate_selection(selection, by_id)
+        try:
+            envelope = json.loads(raw)
+        except ValueError:
+            raise ValueError("LLM response was not complete JSON")
+        message = envelope["choices"][0]["message"]
+        errors = []
+        for text in message_texts(message):
+            try:
+                start, end = text.find("{"), text.rfind("}")
+                selection = json.loads(text[start : end + 1])
+                validate_selection(selection, by_id)
+                break
+            except (ValueError, json.JSONDecodeError) as error:
+                errors.append(error)
+        else:
+            raise errors[-1] if errors else ValueError(f"LLM response had no text [{model}]")
         usage = envelope.get("usage") or {}
         usage = {key: value for key, value in usage.items()
                  if key in {"prompt_tokens", "completion_tokens", "total_tokens"} and type(value) is int}
