@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-OPENCODE_GO_MODELS = ("muse-spark-1.3-contributor", "claude-haiku-5-5")
+OPENCODE_GO_MODELS = ("gpt-6-luna", "claude-haiku-5-5")
 # Thinking models can emit long chain-of-thought traces before the final
 # JSON; allow room so the answer is not truncated away. Cost is negligible
 # at flash-tier output pricing.
