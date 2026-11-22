@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "muse-spark-1.3-contributor", "gpt-6-luna", "claude-haiku-5-5")
+OPENCODE_GO_MODELS = ("claude-haiku-5-5", "gpt-6-luna", "deepseek-v4.1-flash", "muse-spark-1.3-contributor")
 # Models whose chat-completions API rejects the temperature parameter.
 OPENCODE_GO_NO_TEMPERATURE = frozenset({"claude-haiku-5-5"})
 PICK_LIMIT = 20
@@ -497,6 +497,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
                 {"role": "user", "content": prompt},
             ],
             "response_format": {"type": "json_object"},
+            "max_tokens": 4000,
         }
         if model not in OPENCODE_GO_NO_TEMPERATURE:
             payload["temperature"] = 0
