@@ -26,7 +26,7 @@ The UI check caught a limitation of the cache audit: UHF's automatic matching sh
 - Add explicit TSN 1–5 and 15 Movistar EPG assignments in the local Estv playlist to avoid ambiguous automatic matching.
 - Fetch 12 Movistar feeds from the [official daily schedules](https://www.movistarplus.es/programacion-tv/golf+/2026-09-15), with Madrid timezone handling and following-programme end boundaries. The test fetched 48 pages and produced 487 programmes before the export's duration filter. Cocina, Decasa, and Series use their other mapped sources.
 - Give larger Canadian source batches a proportional timeout.
-- Schedule UHF refreshes every 12 hours so the three-date guide window does not expire between builds.
+- Refresh once daily; UHF grabs 4 days so the window stays 24h+ ahead between runs.
 - Add a country filter for focused refreshes and a read-only local cache audit.
 
 ## Local state and limits

@@ -65,7 +65,7 @@ Times are stored in UTC in the generated JSON. The browser renders the current g
 
 Cloudflare Workers Builds serves the `web/` directory at https://heywhatson.tv.
 
-A GitHub Actions workflow runs every 12 hours (`5 */12 * * *`) and updates the regular guide data. It runs:
+A GitHub Actions workflow runs once daily (`5 5 * * *`) and updates the regular guide data. It runs:
 
 ```bash
 python3 scripts/refresh_epg.py
@@ -107,7 +107,7 @@ Configure the connected Worker's build command as:
 bash scripts/build_cloudflare.sh
 ```
 
-The scheduled UHF workflow runs every 12 hours and calls a Cloudflare deploy hook stored in the GitHub Actions secret `CLOUDFLARE_DEPLOY_HOOK_URL`. This keeps the yesterday/today/tomorrow guide window from expiring between refreshes.
+The scheduled refresh workflow runs once daily: it grabs the main (4-day) and UHF (4-day) feeds, rebuilds `web/data` offline, and deploys with `wrangler deploy` (secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`). Guide snapshots are generated, never committed, so Cloudflare dashboard auto-builds from git must stay off. This keeps the yesterday/today/tomorrow/next-day guide window from expiring between refreshes.
 
 To generate and validate the export locally:
 

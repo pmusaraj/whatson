@@ -48,10 +48,12 @@ broadcaster's local country time. The compact heading has no introductory copy.
   report tests, generates, uploads an artifact and commits only series outputs.
   A normal repeated run in the same week makes no model request. Use the `force`
   dispatch input to re-rank after editing the catalogue.
-  After a changed report is pushed, the workflow calls the existing
-  `CLOUDFLARE_DEPLOY_HOOK_URL` secret: bot pushes do not trigger Workers Builds
-  automatically in this setup. A failed hook is a failed workflow, with the
-  generated report still committed for a deploy retry.
+  After a changed report is pushed, the workflow rebuilds the deployable
+  `web/data` tree offline from the guide-data cache and deploys with
+  `wrangler deploy` (secrets `CLOUDFLARE_API_TOKEN` and
+  `CLOUDFLARE_ACCOUNT_ID`). Guide snapshots are generated, never committed,
+  so dashboard auto-builds from git must stay off. A failed deploy is a
+  failed workflow, with the generated report still committed for a retry.
 - `scripts/build_cloudflare.sh`: renders the committed edition without calling
   the API. The initial report is checked in, so the page works before the first
   scheduled run.
