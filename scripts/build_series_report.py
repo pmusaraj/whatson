@@ -21,7 +21,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from build_editor_picks import OPENCODE_GO_MODELS, OPENCODE_GO_NO_TEMPERATURE, OPENCODE_GO_URL, message_texts
+from build_editor_picks import MAX_RESPONSE_BYTES, OPENCODE_GO_MODELS, OPENCODE_GO_NO_TEMPERATURE, OPENCODE_GO_URL, message_texts
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "data/series/catalogue.json"
@@ -174,7 +174,7 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
             for attempt in range(3):
                 try:
                     with opener(request, timeout=120) as response:
-                        raw = response.read(65_537)
+                        raw = response.read(MAX_RESPONSE_BYTES + 1)
                     break
                 except urllib.error.HTTPError:
                     raise
@@ -187,9 +187,12 @@ def select_with_llm(by_id, week, api_key, previous=None, opener=urllib.request.u
                 raise
             print(f"warning: {model} unavailable; trying next configured model", file=sys.stderr)
             continue
-        if len(raw) > 65_536:
+        if len(raw) > MAX_RESPONSE_BYTES:
             raise ValueError("LLM response exceeded size limit")
-        envelope = json.loads(raw)
+        try:
+            envelope = json.loads(raw)
+        except ValueError:
+            raise ValueError("LLM response was not complete JSON")
         message = envelope["choices"][0]["message"]
         errors = []
         for text in message_texts(message):

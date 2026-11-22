@@ -18,7 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB_DATA_DIR = ROOT / "web" / "data"
 OUTPUT_PATH = WEB_DATA_DIR / "editors-picks.json"
 OPENCODE_GO_URL = "https://opencode.ai/zen/go/v1/chat/completions"
-OPENCODE_GO_MODELS = ("claude-haiku-5-5", "gpt-6-luna", "deepseek-v4.1-flash", "muse-spark-1.3-contributor")
+OPENCODE_GO_MODELS = ("deepseek-v4.1-flash", "glm-5.3-flash", "qwen3.8-flash", "claude-haiku-5-5")
+# Thinking models can emit long chain-of-thought traces before the final
+# JSON; allow room so the answer is not truncated away. Cost is negligible
+# at flash-tier output pricing.
+MAX_RESPONSE_BYTES = 524_288
 # Models whose chat-completions API rejects the temperature parameter.
 OPENCODE_GO_NO_TEMPERATURE = frozenset({"claude-haiku-5-5"})
 PICK_LIMIT = 20
@@ -518,7 +522,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
             for attempt in range(3):
                 try:
                     with opener(request, timeout=180) as response:
-                        raw_response = response.read(65_537)
+                        raw_response = response.read(MAX_RESPONSE_BYTES + 1)
                     break
                 except urllib.error.HTTPError:
                     raise
@@ -532,9 +536,12 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
             if model == OPENCODE_GO_MODELS[-1]:
                 raise
             print(f"warning: editor-pick model {model} unavailable; trying next model: {error}", file=sys.stderr)
-    if len(raw_response) > 65_536:
+    if len(raw_response) > MAX_RESPONSE_BYTES:
         raise ValueError("OpenCode Go response was too large")
-    envelope = json.loads(raw_response)
+    try:
+        envelope = json.loads(raw_response)
+    except ValueError:
+        raise ValueError("OpenCode Go response was not complete JSON")
     message = envelope["choices"][0]["message"]
     errors = []
     for text in message_texts(message):
