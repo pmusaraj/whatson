@@ -286,6 +286,15 @@ class SeriesReportTest(unittest.TestCase):
             body = json.loads(opener.call_args.args[0].data)
             self.assertEqual("temperature" in body, expected)
 
+    def test_answer_extracted_from_reasoning_content(self):
+        body = {'choices': [{'message': {
+            'content': 'We need answer JSON only. Ranking supplied IDs...',
+            'reasoning_content': json.dumps(self.selection),
+        }}], 'usage': {'total_tokens': 100}}
+        opener = Mock(return_value=io.BytesIO(json.dumps(body).encode()))
+        result, _ = series.select_with_llm(self.by_id, date(2026, 9, 14), 'test', opener=opener)
+        self.assertEqual(result, self.selection)
+
     def test_authentication_and_bad_output_do_not_change_model(self):
         for error in (urllib.error.HTTPError(series.OPENCODE_GO_URL, 401, 'unauthorized', {}, None),):
             opener = Mock(side_effect=error)

@@ -313,6 +313,22 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessi
     return candidates
 
 
+def message_texts(message):
+    """Return candidate answer texts: final content first, reasoning second.
+
+    Thinking models may place chain-of-thought in `content` and the final
+    answer in `reasoning_content` (or vice versa); callers try each in order.
+    """
+    texts = []
+    for key in ("content", "reasoning_content"):
+        value = message.get(key)
+        if isinstance(value, list):
+            value = "".join(part.get("text", "") for part in value if isinstance(part, dict))
+        if isinstance(value, str) and value.strip():
+            texts.append(value)
+    return texts
+
+
 def validate_selection(content, candidates, selected_groups=None, model=None):
     tag = f"[{model}] " if model else ""
     if not isinstance(content, str):
@@ -481,7 +497,6 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
                 {"role": "user", "content": prompt},
             ],
             "response_format": {"type": "json_object"},
-            "max_tokens": 4000,
         }
         if model not in OPENCODE_GO_NO_TEMPERATURE:
             payload["temperature"] = 0
@@ -520,10 +535,15 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         raise ValueError("OpenCode Go response was too large")
     envelope = json.loads(raw_response)
     message = envelope["choices"][0]["message"]
-    content = message.get("content") or message.get("reasoning_content") or ""
-    if isinstance(content, list):
-        content = "".join(part.get("text", "") for part in content if isinstance(part, dict))
-    return validate_selection(content, candidates, selected_groups, model)
+    errors = []
+    for text in message_texts(message):
+        try:
+            return validate_selection(text, candidates, selected_groups, model)
+        except ValueError as error:
+            errors.append(error)
+    if errors:
+        raise errors[-1]
+    raise ValueError(f"OpenCode Go response had no text [{model}]")
 
 
 def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, opener=urllib.request.urlopen, *, f1_sessions=()):

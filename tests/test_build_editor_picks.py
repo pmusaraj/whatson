@@ -417,6 +417,18 @@ class BuildEditorPicksTest(unittest.TestCase):
         self.assertNotIn("temperature", body_for("claude-haiku-5-5"))
         self.assertEqual(body_for("deepseek-v4.1-flash")["temperature"], 0)
 
+    def test_answer_extracted_from_reasoning_content(self):
+        thinking = "We need answer JSON only. Considering all candidates carefully..."
+        answer = '{"picks":[]}'
+        bodies = [
+            {"choices": [{"message": {"content": thinking, "reasoning_content": answer}}]},
+            {"choices": [{"message": {"content": answer, "reasoning_content": thinking}}]},
+            {"choices": [{"message": {"content": "", "reasoning_content": answer}}]},
+        ]
+        for body in bodies:
+            opener = Mock(return_value=io.BytesIO(json.dumps(body).encode()))
+            self.assertEqual(build_editor_picks.select_with_opencode_go([], "key", opener=opener), [])
+
     def test_model_fallback_is_ordered_and_only_for_unavailability(self):
         from email.message import Message
         from urllib.error import HTTPError
