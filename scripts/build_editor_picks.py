@@ -306,7 +306,9 @@ def validate_selection(content, candidates, selected_groups=None, model=None):
     result = extract_json_object(content, model)
     groups = result.get("picks") if isinstance(result, dict) else None
     if not isinstance(groups, list) or (selected_groups is not None and len(groups) > PICK_LIMIT):
-        raise ValueError("OpenCode Go response had invalid picks")
+        detail = f"picks type={type(groups).__name__}" + (f" len={len(groups)}" if isinstance(groups, list) else "")
+        detail += f" expansion={selected_groups is not None} keys={sorted(result.keys()) if isinstance(result, dict) else None}"
+        raise ValueError(f"OpenCode Go response had invalid picks ({detail})")
     if selected_groups is None and len(groups) > PICK_LIMIT:
         # Groups arrive most noteworthy first: keep the best 20 rather than
         # discarding an otherwise valid selection.
