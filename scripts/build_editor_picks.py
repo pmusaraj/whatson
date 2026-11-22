@@ -519,7 +519,10 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
     if len(raw_response) > 65_536:
         raise ValueError("OpenCode Go response was too large")
     envelope = json.loads(raw_response)
-    content = envelope["choices"][0]["message"]["content"]
+    message = envelope["choices"][0]["message"]
+    content = message.get("content") or message.get("reasoning_content") or ""
+    if isinstance(content, list):
+        content = "".join(part.get("text", "") for part in content if isinstance(part, dict))
     return validate_selection(content, candidates, selected_groups, model)
 
 
