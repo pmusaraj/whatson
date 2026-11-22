@@ -365,7 +365,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         )
         self.assertEqual([channel["channelName"] for channel in selected[0]["channels"]], ["ESPN", "Eurosport"])
 
-    def test_opencode_go_request_uses_deepseek_and_retries_twice(self):
+    def test_opencode_go_request_uses_first_model_and_retries_twice(self):
         candidate = {
             "id": "event-1",
             "country": "US",
@@ -385,7 +385,7 @@ class BuildEditorPicksTest(unittest.TestCase):
         request = opener.call_args.args[0]
         self.assertEqual(request.full_url, "https://opencode.ai/zen/go/v1/chat/completions")
         body = json.loads(request.data)
-        self.assertEqual(body["model"], "deepseek-v4.1-flash")
+        self.assertEqual(body["model"], build_editor_picks.OPENCODE_GO_MODELS[0])
         self.assertIn("Select up to 20", body["messages"][1]["content"])
         self.assertEqual(request.get_header("Authorization"), "Bearer key")
         self.assertEqual(request.get_header("User-agent"), "whatson-editor-picks/1.0")
