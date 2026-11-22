@@ -313,12 +313,13 @@ def collect_candidates(data_dir=WEB_DATA_DIR, now=None, *, broad=False, f1_sessi
     return candidates
 
 
-def validate_selection(content, candidates, selected_groups=None):
+def validate_selection(content, candidates, selected_groups=None, model=None):
+    tag = f"[{model}] " if model else ""
     if not isinstance(content, str):
-        raise ValueError("OpenCode Go response content was not text")
+        raise ValueError(f"OpenCode Go response content was not text {tag}{type(content).__name__}")
     start, end = content.find("{"), content.rfind("}")
     if start < 0 or end < start:
-        raise ValueError("OpenCode Go response did not contain JSON")
+        raise ValueError(f"OpenCode Go response did not contain JSON {tag}{content[:300]!r}")
     result = json.loads(content[start : end + 1])
     groups = result.get("picks") if isinstance(result, dict) else None
     if not isinstance(groups, list) or len(groups) > PICK_LIMIT:
@@ -519,7 +520,7 @@ def select_with_opencode_go(candidates, api_key, opener=urllib.request.urlopen, 
         raise ValueError("OpenCode Go response was too large")
     envelope = json.loads(raw_response)
     content = envelope["choices"][0]["message"]["content"]
-    return validate_selection(content, candidates, selected_groups)
+    return validate_selection(content, candidates, selected_groups, model)
 
 
 def expand_with_opencode_go(picks, api_key, data_dir=WEB_DATA_DIR, now=None, opener=urllib.request.urlopen, *, f1_sessions=()):
