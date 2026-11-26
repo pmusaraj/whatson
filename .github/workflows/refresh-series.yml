@@ -100,7 +100,10 @@ jobs:
           else
             git commit -m "chore: refresh weekly series report"
             git fetch origin "$BRANCH_NAME"
-            git rebase "origin/$BRANCH_NAME"
+            # Rebuild step leaves generated guide files unstaged (option B:
+            # guide data deploys but is never committed); autostash lets the
+            # rebase succeed without touching them.
+            git rebase --autostash "origin/$BRANCH_NAME"
             git push origin "HEAD:$BRANCH_NAME"
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
