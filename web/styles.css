@@ -1617,3 +1617,25 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 }
 
 .editor-pick-grid-more { margin-left: auto; font-weight: 650; color: var(--accent); }
+
+.program-dialog-also { margin-top: 0.8rem; }
+.program-dialog-also-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+.program-dialog-also-list { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.program-dialog-channel {
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.program-dialog-channel.current { opacity: 0.55; cursor: default; }

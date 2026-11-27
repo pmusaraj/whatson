@@ -63,6 +63,15 @@ def pick_league(pick):
     return None
 
 
+def display_title(pick):
+    league = pick_league(pick)
+    if not league:
+        return pick["title"]
+    import re
+    label = re.escape(league[0])
+    return re.sub(r"\s*(?:\u2014|\u2013|-)\s*" + label + r"$|\s*\(" + label + r"\)$", "", pick["title"], flags=re.I)
+
+
 def sport_emoji(pick):
     import re
     text = " ".join(str(pick.get(key) or "") for key in ("title", "subtitle", "competition", "sportType", "description"))
@@ -137,7 +146,9 @@ def render_picks(picks, now, generated_at=None):
         league_html = (f'<span class="editor-pick-league editor-pick-league-{league[1]}">{escape(league[0])}</span>'
                        if league else "")
         dot = '<span class="editor-pick-live-dot"></span>' if kind == "live" else ""
-        if start.date() == end.date():
+        if kind == "later":
+            time_html = f"\u2013 {end:%H:%M} UTC" if start.date() == end.date() else f"\u2013 {end:%b %d, %H:%M} UTC"
+        elif start.date() == end.date():
             time_html = f"{start:%b %d, %H:%M} \u2013 {end:%H:%M} UTC"
         else:
             time_html = f"{start:%b %d, %H:%M} \u2013 {end:%b %d, %H:%M} UTC"
@@ -150,7 +161,7 @@ def render_picks(picks, now, generated_at=None):
             '  </div>\n'
             '  <div class="editor-pick-heading">\n'
             f'    <span class="editor-pick-sport">{sport_emoji(pick)}</span>\n'
-            f'    <strong class="show-result-title">{escape(pick["title"])}</strong>\n'
+            f'    <strong class="show-result-title">{escape(display_title(pick))}</strong>\n'
             '  </div>\n'
             f'  <div class="editor-pick-channels">{channel_html}</div>\n'
             '</article>'
