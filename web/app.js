@@ -1087,6 +1087,29 @@ function pickLeague(pick) {
   return null;
 }
 
+function pickDisplayTitle(pick) {
+  const league = pickLeague(pick);
+  if (!league) return pick.title;
+  const label = league.label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return pick.title.replace(new RegExp(`\\s*(?:\u2014|\u2013|-)\\s*${label}$|\\s*\\(${label}\\)$`, "i"), "");
+}
+
+function editorPickAiringsAttr(airings) {
+  const compact = airings.map((airing) => [airing.key, airing.index, airing.countryData.country, airing.channel.name]);
+  return ` data-airings="${escapeHtml(JSON.stringify(compact))}"`;
+}
+
+function parseEditorPickAirings(value) {
+  try {
+    const list = JSON.parse(value || "[]");
+    if (!Array.isArray(list)) return null;
+    const cleaned = list.filter((item) => Array.isArray(item) && typeof item[0] === "string" && item[1] !== undefined && typeof item[3] === "string");
+    return cleaned.length ? cleaned : null;
+  } catch {
+    return null;
+  }
+}
+
 function pickStatus(pick, now) {
   const nowMs = now.getTime();
   const startMs = new Date(pick.startAt).getTime();
@@ -1226,11 +1249,11 @@ function renderEditorPickGrid(picks) {
       ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>Live${leagueLabel ? ` · ${escapeHtml(leagueLabel)}` : ""}`
       : escapeHtml(leagueLabel);
     return `<button type="button" class="editor-pick-grid-block league-${league ? league.cls : "generic"}${status.kind === "live" ? " live" : ""} event-title"`
-      + ` style="left:${left}%;width:${width}%" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"`
+      + ` style="left:${left}%;width:${width}%" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"${editorPickAiringsAttr(airings)}`
       + ` title="${escapeHtml(pick.title)}">`
       + `<span class="editor-pick-grid-block-league">${liveHead}</span>`
-      + `<span class="editor-pick-grid-block-title">${escapeHtml(pick.title)}</span>`
-      + `<span class="editor-pick-grid-block-meta">${escapeHtml(formatTime(pick.startAt))}–${escapeHtml(formatTime(pick.endAt))} · ${airings.length} channel${airings.length === 1 ? "" : "s"}</span>`
+      + `<span class="editor-pick-grid-block-title">${escapeHtml(pickDisplayTitle(pick))}</span>`
+      + `<span class="editor-pick-grid-block-meta">${airings.length} channel${airings.length === 1 ? "" : "s"}</span>`
       + `</button>`;
   };
   let lanesHtml = "";
@@ -1241,7 +1264,7 @@ function renderEditorPickGrid(picks) {
     lanesHtml += `<div class="editor-pick-grid-lane editor-pick-grid-overflow">`
       + `<span class="editor-pick-grid-overflow-label">+${extra.length} more at peak</span>`
       + extra.map(({ pick, airings }) =>
-        `<button type="button" class="editor-pick-grid-chip event-title" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}" title="${escapeHtml(pick.title)}">${escapeHtml(formatTime(pick.startAt))} ${escapeHtml(pick.title)}</button>`
+        `<button type="button" class="editor-pick-grid-chip event-title" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}" title="${escapeHtml(pick.title)}"${editorPickAiringsAttr(airings)}>${escapeHtml(formatTime(pick.startAt))} ${escapeHtml(pickDisplayTitle(pick))}</button>`
       ).join("") + `</div>`;
   }
   return `<div class="editor-pick-grid">`
@@ -1290,7 +1313,9 @@ function renderEditorPickRow({ pick, airings }) {
   const league = pickLeague(pick);
   const hero = editorPickHeroPending ? ' data-hero="true"' : "";
   editorPickHeroPending = false;
-  const timeRange = pick.endAt ? `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}` : formatTime(pick.startAt);
+  const timeRange = !pick.endAt ? formatTime(pick.startAt)
+    : status.kind === "later" ? `\u2013 ${formatTime(pick.endAt)}`
+    : `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}`;
   return `
   <article class="editor-pick-result"${hero}>
     <div class="editor-pick-status-row">
@@ -1300,7 +1325,7 @@ function renderEditorPickRow({ pick, airings }) {
     </div>
     <div class="editor-pick-heading">
       <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
-      <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}">${escapeHtml(pick.title)}</button>
+      <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"${editorPickAiringsAttr(airings)}>${escapeHtml(pickDisplayTitle(pick))}</button>
     </div>
     <div class="editor-pick-channels" aria-label="Available channels">
       ${renderEditorPickChannels(airings, pick.title)}
@@ -1628,14 +1653,26 @@ function programDetailRows(program, channel) {
     .join("");
 }
 
-function openProgramDetails(channelKeyValue, programIndex) {
+let programDialogAirings = null;
+
+function openProgramDetails(channelKeyValue, programIndex, extraAirings) {
   const channel = getChannelByKey(channelKeyValue);
   const program = channel?.programs[Number(programIndex)];
   if (!channel || !program) {
     return;
   }
 
+  programDialogAirings = Array.isArray(extraAirings) && extraAirings.length > 1 ? extraAirings : null;
   const tags = programTags(program);
+  const alsoOn = programDialogAirings
+    ? `<div class="program-dialog-also">
+      <h3 class="program-dialog-also-title">Also showing on</h3>
+      <div class="program-dialog-also-list">${programDialogAirings.map(([key, index, country, name]) => {
+        const isCurrent = key === channelKeyValue && String(index) === String(programIndex);
+        return `<button type="button" class="program-dialog-channel${isCurrent ? " current" : ""}" data-channel-key="${escapeHtml(key)}" data-program-index="${index}"${isCurrent ? ` disabled aria-current="true"` : ""} title="${isCurrent ? "Now viewing" : `Open ${escapeHtml(name)}`}"><span aria-hidden="true">${flagEmoji(country)}</span> ${escapeHtml(name)}</button>`;
+      }).join("")}</div>
+    </div>`
+    : "";
   els.programDialogContent.innerHTML = `
     ${program.imageUrl ? `<img class="program-dialog-image" src="${escapeHtml(program.imageUrl)}" alt="" loading="lazy" />` : ""}
     <div class="program-dialog-kicker">${escapeHtml(channel.name)} · ${formatTime(program.startAt)} – ${formatTime(program.endAt)}</div>
@@ -1643,9 +1680,13 @@ function openProgramDetails(channelKeyValue, programIndex) {
     ${program.subtitle ? `<p class="program-dialog-subtitle">${escapeHtml(program.subtitle)}</p>` : ""}
     ${tags.length ? `<div class="program-tags program-dialog-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
     <dl class="program-detail-list">${programDetailRows(program, channel)}</dl>
+    ${alsoOn}
     <p class="program-dialog-description">${program.description ? escapeHtml(program.description) : "No description available."}</p>
   `;
 
+  if (els.programDialog.open) {
+    return;
+  }
   if (typeof els.programDialog.showModal === "function") {
     els.programDialog.showModal();
   } else {
@@ -1908,7 +1949,7 @@ els.searchResults.addEventListener("click", (event) => {
 els.editorPicksList.addEventListener("click", (event) => {
   const title = event.target.closest(".event-title");
   if (title) {
-    openProgramDetails(title.dataset.channelKey, title.dataset.programIndex);
+    openProgramDetails(title.dataset.channelKey, title.dataset.programIndex, parseEditorPickAirings(title.dataset.airings));
     return;
   }
   const result = event.target.closest(".editor-pick-channel");
@@ -1943,6 +1984,14 @@ els.guide.addEventListener("keydown", (event) => {
     programBlock.dataset.channelKey,
     programBlock.dataset.programIndex,
   );
+});
+
+els.programDialogContent.addEventListener("click", (event) => {
+  const channel = event.target.closest("[data-channel-key][data-program-index]");
+  if (!channel || channel.disabled) {
+    return;
+  }
+  openProgramDetails(channel.dataset.channelKey, channel.dataset.programIndex, programDialogAirings);
 });
 
 els.programDialog.addEventListener("click", (event) => {
