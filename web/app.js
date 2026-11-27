@@ -1175,22 +1175,35 @@ function editorPickGridPeak(rows) {
   return peak;
 }
 
-function renderEditorPickGrid(picks) {
-  const nowMs = state.now.getTime();
+function formatGridTickTime(value) {
+  return new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" }).format(new Date(value));
+}
+
+function editorPickGridRange(picks, now) {
+  const nowMs = now.getTime();
   const horizonEnd = nowMs + EDITOR_PICK_GRID_AHEAD_MS;
   const horizonStart = nowMs - EDITOR_PICK_GRID_BACK_MS;
   const upcoming = picks.filter(({ pick }) =>
     new Date(pick.startAt).getTime() < horizonEnd && new Date(pick.endAt).getTime() > horizonStart);
-  if (!upcoming.length) return "";
+  if (!upcoming.length) return null;
   // Fit the window to the events instead of always spanning the full horizon,
   // so a sparse slate does not render as mostly empty space.
   const starts = upcoming.map(({ pick }) => new Date(pick.startAt).getTime());
   const ends = upcoming.map(({ pick }) => new Date(pick.endAt).getTime());
   const winStart = Math.max(Math.min(nowMs, Math.min(...starts)), nowMs - 3 * 3600000);
   const winEnd = Math.min(Math.max(Math.max(...ends) + 15 * 60000, nowMs + 30 * 60000), horizonEnd);
+  // Started events always stay in the grid (clamped to the left edge) so the
+  // list below only ever holds strictly upcoming events.
   const inWindow = upcoming.filter(({ pick }) =>
-    new Date(pick.startAt).getTime() < winEnd && new Date(pick.endAt).getTime() > winStart);
-  if (!inWindow.length) return "";
+    new Date(pick.startAt).getTime() <= nowMs ||
+    (new Date(pick.startAt).getTime() < winEnd && new Date(pick.endAt).getTime() > winStart));
+  return { winStart, winEnd, inWindow };
+}
+
+function renderEditorPickGrid(picks) {
+  const range = editorPickGridRange(picks, state.now);
+  if (!range || !range.inWindow.length) return "";
+  const { winStart, winEnd, inWindow } = range;
   const rows = assignEditorPickLanes(inWindow);
   const span = winEnd - winStart;
   const pct = (ms) => Math.min(100, Math.max(0, ((ms - winStart) / span) * 100));
@@ -1200,7 +1213,7 @@ function renderEditorPickGrid(picks) {
   let ticks = "", lines = "";
   const tickStep = (winEnd - winStart) > 6 * 3600000 ? 3600000 : 1800000;
   for (let tick = Math.ceil(winStart / tickStep) * tickStep; tick <= winEnd; tick += tickStep) {
-    ticks += `<span class="editor-pick-grid-tick" style="left:${pct(tick)}%">${escapeHtml(formatTime(new Date(tick)))}</span>`;
+    ticks += `<span class="editor-pick-grid-tick" style="left:${pct(tick)}%">${escapeHtml(formatGridTickTime(new Date(tick)))}</span>`;
     lines += `<span class="editor-pick-grid-line" style="left:${pct(tick)}%"></span>`;
   }
   const gridBlock = ({ pick, airings }) => {
@@ -1231,19 +1244,15 @@ function renderEditorPickGrid(picks) {
         `<button type="button" class="editor-pick-grid-chip event-title" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}" title="${escapeHtml(pick.title)}">${escapeHtml(formatTime(pick.startAt))} ${escapeHtml(pick.title)}</button>`
       ).join("") + `</div>`;
   }
-  const laterCount = picks.length - inWindow.length;
   return `<div class="editor-pick-grid">`
-    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Coming up</span>`
-    + `<span class="editor-pick-grid-window">${escapeHtml(formatTime(new Date(winStart)))} – ${escapeHtml(formatTime(new Date(winEnd)))}</span>`
+    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Now and soon</span>`
     + `<span class="editor-pick-grid-peak">peak ${editorPickGridPeak(rows)} at once</span></div>`
     + `<div class="editor-pick-grid-scroll"><div class="editor-pick-grid-inner">`
     + `<div class="editor-pick-grid-ticks">${ticks}</div>`
     + `<div class="editor-pick-grid-lanes">${lanesHtml}</div>`
-    + `${lines}<div class="editor-pick-grid-now" style="left:${pct(nowMs)}%"><span class="editor-pick-grid-now-tag">now</span></div>`
+    + `${lines}<div class="editor-pick-grid-now" style="left:${pct(state.now.getTime())}%"><span class="editor-pick-grid-now-tag">now</span></div>`
     + `</div></div>`
-    + `<div class="editor-pick-grid-foot"><span>Blocks positioned by actual start/end times</span>`
-    + (laterCount ? `<span class="editor-pick-grid-more">+ ${laterCount} more in the list below</span>` : "")
-    + `</div></div>`;
+    + `</div>`;
 }
 
 function editorPicksMetaLine(picks) {
@@ -1255,30 +1264,49 @@ function editorPicksMetaLine(picks) {
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
   els.editorPicks.hidden = false;
-  let heroPending = true;
   const updated = state.editorPicksGeneratedAt ? ` Last updated ${formatTime(state.editorPicksGeneratedAt)} \u00b7 picks refresh throughout the day.` : "";
-  els.editorPicksList.innerHTML = renderEditorPickGrid(picks) + editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => {
-    const status = pickStatus(pick, state.now);
-    const league = pickLeague(pick);
-    const hero = heroPending ? ' data-hero="true"' : "";
-    heroPending = false;
-    const timeRange = pick.endAt ? `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}` : formatTime(pick.startAt);
-    return `
-    <article class="editor-pick-result"${hero}>
-      <div class="editor-pick-status-row">
-        <span class="editor-pick-badge editor-pick-badge-${status.kind}">${status.kind === "live" ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>` : ""}${escapeHtml(status.label)}</span>
-        ${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span>` : ""}
-        <span class="show-result-time">${timeRange}</span>
-      </div>
-      <div class="editor-pick-heading">
-        <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
-        <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}">${escapeHtml(pick.title)}</button>
-      </div>
-      <div class="editor-pick-channels" aria-label="Available channels">
-        ${renderEditorPickChannels(airings, pick.title)}
-      </div>
-    </article>
-  `}, `No upcoming editor’s picks right now \u2014 the next slate lands soon.${updated}`);
+  editorPickHeroPending = true;
+  if (!picks.length) {
+    els.editorPicksList.innerHTML = editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, renderEditorPickRow,
+      `No upcoming editor\u2019s picks right now \u2014 the next slate lands soon.${updated}`);
+    return;
+  }
+  // The grid covers now through the fitted window; the list below holds only
+  // the strictly upcoming events beyond it, so there is no overlap and no
+  // need for a now marker down here.
+  const range = editorPickGridRange(picks, state.now);
+  const gridded = new Set((range ? range.inWindow : []).map((row) => row.pick));
+  const later = picks.filter(({ pick }) => !gridded.has(pick));
+  const gridHtml = range && range.inWindow.length ? renderEditorPickGrid(picks) : "";
+  const laterHtml = later.map(renderEditorPickRow).join("")
+    || `<p class="empty-program">Everything upcoming is in the grid above.</p>`;
+  els.editorPicksList.innerHTML = gridHtml + editorPicksMetaLine(picks) + laterHtml;
+}
+
+let editorPickHeroPending = true;
+
+function renderEditorPickRow({ pick, airings }) {
+  const status = pickStatus(pick, state.now);
+  const league = pickLeague(pick);
+  const hero = editorPickHeroPending ? ' data-hero="true"' : "";
+  editorPickHeroPending = false;
+  const timeRange = pick.endAt ? `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}` : formatTime(pick.startAt);
+  return `
+  <article class="editor-pick-result"${hero}>
+    <div class="editor-pick-status-row">
+      <span class="editor-pick-badge editor-pick-badge-${status.kind}">${status.kind === "live" ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>` : ""}${escapeHtml(status.label)}</span>
+      ${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span>` : ""}
+      <span class="show-result-time">${timeRange}</span>
+    </div>
+    <div class="editor-pick-heading">
+      <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
+      <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}">${escapeHtml(pick.title)}</button>
+    </div>
+    <div class="editor-pick-channels" aria-label="Available channels">
+      ${renderEditorPickChannels(airings, pick.title)}
+    </div>
+  </article>
+  `;
 }
 
 function setLiveSportsOpen(open) {

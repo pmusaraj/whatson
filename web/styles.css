@@ -1500,7 +1500,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   background: var(--surface);
   border: 1px solid var(--border);
   border-left: 4px solid var(--accent);
-  padding: 0.25rem 0.5rem;
+  padding: 0.35rem 0.6rem 0.35rem 0.75rem;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1594,7 +1594,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-grid-chip {
   font: inherit;
   font-size: 0.72rem;
-  padding: 0.15rem 0.5rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);

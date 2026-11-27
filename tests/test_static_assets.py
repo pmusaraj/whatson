@@ -10,7 +10,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const app = fs.readFileSync('web/app.js', 'utf8');
-const startAt = '2026-09-14T18:00:00Z', endAt = '2026-09-14T20:00:00Z';
+const startAt = '2026-09-15T08:00:00Z', endAt = '2026-09-15T10:00:00Z';
 const program = { title: 'Live event', startAt, endAt };
 const channels = ['one', 'two'].map(id => ({ id, name: id, programs: [program] }));
 const pick = { title: program.title, highlightType: 'liveSport', sportType: 'Tennis', startAt, channels: ['one', 'two', 'alias'].map(channelId => ({
@@ -47,9 +47,9 @@ assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 20);
 assert.equal((html.match(/class="editor-pick-channel"/g) || []).length, 40);
 assert.ok(html.includes('data-channel-key="US:two" data-program-index="0"'));
 context.state.editorPicks = [
-  { ...pick, title: 'Late tennis', startAt: '2026-09-14T21:00:00+02:00' },
+  { ...pick, title: 'Late tennis', startAt: '2026-09-15T08:00:00Z' },
   { ...pick, title: 'Series premiere', highlightType: 'freshProgramme', categories: ['Series'] },
-  { ...pick, title: 'Early soccer', sportType: 'Soccer', startAt: '2026-09-14T18:30:00Z' },
+  { ...pick, title: 'Early soccer', sportType: 'Soccer', startAt: '2026-09-15T07:30:00Z' },
 ];
 vm.runInContext('renderEditorPicks()', context);
 const sportsHtml = context.els.editorPicksList.innerHTML;
@@ -77,6 +77,57 @@ context.state.now = new Date(endAt);
 vm.runInContext('renderEditorPicks()', context);
 assert.equal(context.els.editorPicks.hidden, false);
 assert.ok(context.els.editorPicksList.innerHTML.includes('No upcoming editor’s picks'));
+"""
+        subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
+
+    def test_editor_picks_grid_covers_window_and_list_shows_only_later(self):
+        script = r"""
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const app = fs.readFileSync('web/app.js', 'utf8');
+const liveProgram = { title: 'Live event', startAt: '2026-09-14T18:00:00Z', endAt: '2026-09-14T20:00:00Z' };
+const farProgram = { title: 'Live event', startAt: '2026-09-15T08:00:00Z', endAt: '2026-09-15T10:00:00Z' };
+const channels = [{ id: 'one', name: 'one', programs: [liveProgram, farProgram] }];
+const airing = (program) => ({ country: 'US', channelId: 'one', sourceTitle: program.title, startAt: program.startAt, endAt: program.endAt });
+const live = { title: 'Live event', highlightType: 'liveSport', sportType: 'Tennis', startAt: liveProgram.startAt, endAt: liveProgram.endAt, channels: [airing(liveProgram)] };
+const far = { title: 'Far event', highlightType: 'liveSport', sportType: 'Tennis', startAt: farProgram.startAt, endAt: farProgram.endAt, channels: [airing(farProgram)] };
+const context = {
+  state: { now: new Date('2026-09-14T19:00:00Z'), editorPicks: [live, far],
+    countryDataByCode: new Map([['US', { country: 'US', channels, duplicateChannelAliases: {} }]]) },
+  els: { editorPicks: {}, editorPicksList: {} },
+  normalizeSearchText: value => String(value || '').toLowerCase(),
+  channelKey: (country, id) => `${country}:${id}`,
+  isOverlappingDuplicate: () => false,
+  isPreviewTheme: () => false,
+  escapeHtml: value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
+  formatTime: value => new Date(value).toISOString(),
+  flagEmoji: value => value,
+};
+vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('const SPORT_BUCKETS ='), app.indexOf('function isLiveSportsProgram(')), context);
+vm.runInContext(app.slice(app.indexOf('function resolvedEditorPicks()'), app.indexOf('function setLiveSportsOpen(')), context);
+vm.runInContext('renderEditorPicks()', context);
+const html = context.els.editorPicksList.innerHTML;
+assert.ok(html.includes('Now and soon'));
+assert.ok(!html.includes('Next 12 hours'));
+assert.ok(!html.includes('Blocks positioned'));
+assert.ok(!html.includes('more in the list below'));
+// Grid holds the live event; the list holds only the far event, with no now marker.
+assert.equal((html.match(/editor-pick-grid-block /g) || []).length, 1);
+assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 1);
+assert.ok(html.includes('>Far event</button>'));
+assert.ok(!html.includes('event-now-indicator'));
+assert.ok(html.includes('editor-pick-grid-now'));
+// Tick labels are times only, never dates.
+for (const tick of html.match(/editor-pick-grid-tick"[^>]*>([^<]+)</g) || []) assert.ok(!tick.includes(','));
+// Everything inside the grid: the list says so instead of going blank.
+context.state.editorPicks = [live];
+vm.runInContext('renderEditorPicks()', context);
+const gridOnly = context.els.editorPicksList.innerHTML;
+assert.equal((gridOnly.match(/editor-pick-grid-block /g) || []).length, 1);
+assert.equal((gridOnly.match(/class="editor-pick-result"/g) || []).length, 0);
+assert.ok(gridOnly.includes('Everything upcoming is in the grid above.'));
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
 
