@@ -147,17 +147,18 @@ def render_picks(picks, now, generated_at=None):
                        if league else "")
         dot = '<span class="editor-pick-live-dot"></span>' if kind == "live" else ""
         if kind == "later":
-            time_html = f"\u2013 {end:%H:%M} UTC" if start.date() == end.date() else f"\u2013 {end:%b %d, %H:%M} UTC"
+            time_html = ""
         elif start.date() == end.date():
             time_html = f"{start:%b %d, %H:%M} \u2013 {end:%H:%M} UTC"
         else:
             time_html = f"{start:%b %d, %H:%M} \u2013 {end:%b %d, %H:%M} UTC"
+        time_row = (f'    <time class="show-result-time" datetime="{escape(start.isoformat(), quote=True)}">{time_html}</time>\n' if time_html else '')
         events.append(((league_rank(pick), start), (
             '<article class="editor-pick-result"{HERO}>\n'
             '  <div class="editor-pick-status-row">\n'
             f'    <span class="editor-pick-badge editor-pick-badge-{kind}">{dot}{escape(label)}</span>\n'
             f'    {league_html}\n'
-            f'    <time class="show-result-time" datetime="{escape(start.isoformat(), quote=True)}">{time_html}</time>\n'
+            f'{time_row}'
             '  </div>\n'
             '  <div class="editor-pick-heading">\n'
             f'    <span class="editor-pick-sport">{sport_emoji(pick)}</span>\n'
