@@ -1146,6 +1146,96 @@ function renderEditorPickChannels(airings, pickTitle) {
   </details>` : "");
 }
 
+const EDITOR_PICK_GRID_BACK_MS = 30 * 60000;
+const EDITOR_PICK_GRID_AHEAD_MS = 12 * 3600000;
+const EDITOR_PICK_GRID_MAX_LANES = 6;
+
+function assignEditorPickLanes(rows) {
+  const order = [...rows].sort((a, b) => new Date(a.pick.startAt) - new Date(b.pick.startAt));
+  const laneEnd = [];
+  for (const row of order) {
+    const start = new Date(row.pick.startAt).getTime();
+    let lane = laneEnd.findIndex((end) => end <= start);
+    if (lane < 0) { lane = laneEnd.length; laneEnd.push(0); }
+    laneEnd[lane] = new Date(row.pick.endAt).getTime();
+    row.lane = lane;
+  }
+  return order;
+}
+
+function editorPickGridPeak(rows) {
+  const points = [];
+  for (const { pick } of rows) {
+    points.push([new Date(pick.startAt).getTime(), 1]);
+    points.push([new Date(pick.endAt).getTime(), -1]);
+  }
+  points.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  let current = 0, peak = 0;
+  for (const [, delta] of points) { current += delta; peak = Math.max(peak, current); }
+  return peak;
+}
+
+function renderEditorPickGrid(picks) {
+  const nowMs = state.now.getTime();
+  const winStart = nowMs - EDITOR_PICK_GRID_BACK_MS;
+  const winEnd = nowMs + EDITOR_PICK_GRID_AHEAD_MS;
+  const inWindow = picks.filter(({ pick }) =>
+    new Date(pick.startAt).getTime() < winEnd && new Date(pick.endAt).getTime() > winStart);
+  if (!inWindow.length) return "";
+  const rows = assignEditorPickLanes(inWindow);
+  const span = winEnd - winStart;
+  const pct = (ms) => Math.min(100, Math.max(0, ((ms - winStart) / span) * 100));
+  const shown = rows.filter((row) => row.lane < EDITOR_PICK_GRID_MAX_LANES);
+  const extra = rows.filter((row) => row.lane >= EDITOR_PICK_GRID_MAX_LANES);
+  const laneCount = Math.max(...shown.map((row) => row.lane)) + 1;
+  let ticks = "", lines = "";
+  for (let tick = Math.ceil(winStart / 3600000) * 3600000; tick <= winEnd; tick += 3600000) {
+    ticks += `<span class="editor-pick-grid-tick" style="left:${pct(tick)}%">${escapeHtml(formatTime(new Date(tick)))}</span>`;
+    lines += `<span class="editor-pick-grid-line" style="left:${pct(tick)}%"></span>`;
+  }
+  const gridBlock = ({ pick, airings }) => {
+    const status = pickStatus(pick, state.now);
+    const league = pickLeague(pick);
+    const left = pct(new Date(pick.startAt).getTime());
+    const width = Math.max(pct(new Date(pick.endAt).getTime()) - left, 4);
+    const leagueLabel = league ? league.label : "";
+    const liveHead = status.kind === "live"
+      ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>Live${leagueLabel ? ` · ${escapeHtml(leagueLabel)}` : ""}`
+      : escapeHtml(leagueLabel);
+    return `<button type="button" class="editor-pick-grid-block league-${league ? league.cls : "generic"}${status.kind === "live" ? " live" : ""} event-title"`
+      + ` style="left:${left}%;width:${width}%" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"`
+      + ` title="${escapeHtml(pick.title)}">`
+      + `<span class="editor-pick-grid-block-league">${liveHead}</span>`
+      + `<span class="editor-pick-grid-block-title">${escapeHtml(pick.title)}</span>`
+      + `<span class="editor-pick-grid-block-meta">${escapeHtml(formatTime(pick.startAt))}–${escapeHtml(formatTime(pick.endAt))} · ${airings.length} channel${airings.length === 1 ? "" : "s"}</span>`
+      + `</button>`;
+  };
+  let lanesHtml = "";
+  for (let lane = 0; lane < laneCount; lane++) {
+    lanesHtml += `<div class="editor-pick-grid-lane">${shown.filter((row) => row.lane === lane).map(gridBlock).join("")}</div>`;
+  }
+  if (extra.length) {
+    lanesHtml += `<div class="editor-pick-grid-lane editor-pick-grid-overflow">`
+      + `<span class="editor-pick-grid-overflow-label">+${extra.length} more at peak</span>`
+      + extra.map(({ pick, airings }) =>
+        `<button type="button" class="editor-pick-grid-chip event-title" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}" title="${escapeHtml(pick.title)}">${escapeHtml(formatTime(pick.startAt))} ${escapeHtml(pick.title)}</button>`
+      ).join("") + `</div>`;
+  }
+  const laterCount = picks.length - inWindow.length;
+  return `<div class="editor-pick-grid">`
+    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Next 12 hours</span>`
+    + `<span class="editor-pick-grid-window">${escapeHtml(formatTime(new Date(winStart)))} – ${escapeHtml(formatTime(new Date(winEnd)))}</span>`
+    + `<span class="editor-pick-grid-peak">peak ${editorPickGridPeak(rows)} at once</span></div>`
+    + `<div class="editor-pick-grid-scroll"><div class="editor-pick-grid-inner">`
+    + `<div class="editor-pick-grid-ticks">${ticks}</div>`
+    + `<div class="editor-pick-grid-lanes">${lanesHtml}</div>`
+    + `${lines}<div class="editor-pick-grid-now" style="left:${pct(nowMs)}%"><span class="editor-pick-grid-now-tag">now</span></div>`
+    + `</div></div>`
+    + `<div class="editor-pick-grid-foot"><span>Blocks positioned by actual start/end times</span>`
+    + (laterCount ? `<span class="editor-pick-grid-more">+ ${laterCount} more beyond 12h in the list below</span>` : "")
+    + `</div></div>`;
+}
+
 function editorPicksMetaLine(picks) {
   const count = `${picks.length} pick${picks.length === 1 ? "" : "s"}`;
   const updated = state.editorPicksGeneratedAt ? ` \u00b7 updated ${formatTime(state.editorPicksGeneratedAt)}` : "";
@@ -1157,7 +1247,7 @@ function renderEditorPicks() {
   els.editorPicks.hidden = false;
   let heroPending = true;
   const updated = state.editorPicksGeneratedAt ? ` Last updated ${formatTime(state.editorPicksGeneratedAt)} \u00b7 picks refresh throughout the day.` : "";
-  els.editorPicksList.innerHTML = editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => {
+  els.editorPicksList.innerHTML = renderEditorPickGrid(picks) + editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => {
     const status = pickStatus(pick, state.now);
     const league = pickLeague(pick);
     const hero = heroPending ? ' data-hero="true"' : "";

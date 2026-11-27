@@ -1411,3 +1411,209 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 
 /* Expanded channel links align with the event title. */
 .editor-picks .editor-pick-more .editor-pick-channels { padding-left: 0; }
+
+.editor-pick-grid {
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.editor-pick-grid-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.editor-pick-grid-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.editor-pick-grid-window {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.editor-pick-grid-peak {
+  margin-left: auto;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.editor-pick-grid-scroll { overflow-x: auto; }
+
+.editor-pick-grid-inner { position: relative; min-width: 620px; }
+
+.editor-pick-grid-ticks { position: relative; height: 1.4rem; }
+
+.editor-pick-grid-tick {
+  position: absolute;
+  top: 0;
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  border-left: 1px solid var(--border);
+  padding-left: 0.3rem;
+  white-space: nowrap;
+}
+
+.editor-pick-grid-lane {
+  position: relative;
+  min-height: 4.2rem;
+  border-top: 1px dashed var(--border);
+}
+
+.editor-pick-grid-lane:last-child { border-bottom: 1px dashed var(--border); }
+
+.editor-pick-grid-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.editor-pick-grid-block {
+  position: absolute;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  min-width: 3.5rem;
+  display: grid;
+  align-content: start;
+  gap: 0.1rem;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 0.25rem 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.editor-pick-grid-block:hover { box-shadow: 0 4px 18px rgb(44 36 24 / 18%); z-index: 3; }
+
+.editor-pick-grid-block.live { background: #fffdf6; border-color: #e5cfa8; }
+
+.editor-pick-grid-block.league-pl { border-left-color: #126e5a; }
+.editor-pick-grid-block.league-laliga { border-left-color: #b26a00; }
+.editor-pick-grid-block.league-seriea { border-left-color: #1d4fa3; }
+.editor-pick-grid-block.league-ligue1 { border-left-color: #7a1fa2; }
+.editor-pick-grid-block.league-buli { border-left-color: #a32323; }
+.editor-pick-grid-block.league-ucl { border-left-color: #4a2d8a; }
+.editor-pick-grid-block.league-uel { border-left-color: #6b4e00; }
+.editor-pick-grid-block.league-f1 { border-left-color: #4a2d8a; }
+.editor-pick-grid-block.league-motogp { border-left-color: #0e6e8c; }
+.editor-pick-grid-block.league-nfl { border-left-color: #1f3a5f; }
+.editor-pick-grid-block.league-nba { border-left-color: #7a3b00; }
+.editor-pick-grid-block.league-nhl { border-left-color: #0f5b63; }
+.editor-pick-grid-block.league-mlb { border-left-color: #28418f; }
+.editor-pick-grid-block.league-mls { border-left-color: #0b5cab; }
+.editor-pick-grid-block.league-ufc { border-left-color: #8c1d1d; }
+
+.editor-pick-grid-block.live { border-left-color: var(--live); }
+
+.editor-pick-grid-block-league {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.editor-pick-grid-block-title {
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editor-pick-grid-block-meta {
+  font-size: 0.7rem;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.editor-pick-grid-now {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--now-line);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.editor-pick-grid-now-tag {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--now-line);
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.editor-pick-grid-overflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0;
+  min-height: 0;
+}
+
+.editor-pick-grid-overflow-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.editor-pick-grid-chip {
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  max-width: 16rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editor-pick-grid-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.editor-pick-grid-more { margin-left: auto; font-weight: 650; color: var(--accent); }
