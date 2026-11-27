@@ -46,14 +46,15 @@ jobs:
       - name: Restore cached guide snapshots
         # Guide data is generated, not committed (option B history cleanup).
         # Rebuild the deployable web tree offline from the latest snapshots.
+        # Picks live outside this cache (see refresh-epg): fetch them live so
+        # this job never redeploys a stale cached copy.
         uses: actions/cache/restore@v4
         with:
           path: |
             data/normalized
             web/data/uhf
-            web/data/editors-picks.json
-          key: guide-data-${{ github.run_id }}
-          restore-keys: guide-data-
+          key: guide-snapshots-${{ github.run_id }}
+          restore-keys: guide-snapshots-
 
       - name: Test report generation
         run: python3 -m unittest discover -s tests -p 'test_build_series_report.py' -v
@@ -70,6 +71,11 @@ jobs:
       - name: Rebuild deployable web data from cache
         run: |
           python3 scripts/build_web_data.py
+          if curl -sf --retry 3 --max-time 60 https://heywhatson.tv/data/editors-picks.json -o web/data/editors-picks.json; then
+            echo "live editors-picks.json fetched"
+          else
+            echo "::warning::live editors-picks.json fetch failed; trying committed copy"
+          fi
           if [[ -f web/data/editors-picks.json ]]; then
             python3 scripts/build_editor_picks_html.py
           else
