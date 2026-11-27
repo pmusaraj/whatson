@@ -1186,18 +1186,6 @@ function assignEditorPickLanes(rows) {
   return order;
 }
 
-function editorPickGridPeak(rows) {
-  const points = [];
-  for (const { pick } of rows) {
-    points.push([new Date(pick.startAt).getTime(), 1]);
-    points.push([new Date(pick.endAt).getTime(), -1]);
-  }
-  points.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
-  let current = 0, peak = 0;
-  for (const [, delta] of points) { current += delta; peak = Math.max(peak, current); }
-  return peak;
-}
-
 function formatGridTickTime(value) {
   return new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" }).format(new Date(value));
 }
@@ -1268,8 +1256,7 @@ function renderEditorPickGrid(picks) {
       ).join("") + `</div>`;
   }
   return `<div class="editor-pick-grid">`
-    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Now and soon</span>`
-    + `<span class="editor-pick-grid-peak">peak ${editorPickGridPeak(rows)} at once</span></div>`
+    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Now and soon</span></div>`
     + `<div class="editor-pick-grid-scroll"><div class="editor-pick-grid-inner">`
     + `<div class="editor-pick-grid-ticks">${ticks}</div>`
     + `<div class="editor-pick-grid-lanes">${lanesHtml}</div>`
@@ -1313,15 +1300,13 @@ function renderEditorPickRow({ pick, airings }) {
   const league = pickLeague(pick);
   const hero = editorPickHeroPending ? ' data-hero="true"' : "";
   editorPickHeroPending = false;
-  const timeRange = !pick.endAt ? formatTime(pick.startAt)
-    : status.kind === "later" ? `\u2013 ${formatTime(pick.endAt)}`
-    : `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}`;
+  const timeRange = status.kind === "later" || !pick.endAt ? "" : `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}`;
   return `
   <article class="editor-pick-result"${hero}>
     <div class="editor-pick-status-row">
       <span class="editor-pick-badge editor-pick-badge-${status.kind}">${status.kind === "live" ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>` : ""}${escapeHtml(status.label)}</span>
       ${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span>` : ""}
-      <span class="show-result-time">${timeRange}</span>
+      ${timeRange ? `<span class="show-result-time">${timeRange}</span>` : ""}
     </div>
     <div class="editor-pick-heading">
       <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>

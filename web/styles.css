@@ -1438,19 +1438,6 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   font-variant-numeric: tabular-nums;
 }
 
-.editor-pick-grid-peak {
-  margin-left: auto;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-soft);
-  padding: 0.1rem 0.5rem;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-
 .editor-pick-grid-scroll { overflow-x: auto; }
 
 .editor-pick-grid-inner { position: relative; min-width: 620px; }
@@ -1505,7 +1492,9 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   cursor: pointer;
 }
 
-.editor-pick-grid-block:hover { box-shadow: 0 4px 18px rgb(44 36 24 / 18%); z-index: 3; }
+.editor-pick-grid-block:hover { box-shadow: 0 2px 8px rgb(44 36 24 / 10%); z-index: 3; }
+.editor-pick-grid-block:hover,
+.editor-pick-grid-block:hover .editor-pick-grid-block-title { text-decoration: none; }
 
 .editor-pick-grid-block.live { background: #fffdf6; border-color: #e5cfa8; }
 
@@ -1536,6 +1525,8 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 }
 
 .editor-pick-grid-block-title {
+  display: block;
+  padding: 5px;
   font-size: 0.82rem;
   font-weight: 650;
   line-height: 1.25;
