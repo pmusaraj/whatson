@@ -269,6 +269,7 @@ async function loadGuideData() {
   state.editorPicks = Array.isArray(picks.picks)
     ? picks.picks.filter((pick) => pick && typeof pick.country === "string" && typeof pick.title === "string" && typeof pick.startAt === "string")
     : [];
+  state.editorPicksGeneratedAt = typeof picks.generatedAt === "string" ? picks.generatedAt : null;
   await loadCountryPayloads();
 }
 
@@ -1059,9 +1060,54 @@ function editorPickLeagueRank(pick) {
   return rank < 0 ? 5 : rank;
 }
 
-function editorPickChannel({ countryData, channel, index, key }) {
-  return `<button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">
-    <span aria-hidden="true">${flagEmoji(countryData.country)}</span> ${escapeHtml(channel.name)}
+const LEAGUE_CHIPS = [
+  ["Premier League", "pl", /\bpremier league\b/i],
+  ["La Liga", "laliga", /\bla\s*liga\b/i],
+  ["Serie A", "seriea", /\bserie a\b/i],
+  ["Ligue 1", "ligue1", /\bligue 1\b/i],
+  ["Bundesliga", "buli", /\bbundesliga\b/i],
+  ["Champions League", "ucl", /\bchampions league\b/i],
+  ["Europa League", "uel", /\beuropa league\b/i],
+  ["Formula 1", "f1", /\bformula 1\b|\bf1\b/i],
+  ["MotoGP", "motogp", /\bmotogp\b/i],
+  ["NFL", "nfl", /\bnfl\b/i],
+  ["NBA", "nba", /\bnba\b/i],
+  ["NHL", "nhl", /\bnhl\b/i],
+  ["MLB", "mlb", /\bmlb\b/i],
+  ["MLS", "mls", /\bmls\b/i],
+  ["UFC", "ufc", /\bufc\b/i],
+];
+
+function pickLeague(pick) {
+  const text = [pick.title, pick.subtitle, pick.competition, pick.sportType].filter(Boolean).join(" ");
+  for (const [label, cls, pattern] of LEAGUE_CHIPS) {
+    if (pattern.test(text)) return { label, cls };
+  }
+  if (pick.competition) return { label: pick.competition, cls: "generic" };
+  return null;
+}
+
+function pickStatus(pick, now) {
+  const nowMs = now.getTime();
+  const startMs = new Date(pick.startAt).getTime();
+  const endMs = new Date(pick.endAt).getTime();
+  if (startMs <= nowMs && (Number.isNaN(endMs) || nowMs < endMs)) return { kind: "live", label: "Live" };
+  const mins = Math.max(0, Math.round((startMs - nowMs) / 60000));
+  if (mins < 360) {
+    if (mins < 60) return { kind: "soon", label: `in ${mins}m` };
+    const hours = Math.floor(mins / 60), rest = mins % 60;
+    return { kind: "soon", label: rest ? `in ${hours}h ${rest}m` : `in ${hours}h` };
+  }
+  const time = formatTime(pick.startAt);
+  const start = new Date(pick.startAt);
+  const utcDay = (date) => Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  if (Math.round((utcDay(start) - utcDay(now)) / 86400000) <= 1) return { kind: "later", label: `Tomorrow \u00b7 ${time}` };
+  const weekday = start.toLocaleDateString("en-GB", { weekday: "short", timeZone: "UTC" });
+  return { kind: "later", label: `${weekday} \u00b7 ${time}` };
+}
+
+function editorPickChannel({ channel, index, key }) {
+  return `<button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">${escapeHtml(channel.name)}
   </button>`;
 }
 
@@ -1079,24 +1125,60 @@ function renderTimedEvents(events, startAt, renderEvent, emptyMessage) {
   return started.map(renderEvent).join("") + marker + upcoming.map(renderEvent).join("");
 }
 
+function editorPickCountryGroups(airings) {
+  const groups = [];
+  for (const airing of airings) {
+    const last = groups[groups.length - 1];
+    if (last && last.country === airing.countryData.country) last.items.push(airing);
+    else groups.push({ country: airing.countryData.country, items: [airing] });
+  }
+  return groups;
+}
+
+function renderEditorPickChannels(airings, pickTitle) {
+  const renderGroups = (list) => editorPickCountryGroups(list).map(({ country, items }) =>
+    `<span class="editor-pick-country-group"><span class="editor-pick-flag" aria-hidden="true">${flagEmoji(country)}</span>${items.map(editorPickChannel).join("")}</span>`
+  ).join("");
+  const shown = airings.slice(0, 6);
+  const rest = airings.slice(6);
+  return renderGroups(shown) + (rest.length ? `<details class="editor-pick-more"><summary aria-label="More channels for ${escapeHtml(pickTitle)}">more</summary>
+    <div class="editor-pick-channels">${renderGroups(rest)}</div>
+  </details>` : "");
+}
+
+function editorPicksMetaLine(picks) {
+  const count = `${picks.length} pick${picks.length === 1 ? "" : "s"}`;
+  const updated = state.editorPicksGeneratedAt ? ` \u00b7 updated ${formatTime(state.editorPicksGeneratedAt)}` : "";
+  return `<p class="editor-picks-meta">${escapeHtml(`${count}${updated} \u00b7 refreshes throughout the day`)}</p>`;
+}
+
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
   els.editorPicks.hidden = false;
-  els.editorPicksList.innerHTML = renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => `
-    <article class="editor-pick-result">
+  let heroPending = true;
+  const updated = state.editorPicksGeneratedAt ? ` Last updated ${formatTime(state.editorPicksGeneratedAt)} \u00b7 picks refresh throughout the day.` : "";
+  els.editorPicksList.innerHTML = editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, ({ pick, airings }) => {
+    const status = pickStatus(pick, state.now);
+    const league = pickLeague(pick);
+    const hero = heroPending ? ' data-hero="true"' : "";
+    heroPending = false;
+    const timeRange = pick.endAt ? `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}` : formatTime(pick.startAt);
+    return `
+    <article class="editor-pick-result"${hero}>
+      <div class="editor-pick-status-row">
+        <span class="editor-pick-badge editor-pick-badge-${status.kind}">${status.kind === "live" ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>` : ""}${escapeHtml(status.label)}</span>
+        ${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span>` : ""}
+        <span class="show-result-time">${timeRange}</span>
+      </div>
       <div class="editor-pick-heading">
-        <span class="show-result-time">${formatTime(pick.startAt)}</span>
         <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
         <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}">${escapeHtml(pick.title)}</button>
       </div>
       <div class="editor-pick-channels" aria-label="Available channels">
-        ${airings.slice(0, 6).map(editorPickChannel).join("")}
-        ${airings.length > 6 ? `<details class="editor-pick-more"><summary aria-label="More channels for ${escapeHtml(pick.title)}">more</summary>
-          <div class="editor-pick-channels">${airings.slice(6).map(editorPickChannel).join("")}</div>
-        </details>` : ""}
+        ${renderEditorPickChannels(airings, pick.title)}
       </div>
     </article>
-  `, "No upcoming editor’s picks in the current data.");
+  `}, `No upcoming editor’s picks right now \u2014 the next slate lands soon.${updated}`);
 }
 
 function setLiveSportsOpen(open) {

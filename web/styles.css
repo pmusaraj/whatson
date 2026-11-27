@@ -278,9 +278,117 @@ body[data-live-sports-open="true"] .editor-picks {
   border: 1px solid var(--border);
 }
 
+.editor-picks-meta {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.editor-pick-result[data-hero="true"] {
+  border-left: 3px solid var(--accent);
+  background: var(--surface-strong);
+  padding: 0.85rem;
+}
+
+.editor-pick-result[data-hero="true"] .show-result-title {
+  font-size: 1.15rem;
+}
+
+.editor-pick-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.editor-pick-status-row .show-result-time {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.editor-pick-badge,
+.editor-pick-league {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.editor-pick-badge-later {
+  color: var(--muted);
+}
+
+.editor-pick-badge-soon {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.editor-pick-badge-live {
+  color: var(--live);
+  background: var(--live-soft);
+  border-color: var(--live);
+}
+
+.editor-pick-live-dot {
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  border-radius: 50%;
+  background: var(--live);
+  margin-right: 0.35em;
+  animation: editor-pick-pulse 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .editor-pick-live-dot {
+    animation: none;
+  }
+}
+
+@keyframes editor-pick-pulse {
+  50% { opacity: 0.35; }
+}
+
+.editor-pick-league {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: transparent;
+}
+
+.editor-pick-league-laliga { color: #8a4b00; background: #fdf0dc; }
+.editor-pick-league-seriea { color: #1d4fa3; background: #e5eefc; }
+.editor-pick-league-ligue1 { color: #7a1fa2; background: #f3e8fa; }
+.editor-pick-league-buli { color: #a32323; background: #fcecec; }
+.editor-pick-league-ucl { color: #4a2d8a; background: #ece5f8; }
+.editor-pick-league-uel { color: #6b4e00; background: #f7ecd0; }
+.editor-pick-league-f1 { color: #4a2d8a; background: #ece5f8; }
+.editor-pick-league-motogp { color: #0e6e8c; background: #e2f2f7; }
+.editor-pick-league-nfl { color: #1f3a5f; background: #e6edf5; }
+.editor-pick-league-nba { color: #7a3b00; background: #fbeedd; }
+.editor-pick-league-nhl { color: #0f5b63; background: #e2f1f2; }
+.editor-pick-league-mlb { color: #28418f; background: #e8edfb; }
+.editor-pick-league-mls { color: #0b5cab; background: #e3effa; }
+.editor-pick-league-ufc { color: #8c1d1d; background: #fae7e7; }
+
+.editor-pick-country-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.editor-pick-flag {
+  font-size: 0.8rem;
+}
+
 .editor-pick-heading {
   display: grid;
-  grid-template-columns: 5rem minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 0.7rem;
   align-items: baseline;
 }
@@ -1138,10 +1246,10 @@ html body .event-time-heading {
 .picker-panel .flag-button { padding-block: 0.048rem; }
 
 .editor-picks .editor-pick-heading:has(.editor-pick-sport) {
-  grid-template-columns: 5rem 1.5rem minmax(0, 1fr);
+  grid-template-columns: 1.5rem minmax(0, 1fr);
 }
 .editor-pick-sport { text-align: center; }
-.editor-picks .editor-pick-channels { padding-left: 7.9rem; }
+.editor-picks .editor-pick-channels { padding-left: 2.2rem; }
 
 .layout { padding-block: 1rem; }
 html body .guide-panel {

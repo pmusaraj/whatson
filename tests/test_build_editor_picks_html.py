@@ -26,7 +26,7 @@ class EditorPicksHtmlTest(unittest.TestCase):
         result = picks_html.build_html(template, picks, now)
         self.assertLess(result.index('>Early</strong>'), result.index('>Late &lt;event&gt;</strong>'))
         self.assertIn("Sports &amp; TV", result)
-        self.assertIn("Sep 14, 13:00 UTC", result)
+        self.assertIn("Sep 14, 13:00 \u2013 18:00 UTC", result)
         self.assertNotIn(">Series</strong>", result)
         self.assertNotIn(">Expired</strong>", result)
         self.assertEqual(result.count('class="editor-pick-result"'), 2)
