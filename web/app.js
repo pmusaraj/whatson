@@ -1177,9 +1177,18 @@ function editorPickGridPeak(rows) {
 
 function renderEditorPickGrid(picks) {
   const nowMs = state.now.getTime();
-  const winStart = nowMs - EDITOR_PICK_GRID_BACK_MS;
-  const winEnd = nowMs + EDITOR_PICK_GRID_AHEAD_MS;
-  const inWindow = picks.filter(({ pick }) =>
+  const horizonEnd = nowMs + EDITOR_PICK_GRID_AHEAD_MS;
+  const horizonStart = nowMs - EDITOR_PICK_GRID_BACK_MS;
+  const upcoming = picks.filter(({ pick }) =>
+    new Date(pick.startAt).getTime() < horizonEnd && new Date(pick.endAt).getTime() > horizonStart);
+  if (!upcoming.length) return "";
+  // Fit the window to the events instead of always spanning the full horizon,
+  // so a sparse slate does not render as mostly empty space.
+  const starts = upcoming.map(({ pick }) => new Date(pick.startAt).getTime());
+  const ends = upcoming.map(({ pick }) => new Date(pick.endAt).getTime());
+  const winStart = Math.max(Math.min(nowMs, Math.min(...starts)), nowMs - 3 * 3600000);
+  const winEnd = Math.min(Math.max(Math.max(...ends) + 15 * 60000, nowMs + 30 * 60000), horizonEnd);
+  const inWindow = upcoming.filter(({ pick }) =>
     new Date(pick.startAt).getTime() < winEnd && new Date(pick.endAt).getTime() > winStart);
   if (!inWindow.length) return "";
   const rows = assignEditorPickLanes(inWindow);
@@ -1189,7 +1198,8 @@ function renderEditorPickGrid(picks) {
   const extra = rows.filter((row) => row.lane >= EDITOR_PICK_GRID_MAX_LANES);
   const laneCount = Math.max(...shown.map((row) => row.lane)) + 1;
   let ticks = "", lines = "";
-  for (let tick = Math.ceil(winStart / 3600000) * 3600000; tick <= winEnd; tick += 3600000) {
+  const tickStep = (winEnd - winStart) > 6 * 3600000 ? 3600000 : 1800000;
+  for (let tick = Math.ceil(winStart / tickStep) * tickStep; tick <= winEnd; tick += tickStep) {
     ticks += `<span class="editor-pick-grid-tick" style="left:${pct(tick)}%">${escapeHtml(formatTime(new Date(tick)))}</span>`;
     lines += `<span class="editor-pick-grid-line" style="left:${pct(tick)}%"></span>`;
   }
@@ -1223,7 +1233,7 @@ function renderEditorPickGrid(picks) {
   }
   const laterCount = picks.length - inWindow.length;
   return `<div class="editor-pick-grid">`
-    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Next 12 hours</span>`
+    + `<div class="editor-pick-grid-head"><span class="editor-pick-grid-title">Coming up</span>`
     + `<span class="editor-pick-grid-window">${escapeHtml(formatTime(new Date(winStart)))} – ${escapeHtml(formatTime(new Date(winEnd)))}</span>`
     + `<span class="editor-pick-grid-peak">peak ${editorPickGridPeak(rows)} at once</span></div>`
     + `<div class="editor-pick-grid-scroll"><div class="editor-pick-grid-inner">`
@@ -1232,7 +1242,7 @@ function renderEditorPickGrid(picks) {
     + `${lines}<div class="editor-pick-grid-now" style="left:${pct(nowMs)}%"><span class="editor-pick-grid-now-tag">now</span></div>`
     + `</div></div>`
     + `<div class="editor-pick-grid-foot"><span>Blocks positioned by actual start/end times</span>`
-    + (laterCount ? `<span class="editor-pick-grid-more">+ ${laterCount} more beyond 12h in the list below</span>` : "")
+    + (laterCount ? `<span class="editor-pick-grid-more">+ ${laterCount} more in the list below</span>` : "")
     + `</div></div>`;
 }
 
