@@ -37,8 +37,8 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: web/data/editors-picks.json
-          key: guide-data-${{ github.run_id }}
-          restore-keys: guide-data-
+          key: editor-picks-${{ github.run_id }}
+          restore-keys: editor-picks-
 
       - name: Fetch live guide payloads
         run: |
@@ -100,7 +100,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: web/data/editors-picks.json
-          key: guide-data-${{ github.run_id }}
+          key: editor-picks-${{ github.run_id }}
 
       - name: Deploy to Cloudflare Workers
         if: ${{ !inputs.dry_run }}

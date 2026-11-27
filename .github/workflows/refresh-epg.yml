@@ -52,13 +52,16 @@ jobs:
         with:
           # Previous grab output: fallback when a source grab fails, and the
           # inputs for the offline web/data rebuild. web/data/series.json is
-          # tracked in git and intentionally not cached.
+          # tracked in git and intentionally not cached. Editor picks are
+          # owned by the separate Editor picks workflow, so picks are fetched
+          # live before deploy (below) instead of being cached here: sharing
+          # one cache key prefix let this job redeploy stale picks over fresh
+          # ones (guide-data-* collision).
           path: |
             data/normalized
             web/data/uhf
-            web/data/editors-picks.json
-          key: guide-data-${{ github.run_id }}
-          restore-keys: guide-data-
+          key: guide-snapshots-${{ github.run_id }}
+          restore-keys: guide-snapshots-
 
       - name: Install iptv-org EPG grabber
         run: |
@@ -68,8 +71,9 @@ jobs:
       - name: Refresh guide data
         run: |
           # Editor picks are owned by the separate Editor picks workflow,
-          # which reads the deployed payloads; the cached picks restored
-          # above still ship with this deploy.
+          # which reads the deployed payloads. This job never rewrites picks;
+          # the live picks file is fetched below so this deploy does not
+          # clobber fresh picks with the stale copy committed in git.
           args=(--skip-editor-picks)
           if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi
           python3 scripts/refresh_epg.py "${args[@]}"
@@ -79,6 +83,17 @@ jobs:
           args=()
           if [[ -n "${{ inputs.countries }}" ]]; then args+=(--countries ${{ inputs.countries }}); fi
           python3 scripts/refresh_uhf_epg.py "${args[@]}"
+
+      - name: Fetch live editor picks
+        run: |
+          # Ship the currently deployed (fresh) picks instead of the stale
+          # copy committed in git. Picks refresh 4x daily via the Editor
+          # picks workflow; this job must not roll them back.
+          if curl -sf --retry 3 --max-time 60 https://heywhatson.tv/data/editors-picks.json -o web/data/editors-picks.json; then
+            echo "live editors-picks.json fetched"
+          else
+            echo "::warning::live editors-picks.json fetch failed; shipping committed copy"
+          fi
 
       - name: Render picks and series pages
         run: |
@@ -121,8 +136,7 @@ jobs:
           path: |
             data/normalized
             web/data/uhf
-            web/data/editors-picks.json
-          key: guide-data-${{ github.run_id }}
+          key: guide-snapshots-${{ github.run_id }}
 
       - name: Deploy to Cloudflare Workers
         if: ${{ !inputs.dry_run }}
