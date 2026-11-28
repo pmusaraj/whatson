@@ -260,10 +260,12 @@ async function loadJson(url) {
 }
 
 async function loadGuideData() {
-  const [data, picks] = await Promise.all([
+  const [data, picks, logos] = await Promise.all([
     loadJson("data/countries.json"),
     loadJson("data/editors-picks.json").catch(() => ({ picks: [] })),
+    loadJson("data/team-logos.json").catch(() => ({})),
   ]);
+  state.teamLogos = logos && typeof logos === "object" ? logos : {};
   state.countries = data.countries;
   state.generatedAt = data.generatedAt;
   state.editorPicks = Array.isArray(picks.picks)
@@ -1083,6 +1085,11 @@ function pickLeague(pick) {
   for (const [label, cls, pattern] of LEAGUE_CHIPS) {
     if (pattern.test(text)) return { label, cls };
   }
+  const knownSports = ["cricket", "rugby", "tennis", "golf", "cycling", "boxing", "mma", "hockey", "basketball", "baseball", "football", "soccer", "darts", "snooker", "athletics", "swimming", "skiing", "surfing", "sailing", "triathlon", "wrestling", "handball", "volleyball", "badminton", "squash"];
+  for (const category of pick.categories || []) {
+    if (knownSports.includes(String(category).toLowerCase())) return { label: String(category), cls: "generic" };
+  }
+  if (/\bt20\b|\bashes\b/i.test(text)) return { label: "Cricket", cls: "generic" };
   if (pick.competition) return { label: pick.competition, cls: "generic" };
   if (pick.sportType) return { label: pick.sportType, cls: "generic" };
   return null;
@@ -1241,6 +1248,11 @@ function editorPicksMetaLine(picks) {
 
 const EDITOR_PICK_CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#4a2d8a", "#0e6e8c", "#7a3b00"];
 
+function teamLogoUrl(name) {
+  const key = String(name || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  return (state.teamLogos || {})[key] || null;
+}
+
 function editorPickDayLabel(startAt, now) {
   const start = new Date(startAt);
   const day = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
@@ -1257,13 +1269,16 @@ function editorPickCrest(name) {
     : name.slice(0, 3).toUpperCase();
   let hash = 0;
   for (const char of name) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
-  return `<span class="editor-pick-crest" aria-hidden="true" style="background:${EDITOR_PICK_CREST_COLORS[hash % EDITOR_PICK_CREST_COLORS.length]}">${escapeHtml(initials)}</span>`;
+  const logo = teamLogoUrl(name);
+  const img = logo ? `<img class="editor-pick-crest-logo" src="${escapeHtml(logo)}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  return `<span class="editor-pick-crest" aria-hidden="true" style="background:${EDITOR_PICK_CREST_COLORS[hash % EDITOR_PICK_CREST_COLORS.length]}">${escapeHtml(initials)}${img}</span>`;
 }
 
 function editorPickTeams(pick) {
   const parts = pickDisplayTitle(pick).split(/\s+vs\.?\s+|\s+v\s+/i);
   if (parts.length !== 2) return null;
-  const [home, away] = parts.map((part) => part.trim());
+  const home = parts[0].trim();
+  const away = parts[1].split(/\s+[\u2014\u2013-]\s+/)[0].trim();
   return home && away ? { home, away } : null;
 }
 
@@ -1316,7 +1331,6 @@ function renderEditorPickList(rows) {
 }
 
 function renderEditorPickRow({ pick, airings }) {
-  const league = pickLeague(pick);
   const teams = editorPickTeams(pick);
   const first = airings[0].channel.name;
   const extra = airings.length > 1 ? ` +${airings.length - 1} more` : "";
@@ -1326,7 +1340,6 @@ function renderEditorPickRow({ pick, airings }) {
     : `<div class="editor-pick-team"><span class="editor-pick-team-name">${escapeHtml(pickDisplayTitle(pick))}</span></div>`;
   return `
     <article class="editor-pick-result">
-      <div class="editor-pick-context">${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span> · ` : ""}${airings.length} broadcaster${airings.length === 1 ? "" : "s"}</div>
       <div class="editor-pick-fixture">
         <div class="editor-pick-teams">${teamRows}</div>
         <div class="editor-pick-kickoff">${escapeHtml(formatGridTickTime(new Date(pick.startAt)))}</div>

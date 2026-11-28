@@ -42,8 +42,8 @@ class EditorPicksHtmlTest(unittest.TestCase):
         ranked = picks_html.render_picks([{**pick, "title": f"{league} United vs {league} City",
                                            "competition": league, "channels": channels}
                                           for league in ["Bundesliga", "Ligue 1", "Serie A", "La Liga", "Premier League", "LaLiga Hypermotion"]], now)
-        self.assertLess(ranked.index(">Premier League<"), ranked.index(">La Liga<"))
-        self.assertLess(ranked.index(">Serie A<"), ranked.index(">Ligue 1<"))
+        self.assertLess(ranked.index("Premier League City"), ranked.index("La Liga City"))
+        self.assertLess(ranked.index("Serie A City"), ranked.index("Ligue 1 City"))
         self.assertNotIn("Hypermotion", ranked)
         self.assertEqual(ranked.count('class="editor-pick-watch"'), 5)
         self.assertEqual(ranked.count('+8 more'), 5)
