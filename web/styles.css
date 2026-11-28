@@ -1469,7 +1469,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 
 .editor-pick-grid-lane {
   position: relative;
-  min-height: 5.25rem;
+  min-height: 6rem;
   border-top: 1px dashed var(--border);
 }
 
@@ -1489,11 +1489,11 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   position: absolute;
   top: 0.3rem;
   bottom: 0.3rem;
-  min-width: 7rem;
+  min-width: 9rem;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  align-content: start;
-  gap: 0.15rem;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  align-content: stretch;
+  gap: 0.2rem;
   text-align: left;
   font: inherit;
   color: var(--text);
@@ -1550,7 +1550,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   line-height: 1.3;
   white-space: normal;
   overflow: hidden;
-  max-height: 2.6em;
+  max-height: 3.9em;
 }
 
 #editor-picks .editor-pick-grid-block-meta {
@@ -1754,9 +1754,9 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-watch strong { color: var(--text); }
 
 @media (max-width: 860px) {
-  .editor-pick-grid-lanes { max-height: 22rem; }
+  .editor-pick-grid-lanes { max-height: 24rem; }
+  .editor-pick-grid-lane { min-height: 6.5rem; }
   .editor-pick-grid-inner { min-width: 720px; }
-  .editor-pick-grid-lane { min-height: 5.5rem; }
   .editor-pick-grid-tick:nth-of-type(even) { display: none; }
   #editor-picks .editor-pick-grid-block-meta { font-size: 0.68rem; }
 }
