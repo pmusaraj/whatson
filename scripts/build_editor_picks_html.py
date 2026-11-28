@@ -175,8 +175,10 @@ def render_picks(picks, now, generated_at=None):
         else:
             team_rows = f'<div class="editor-pick-team"><span class="editor-pick-team-name">{escape(display_title(pick))}</span></div>'
         extra = f" +{len(names) - 1} more" if len(names) > 1 else ""
+        league_row = (f'  <div class="editor-pick-league-row">{league_html}</div>\n' if league else "")
         events.append(((start, league_rank(pick)), day_label(start, now), (
             '<article class="editor-pick-result">\n'
+            f'{league_row}'
             '  <div class="editor-pick-fixture">\n'
             f'    <div class="editor-pick-teams">{team_rows}</div>\n'
             f'    <div class="editor-pick-kickoff">{start:%H:%M}</div>\n'
