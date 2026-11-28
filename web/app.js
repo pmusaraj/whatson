@@ -1103,7 +1103,9 @@ function pickDisplayTitle(pick) {
   let title = pick.title;
   for (const name of labels) {
     const label = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const stripped = title.replace(new RegExp(`\\s*(?:\u2014|\u2013|-)\\s*${label}$|\\s*\\(${label}\\)$`, "i"), "");
+    const stripped = title
+      .replace(new RegExp(`^${label}\\s*[:\\u2014\\u2013-]\\s*`, "i"), "")
+      .replace(new RegExp(`\\s*(?:\u2014|\u2013|-)\\s*${label}$|\\s*\\(${label}\\)$`, "i"), "");
     if (stripped !== title) return stripped;
   }
   return title;
