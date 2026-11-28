@@ -1729,15 +1729,15 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-watch strong { color: var(--text); }
 
 @media (max-width: 860px) {
-  .editor-pick-grid-inner { min-width: 0; }
+  .editor-pick-grid-inner { min-width: 720px; }
   .editor-pick-grid-lane { min-height: 5.5rem; }
   .editor-pick-grid-block { min-width: 0; }
   .editor-pick-grid-tick:nth-of-type(even) { display: none; }
   .editor-pick-grid-block-title {
     white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    display: block;
+    max-height: 2.5em;
+    line-height: 1.25;
   }
   .editor-pick-grid-block-meta { font-size: 0.68rem; }
 }
