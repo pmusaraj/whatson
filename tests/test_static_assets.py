@@ -6,6 +6,7 @@ from pathlib import Path
 class StaticAssetsTest(unittest.TestCase):
     def test_editor_picks_render_all_events_and_distinct_channel_pills(self):
         script = r"""
+process.env.TZ = 'UTC';
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
@@ -85,6 +86,7 @@ assert.ok(context.els.editorPicksList.innerHTML.includes('No upcoming editor’s
 
     def test_editor_picks_grid_covers_window_and_list_shows_only_later(self):
         script = r"""
+process.env.TZ = 'UTC';
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
@@ -193,6 +195,7 @@ assert.ok(html.includes('No events'));
 
     def test_mobile_sidebar_dismisses_only_on_noninteractive_outside_clicks(self):
         script = r"""
+process.env.TZ = 'UTC';
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');

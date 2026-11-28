@@ -1084,14 +1084,22 @@ function pickLeague(pick) {
     if (pattern.test(text)) return { label, cls };
   }
   if (pick.competition) return { label: pick.competition, cls: "generic" };
+  if (pick.sportType) return { label: pick.sportType, cls: "generic" };
   return null;
 }
 
 function pickDisplayTitle(pick) {
+  const labels = [];
+  if (pick.competition) labels.push(pick.competition);
   const league = pickLeague(pick);
-  if (!league) return pick.title;
-  const label = league.label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return pick.title.replace(new RegExp(`\\s*(?:\u2014|\u2013|-)\\s*${label}$|\\s*\\(${label}\\)$`, "i"), "");
+  if (league && !labels.includes(league.label)) labels.push(league.label);
+  let title = pick.title;
+  for (const name of labels) {
+    const label = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const stripped = title.replace(new RegExp(`\\s*(?:\u2014|\u2013|-)\\s*${label}$|\\s*\\(${label}\\)$`, "i"), "");
+    if (stripped !== title) return stripped;
+  }
+  return title;
 }
 
 function editorPickAiringsAttr(airings) {
@@ -1235,11 +1243,11 @@ const EDITOR_PICK_CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#
 
 function editorPickDayLabel(startAt, now) {
   const start = new Date(startAt);
-  const diffDays = Math.round((Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), start.getUTCDate())
-    - Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())) / 86400000);
+  const day = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+  const diffDays = Math.round((day(start) - day(now)) / 86400000);
   if (diffDays <= 0) return "Tonight";
   if (diffDays === 1) return "Tomorrow";
-  return start.toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" });
+  return start.toLocaleDateString("en-GB", { weekday: "long" });
 }
 
 function editorPickCrest(name) {
