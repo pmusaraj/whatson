@@ -1344,6 +1344,8 @@ function renderEditorPickList(rows) {
 }
 
 function renderEditorPickRow({ pick, airings }) {
+  const league = pickLeague(pick);
+  const leagueRow = league ? `<div class="editor-pick-league-row"><span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span></div>` : "";
   const teams = editorPickTeams(pick);
   const first = airings[0].channel.name;
   const extra = airings.length > 1 ? ` +${airings.length - 1} more` : "";
@@ -1353,6 +1355,7 @@ function renderEditorPickRow({ pick, airings }) {
     : `<div class="editor-pick-team"><span class="editor-pick-team-name">${escapeHtml(pickDisplayTitle(pick))}</span></div>`;
   return `
     <article class="editor-pick-result">
+      ${leagueRow}
       <div class="editor-pick-fixture">
         <div class="editor-pick-teams">${teamRows}</div>
         <div class="editor-pick-kickoff">${escapeHtml(formatGridTickTime(new Date(pick.startAt)))}</div>

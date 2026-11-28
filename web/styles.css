@@ -1491,15 +1491,18 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   bottom: 0.3rem;
   min-width: 3.5rem;
   display: grid;
+  grid-template-rows: auto 1fr auto;
   align-content: start;
-  gap: 0.1rem;
+  gap: 0.15rem;
   text-align: left;
   font: inherit;
   color: var(--text);
-  background: var(--surface);
+  background: var(--surface-strong);
+  background: color-mix(in srgb, var(--surface-strong) 50%, transparent);
   border: 1px solid var(--border);
   border-left: 4px solid var(--accent);
-  padding: 0.35rem 0.6rem 0.35rem 0.75rem;
+  border-radius: 0;
+  padding: 0.4rem 0.6rem;
   overflow: hidden;
   cursor: pointer;
 }
@@ -1508,7 +1511,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-grid-block:hover,
 .editor-pick-grid-block:hover .editor-pick-grid-block-title { text-decoration: none; }
 
-.editor-pick-grid-block.live { background: #fffdf6; border-color: #e5cfa8; }
+.editor-pick-grid-block.live { border-color: #e5cfa8; }
 
 .editor-pick-grid-block.league-pl { border-left-color: #126e5a; }
 .editor-pick-grid-block.league-laliga { border-left-color: #b26a00; }
@@ -1529,11 +1532,15 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-grid-block.live { border-left-color: var(--live); }
 
 .editor-pick-grid-block-league {
+  display: block;
+  min-height: 1rem;
   font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .editor-pick-grid-block-title {
@@ -1548,9 +1555,12 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 }
 
 .editor-pick-grid-block-meta {
+  display: block;
   font-size: 0.7rem;
   color: var(--muted);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1650,6 +1660,8 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   overflow: hidden;
   margin-bottom: 0.6rem;
 }
+
+.editor-pick-league-row { margin-bottom: 0.45rem; }
 
 .editor-pick-day-head {
   padding: 0.6rem 0.9rem;
