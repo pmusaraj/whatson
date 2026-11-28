@@ -2,7 +2,9 @@
 """Prerender editor picks for readers that have not run JavaScript."""
 
 import json
+import re
 import sys
+import unicodedata
 from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
@@ -42,6 +44,15 @@ def pick_league(pick):
     for label, cls, pattern in LEAGUE_CHIPS:
         if re.search(pattern, text, re.I):
             return label, cls
+    known = {"cricket", "rugby", "tennis", "golf", "cycling", "boxing", "mma", "hockey",
+             "basketball", "baseball", "football", "soccer", "darts", "snooker",
+             "athletics", "swimming", "skiing", "surfing", "sailing", "triathlon",
+             "wrestling", "handball", "volleyball", "badminton", "squash"}
+    for category in pick.get("categories") or []:
+        if str(category).lower() in known:
+            return str(category), "generic"
+    if re.search(r"\bt20\b|\bashes\b", text, re.I):
+        return "Cricket", "generic"
     if pick.get("competition"):
         return pick["competition"], "generic"
     if pick.get("sportType"):
@@ -61,6 +72,29 @@ def display_title(pick):
 CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#4a2d8a", "#0e6e8c", "#7a3b00"]
 
 
+def _normalize_team(name):
+    text = unicodedata.normalize("NFD", str(name or ""))
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", text.lower())).strip()
+
+
+def _team_logos():
+    global _TEAM_LOGOS_CACHE
+    try:
+        return _TEAM_LOGOS_CACHE
+    except NameError:
+        pass
+    try:
+        _TEAM_LOGOS_CACHE = json.loads((ROOT / "web" / "data" / "team-logos.json").read_text(encoding="utf-8"))
+    except OSError:
+        _TEAM_LOGOS_CACHE = {}
+    return _TEAM_LOGOS_CACHE
+
+
+def team_logo(name):
+    return _team_logos().get(_normalize_team(name))
+
+
 def crest(name):
     import re
     words = [word for word in re.split(r"\s+", name) if word]
@@ -68,8 +102,10 @@ def crest(name):
     hashed = 0
     for char in name:
         hashed = (hashed * 31 + ord(char)) % (2 ** 32)
-    return f'<span class="editor-pick-crest">{escape(initials)}</span>'.replace(
-        'class="editor-pick-crest"', f'class="editor-pick-crest" style="background:{CREST_COLORS[hashed % len(CREST_COLORS)]}"')
+    logo = team_logo(name)
+    img = f'<img class="editor-pick-crest-logo" src="{escape(logo)}" alt="" loading="lazy" onerror="this.remove()">' if logo else ""
+    return (f'<span class="editor-pick-crest" style="background:{CREST_COLORS[hashed % len(CREST_COLORS)]}">'
+            f'{escape(initials)}{img}</span>')
 
 
 def split_teams(pick):
@@ -77,7 +113,8 @@ def split_teams(pick):
     parts = re.split(r"\s+vs\.?\s+|\s+v\s+", display_title(pick), flags=re.I)
     if len(parts) != 2:
         return None
-    home, away = (part.strip() for part in parts)
+    home = parts[0].strip()
+    away = re.split(r"\s+[\u2014\u2013-]\s+", parts[1].strip())[0].strip()
     return (home, away) if home and away else None
 
 
@@ -123,7 +160,6 @@ def render_picks(picks, now, generated_at=None):
         extra = f" +{len(names) - 1} more" if len(names) > 1 else ""
         events.append(((start, league_rank(pick)), day_label(start, now), (
             '<article class="editor-pick-result">\n'
-            f'  <div class="editor-pick-context">{league_html + " \u00b7 " if league else ""}{len(names)} broadcaster{"s" if len(names) != 1 else ""}</div>\n'
             '  <div class="editor-pick-fixture">\n'
             f'    <div class="editor-pick-teams">{team_rows}</div>\n'
             f'    <div class="editor-pick-kickoff">{start:%H:%M}</div>\n'

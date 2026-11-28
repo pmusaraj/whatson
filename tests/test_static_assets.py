@@ -137,6 +137,30 @@ assert.ok(gridOnly.includes('Everything upcoming is in the grid above.'));
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
 
+    def test_editor_pick_team_logos_fall_back_to_monograms(self):
+        script = r"""
+process.env.TZ = 'UTC';
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const app = fs.readFileSync('web/app.js', 'utf8');
+const context = {
+  state: { teamLogos: { 'nottingham forest': 'https://example.com/n.png' } },
+  escapeHtml: value => String(value ?? ''),
+};
+vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('const EDITOR_PICK_CREST_COLORS'), app.indexOf('function renderEditorPicks')), context);
+const logo = vm.runInContext('editorPickCrest("Nottingham Forest")', context);
+assert.ok(logo.includes('<img class="editor-pick-crest-logo"'));
+assert.ok(logo.includes('https://example.com/n.png'));
+assert.ok(logo.includes('onerror="this.remove()"'));
+const mono = vm.runInContext('editorPickCrest("Nowhere FC")', context);
+assert.ok(!mono.includes('<img'));
+assert.ok(mono.includes('>N</span>') || mono.includes('NF</span>'));
+assert.equal(vm.runInContext('teamLogoUrl("  NOTTINGHAM forest!! ")', context), 'https://example.com/n.png');
+"""
+        subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
+
     def test_times_on_other_local_dates_include_the_date(self):
         subprocess.run(['node', '-e', r"""
 const assert = require('node:assert/strict');
