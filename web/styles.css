@@ -1469,7 +1469,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 
 .editor-pick-grid-lane {
   position: relative;
-  min-height: 4.2rem;
+  min-height: 5.25rem;
   border-top: 1px dashed var(--border);
 }
 
@@ -1768,4 +1768,29 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 861px) {
+  .editor-pick-day-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+    padding: 0.8rem;
+    background: transparent;
+    border: 0;
+  }
+  .editor-pick-day-head {
+    grid-column: 1 / -1;
+    background: transparent;
+    border: 0;
+    padding: 0 0.1rem 0.2rem;
+  }
+  .editor-pick-day-group .editor-pick-result {
+    border: 1px solid var(--border);
+    background: var(--surface-strong);
+    padding: 0.7rem 0.9rem;
+  }
+  .editor-pick-day-group .editor-pick-result + .editor-pick-result {
+    border-top: 1px solid var(--border);
+  }
 }
