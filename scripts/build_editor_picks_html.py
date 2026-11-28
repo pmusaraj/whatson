@@ -44,6 +44,8 @@ def pick_league(pick):
             return label, cls
     if pick.get("competition"):
         return pick["competition"], "generic"
+    if pick.get("sportType"):
+        return pick["sportType"], "generic"
     return None
 
 
