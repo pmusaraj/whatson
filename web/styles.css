@@ -1417,6 +1417,13 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   background: var(--surface-strong);
   padding: 0.7rem 0.8rem;
   margin-bottom: 0.6rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.editor-picks {
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .editor-pick-grid-head {
@@ -1438,7 +1445,12 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   font-variant-numeric: tabular-nums;
 }
 
-.editor-pick-grid-scroll { overflow-x: auto; }
+.editor-pick-grid-scroll { overflow-x: auto; min-width: 0; }
+
+.editor-pick-grid-lanes {
+  max-height: 17rem;
+  overflow-y: auto;
+}
 
 .editor-pick-grid-inner { position: relative; min-width: 620px; }
 
@@ -1731,6 +1743,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-watch strong { color: var(--text); }
 
 @media (max-width: 860px) {
+  .editor-pick-grid-lanes { max-height: 22rem; }
   .editor-pick-grid-inner { min-width: 720px; }
   .editor-pick-grid-lane { min-height: 5.5rem; }
   .editor-pick-grid-block { min-width: 0; }
