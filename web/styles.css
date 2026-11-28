@@ -1485,11 +1485,11 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   pointer-events: none;
 }
 
-.editor-pick-grid-block {
+#editor-picks .editor-pick-grid-block {
   position: absolute;
   top: 0.3rem;
   bottom: 0.3rem;
-  min-width: 3.5rem;
+  min-width: 7rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
   align-content: start;
@@ -1497,21 +1497,20 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   text-align: left;
   font: inherit;
   color: var(--text);
-  background: var(--surface-strong);
-  background: color-mix(in srgb, var(--surface-strong) 50%, transparent);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-  border-radius: 0;
+  background: var(--surface-strong, #fffdf4);
+  border: 1px solid var(--border, #e3d9c8) !important;
+  border-left: 4px solid var(--accent) !important;
+  border-radius: 0 !important;
   padding: 0.4rem 0.6rem;
   overflow: hidden;
   cursor: pointer;
 }
 
-.editor-pick-grid-block:hover { box-shadow: 0 2px 8px rgb(44 36 24 / 10%); z-index: 3; }
-.editor-pick-grid-block:hover,
-.editor-pick-grid-block:hover .editor-pick-grid-block-title { text-decoration: none; }
+#editor-picks .editor-pick-grid-block:hover { box-shadow: 0 2px 8px rgb(44 36 24 / 10%); z-index: 3; }
+#editor-picks .editor-pick-grid-block:hover,
+#editor-picks .editor-pick-grid-block:hover #editor-picks .editor-pick-grid-block-title { text-decoration: none; }
 
-.editor-pick-grid-block.live { border-color: #e5cfa8; }
+#editor-picks .editor-pick-grid-block.live { border-color: #e5cfa8; }
 
 .editor-pick-grid-block.league-pl { border-left-color: #126e5a; }
 .editor-pick-grid-block.league-laliga { border-left-color: #b26a00; }
@@ -1529,9 +1528,9 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-grid-block.league-mls { border-left-color: #0b5cab; }
 .editor-pick-grid-block.league-ufc { border-left-color: #8c1d1d; }
 
-.editor-pick-grid-block.live { border-left-color: var(--live); }
+#editor-picks .editor-pick-grid-block.live { border-left-color: var(--live); }
 
-.editor-pick-grid-block-league {
+#editor-picks .editor-pick-grid-block-league {
   display: block;
   min-height: 1rem;
   font-size: 0.66rem;
@@ -1543,18 +1542,18 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   text-overflow: ellipsis;
 }
 
-.editor-pick-grid-block-title {
+#editor-picks .editor-pick-grid-block-title {
   display: block;
   padding: 5px;
   font-size: 0.82rem;
   font-weight: 650;
-  line-height: 1.25;
-  white-space: nowrap;
+  line-height: 1.3;
+  white-space: normal;
   overflow: hidden;
-  text-overflow: ellipsis;
+  max-height: 2.6em;
 }
 
-.editor-pick-grid-block-meta {
+#editor-picks .editor-pick-grid-block-meta {
   display: block;
   font-size: 0.7rem;
   color: var(--muted);
@@ -1604,12 +1603,12 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   letter-spacing: 0.05em;
 }
 
-.editor-pick-grid-chip {
+#editor-picks .editor-pick-grid-chip {
   font: inherit;
   font-size: 0.72rem;
   padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+  border-radius: 999px !important;
+  border: 1px solid var(--border, #e3d9c8) !important;
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
@@ -1645,8 +1644,8 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   font: inherit;
   font-size: 0.78rem;
   padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+  border-radius: 999px !important;
+  border: 1px solid var(--border, #e3d9c8) !important;
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
@@ -1734,12 +1733,12 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   white-space: nowrap;
 }
 
-.editor-pick-watch {
+#editor-picks .editor-pick-watch {
   margin-top: 0.65rem;
   width: 100%;
   min-width: 0;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 1px solid var(--border, #e3d9c8) !important;
+  border-radius: 999px !important;
   background: var(--surface);
   padding: 0.5rem 1rem;
   font: inherit;
@@ -1758,15 +1757,8 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   .editor-pick-grid-lanes { max-height: 22rem; }
   .editor-pick-grid-inner { min-width: 720px; }
   .editor-pick-grid-lane { min-height: 5.5rem; }
-  .editor-pick-grid-block { min-width: 0; }
   .editor-pick-grid-tick:nth-of-type(even) { display: none; }
-  .editor-pick-grid-block-title {
-    white-space: normal;
-    display: block;
-    max-height: 2.5em;
-    line-height: 1.25;
-  }
-  .editor-pick-grid-block-meta { font-size: 0.68rem; }
+  #editor-picks .editor-pick-grid-block-meta { font-size: 0.68rem; }
 }
 
 .editor-pick-crest { position: relative; overflow: hidden; }
