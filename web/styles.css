@@ -1672,7 +1672,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   margin-top: 0.45rem;
 }
 
-.editor-pick-teams { display: grid; gap: 0.45rem; min-width: 0; }
+.editor-pick-teams { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.45rem; min-width: 0; }
 
 .editor-pick-team {
   display: flex;
@@ -1680,9 +1680,10 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   gap: 0.6rem;
   font-weight: 650;
   min-width: 0;
+  overflow: hidden;
 }
 
-.editor-pick-team-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.editor-pick-team-name { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .editor-pick-crest {
   flex: none;
@@ -1712,6 +1713,7 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
 .editor-pick-watch {
   margin-top: 0.65rem;
   width: 100%;
+  min-width: 0;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface);
@@ -1720,10 +1722,10 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   font-size: 0.85rem;
   color: var(--muted);
   cursor: pointer;
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .editor-pick-watch strong { color: var(--text); }
