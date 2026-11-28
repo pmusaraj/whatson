@@ -26,6 +26,8 @@ ALIASES = {
     "tottenham": "tottenham",
     "west ham": "west ham",
     "wolves": "wolves",
+    "wolverhampton wanderers": "wolves",
+    "wolverhampton": "wolves",
     
     "leeds": "leeds",
     "newcastle": "newcastle",
@@ -50,6 +52,9 @@ ALIASES = {
     "betis": "real betis",
     "sociedad": "real sociedad",
     "celta": "celta vigo",
+    "deportivo de la coruna": "deportivo la coruna",
+    "brighton hove albion": "brighton",
+    "brighton hove": "brighton",
     "alaves": "alaves",
     "levante": "levante",
     "rayo": "rayo vallecano",

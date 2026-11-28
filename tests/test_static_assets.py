@@ -145,7 +145,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const app = fs.readFileSync('web/app.js', 'utf8');
 const context = {
-  state: { teamLogos: { 'nottingham forest': 'https://example.com/n.png' } },
+  state: { teamLogos: { 'nottingham forest': 'https://example.com/n.png', 'leeds': 'https://example.com/l.png' } },
   escapeHtml: value => String(value ?? ''),
 };
 vm.createContext(context);
@@ -153,11 +153,15 @@ vm.runInContext(app.slice(app.indexOf('const EDITOR_PICK_CREST_COLORS'), app.ind
 const logo = vm.runInContext('editorPickCrest("Nottingham Forest")', context);
 assert.ok(logo.includes('<img class="editor-pick-crest-logo"'));
 assert.ok(logo.includes('https://example.com/n.png'));
-assert.ok(logo.includes('onerror="this.remove()"'));
+assert.ok(logo.includes('onerror='));
+assert.ok(!logo.includes('background:'));
 const mono = vm.runInContext('editorPickCrest("Nowhere FC")', context);
 assert.ok(!mono.includes('<img'));
 assert.ok(mono.includes('>N</span>') || mono.includes('NF</span>'));
 assert.equal(vm.runInContext('teamLogoUrl("  NOTTINGHAM forest!! ")', context), 'https://example.com/n.png');
+assert.equal(vm.runInContext('teamLogoUrl("Leeds United")', context), 'https://example.com/l.png');
+const monoBg = vm.runInContext('editorPickCrest("Nowhere FC")', context);
+assert.ok(monoBg.includes('background:'));
 """
         subprocess.run(["node", "-e", script], cwd=Path(__file__).resolve().parents[1], check=True)
 
