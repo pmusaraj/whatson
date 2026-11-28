@@ -66,6 +66,9 @@ def display_title(pick):
         return pick["title"]
     import re
     label = re.escape(league[0])
+    title = re.sub(r"^" + label + r"\s*[:\u2014\u2013-]" + r"\s*", "", pick["title"], flags=re.I)
+    if title != pick["title"]:
+        return title
     return re.sub(r"\s*(?:\u2014|\u2013|-)\s*" + label + r"$|\s*\(" + label + r"\)$", "", pick["title"], flags=re.I)
 
 
