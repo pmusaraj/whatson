@@ -91,8 +91,22 @@ def _team_logos():
     return _TEAM_LOGOS_CACHE
 
 
+TEAM_NAME_SUFFIXES = ("town", "city", "united", "hotspur", "wanderers", "albion", "rovers",
+                       "county", "fc", "cf", "sc", "ac", "ud", "rcd", "rc", "ssc", "ss", "cd")
+
+
 def team_logo(name):
-    return _team_logos().get(_normalize_team(name))
+    logos = _team_logos()
+    key = _normalize_team(name)
+    if not key or key in logos:
+        return logos.get(key)
+    # Club names vary ("Leeds United" vs "Leeds"): strip trailing suffixes.
+    parts = key.split(" ")
+    while len(parts) > 1 and parts[-1] in TEAM_NAME_SUFFIXES:
+        parts.pop()
+        if " ".join(parts) in logos:
+            return logos[" ".join(parts)]
+    return None
 
 
 def crest(name):
@@ -103,9 +117,12 @@ def crest(name):
     for char in name:
         hashed = (hashed * 31 + ord(char)) % (2 ** 32)
     logo = team_logo(name)
-    img = f'<img class="editor-pick-crest-logo" src="{escape(logo)}" alt="" loading="lazy" onerror="this.remove()">' if logo else ""
-    return (f'<span class="editor-pick-crest" style="background:{CREST_COLORS[hashed % len(CREST_COLORS)]}">'
-            f'{escape(initials)}{img}</span>')
+    if not logo:
+        return (f'<span class="editor-pick-crest" style="background:{CREST_COLORS[hashed % len(CREST_COLORS)]}">'
+                f'{escape(initials)}</span>')
+    img = (f'<img class="editor-pick-crest-logo" src="{escape(logo)}" alt="" loading="lazy" '
+           f'onerror="this.parentNode.style.background=\'#69635b\';this.remove()">')
+    return f'<span class="editor-pick-crest">{escape(initials)}{img}</span>'
 
 
 def split_teams(pick):

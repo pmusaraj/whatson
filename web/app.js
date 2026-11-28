@@ -1248,9 +1248,20 @@ function editorPicksMetaLine(picks) {
 
 const EDITOR_PICK_CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#4a2d8a", "#0e6e8c", "#7a3b00"];
 
+const TEAM_NAME_SUFFIXES = ["town", "city", "united", "hotspur", "wanderers", "albion", "rovers", "county", "fc", "cf", "sc", "ac", "ud", "rcd", "rc", "ssc", "ss", "cd"];
+
 function teamLogoUrl(name) {
+  const logos = state.teamLogos || {};
   const key = String(name || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-  return (state.teamLogos || {})[key] || null;
+  if (!key || logos[key]) return logos[key] || null;
+  // Club names vary ("Leeds United" vs "Leeds"): strip trailing suffixes.
+  const parts = key.split(" ");
+  while (parts.length > 1 && TEAM_NAME_SUFFIXES.includes(parts[parts.length - 1])) {
+    parts.pop();
+    const short = parts.join(" ");
+    if (logos[short]) return logos[short];
+  }
+  return null;
 }
 
 function editorPickDayLabel(startAt, now) {
@@ -1270,8 +1281,10 @@ function editorPickCrest(name) {
   let hash = 0;
   for (const char of name) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
   const logo = teamLogoUrl(name);
-  const img = logo ? `<img class="editor-pick-crest-logo" src="${escapeHtml(logo)}" alt="" loading="lazy" onerror="this.remove()">` : "";
-  return `<span class="editor-pick-crest" aria-hidden="true" style="background:${EDITOR_PICK_CREST_COLORS[hash % EDITOR_PICK_CREST_COLORS.length]}">${escapeHtml(initials)}${img}</span>`;
+  if (!logo) {
+    return `<span class="editor-pick-crest" aria-hidden="true" style="background:${EDITOR_PICK_CREST_COLORS[hash % EDITOR_PICK_CREST_COLORS.length]}">${escapeHtml(initials)}</span>`;
+  }
+  return `<span class="editor-pick-crest" aria-hidden="true">${escapeHtml(initials)}<img class="editor-pick-crest-logo" src="${escapeHtml(logo)}" alt="" loading="lazy" onerror="this.parentNode.style.background='#69635b';this.remove()"></span>`;
 }
 
 function editorPickTeams(pick) {
