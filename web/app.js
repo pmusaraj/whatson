@@ -1129,46 +1129,6 @@ function pickStatus(pick, now) {
   return { kind: "later", label: `${weekday} \u00b7 ${time}` };
 }
 
-function editorPickChannel({ channel, index, key }) {
-  return `<button class="editor-pick-channel" type="button" data-channel-key="${escapeHtml(key)}" data-program-index="${index}" title="Open ${escapeHtml(channel.name)}">${escapeHtml(channel.name)}
-  </button>`;
-}
-
-function renderTimedEvents(events, startAt, renderEvent, emptyMessage) {
-  const marker = `<div class="event-now-indicator"><time datetime="${state.now.toISOString()}">Now · ${formatTime(state.now)}</time></div>`;
-  if (!events.length) {
-    return marker + `<p class="empty-program">${escapeHtml(emptyMessage)}</p>`;
-  }
-  // Preserve editorial ranking within each side of the current-time marker.
-  const started = [];
-  const upcoming = [];
-  for (const event of events) {
-    (new Date(startAt(event)) > state.now ? upcoming : started).push(event);
-  }
-  return started.map(renderEvent).join("") + marker + upcoming.map(renderEvent).join("");
-}
-
-function editorPickCountryGroups(airings) {
-  const groups = [];
-  for (const airing of airings) {
-    const last = groups[groups.length - 1];
-    if (last && last.country === airing.countryData.country) last.items.push(airing);
-    else groups.push({ country: airing.countryData.country, items: [airing] });
-  }
-  return groups;
-}
-
-function renderEditorPickChannels(airings, pickTitle) {
-  const renderGroups = (list) => editorPickCountryGroups(list).map(({ country, items }) =>
-    `<span class="editor-pick-country-group"><span class="editor-pick-flag" aria-hidden="true">${flagEmoji(country)}</span>${items.map(editorPickChannel).join("")}</span>`
-  ).join("");
-  const shown = airings.slice(0, 6);
-  const rest = airings.slice(6);
-  return renderGroups(shown) + (rest.length ? `<details class="editor-pick-more"><summary aria-label="More channels for ${escapeHtml(pickTitle)}">more</summary>
-    <div class="editor-pick-channels">${renderGroups(rest)}</div>
-  </details>` : "");
-}
-
 const EDITOR_PICK_GRID_BACK_MS = 30 * 60000;
 const EDITOR_PICK_GRID_AHEAD_MS = 12 * 3600000;
 const EDITOR_PICK_GRID_MAX_LANES = 6;
@@ -1271,51 +1231,100 @@ function editorPicksMetaLine(picks) {
   return `<p class="editor-picks-meta">${escapeHtml(`${count}${updated} \u00b7 refreshes throughout the day`)}</p>`;
 }
 
+const EDITOR_PICK_CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#4a2d8a", "#0e6e8c", "#7a3b00"];
+
+function editorPickDayLabel(startAt, now) {
+  const start = new Date(startAt);
+  const diffDays = Math.round((Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), start.getUTCDate())
+    - Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())) / 86400000);
+  if (diffDays <= 0) return "Tonight";
+  if (diffDays === 1) return "Tomorrow";
+  return start.toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" });
+}
+
+function editorPickCrest(name) {
+  const words = name.split(/\s+/).filter(Boolean);
+  const initials = words.length > 1
+    ? (words[0][0] + words[1][0]).toUpperCase()
+    : name.slice(0, 3).toUpperCase();
+  let hash = 0;
+  for (const char of name) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+  return `<span class="editor-pick-crest" aria-hidden="true" style="background:${EDITOR_PICK_CREST_COLORS[hash % EDITOR_PICK_CREST_COLORS.length]}">${escapeHtml(initials)}</span>`;
+}
+
+function editorPickTeams(pick) {
+  const parts = pickDisplayTitle(pick).split(/\s+vs\.?\s+|\s+v\s+/i);
+  if (parts.length !== 2) return null;
+  const [home, away] = parts.map((part) => part.trim());
+  return home && away ? { home, away } : null;
+}
+
+function renderTimedEvents(events, startAt, renderEvent, emptyMessage) {
+  const marker = `<div class="event-now-indicator"><time datetime="${state.now.toISOString()}">Now · ${formatTime(state.now)}</time></div>`;
+  if (!events.length) {
+    return marker + `<p class="empty-program">${escapeHtml(emptyMessage)}</p>`;
+  }
+  // Preserve editorial ranking within each side of the current-time marker.
+  const started = [];
+  const upcoming = [];
+  for (const event of events) {
+    (new Date(startAt(event)) > state.now ? upcoming : started).push(event);
+  }
+  return started.map(renderEvent).join("") + marker + upcoming.map(renderEvent).join("");
+}
+
+
 function renderEditorPicks() {
   const picks = resolvedEditorPicks();
   els.editorPicks.hidden = false;
   const updated = state.editorPicksGeneratedAt ? ` Last updated ${formatTime(state.editorPicksGeneratedAt)} \u00b7 picks refresh throughout the day.` : "";
-  editorPickHeroPending = true;
   if (!picks.length) {
     els.editorPicksList.innerHTML = editorPicksMetaLine(picks) + renderTimedEvents(picks, ({ pick }) => pick.startAt, renderEditorPickRow,
       `No upcoming editor\u2019s picks right now \u2014 the next slate lands soon.${updated}`);
     return;
   }
   // The grid covers now through the fitted window; the list below holds only
-  // the strictly upcoming events beyond it, so there is no overlap and no
-  // need for a now marker down here.
+  // the strictly upcoming events beyond it, grouped by day like a fixture list.
   const range = editorPickGridRange(picks, state.now);
   const gridded = new Set((range ? range.inWindow : []).map((row) => row.pick));
   const later = picks.filter(({ pick }) => !gridded.has(pick));
   const gridHtml = range && range.inWindow.length ? renderEditorPickGrid(picks) : "";
-  const laterHtml = later.map(renderEditorPickRow).join("")
-    || `<p class="empty-program">Everything upcoming is in the grid above.</p>`;
-  els.editorPicksList.innerHTML = gridHtml + editorPicksMetaLine(picks) + laterHtml;
+  els.editorPicksList.innerHTML = gridHtml + editorPicksMetaLine(picks) + renderEditorPickList(later);
 }
 
-let editorPickHeroPending = true;
+function renderEditorPickList(rows) {
+  if (!rows.length) return `<p class="empty-program">Everything upcoming is in the grid above.</p>`;
+  const ordered = [...rows].sort((a, b) => new Date(a.pick.startAt) - new Date(b.pick.startAt));
+  const groups = [];
+  for (const row of ordered) {
+    const label = editorPickDayLabel(row.pick.startAt, state.now);
+    const last = groups[groups.length - 1];
+    if (last && last.label === label) last.rows.push(row);
+    else groups.push({ label, rows: [row] });
+  }
+  return groups.map(({ label, rows }) =>
+    `<section class="editor-pick-day-group"><div class="editor-pick-day-head">${escapeHtml(label)}<span class="editor-pick-day-count">${rows.length} match${rows.length === 1 ? "" : "es"}</span></div>`
+    + rows.map(renderEditorPickRow).join("") + `</section>`).join("");
+}
 
 function renderEditorPickRow({ pick, airings }) {
-  const status = pickStatus(pick, state.now);
   const league = pickLeague(pick);
-  const hero = editorPickHeroPending ? ' data-hero="true"' : "";
-  editorPickHeroPending = false;
-  const timeRange = status.kind === "later" || !pick.endAt ? "" : `${formatTime(pick.startAt)} \u2013 ${formatTime(pick.endAt)}`;
+  const teams = editorPickTeams(pick);
+  const first = airings[0].channel.name;
+  const extra = airings.length > 1 ? ` +${airings.length - 1} more` : "";
+  const teamRows = teams
+    ? `<div class="editor-pick-team">${editorPickCrest(teams.home)}<span class="editor-pick-team-name">${escapeHtml(teams.home)}</span></div>`
+      + `<div class="editor-pick-team">${editorPickCrest(teams.away)}<span class="editor-pick-team-name">${escapeHtml(teams.away)}</span></div>`
+    : `<div class="editor-pick-team"><span class="editor-pick-team-name">${escapeHtml(pickDisplayTitle(pick))}</span></div>`;
   return `
-  <article class="editor-pick-result"${hero}>
-    <div class="editor-pick-status-row">
-      <span class="editor-pick-badge editor-pick-badge-${status.kind}">${status.kind === "live" ? `<span class="editor-pick-live-dot" aria-hidden="true"></span>` : ""}${escapeHtml(status.label)}</span>
-      ${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span>` : ""}
-      ${timeRange ? `<span class="show-result-time">${timeRange}</span>` : ""}
-    </div>
-    <div class="editor-pick-heading">
-      <span class="editor-pick-sport" aria-hidden="true">${(detectSportBucket(pick) || genericSportsBucket()).emoji}</span>
-      <button class="show-result-title event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"${editorPickAiringsAttr(airings)}>${escapeHtml(pickDisplayTitle(pick))}</button>
-    </div>
-    <div class="editor-pick-channels" aria-label="Available channels">
-      ${renderEditorPickChannels(airings, pick.title)}
-    </div>
-  </article>
+    <article class="editor-pick-result">
+      <div class="editor-pick-context">${league ? `<span class="editor-pick-league editor-pick-league-${league.cls}">${escapeHtml(league.label)}</span> · ` : ""}${airings.length} broadcaster${airings.length === 1 ? "" : "s"}</div>
+      <div class="editor-pick-fixture">
+        <div class="editor-pick-teams">${teamRows}</div>
+        <div class="editor-pick-kickoff">${escapeHtml(formatGridTickTime(new Date(pick.startAt)))}</div>
+      </div>
+      <button class="editor-pick-watch event-title" type="button" data-channel-key="${escapeHtml(airings[0].key)}" data-program-index="${airings[0].index}"${editorPickAiringsAttr(airings)} title="Open ${escapeHtml(pick.title)}">Catch it live on <strong>${escapeHtml(first)}</strong>${extra}</button>
+    </article>
   `;
 }
 

@@ -1630,3 +1630,100 @@ html body :is(.schedule-wrap, .schedule-header, .time-header, .time-axis, .guide
   cursor: pointer;
 }
 .program-dialog-channel.current { opacity: 0.55; cursor: default; }
+
+.editor-pick-day-group {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.editor-pick-day-head {
+  padding: 0.6rem 0.9rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.editor-pick-day-count { font-weight: 500; text-transform: none; letter-spacing: 0; }
+
+.editor-pick-day-group .editor-pick-result {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0.7rem 0.9rem;
+}
+
+.editor-pick-day-group .editor-pick-result + .editor-pick-result { border-top: 1px solid var(--border); }
+
+.editor-pick-context { color: var(--muted); font-size: 0.8rem; }
+
+.editor-pick-fixture {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 0.8rem;
+  align-items: center;
+  margin-top: 0.45rem;
+}
+
+.editor-pick-teams { display: grid; gap: 0.45rem; min-width: 0; }
+
+.editor-pick-team {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 650;
+  min-width: 0;
+}
+
+.editor-pick-team-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.editor-pick-crest {
+  flex: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.editor-pick-kickoff {
+  text-align: right;
+  border-left: 1px solid var(--border);
+  padding-left: 0.8rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.editor-pick-watch {
+  margin-top: 0.65rem;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor-pick-watch strong { color: var(--text); }

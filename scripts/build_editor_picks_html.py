@@ -36,22 +36,6 @@ LEAGUE_CHIPS = [
     ("UFC", "ufc", r"\bufc\b"),
 ]
 
-SPORT_EMOJI = [
-    ("🏎️", r"formula 1|\bf1\b|grand prix|motogp|superbikes|nascar|rally|sailgp|supercars|cyclo-cross"),
-    ("🏈", r"nfl|american football|arena football|college football"),
-    ("🏉", r"australian football|australian rules|\bafl\b|rugby|nrl"),
-    ("🏏", r"cricket|\bt20\b"),
-    ("🥊", r"boxing|mma|\bufc\b|combat"),
-    ("🏒", r"hockey|\bnhl\b"),
-    ("🏀", r"basketball|\bnba\b"),
-    ("⚾", r"baseball|\bmlb\b"),
-    ("🎾", r"tennis|atp|wta|us open|wimbledon"),
-    ("⛳", r"golf|pga|ryder cup"),
-    ("🚴", r"cycling|tour de|giro|vuelta"),
-    ("⚽", r"football|soccer|league|liga|serie|cup|derby|fc |united|city|real |barcelona|chelsea|arsenal"),
-]
-
-
 def pick_league(pick):
     import re
     text = " ".join(str(pick.get(key) or "") for key in ("title", "subtitle", "competition", "sportType"))
@@ -72,34 +56,36 @@ def display_title(pick):
     return re.sub(r"\s*(?:\u2014|\u2013|-)\s*" + label + r"$|\s*\(" + label + r"\)$", "", pick["title"], flags=re.I)
 
 
-def sport_emoji(pick):
+CREST_COLORS = ["#126e5a", "#1d4fa3", "#a32323", "#8a4b00", "#4a2d8a", "#0e6e8c", "#7a3b00"]
+
+
+def crest(name):
     import re
-    text = " ".join(str(pick.get(key) or "") for key in ("title", "subtitle", "competition", "sportType", "description"))
-    for emoji, pattern in SPORT_EMOJI:
-        if re.search(pattern, text, re.I):
-            return emoji
-    return "🏅"
+    words = [word for word in re.split(r"\s+", name) if word]
+    initials = (words[0][0] + words[1][0]).upper() if len(words) > 1 else name[:3].upper()
+    hashed = 0
+    for char in name:
+        hashed = (hashed * 31 + ord(char)) % (2 ** 32)
+    return f'<span class="editor-pick-crest">{escape(initials)}</span>'.replace(
+        'class="editor-pick-crest"', f'class="editor-pick-crest" style="background:{CREST_COLORS[hashed % len(CREST_COLORS)]}"')
 
 
-def flag_emoji(country):
-    return "".join(chr(127397 + ord(char)) for char in str(country or "").upper() if char.isalpha())
+def split_teams(pick):
+    import re
+    parts = re.split(r"\s+vs\.?\s+|\s+v\s+", display_title(pick), flags=re.I)
+    if len(parts) != 2:
+        return None
+    home, away = (part.strip() for part in parts)
+    return (home, away) if home and away else None
 
 
-def pick_status(pick, now, fallback_end=None):
-    start = parse_time(pick["startAt"])
-    end = parse_time(pick["endAt"]) if pick.get("endAt") else fallback_end
-    if start <= now and (end is None or now < end):
-        return "live", "Live"
-    mins = max(0, round((start - now).total_seconds() / 60))
-    if mins < 360:
-        if mins < 60:
-            return "soon", f"in {mins}m"
-        hours, rest = divmod(mins, 60)
-        return ("soon", f"in {hours}h {rest}m" if rest else f"in {hours}h")
-    time = f"{start:%b %d, %H:%M} UTC"
-    if (start.date() - now.date()).days <= 1:
-        return "later", f"Tomorrow \u00b7 {time}"
-    return "later", f"{start:%a} \u00b7 {time}"
+def day_label(start, now):
+    diff = (start.date() - now.date()).days
+    if diff <= 0:
+        return "Tonight"
+    if diff == 1:
+        return "Tomorrow"
+    return start.strftime("%A")
 
 
 def render_picks(picks, now, generated_at=None):
@@ -111,73 +97,57 @@ def render_picks(picks, now, generated_at=None):
         if not airings:
             continue
         start = parse_time(pick["startAt"])
-        ends = [parse_time(airing["endAt"]) for airing in airings]
-        end = parse_time(pick["endAt"]) if pick.get("endAt") else max(ends)
-        channels = []
-        countries = {}
+        names = []
         seen = set()
+        countries = {}
         for airing in airings:
-            country = airing.get("country", "")
-            key = (country, airing["channelName"])
-            if key in seen or countries.get(country, 0) >= 3:
+            key = (airing.get("country", ""), airing["channelName"])
+            if key in seen or countries.get(key[0], 0) >= 3:
                 continue
             seen.add(key)
-            countries[country] = countries.get(country, 0) + 1
-            channels.append((country, f'<span class="editor-pick-channel">{escape(airing["channelName"])}</span>'))
-        def render_groups(items):
-            grouped = []
-            for country, html in items:
-                if grouped and grouped[-1][0] == country:
-                    grouped[-1][1].append(html)
-                else:
-                    grouped.append((country, [html]))
-            return "".join(
-                f'<span class="editor-pick-country-group">'
-                f'<span class="editor-pick-flag">{flag_emoji(country)}</span>{"".join(chunk)}</span>'
-                for country, chunk in grouped
-            )
-        # The fold applies to broadcasts (as in the browser); grouping is display-only.
-        channel_html = render_groups(channels[:6])
-        if len(channels) > 6:
-            channel_html += ('<details class="editor-pick-more"><summary>more</summary>'
-                             '<div class="editor-pick-channels">' + render_groups(channels[6:]) + '</div></details>')
-        kind, label = pick_status(pick, now, end)
+            countries[key[0]] = countries.get(key[0], 0) + 1
+            names.append(airing["channelName"])
         league = pick_league(pick)
         league_html = (f'<span class="editor-pick-league editor-pick-league-{league[1]}">{escape(league[0])}</span>'
                        if league else "")
-        dot = '<span class="editor-pick-live-dot"></span>' if kind == "live" else ""
-        if kind == "later":
-            time_html = ""
-        elif start.date() == end.date():
-            time_html = f"{start:%b %d, %H:%M} \u2013 {end:%H:%M} UTC"
+        teams = split_teams(pick)
+        if teams:
+            home, away = teams
+            team_rows = (
+                f'<div class="editor-pick-team">{crest(home)}<span class="editor-pick-team-name">{escape(home)}</span></div>'
+                f'<div class="editor-pick-team">{crest(away)}<span class="editor-pick-team-name">{escape(away)}</span></div>')
         else:
-            time_html = f"{start:%b %d, %H:%M} \u2013 {end:%b %d, %H:%M} UTC"
-        time_row = (f'    <time class="show-result-time" datetime="{escape(start.isoformat(), quote=True)}">{time_html}</time>\n' if time_html else '')
-        events.append(((league_rank(pick), start), (
-            '<article class="editor-pick-result"{HERO}>\n'
-            '  <div class="editor-pick-status-row">\n'
-            f'    <span class="editor-pick-badge editor-pick-badge-{kind}">{dot}{escape(label)}</span>\n'
-            f'    {league_html}\n'
-            f'{time_row}'
+            team_rows = f'<div class="editor-pick-team"><span class="editor-pick-team-name">{escape(display_title(pick))}</span></div>'
+        extra = f" +{len(names) - 1} more" if len(names) > 1 else ""
+        events.append(((start, league_rank(pick)), day_label(start, now), (
+            '<article class="editor-pick-result">\n'
+            f'  <div class="editor-pick-context">{league_html + " \u00b7 " if league else ""}{len(names)} broadcaster{"s" if len(names) != 1 else ""}</div>\n'
+            '  <div class="editor-pick-fixture">\n'
+            f'    <div class="editor-pick-teams">{team_rows}</div>\n'
+            f'    <div class="editor-pick-kickoff">{start:%H:%M}</div>\n'
             '  </div>\n'
-            '  <div class="editor-pick-heading">\n'
-            f'    <span class="editor-pick-sport">{sport_emoji(pick)}</span>\n'
-            f'    <strong class="show-result-title">{escape(display_title(pick))}</strong>\n'
-            '  </div>\n'
-            f'  <div class="editor-pick-channels">{channel_html}</div>\n'
+            f'  <span class="editor-pick-watch">Catch it live on <strong>{escape(names[0])}</strong>{extra}</span>\n'
             '</article>'
         )))
-    ordered = sorted(events, key=lambda event: event[0])
+    groups = []
+    for (_, _rank), label, html in sorted(events, key=lambda event: event[0]):
+        if groups and groups[-1][0] == label:
+            groups[-1][1].append(html)
+        else:
+            groups.append((label, [html]))
     rows = []
-    for position, (_, html) in enumerate(ordered):
-        rows.append(html.replace("{HERO}", ' data-hero="true"' if position == 0 else ""))
+    for label, htmls in groups:
+        rows.append(
+            f'<section class="editor-pick-day-group">'
+            f'<div class="editor-pick-day-head">{escape(label)}<span class="editor-pick-day-count">{len(htmls)} match{"es" if len(htmls) != 1 else ""}</span></div>'
+            + "".join(htmls) + '</section>')
     if rows:
-        count = f"{len(rows)} pick" + ("" if len(rows) == 1 else "s")
+        count = f"{sum(len(htmls) for _, htmls in groups)} pick" + ("" if sum(len(htmls) for _, htmls in groups) == 1 else "s")
         updated = f" \u00b7 updated {parse_time(generated_at):%b %d, %H:%M} UTC" if generated_at else ""
         meta = f'<p class="editor-picks-meta">{escape(count + updated + " \u00b7 refreshes throughout the day")}</p>'
     else:
         updated = f" Last updated {parse_time(generated_at):%b %d, %H:%M} UTC \u00b7 picks refresh throughout the day." if generated_at else ""
-        meta = ("<p class=\"empty-program\">No upcoming editor’s picks right now \u2014 "
+        meta = ("<p class=\"empty-program\">No upcoming editor\u2019s picks right now \u2014 "
                 f"the next slate lands soon.{escape(updated)}</p>")
     visibility = "" if rows else " hidden"
     return (

@@ -13,7 +13,7 @@ const app = fs.readFileSync('web/app.js', 'utf8');
 const startAt = '2026-09-15T08:00:00Z', endAt = '2026-09-15T10:00:00Z';
 const program = { title: 'Live event', startAt, endAt };
 const channels = ['one', 'two'].map(id => ({ id, name: id, programs: [program] }));
-const pick = { title: program.title, highlightType: 'liveSport', sportType: 'Tennis', startAt, channels: ['one', 'two', 'alias'].map(channelId => ({
+const pick = { title: 'Live United vs Live City', highlightType: 'liveSport', sportType: 'Tennis', startAt, channels: ['one', 'two', 'alias'].map(channelId => ({
   country: 'US', channelId, sourceTitle: program.title, startAt, endAt
 })) };
 const context = {
@@ -25,6 +25,7 @@ const context = {
   isOverlappingDuplicate: () => false,
   isPreviewTheme: () => false,
   escapeHtml: value => value, formatTime: value => value, flagEmoji: value => value,
+  formatGridTickTime: value => value,
 };
 vm.createContext(context);
 vm.runInContext(app.slice(app.indexOf('const SPORT_BUCKETS ='), app.indexOf('function isLiveSportsProgram(')), context);
@@ -44,20 +45,23 @@ assert.equal(vm.runInContext("detectSportBucket({ title: 'NFL documentary', cate
 vm.runInContext('renderEditorPicks()', context);
 const html = context.els.editorPicksList.innerHTML;
 assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 20);
-assert.equal((html.match(/class="editor-pick-channel"/g) || []).length, 40);
-assert.ok(html.includes('data-channel-key="US:two" data-program-index="0"'));
+assert.equal((html.match(/class="editor-pick-watch event-title"/g) || []).length, 20);
+assert.ok(html.includes('data-channel-key="US:one" data-program-index="0"'));
+assert.equal((html.match(/Catch it live on/g) || []).length, 20);
 context.state.editorPicks = [
-  { ...pick, title: 'Late tennis', startAt: '2026-09-15T08:00:00Z' },
+  { ...pick, title: 'Late United vs Late City', startAt: '2026-09-15T08:00:00Z' },
   { ...pick, title: 'Series premiere', highlightType: 'freshProgramme', categories: ['Series'] },
-  { ...pick, title: 'Early soccer', sportType: 'Soccer', startAt: '2026-09-15T07:30:00Z' },
+  { ...pick, title: 'Early Town vs Rovers', sportType: 'Soccer', startAt: '2026-09-15T07:30:00Z' },
 ];
 vm.runInContext('renderEditorPicks()', context);
 const sportsHtml = context.els.editorPicksList.innerHTML;
 assert.equal((sportsHtml.match(/class="editor-pick-result"/g) || []).length, 2);
 assert.ok(!sportsHtml.includes('Series premiere'));
-assert.ok(sportsHtml.indexOf('Early soccer') < sportsHtml.indexOf('Late tennis'));
-assert.ok(sportsHtml.includes('<span class="editor-pick-sport" aria-hidden="true">⚽</span>'));
-assert.ok(sportsHtml.includes('>Early soccer</button>'));
+assert.ok(sportsHtml.indexOf('Early Town') < sportsHtml.indexOf('Late United'));
+assert.ok(sportsHtml.includes('>Tomorrow<'));
+assert.ok(sportsHtml.includes('2 matches'));
+assert.ok(sportsHtml.includes('>Early Town</span>'));
+assert.ok(sportsHtml.includes('>LU</span>') || sportsHtml.includes('editor-pick-crest'));
 context.state.editorPicks = ['Bundesliga', 'Ligue 1', 'Serie A', 'La Liga', 'Premier League', '2. Bundesliga', 'LaLiga Hypermotion', 'Ligue 2', 'Serie B', 'EFL Championship'].map(title => ({ ...pick, title, competition: title }));
 assert.deepEqual(Array.from(vm.runInContext('resolvedEditorPicks().map(row => row.pick.title)', context)), ['Premier League', 'La Liga', 'Serie A', 'Ligue 1', 'Bundesliga']);
 assert.equal(vm.runInContext("editorPickLeagueRank({ title: 'Caribbean Premier League', categories: ['Cricket'], competition: 'Premier League' })", context), 5);
@@ -67,11 +71,10 @@ context.state.countryDataByCode = new Map(['US', 'FR', 'DE'].map(country => [cou
 context.state.editorPicks = [{ ...pick, channels: many }];
 vm.runInContext('renderEditorPicks()', context);
 const manyHtml = context.els.editorPicksList.innerHTML;
-assert.equal((manyHtml.match(/class="editor-pick-channel"/g) || []).length, 9);
-assert.equal((manyHtml.split('<details')[0].match(/class="editor-pick-channel"/g) || []).length, 6);
-assert.ok(manyHtml.includes('>more</summary>'));
+assert.equal((manyHtml.match(/class="editor-pick-watch event-title"/g) || []).length, 1);
+assert.ok(manyHtml.includes('+8 more'));
 for (const country of ['US', 'FR', 'DE']) assert.ok(!manyHtml.includes(`data-channel-key="${country}:${country}3"`));
-assert.ok(sportsHtml.includes('<span class="editor-pick-sport" aria-hidden="true">🎾</span>'));
+assert.ok(sportsHtml.includes('editor-pick-crest'));
 assert.ok(fs.readFileSync('web/index.html', 'utf8').includes("<h2 id=\"guide-title\" class=\"guide-title\">Today's Editors Picks in Sports</h2>"));
 context.state.now = new Date(endAt);
 vm.runInContext('renderEditorPicks()', context);
@@ -102,6 +105,7 @@ const context = {
   isPreviewTheme: () => false,
   escapeHtml: value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'),
   formatTime: value => new Date(value).toISOString(),
+  formatGridTickTime: value => new Date(value).toISOString(),
   flagEmoji: value => value,
 };
 vm.createContext(context);
@@ -116,7 +120,7 @@ assert.ok(!html.includes('more in the list below'));
 // Grid holds the live event; the list holds only the far event, with no now marker.
 assert.equal((html.match(/editor-pick-grid-block /g) || []).length, 1);
 assert.equal((html.match(/class="editor-pick-result"/g) || []).length, 1);
-assert.ok(html.includes('>Far event</button>'));
+assert.ok(html.includes('>Far event</span>'));
 assert.ok(!html.includes('event-now-indicator'));
 assert.ok(html.includes('editor-pick-grid-now'));
 // Tick labels are times only, never dates.
